@@ -1,0 +1,281 @@
+[
+ {
+  "url": "https://iceposeidon.com/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CDGfc0hd.js",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "application/javascript",
+  "sha256": "0365757cd28f21fb3224bbbadcbdde39e37659595005c2a7a2049d8661086e13",
+  "bytes": 15362,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CDGfc0hd.js"
+ },
+ {
+  "url": "https://iceposeidon.com/_astro/SafezoneWikiPage.astro_astro_type_script_index_0_lang.DOFNF_Tk.js",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "application/javascript",
+  "sha256": "9e9fdf8f2416deff86ab97b671c9b652a5bc695ead56fe9e4d714f7b9adf51e0",
+  "bytes": 309,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/_astro/SafezoneWikiPage.astro_astro_type_script_index_0_lang.DOFNF_Tk.js"
+ },
+ {
+  "url": "https://iceposeidon.com/_astro/attacks.CQqLzMw4.css",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/css; charset=utf-8",
+  "sha256": "47b5b1492564a98e513b4be78645d7722402aa09725c4b807ec00faf51e11743",
+  "bytes": 6948,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/_astro/attacks.CQqLzMw4.css"
+ },
+ {
+  "url": "https://iceposeidon.com/_astro/clips.Drg4Lqrn.css",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/css; charset=utf-8",
+  "sha256": "2ba576a9cd0b8d17f51b0babf0d991b6b4527a89bb4d567d009449053065a6b1",
+  "bytes": 4686,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/_astro/clips.Drg4Lqrn.css"
+ },
+ {
+  "url": "https://iceposeidon.com/_astro/damage.D6ZKILx7.css",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/css; charset=utf-8",
+  "sha256": "e06b353f09c0259efae74e6786ced06bb25505e3d7a1eb80979c16875ccb82a6",
+  "bytes": 12949,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/_astro/damage.D6ZKILx7.css"
+ },
+ {
+  "url": "https://iceposeidon.com/_astro/global.CTAjBhAc.css",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/css; charset=utf-8",
+  "sha256": "c8129c5ea02b166c33f6609cfaf52f4cc7ba274a3aea070ccb769b32411b5a39",
+  "bytes": 153302,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/_astro/global.CTAjBhAc.css"
+ },
+ {
+  "url": "https://iceposeidon.com/_astro/safezone-logo.CuCIkJ5r.png",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "image/png",
+  "sha256": "4e5d328c10230c24099bfa66a98baf01bb5c041945581a2dc2a00990eccfd9a6",
+  "bytes": 2098,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/_astro/safezone-logo.CuCIkJ5r.png"
+ },
+ {
+  "url": "https://iceposeidon.com/_astro/stats.gJVXv2QP.css",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/css; charset=utf-8",
+  "sha256": "1557264427305fc851b0160a823366e91f42833e4b671e5aa9213340ed9db5d4",
+  "bytes": 9927,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/_astro/stats.gJVXv2QP.css"
+ },
+ {
+  "url": "https://iceposeidon.com/robots.txt",
+  "date": "2026-11-11",
+  "status": 404,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "093d588746e434951b885fbd572cace4334f63dc313eb119728a6a5ef8d7e6f3",
+  "bytes": 15212,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/robots.txt"
+ },
+ {
+  "url": "https://iceposeidon.com/safezone",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "cc3571a097babc4e852bac0d88acf62fe187bba9159c73f1b067b800f748f9c7",
+  "bytes": 25688,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/safezone/index.html"
+ },
+ {
+  "url": "https://iceposeidon.com/safezone/wiki",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "795591e2669174addb05b5fa117d0087b337648ebce14bd7f8663b305047eb94",
+  "bytes": 38720,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/safezone/wiki/index.html"
+ },
+ {
+  "url": "https://iceposeidon.com/safezone/wiki/attacks",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "716d64f5ade323b0c320f3068c13254951e66dc37ed6986f01f4823243fc2475",
+  "bytes": 72699,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/safezone/wiki/attacks/index.html"
+ },
+ {
+  "url": "https://iceposeidon.com/safezone/wiki/damage",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "590829c7f052d516547a8fa0a37b066a2cce8ab028fec35af00a3ff772be4530",
+  "bytes": 89067,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/safezone/wiki/damage/index.html"
+ },
+ {
+  "url": "https://iceposeidon.com/safezone/wiki/items",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "ccea965b6ed04bf31d46f705e4788abcbc346a803b6efc659828694c6a4217f0",
+  "bytes": 56268,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/safezone/wiki/items/index.html"
+ },
+ {
+  "url": "https://iceposeidon.com/safezone/wiki/merchant",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "0629f7dbf8ac13c28e82ac38ef2aa8e16107013239c09067fded9c1b0b529a67",
+  "bytes": 42008,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/safezone/wiki/merchant/index.html"
+ },
+ {
+  "url": "https://iceposeidon.com/safezone/wiki/poison",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "9159a0637c5094fe3032cc69ebd97a7eadf4305aecb17070660f6c7cc2849540",
+  "bytes": 36915,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/safezone/wiki/poison/index.html"
+ },
+ {
+  "url": "https://iceposeidon.com/safezone/wiki/sigils",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "f607a49019ed970a01275b25b840ce035e44c9d43a6541c4960173f3b9d372dc",
+  "bytes": 38352,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/safezone/wiki/sigils/index.html"
+ },
+ {
+  "url": "https://iceposeidon.com/safezone/wiki/sigils/death",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "7cfd3d1bf03825ace79f066378f59c6e3a44b866812e38fe96a7fa93363be33e",
+  "bytes": 37517,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/safezone/wiki/sigils/death/index.html"
+ },
+ {
+  "url": "https://iceposeidon.com/safezone/wiki/sigils/endurance",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "f57ce85d2e2fa1f00415c47e1f815c707d0d2ddb51550475d88c4fcce41766f7",
+  "bytes": 37667,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/safezone/wiki/sigils/endurance/index.html"
+ },
+ {
+  "url": "https://iceposeidon.com/safezone/wiki/sigils/greed",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "78be923c191837d263a34e17812603105f81808925be6d6974701e10da626931",
+  "bytes": 37932,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/safezone/wiki/sigils/greed/index.html"
+ },
+ {
+  "url": "https://iceposeidon.com/safezone/wiki/sigils/healing",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "56ead2442cd28e8eef006eaf331f614234dd2178629585393373340592689dd5",
+  "bytes": 39246,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/safezone/wiki/sigils/healing/index.html"
+ },
+ {
+  "url": "https://iceposeidon.com/safezone/wiki/sigils/ingenuity",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "421b5ddde0265a190e5a88acfc4756c108fbe125bd206131caccdab853231438",
+  "bytes": 52461,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/safezone/wiki/sigils/ingenuity/index.html"
+ },
+ {
+  "url": "https://iceposeidon.com/safezone/wiki/sigils/necromancy",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "139b35d579aca483301d4497df0a69b50eb04fea151d50b3b7a6e7d389f90329",
+  "bytes": 42976,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/safezone/wiki/sigils/necromancy/index.html"
+ },
+ {
+  "url": "https://iceposeidon.com/safezone/wiki/sigils/piety",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "300b8de29df97abc594a5b3b733f1f6cf51d1f6d6b45abf576baaace8ab15eae",
+  "bytes": 36682,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/safezone/wiki/sigils/piety/index.html"
+ },
+ {
+  "url": "https://iceposeidon.com/safezone/wiki/sigils/protection",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "88b256a0940ed883b67b2ece35df3b10addcadd1a7e2afcc34a7088658721c6c",
+  "bytes": 39076,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/safezone/wiki/sigils/protection/index.html"
+ },
+ {
+  "url": "https://iceposeidon.com/safezone/wiki/sigils/trolling",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "9bd6d92b344a475807c067e17a521c376767a9ed2b7c6076476184316f4168b3",
+  "bytes": 41017,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/safezone/wiki/sigils/trolling/index.html"
+ },
+ {
+  "url": "https://iceposeidon.com/safezone/wiki/strategy",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "72fee15613cb2b5d06effc378c916dfcef5f22040c869cb6f7b4d64ef563dd08",
+  "bytes": 38014,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/safezone/wiki/strategy/index.html"
+ },
+ {
+  "url": "https://iceposeidon.com/safezone/wiki/weapons",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "d0535e8042bff78d3c0552fb23a41074eabe0c9d44f64a59cd856ba8c19c47c1",
+  "bytes": 59524,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/safezone/wiki/weapons/index.html"
+ },
+ {
+  "url": "https://iceposeidon.com/safezone/wiki/zombies",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "fe4001582e8d536808b3a40c3be4937c7d9459f5d53be44598f64535c39b296c",
+  "bytes": 45802,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/safezone/wiki/zombies/index.html"
+ },
+ {
+  "url": "https://iceposeidon.com/sitemap-0.xml",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "application/xml",
+  "sha256": "e0dac7b803565e0b4775353a423e195c9f658d07631e353f9b174075a464c6cc",
+  "bytes": 4807,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/sitemap-0.xml"
+ },
+ {
+  "url": "https://iceposeidon.com/sitemap-index.xml",
+  "date": "2026-11-11",
+  "status": 200,
+  "content_type": "application/xml",
+  "sha256": "ff39c178c3bbeff684950ea47f179fe6f9e62df091e6d2aaffb432e566684cf9",
+  "bytes": 186,
+  "path": "corpus/raw/2026-11-11/iceposeidon.com/sitemap-index.xml"
+ }
+]

@@ -1,0 +1,12 @@
+id: U-0000
+question: What is the source and what are the exact conditions of the reported $5,000 viewer prize?
+why_it_matters: Sets the viewer's objective in the viewer-economics model (section 8.10); without it, viewer strategy can only maximize damage per Cx-Buck.
+readings:
+  A: "No $5,000 prize exists; viewer prizes are the unquantified 'top 3 viewers' cash prizes."
+  B: "A $5,000 prize exists with conditions not yet found."
+resolution_paths:
+  - "Organizer post on X read directly (needs a logged-in browser session by kil)."
+  - "Organizer statement on stream (VOD timestamp)."
+  - "Pages /events or /safezone/recap, if kil adds them to SCOPE.md."
+priority: critical
+status: open
