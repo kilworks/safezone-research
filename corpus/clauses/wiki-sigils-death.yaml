@@ -1,0 +1,80 @@
+page: https://iceposeidon.com/safezone/wiki/sigils/death
+snapshot: '2026-11-11'
+sha256: 7cfd3d1bf03825ace79f066378f59c6e3a44b866812e38fe96a7fa93363be33e
+title: Sigil of Death
+clauses:
+- id: wiki-sigils-death-001
+  anchor: null
+  section: Sigil of Death
+  kind: sentence
+  quote: Feed on the fallen.
+- id: wiki-sigils-death-002
+  anchor: null
+  section: Sigil of Death
+  kind: label
+  quote: Max HP
+- id: wiki-sigils-death-003
+  anchor: null
+  section: Sigil of Death
+  kind: label
+  quote: 100 HP
+- id: wiki-sigils-death-004
+  anchor: null
+  section: Sigil of Death
+  kind: label
+  quote: Slots
+- id: wiki-sigils-death-005
+  anchor: null
+  section: Sigil of Death
+  kind: label
+  quote: '3'
+- id: wiki-sigils-death-006
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Earn ten blood tokens per gravestone robbed and one whenever another contestant dies.
+- id: wiki-sigils-death-007
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Rob a gravestone within 10m (33ft) to heal 5% of your max HP.
+- id: wiki-sigils-death-008
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Empty gravestones can be robbed too.
+- id: wiki-sigils-death-009
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: If you are the first to loot an item or blood tokens from a gravestone, you also rob it.
+- id: wiki-sigils-death-010
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Each gravestone can be robbed once, and a robbed gravestone can never be revived.
+- id: wiki-sigils-death-011
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: When a contestant dies within 50m (164ft) of you, you heal 1 HP for every contestant eliminated so far, them included.
+- id: wiki-sigils-death-012
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: When 20% or fewer of the contestants are alive, that heal cannot take you above 60% of your max HP.
+- id: wiki-sigils-death-013
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: 'Death ward: the first hit from outside the circle or from an unsafe circle is blocked and you are immune to both for 2min.'
+- id: wiki-sigils-death-014
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Cooldown 2h.
+- id: wiki-sigils-death-015
+  anchor: rules
+  section: What it does
+  kind: label
+  quote: Gravestones

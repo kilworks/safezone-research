@@ -1,0 +1,390 @@
+page: https://iceposeidon.com/safezone/wiki/items
+snapshot: '2026-11-11'
+sha256: ccea965b6ed04bf31d46f705e4788abcbc346a803b6efc659828694c6a4217f0
+title: Items
+clauses:
+- id: wiki-items-001
+  anchor: null
+  section: Items
+  kind: sentence
+  quote: Contestants find items in chests, care packages and crates, and trade them with each other.
+- id: wiki-items-002
+  anchor: inventory
+  section: Inventory
+  kind: sentence
+  quote: You can carry up to 3 items, some items can stack (such as C4/Landmines/Arrows).
+- id: wiki-items-003
+  anchor: inventory
+  section: Inventory
+  kind: sentence
+  quote: Piety contestants stack up to 6 health potions in one slot.
+- id: wiki-items-004
+  anchor: effects
+  section: Active item effects
+  kind: sentence
+  quote: You can have at most 3 active item effects at once.
+- id: wiki-items-005
+  anchor: effects
+  section: Active item effects
+  kind: sentence
+  quote: At the limit, the item is refused and you keep it.
+- id: wiki-items-006
+  anchor: effects
+  section: Active item effects
+  kind: sentence
+  quote: 'These count: a Shield, a Guardian angel, a Mirror forcefield, Anti poison immunity, a Flak jacket, a Gas mask, Zombie repellent, and a Hazmat suit while you carry it.'
+- id: wiki-items-007
+  anchor: effects
+  section: Active item effects
+  kind: sentence
+  quote: 'These do not count: Safety Bubbles, smoke bombs, bandages, crafts, merchant upgrades, and effects that do not come from using an item, such as a Greed chest shield.'
+- id: wiki-items-008
+  anchor: health_potion
+  section: Health potion
+  kind: label
+  quote: Usable
+- id: wiki-items-009
+  anchor: health_potion
+  section: Health potion
+  kind: sentence
+  quote: 'Heals by tier: Small 5 HP, Medium 10 HP, Large 20 HP, Gigantic 40 HP.'
+- id: wiki-items-010
+  anchor: eddies_potion
+  section: Eddie's potion
+  kind: label
+  quote: Usable
+- id: wiki-items-011
+  anchor: eddies_potion
+  section: Eddie's potion
+  kind: sentence
+  quote: 'A gamble: 10% chance to heal 50% of your max HP.'
+- id: wiki-items-012
+  anchor: eddies_potion
+  section: Eddie's potion
+  kind: sentence
+  quote: Otherwise you lose 30% of your max HP.
+- id: wiki-items-013
+  anchor: hazmat_suit
+  section: Hazmat suit
+  kind: sentence
+  quote: While you carry it, each zone damage interval is 2s longer.
+- id: wiki-items-014
+  anchor: guardian_angel
+  section: Guardian angel
+  kind: label
+  quote: Usable
+- id: wiki-items-015
+  anchor: guardian_angel
+  section: Guardian angel
+  kind: sentence
+  quote: Immune to zone damage for 10min.
+- id: wiki-items-016
+  anchor: guardian_angel
+  section: Guardian angel
+  kind: sentence
+  quote: Ends when another contestant attacks you, even if a shield or bubble blocks the hit.
+- id: wiki-items-017
+  anchor: safety_bubble
+  section: Safety bubble
+  kind: label
+  quote: Usable
+- id: wiki-items-018
+  anchor: safety_bubble
+  section: Safety bubble
+  kind: sentence
+  quote: Creates a 10m (33ft) bubble where you stand for 10min.
+- id: wiki-items-019
+  anchor: safety_bubble
+  section: Safety bubble
+  kind: sentence
+  quote: Everyone inside is immune to damage and zombies, zone damage included.
+- id: wiki-items-020
+  anchor: safety_bubble
+  section: Safety bubble
+  kind: sentence
+  quote: A trapped gift still hurts the holder.
+- id: wiki-items-021
+  anchor: safety_bubble
+  section: Safety bubble
+  kind: sentence
+  quote: It does not protect a vulnerable contestant, and you cannot use it while vulnerable.
+- id: wiki-items-022
+  anchor: shield
+  section: Shield
+  kind: label
+  quote: Usable
+- id: wiki-items-023
+  anchor: shield
+  section: Shield
+  kind: sentence
+  quote: Immune to damage for 20min, except zone damage and unsafe circle damage.
+- id: wiki-items-024
+  anchor: shield
+  section: Shield
+  kind: sentence
+  quote: You cannot use it while vulnerable, and a Vulnerability Dart removes it.
+- id: wiki-items-025
+  anchor: body_armor
+  section: Body armor
+  kind: label
+  quote: Equippable
+- id: wiki-items-026
+  anchor: body_armor
+  section: Body armor
+  kind: sentence
+  quote: Absorbs up to 15 HP of damage.
+- id: wiki-items-027
+  anchor: body_armor
+  section: Body armor
+  kind: sentence
+  quote: A trapped gift ignores it.
+- id: wiki-items-028
+  anchor: body_armor
+  section: Body armor
+  kind: sentence
+  quote: It goes into your armor slot when you get it.
+- id: wiki-items-029
+  anchor: body_armor
+  section: Body armor
+  kind: sentence
+  quote: Carry at most one, including equipped armor.
+- id: wiki-items-030
+  anchor: zombie_repellent
+  section: Zombie repellent
+  kind: label
+  quote: Usable
+- id: wiki-items-031
+  anchor: zombie_repellent
+  section: Zombie repellent
+  kind: sentence
+  quote: Use it to stop zombies hurting you for 20min.
+- id: wiki-items-032
+  anchor: zombie_repellent
+  section: Zombie repellent
+  kind: sentence
+  quote: It only protects you.
+- id: wiki-items-033
+  anchor: anti_poison
+  section: Anti poison
+  kind: label
+  quote: Usable
+- id: wiki-items-034
+  anchor: anti_poison
+  section: Anti poison
+  kind: sentence
+  quote: Cures poison and makes you immune to it for 10min.
+- id: wiki-items-035
+  anchor: emp
+  section: EMP
+  kind: label
+  quote: Usable
+- id: wiki-items-036
+  anchor: emp
+  section: EMP
+  kind: sentence
+  quote: Stops viewers sending missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes and bounties for 10min.
+- id: wiki-items-037
+  anchor: emp
+  section: EMP
+  kind: sentence
+  quote: It destroys every viewer missile and nuke already in the air, and every airstrike and gunship already in play, burning fire included.
+- id: wiki-items-038
+  anchor: emp
+  section: EMP
+  kind: sentence
+  quote: 'No refunds: a viewer item refused because of an EMP is lost.'
+- id: wiki-items-039
+  anchor: emp
+  section: EMP
+  kind: sentence
+  quote: Does not black out any map.
+- id: wiki-items-040
+  anchor: smoke_bomb
+  section: Smoke bomb
+  kind: label
+  quote: Usable
+- id: wiki-items-041
+  anchor: smoke_bomb
+  section: Smoke bomb
+  kind: sentence
+  quote: Blacks out the map and blocks attacks for other contestants within 50m (164ft) of you for 20min.
+- id: wiki-items-042
+  anchor: smoke_bomb
+  section: Smoke bomb
+  kind: sentence
+  quote: 'Any other contestant inside it cannot attack at all: no targeted attacks, staff areas, C4, landmines or flashbangs.'
+- id: wiki-items-043
+  anchor: smoke_bomb
+  section: Smoke bomb
+  kind: sentence
+  quote: From inside it you also cannot heal or steal from other contestants, send a trade request, throw a Vulnerability Dart, fire a merchant missile or give a robot a target.
+- id: wiki-items-044
+  anchor: smoke_bomb
+  section: Smoke bomb
+  kind: sentence
+  quote: Nobody outside can target anyone inside it either, drones included.
+- id: wiki-items-045
+  anchor: smoke_bomb
+  section: Smoke bomb
+  kind: sentence
+  quote: The contestant who set it off is not affected and can still attack from inside it, including others inside.
+- id: wiki-items-046
+  anchor: smoke_bomb
+  section: Smoke bomb
+  kind: sentence
+  quote: Thermal goggles see through it.
+- id: wiki-items-047
+  anchor: smoke_bomb
+  section: Smoke bomb
+  kind: sentence
+  quote: Viewers still see everyone on their map.
+- id: wiki-items-048
+  anchor: bandage
+  section: Bandage
+  kind: label
+  quote: Usable
+- id: wiki-items-049
+  anchor: bandage
+  section: Bandage
+  kind: sentence
+  quote: Heals 10 HP over 2min.
+- id: wiki-items-050
+  anchor: bandage
+  section: Bandage
+  kind: sentence
+  quote: Taking damage does not stop it.
+- id: wiki-items-051
+  anchor: bandage
+  section: Bandage
+  kind: sentence
+  quote: It also stops Deep Cut bleeding.
+- id: wiki-items-052
+  anchor: mirror_forcefield
+  section: Mirror forcefield
+  kind: label
+  quote: Usable
+- id: wiki-items-053
+  anchor: mirror_forcefield
+  section: Mirror forcefield
+  kind: sentence
+  quote: Reflects the next attack back at the attacker.
+- id: wiki-items-054
+  anchor: mirror_forcefield
+  section: Mirror forcefield
+  kind: sentence
+  quote: Several stack.
+- id: wiki-items-055
+  anchor: mirror_forcefield
+  section: Mirror forcefield
+  kind: sentence
+  quote: Only reflects Poison Darts, fake gravestones, knives, Zarok's axes, long swords, machetes, bows, staffs, drones, C4, landmines, flashbangs and fake chests.
+- id: wiki-items-056
+  anchor: mirror_forcefield
+  section: Mirror forcefield
+  kind: sentence
+  quote: A reflected fake chest also locks the troll out of chests instead of you.
+- id: wiki-items-057
+  anchor: mirror_forcefield
+  section: Mirror forcefield
+  kind: sentence
+  quote: 'If the attacker also has one, the attack does nothing and both are used up, except a reflected Poison Dart or fake gravestone: it still poisons the attacker and their own mirror stays.'
+- id: wiki-items-058
+  anchor: mirror_forcefield
+  section: Mirror forcefield
+  kind: sentence
+  quote: No time limit.
+- id: wiki-items-059
+  anchor: mirror_forcefield
+  section: Mirror forcefield
+  kind: sentence
+  quote: Ends when it reflects an attack or when you die.
+- id: wiki-items-060
+  anchor: mirror_forcefield
+  section: Mirror forcefield
+  kind: sentence
+  quote: Never reflects viewer or admin attacks, such as missiles, nukes and gas, or the zone and zombies.
+- id: wiki-items-061
+  anchor: mirror_forcefield
+  section: Mirror forcefield
+  kind: sentence
+  quote: These do not use it up.
+- id: wiki-items-062
+  anchor: flak_jacket
+  section: Flak jacket
+  kind: label
+  quote: Usable
+- id: wiki-items-063
+  anchor: flak_jacket
+  section: Flak jacket
+  kind: sentence
+  quote: Use it to block the next missile, nuke, airstrike or gunship hit on you.
+- id: wiki-items-064
+  anchor: flak_jacket
+  section: Flak jacket
+  kind: sentence
+  quote: It stays active until a hit uses it up.
+- id: wiki-items-065
+  anchor: gas_mask
+  section: Gas mask
+  kind: label
+  quote: Usable
+- id: wiki-items-066
+  anchor: gas_mask
+  section: Gas mask
+  kind: sentence
+  quote: Use it to become immune to tear gas for 10min.
+- id: wiki-items-067
+  anchor: thermal_goggles
+  section: Thermal goggles
+  kind: sentence
+  quote: While you carry them, smoke bombs do not black out your map or block your attacks.
+- id: wiki-items-068
+  anchor: thermal_goggles
+  section: Thermal goggles
+  kind: sentence
+  quote: 'You also see through illusions: copies of contestants show as copies, not as real contestants.'
+- id: wiki-items-069
+  anchor: flashbang
+  section: Flashbang
+  kind: label
+  quote: Usable
+- id: wiki-items-070
+  anchor: flashbang
+  section: Flashbang
+  kind: sentence
+  quote: Blinds every other contestant within 30m (98ft) of you for 30s.
+- id: wiki-items-071
+  anchor: flashbang
+  section: Flashbang
+  kind: sentence
+  quote: 'Blinded contestants can only move: they cannot see the map, use, place or aim items, attack, steal, loot, claim, craft or start a trade.'
+- id: wiki-items-072
+  anchor: flashbang
+  section: Flashbang
+  kind: sentence
+  quote: They can still close a trade.
+- id: wiki-items-073
+  anchor: flashbang
+  section: Flashbang
+  kind: sentence
+  quote: Effects already active keep working.
+- id: wiki-items-074
+  anchor: flashbang
+  section: Flashbang
+  kind: sentence
+  quote: Shields and safety bubbles do not stop it.
+- id: wiki-items-075
+  anchor: flashbang
+  section: Flashbang
+  kind: sentence
+  quote: Sleeping contestants are immune.
+- id: wiki-items-076
+  anchor: flashbang
+  section: Flashbang
+  kind: sentence
+  quote: A mirror forcefield is used up and blinds you instead.
+- id: wiki-items-077
+  anchor: flashbang
+  section: Flashbang
+  kind: sentence
+  quote: Several forcefields are all used up, but you are blinded only once.

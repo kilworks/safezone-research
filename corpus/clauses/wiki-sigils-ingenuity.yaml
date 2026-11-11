@@ -1,0 +1,155 @@
+page: https://iceposeidon.com/safezone/wiki/sigils/ingenuity
+snapshot: '2026-11-11'
+sha256: 421b5ddde0265a190e5a88acfc4756c108fbe125bd206131caccdab853231438
+title: Sigil of Ingenuity
+clauses:
+- id: wiki-sigils-ingenuity-001
+  anchor: null
+  section: Sigil of Ingenuity
+  kind: sentence
+  quote: Craft unique tools and take control of traps.
+- id: wiki-sigils-ingenuity-002
+  anchor: null
+  section: Sigil of Ingenuity
+  kind: label
+  quote: Max HP
+- id: wiki-sigils-ingenuity-003
+  anchor: null
+  section: Sigil of Ingenuity
+  kind: label
+  quote: 100 HP
+- id: wiki-sigils-ingenuity-004
+  anchor: null
+  section: Sigil of Ingenuity
+  kind: label
+  quote: Slots
+- id: wiki-sigils-ingenuity-005
+  anchor: null
+  section: Sigil of Ingenuity
+  kind: label
+  quote: '2'
+- id: wiki-sigils-ingenuity-006
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Start with 2 inventory slots and five separate slots for unique crafts.
+- id: wiki-sigils-ingenuity-007
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Merchant prices are 10% higher, rounded up.
+- id: wiki-sigils-ingenuity-008
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Recognize fake chests and gravestones, see traps, and hack landmines or C4 within 50m (164ft).
+- id: wiki-sigils-ingenuity-009
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Combine two matching potions into the next size, up to gigantic.
+- id: wiki-sigils-ingenuity-010
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Attach a landmine or C4 to an item to make a trapped gift, once every 16h.
+- id: wiki-sigils-ingenuity-011
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Only you can see it is trapped.
+- id: wiki-sigils-ingenuity-012
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Unique crafts cannot be traded, stolen or looted, and have a 40% chance to be destroyed by Zombie hits.
+- id: wiki-sigils-ingenuity-013
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Earn one blood token per craft, hack, chest destroyed by Black Hole, HP your Campfire heals on anyone, or zombie killed.
+- id: wiki-sigils-ingenuity-014
+  anchor: recipe-robot
+  section: Robot
+  kind: label
+  quote: Made from Landmine Drone
+- id: wiki-sigils-ingenuity-015
+  anchor: recipe-robot
+  section: Robot
+  kind: sentence
+  quote: For ten minutes it deals 1 HP every 2s to other players within 10m (33ft).
+- id: wiki-sigils-ingenuity-016
+  anchor: recipe-robot
+  section: Robot
+  kind: sentence
+  quote: Shields and Sleeping Bags stop it.
+- id: wiki-sigils-ingenuity-017
+  anchor: recipe-robot
+  section: Robot
+  kind: sentence
+  quote: Leave it still or pick a player to follow at 1.4m/s (3.13mph).
+- id: wiki-sigils-ingenuity-018
+  anchor: recipe-campfire
+  section: Campfire
+  kind: label
+  quote: Made from Guardian angel Health potion
+- id: wiki-sigils-ingenuity-019
+  anchor: recipe-campfire
+  section: Campfire
+  kind: sentence
+  quote: Heals everyone within 10m (33ft) 1 HP per second from one shared pool equal to the potion's heal.
+- id: wiki-sigils-ingenuity-020
+  anchor: recipe-campfire
+  section: Campfire
+  kind: sentence
+  quote: It burns out when the pool is empty or after 10min.
+- id: wiki-sigils-ingenuity-021
+  anchor: recipe-campfire
+  section: Campfire
+  kind: sentence
+  quote: Piety and Protection potion changes do not apply.
+- id: wiki-sigils-ingenuity-022
+  anchor: recipe-everything_potion
+  section: Everything potion
+  kind: label
+  quote: Made from Anti poison Health potion
+- id: wiki-sigils-ingenuity-023
+  anchor: recipe-everything_potion
+  section: Everything potion
+  kind: sentence
+  quote: Cures poison and heals by potion tier.
+- id: wiki-sigils-ingenuity-024
+  anchor: recipe-zombie_killer
+  section: Zombie killer
+  kind: label
+  quote: Made from Safety bubble Zombie repellent
+- id: wiki-sigils-ingenuity-025
+  anchor: recipe-zombie_killer
+  section: Zombie killer
+  kind: sentence
+  quote: Kills the next ten zombies that come within 10m (33ft) of you.
+- id: wiki-sigils-ingenuity-026
+  anchor: recipe-zombie_killer
+  section: Zombie killer
+  kind: sentence
+  quote: No time limit.
+- id: wiki-sigils-ingenuity-027
+  anchor: recipe-black_hole
+  section: Black hole
+  kind: label
+  quote: Made from EMP Mirror forcefield
+- id: wiki-sigils-ingenuity-028
+  anchor: recipe-black_hole
+  section: Black hole
+  kind: sentence
+  quote: Destroys every chest and crate within 200m (656ft), including care packages, airdrops and fake chests.
+- id: wiki-sigils-ingenuity-029
+  anchor: recipe-fortress
+  section: Fortress
+  kind: label
+  quote: Made from Shield Body armor
+- id: wiki-sigils-ingenuity-030
+  anchor: recipe-fortress
+  section: Fortress
+  kind: sentence
+  quote: Protects everyone within 20m (66ft) of it for up to 30 HP, and from Sigil of Greed stealing, and zone damage.

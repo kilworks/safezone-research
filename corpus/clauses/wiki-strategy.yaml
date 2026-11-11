@@ -1,0 +1,95 @@
+page: https://iceposeidon.com/safezone/wiki/strategy
+snapshot: '2026-11-11'
+sha256: 72fee15613cb2b5d06effc378c916dfcef5f22040c869cb6f7b4d64ef563dd08
+title: Strategy Guide
+clauses:
+- id: wiki-strategy-001
+  anchor: sigils
+  section: Prepare
+  kind: sentence
+  quote: To succeed in the SafeZone, consider preparing an alternate sim card as a backup, and portable chargers to ensure you don't run out of battery.
+- id: wiki-strategy-002
+  anchor: sigils
+  section: Prepare
+  kind: sentence
+  quote: Consider what you will eat, where you will sleep, and your method of getting around.
+- id: wiki-strategy-003
+  anchor: sigils
+  section: Prepare
+  kind: sentence
+  quote: Consider forming a team who can support eachother to victory.
+- id: wiki-strategy-004
+  anchor: sigils
+  section: Prepare
+  kind: sentence
+  quote: Be mindful of your team, are they making you pick a sigil which benefits them more than you?
+- id: wiki-strategy-005
+  anchor: sigils
+  section: Prepare
+  kind: sentence
+  quote: Pick the sigil which you think will give you the best chance of winning.
+- id: wiki-strategy-006
+  anchor: sigils
+  section: Prepare
+  kind: sentence
+  quote: If you are unpopular with viewers, consider picking the Protection sigil, so you are immune from most viewer attacks.
+- id: wiki-strategy-007
+  anchor: circle
+  section: Stay in the circle
+  kind: sentence
+  quote: The safezone is constantly moving, you need to constantly watch the circle and where it's going.
+- id: wiki-strategy-008
+  anchor: circle
+  section: Stay in the circle
+  kind: sentence
+  quote: Don't just stay linger on the edge of the safezone, the closer you are to the center of the safezone, the safer you are.
+- id: wiki-strategy-009
+  anchor: circle
+  section: Stay in the circle
+  kind: sentence
+  quote: If you think you're safe just lazily hanging around the edge of the safezone, you could become trapped when the safezone moves in a way you didn't expect, or you face an obstacle that takes time to get around.
+- id: wiki-strategy-010
+  anchor: loot
+  section: Stockpiling
+  kind: sentence
+  quote: Pick up useful items that will help you survive and win.
+- id: wiki-strategy-011
+  anchor: loot
+  section: Stockpiling
+  kind: sentence
+  quote: Drop or destroy items you don't need, or trade them to others.
+- id: wiki-strategy-012
+  anchor: loot
+  section: Stockpiling
+  kind: sentence
+  quote: Good items are important for you to win.
+- id: wiki-strategy-013
+  anchor: blood-tokens
+  section: Blood tokens and the merchant
+  kind: sentence
+  quote: 'Blood Tokens are important: you should to try to collect them and spend them at the Merchant.'
+- id: wiki-strategy-014
+  anchor: death
+  section: If you die
+  kind: sentence
+  quote: Death is not always the end, a Healing contestant could revive you.
+- id: wiki-strategy-015
+  anchor: death
+  section: Viewers
+  kind: sentence
+  quote: Loyal viewers could be the key to your success, by passing you useful information that puts you 2 steps ahead of others.
+- id: wiki-strategy-016
+  anchor: death
+  section: Viewers
+  kind: sentence
+  quote: Ask your viewers to keep you in the loop, and listen to them.
+- id: wiki-strategy-017
+  anchor: death
+  section: Utilize Your Sigil
+  kind: sentence
+  quote: You picked a sigil with certain abilities and strengths, use them to your advantage, make sure you are aware of how your sigil works and that you utilize it.
+- id: wiki-strategy-018
+  anchor: death
+  section: Utilize Your Sigil
+  kind: sentence
+  quote: Think of strategies that could synergize well with your sigil, such as using a certain item with an ability.

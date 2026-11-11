@@ -3,7 +3,9 @@
 Usage: py -3 tools/page_text.py <path/to/index.html>
 Only <body> is rendered; <nav> and <footer> are skipped.
 """
+import gzip
 import sys
+from pathlib import Path
 from html.parser import HTMLParser
 
 BLOCK = {"p", "li", "h1", "h2", "h3", "h4", "h5", "h6", "tr", "dt", "dd", "div", "section", "br", "table", "figcaption", "summary"}
@@ -54,8 +56,10 @@ class Text(HTMLParser):
 
 def render(path):
     p = Text()
-    with open(path, encoding="utf-8", errors="replace") as f:
-        p.feed(f.read())
+    raw = Path(path).read_bytes()
+    if raw[:2] == bytes([0x1F, 0x8B]):
+        raw = gzip.decompress(raw)  # Wayback id_ captures keep the original Content-Encoding
+    p.feed(raw.decode("utf-8", "replace"))
     p.flush()
     return p.out
 

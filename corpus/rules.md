@@ -41,6 +41,6 @@ No rule we found forbids reading the public wiki, analyzing its rules, or publis
 
 ## Pending, for kil
 
-1. Pages outside the 19 wiki pages that may hold contest rules or rule history: `/events`, `/safezone-austin`, `/safezone/recap`. Reading them is a plain visitor read but is not in `SCOPE.md` "Allowed". Add them in writing if wanted.
+1. Pages outside the wiki that may hold contest rules or the viewer prize: `/events`, `/safezone/recap` (`SCOPE.md` P2). Reading them is a plain visitor read but is not in `SCOPE.md` "Allowed". Add them in writing if wanted.
 2. `/safezone/download` suggests a public contestant app exists (Phase 2b, `SCOPE.md` item 7).
 3. Not to be read in any case: `/safezone/map` and `/safezone/leaderboards` may show contestant positions (`SCOPE.md` "Forbidden").

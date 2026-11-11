@@ -1,0 +1,375 @@
+page: https://iceposeidon.com/safezone/wiki/damage
+snapshot: '2026-11-11'
+sha256: 590829c7f052d516547a8fa0a37b066a2cce8ab028fec35af00a3ff772be4530
+title: Damage and protection
+clauses:
+- id: wiki-damage-001
+  anchor: null
+  section: Damage and protection
+  kind: sentence
+  quote: What stops each kind of damage, and what happens to a hit that gets through.
+- id: wiki-damage-002
+  anchor: null
+  section: Damage and protection
+  kind: sentence
+  quote: Reality Shield block every kind of damage. absorbs every kind of damage.
+- id: wiki-damage-003
+  anchor: null
+  section: Damage and protection
+  kind: label
+  quote: Damage
+- id: wiki-damage-004
+  anchor: null
+  section: Damage and protection
+  kind: label
+  quote: Also stopped by
+- id: wiki-damage-005
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Outside the circle | Safety bubble, Guardian angel, Death Ward, Hazmat suit (slows), Body armor (absorbs)'
+- id: wiki-damage-006
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Unsafe circle | Safety bubble, Guardian angel, Death Ward, Hazmat suit (slows), Body armor (absorbs)'
+- id: wiki-damage-007
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Robot | Safety bubble, Hazmat suit (slows), Body armor (absorbs)'
+- id: wiki-damage-008
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Poison | Shield, Safety bubble, Sleeping Bag, Protection, Anti poison, Body armor (absorbs)'
+- id: wiki-damage-009
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Tear gas | Shield, Safety bubble, Sleeping Bag, Gas mask, Body armor (absorbs)'
+- id: wiki-damage-010
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Zombie drain | Shield, Safety bubble, Sleeping Bag, Necromancy / Repellent, Body armor (absorbs)'
+- id: wiki-damage-011
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Bow | Shield, Safety bubble, Sleeping Bag, Mirror forcefield (reflects), Body armor (absorbs)'
+- id: wiki-damage-012
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Wizard Staff area | Shield, Safety bubble, Sleeping Bag, Mirror forcefield (reflects), Body armor (absorbs)'
+- id: wiki-damage-013
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Assassin''s Knife | Shield, Safety bubble, Sleeping Bag, Mirror forcefield (reflects), Body armor (absorbs)'
+- id: wiki-damage-014
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Long Sword | Shield, Safety bubble, Sleeping Bag, Mirror forcefield (reflects), Body armor (absorbs)'
+- id: wiki-damage-015
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Zarok''s Axe | Shield, Safety bubble, Sleeping Bag, Mirror forcefield (reflects), Body armor (absorbs)'
+- id: wiki-damage-016
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Huge Machete | Shield, Safety bubble, Sleeping Bag, Mirror forcefield (reflects), Body armor (absorbs)'
+- id: wiki-damage-017
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Deep Cut bleeding | Shield, Safety bubble, Sleeping Bag, Body armor (absorbs)'
+- id: wiki-damage-018
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Drone | Shield, Safety bubble, Sleeping Bag, Protection, Mirror forcefield (reflects), Body armor (absorbs)'
+- id: wiki-damage-019
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| C4 | Shield, Safety bubble, Sleeping Bag, Protection, Mirror forcefield (reflects), Body armor (absorbs)'
+- id: wiki-damage-020
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Landmine | Shield, Safety bubble, Sleeping Bag, Protection, Mirror forcefield (reflects), Body armor (absorbs)'
+- id: wiki-damage-021
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (reflects)'
+- id: wiki-damage-022
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Fake chest | Shield, Safety bubble, Sleeping Bag, Mirror forcefield (reflects), Body armor (absorbs)'
+- id: wiki-damage-023
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Missile | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (absorbs)'
+- id: wiki-damage-024
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Nuke | Shield, Safety bubble, Sleeping Bag, Flak jacket, Body armor (absorbs)'
+- id: wiki-damage-025
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Airstrike impact | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (absorbs)'
+- id: wiki-damage-026
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Airstrike fire | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (absorbs)'
+- id: wiki-damage-027
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Gunship bomb | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (absorbs)'
+- id: wiki-damage-028
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Giant cyclops attack | Shield, Safety bubble, Sleeping Bag, Body armor (absorbs)'
+- id: wiki-damage-029
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Bounty mark | Shield, Safety bubble, Sleeping Bag, Body armor (absorbs)'
+- id: wiki-damage-030
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Eddie''s Potion backfire | Shield, Safety bubble, Sleeping Bag, Body armor (absorbs)'
+- id: wiki-damage-031
+  anchor: null
+  section: Damage and protection
+  kind: row
+  quote: '| Protection retribution | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (absorbs)'
+- id: wiki-damage-032
+  anchor: order
+  section: What happens to a hit
+  kind: sentence
+  quote: Every hit goes through these steps in order.
+- id: wiki-damage-033
+  anchor: order
+  section: What happens to a hit
+  kind: label
+  quote: '1'
+- id: wiki-damage-034
+  anchor: order
+  section: What happens to a hit
+  kind: label
+  quote: Immunity
+- id: wiki-damage-035
+  anchor: order
+  section: What happens to a hit
+  kind: sentence
+  quote: If anything blocks the hit, you take nothing.
+- id: wiki-damage-036
+  anchor: order
+  section: What happens to a hit
+  kind: label
+  quote: '2'
+- id: wiki-damage-037
+  anchor: order
+  section: What happens to a hit
+  kind: label
+  quote: Kick live bonus
+- id: wiki-damage-038
+  anchor: order
+  section: What happens to a hit
+  kind: sentence
+  quote: If the attacker is live on Kick, their own bow, staff, knife, long sword, axe, machete, drone, C4, landmine, fake chest and trapped gift hits deal 10% more, rounded down.
+- id: wiki-damage-039
+  anchor: order
+  section: What happens to a hit
+  kind: label
+  quote: '3'
+- id: wiki-damage-040
+  anchor: order
+  section: What happens to a hit
+  kind: label
+  quote: Mirror
+- id: wiki-damage-041
+  anchor: order
+  section: What happens to a hit
+  kind: sentence
+  quote: A Mirror forcefield sends the whole hit back to the attacker instead, before any reduction.
+- id: wiki-damage-042
+  anchor: order
+  section: What happens to a hit
+  kind: label
+  quote: '4'
+- id: wiki-damage-043
+  anchor: order
+  section: What happens to a hit
+  kind: label
+  quote: Reductions
+- id: wiki-damage-044
+  anchor: order
+  section: What happens to a hit
+  kind: sentence
+  quote: A Protection contestant takes 50% less from a nuke.
+- id: wiki-damage-045
+  anchor: order
+  section: What happens to a hit
+  kind: sentence
+  quote: The damage left is rounded down.
+- id: wiki-damage-046
+  anchor: order
+  section: What happens to a hit
+  kind: sentence
+  quote: Being live on Kick then takes off 10%, rounded down.
+- id: wiki-damage-047
+  anchor: order
+  section: What happens to a hit
+  kind: label
+  quote: '5'
+- id: wiki-damage-048
+  anchor: order
+  section: What happens to a hit
+  kind: label
+  quote: Minimum
+- id: wiki-damage-049
+  anchor: order
+  section: What happens to a hit
+  kind: sentence
+  quote: A hit that gets through always does at least 1 HP.
+- id: wiki-damage-050
+  anchor: order
+  section: What happens to a hit
+  kind: label
+  quote: '6'
+- id: wiki-damage-051
+  anchor: order
+  section: What happens to a hit
+  kind: label
+  quote: Fortress
+- id: wiki-damage-052
+  anchor: order
+  section: What happens to a hit
+  kind: sentence
+  quote: A fortress you stand within absorbs up to its remaining durability, whoever built it.
+- id: wiki-damage-053
+  anchor: order
+  section: What happens to a hit
+  kind: label
+  quote: '7'
+- id: wiki-damage-054
+  anchor: order
+  section: What happens to a hit
+  kind: label
+  quote: Armor
+- id: wiki-damage-055
+  anchor: order
+  section: What happens to a hit
+  kind: sentence
+  quote: Body armor absorbs what is left, until it breaks.
+- id: wiki-damage-056
+  anchor: notes
+  section: Good to know
+  kind: sentence
+  quote: A Shield or a Safety Bubble does not stop poison from landing, but blocks each poison step while it lasts.
+- id: wiki-damage-057
+  anchor: notes
+  section: Good to know
+  kind: sentence
+  quote: See Poison.
+- id: wiki-damage-058
+  anchor: notes
+  section: Good to know
+  kind: sentence
+  quote: A Shield does not block zone, unsafe circle or robot damage.
+- id: wiki-damage-059
+  anchor: notes
+  section: Good to know
+  kind: sentence
+  quote: A Safety bubble and a Reality Shield do.
+- id: wiki-damage-060
+  anchor: notes
+  section: Good to know
+  kind: sentence
+  quote: A vulnerable contestant gets no protection from a Shield or a Safety Bubble.
+- id: wiki-damage-061
+  anchor: notes
+  section: Good to know
+  kind: sentence
+  quote: See the Vulnerability Dart.
+- id: wiki-damage-062
+  anchor: notes
+  section: Good to know
+  kind: sentence
+  quote: The Protection sigil is not immune to nukes, but takes 50% less from them.
+- id: wiki-damage-063
+  anchor: notes
+  section: Good to know
+  kind: sentence
+  quote: A Flak jacket blocks the next missile, nuke, airstrike impact or gunship bomb, then is used up.
+- id: wiki-damage-064
+  anchor: notes
+  section: Good to know
+  kind: sentence
+  quote: It does not block airstrike fire.
+- id: wiki-damage-065
+  anchor: notes
+  section: Good to know
+  kind: sentence
+  quote: A hit already blocked by something else does not use it up.
+- id: wiki-damage-066
+  anchor: notes
+  section: Good to know
+  kind: sentence
+  quote: A Gas mask blocks tear gas.
+- id: wiki-damage-067
+  anchor: notes
+  section: Good to know
+  kind: sentence
+  quote: A sleeping contestant within 15m (49ft) of their own Sleeping Bag is immune to all damage except zone, unsafe circle and robot damage.
+- id: wiki-damage-068
+  anchor: notes
+  section: Good to know
+  kind: sentence
+  quote: You are hit by your own C4 and landmine if you stand in the blast.
+- id: wiki-damage-069
+  anchor: notes
+  section: Good to know
+  kind: sentence
+  quote: A Mirror Forcefield is used up by the first attack it reflects.
+- id: wiki-damage-070
+  anchor: notes
+  section: Good to know
+  kind: sentence
+  quote: It only reflects Poison Darts, fake gravestones, bows, wizard staffs, knives, long swords, Zarok's axes, machetes, drones, C4, landmines, flashbangs and fake chests, and never your own explosives.
+- id: wiki-damage-071
+  anchor: notes
+  section: Good to know
+  kind: sentence
+  quote: Body Armor works on every kind of damage.
+- id: wiki-damage-072
+  anchor: notes
+  section: Good to know
+  kind: sentence
+  quote: You can carry only one.
+- id: wiki-damage-073
+  anchor: notes
+  section: Good to know
+  kind: sentence
+  quote: 'Death Ward: a Death contestant''s first hit from outside the circle is blocked, and damage from outside the circle is blocked for 2min.'
+- id: wiki-damage-074
+  anchor: notes
+  section: Good to know
+  kind: sentence
+  quote: Cooldown 2h.

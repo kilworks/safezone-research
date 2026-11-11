@@ -1,0 +1,80 @@
+page: https://iceposeidon.com/safezone/wiki/sigils/piety
+snapshot: '2026-11-11'
+sha256: 300b8de29df97abc594a5b3b733f1f6cf51d1f6d6b45abf576baaace8ab15eae
+title: Sigil of Piety
+clauses:
+- id: wiki-sigils-piety-001
+  anchor: null
+  section: Sigil of Piety
+  kind: sentence
+  quote: More HP, and every chest becomes a health potion.
+- id: wiki-sigils-piety-002
+  anchor: null
+  section: Sigil of Piety
+  kind: label
+  quote: Max HP
+- id: wiki-sigils-piety-003
+  anchor: null
+  section: Sigil of Piety
+  kind: label
+  quote: 110 HP
+- id: wiki-sigils-piety-004
+  anchor: null
+  section: Sigil of Piety
+  kind: label
+  quote: Slots
+- id: wiki-sigils-piety-005
+  anchor: null
+  section: Sigil of Piety
+  kind: label
+  quote: '3'
+- id: wiki-sigils-piety-006
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Your max HP is 10 HP higher.
+- id: wiki-sigils-piety-007
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Earn one blood token per 5 HP healed from any source except revives, Campfires and healing circles included.
+- id: wiki-sigils-piety-008
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Convert small, medium, large or gigantic potions into 1, 2, 3 or 4 blood tokens.
+- id: wiki-sigils-piety-009
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Converted potions do not count as healing.
+- id: wiki-sigils-piety-010
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Every item chest you claim and every crate you take gives you a random health potion instead of the item inside.
+- id: wiki-sigils-piety-011
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: A fake chest still springs its trap.
+- id: wiki-sigils-piety-012
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Merchant care packages are not changed.
+- id: wiki-sigils-piety-013
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Health potions heal you 15% more, rounded down.
+- id: wiki-sigils-piety-014
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: All your health potions share one inventory slot, up to 6 potions.
+- id: wiki-sigils-piety-015
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: You are immune to having your items stolen by Greed players.

@@ -1,0 +1,90 @@
+page: https://iceposeidon.com/safezone/wiki/sigils/necromancy
+snapshot: '2026-11-11'
+sha256: 139b35d579aca483301d4497df0a69b50eb04fea151d50b3b7a6e7d389f90329
+title: Sigil of Necromancy
+clauses:
+- id: wiki-sigils-necromancy-001
+  anchor: null
+  section: Sigil of Necromancy
+  kind: sentence
+  quote: Raise zombies that feed you.
+- id: wiki-sigils-necromancy-002
+  anchor: null
+  section: Sigil of Necromancy
+  kind: label
+  quote: Max HP
+- id: wiki-sigils-necromancy-003
+  anchor: null
+  section: Sigil of Necromancy
+  kind: label
+  quote: 100 HP
+- id: wiki-sigils-necromancy-004
+  anchor: null
+  section: Sigil of Necromancy
+  kind: label
+  quote: Slots
+- id: wiki-sigils-necromancy-005
+  anchor: null
+  section: Sigil of Necromancy
+  kind: label
+  quote: '3'
+- id: wiki-sigils-necromancy-006
+  anchor: null
+  section: Sigil of Necromancy
+  kind: label
+  quote: Immune to
+- id: wiki-sigils-necromancy-007
+  anchor: null
+  section: Sigil of Necromancy
+  kind: label
+  quote: Zombies
+- id: wiki-sigils-necromancy-008
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Earn one blood token for each zombie of yours that appears, guards and horde bonuses included, and one per HP your zombies drain.
+- id: wiki-sigils-necromancy-009
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Summon a zombie where you stand, up to 3 times every 6h.
+- id: wiki-sigils-necromancy-010
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: When any contestant dies, a zombie of yours appears within 10m (33ft) of you.
+- id: wiki-sigils-necromancy-011
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: When a contestant dies within 50m (164ft) of you, a guard zombie stands 10m (33ft) from their gravestone for 1h.
+- id: wiki-sigils-necromancy-012
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: It drains 2 HP every 5s from anyone within 10m (33ft), up to 30 HP per contestant.
+- id: wiki-sigils-necromancy-013
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: When viewers send a horde, you also get 5 zombies of your own.
+- id: wiki-sigils-necromancy-014
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Your zombies drain 1 HP every 10s from contestants within 5m (16ft), up to 30 HP per contestant for each zombie.
+- id: wiki-sigils-necromancy-015
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: The HP goes to you.
+- id: wiki-sigils-necromancy-016
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Fully immune from zombies.
+- id: wiki-sigils-necromancy-017
+  anchor: rules
+  section: What it does
+  kind: label
+  quote: Zombies

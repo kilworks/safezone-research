@@ -1,0 +1,60 @@
+page: https://iceposeidon.com/safezone/wiki/sigils
+snapshot: '2026-11-11'
+sha256: f607a49019ed970a01275b25b840ce035e44c9d43a6541c4960173f3b9d372dc
+title: Sigils
+clauses:
+- id: wiki-sigils-001
+  anchor: null
+  section: Sigils
+  kind: sentence
+  quote: Each contestant picks one sigil after the event starts.
+- id: wiki-sigils-002
+  anchor: null
+  section: Sigils
+  kind: sentence
+  quote: The choice is final.
+- id: wiki-sigils-003
+  anchor: null
+  section: Sigils
+  kind: sentence
+  quote: Sigil of Piety More HP, and every chest becomes a health potion.
+- id: wiki-sigils-004
+  anchor: null
+  section: Sigils
+  kind: sentence
+  quote: Sigil of Greed Less HP, but a longer reach for chests and the power to steal.
+- id: wiki-sigils-005
+  anchor: null
+  section: Sigils
+  kind: sentence
+  quote: Sigil of Ingenuity Craft unique tools and take control of traps.
+- id: wiki-sigils-006
+  anchor: null
+  section: Sigils
+  kind: sentence
+  quote: Sigil of Trolling Traps, fake loot and chaos.
+- id: wiki-sigils-007
+  anchor: null
+  section: Sigils
+  kind: sentence
+  quote: Sigil of Death Feed on the fallen.
+- id: wiki-sigils-008
+  anchor: null
+  section: Sigils
+  kind: sentence
+  quote: Sigil of Endurance Carry more and get supply drops, but go it alone.
+- id: wiki-sigils-009
+  anchor: null
+  section: Sigils
+  kind: sentence
+  quote: Sigil of Necromancy Raise zombies that feed you.
+- id: wiki-sigils-010
+  anchor: null
+  section: Sigils
+  kind: sentence
+  quote: Sigil of Protection Hard to kill, hard to heal.
+- id: wiki-sigils-011
+  anchor: null
+  section: Sigils
+  kind: sentence
+  quote: Sigil of Healing Heal others and come back from the dead.

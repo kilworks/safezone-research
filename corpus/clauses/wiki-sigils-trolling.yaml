@@ -1,0 +1,145 @@
+page: https://iceposeidon.com/safezone/wiki/sigils/trolling
+snapshot: '2026-11-11'
+sha256: 9bd6d92b344a475807c067e17a521c376767a9ed2b7c6076476184316f4168b3
+title: Sigil of Trolling
+clauses:
+- id: wiki-sigils-trolling-001
+  anchor: null
+  section: Sigil of Trolling
+  kind: sentence
+  quote: Traps, fake loot and chaos.
+- id: wiki-sigils-trolling-002
+  anchor: null
+  section: Sigil of Trolling
+  kind: label
+  quote: Max HP
+- id: wiki-sigils-trolling-003
+  anchor: null
+  section: Sigil of Trolling
+  kind: label
+  quote: 100 HP
+- id: wiki-sigils-trolling-004
+  anchor: null
+  section: Sigil of Trolling
+  kind: label
+  quote: Slots
+- id: wiki-sigils-trolling-005
+  anchor: null
+  section: Sigil of Trolling
+  kind: label
+  quote: '3'
+- id: wiki-sigils-trolling-006
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Earn one blood token per 5 HP dealt to other players and per crate destroyed, whoever spawned it.
+- id: wiki-sigils-trolling-007
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: 'Fake chest: place up to 2 per rolling hour.'
+- id: wiki-sigils-trolling-008
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: It looks like a care package.
+- id: wiki-sigils-trolling-009
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: A contestant who claims it takes 5 HP damage and cannot claim chests for 1h.
+- id: wiki-sigils-trolling-010
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: You heal 5 HP.
+- id: wiki-sigils-trolling-011
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: It vanishes after 1h.
+- id: wiki-sigils-trolling-012
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: A Shield blocks the damage but not the lockout.
+- id: wiki-sigils-trolling-013
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: 'Fake gravestone: place one, then wait 2h before the next.'
+- id: wiki-sigils-trolling-014
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: It copies the gravestone of an eliminated contestant, or of a random living one while nobody is eliminated.
+- id: wiki-sigils-trolling-015
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Each contestant who tries to loot it is poisoned once.
+- id: wiki-sigils-trolling-016
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: 'Unsafe circle: place a 50m (164ft) circle inside a safe zone for 20min.'
+- id: wiki-sigils-trolling-017
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Anyone inside it who is also inside a safe zone takes zone damage with no grace period, and loses one defense item or unique craft every five seconds, equipped Body Armor included.
+- id: wiki-sigils-trolling-018
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Cooldown 2h.
+- id: wiki-sigils-trolling-019
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: No living contestant, you included, may be inside the circle when you place it.
+- id: wiki-sigils-trolling-020
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Each crate or care package from viewers has a 3% chance to land next to a Trolling contestant instead.
+- id: wiki-sigils-trolling-021
+  anchor: unsafe
+  section: Unsafe circles
+  kind: sentence
+  quote: A Trolling contestant can place an unsafe circle inside a safe zone.
+- id: wiki-sigils-trolling-022
+  anchor: unsafe
+  section: Unsafe circles
+  kind: sentence
+  quote: 'It hurts like the outside of the safe zone: 1 HP every 2s, first hit one interval after you enter, with no grace period.'
+- id: wiki-sigils-trolling-023
+  anchor: unsafe
+  section: Unsafe circles
+  kind: sentence
+  quote: 'Only the part inside a safe zone hurts: outside every safe zone you take normal zone damage only.'
+- id: wiki-sigils-trolling-024
+  anchor: unsafe
+  section: Unsafe circles
+  kind: sentence
+  quote: After your first hit, you lose one random defense item or unique craft every five seconds while you stay inside and are not immune.
+- id: wiki-sigils-trolling-025
+  anchor: unsafe
+  section: Unsafe circles
+  kind: sentence
+  quote: Defense items are Shields, Safety Bubbles, Guardian Angels, Hazmat Suits, Body Armor, Mirror Forcefields, Flak Jackets, Gas Masks, Zombie Repellents, Anti Poisons and Sleeping Bags.
+- id: wiki-sigils-trolling-026
+  anchor: unsafe
+  section: Unsafe circles
+  kind: sentence
+  quote: Equipped Body Armor is not safe.
+- id: wiki-sigils-trolling-027
+  anchor: unsafe
+  section: Unsafe circles
+  kind: sentence
+  quote: A Guardian angel, a Safety bubble, a Reality Shield or a Death Ward blocks it.
+- id: wiki-sigils-trolling-028
+  anchor: unsafe
+  section: Unsafe circles
+  kind: sentence
+  quote: A Shield does not.

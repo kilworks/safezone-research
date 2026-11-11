@@ -1,0 +1,295 @@
+page: https://iceposeidon.com/safezone/wiki/merchant
+snapshot: '2026-11-11'
+sha256: 0629f7dbf8ac13c28e82ac38ef2aa8e16107013239c09067fded9c1b0b529a67
+title: Merchant
+clauses:
+- id: wiki-merchant-001
+  anchor: null
+  section: Merchant
+  kind: sentence
+  quote: The merchant sells items, upgrades and enchantments for blood tokens.
+- id: wiki-merchant-002
+  anchor: null
+  section: Merchant
+  kind: sentence
+  quote: Every sigil can buy from it.
+- id: wiki-merchant-003
+  anchor: spawning
+  section: Where it appears
+  kind: sentence
+  quote: There is at most one merchant on the map.
+- id: wiki-merchant-004
+  anchor: spawning
+  section: Where it appears
+  kind: sentence
+  quote: Admins place it, or let it appear at random inside the safe zones or inside an area they pick.
+- id: wiki-merchant-005
+  anchor: spawning
+  section: Where it appears
+  kind: sentence
+  quote: A random merchant stays for 15min.
+- id: wiki-merchant-006
+  anchor: spawning
+  section: Where it appears
+  kind: sentence
+  quote: Then it leaves and comes back at a new random spot after 30min to 1h.
+- id: wiki-merchant-007
+  anchor: spawning
+  section: Where it appears
+  kind: sentence
+  quote: Buy from within 10m (33ft) of it.
+- id: wiki-merchant-008
+  anchor: spawning
+  section: Where it appears
+  kind: sentence
+  quote: Items need a free inventory slot.
+- id: wiki-merchant-009
+  anchor: paying
+  section: Paying
+  kind: sentence
+  quote: You pay with blood tokens only.
+- id: wiki-merchant-010
+  anchor: paying
+  section: Paying
+  kind: sentence
+  quote: Each sigil earns them in its own way.
+- id: wiki-merchant-011
+  anchor: paying
+  section: Paying
+  kind: sentence
+  quote: Ingenuity contestants pay 10% more, rounded up.
+- id: wiki-merchant-012
+  anchor: items
+  section: Items
+  kind: sentence
+  quote: 'Care package: 10 blood tokens.'
+- id: wiki-merchant-013
+  anchor: items
+  section: Items
+  kind: sentence
+  quote: One random item, straight into your inventory.
+- id: wiki-merchant-014
+  anchor: items
+  section: Items
+  kind: sentence
+  quote: 'Anti poison: 12 blood tokens.'
+- id: wiki-merchant-015
+  anchor: items
+  section: Items
+  kind: sentence
+  quote: 'Vulnerability Dart: 25 blood tokens.'
+- id: wiki-merchant-016
+  anchor: items
+  section: Items
+  kind: sentence
+  quote: Throw it at a contestant within 10m.
+- id: wiki-merchant-017
+  anchor: items
+  section: Items
+  kind: sentence
+  quote: It removes their Shield and pops every Safety Bubble they own or stand in, and stops Shields and Safety Bubbles protecting them for 10 minutes.
+- id: wiki-merchant-018
+  anchor: items
+  section: Items
+  kind: sentence
+  quote: They cannot use a Shield or a Safety Bubble while vulnerable.
+- id: wiki-merchant-019
+  anchor: items
+  section: Items
+  kind: sentence
+  quote: A contestant who has slept in their Sleeping Bag for 65 seconds cannot be targeted.
+- id: wiki-merchant-020
+  anchor: items
+  section: Items
+  kind: sentence
+  quote: 'Sleeping Bag: 30 blood tokens.'
+- id: wiki-merchant-021
+  anchor: items
+  section: Items
+  kind: sentence
+  quote: Place it and sleep from 18:00 to 06:00 local solar time, for eight hours of sleep in total.
+- id: wiki-merchant-022
+  anchor: items
+  section: Items
+  kind: sentence
+  quote: While you sleep within 15m of your bag, you cannot act.
+- id: wiki-merchant-023
+  anchor: items
+  section: Items
+  kind: sentence
+  quote: After 65 seconds of sleep you are immune to flashbangs and to all damage except zone and unsafe circle damage.
+- id: wiki-merchant-024
+  anchor: items
+  section: Items
+  kind: sentence
+  quote: Wake up to act.
+- id: wiki-merchant-025
+  anchor: items
+  section: Items
+  kind: sentence
+  quote: Only you can pick up your bag.
+- id: wiki-merchant-026
+  anchor: items
+  section: Items
+  kind: sentence
+  quote: You can have only one Sleeping Bag, held or placed.
+- id: wiki-merchant-027
+  anchor: items
+  section: Items
+  kind: sentence
+  quote: It cannot be dropped or stolen, only destroyed by you.
+- id: wiki-merchant-028
+  anchor: items
+  section: Items
+  kind: sentence
+  quote: Greed can still steal your other items while you sleep.
+- id: wiki-merchant-029
+  anchor: items
+  section: Items
+  kind: sentence
+  quote: After your bag protects you, you cannot sleep in a bag again for 20 minutes, even if you pick it up and place it again.
+- id: wiki-merchant-030
+  anchor: items
+  section: Items
+  kind: sentence
+  quote: 'Missile: 10 blood tokens.'
+- id: wiki-merchant-031
+  anchor: items
+  section: Items
+  kind: sentence
+  quote: Launch a standard missile at an exact map location.
+- id: wiki-merchant-032
+  anchor: items
+  section: Items
+  kind: sentence
+  quote: It lands 30 seconds after launch.
+- id: wiki-merchant-033
+  anchor: upgrades
+  section: Upgrades
+  kind: sentence
+  quote: 'Inventory slot: starts at 40 blood tokens and costs 10 more for each one you already bought.'
+- id: wiki-merchant-034
+  anchor: upgrades
+  section: Upgrades
+  kind: sentence
+  quote: Buy up to 10 slots, to at most 13 slots, or 20 for Endurance.
+- id: wiki-merchant-035
+  anchor: upgrades
+  section: Upgrades
+  kind: sentence
+  quote: Ingenuity tops out at 12.
+- id: wiki-merchant-036
+  anchor: upgrades
+  section: Upgrades
+  kind: sentence
+  quote: '+10 maximum HP: starts at 40 blood tokens and costs 10 more for each one you already bought.'
+- id: wiki-merchant-037
+  anchor: upgrades
+  section: Upgrades
+  kind: sentence
+  quote: Maximum HP goes up to 200, or 220 for Piety.
+- id: wiki-merchant-038
+  anchor: upgrades
+  section: Upgrades
+  kind: sentence
+  quote: 'Dual Wield: 50 blood tokens.'
+- id: wiki-merchant-039
+  anchor: upgrades
+  section: Upgrades
+  kind: sentence
+  quote: Unlocks a second weapon slot and a second enchanted weapon.
+- id: wiki-merchant-040
+  anchor: upgrades
+  section: Upgrades
+  kind: sentence
+  quote: Weapon and worn equipment slots do not use inventory space.
+- id: wiki-merchant-041
+  anchor: upgrades
+  section: Upgrades
+  kind: sentence
+  quote: Carry at most one Body Armor.
+- id: wiki-merchant-042
+  anchor: upgrades
+  section: Upgrades
+  kind: sentence
+  quote: 'Deep Cut: 20 blood tokens.'
+- id: wiki-merchant-043
+  anchor: upgrades
+  section: Upgrades
+  kind: sentence
+  quote: 'Your next bow, knife, long sword, axe, machete or drone hit, or Poison Dart, causes bleeding: 1 HP every five minutes until a bandage or a Healing contestant cures it.'
+- id: wiki-merchant-044
+  anchor: upgrades
+  section: Upgrades
+  kind: sentence
+  quote: One charge.
+- id: wiki-merchant-045
+  anchor: upgrades
+  section: Upgrades
+  kind: sentence
+  quote: Bleeding does not stack.
+- id: wiki-merchant-046
+  anchor: enchantments
+  section: Enchantments
+  kind: sentence
+  quote: 'Weapon enchantment: 15 blood tokens.'
+- id: wiki-merchant-047
+  anchor: enchantments
+  section: Enchantments
+  kind: sentence
+  quote: Twice the uses and +10 damage for two hours.
+- id: wiki-merchant-048
+  anchor: enchantments
+  section: Enchantments
+  kind: sentence
+  quote: After two hours the weapon loses the bonus damage and keeps the uses it had before or the uses it has left, whichever is lower.
+- id: wiki-merchant-049
+  anchor: enchantments
+  section: Enchantments
+  kind: sentence
+  quote: If you use up the enchanted uses first, a knife, machete or long sword goes back with one use left; a single-use weapon is used up.
+- id: wiki-merchant-050
+  anchor: enchantments
+  section: Enchantments
+  kind: sentence
+  quote: Zarok's Axe and Poison Dart get +10 damage for two uses, then they are used up.
+- id: wiki-merchant-051
+  anchor: enchantments
+  section: Enchantments
+  kind: sentence
+  quote: Landmines and C4 get +20 damage and +10m (33ft) radius for one use, then they are used up.
+- id: wiki-merchant-052
+  anchor: enchantments
+  section: Enchantments
+  kind: sentence
+  quote: Drones get +10 damage for one use, then they are used up.
+- id: wiki-merchant-053
+  anchor: enchantments
+  section: Enchantments
+  kind: sentence
+  quote: A bow gets +10 damage for five shots or two hours.
+- id: wiki-merchant-054
+  anchor: enchantments
+  section: Enchantments
+  kind: sentence
+  quote: A Wizard Staff gets +10 damage and +10m (33ft) area radius for five uses, with no time limit.
+- id: wiki-merchant-055
+  anchor: enchantments
+  section: Enchantments
+  kind: sentence
+  quote: For every other weapon, if two hours pass first, the bonus ends and the item stays as a normal item.
+- id: wiki-merchant-056
+  anchor: enchantments
+  section: Enchantments
+  kind: sentence
+  quote: You can have one enchanted weapon, or two with Dual Wield.
+- id: wiki-merchant-057
+  anchor: enchantments
+  section: Enchantments
+  kind: sentence
+  quote: 'Armor enchantment: 30 blood tokens. +10 durability, up to 45.'
+- id: wiki-merchant-058
+  anchor: enchantments
+  section: Enchantments
+  kind: sentence
+  quote: It then loses one durability every twenty minutes, down to 15.

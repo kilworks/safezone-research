@@ -25,6 +25,16 @@ The object of study is the rule system. The deliverable is an encyclopedia (the 
 7. Static, offline analysis of an official contestant app, if one is publicly distributed (store APK or similar), downloaded by kil. No execution against the live server.
 8. Reading a public, unauthenticated endpoint discovered in the site's own JavaScript (for example a leaderboard). Location data is never stored, whatever the endpoint returns.
 
+## Pending approval (found during the work, not yet allowed)
+
+Each line needs kil to write "yes" next to it. Until then, nothing here is requested.
+
+- P1. `https://iceposeidon.com/safezone/wiki/search-index.json`: static JSON loaded by the wiki's own search box (RE-0003). One GET.
+- P2. `https://iceposeidon.com/events`, `/safezone/recap`: public pages that may hold contest rules or the viewer prize (`corpus/rules.md`). One GET each. (`/safezone-austin` dropped: October rules are obsolete.)
+- P3. `api.iceposeidon.com` route `purchasables` (and any public, unauthenticated route that lists viewer attack prices), `event-public.iceposeidon.com`, `robot-api.iceposeidon.com` (RE-0003). Allowed item 8 applies: no location data stored.
+- P4. Phase 2b: the contestant app behind `/safezone/download` (Allowed item 7).
+- Never, whatever the answer: `/safezone/map`, `/safezone/leaderboards` or any feed of contestant positions.
+
 ## Forbidden
 
 - Any request that is not a plain visitor read: no fuzzing, no parameter tampering, no endpoint guessing, no enumeration of CDN paths that pages do not reference.

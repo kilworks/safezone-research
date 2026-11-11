@@ -6,7 +6,7 @@ entry per URL to corpus/manifest.json: url, date, HTTP status, SHA-256, size.
 
 Usage:
   py -3 tools/fetch_corpus.py <date> <url> [<url> ...]
-  py -3 tools/fetch_corpus.py <date> --pages     # the 19 wiki pages + referenced assets
+  py -3 tools/fetch_corpus.py <date> --pages     # the 20 wiki pages + referenced assets
 """
 import hashlib
 import json
@@ -22,11 +22,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 MANIFEST = ROOT / "corpus" / "manifest.json"
 HOST = "https://iceposeidon.com"
+FILES = "https://files.iceposeidon.com"  # event images the pages embed with <img>
 UA = "safezone-research/0.1 (offline rule study; 1 req/s; contact via GitHub)"
 PAGES = ["/safezone", "/safezone/wiki", "/safezone/wiki/strategy", "/safezone/wiki/sigils"] + [
     f"/safezone/wiki/sigils/{s}" for s in
     "piety greed ingenuity trolling death endurance necromancy protection healing".split()
-] + [f"/safezone/wiki/{p}" for p in "items weapons damage poison zombies merchant attacks".split()]
+] + [f"/safezone/wiki/{p}" for p in "items weapons damage poison zombies chests merchant attacks".split()]
 
 _last = [0.0]
 _robots = {}
@@ -59,12 +60,19 @@ def local_path(date, url):
     return ROOT / "corpus" / "raw" / date / parts.netloc / path
 
 
-def fetch(date, url):
-    if not allowed(url):
-        return {"url": url, "date": date, "status": "robots-disallowed"}
+def fetch_wait():
+    """Block until 1 s has passed since the previous request (SCOPE.md rate limit)."""
     wait = 1.0 - (time.time() - _last[0])
     if wait > 0:
         time.sleep(wait)
+    _last[0] = time.time()
+
+
+def fetch(date, url, save_as=None):
+    """save_as: store under the path of this URL instead (Wayback captures of an original URL)."""
+    if not allowed(url):
+        return {"url": url, "date": date, "status": "robots-disallowed"}
+    fetch_wait()
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
@@ -73,7 +81,7 @@ def fetch(date, url):
         status, body, ctype = e.code, e.read(), e.headers.get("Content-Type", "")
     finally:
         _last[0] = time.time()
-    out = local_path(date, url)
+    out = local_path(date, save_as or url)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_bytes(body)
     return {"url": url, "date": date, "status": status, "content_type": ctype,
@@ -87,7 +95,7 @@ def referenced_assets(html, page_url):
     refs |= set(re.findall(r'<link[^>]+href="([^"]+\.(?:css|js))"', html))
     refs |= set(re.findall(r'<img[^>]+src="([^"]+)"', html))
     urls = {urllib.parse.urljoin(page_url, r.replace("&amp;", "&")) for r in refs}
-    return sorted(u for u in urls if u.startswith(HOST))
+    return sorted(u for u in urls if u.startswith((HOST + "/", FILES + "/")))
 
 
 def save_manifest(entries):

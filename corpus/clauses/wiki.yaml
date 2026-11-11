@@ -1,0 +1,100 @@
+page: https://iceposeidon.com/safezone/wiki
+snapshot: '2026-11-11'
+sha256: 795591e2669174addb05b5fa117d0087b337648ebce14bd7f8663b305047eb94
+title: Introduction
+clauses:
+- id: wiki-001
+  anchor: null
+  section: Introduction
+  kind: sentence
+  quote: Safe Zone is an event hosted by Ice Poseidon.
+- id: wiki-002
+  anchor: null
+  section: Introduction
+  kind: sentence
+  quote: Any Kick streamer is welcome to join and compete to win $50,000.
+- id: wiki-003
+  anchor: null
+  section: Introduction
+  kind: sentence
+  quote: 'The objective is simple: don''t die, stay in the safezone, and endure.'
+- id: wiki-004
+  anchor: null
+  section: Introduction
+  kind: sentence
+  quote: The Safe Zone will move in whatever unpredictable way Ice Poseidon chooses, it can change in size or speed, or even split apart.
+- id: wiki-005
+  anchor: damage
+  section: Damage
+  kind: sentence
+  quote: If you leave a safezone, after 5s you will start taking 1 HP damage every 2s (30 HP per minute).
+- id: wiki-006
+  anchor: damage
+  section: Damage
+  kind: sentence
+  quote: If you're live on Kick, you take 10% less damage and do 10% more damage, and you have a longer offline grace period, so if your phone dies, you have 30min instead of 15min before you start taking damage.
+- id: wiki-007
+  anchor: damage
+  section: Damage
+  kind: sentence
+  quote: When you die, a gravestone with your items appears where you were last seen.
+- id: wiki-008
+  anchor: damage
+  section: Damage
+  kind: sentence
+  quote: Other contestants can loot it, or revive you within 10min of their death.
+- id: wiki-009
+  anchor: damage
+  section: Damage
+  kind: sentence
+  quote: If your phone stops sending GPS updates, and your last known location was inside a safezone, you start taking damage after 15min, or 30min if you are live on Kick.
+- id: wiki-010
+  anchor: damage
+  section: Damage
+  kind: sentence
+  quote: 'Moving too fast counts as being outside: faster than 20mph (8.94m/s) on average over 1min, or faster than 30mph (13.41m/s) over any 15s.'
+- id: wiki-011
+  anchor: death
+  section: Death/Revival
+  kind: sentence
+  quote: When you die, you leave behind a gravestone containing any items you had.
+- id: wiki-012
+  anchor: death
+  section: Death/Revival
+  kind: sentence
+  quote: Blood tokens in the grave stay locked while revival is possible.
+- id: wiki-013
+  anchor: death
+  section: Death/Revival
+  kind: sentence
+  quote: A final kill pays 25 blood tokens, or 50 if the killer or victim held the blood crown.
+- id: wiki-014
+  anchor: death
+  section: Death/Revival
+  kind: sentence
+  quote: A viewer who kills the crown holder receives a Cx-Bucks bonus equal to 20% of the attack's purchase price.
+- id: wiki-015
+  anchor: death
+  section: Death/Revival
+  kind: sentence
+  quote: Any contestant can revive a Healing contestant, up to 2 times.
+- id: wiki-016
+  anchor: death
+  section: Death/Revival
+  kind: sentence
+  quote: A Healing contestant can revive a contestant of any sigil, up to 10 times.
+- id: wiki-017
+  anchor: death
+  section: Death/Revival
+  kind: sentence
+  quote: The revived contestant gets back the items still in their gravestone.
+- id: wiki-018
+  anchor: death
+  section: Death/Revival
+  kind: sentence
+  quote: Items that do not fit stay in the gravestone.
+- id: wiki-019
+  anchor: death
+  section: Death/Revival
+  kind: sentence
+  quote: If a Sigil of death player robs your gravestone, or is the first to loot it, you can never be revived.

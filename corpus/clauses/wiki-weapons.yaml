@@ -1,0 +1,305 @@
+page: https://iceposeidon.com/safezone/wiki/weapons
+snapshot: '2026-11-11'
+sha256: d0535e8042bff78d3c0552fb23a41074eabe0c9d44f64a59cd856ba8c19c47c1
+title: Weapons
+clauses:
+- id: wiki-weapons-001
+  anchor: null
+  section: Weapons
+  kind: sentence
+  quote: Weapons, ammo and traps.
+- id: wiki-weapons-002
+  anchor: null
+  section: Weapons
+  kind: sentence
+  quote: Contestants find them in chests, care packages and crates.
+- id: wiki-weapons-003
+  anchor: null
+  section: Weapons
+  kind: sentence
+  quote: Melee weapons, bows, staffs and Poison Darts fit a weapon slot.
+- id: wiki-weapons-004
+  anchor: c4
+  section: C4
+  kind: label
+  quote: Usable
+- id: wiki-weapons-005
+  anchor: c4
+  section: C4
+  kind: sentence
+  quote: Place it where you stand, then detonate it at any time.
+- id: wiki-weapons-006
+  anchor: c4
+  section: C4
+  kind: sentence
+  quote: It deals 20 HP to everyone within 10m (33ft), you included.
+- id: wiki-weapons-007
+  anchor: c4
+  section: C4
+  kind: sentence
+  quote: With the Ingenuity sigil you can attach one C4 to another item you hold, once every 16h.
+- id: wiki-weapons-008
+  anchor: c4
+  section: C4
+  kind: sentence
+  quote: Only you can see the trap.
+- id: wiki-weapons-009
+  anchor: c4
+  section: C4
+  kind: sentence
+  quote: Detonate it while another contestant holds that item.
+- id: wiki-weapons-010
+  anchor: c4
+  section: C4
+  kind: sentence
+  quote: Only that contestant takes 23 HP.
+- id: wiki-weapons-011
+  anchor: c4
+  section: C4
+  kind: sentence
+  quote: It does not hurt you while you hold the item.
+- id: wiki-weapons-012
+  anchor: c4
+  section: C4
+  kind: sentence
+  quote: 'Landmines and C4 stack: up to 5 of each share one inventory slot, and you can carry at most 5 of each.'
+- id: wiki-weapons-013
+  anchor: c4
+  section: C4
+  kind: sentence
+  quote: An enchanted one uses its own slot.
+- id: wiki-weapons-014
+  anchor: c4
+  section: C4
+  kind: sentence
+  quote: Only you and Sigil of Ingenuity contestants can see it.
+- id: wiki-weapons-015
+  anchor: drone
+  section: Drone
+  kind: label
+  quote: Usable
+- id: wiki-weapons-016
+  anchor: drone
+  section: Drone
+  kind: sentence
+  quote: Strike any contestant you can see, at any distance.
+- id: wiki-weapons-017
+  anchor: drone
+  section: Drone
+  kind: sentence
+  quote: It hits for 10 HP after 30s.
+- id: wiki-weapons-018
+  anchor: landmine
+  section: Landmine
+  kind: label
+  quote: Usable
+- id: wiki-weapons-019
+  anchor: landmine
+  section: Landmine
+  kind: sentence
+  quote: Place it where you stand.
+- id: wiki-weapons-020
+  anchor: landmine
+  section: Landmine
+  kind: sentence
+  quote: It triggers when another contestant or a zombie comes within 10m (33ft).
+- id: wiki-weapons-021
+  anchor: landmine
+  section: Landmine
+  kind: sentence
+  quote: It deals 15 HP to everyone in range, you included, and kills every zombie in range.
+- id: wiki-weapons-022
+  anchor: landmine
+  section: Landmine
+  kind: sentence
+  quote: With the Ingenuity sigil you can attach one landmine to an item you use on yourself, once every 16h.
+- id: wiki-weapons-023
+  anchor: landmine
+  section: Landmine
+  kind: sentence
+  quote: Only you can see the trap.
+- id: wiki-weapons-024
+  anchor: landmine
+  section: Landmine
+  kind: sentence
+  quote: It fires when another contestant uses that item, the item is used up and its effect does not apply.
+- id: wiki-weapons-025
+  anchor: landmine
+  section: Landmine
+  kind: sentence
+  quote: Only that contestant takes 11 HP.
+- id: wiki-weapons-026
+  anchor: landmine
+  section: Landmine
+  kind: sentence
+  quote: Other contestants see it only within 20m (66ft) of it.
+- id: wiki-weapons-027
+  anchor: landmine
+  section: Landmine
+  kind: sentence
+  quote: A Sigil of Ingenuity always sees it.
+- id: wiki-weapons-028
+  anchor: landmine
+  section: Landmine
+  kind: sentence
+  quote: Viewers always see it.
+- id: wiki-weapons-029
+  anchor: landmine
+  section: Landmine
+  kind: sentence
+  quote: 'Landmines and C4 stack: up to 5 of each share one inventory slot, and you can carry at most 5 of each.'
+- id: wiki-weapons-030
+  anchor: landmine
+  section: Landmine
+  kind: sentence
+  quote: An enchanted one uses its own slot.
+- id: wiki-weapons-031
+  anchor: bow
+  section: Bow
+  kind: label
+  quote: Equippable
+- id: wiki-weapons-032
+  anchor: bow
+  section: Bow
+  kind: sentence
+  quote: Hits for 5 HP within 20m (66ft), cooldown 5s.
+- id: wiki-weapons-033
+  anchor: bow
+  section: Bow
+  kind: sentence
+  quote: Each shot uses one arrow.
+- id: wiki-weapons-034
+  anchor: bow
+  section: Bow
+  kind: sentence
+  quote: You cannot shoot without arrows.
+- id: wiki-weapons-035
+  anchor: bow
+  section: Bow
+  kind: sentence
+  quote: The bow has unlimited uses and never breaks.
+- id: wiki-weapons-036
+  anchor: arrow
+  section: Arrows
+  kind: sentence
+  quote: Ammo for the bow.
+- id: wiki-weapons-037
+  anchor: arrow
+  section: Arrows
+  kind: sentence
+  quote: A chest drop holds 10.
+- id: wiki-weapons-038
+  anchor: arrow
+  section: Arrows
+  kind: sentence
+  quote: 'Arrows stack: new arrows join the stack you already carry, up to 10 per stack, so they need no extra slot.'
+- id: wiki-weapons-039
+  anchor: arrow
+  section: Arrows
+  kind: sentence
+  quote: Arrows above that start a new stack, which uses a slot.
+- id: wiki-weapons-040
+  anchor: wizard_staff
+  section: Wizard staff
+  kind: label
+  quote: Equippable
+- id: wiki-weapons-041
+  anchor: wizard_staff
+  section: Wizard staff
+  kind: sentence
+  quote: Pick a spot on the map within 50m (164ft) of you to place a 10m (33ft) damage area, on top of contestants too.
+- id: wiki-weapons-042
+  anchor: wizard_staff
+  section: Wizard staff
+  kind: sentence
+  quote: It lasts 5s and deals 10 HP in total to everyone inside, you included.
+- id: wiki-weapons-043
+  anchor: wizard_staff
+  section: Wizard staff
+  kind: sentence
+  quote: Each use costs 2 blood tokens.
+- id: wiki-weapons-044
+  anchor: wizard_staff
+  section: Wizard staff
+  kind: sentence
+  quote: Cooldown 20min.
+- id: wiki-weapons-045
+  anchor: wizard_staff
+  section: Wizard staff
+  kind: sentence
+  quote: The staff never breaks.
+- id: wiki-weapons-046
+  anchor: poison_dart
+  section: Poison dart
+  kind: label
+  quote: EquippableUsable
+- id: wiki-weapons-047
+  anchor: poison_dart
+  section: Poison dart
+  kind: sentence
+  quote: Poison a nearby contestant for 20 HP over 30min.
+- id: wiki-weapons-048
+  anchor: assassins_knife
+  section: Assassin's knife
+  kind: label
+  quote: Equippable
+- id: wiki-weapons-049
+  anchor: assassins_knife
+  section: Assassin's knife
+  kind: sentence
+  quote: Stabs a contestant within 10m (33ft) for 5 HP.
+- id: wiki-weapons-050
+  anchor: assassins_knife
+  section: Assassin's knife
+  kind: sentence
+  quote: 2 uses, cooldown 5s.
+- id: wiki-weapons-051
+  anchor: zaroks_axe
+  section: Zarok's axe
+  kind: label
+  quote: EquippableUsable
+- id: wiki-weapons-052
+  anchor: zaroks_axe
+  section: Zarok's axe
+  kind: sentence
+  quote: Hits a nearby contestant for 5 HP at full health, rising to 25 HP as your health drops.
+- id: wiki-weapons-053
+  anchor: zaroks_axe
+  section: Zarok's axe
+  kind: sentence
+  quote: Single use.
+- id: wiki-weapons-054
+  anchor: huge_machete
+  section: Huge machete
+  kind: label
+  quote: Equippable
+- id: wiki-weapons-055
+  anchor: huge_machete
+  section: Huge machete
+  kind: sentence
+  quote: Only admins can give it out.
+- id: wiki-weapons-056
+  anchor: huge_machete
+  section: Huge machete
+  kind: sentence
+  quote: Hits a nearby contestant for 10 HP.
+- id: wiki-weapons-057
+  anchor: huge_machete
+  section: Huge machete
+  kind: sentence
+  quote: 10 uses, cooldown 5s.
+- id: wiki-weapons-058
+  anchor: long_sword
+  section: Long sword
+  kind: label
+  quote: Equippable
+- id: wiki-weapons-059
+  anchor: long_sword
+  section: Long sword
+  kind: sentence
+  quote: Hits a contestant within 10m (33ft) for 10 HP.
+- id: wiki-weapons-060
+  anchor: long_sword
+  section: Long sword
+  kind: sentence
+  quote: 3 uses, cooldown 10s.

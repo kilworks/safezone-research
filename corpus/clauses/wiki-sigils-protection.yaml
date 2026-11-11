@@ -1,0 +1,95 @@
+page: https://iceposeidon.com/safezone/wiki/sigils/protection
+snapshot: '2026-11-11'
+sha256: 88b256a0940ed883b67b2ece35df3b10addcadd1a7e2afcc34a7088658721c6c
+title: Sigil of Protection
+clauses:
+- id: wiki-sigils-protection-001
+  anchor: null
+  section: Sigil of Protection
+  kind: sentence
+  quote: Hard to kill, hard to heal.
+- id: wiki-sigils-protection-002
+  anchor: null
+  section: Sigil of Protection
+  kind: label
+  quote: Max HP
+- id: wiki-sigils-protection-003
+  anchor: null
+  section: Sigil of Protection
+  kind: label
+  quote: 100 HP
+- id: wiki-sigils-protection-004
+  anchor: null
+  section: Sigil of Protection
+  kind: label
+  quote: Slots
+- id: wiki-sigils-protection-005
+  anchor: null
+  section: Sigil of Protection
+  kind: label
+  quote: '3'
+- id: wiki-sigils-protection-006
+  anchor: null
+  section: Sigil of Protection
+  kind: label
+  quote: Immune to
+- id: wiki-sigils-protection-007
+  anchor: null
+  section: Sigil of Protection
+  kind: label
+  quote: Poison, drones, missiles, C4, landmines, airstrikes, gunships
+- id: wiki-sigils-protection-008
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Immune to poison, drones, missiles, C4, landmines, trapped gifts, airstrikes and their fire, gunship bombs and Protection retribution.
+- id: wiki-sigils-protection-009
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Still takes zone, unsafe circle, robot, weapon, fake chest, tear gas, zombie, bleeding, cyclops and bounty damage.
+- id: wiki-sigils-protection-010
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: A drone, missile, C4 or landmine hit earns one blood token, and an airstrike or gunship hit earns 1, but only when your own immunity blocks it.
+- id: wiki-sigils-protection-011
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: A nuke hit earns twenty when your damage cut applies.
+- id: wiki-sigils-protection-012
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: A hit already blocked by something else earns nothing.
+- id: wiki-sigils-protection-013
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Nukes deal 50% less damage to you.
+- id: wiki-sigils-protection-014
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Place a landmine where you stand once every 2h.
+- id: wiki-sigils-protection-015
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: It deals 15 HP to everyone within 10m (33ft) when another contestant or a zombie steps in, and kills every zombie in range.
+- id: wiki-sigils-protection-016
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Potions heal you 50% less.
+- id: wiki-sigils-protection-017
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Bandages last 1.1x as long.
+- id: wiki-sigils-protection-018
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: 'Retribution: when you die, everyone within 30m (98ft) of you takes 20 HP.'

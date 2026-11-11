@@ -1,0 +1,60 @@
+page: https://iceposeidon.com/safezone/wiki/poison
+snapshot: '2026-11-11'
+sha256: 9159a0637c5094fe3032cc69ebd97a7eadf4305aecb17070660f6c7cc2849540
+title: Poison
+clauses:
+- id: wiki-poison-001
+  anchor: null
+  section: Poison
+  kind: sentence
+  quote: Poison damages you for 1 HP every 1min 30s.
+- id: wiki-poison-002
+  anchor: null
+  section: Poison
+  kind: sentence
+  quote: Getting poisoned again resets the timer, it doesn't stack.
+- id: wiki-poison-003
+  anchor: null
+  section: Poison
+  kind: sentence
+  quote: Poison ends only when it has done all its damage, or if it is cured.
+- id: wiki-poison-004
+  anchor: null
+  section: Poison
+  kind: sentence
+  quote: You can be poisoned by a Poison dart or a Fake gravestone.
+- id: wiki-poison-005
+  anchor: null
+  section: Poison
+  kind: label
+  quote: 'Poison can be cured by: Anti poison, Healing healing, or God''s Fruit'
+- id: wiki-poison-006
+  anchor: immunity
+  section: Immunity
+  kind: label
+  quote: 'Protection sigil: fully immune'
+- id: wiki-poison-007
+  anchor: immunity
+  section: Immunity
+  kind: sentence
+  quote: 'Anti poison: no new poison while it lasts.'
+- id: wiki-poison-008
+  anchor: immunity
+  section: Immunity
+  kind: sentence
+  quote: 'Reality Shield: no new poison while you stand inside it.'
+- id: wiki-poison-009
+  anchor: immunity
+  section: Immunity
+  kind: label
+  quote: Sleeping in your own Sleeping Bag
+- id: wiki-poison-010
+  anchor: immunity
+  section: Immunity
+  kind: label
+  quote: A Shield or a Safety bubble does not stop you from being poisoned, but blocks the poison damage
+- id: wiki-poison-011
+  anchor: immunity
+  section: Immunity
+  kind: sentence
+  quote: A Mirror forcefield turns a Poison Dart or a fake gravestone back on the attacker.

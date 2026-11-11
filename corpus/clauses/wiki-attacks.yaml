@@ -1,0 +1,440 @@
+page: https://iceposeidon.com/safezone/wiki/attacks
+snapshot: '2026-11-11'
+sha256: 716d64f5ade323b0c320f3068c13254951e66dc37ed6986f01f4823243fc2475
+title: Attacks
+clauses:
+- id: wiki-attacks-001
+  anchor: emp
+  section: EMP
+  kind: sentence
+  quote: While a contestant's EMP is active, viewers cannot send missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes or bounties.
+- id: wiki-attacks-002
+  anchor: emp
+  section: EMP
+  kind: sentence
+  quote: It destroys viewer missiles and nukes in the air, and airstrikes and gunships already in play, fire and falling bombs included.
+- id: wiki-attacks-003
+  anchor: emp
+  section: EMP
+  kind: sentence
+  quote: It does not remove a cyclops, a bounty, tear gas or zombies already on the map.
+- id: wiki-attacks-004
+  anchor: missile
+  section: Missile
+  kind: sentence
+  quote: Viewers aim it at a point inside a safe zone.
+- id: wiki-attacks-005
+  anchor: missile
+  section: Missile
+  kind: sentence
+  quote: It lands 3min later at a random spot near that point.
+- id: wiki-attacks-006
+  anchor: missile
+  section: Missile
+  kind: sentence
+  quote: The whole blast stays within 100m (328ft) of the aim point.
+- id: wiki-attacks-007
+  anchor: missile
+  section: Missile
+  kind: sentence
+  quote: Everyone within 25m (82ft) of where it lands takes 10 HP.
+- id: wiki-attacks-008
+  anchor: missile
+  section: Missile
+  kind: sentence
+  quote: The Protection sigil is immune.
+- id: wiki-attacks-009
+  anchor: missile
+  section: Missile
+  kind: sentence
+  quote: A Flak jacket blocks it.
+- id: wiki-attacks-010
+  anchor: missile
+  section: Missile
+  kind: sentence
+  quote: An EMP destroys it in the air.
+- id: wiki-attacks-011
+  anchor: nuke
+  section: Nuke
+  kind: sentence
+  quote: Viewers aim it at a point inside a safe zone.
+- id: wiki-attacks-012
+  anchor: nuke
+  section: Nuke
+  kind: sentence
+  quote: It lands exactly there after 1min.
+- id: wiki-attacks-013
+  anchor: nuke
+  section: Nuke
+  kind: sentence
+  quote: Admins can also launch it.
+- id: wiki-attacks-014
+  anchor: nuke
+  section: Nuke
+  kind: sentence
+  quote: An admin nuke flies for 5min unless the admin sets its flight time, damage and radius.
+- id: wiki-attacks-015
+  anchor: nuke
+  section: Nuke
+  kind: sentence
+  quote: Everyone within 100m (328ft) takes 20 HP, unless an admin set other numbers.
+- id: wiki-attacks-016
+  anchor: nuke
+  section: Nuke
+  kind: sentence
+  quote: The Protection sigil is not immune, but takes 50% less.
+- id: wiki-attacks-017
+  anchor: nuke
+  section: Nuke
+  kind: sentence
+  quote: A Flak jacket, a Shield, a Safety bubble, a Reality Shield or sleeping in your own Sleeping Bag blocks it.
+- id: wiki-attacks-018
+  anchor: nuke
+  section: Nuke
+  kind: sentence
+  quote: An EMP destroys a viewer nuke in the air.
+- id: wiki-attacks-019
+  anchor: horde
+  section: Horde
+  kind: sentence
+  quote: 50 zombies appear in the safe zones for 20min.
+- id: wiki-attacks-020
+  anchor: tear-gas
+  section: Tear gas
+  kind: sentence
+  quote: The buyer picks where a 25m (82ft) cloud appears in a safe zone.
+- id: wiki-attacks-021
+  anchor: tear-gas
+  section: Tear gas
+  kind: sentence
+  quote: It stays for 10min.
+- id: wiki-attacks-022
+  anchor: tear-gas
+  section: Tear gas
+  kind: sentence
+  quote: The edge of the cloud must be at least 20m (66ft) from every contestant.
+- id: wiki-attacks-023
+  anchor: tear-gas
+  section: Tear gas
+  kind: sentence
+  quote: Anyone inside loses 2 HP every 10s.
+- id: wiki-attacks-024
+  anchor: tear-gas
+  section: Tear gas
+  kind: sentence
+  quote: It kills zombies inside it.
+- id: wiki-attacks-025
+  anchor: tear-gas
+  section: Tear gas
+  kind: sentence
+  quote: A Gas mask blocks it.
+- id: wiki-attacks-026
+  anchor: tear-gas
+  section: Tear gas
+  kind: sentence
+  quote: Viewers cannot send tear gas while an EMP is active.
+- id: wiki-attacks-027
+  anchor: airstrike
+  section: Airstrike
+  kind: sentence
+  quote: The viewer picks the centre inside a safe zone and the direction.
+- id: wiki-attacks-028
+  anchor: airstrike
+  section: Airstrike
+  kind: sentence
+  quote: 20s later, everyone in the strip takes 5 HP.
+- id: wiki-attacks-029
+  anchor: airstrike
+  section: Airstrike
+  kind: sentence
+  quote: The strip then burns for 5min.
+- id: wiki-attacks-030
+  anchor: airstrike
+  section: Airstrike
+  kind: sentence
+  quote: Anyone inside loses 1 HP every 2s.
+- id: wiki-attacks-031
+  anchor: airstrike
+  section: Airstrike
+  kind: sentence
+  quote: A Shield blocks the fire.
+- id: wiki-attacks-032
+  anchor: airstrike
+  section: Airstrike
+  kind: sentence
+  quote: A Guardian angel and a Hazmat suit do not help.
+- id: wiki-attacks-033
+  anchor: airstrike
+  section: Airstrike
+  kind: sentence
+  quote: The Protection sigil is immune to the strike and its fire.
+- id: wiki-attacks-034
+  anchor: airstrike
+  section: Airstrike
+  kind: sentence
+  quote: A Flak jacket blocks the strike, but not the fire.
+- id: wiki-attacks-035
+  anchor: airstrike
+  section: Airstrike
+  kind: sentence
+  quote: An EMP removes the strike and its fire.
+- id: wiki-attacks-036
+  anchor: gunship
+  section: Gunship
+  kind: sentence
+  quote: The buyer gets a gunship for 5min.
+- id: wiki-attacks-037
+  anchor: gunship
+  section: Gunship
+  kind: sentence
+  quote: Its target circle sweeps around a random safe zone at 75m/s (167.77mph).
+- id: wiki-attacks-038
+  anchor: gunship
+  section: Gunship
+  kind: sentence
+  quote: The buyer drops bombs on the target circle, one every 10s.
+- id: wiki-attacks-039
+  anchor: gunship
+  section: Gunship
+  kind: sentence
+  quote: Each bomb lands 5s later and deals 10 HP to everyone within 25m (82ft).
+- id: wiki-attacks-040
+  anchor: gunship
+  section: Gunship
+  kind: sentence
+  quote: The Protection sigil is immune.
+- id: wiki-attacks-041
+  anchor: gunship
+  section: Gunship
+  kind: sentence
+  quote: A Flak jacket blocks one bomb.
+- id: wiki-attacks-042
+  anchor: gunship
+  section: Gunship
+  kind: sentence
+  quote: An EMP removes the gunship and its falling bombs.
+- id: wiki-attacks-043
+  anchor: emergency-airdrop
+  section: Emergency airdrop
+  kind: sentence
+  quote: 5 care packages fall within 10m (33ft) of a random point in the safe zones.
+- id: wiki-attacks-044
+  anchor: emergency-airdrop
+  section: Emergency airdrop
+  kind: sentence
+  quote: They land after 5min.
+- id: wiki-attacks-045
+  anchor: emergency-airdrop
+  section: Emergency airdrop
+  kind: sentence
+  quote: Each one holds a random item and is claimed like any other care package.
+- id: wiki-attacks-046
+  anchor: healing-circle
+  section: Healing circle
+  kind: sentence
+  quote: A 50m (164ft) circle appears at a random point in the safe zones.
+- id: wiki-attacks-047
+  anchor: healing-circle
+  section: Healing circle
+  kind: sentence
+  quote: 1min later, every living contestant inside heals 25 HP.
+- id: wiki-attacks-048
+  anchor: illusion
+  section: Illusion
+  kind: sentence
+  quote: For 10min, a copy of every living contestant walks around the safe zones at 1.4m/s (3.13mph).
+- id: wiki-attacks-049
+  anchor: illusion
+  section: Illusion
+  kind: sentence
+  quote: With fewer than 10 contestants alive, each one gets several copies, up to 30 in total.
+- id: wiki-attacks-050
+  anchor: illusion
+  section: Illusion
+  kind: sentence
+  quote: Copies look like real contestants.
+- id: wiki-attacks-051
+  anchor: illusion
+  section: Illusion
+  kind: sentence
+  quote: You never see copies of yourself.
+- id: wiki-attacks-052
+  anchor: illusion
+  section: Illusion
+  kind: sentence
+  quote: Thermal goggles show them as copies.
+- id: wiki-attacks-053
+  anchor: illusion
+  section: Illusion
+  kind: sentence
+  quote: Attacking a copy uses up your attack and pops the copy.
+- id: wiki-attacks-054
+  anchor: illusion
+  section: Illusion
+  kind: sentence
+  quote: Nobody is hurt.
+- id: wiki-attacks-055
+  anchor: illusion
+  section: Illusion
+  kind: sentence
+  quote: Any blast or staff area pops every copy inside it.
+- id: wiki-attacks-056
+  anchor: illusion
+  section: Illusion
+  kind: sentence
+  quote: Only one illusion can run at a time.
+- id: wiki-attacks-057
+  anchor: illusion
+  section: Illusion
+  kind: sentence
+  quote: The next one can start 30min after it ends.
+- id: wiki-attacks-058
+  anchor: bounty
+  section: Bounty
+  kind: sentence
+  quote: A random living contestant who has no bounty is marked.
+- id: wiki-attacks-059
+  anchor: bounty
+  section: Bounty
+  kind: sentence
+  quote: The marker follows them on the map.
+- id: wiki-attacks-060
+  anchor: bounty
+  section: Bounty
+  kind: sentence
+  quote: The first other contestant to stay within 5m (16ft) of them for 1min claims it.
+- id: wiki-attacks-061
+  anchor: bounty
+  section: Bounty
+  kind: sentence
+  quote: The hunter heals 10 HP and gets a random health potion.
+- id: wiki-attacks-062
+  anchor: bounty
+  section: Bounty
+  kind: sentence
+  quote: If their inventory is full, the potion drops at their feet.
+- id: wiki-attacks-063
+  anchor: bounty
+  section: Bounty
+  kind: sentence
+  quote: The marked contestant takes 10 HP.
+- id: wiki-attacks-064
+  anchor: bounty
+  section: Bounty
+  kind: sentence
+  quote: The bounty ends after 1h, or when the marked contestant dies.
+- id: wiki-attacks-065
+  anchor: cyclops
+  section: Giant cyclops
+  kind: sentence
+  quote: It has 200 HP and walks at 0.8m/s (1.79mph).
+- id: wiki-attacks-066
+  anchor: cyclops
+  section: Giant cyclops
+  kind: sentence
+  quote: Every 5s it hits the nearest contestant within 30m (98ft) for 10 HP.
+- id: wiki-attacks-067
+  anchor: cyclops
+  section: Giant cyclops
+  kind: sentence
+  quote: Every viewer can vote its direction while it is on the map, not only the buyer.
+- id: wiki-attacks-068
+  anchor: cyclops
+  section: Giant cyclops
+  kind: sentence
+  quote: The most voted direction wins every 5s.
+- id: wiki-attacks-069
+  anchor: cyclops
+  section: Giant cyclops
+  kind: sentence
+  quote: Contestants attack it with a bow, knife, long sword, Zarok's axe or machete within the weapon's range, or with a drone from anywhere.
+- id: wiki-attacks-070
+  anchor: cyclops
+  section: Giant cyclops
+  kind: sentence
+  quote: 'All damage hurts it: weapons, drones, C4, landmines, staffs, nukes, missiles, airstrikes, tear gas and gunship bombs.'
+- id: wiki-attacks-071
+  anchor: cyclops
+  section: Giant cyclops
+  kind: sentence
+  quote: Outside the safe zones it takes zone damage.
+- id: wiki-attacks-072
+  anchor: cyclops
+  section: Giant cyclops
+  kind: sentence
+  quote: When it dies, each contestant earns 1 blood token per damage they dealt to it.
+- id: wiki-attacks-073
+  anchor: cyclops
+  section: Giant cyclops
+  kind: sentence
+  quote: Damage from viewer items earns nothing.
+- id: wiki-attacks-074
+  anchor: cyclops
+  section: Giant cyclops
+  kind: sentence
+  quote: If the zone kills it, nobody earns anything.
+- id: wiki-attacks-075
+  anchor: cyclops
+  section: Giant cyclops
+  kind: sentence
+  quote: It cannot attack into or out of a smoke bomb cloud.
+- id: wiki-attacks-076
+  anchor: cyclops
+  section: Giant cyclops
+  kind: sentence
+  quote: Weapons and drones cannot hit it inside one unless you hold Thermal goggles, but blasts and damage areas still hurt it.
+- id: wiki-attacks-077
+  anchor: cyclops
+  section: Giant cyclops
+  kind: sentence
+  quote: Only one cyclops can be on the map at a time.
+- id: wiki-attacks-078
+  anchor: cyclops
+  section: Giant cyclops
+  kind: sentence
+  quote: The next one can come 3h after it dies.
+- id: wiki-attacks-079
+  anchor: care-package
+  section: Care package and crates
+  kind: sentence
+  quote: A care package drops a random item at a random point in the safe zones.
+- id: wiki-attacks-080
+  anchor: care-package
+  section: Care package and crates
+  kind: sentence
+  quote: It has a 3% chance to land within 5m (16ft) of a Trolling contestant instead.
+- id: wiki-attacks-081
+  anchor: care-package
+  section: Care package and crates
+  kind: sentence
+  quote: A crate holds an item bought by a viewer.
+- id: wiki-attacks-082
+  anchor: care-package
+  section: Care package and crates
+  kind: sentence
+  quote: It looks like every other crate until someone opens it.
+- id: wiki-attacks-083
+  anchor: gods-fruit
+  section: God's Fruit
+  kind: sentence
+  quote: Only admins launch it.
+- id: wiki-attacks-084
+  anchor: gods-fruit
+  section: God's Fruit
+  kind: sentence
+  quote: It lands after 5min, exactly where it is aimed.
+- id: wiki-attacks-085
+  anchor: gods-fruit
+  section: God's Fruit
+  kind: sentence
+  quote: Everyone within 100m (328ft) heals 20 HP and is cured of poison, even at full HP.
+- id: wiki-attacks-086
+  anchor: reality-shield
+  section: Reality Shield
+  kind: sentence
+  quote: Placed by admins.
+- id: wiki-attacks-087
+  anchor: reality-shield
+  section: Reality Shield
+  kind: sentence
+  quote: Everyone within 30m (98ft) is immune to all damage, zombies and new poison.

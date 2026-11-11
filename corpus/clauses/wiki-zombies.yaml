@@ -1,0 +1,105 @@
+page: https://iceposeidon.com/safezone/wiki/zombies
+snapshot: '2026-11-11'
+sha256: fe4001582e8d536808b3a40c3be4937c7d9459f5d53be44598f64535c39b296c
+title: Zombies
+clauses:
+- id: wiki-zombies-001
+  anchor: null
+  section: Zombies
+  kind: sentence
+  quote: Zombies roam the map, chase contestants and drain their HP.
+- id: wiki-zombies-002
+  anchor: null
+  section: Zombies
+  kind: sentence
+  quote: They chase the nearest valid contestant, at any distance, at 1.4m/s (3.13mph) and drain 1 HP from any contestants within 5m (16ft) every 10s.
+- id: wiki-zombies-003
+  anchor: null
+  section: Zombies
+  kind: sentence
+  quote: Each zombie can drain at most 30 HP from each contestant.
+- id: wiki-zombies-004
+  anchor: null
+  section: Zombies
+  kind: sentence
+  quote: Zombies have a 10% chance to break one of your health potions, and a 40% chance to destroy crafted items.
+- id: wiki-zombies-005
+  anchor: sources
+  section: Where zombies come from
+  kind: sentence
+  quote: 'Horde: viewers release 50 zombies at random points in the safe zones.'
+- id: wiki-zombies-006
+  anchor: sources
+  section: Where zombies come from
+  kind: sentence
+  quote: Horde zombies have no owner.
+- id: wiki-zombies-007
+  anchor: sources
+  section: Where zombies come from
+  kind: sentence
+  quote: 'Summon: a Necromancy contestant summons a zombie where they stand, up to 3 times every 6h.'
+- id: wiki-zombies-008
+  anchor: sources
+  section: Where zombies come from
+  kind: sentence
+  quote: 'Death: when any contestant dies, every living Necromancy contestant gets a zombie within 10m (33ft) of themselves.'
+- id: wiki-zombies-009
+  anchor: sources
+  section: Where zombies come from
+  kind: sentence
+  quote: 'Horde bonus: when a horde is released, every living Necromancy contestant also gets 5 zombies where they stand.'
+- id: wiki-zombies-010
+  anchor: guard-zombies
+  section: Guard Zombies
+  kind: sentence
+  quote: When a contestant dies within 50m (164ft) of a Necromancy contestant, a guard zombie appears 10m (33ft) from the gravestone.
+- id: wiki-zombies-011
+  anchor: guard-zombies
+  section: Guard Zombies
+  kind: sentence
+  quote: Guard zombies drain 2 HP every 5s from everyone within 10m (33ft), up to 30 HP per contestant.
+- id: wiki-zombies-012
+  anchor: deaths
+  section: How zombies die
+  kind: sentence
+  quote: A zombie disappears when its time runs out.
+- id: wiki-zombies-013
+  anchor: deaths
+  section: How zombies die
+  kind: sentence
+  quote: 'Blasts kill every zombie inside them: C4, landmines, missiles, nukes, airstrikes, gunship bombs and tear gas.'
+- id: wiki-zombies-014
+  anchor: deaths
+  section: How zombies die
+  kind: sentence
+  quote: A zombie that walks within range of a Landmine sets it off.
+- id: wiki-zombies-015
+  anchor: deaths
+  section: How zombies die
+  kind: sentence
+  quote: Zombies do not set off C4.
+- id: wiki-zombies-016
+  anchor: deaths
+  section: How zombies die
+  kind: sentence
+  quote: An Ingenuity Zombie Killer kills the next ten zombies that come within 10m (33ft) of its owner.
+- id: wiki-zombies-017
+  anchor: deaths
+  section: How zombies die
+  kind: sentence
+  quote: It has no time limit.
+- id: wiki-zombies-018
+  anchor: defence
+  section: Zombie Protection
+  kind: sentence
+  quote: A Shield, a Safety bubble, a Reality Shield or sleeping in your own Sleeping Bag makes you immune.
+- id: wiki-zombies-019
+  anchor: defence
+  section: Zombie Protection
+  kind: sentence
+  quote: 'Zombie repellent: use it and zombies ignore you for 20min.'
+- id: wiki-zombies-020
+  anchor: defence
+  section: Zombie Protection
+  kind: sentence
+  quote: An Ingenuity Zombie Killer also stops zombies draining you until it has killed ten.

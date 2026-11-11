@@ -1,0 +1,90 @@
+page: https://iceposeidon.com/safezone/wiki/sigils/greed
+snapshot: '2026-11-11'
+sha256: 78be923c191837d263a34e17812603105f81808925be6d6974701e10da626931
+title: Sigil of Greed
+clauses:
+- id: wiki-sigils-greed-001
+  anchor: null
+  section: Sigil of Greed
+  kind: sentence
+  quote: Less HP, but a longer reach for chests and the power to steal.
+- id: wiki-sigils-greed-002
+  anchor: null
+  section: Sigil of Greed
+  kind: label
+  quote: Max HP
+- id: wiki-sigils-greed-003
+  anchor: null
+  section: Sigil of Greed
+  kind: label
+  quote: 90 HP
+- id: wiki-sigils-greed-004
+  anchor: null
+  section: Sigil of Greed
+  kind: label
+  quote: Slots
+- id: wiki-sigils-greed-005
+  anchor: null
+  section: Sigil of Greed
+  kind: label
+  quote: '3'
+- id: wiki-sigils-greed-006
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Your max HP is 10 HP lower.
+- id: wiki-sigils-greed-007
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: A successful steal earns five blood tokens, once per victim every 24 hours.
+- id: wiki-sigils-greed-008
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Fortress protection prevents stealing.
+- id: wiki-sigils-greed-009
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: You can claim chests and open or take crates from 2x as far away.
+- id: wiki-sigils-greed-010
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Each real chest you claim has a 25% chance to give you a Shield for 20min.
+- id: wiki-sigils-greed-011
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: No roll while you are vulnerable.
+- id: wiki-sigils-greed-012
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Each real chest you claim and each crate you take adds a blood token to your money bag.
+- id: wiki-sigils-greed-013
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: 'Steal: take one item of your choice from a contestant within 10m (33ft).'
+- id: wiki-sigils-greed-014
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Cooldown 30min.
+- id: wiki-sigils-greed-015
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Equipped weapons and worn Body Armor can be stolen.
+- id: wiki-sigils-greed-016
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Sleeping Bags cannot be stolen, but you can steal from a sleeping contestant.
+- id: wiki-sigils-greed-017
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: You cannot steal from Piety players.

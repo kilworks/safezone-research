@@ -1,0 +1,85 @@
+page: https://iceposeidon.com/safezone/wiki/sigils/endurance
+snapshot: '2026-11-11'
+sha256: f57ce85d2e2fa1f00415c47e1f815c707d0d2ddb51550475d88c4fcce41766f7
+title: Sigil of Endurance
+clauses:
+- id: wiki-sigils-endurance-001
+  anchor: null
+  section: Sigil of Endurance
+  kind: sentence
+  quote: Carry more and get supply drops, but go it alone.
+- id: wiki-sigils-endurance-002
+  anchor: null
+  section: Sigil of Endurance
+  kind: label
+  quote: Max HP
+- id: wiki-sigils-endurance-003
+  anchor: null
+  section: Sigil of Endurance
+  kind: label
+  quote: 100 HP
+- id: wiki-sigils-endurance-004
+  anchor: null
+  section: Sigil of Endurance
+  kind: label
+  quote: Slots
+- id: wiki-sigils-endurance-005
+  anchor: null
+  section: Sigil of Endurance
+  kind: label
+  quote: '10'
+- id: wiki-sigils-endurance-006
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Claiming one of your own care packages, which fall every 2h 30min, earns six blood tokens.
+- id: wiki-sigils-endurance-007
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Earn one more for every five item uses.
+- id: wiki-sigils-endurance-008
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: You have 10 inventory slots instead of 3.
+- id: wiki-sigils-endurance-009
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Every 2h 30min, a care package falls within 10m (33ft) of you.
+- id: wiki-sigils-endurance-010
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Anyone can claim it.
+- id: wiki-sigils-endurance-011
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: You cannot trade, loot gravestones, drop items or pick up dropped items.
+- id: wiki-sigils-endurance-012
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: You can still destroy items, claim chests and take crates.
+- id: wiki-sigils-endurance-013
+  anchor: endurance-drops
+  section: Endurance drops
+  kind: sentence
+  quote: Every 2h 30min, a care package falls within 10m (33ft) of each Endurance contestant.
+- id: wiki-sigils-endurance-014
+  anchor: endurance-drops
+  section: Endurance drops
+  kind: sentence
+  quote: It lands after 30s.
+- id: wiki-sigils-endurance-015
+  anchor: endurance-drops
+  section: Endurance drops
+  kind: sentence
+  quote: 'After it lands it is a normal care package: any contestant can claim it.'
+- id: wiki-sigils-endurance-016
+  anchor: endurance-drops
+  section: Endurance drops
+  kind: sentence
+  quote: It never holds a health potion or drone.

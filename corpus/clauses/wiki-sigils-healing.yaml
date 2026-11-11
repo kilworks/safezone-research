@@ -1,0 +1,80 @@
+page: https://iceposeidon.com/safezone/wiki/sigils/healing
+snapshot: '2026-11-11'
+sha256: 56ead2442cd28e8eef006eaf331f614234dd2178629585393373340592689dd5
+title: Sigil of Healing
+clauses:
+- id: wiki-sigils-healing-001
+  anchor: null
+  section: Sigil of Healing
+  kind: sentence
+  quote: Heal others and come back from the dead.
+- id: wiki-sigils-healing-002
+  anchor: null
+  section: Sigil of Healing
+  kind: label
+  quote: Max HP
+- id: wiki-sigils-healing-003
+  anchor: null
+  section: Sigil of Healing
+  kind: label
+  quote: 100 HP
+- id: wiki-sigils-healing-004
+  anchor: null
+  section: Sigil of Healing
+  kind: label
+  quote: Slots
+- id: wiki-sigils-healing-005
+  anchor: null
+  section: Sigil of Healing
+  kind: label
+  quote: '3'
+- id: wiki-sigils-healing-006
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Earn one blood token per heal and twenty per revive.
+- id: wiki-sigils-healing-007
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Healing also stops Deep Cut bleeding.
+- id: wiki-sigils-healing-008
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Heal a nearby contestant for 1 HP and cure their poison.
+- id: wiki-sigils-healing-009
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Cooldown 10min.
+- id: wiki-sigils-healing-010
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: You regenerate 1 HP every 30min, up to your max HP.
+- id: wiki-sigils-healing-011
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: Any living contestant within 10m (33ft) of your gravestone can revive you, up to 2 times.
+- id: wiki-sigils-healing-012
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: You can revive a contestant of any sigil, up to 10 times.
+- id: wiki-sigils-healing-013
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: A revive must happen within 10min of the death.
+- id: wiki-sigils-healing-014
+  anchor: rules
+  section: What it does
+  kind: sentence
+  quote: It costs the reviver 5 HP and brings the contestant back with 5 HP.
+- id: wiki-sigils-healing-015
+  anchor: rules
+  section: What it does
+  kind: label
+  quote: Revives
