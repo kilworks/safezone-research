@@ -1,0 +1,13 @@
+[project]
+name = "safezone-sim"
+version = "0.1.0"
+description = "Rules engine and scenario runner for the Safe Zone Codex"
+requires-python = ">=3.11"
+dependencies = ["numpy", "scipy", "pyyaml"]
+
+[project.optional-dependencies]
+test = ["pytest", "hypothesis"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
