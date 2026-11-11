@@ -47,6 +47,7 @@ def test_t0004_minimum_step_changes_outcome_only_for_tiny_hits():
     assert raised(halve) == [1]
     assert raised(lambda d: kick_defense(halve(d), "A")) == [1, 2, 3]
     assert raised(lambda d: kick_defense(halve(d), "B")) == [1]
+    assert raised(lambda d: pct_floor(d, 9, 20)) == [1, 2]  # U-0100 reading B: one final floor
 
 
 def test_t0005_piety_bonus_readings_coincide():

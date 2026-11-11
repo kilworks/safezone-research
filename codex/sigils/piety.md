@@ -4,6 +4,22 @@
 
 Rules that name the Sigil of Piety, as the wiki states them on 2026-11-11.
 
+### In plain words
+
+Think of Piety as the "potion hoarder" class. Every contestant picks a sigil, a kind of class, and Piety is built around health potions and the blood tokens you can turn them into. The base numbers are a little better than the default: 110 maximum HP and 3 inventory slots ([M-0500](../rules/sigil.md#m-0500)), and the Upgrade ladder can push that maximum to 220 instead of 200 ([M-0333](../rules/economy.md#m-0333)).
+
+The core loop is simple. Potions heal you 15% more, rounded down ([M-0505](../rules/healing.md#m-0505)), and all your potions share a single slot, up to 6 of them ([M-0506](../rules/items.md#m-0506)). That is a real convenience, because the potions never eat the other slots. Chests and crates are also bent toward this plan: each item chest you claim and each crate you take gives you a random health potion instead of the item inside ([M-0503](../rules/items.md#m-0503)). Merchant care packages are not changed ([M-0503](../rules/items.md#m-0503)).
+
+Piety also has a money side. You earn one blood token for every 5 HP healed from any source except revives ([M-0501](../rules/economy.md#m-0501)). Alternatively, you can convert potions into tokens instead of drinking them: 1, 2, 3 or 4 tokens for a small, medium, large or gigantic potion, and a converted potion counts as no healing ([M-0502](../rules/economy.md#m-0502)). So each potion is either HP now or money now, not both.
+
+What would you feel in play? Mostly steadiness: lots of healing on hand, little inventory juggling. You are also protected against one specific nuisance: Greed players cannot steal from you ([M-0507](../rules/sigil.md#m-0507)). One caution is that a fake chest still springs its trap on you, and you get no potion from it ([M-0504](../rules/items.md#m-0504)).
+
+Strongest points as the rules read: the stack of 6 ([M-0506](../rules/items.md#m-0506)), the theft immunity ([M-0507](../rules/sigil.md#m-0507)), and the flexibility of potion-or-token ([M-0502](../rules/economy.md#m-0502)).
+
+Weakest or least certain points: the rules for chests are only conditional, because the chest rules themselves are missing ([U-0015](../unknowns.md#u-0015)). It is open what size of potion you get ([U-0504](../unknowns.md#u-0504)), whether other care packages convert ([U-0505](../unknowns.md#u-0505)), and what happens when your stack is already full ([U-0506](../unknowns.md#u-0506)).
+
+Several numbers also depend on unsettled wording. If the token counter keeps leftover HP between heals, you earn more than if it rounds each heal on its own; this is open, [U-0500](../unknowns.md#u-0500). It is open whether campfires and healing circles count toward tokens ([U-0502](../unknowns.md#u-0502)). It is open whether the 15% bonus is counted when tokens are earned ([U-0501](../unknowns.md#u-0501)), and what exactly is rounded ([U-0503](../unknowns.md#u-0503)). Finally, the price of the Max HP upgrade for a Piety player is unclear when the Ingenuity-style surcharge is considered ([U-0322](../unknowns.md#u-0322)), and whether the purchase also heals you by 10 is open ([U-0331](../unknowns.md#u-0331)).
+
 This page gathers 10 rules (6 `DOCUMENTED`, 4 `CONDITIONAL`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
 
 ## Rules

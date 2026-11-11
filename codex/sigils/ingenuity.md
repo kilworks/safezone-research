@@ -4,6 +4,22 @@
 
 Rules that name the Sigil of Ingenuity, as the wiki states them on 2026-11-11.
 
+### In plain words
+
+Ingenuity is the "inventor" class. It starts a bit cramped, with 100 maximum HP, 2 inventory slots and 5 separate slots for unique crafts ([M-0515](../rules/sigil.md#m-0515)), and pays 10% more at the merchant, rounded up ([M-0516](../rules/economy.md#m-0516)). In return it gets tools nobody else has: crafting, trapped gifts and good eyes.
+
+Crafting combines two items into something new: Landmine plus Drone gives a Robot, Guardian angel plus Health potion gives a Campfire, Anti poison plus Health potion gives an Everything potion, Safety bubble plus Zombie repellent gives a Zombie killer, EMP plus Mirror forcefield gives a Black hole, and Shield plus Body armor gives a Fortress ([M-0522](../rules/items.md#m-0522)). Whether both ingredients are used up is open, [U-0517](../unknowns.md#u-0517). Crafts cannot be traded, stolen or looted, and zombie hits can destroy them with a 40% chance ([M-0520](../rules/items.md#m-0520)); how that roll works is open, [U-0518](../unknowns.md#u-0518).
+
+What you get: the Robot hits other players within 10 m for 1 HP every 2 seconds for ten minutes ([M-0523](../rules/weapons.md#m-0523)). The Campfire heals everyone within 10 m from one shared pool ([M-0525](../rules/healing.md#m-0525)). The Everything potion cures poison and heals by tier ([M-0526](../rules/healing.md#m-0526)). The Zombie killer kills the next ten zombies near you and stops their drain meanwhile ([M-0527](../rules/zombies.md#m-0527)). The Black hole destroys every chest and crate within 200 m ([M-0528](../rules/items.md#m-0528)). The Fortress protects people within 20 m for up to 30 HP and blocks Greed stealing ([M-0529](../rules/damage.md#m-0529)).
+
+Other tricks: attach a landmine or C4 to an item as a trapped gift, once every 16 hours ([M-0519](../rules/items.md#m-0519)); recognize fake chests and gravestones, see traps, and hack landmines or C4 within 50 m ([M-0517](../rules/sigil.md#m-0517)); combine two matching potions into the next size ([M-0518](../rules/items.md#m-0518)). Income comes from crafting, hacking and a few other actions ([M-0521](../rules/economy.md#m-0521)).
+
+Strongest as written: the range of tools, and knowing about traps and fakes ([M-0517](../rules/sigil.md#m-0517)). Zombie drain is one thing it handles well, through the Zombie killer ([M-0527](../rules/zombies.md#m-0527)).
+
+Weakest: the cramped start ([M-0515](../rules/sigil.md#m-0515)), the surcharge ([M-0516](../rules/economy.md#m-0516)), and fragile crafts ([M-0520](../rules/items.md#m-0520)).
+
+What is unknown is a lot. Whether the surcharge hits the upgrade ladders is open, [U-0322](../unknowns.md#u-0322). Whether prices use exact or floating arithmetic changes some prices by one token, and this is open, [U-0006](../unknowns.md#u-0006). The wiki disagrees with itself about whether Shield and Sleeping Bag stop Robot damage ([M-0524](../rules/damage.md#m-0524), [C-0500](../unknowns.md#c-0500)). The Fortress pool may be shared or per person ([U-0524](../unknowns.md#u-0524)), and its lifetime is open ([U-0526](../unknowns.md#u-0526)). The Black hole may be instant or persistent ([U-0523](../unknowns.md#u-0523)). Hacking has no stated effect ([U-0514](../unknowns.md#u-0514)).
+
 This page gathers 24 rules (23 `CONDITIONAL`, 1 `UNKNOWN`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
 
 ## Rules
@@ -667,6 +683,8 @@ Label: `CONDITIONAL`. Sigils: ingenuity.
 - [M-0529](../rules/damage.md#m-0529) parameter `durability_hp`: 30
 - [M-0529](../rules/damage.md#m-0529) parameter `duration_s`: UNKNOWN, see [U-0526](../unknowns.md#u-0526)
 
+**Consequences:** [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md)
+
 **Interactions:** [M-0511](../rules/sigil.md#m-0511), [M-0522](../rules/items.md#m-0522)
 
 **Open questions:**
@@ -679,7 +697,7 @@ Notes ([M-0529](../rules/damage.md#m-0529)): Damage page: 'A fortress you stand 
 
 ## Simulation check
 
-No theorem or simulation covers this page yet.
+Theorems with tests in `sim/tests/`: [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md)
 
 ## Open questions
 

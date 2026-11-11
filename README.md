@@ -98,7 +98,7 @@ And three machines check the humans:
 
 - `tools/check_kb.py` refuses any quote that is not a **verbatim** substring of the wiki text, and any rule from an outdated snapshot.
 - `sim/tests/` turns each theorem into a test that checks **every** possible value (or one full period of a periodic formula, which is a proof).
-- A fresh adversarial reviewer attacked every theorem: 8 of 14 were upheld, 6 were broken and are labeled as such in [`theory/`](theory/) until fixed. Nothing is hidden.
+- A fresh adversarial reviewer attacked every theorem: 8 of 14 were upheld, 6 were broken, then corrected the same day; the corrections await a second review (see [`theory/`](theory/)). Nothing is hidden.
 
 ---
 

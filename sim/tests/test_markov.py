@@ -30,12 +30,37 @@ def test_t0014_capped_hp_means_certain_death():
         P = chain(M, p_hit, hit, p_heal, heal)
         t = expected_absorption(P)
         assert np.all(np.isfinite(t)) and np.all(t > 0)
-        # bound from the proof: q = p_hit, at most m = ceil(M / hit) consecutive hits kill
+        # bound from the proof: q = p_hit, at most m = ceil(M / hit) consecutive hits kill.
+        # shortcut: float inverses saturate near 1/eps (about 1e16), so for the two large chains this
+        # only checks finiteness; their exact values come from test_t0014_exact_value below.
         m = -(-M // hit)
         assert t.max() <= m / p_hit**m + 1e-6
-        # absorption probability after many steps tends to 1 even when healing dominates on average
-        dist = np.zeros(M + 1)
-        dist[M] = 1.0
-        for _ in range(200_000 // M):
-            dist = dist @ P
-        assert dist[0] > 0.0
+
+
+def test_t0014_absorption_tends_to_one():
+    P = chain(20, 0.2, 2, 0.7, 1)  # expected time about 1.7e4 steps
+    dist = np.zeros(21)
+    dist[20] = 1.0
+    dist = dist @ np.linalg.matrix_power(P, 2**18)  # 262144 steps
+    assert dist[0] > 0.99
+
+
+def test_t0014_exact_value():
+    # exact expected absorption time from full HP, rational Gaussian elimination (M = 20 keeps it fast)
+    from fractions import Fraction as F
+    M, ph, pl = 20, F(5, 100), F(1, 2)
+    A = [[F(0)] * M + [F(1)] for _ in range(M)]
+    for h in range(1, M + 1):
+        A[h - 1][h - 1] += 1
+        for to, p in ((h - 1, ph), (min(h + 5, M), pl), (h, 1 - ph - pl)):
+            if to > 0:
+                A[h - 1][to - 1] -= p
+    for i in range(M):
+        for j in range(i + 1, M):
+            if A[j][i]:
+                f = A[j][i] / A[i][i]
+                A[j] = [a - f * b for a, b in zip(A[j], A[i])]
+    x = [F(0)] * M
+    for i in range(M - 1, -1, -1):
+        x[i] = (A[i][M] - sum(A[i][j] * x[j] for j in range(i + 1, M))) / A[i][i]
+    assert 1e21 < x[-1] < 2e21  # the reviewer's exact value 1.35e21; the float inverse gave 2e16

@@ -1007,6 +1007,8 @@ Label: `CONDITIONAL`. Sigils: ingenuity.
 - [M-0529](../rules/damage.md#m-0529) parameter `durability_hp`: 30
 - [M-0529](../rules/damage.md#m-0529) parameter `duration_s`: UNKNOWN, see [U-0526](../unknowns.md#u-0526)
 
+**Consequences:** [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md)
+
 **Interactions:** [M-0511](../rules/sigil.md#m-0511), [M-0522](../rules/items.md#m-0522)
 
 **Open questions:**
@@ -1136,7 +1138,7 @@ Notes ([M-0643](../rules/damage.md#m-0643)): Order against the Kick live reducti
 
 ## Simulation check
 
-Theorems with tests in `sim/tests/`: [T-0001](../theorems/T-0001.md), [T-0002](../theorems/T-0002.md), [T-0003](../theorems/T-0003.md), [T-0004](../theorems/T-0004.md), [T-0008](../theorems/T-0008.md)
+Theorems with tests in `sim/tests/`: [T-0001](../theorems/T-0001.md), [T-0002](../theorems/T-0002.md), [T-0003](../theorems/T-0003.md), [T-0004](../theorems/T-0004.md), [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md)
 
 ## Open questions
 

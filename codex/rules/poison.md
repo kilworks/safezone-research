@@ -71,6 +71,8 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0171](../rules/poison.md#m-0171) reading B: `countdown := 90 s and damage_remaining := total`
 - [M-0171](../rules/poison.md#m-0171) parameter `total_hp`: UNKNOWN, see [U-0116](../unknowns.md#u-0116)
 
+**Consequences:** [T-0009](../theorems/T-0009.md)
+
 **Open questions:**
 
 - [U-0116](../unknowns.md#u-0116) (high): Poison 'Getting poisoned again resets the timer, it doesn't stack': does the reset only restart the 90 s countdown, or also restore the total damage still to be dealt? What is the total?
@@ -263,7 +265,7 @@ Label: `DOCUMENTED`. Sigils: all.
 
 ## Simulation check
 
-No theorem or simulation covers this page yet.
+Theorems with tests in `sim/tests/`: [T-0009](../theorems/T-0009.md)
 
 ## Open questions
 

@@ -1,6 +1,6 @@
 # 05. Survival processes: clocks and the capped-HP chain
 
-> **Adversarial review, 2026-11-11: T-0008, T-0009, T-0014 BROKEN, fixes pending.** T-0008: Hazmat with a delayed first tick gives a third value, 4h+3; the fortress clause ignores M-0529 (a fortress may block zone damage entirely). T-0009: (b) holds only if the first tick comes 90 s after (re)poisoning (U-0115 reading A); under a first tick at t=0 each re-poisoning ticks at once. The condition is the meaning of 'timer' in M-0171, not U-0116. T-0014: the proof stands, but the example value 2e16 was a floating-point saturation artifact of np.linalg.inv; the exact value, 2.75e104, is now computed with fractions and corrected below. test_markov.py does not test absorption tending to 1. Other theorems on this page were UPHELD.
+> **Adversarial review, 2026-11-11:** T-0008, T-0009, T-0013, T-0014 (example value and test) were found BROKEN by a fresh reviewer and corrected the same day (conditions added, values completed, tests extended). The corrections have not been re-reviewed yet. The other theorems on this page were UPHELD.
 
 Two kinds of results: deterministic clocks (how long a fixed damage source takes to kill or to reach its cap), and one structural theorem about HP capped at a maximum. Tests: `sim/tests/test_clocks.py`, `sim/tests/test_markov.py`.
 
@@ -12,21 +12,21 @@ Each clock assumes the source acts alone, with no healing and nothing that block
 
 Outside the safe zone a contestant loses 1 HP every 2 s after a 5 s grace (M-0101). When is the first tick (U-0003)?
 
-**Theorem T-0008.** From HP $h \ge 1$, death comes at $T_A(h) = 2h + 3$ s if the first tick lands at 5 s (reading A), or $T_B(h) = 2h + 5$ s if it lands at 7 s (reading B). From 100 HP: 203 s or 205 s; from 220 HP: 443 s or 445 s. With a Hazmat suit (each interval 2 s longer, M-0209; whether the first tick also moves is U-0205), the interval is 4 s and death comes at $4h + 1$ s or $4h + 5$ s.
+**Theorem T-0008.** From HP $h \ge 1$, death comes at $T_A(h) = 2h + 3$ s if the first tick lands at 5 s (reading A), or $T_B(h) = 2h + 5$ s if it lands at 7 s (reading B). From 100 HP: 203 s or 205 s; from 220 HP: 443 s or 445 s. With a Hazmat suit (each interval 2 s longer, M-0209; whether the first tick also moves is U-0205), the interval is 4 s and death comes at $4h + 1$ s (first tick at 5 s), $4h + 3$ s (first tick at 7 s, not moved by the suit) or $4h + 5$ s (first tick at 9 s).
 
 *Proof.* Ticks land at $t_1, t_1 + 2, \dots$; the $h$-th tick is at $t_1 + 2(h-1)$. With $t_1 = 5$ that is $2h + 3$; with $t_1 = 7$, $2h + 5$. Same with interval 4. $\square$
-*Consequences.* Being live on Kick changes nothing here: a 1 HP tick is unchanged under both readings of the Kick reduction (T-0002, T-0004). If zone ticks go through the pipeline (U-0002), a fortress and armor add $2(f + a)$ s by T-0007 (fresh armor: 30 s). A Shield does not help (M-0128).
+*Consequences.* Being live on Kick changes nothing here: a 1 HP tick is unchanged under both readings of the Kick reduction (T-0002, T-0004). If zone ticks go through the pipeline (U-0002), body armor adds $2a$ s by T-0007 (fresh armor: 30 s). A fortress may instead block zone damage outright (M-0529 reading C and the Ingenuity page say it protects "from zone damage"), so its effect is open. With several zones (U-0114) the clock may restart. A Shield does not help (M-0128).
 *Label:* `CONDITIONAL` on U-0003 (and U-0205 for the Hazmat line). *Test:* `test_t0008_zone_time_to_death`.
 
 ### T-0009: the poison clock, and a dead mechanic
 
 Poison deals 1 HP every 90 s (M-0170); "Getting poisoned again resets the timer, it doesn't stack" (M-0171); a Poison Dart poisons "for 20 HP over 30min" (M-0315).
 
-**Theorem T-0009.** (a) The dart's numbers agree with the poison page: 20 ticks at 90 s intervals end exactly at 1800 s = 30 min. (b) If re-poisoning restarts the 90 s tick clock, a contestant who is re-poisoned at least once every 89 s never takes any poison damage.
+**Theorem T-0009.** (a) The dart's numbers agree with the poison page: 20 ticks at 90 s intervals end exactly at 1800 s = 30 min. (b) If the first tick comes 90 s after each (re)poisoning (U-0115 reading A; both readings of M-0171 restart the 90 s countdown), a contestant who is re-poisoned at least once every 89 s never takes any poison damage.
 
 *Proof.* (a) Ticks at $90, 180, \dots, 1800$ s: 20 ticks, the last at 1800 s. (b) The next tick is due 90 s after the last restart; a restart every 89 s or less comes first every time. $\square$
-*Consequence.* Under reading "reset the tick clock", chaining Poison Darts or fake gravestones on the same target is worse than useless: each new poisoning delays the damage the previous one would have done. Under the other reading of U-0116 (the reset restores the total but keeps the tick schedule), chaining keeps the damage flowing. One observation of a re-poisoned contestant decides it.
-*Label:* (a) `DERIVED`; (b) `CONDITIONAL` on U-0116 and U-0115. *Test:* `test_t0009_poison_clock`.
+*Consequence.* Under reading "reset the tick clock", chaining Poison Darts or fake gravestones on the same target is worse than useless: each new poisoning delays the damage the previous one would have done. Under U-0115 reading B (first tick at once) each re-poisoning ticks immediately, and under reading C (a global 90 s grid) re-poisoning does not move the ticks: in both cases chaining keeps the damage flowing. One observation of a re-poisoned contestant decides it.
+*Label:* (a) and (b) `CONDITIONAL` on U-0115 reading A (under reading B the 20 ticks end at 1710 s, not 1800 s). *Test:* `test_t0009_poison_clock`.
 
 ### T-0010: zombie and guard-zombie caps
 
@@ -45,9 +45,9 @@ Poison deals 1 HP every 90 s (M-0170); "Getting poisoned again resets the timer,
 
 ### T-0013: walking away from a zombie
 
-Zombies move at 1.4 m/s (M-0440) and drain within 5 m. A contestant moving straight away at $v > 1.4$ m/s from distance $r_0 \le 5$ m leaves drain range after $(5 - r_0)/(v - 1.4)$ s, in a straight-line pursuit model. At a brisk 2 m/s from contact, that is 8.3 s, before the first 10 s tick (under the reading that the first tick comes one interval after contact). Below 1.4 m/s a zombie always catches up, and it chases "at any distance": a stationary contestant is always reached.
+Regular zombies move at 1.4 m/s (M-0440) and drain within 5 m. Guard zombies drain within 10 m (M-0449) and are not covered here. A contestant moving straight away at $v > 1.4$ m/s from distance $r_0 \le 5$ m leaves drain range after $(5 - r_0)/(v - 1.4)$ s, in a straight-line pursuit model. At a brisk 2 m/s from contact, that is 8.3 s, before the first 10 s tick (under the reading that the first tick comes one interval after contact). Below 1.4 m/s a zombie that keeps chasing catches up. It chases the nearest valid contestant "at any distance" (U-0424) until its time runs out (M-0450, U-0403), so a stationary contestant is reached unless the zombie expires or picks someone nearer first.
 
-*Label:* `CONDITIONAL` on U-0425 (tick timing); the pursuit model is a simplification (straight line, no obstacles), not a rule. *Test:* `test_t0013_zombie_escape` checks the arithmetic only.
+*Label:* `CONDITIONAL` on U-0425 (tick timing), U-0424 and U-0403; the pursuit model is a simplification (straight line, no obstacles), not a rule. *Test:* `test_t0013_zombie_escape` checks the arithmetic only.
 
 ## 5.2 HP capped at a maximum: death is certain, and the question is when
 

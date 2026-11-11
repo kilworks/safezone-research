@@ -1,6 +1,6 @@
 # 01. The hit pipeline
 
-> **Adversarial review, 2026-11-11: T-0007 BROKEN, fixes pending.** T-0007: also needs U-0102 (1 durability per HP absorbed), U-0103 reading A, and the fortress reading of M-0529 (30 HP shared versus per contestant); counterexample under U-0103 B: hits=[1], f=30 loses 1, not 0. The '12 of 12' mutation claim has no committed test. Other theorems on this page were UPHELD.
+> **Adversarial review, 2026-11-11:** T-0007 were found BROKEN by a fresh reviewer and corrected the same day (conditions added, values completed, tests extended). The corrections have not been re-reviewed yet. The other theorems on this page were UPHELD.
 
 The damage page says: "Every hit goes through these steps in order." (M-0117). This file writes each step as a map on (damage, defender state), states what the composition does, and lists what the text leaves open.
 
@@ -19,7 +19,7 @@ $$
 | 3 | $\rho$ mirror | M-0120, M-0135 | if the defender has a Mirror forcefield and the source is reflectable, the defender takes 0 and the whole hit, before any reduction, goes to the attacker | Mirror used up | U-0005: does the reflected hit run the attacker's own pipeline? |
 | 4 | $R$ reductions | M-0121, M-0122 | $R(d) = r_{\text{Kick}}(h_P(d))$, with $h_P(d) = \lfloor d/2 \rfloor$ for a nuke on a Protection contestant, else $d$; $r_{\text{Kick}} = R_A$ or $R_B$ if the defender is live, else identity | none | U-0001 (reading A or B), U-0100 (where the rounding sits) |
 | 5 | $\mu$ minimum | M-0123 | $\mu(d) = \max(d, 1)$ for a hit that got through steps 1 and 3 | none | U-0002 (which sources are hits), U-0103 |
-| 6 | $F$ fortress | M-0124 | $F(d) = d - \min(d, f)$, with $f$ the remaining durability of a fortress the defender stands within | $f \leftarrow f - \min(d, f)$, shared by everyone in range, "whoever built it" | U-0102 (several fortresses) |
+| 6 | $F$ fortress | M-0124, M-0529 | $F(d) = d - \min(d, f)$, with $f$ the remaining durability of a fortress the defender stands within | $f \leftarrow f - \min(d, f)$, shared by everyone in range, "whoever built it" | U-0102 (several fortresses) |
 | 7 | $A$ armor | M-0125 | $A(d) = d - \min(d, a)$, with $a$ the armor's remaining durability (15 new, M-0217) | $a \leftarrow a - \min(d, a)$; armor breaks at 0 | U-0101 (does the excess of the breaking hit pass?) |
 
 The arithmetic of steps 2 and 4 is settled in `theory/02-rounding-and-arithmetic.md`: T-0001 (single reading of the bonus), T-0002 (two readings of the reduction), T-0003 (order of halving and Kick reduction), T-0004 (when the minimum matters).
@@ -33,11 +33,11 @@ The arithmetic of steps 2 and 4 is settled in `theory/02-rounding-and-arithmetic
 
 *Proof.* By induction on $j$. Each layer absorbs $\min(x, \text{remaining})$ and passes the rest, so after any prefix the fortress has absorbed $\min(S_j, f)$ and the armor $\min(\max(S_j - f, 0), a)$: if the claim holds after $j-1$ hits, the $j$-th hit first fills what is left of the fortress, then what is left of the armor, then reaches HP, which is exactly the claim for $S_j = S_{j-1} + x_j$. $\square$
 
-*Consequence.* Under reading A, the order and size of the hits do not matter: a fresh body armor (15) plus a full fortress (30) absorb the first 45 HP of damage of any kind they cover, whether it comes as one 45 HP hit or as forty-five 1 HP ticks. Under reading B (the excess of the hit that breaks the armor is lost), a large hit on nearly broken armor is partly wasted, so big hits lose value against armor: the defender saves at most one hit's overflow over the whole sequence.
+*Consequence.* Under reading A, the order and size of the hits do not matter: a fresh body armor (15, M-0217) plus a full fortress (30, M-0529) absorb the first 45 HP of damage of any kind they cover, whether it comes as one 45 HP hit or as forty-five 1 HP ticks. Under reading B (the excess of the hit that breaks the armor is lost), a large hit on nearly broken armor is partly wasted, so big hits lose value against armor: the defender saves at most one hit's overflow over the whole sequence.
 
-*Caveats.* The fortress is shared with everyone within 20 m, so $f$ falls with other contestants' hits too. Armor enchantment changes $a$ over time (+10 up to 45, then -1 every 20 min down to 15, merchant page), which this theorem excludes. Whether 1 HP ticks reach steps 6 and 7 at all is U-0002. A trapped gift ignores body armor (items page), against the damage page's "Body Armor works on every kind of damage" (C-0102).
+*Caveats.* Under M-0529 reading A the fortress's 30 HP pool is shared with everyone within 20 m, so $f$ falls with other contestants' hits too; under reading B each protected contestant has their own 30 HP. Armor enchantment changes $a$ over time (+10 up to 45, then -1 every 20 min down to 15, merchant page), which this theorem excludes. Whether 1 HP ticks reach steps 6 and 7 at all is U-0002. A trapped gift ignores body armor (items page), against the damage page's "Body Armor works on every kind of damage" (C-0102).
 
-*Label:* `DERIVED` for the arithmetic; `CONDITIONAL` on U-0101 for the game. *Test:* `sim/tests/test_pipeline_theorems.py` (property test plus exhaustive check of all sequences of up to 3 hits of 1 to 12 HP).
+*Label:* `DERIVED` for the arithmetic. For the game it is `CONDITIONAL` on four readings at once: U-0101 reading A (the excess of a breaking hit passes on), M-0217 reading A and U-0102 (armor and fortress are depleting pools that lose 1 durability per HP absorbed), U-0103 reading A (every hit reaching step 6 is at least 1 HP), and M-0529 reading A (one shared fortress pool). Under U-0103 reading B the formula fails: a single 1 HP hit with $f = 30$ still costs 1 HP. *Test:* `sim/tests/test_pipeline_theorems.py` (property test plus exhaustive check of all sequences of up to 3 hits of 1 to 12 HP).
 
 ## What the pipeline does not say
 

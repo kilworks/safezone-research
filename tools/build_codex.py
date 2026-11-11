@@ -115,6 +115,11 @@ def linkify(text, prefix, family_of):
     return "\n".join(l if l.startswith(("#", "<a ")) else ID.sub(sub, l) for l in text.split("\n"))
 
 
+def plain(intros, key):
+    text = (intros or {}).get(key)
+    return f"\n\n### In plain words\n\n{text.strip()}" if text else ""
+
+
 def write(path, text, prefix, family_of):
     path.write_text(linkify(text, prefix, family_of), "utf-8", newline="\n")
 
@@ -122,6 +127,8 @@ def write(path, text, prefix, family_of):
 def main():
     mechs, unknowns, contras = load("mechanics"), load("unknowns"), load("contradictions")
     family_of = {m["id"]: m["family"] for m in mechs.values()}
+    ipath = CODEX / "intros.yaml"  # hand-written plain-language explanations, every fact tagged with its id
+    intros = yaml.safe_load(ipath.read_text("utf-8")) if ipath.exists() else {}
     contra_by_mech = defaultdict(set)
     for c in contras.values():
         for m in c.get("mechanics", []):
@@ -138,11 +145,11 @@ def main():
     for m in mechs.values():
         families[m["family"]].append(m)
     for fam, ms in sorted(families.items()):
-        intro = f"Rules of the `{fam}` family, as the wiki states them on 2026-11-11."
+        intro = f"Rules of the `{fam}` family, as the wiki states them on 2026-11-11." + plain(intros, f"family:{fam}")
         write(CODEX / "rules" / f"{fam}.md", page(f"Rules: {fam}", ms, unknowns, contra_by_mech, theorems_by_mech, intro), "../", family_of)
     for s in SIGILS:
         ms = [m for m in mechs.values() if s in m["sigils"]]
-        intro = f"Rules that name the Sigil of {s.capitalize()}, as the wiki states them on 2026-11-11."
+        intro = f"Rules that name the Sigil of {s.capitalize()}, as the wiki states them on 2026-11-11." + plain(intros, f"sigil:{s}")
         write(CODEX / "sigils" / f"{s}.md", page(f"Sigil of {s.capitalize()}", ms, unknowns, contra_by_mech, theorems_by_mech, intro), "../", family_of)
     for tid, (fname, body, _) in sorted(thms.items()):
         write(CODEX / "theorems" / f"{tid}.md", 

@@ -23,6 +23,7 @@ def test_t0008_zone_time_to_death():
     for h in range(1, 221):  # Hazmat suit: interval 4 s (M-0209), first tick moved or not (U-0205)
         assert ticks_until_dead(h, 5, 4) == 4 * h + 1
         assert ticks_until_dead(h, 9, 4) == 4 * h + 5
+        assert ticks_until_dead(h, 7, 4) == 4 * h + 3  # first tick at 7 s, not moved by the suit
 
 
 def poison_damage(total, repoison_every, horizon, interval=90):
@@ -39,6 +40,7 @@ def poison_damage(total, repoison_every, horizon, interval=90):
 
 
 def test_t0009_poison_clock():
+    # all of this assumes U-0115 reading A: first tick 90 s after (re)poisoning
     assert poison_damage(20, 0, 1800) == 20  # dart: 20 HP over 30 min = 20 ticks at 90 s
     assert poison_damage(20, 0, 1799) == 19
     for k in range(1, 90):

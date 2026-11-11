@@ -4,6 +4,20 @@
 
 Rules that name the Sigil of Greed, as the wiki states them on 2026-11-11.
 
+### In plain words
+
+Greed is the "thief and collector" class. It trades toughness for income: 90 maximum HP, 10 lower than the base, with 3 inventory slots ([M-0508](../rules/sigil.md#m-0508)). The idea is to be the person who takes what others have and grabs more than the usual share from chests.
+
+The signature move is Steal. You take one item of your choice from a contestant within 10 m (33 ft); equipped weapons and worn Body Armor can be taken, Sleeping Bags cannot, but you can steal from someone who is asleep ([M-0509](../rules/sigil.md#m-0509)). A successful steal earns five blood tokens, once per victim every 24 hours, and the cooldown is 30 minutes ([M-0510](../rules/economy.md#m-0510)). So the play is to move through a crowd, taking from different people.
+
+The second half is chests. You can claim chests and open or take crates from twice as far away ([M-0512](../rules/sigil.md#m-0512)). Each real chest you claim or crate you take adds a blood token to your money bag ([M-0514](../rules/economy.md#m-0514)). Each real chest you claim also has a 25% chance to give you a Shield for 20 minutes, with no roll while you are vulnerable ([M-0513](../rules/items.md#m-0513)).
+
+In practice you would feel like a pickpocket with a small steady paycheck, and a slightly fragile body ([M-0508](../rules/sigil.md#m-0508)).
+
+Limits that the rules state clearly: you cannot steal from Piety players ([M-0507](../rules/sigil.md#m-0507)), and Fortress protection prevents stealing ([M-0511](../rules/sigil.md#m-0511)). Those are the things Greed is weak against, and the 90 HP ([M-0508](../rules/sigil.md#m-0508)) is a plain cost.
+
+Where it is uncertain: all the chest and crate numbers depend on chest rules that the wiki no longer has ([U-0015](../unknowns.md#u-0015)), including the base range that is doubled ([U-0510](../unknowns.md#u-0510)). It is open whether the 24 hour limit caps only the payout or the steals themselves ([U-0507](../unknowns.md#u-0507)). It is open when the 30 minute cooldown starts ([U-0508](../unknowns.md#u-0508)). It is open what happens if you steal with a full inventory or take armor while already wearing some ([U-0509](../unknowns.md#u-0509)). It is open whether the money bag is the ordinary balance or a separate store ([U-0512](../unknowns.md#u-0512)), and what happens if a chest Shield rolls while you already have one ([U-0511](../unknowns.md#u-0511)). For Fortress, how long it lasts and whether it can move is open ([U-0526](../unknowns.md#u-0526)).
+
 This page gathers 8 rules (2 `DOCUMENTED`, 6 `CONDITIONAL`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
 
 ## Rules

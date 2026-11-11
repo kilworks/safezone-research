@@ -614,6 +614,8 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0338](../rules/weapons.md#m-0338) parameter `staff_bonus_radius_m`: 10
 - [M-0338](../rules/weapons.md#m-0338) parameter `staff_enchant_uses`: 5
 
+**Consequences:** [T-0001](../theorems/T-0001.md)
+
 **Open questions:**
 
 - [U-0317](../unknowns.md#u-0317) (medium): What does 'Poison Dart ... +10 damage for two uses' mean for a damage-over-time item?
@@ -662,7 +664,7 @@ Notes ([M-0523](../rules/weapons.md#m-0523)): 'other players' excludes the owner
 
 ## Simulation check
 
-No theorem or simulation covers this page yet.
+Theorems with tests in `sim/tests/`: [T-0001](../theorems/T-0001.md)
 
 ## Open questions
 

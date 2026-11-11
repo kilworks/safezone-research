@@ -4,6 +4,20 @@
 
 Rules that name the Sigil of Death, as the wiki states them on 2026-11-11.
 
+### In plain words
+
+Death is the "grave robber" class. Its stats are the plain ones, 100 maximum HP and 3 inventory slots ([M-0602](../rules/sigil.md#m-0602)), and it gets stronger as other people die. The player who picks it is basically betting that the event will produce many bodies.
+
+The central action is robbing gravestones. Within 10 m (33 ft) you can rob a gravestone to heal 5% of your max HP, and even empty gravestones can be robbed; being the first to loot an item or blood tokens from one also counts as robbing it ([M-0611](../rules/sigil.md#m-0611)). Each gravestone can be robbed once, and a robbed gravestone can never be revived ([M-0612](../rules/revival.md#m-0612)). This is the part other players will feel: if a Death player robs your gravestone, or is the first to loot it, you can never be revived ([M-0116](../rules/revival.md#m-0116)).
+
+Death also feeds on eliminations. You earn ten blood tokens per gravestone robbed and one whenever another contestant dies ([M-0610](../rules/economy.md#m-0610)). When a contestant dies within 50 m (164 ft) of you, you heal 1 HP for every contestant eliminated so far, them included ([M-0613](../rules/sigil.md#m-0613)). Later in the event this is capped: when 20% or fewer of the contestants are alive, that heal cannot take you above 60% of your max HP ([M-0614](../rules/sigil.md#m-0614)).
+
+For defense there is the Death Ward: the first hit from outside the circle is blocked, and you are protected for 2 minutes, with a 2 hour cooldown ([M-0615](../rules/sigil.md#m-0615)). The same ability is worded more narrowly on the damage page ([M-0137](../rules/damage.md#m-0137)).
+
+Strongest as written: the permanent harm done to a victim's revival chances ([M-0116](../rules/revival.md#m-0116)), and healing that grows with the death count ([M-0613](../rules/sigil.md#m-0613)). Weakest: the healing is capped late in the event ([M-0614](../rules/sigil.md#m-0614)), and it needs bodies nearby ([M-0613](../rules/sigil.md#m-0613)).
+
+What is unknown: the rounding of the 5% heal when max HP is not 100 ([U-0600](../unknowns.md#u-0600)). It is open what counts as "eliminated so far" and whether a revived contestant still counts ([U-0601](../unknowns.md#u-0601)), how the 20% threshold is computed ([U-0602](../unknowns.md#u-0602)), and what the cap does if you are already above 60% ([U-0603](../unknowns.md#u-0603)). It is open whether the token for another death has a distance limit ([U-0605](../unknowns.md#u-0605)). For the Ward, it is open when the cooldown starts ([U-0604](../unknowns.md#u-0604), [U-0119](../unknowns.md#u-0119)) and whether it covers unsafe circles as well as the outside of the circle ([U-0604](../unknowns.md#u-0604)).
+
 This page gathers 9 rules (3 `DOCUMENTED`, 6 `CONDITIONAL`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
 
 ## Rules

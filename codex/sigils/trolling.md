@@ -4,6 +4,20 @@
 
 Rules that name the Sigil of Trolling, as the wiki states them on 2026-11-11.
 
+### In plain words
+
+Trolling is the "prankster" class. It has plain stats, 100 maximum HP and 3 inventory slots ([M-0530](../rules/sigil.md#m-0530)), and its whole identity is making other people's lives annoying, then getting paid for the damage ([M-0531](../rules/economy.md#m-0531)).
+
+The pranks come in three kinds. The fake chest looks like a care package; you can place up to 2 per rolling hour and each vanishes after 1 hour ([M-0532](../rules/items.md#m-0532)). Whoever claims it takes 5 HP damage and cannot claim chests for 1 hour, while you heal 5 HP; a Shield blocks the damage but not the lockout ([M-0533](../rules/damage.md#m-0533)). If the victim has a Mirror, the reflected fake chest locks you out instead ([M-0238](../rules/items.md#m-0238)). The fake gravestone copies the gravestone of an eliminated contestant, and each contestant who tries to loot it is poisoned once; you place one, then wait 2 hours ([M-0534](../rules/items.md#m-0534)). The unsafe circle is a 50 m (164 ft) circle you can place inside a safe zone for 20 minutes, with a 2 hour cooldown, and nobody alive, you included, may be inside when you place it ([M-0535](../rules/zone.md#m-0535)).
+
+Inside the circle, anyone also inside a safe zone takes 1 HP every 2 seconds with no grace period ([M-0536](../rules/damage.md#m-0536)). After the first hit, they also lose one random defense item or unique craft every five seconds while they stay inside and are not immune ([M-0537](../rules/items.md#m-0537)). Guardian angel, Safety bubble, Reality Shield and Death Ward block it, and a Shield does not ([M-0538](../rules/damage.md#m-0538)).
+
+You also earn blood tokens: one per 5 HP dealt to other players and one per crate destroyed ([M-0531](../rules/economy.md#m-0531)). And viewers' care packages have a 3% chance to land next to you instead ([M-0539](../rules/viewer.md#m-0539)).
+
+Strongest as written: the circle turns a safe zone into a place where defenses wear away ([M-0537](../rules/items.md#m-0537)), and the fake chest costs victims both HP and chest access ([M-0533](../rules/damage.md#m-0533)). Weakest: it has no stat bonus ([M-0530](../rules/sigil.md#m-0530)), and a victim with the right defense simply ignores the circle ([M-0538](../rules/damage.md#m-0538)).
+
+What is unknown: the wiki disagrees on whether a Reality Shield stops the circle ([M-0538](../rules/damage.md#m-0538), [C-0502](../unknowns.md#c-0502)). It also disagrees about whether the 3% diversion covers any care package or only viewer ones ([M-0432](../rules/viewer.md#m-0432), [C-0403](../unknowns.md#c-0403)). Open questions include whether 50 m is a radius or a diameter ([U-0535](../unknowns.md#u-0535)), whether the cooldown starts at placement ([U-0536](../unknowns.md#u-0536)), what exactly counts as damage dealt for tokens ([U-0529](../unknowns.md#u-0529)), whether fake chest placements slide or refill ([U-0530](../unknowns.md#u-0530)), and what the lockout also blocks ([U-0531](../unknowns.md#u-0531)).
+
 This page gathers 12 rules (2 `DOCUMENTED`, 9 `CONDITIONAL`, 1 `UNKNOWN`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
 
 ## Rules

@@ -491,6 +491,8 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0217](../rules/items.md#m-0217) domain: pool integer 0..15
 - [M-0217](../rules/items.md#m-0217) parameter `capacity`: 15 HP
 
+**Consequences:** [T-0007](../theorems/T-0007.md)
+
 **Interactions:** [M-0218](../rules/items.md#m-0218), [M-0219](../rules/items.md#m-0219)
 
 **Open questions:**
@@ -1603,7 +1605,7 @@ Notes ([M-0624](../rules/items.md#m-0624)): Disables looting gravestones: an End
 
 ## Simulation check
 
-Theorems with tests in `sim/tests/`: [T-0008](../theorems/T-0008.md), [T-0012](../theorems/T-0012.md)
+Theorems with tests in `sim/tests/`: [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md), [T-0012](../theorems/T-0012.md)
 
 ## Open questions
 

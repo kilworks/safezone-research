@@ -1,0 +1,88 @@
+sigil:piety: |
+  Think of Piety as the "potion hoarder" class. Every contestant picks a sigil, a kind of class, and Piety is built around health potions and the blood tokens you can turn them into. The base numbers are a little better than the default: 110 maximum HP and 3 inventory slots (M-0500), and the Upgrade ladder can push that maximum to 220 instead of 200 (M-0333).
+
+  The core loop is simple. Potions heal you 15% more, rounded down (M-0505), and all your potions share a single slot, up to 6 of them (M-0506). That is a real convenience, because the potions never eat the other slots. Chests and crates are also bent toward this plan: each item chest you claim and each crate you take gives you a random health potion instead of the item inside (M-0503). Merchant care packages are not changed (M-0503).
+
+  Piety also has a money side. You earn one blood token for every 5 HP healed from any source except revives (M-0501). Alternatively, you can convert potions into tokens instead of drinking them: 1, 2, 3 or 4 tokens for a small, medium, large or gigantic potion, and a converted potion counts as no healing (M-0502). So each potion is either HP now or money now, not both.
+
+  What would you feel in play? Mostly steadiness: lots of healing on hand, little inventory juggling. You are also protected against one specific nuisance: Greed players cannot steal from you (M-0507). One caution is that a fake chest still springs its trap on you, and you get no potion from it (M-0504).
+
+  Strongest points as the rules read: the stack of 6 (M-0506), the theft immunity (M-0507), and the flexibility of potion-or-token (M-0502).
+
+  Weakest or least certain points: the rules for chests are only conditional, because the chest rules themselves are missing (U-0015). It is open what size of potion you get (U-0504), whether other care packages convert (U-0505), and what happens when your stack is already full (U-0506).
+
+  Several numbers also depend on unsettled wording. If the token counter keeps leftover HP between heals, you earn more than if it rounds each heal on its own; this is open, U-0500. It is open whether campfires and healing circles count toward tokens (U-0502). It is open whether the 15% bonus is counted when tokens are earned (U-0501), and what exactly is rounded (U-0503). Finally, the price of the Max HP upgrade for a Piety player is unclear when the Ingenuity-style surcharge is considered (U-0322), and whether the purchase also heals you by 10 is open (U-0331).
+sigil:greed: |
+  Greed is the "thief and collector" class. It trades toughness for income: 90 maximum HP, 10 lower than the base, with 3 inventory slots (M-0508). The idea is to be the person who takes what others have and grabs more than the usual share from chests.
+
+  The signature move is Steal. You take one item of your choice from a contestant within 10 m (33 ft); equipped weapons and worn Body Armor can be taken, Sleeping Bags cannot, but you can steal from someone who is asleep (M-0509). A successful steal earns five blood tokens, once per victim every 24 hours, and the cooldown is 30 minutes (M-0510). So the play is to move through a crowd, taking from different people.
+
+  The second half is chests. You can claim chests and open or take crates from twice as far away (M-0512). Each real chest you claim or crate you take adds a blood token to your money bag (M-0514). Each real chest you claim also has a 25% chance to give you a Shield for 20 minutes, with no roll while you are vulnerable (M-0513).
+
+  In practice you would feel like a pickpocket with a small steady paycheck, and a slightly fragile body (M-0508).
+
+  Limits that the rules state clearly: you cannot steal from Piety players (M-0507), and Fortress protection prevents stealing (M-0511). Those are the things Greed is weak against, and the 90 HP (M-0508) is a plain cost.
+
+  Where it is uncertain: all the chest and crate numbers depend on chest rules that the wiki no longer has (U-0015), including the base range that is doubled (U-0510). It is open whether the 24 hour limit caps only the payout or the steals themselves (U-0507). It is open when the 30 minute cooldown starts (U-0508). It is open what happens if you steal with a full inventory or take armor while already wearing some (U-0509). It is open whether the money bag is the ordinary balance or a separate store (U-0512), and what happens if a chest Shield rolls while you already have one (U-0511). For Fortress, how long it lasts and whether it can move is open (U-0526).
+sigil:ingenuity: |
+  Ingenuity is the "inventor" class. It starts a bit cramped, with 100 maximum HP, 2 inventory slots and 5 separate slots for unique crafts (M-0515), and pays 10% more at the merchant, rounded up (M-0516). In return it gets tools nobody else has: crafting, trapped gifts and good eyes.
+
+  Crafting combines two items into something new: Landmine plus Drone gives a Robot, Guardian angel plus Health potion gives a Campfire, Anti poison plus Health potion gives an Everything potion, Safety bubble plus Zombie repellent gives a Zombie killer, EMP plus Mirror forcefield gives a Black hole, and Shield plus Body armor gives a Fortress (M-0522). Whether both ingredients are used up is open, U-0517. Crafts cannot be traded, stolen or looted, and zombie hits can destroy them with a 40% chance (M-0520); how that roll works is open, U-0518.
+
+  What you get: the Robot hits other players within 10 m for 1 HP every 2 seconds for ten minutes (M-0523). The Campfire heals everyone within 10 m from one shared pool (M-0525). The Everything potion cures poison and heals by tier (M-0526). The Zombie killer kills the next ten zombies near you and stops their drain meanwhile (M-0527). The Black hole destroys every chest and crate within 200 m (M-0528). The Fortress protects people within 20 m for up to 30 HP and blocks Greed stealing (M-0529).
+
+  Other tricks: attach a landmine or C4 to an item as a trapped gift, once every 16 hours (M-0519); recognize fake chests and gravestones, see traps, and hack landmines or C4 within 50 m (M-0517); combine two matching potions into the next size (M-0518). Income comes from crafting, hacking and a few other actions (M-0521).
+
+  Strongest as written: the range of tools, and knowing about traps and fakes (M-0517). Zombie drain is one thing it handles well, through the Zombie killer (M-0527).
+
+  Weakest: the cramped start (M-0515), the surcharge (M-0516), and fragile crafts (M-0520).
+
+  What is unknown is a lot. Whether the surcharge hits the upgrade ladders is open, U-0322. Whether prices use exact or floating arithmetic changes some prices by one token, and this is open, U-0006. The wiki disagrees with itself about whether Shield and Sleeping Bag stop Robot damage (M-0524, C-0500). The Fortress pool may be shared or per person (U-0524), and its lifetime is open (U-0526). The Black hole may be instant or persistent (U-0523). Hacking has no stated effect (U-0514).
+sigil:trolling: |
+  Trolling is the "prankster" class. It has plain stats, 100 maximum HP and 3 inventory slots (M-0530), and its whole identity is making other people's lives annoying, then getting paid for the damage (M-0531).
+
+  The pranks come in three kinds. The fake chest looks like a care package; you can place up to 2 per rolling hour and each vanishes after 1 hour (M-0532). Whoever claims it takes 5 HP damage and cannot claim chests for 1 hour, while you heal 5 HP; a Shield blocks the damage but not the lockout (M-0533). If the victim has a Mirror, the reflected fake chest locks you out instead (M-0238). The fake gravestone copies the gravestone of an eliminated contestant, and each contestant who tries to loot it is poisoned once; you place one, then wait 2 hours (M-0534). The unsafe circle is a 50 m (164 ft) circle you can place inside a safe zone for 20 minutes, with a 2 hour cooldown, and nobody alive, you included, may be inside when you place it (M-0535).
+
+  Inside the circle, anyone also inside a safe zone takes 1 HP every 2 seconds with no grace period (M-0536). After the first hit, they also lose one random defense item or unique craft every five seconds while they stay inside and are not immune (M-0537). Guardian angel, Safety bubble, Reality Shield and Death Ward block it, and a Shield does not (M-0538).
+
+  You also earn blood tokens: one per 5 HP dealt to other players and one per crate destroyed (M-0531). And viewers' care packages have a 3% chance to land next to you instead (M-0539).
+
+  Strongest as written: the circle turns a safe zone into a place where defenses wear away (M-0537), and the fake chest costs victims both HP and chest access (M-0533). Weakest: it has no stat bonus (M-0530), and a victim with the right defense simply ignores the circle (M-0538).
+
+  What is unknown: the wiki disagrees on whether a Reality Shield stops the circle (M-0538, C-0502). It also disagrees about whether the 3% diversion covers any care package or only viewer ones (M-0432, C-0403). Open questions include whether 50 m is a radius or a diameter (U-0535), whether the cooldown starts at placement (U-0536), what exactly counts as damage dealt for tokens (U-0529), whether fake chest placements slide or refill (U-0530), and what the lockout also blocks (U-0531).
+sigil:death: |
+  Death is the "grave robber" class. Its stats are the plain ones, 100 maximum HP and 3 inventory slots (M-0602), and it gets stronger as other people die. The player who picks it is basically betting that the event will produce many bodies.
+
+  The central action is robbing gravestones. Within 10 m (33 ft) you can rob a gravestone to heal 5% of your max HP, and even empty gravestones can be robbed; being the first to loot an item or blood tokens from one also counts as robbing it (M-0611). Each gravestone can be robbed once, and a robbed gravestone can never be revived (M-0612). This is the part other players will feel: if a Death player robs your gravestone, or is the first to loot it, you can never be revived (M-0116).
+
+  Death also feeds on eliminations. You earn ten blood tokens per gravestone robbed and one whenever another contestant dies (M-0610). When a contestant dies within 50 m (164 ft) of you, you heal 1 HP for every contestant eliminated so far, them included (M-0613). Later in the event this is capped: when 20% or fewer of the contestants are alive, that heal cannot take you above 60% of your max HP (M-0614).
+
+  For defense there is the Death Ward: the first hit from outside the circle is blocked, and you are protected for 2 minutes, with a 2 hour cooldown (M-0615). The same ability is worded more narrowly on the damage page (M-0137).
+
+  Strongest as written: the permanent harm done to a victim's revival chances (M-0116), and healing that grows with the death count (M-0613). Weakest: the healing is capped late in the event (M-0614), and it needs bodies nearby (M-0613).
+
+  What is unknown: the rounding of the 5% heal when max HP is not 100 (U-0600). It is open what counts as "eliminated so far" and whether a revived contestant still counts (U-0601), how the 20% threshold is computed (U-0602), and what the cap does if you are already above 60% (U-0603). It is open whether the token for another death has a distance limit (U-0605). For the Ward, it is open when the cooldown starts (U-0604, U-0119) and whether it covers unsafe circles as well as the outside of the circle (U-0604).
+sigil:endurance: |
+  Endurance is the "pack mule on a schedule" class. Its big difference is space: 10 inventory slots instead of 3 (M-0620, M-0603), with the usual 100 maximum HP (M-0603). The slot upgrade ladder lets Endurance reach 20 slots, against 13 for the ordinary case (M-0332).
+
+  The second feature is a delivery that comes to you. Every 2h 30min, a care package falls within 10 m (33 ft) of each Endurance contestant, and it lands after 30 seconds (M-0621). It never holds a health potion or drone (M-0621). Anyone can claim it, but if you claim one of your own you earn six blood tokens (M-0622), plus one more for every five item uses (M-0623).
+
+  The price of all this is a set of limits. You cannot trade, loot gravestones, drop items or pick up dropped items; you can still destroy items, claim chests and take crates (M-0624). So Endurance cannot join the item economy between players, and cannot loot the dead.
+
+  What a player would feel: a roomy bag, a steady drip of income on a fixed rhythm, and a sense of being slightly outside the social part of the game. The exposed moment is the landing, because a package is open to anyone once it lands (M-0621), so the package marks a spot where other people may come.
+
+  Strongest as written: the slot count (M-0603) and the predictable income (M-0622). Weakest: the lack of trading and looting (M-0624), and the fact that your package can be claimed by others (M-0621).
+
+  What is unknown: when the clock for the 2h 30min starts, and which packages count as yours (U-0607). It is open whether it is a fixed clock or restarts after a claim (M-0621, U-0607). It is open when the extra token for item uses is paid (U-0608) and what counts as an item use (U-0609). It is open whether the trade ban also stops you receiving offers or gifts (U-0610). The slot ladder prices and counters are open too (U-0329).
+sigil:necromancy: |
+  Necromancy is the "zombie master" class. Its stats are the plain ones, 100 maximum HP and 3 inventory slots (M-0604), but it is the only sigil that makes zombies work for it. Zombies are normally a threat to everyone; for a Necromancer they are a power source, and the sigil makes you fully immune to zombies (M-0636).
+
+  Zombies come to you in four ways. You can summon one where you stand, up to 3 times every 6 hours (M-0631). When any contestant dies, a zombie of yours appears within 10 m (33 ft) of you (M-0632). When viewers send a horde, you also get 5 zombies of your own (M-0634). And when a contestant dies within 50 m (164 ft) of you, a guard zombie stands 10 m from their gravestone for 1 hour, draining 2 HP every 5 seconds from anyone within 10 m, up to 30 HP per contestant (M-0633).
+
+  The zombies you own drain 1 HP every 10 seconds from contestants within 5 m (16 ft), up to 30 HP per contestant for each zombie, and the HP goes to you (M-0635). You also earn one blood token for each zombie of yours that appears and one per HP your zombies drain (M-0630).
+
+  In play you would feel like a slow, spreading menace: the more people die, the more zombies you collect, and the more HP you steal from anyone who walks near them. Your bodyguards are the zombies themselves, because nobody else is immune (M-0636).
+
+  Strongest as written: the immunity (M-0636) and the way the sigil scales with deaths (M-0632, M-0633). Weakest: it depends on events, deaths, hordes and a limited summon (M-0631), and it has no stat bonus (M-0604).
+
+  What is unknown: how long summoned, death and horde-bonus zombies live (U-0612), and whether the summon limit is a rolling window, fixed blocks or charges (U-0428, U-0611). It is open whether guard zombies and horde-bonus zombies send drained HP to you and count for tokens (U-0614), and whether the HP gained is what the victim really lost (U-0613). It is open whether the 30 HP cap is per zombie lifetime, per encounter or per day (U-0008), and whether the immunity covers other Necromancers' zombies (U-0616). Whether guard zombies chase or stay put is open (U-0429).

@@ -1,6 +1,6 @@
 # 02. Rounding and arithmetic
 
-> **Adversarial review, 2026-11-11: T-0004 BROKEN, fixes pending.** T-0004: the {1,2,3} row assumes two successive floors; under U-0100 (one final floor, floor(9d/20)) it is {1,2}. That row is CONDITIONAL on U-0100. Other theorems on this page were UPHELD.
+> **Adversarial review, 2026-11-11:** T-0004 were found BROKEN by a fresh reviewer and corrected the same day (conditions added, values completed, tests extended). The corrections have not been re-reviewed yet. The other theorems on this page were UPHELD.
 
 The wiki states its percentage rules in words: "10% more, rounded down", "50% less", "15% more, rounded down", "10% higher, rounded up". This file turns each into exact integer arithmetic, proves which phrasings have a single meaning and which have two, and measures where code written with floating-point numbers would drift from the exact rule.
 
@@ -18,7 +18,7 @@ Both follow from the definition of the floor as the largest integer not above it
 
 *Rule:* M-0119 (pipeline step 2), quote "deal 10% more, rounded down".
 *Proof.* $11d/10 = d + d/10$ and $d$ is an integer, so the lemma gives the result. $\square$
-*Consequence.* "10% more, rounded down" means the same whether the total or the bonus is rounded. The bonus is $\lfloor d/10 \rfloor$, so it adds nothing to hits of 9 HP or less: a live attacker's bow (5 HP), knife (5 HP), fake chest (5 HP) and Zarok's axe at full health (5 HP) do exactly what an offline attacker's do. A 10 HP hit becomes 11, a 20 HP hit 22.
+*Consequence.* "10% more, rounded down" means the same whether the total or the bonus is rounded. The bonus is $\lfloor d/10 \rfloor$, so it adds nothing to hits of 9 HP or less: a live attacker's bow (5 HP), knife (5 HP), fake chest (5 HP) and Zarok's axe at full health (5 HP) do exactly what an offline attacker's do. A 10 HP hit becomes 11, a 20 HP hit 22. These are base values: an enchanted weapon deals +10 (M-0338), so an enchanted bow hits for 15 and a live attacker's for 16.
 *Label:* `DERIVED`. *Test:* `test_t0001_kick_attack_single_reading`, every $d$ in $0..10000$.
 
 ## T-0002: the defender's Kick reduction has two readings
@@ -55,12 +55,13 @@ The damage page orders step 4 as: halve a nuke for a Protection contestant, roun
 |---|---|---|
 | live on Kick | $d = 1$ | never |
 | Protection, nuke, offline | $d = 1$ | $d = 1$ |
-| Protection, nuke, live | $d \in \{1,2,3\}$ | $d = 1$ |
+| Protection, nuke, live, two successive floors (U-0100 reading A) | $d \in \{1,2,3\}$ | $d = 1$ |
+| Protection, nuke, live, one final floor $\lfloor 9d/20 \rfloor$ (U-0100 reading B) | $d \in \{1,2\}$ | not defined by U-0100 B |
 | any other | never | never |
 
-*Proof.* The minimum changes the outcome iff the reduced value is 0 while $d \ge 1$. $R_A(d) = 0 \iff 9d < 10 \iff d = 1$; $R_B(d) = d - \lfloor d/10 \rfloor \ge 1$ for $d \ge 1$; $H(d) = 0 \iff d = 1$; $R_A(H(d)) = 0 \iff H(d) \le 1 \iff d \le 3$; $R_B(H(d)) = 0 \iff H(d) = 0 \iff d = 1$. $\square$
-*Consequence.* The minimum step matters only for hits of 3 HP or less. No documented attack deals that little except the 1 HP ticks (zone, unsafe circle, robot, poison, bleeding, airstrike fire, zombie drain) and the 2 HP ticks (guard zombies, tear gas). Whether those ticks are "hits" that go through the pipeline is U-0002. Whether fortress and armor can still absorb that last HP is U-0103.
-*Label:* `DERIVED`; in-game relevance `CONDITIONAL` on U-0002. *Test:* `test_t0004_minimum_step_changes_outcome_only_for_tiny_hits`.
+*Proof.* The minimum changes the outcome iff the reduced value is 0 while $d \ge 1$. $R_A(d) = 0 \iff 9d < 10 \iff d = 1$; $R_B(d) = d - \lfloor d/10 \rfloor \ge 1$ for $d \ge 1$; $H(d) = 0 \iff d = 1$; $R_A(H(d)) = 0 \iff H(d) \le 1 \iff d \le 3$; with one final floor, $\lfloor 9d/20 \rfloor = 0 \iff 9d < 20 \iff d \le 2$; $R_B(H(d)) = 0 \iff H(d) = 0 \iff d = 1$. $\square$
+*Consequence.* The minimum step matters only for hits of 3 HP or less. No documented attack deals that little except the 1 HP ticks (zone, unsafe circle, robot, poison, bleeding, airstrike fire, zombie drain) and the 2 HP ticks (guard zombies, tear gas), plus Wizard staff ticks if a staff area ticks (U-0010). Whether those ticks are "hits" that go through the pipeline is U-0002. Whether fortress and armor can still absorb that last HP is U-0103.
+*Label:* `DERIVED` for each row as stated; which row applies is `CONDITIONAL` on U-0100, and the in-game relevance on U-0002. *Test:* `test_t0004_minimum_step_changes_outcome_only_for_tiny_hits`.
 
 ## T-0005: Piety's potion bonus has a single reading
 

@@ -4,6 +4,20 @@
 
 Rules that name the Sigil of Endurance, as the wiki states them on 2026-11-11.
 
+### In plain words
+
+Endurance is the "pack mule on a schedule" class. Its big difference is space: 10 inventory slots instead of 3 ([M-0620](../rules/items.md#m-0620), [M-0603](../rules/sigil.md#m-0603)), with the usual 100 maximum HP ([M-0603](../rules/sigil.md#m-0603)). The slot upgrade ladder lets Endurance reach 20 slots, against 13 for the ordinary case ([M-0332](../rules/economy.md#m-0332)).
+
+The second feature is a delivery that comes to you. Every 2h 30min, a care package falls within 10 m (33 ft) of each Endurance contestant, and it lands after 30 seconds ([M-0621](../rules/items.md#m-0621)). It never holds a health potion or drone ([M-0621](../rules/items.md#m-0621)). Anyone can claim it, but if you claim one of your own you earn six blood tokens ([M-0622](../rules/economy.md#m-0622)), plus one more for every five item uses ([M-0623](../rules/economy.md#m-0623)).
+
+The price of all this is a set of limits. You cannot trade, loot gravestones, drop items or pick up dropped items; you can still destroy items, claim chests and take crates ([M-0624](../rules/items.md#m-0624)). So Endurance cannot join the item economy between players, and cannot loot the dead.
+
+What a player would feel: a roomy bag, a steady drip of income on a fixed rhythm, and a sense of being slightly outside the social part of the game. The exposed moment is the landing, because a package is open to anyone once it lands ([M-0621](../rules/items.md#m-0621)), so the package marks a spot where other people may come.
+
+Strongest as written: the slot count ([M-0603](../rules/sigil.md#m-0603)) and the predictable income ([M-0622](../rules/economy.md#m-0622)). Weakest: the lack of trading and looting ([M-0624](../rules/items.md#m-0624)), and the fact that your package can be claimed by others ([M-0621](../rules/items.md#m-0621)).
+
+What is unknown: when the clock for the 2h 30min starts, and which packages count as yours ([U-0607](../unknowns.md#u-0607)). It is open whether it is a fixed clock or restarts after a claim ([M-0621](../rules/items.md#m-0621), [U-0607](../unknowns.md#u-0607)). It is open when the extra token for item uses is paid ([U-0608](../unknowns.md#u-0608)) and what counts as an item use ([U-0609](../unknowns.md#u-0609)). It is open whether the trade ban also stops you receiving offers or gifts ([U-0610](../unknowns.md#u-0610)). The slot ladder prices and counters are open too ([U-0329](../unknowns.md#u-0329)).
+
 This page gathers 7 rules (2 `DOCUMENTED`, 5 `CONDITIONAL`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
 
 ## Rules
