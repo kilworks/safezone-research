@@ -3,7 +3,7 @@ M-0125:
     파이프라인 7단계: Body armor가 남은 피해를 파괴될 때까지 흡수함
   quotes:
   - >-
-    Armor
+    방어구 (Armor)
   - >-
     Body armor는 남은 피해를 파괴될 때까지 흡수합니다.
   readings:
@@ -36,7 +36,7 @@ M-0126:
     표의 Trapped gift 행에는 'Body armor' 항목이 없고, 아이템 페이지에는 'A trapped gift ignores it'라고 되어 있습니다: C-0102.
 M-0127:
   name: >-
-    Reality Shield와 Body armor 머리 문장 (뒤섞임)
+    Reality Shield와 Body armor 페이지 첫머리 문장 (뒤섞임)
   quotes:
   - >-
     Reality Shield 모든 종류의 피해를 막습니다. 모든 종류의 피해를 흡수합니다.
@@ -47,10 +47,10 @@ M-0127:
     이 문장은 스냅샷에서 깨져 있습니다 ('Reality Shield block every kind of damage. absorbs every kind of damage.'). 표에는 Reality Shield 열이 없습니다.
 M-0128:
   name: >-
-    Shield는 존, 언세이프 서클(unsafe circle), 로봇 피해를 막지 못하며, Safety bubble과 Reality Shield는 막음
+    Shield는 존, 언세이프 서클(unsafe circle), robot 피해를 막지 못하며, Safety bubble과 Reality Shield는 막음
   quotes:
   - >-
-    Shield는 존, 언세이프 서클(unsafe circle), 로봇 피해를 막지 못합니다.
+    Shield는 존, 언세이프 서클(unsafe circle), robot 피해를 막지 못합니다.
   - >-
     Safety bubble과 Reality Shield는 막습니다.
   readings:
@@ -97,10 +97,10 @@ M-0131:
     Tear gas 행과 일치합니다.
 M-0132:
   name: >-
-    Sleeping Bag 면역: 자신의 Sleeping Bag에서 15 m 이내이면 존, 언세이프 서클(unsafe circle), 로봇을 제외한 모든 피해에 면역
+    Sleeping Bag 면역: 자신의 Sleeping Bag에서 15 m 이내이면 존, 언세이프 서클(unsafe circle), robot을 제외한 모든 피해에 면역
   quotes:
   - >-
-    자신의 Sleeping Bag에서 15m (49ft) 이내에서 자고 있는 참가자는 존, 언세이프 서클(unsafe circle), 로봇 피해를 제외한 모든 피해에 면역입니다.
+    자신의 Sleeping Bag에서 15m (49ft) 이내에서 자고 있는 참가자는 존, 언세이프 서클(unsafe circle), robot 피해를 제외한 모든 피해에 면역입니다.
   readings:
     A: >-
       asleep이고 dist(self, own_bag) <= 15 m이면: {outside circle, unsafe circle, robot}을 제외한 모든 원천에 면역
@@ -110,7 +110,7 @@ M-0132:
     radius_m: >-
       15
   notes: >-
-    상인 페이지에는 65 s 지연과 flashbang이 추가되어 있고 존과 언세이프 서클(unsafe circle)만 제외합니다 (로봇 없음): C-0105. 해당 세 원천의 피해 표 행에는 명시된 대로 면역이 없습니다.
+    상인 페이지에는 65 s 지연과 flashbang이 추가되어 있고 존과 언세이프 서클(unsafe circle)만 제외합니다 (robot 없음): C-0105. 해당 세 원천의 피해 표 행에는 명시된 대로 면역이 없습니다.
 M-0133:
   name: >-
     폭발 범위에 서 있으면 자신의 C4와 landmine에 피해를 입음
@@ -121,7 +121,7 @@ M-0133:
     A: >-
       C4와 landmine에서는 attacker = defender가 허용됨; 타격은 파이프라인을 거침
   notes: >-
-    Mirror는 자신의 폭발물을 반사하지 않습니다 (M-0135).
+    Mirror는 자신의 폭발물을 절대 반사하지 않습니다 (M-0135).
 M-0134:
   name: >-
     Mirror forcefield는 처음 반사한 공격에서 소모됨
@@ -172,7 +172,7 @@ M-0137:
     cooldown_s: >-
       7200
   notes: >-
-    Death 시길 페이지는 ward를 다르게 서술합니다 (언세이프 서클(unsafe circle)을 추가함): C-0103. 시길 고유 메커니즘은 중복 기록하지 않았습니다.
+    Death 시길 페이지는 Death Ward를 다르게 서술합니다 (언세이프 서클(unsafe circle)을 추가함): C-0103. 시길 고유 메커니즘은 중복 기록하지 않았습니다.
 M-0140:
   name: >-
     피해 원천 'Outside the circle'과 이를 막는 수단

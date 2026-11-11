@@ -8,9 +8,9 @@
 
 아이템 계열은 도구 상자입니다. 무엇을 들 수 있는지, 각 아이템이 무엇을 하는지, 얼마나 오래 지속되는지를 다룹니다. 대부분은 방어이고, 몇 가지 요령이 더해집니다.
 
-먼저 공간입니다. 아이템은 최대 3개까지 들 수 있고, C4, Landmine, Arrow처럼 중첩되는 것도 있습니다 ([M-0200](../rules/items.md#m-0200), [M-0201](../rules/items.md#m-0201)). 동시에 활성화할 수 있는 아이템 효과는 최대 3개이며, 한계에 이르면 아이템은 거부되고 그대로 보유합니다 ([M-0203](../rules/items.md#m-0203), [M-0204](../rules/items.md#m-0204)). Shield, Guardian angel, Mirror forcefield, Anti poison 면역, Flak jacket, Gas mask, Zombie repellent, 소지 중인 Hazmat suit이 이 상한에 포함되고 ([M-0205](../rules/items.md#m-0205)), Safety bubble, 연막탄, 붕대, 조합품, 상인 업그레이드는 포함되지 않습니다 ([M-0206](../rules/items.md#m-0206)).
+먼저 공간입니다. 아이템은 최대 3개까지 들 수 있고, C4, Landmine, Arrow처럼 중첩되는 것도 있습니다 ([M-0200](../rules/items.md#m-0200), [M-0201](../rules/items.md#m-0201)). 동시에 활성화할 수 있는 아이템 효과는 최대 3개이며, 한계에 이르면 아이템은 거부되고 그대로 보유합니다 ([M-0203](../rules/items.md#m-0203), [M-0204](../rules/items.md#m-0204)). Shield, Guardian angel, Mirror forcefield, Anti poison 면역, Flak jacket, Gas mask, Zombie repellent, 소지 중인 Hazmat suit가 이 상한에 포함되고 ([M-0205](../rules/items.md#m-0205)), Safety bubble, 연막탄, 붕대, 조합품, 상인 업그레이드는 포함되지 않습니다 ([M-0206](../rules/items.md#m-0206)).
 
-방어 수단마다 전문 분야가 있습니다. Shield는 20분 동안 면역을 주지만 취약한 동안에는 사용할 수 없습니다 ([M-0215](../rules/items.md#m-0215)). Safety bubble은 안에 있는 모든 사람을 피해와 좀비에 면역으로 만들며 존 피해도 포함되고 ([M-0213](../rules/items.md#m-0213)), 지속 시간은 10분입니다 ([M-0212](../rules/items.md#m-0212)). Guardian angel은 10분 동안 존 피해에 대한 면역을 줍니다 ([M-0210](../rules/items.md#m-0210)). Mirror forcefield는 다음 공격을 공격자에게 반사하며 ([M-0235](../rules/items.md#m-0235)), 그것으로 소모됩니다 ([M-0134](../rules/items.md#m-0134)). Flak jacket은 다음 미사일, 핵, 공습 충격, 건쉽 폭탄을 막고 ([M-0130](../rules/items.md#m-0130)), Gas mask는 최루 가스를 막습니다 ([M-0131](../rules/items.md#m-0131)). Body armor는 일정량의 피해를 흡수합니다 ([M-0217](../rules/items.md#m-0217)). Sleeping Bag는 그 주변 15 m 이내에서 자는 사람을 보호합니다 ([M-0132](../rules/items.md#m-0132)).
+방어 수단마다 전문 분야가 있습니다. Shield는 20분 동안 면역을 주지만 취약한 동안에는 사용할 수 없습니다 ([M-0215](../rules/items.md#m-0215)). Safety bubble은 안에 있는 모든 사람을 피해와 좀비에 면역으로 만들며 존 피해도 포함되고 ([M-0213](../rules/items.md#m-0213)), 지속 시간은 10분입니다 ([M-0212](../rules/items.md#m-0212)). Guardian angel은 10분 동안 존 피해에 대한 면역을 줍니다 ([M-0210](../rules/items.md#m-0210)). Mirror forcefield는 다음 공격을 공격자에게 반사하며 ([M-0235](../rules/items.md#m-0235)), 그것으로 소모됩니다 ([M-0134](../rules/items.md#m-0134)). Flak jacket은 다음 미사일, 핵, 공습 충격, 건십 폭탄을 막고 ([M-0130](../rules/items.md#m-0130)), Gas mask는 최루 가스를 막습니다 ([M-0131](../rules/items.md#m-0131)). Body armor는 일정량의 피해를 흡수합니다 ([M-0217](../rules/items.md#m-0217)). Sleeping Bag은 그 주변 15 m 이내에서 자는 사람을 보호합니다 ([M-0132](../rules/items.md#m-0132)).
 
 요령: 섬광탄은 30 m 이내의 다른 모든 참가자를 30초 동안 눈멀게 하고 ([M-0244](../rules/items.md#m-0244)), 연막탄은 지도를 가리고 50 m 이내의 공격을 20분 동안 막습니다 ([M-0226](../rules/items.md#m-0226)). 열화상 고글은 연기를 투시하고 ([M-0231](../rules/items.md#m-0231)) 환영 복제본을 복제본으로 보여 줍니다 ([M-0232](../rules/items.md#m-0232)).
 
@@ -53,7 +53,7 @@
 
 <a id="m-0127"></a>
 
-### M-0127: Reality Shield와 Body armor 머리 문장 (뒤섞임)
+### M-0127: Reality Shield와 Body armor 페이지 첫머리 문장 (뒤섞임)
 
 라벨: `CONDITIONAL`. 시길: all.
 
@@ -118,14 +118,14 @@
 
 <a id="m-0132"></a>
 
-### M-0132: Sleeping Bag 면역: 자신의 Sleeping Bag에서 15 m 이내이면 존, 언세이프 서클(unsafe circle), 로봇을 제외한 모든 피해에 면역
+### M-0132: Sleeping Bag 면역: 자신의 Sleeping Bag에서 15 m 이내이면 존, 언세이프 서클(unsafe circle), robot을 제외한 모든 피해에 면역
 
 라벨: `CONDITIONAL`. 시길: all.
 
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0132](../rules/items.md#m-0132) `wiki-damage-067`: "A sleeping contestant within 15m (49ft) of their own Sleeping Bag is immune to all damage except zone, unsafe circle and robot damage." ([출처](https://iceposeidon.com/safezone/wiki/damage#notes))
-  - 번역: 자신의 Sleeping Bag에서 15m (49ft) 이내에서 자고 있는 참가자는 존, 언세이프 서클(unsafe circle), 로봇 피해를 제외한 모든 피해에 면역입니다.
+  - 번역: 자신의 Sleeping Bag에서 15m (49ft) 이내에서 자고 있는 참가자는 존, 언세이프 서클(unsafe circle), robot 피해를 제외한 모든 피해에 면역입니다.
 
 **형식 모델:**
 
@@ -139,7 +139,7 @@
 
 **모순:** [C-0104](../unknowns.md#c-0104)
 
-메모 ([M-0132](../rules/items.md#m-0132)): 상인 페이지에는 65 s 지연과 flashbang이 추가되어 있고 존과 언세이프 서클(unsafe circle)만 제외합니다 (로봇 없음): [C-0105](../unknowns.md#c-0105). 해당 세 원천의 피해 표 행에는 명시된 대로 면역이 없습니다.
+메모 ([M-0132](../rules/items.md#m-0132)): 상인 페이지에는 65 s 지연과 flashbang이 추가되어 있고 존과 언세이프 서클(unsafe circle)만 제외합니다 (robot 없음): [C-0105](../unknowns.md#c-0105). 해당 세 원천의 피해 표 행에는 명시된 대로 면역이 없습니다.
 
 <a id="m-0134"></a>
 
@@ -193,36 +193,36 @@
 **형식 모델:**
 
 - [M-0201](../rules/items.md#m-0201) 해석 A: `중첩 가능 = {C4, Landmines, Arrows}만 해당. 그 외 모든 아이템은 개당 한 칸을 차지함`
-- [M-0201](../rules/items.md#m-0201) 해석 B: `목록은 열려 있음('등'): 다른 아이템(mirror forcefield, Piety가 아닌 경우의 물약 등)도 중첩될 수 있음`
+- [M-0201](../rules/items.md#m-0201) 해석 B: `목록은 열려 있음('등'): 다른 아이템(mirror forcefield, Piety가 아닌 경우의 포션 등)도 중첩될 수 있음`
 - [M-0201](../rules/items.md#m-0201) 정의역: 아이템 종류. 중첩 크기: 무기 페이지에 따르면 C4/landmines는 5, arrows는 10
 
 **상호작용:** [M-0200](../rules/items.md#m-0200), [M-0202](../rules/items.md#m-0202), [M-0236](../rules/items.md#m-0236)
 
 **미해결 질문:**
 
-- [U-0200](../unknowns.md#u-0200) (보통): C4, landmine, 화살 외에 어떤 아이템이 한 슬롯에 중첩됩니까(Piety가 아닌 체력 물약, mirror forcefield, 기타)?
+- [U-0200](../unknowns.md#u-0200) (보통): C4, landmine, 화살 외에 어떤 아이템이 한 슬롯에 중첩됩니까(Piety가 아닌 체력 포션, mirror forcefield, 기타)?
 
 메모 ([M-0201](../rules/items.md#m-0201)): 중첩 크기는 아이템 페이지에 없습니다. 무기 페이지는 C4와 landmines에 5, 화살 묶음당 10을 제시합니다.
 
 <a id="m-0202"></a>
 
-### M-0202: Piety 체력 물약 6개 중첩
+### M-0202: Piety 체력 포션 6개 중첩
 
 라벨: `DOCUMENTED`. 시길: piety.
 
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0202](../rules/items.md#m-0202) `wiki-items-003`: "Piety contestants stack up to 6 health potions in one slot." ([출처](https://iceposeidon.com/safezone/wiki/items#inventory))
-  - 번역: Piety 참가자는 체력 물약을 한 칸에 최대 6개까지 중첩합니다.
+  - 번역: Piety 참가자는 체력 포션을 한 칸에 최대 6개까지 중첩합니다.
 
 **형식 모델:**
 
-- [M-0202](../rules/items.md#m-0202) 해석 A: `Piety 참가자의 모든 체력 물약이 한 칸을 공유하며, 개수 <= 6`
-- [M-0202](../rules/items.md#m-0202) 정의역: 물약 개수 0..6
+- [M-0202](../rules/items.md#m-0202) 해석 A: `Piety 참가자의 모든 체력 포션이 한 칸을 공유하며, 개수 <= 6`
+- [M-0202](../rules/items.md#m-0202) 정의역: 포션 개수 0..6
 
 **상호작용:** [M-0207](../rules/healing.md#m-0207)
 
-메모 ([M-0202](../rules/items.md#m-0202)): Piety 페이지와 같습니다(모든 체력 물약이 인벤토리 한 칸을 공유하며 최대 6개). 다른 참가자의 물약 중첩에 대해서는 아이템 페이지에 언급이 없습니다([U-0200](../unknowns.md#u-0200) 참조).
+메모 ([M-0202](../rules/items.md#m-0202)): Piety 페이지와 같습니다(모든 체력 포션이 인벤토리 한 칸을 공유하며 최대 6개). 다른 참가자의 포션 중첩에 대해서는 아이템 페이지에 언급이 없습니다([U-0200](../unknowns.md#u-0200) 참조).
 
 <a id="m-0203"></a>
 
@@ -263,7 +263,7 @@
 
 **미해결 질문:**
 
-- [U-0202](../unknowns.md#u-0202) (보통): 상한 목록에 명시되지 않은 효과는 어떻게 동작합니까: EMP(10min), Thermal goggles(소지), Body armor, Sleeping Bag, 체력 물약? 그리고 상한 상태에서 Hazmat suit을 주우면 어떻게 됩니까?
+- [U-0202](../unknowns.md#u-0202) (보통): 상한 목록에 명시되지 않은 효과는 어떻게 동작합니까: EMP(10min), Thermal goggles(소지), Body armor, Sleeping Bag, 체력 포션? 그리고 상한 상태에서 Hazmat suit을 주우면 어떻게 됩니까?
 
 메모 ([M-0204](../rules/items.md#m-0204)): Hazmat suit는 '휴대하는 동안' 효과로 계산되므로(사용 행동 없음), 상한에서 주웠을 때 어떻게 되는지는 페이지에 나와 있지 않습니다([U-0202](../unknowns.md#u-0202)).
 
@@ -290,9 +290,9 @@
 **미해결 질문:**
 
 - [U-0201](../unknowns.md#u-0201) (보통): 여러 mirror forcefield는 하나의 효과로 셉니까, 아니면 각각 효과 3개 상한에 하나씩 산입됩니까?
-- [U-0202](../unknowns.md#u-0202) (보통): 상한 목록에 명시되지 않은 효과는 어떻게 동작합니까: EMP(10min), Thermal goggles(소지), Body armor, Sleeping Bag, 체력 물약? 그리고 상한 상태에서 Hazmat suit을 주우면 어떻게 됩니까?
+- [U-0202](../unknowns.md#u-0202) (보통): 상한 목록에 명시되지 않은 효과는 어떻게 동작합니까: EMP(10min), Thermal goggles(소지), Body armor, Sleeping Bag, 체력 포션? 그리고 상한 상태에서 Hazmat suit을 주우면 어떻게 됩니까?
 
-메모 ([M-0205](../rules/items.md#m-0205)): 어느 목록에도 언급되지 않은 것: EMP(10min 시간제), Thermal goggles(역시 '휴대하는 동안'), Body armor, Sleeping Bag, 체력 물약. [U-0202](../unknowns.md#u-0202) 참조.
+메모 ([M-0205](../rules/items.md#m-0205)): 어느 목록에도 언급되지 않은 것: EMP(10min 시간제), Thermal goggles(역시 '휴대하는 동안'), Body armor, Sleeping Bag, 체력 포션. [U-0202](../unknowns.md#u-0202) 참조.
 
 <a id="m-0206"></a>
 
@@ -387,7 +387,7 @@
 **형식 모델:**
 
 - [M-0211](../rules/items.md#m-0211) 해석 A: `대상이 자신인 다른 참가자의 첫 공격에서, Shield나 Safety bubble에 막혔는지와 상관없이 종료됨. 시청자와 관리자의 공격은 제외`
-- [M-0211](../rules/items.md#m-0211) 해석 B: `A에 더해, 피해를 주지 않는 적대 행동(steal, Vulnerability Dart, flashbang)과 자신이 설치한 트랩을 다른 참가자가 발동시킨 경우도 포함`
+- [M-0211](../rules/items.md#m-0211) 해석 B: `A에 더해, 피해를 주지 않는 적대 행동(steal, Vulnerability Dart, flashbang)과 자신이 설치한 함정을 다른 참가자가 발동시킨 경우에도 종료됨`
 - [M-0211](../rules/items.md#m-0211) 해석 C: `막기 전에 실제로 피해를 입혔을 공격일 때만 종료됨. 즉 더 앞서 무력화된 공격(빗나감, smoke, mirror)은 종료시키지 않음`
 - [M-0211](../rules/items.md#m-0211) 정의역: 이벤트: attack(attacker!=you, target=you)
 
@@ -397,7 +397,7 @@
 
 - [U-0207](../unknowns.md#u-0207) (높음): Guardian angel을 끝내는 '당신을 공격한다'는 무엇을 뜻합니까?
 
-메모 ([M-0211](../rules/items.md#m-0211)): 명시된 내용: 막힌 타격도 종료시킵니다. 미해결: 범위 효과, 트랩, 독 틱, drone, 반사된 공격에서 '당신을 공격한다'가 무엇을 뜻하는지.
+메모 ([M-0211](../rules/items.md#m-0211)): 명시된 내용: 막힌 타격도 종료시킵니다. 미해결: 범위 효과, 함정, 독 틱, drone, 반사된 공격에서 '당신을 공격한다'가 무엇을 뜻하는지.
 
 <a id="m-0212"></a>
 
@@ -446,7 +446,7 @@
 
 **상호작용:** [M-0212](../rules/items.md#m-0212), [M-0214](../rules/items.md#m-0214), [M-0247](../rules/items.md#m-0247)
 
-메모 ([M-0213](../rules/items.md#m-0213)): 피해 페이지: Safety bubble은 독이 걸리는 것을 막지는 않지만 독의 각 단계를 막습니다. Flashbang은 막지 못합니다(flashbang 절). 경계 포함 여부는 명시되어 있지 않습니다.
+메모 ([M-0213](../rules/items.md#m-0213)): 피해 페이지: Safety bubble은 독이 걸리는 것을 막지는 않지만 독의 각 단계를 막습니다. Flashbang은 Safety bubble로 막지 못합니다(flashbang 절). 경계 포함 여부는 명시되어 있지 않습니다.
 
 <a id="m-0214"></a>
 
@@ -645,7 +645,7 @@
 - [M-0226](../rules/items.md#m-0226) `wiki-items-040`: "Usable" ([출처](https://iceposeidon.com/safezone/wiki/items#smoke_bomb))
   - 번역: 사용 가능
 - [M-0226](../rules/items.md#m-0226) `wiki-items-041`: "Blacks out the map and blocks attacks for other contestants within 50m (164ft) of you for 20min." ([출처](https://iceposeidon.com/safezone/wiki/items#smoke_bomb))
-  - 번역: 50m (164ft) 이내에 있는 다른 참가자의 지도를 20min 동안 차단하고 공격을 막습니다.
+  - 번역: 당신으로부터 50m (164ft) 이내에 있는 다른 참가자에 대해 20min 동안 지도를 가리고 공격을 막습니다.
 - [M-0226](../rules/items.md#m-0226) `wiki-items-042`: "Any other contestant inside it cannot attack at all: no targeted attacks, staff areas, C4, landmines or flashbangs." ([출처](https://iceposeidon.com/safezone/wiki/items#smoke_bomb))
   - 번역: 그 안에 있는 다른 참가자는 전혀 공격할 수 없습니다: 대상 지정 공격, 스태프 구역, C4, landmine, flashbang 모두 불가합니다.
 
@@ -672,7 +672,7 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0227](../rules/items.md#m-0227) `wiki-items-043`: "From inside it you also cannot heal or steal from other contestants, send a trade request, throw a Vulnerability Dart, fire a merchant missile or give a robot a target." ([출처](https://iceposeidon.com/safezone/wiki/items#smoke_bomb))
-  - 번역: 그 안에서는 다른 참가자를 회복하거나 훔칠 수 없고, 거래 요청을 보낼 수 없으며, Vulnerability Dart를 던질 수 없고, 상인 미사일을 발사할 수 없으며, robot에게 목표를 줄 수 없습니다.
+  - 번역: 그 안에서는 또한 다른 참가자를 회복하거나 훔칠 수 없고, 거래 요청을 보낼 수 없으며, Vulnerability Dart를 던질 수 없고, 상인 미사일을 발사할 수 없으며, robot에게 목표를 줄 수 없습니다.
 
 **형식 모델:**
 
@@ -694,7 +694,7 @@
 
 **형식 모델:**
 
-- [M-0228](../rules/items.md#m-0228) 해석 A: `밖에 있는 누구도 구름 안의 사람을 대상으로 지정할 수 없으며, drone도 포함하고 터뜨린 사람도 포함함`
+- [M-0228](../rules/items.md#m-0228) 해석 A: `밖에 있는 누구도 구름 안의 사람을 대상으로 지정할 수 없으며, drone도 마찬가지이며 터뜨린 사람도 포함됨`
 - [M-0228](../rules/items.md#m-0228) 해석 B: `터뜨린 사람은 밖에서 여전히 대상으로 지정될 수 있음`
 - [M-0228](../rules/items.md#m-0228) 정의역: 구름 안의 대상 위치
 
@@ -706,7 +706,7 @@
 
 <a id="m-0229"></a>
 
-### M-0229: Smoke bomb 사용자 예외
+### M-0229: Smoke bomb을 터뜨린 사람의 예외
 
 라벨: `DOCUMENTED`. 시길: all.
 
@@ -718,7 +718,7 @@
 **형식 모델:**
 
 - [M-0229](../rules/items.md#m-0229) 해석 A: `이를 터뜨린 참가자는 영향을 받지 않으며 안에서 공격할 수 있고, 안에 있는 다른 참가자도 공격 대상에 포함됨`
-- [M-0229](../rules/items.md#m-0229) 정의역: 사용자 불리언
+- [M-0229](../rules/items.md#m-0229) 정의역: 터뜨린 사람 여부 불리언
 
 **상호작용:** [M-0226](../rules/items.md#m-0226), [M-0228](../rules/items.md#m-0228)
 
@@ -733,7 +733,7 @@
 - [M-0231](../rules/items.md#m-0231) `wiki-items-046`: "Thermal goggles see through it." ([출처](https://iceposeidon.com/safezone/wiki/items#smoke_bomb))
   - 번역: Thermal goggles는 이를 투과해 봅니다.
 - [M-0231](../rules/items.md#m-0231) `wiki-items-067`: "While you carry them, smoke bombs do not black out your map or block your attacks." ([출처](https://iceposeidon.com/safezone/wiki/items#thermal_goggles))
-  - 번역: 소지하고 있는 동안 smoke bomb은 지도를 차단하지 않고 공격도 막지 않습니다.
+  - 번역: 소지하고 있는 동안 smoke bomb은 당신의 지도를 가리지 않고 당신의 공격도 막지 않습니다.
 
 **형식 모델:**
 
@@ -746,7 +746,7 @@
 **미해결 질문:**
 
 - [U-0213](../unknowns.md#u-0213) (보통): Thermal goggles의 예외는 smoke의 공격 차단과 블랙아웃에만 적용됩니까, 아니면 구름 안에서의 회복, 도둑질, 거래 제한에도 적용됩니까?
-- [U-0202](../unknowns.md#u-0202) (보통): 상한 목록에 명시되지 않은 효과는 어떻게 동작합니까: EMP(10min), Thermal goggles(소지), Body armor, Sleeping Bag, 체력 물약? 그리고 상한 상태에서 Hazmat suit을 주우면 어떻게 됩니까?
+- [U-0202](../unknowns.md#u-0202) (보통): 상한 목록에 명시되지 않은 효과는 어떻게 동작합니까: EMP(10min), Thermal goggles(소지), Body armor, Sleeping Bag, 체력 포션? 그리고 상한 상태에서 Hazmat suit을 주우면 어떻게 됩니까?
 
 메모 ([M-0231](../rules/items.md#m-0231)): 공격 페이지 (cyclops): 구름 안에서는 Thermal goggles를 갖고 있지 않으면 무기와 drone이 그것을 맞힐 수 없습니다.
 
@@ -821,7 +821,7 @@
 
 - [U-0201](../unknowns.md#u-0201) (보통): 여러 mirror forcefield는 하나의 효과로 셉니까, 아니면 각각 효과 3개 상한에 하나씩 산입됩니까?
 - [U-0215](../unknowns.md#u-0215) (보통): mirror forcefield를 여러 개 가지고 있을 때, 한 번의 반사는 하나를 소모합니까, 전부를 소모합니까, 아니면 여러 번 반사합니까?
-- [U-0200](../unknowns.md#u-0200) (보통): C4, landmine, 화살 외에 어떤 아이템이 한 슬롯에 중첩됩니까(Piety가 아닌 체력 물약, mirror forcefield, 기타)?
+- [U-0200](../unknowns.md#u-0200) (보통): C4, landmine, 화살 외에 어떤 아이템이 한 슬롯에 중첩됩니까(Piety가 아닌 체력 포션, mirror forcefield, 기타)?
 
 메모 ([M-0236](../rules/items.md#m-0236)): 명시된 경우는 Flashbang뿐입니다: 여러 forcefield가 모두 소모됩니다 ([M-0247](../rules/items.md#m-0247)).
 
@@ -834,15 +834,15 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0237](../rules/items.md#m-0237) `wiki-items-055`: "Only reflects Poison Darts, fake gravestones, knives, Zarok's axes, long swords, machetes, bows, staffs, drones, C4, landmines, flashbangs and fake chests." ([출처](https://iceposeidon.com/safezone/wiki/items#mirror_forcefield))
-  - 번역: Poison Dart, 가짜 묘비, 칼, Zarok의 도끼, 장검, 마체테, 활, 스태프, drone, C4, landmine, flashbang, 가짜 상자만 반사합니다.
+  - 번역: Poison Dart, fake gravestone, knife, Zarok's axe, long sword, machete, bow, staff, drone, C4, landmine, flashbang, 가짜 상자만 반사합니다.
 - [M-0237](../rules/items.md#m-0237) `wiki-damage-070`: "It only reflects Poison Darts, fake gravestones, bows, wizard staffs, knives, long swords, Zarok's axes, machetes, drones, C4, landmines, flashbangs and fake chests, and never your own explosives." ([출처](https://iceposeidon.com/safezone/wiki/damage#notes))
-  - 번역: Poison Dart, 가짜 묘비, 활, 마법사 스태프, 칼, 장검, Zarok의 도끼, 마체테, drone, C4, landmine, flashbang, 가짜 상자만 반사하며, 자신의 폭발물은 절대 반사하지 않습니다.
+  - 번역: Poison Dart, fake gravestone, bow, wizard staff, knife, long sword, Zarok's axe, machete, drone, C4, landmine, flashbang, 가짜 상자만 반사하며, 자신의 폭발물은 절대 반사하지 않습니다.
 - [M-0237](../rules/items.md#m-0237) `wiki-damage-021`: "| Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (reflects)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
   - 번역: | Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (반사)
 
 **형식 모델:**
 
-- [M-0237](../rules/items.md#m-0237) 해석 A: `반사 대상 = Poison Dart, 가짜 묘비, 칼, Zarok의 도끼, 장검, 마체테, 활, 스태프, drone, C4, landmine, flashbang, 가짜 상자`
+- [M-0237](../rules/items.md#m-0237) 해석 A: `반사 대상 = Poison Dart, fake gravestone, knife, Zarok's axe, long sword, machete, bow, staff, drone, C4, landmine, flashbang, 가짜 상자`
 - [M-0237](../rules/items.md#m-0237) 해석 B: `A에 trapped gift를 더함 (피해 페이지 표의 Trapped gift 행에 Mirror forcefield (반사)가 있음)`
 - [M-0237](../rules/items.md#m-0237) 정의역: A의 공격 종류 13가지. trapped gift 여부는 미해결
 
@@ -861,11 +861,11 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0238](../rules/items.md#m-0238) `wiki-items-056`: "A reflected fake chest also locks the troll out of chests instead of you." ([출처](https://iceposeidon.com/safezone/wiki/items#mirror_forcefield))
-  - 번역: 반사된 가짜 상자는 당신이 아니라 트롤을 상자에서 잠가 버립니다.
+  - 번역: 반사된 가짜 상자는 또한 당신 대신 트롤이 상자를 열지 못하도록 잠급니다.
 
 **형식 모델:**
 
-- [M-0238](../rules/items.md#m-0238) 해석 A: `반사된 가짜 상자는 대상이 아니라 트롤을 상자에서 잠금`
+- [M-0238](../rules/items.md#m-0238) 해석 A: `반사된 가짜 상자는 대상이 아니라 트롤이 상자를 열지 못하도록 잠금`
 - [M-0238](../rules/items.md#m-0238) 정의역: 가짜 상자 이벤트
 
 **상호작용:** [M-0237](../rules/items.md#m-0237)
@@ -879,11 +879,11 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0239](../rules/items.md#m-0239) `wiki-items-057`: "If the attacker also has one, the attack does nothing and both are used up, except a reflected Poison Dart or fake gravestone: it still poisons the attacker and their own mirror stays." ([출처](https://iceposeidon.com/safezone/wiki/items#mirror_forcefield))
-  - 번역: 공격자도 mirror를 갖고 있으면 공격은 아무 효과가 없고 둘 다 소모됩니다. 단 반사된 Poison Dart 또는 가짜 묘비는 예외로, 여전히 공격자를 중독시키며 공격자 자신의 mirror는 남습니다.
+  - 번역: 공격자도 mirror를 갖고 있으면 공격은 아무 효과가 없고 둘 다 소모됩니다. 단 반사된 Poison Dart 또는 fake gravestone은 예외로, 여전히 공격자를 중독시키며 공격자 자신의 mirror는 남습니다.
 
 **형식 모델:**
 
-- [M-0239](../rules/items.md#m-0239) 해석 A: `공격자도 mirror를 가진 경우: 공격은 아무 효과가 없고 두 mirror 모두 소모됨. 예외로 반사된 Poison Dart 또는 가짜 묘비는 공격자를 중독시키며 그 mirror는 남음 (방어자의 mirror는 사용됨)`
+- [M-0239](../rules/items.md#m-0239) 해석 A: `공격자도 mirror를 가진 경우: 공격은 아무 효과가 없고 두 mirror 모두 소모됨. 예외로 반사된 Poison Dart 또는 fake gravestone은 공격자를 중독시키며 그 mirror는 남음 (방어자의 mirror는 사용됨)`
 - [M-0239](../rules/items.md#m-0239) 해석 B: `예외 변형: 공격자의 mirror는 남고 방어자의 mirror도 유지됨`
 - [M-0239](../rules/items.md#m-0239) 정의역: 양측 모두 mirror를 1개 이상 보유
 
@@ -951,7 +951,7 @@
 - [M-0242](../rules/items.md#m-0242) `wiki-damage-063`: "A Flak jacket blocks the next missile, nuke, airstrike impact or gunship bomb, then is used up." ([출처](https://iceposeidon.com/safezone/wiki/damage#notes))
   - 번역: Flak jacket은 다음 미사일, 핵, 공습 충격 또는 건십 폭탄을 막고, 그다음 소모됩니다.
 - [M-0242](../rules/items.md#m-0242) `wiki-attacks-034`: "A Flak jacket blocks the strike, but not the fire." ([출처](https://iceposeidon.com/safezone/wiki/attacks#airstrike))
-  - 번역: Flak jacket은 공습 자체는 막지만 불은 막지 못합니다.
+  - 번역: Flak jacket은 타격은 막지만 불은 막지 못합니다.
 - [M-0242](../rules/items.md#m-0242) `wiki-attacks-041`: "A Flak jacket blocks one bomb." ([출처](https://iceposeidon.com/safezone/wiki/attacks#gunship))
   - 번역: Flak jacket은 폭탄 1개를 막습니다.
 
@@ -968,7 +968,7 @@
 
 - [U-0216](../unknowns.md#u-0216) (보통): 다른 방어(Shield, Safety bubble, Sleeping Bag)가 이미 막은 타격으로 Flak jacket이 소모됩니까?
 
-메모 ([M-0242](../rules/items.md#m-0242)): 아이템 페이지는 '공습 또는 건십 타격'이라고 하고, 공격 페이지는 이를 공습 본 타격과 폭탄 1개로 좁힙니다 (불은 제외).
+메모 ([M-0242](../rules/items.md#m-0242)): 아이템 페이지는 '공습 또는 건십 타격'이라고 하고, 공격 페이지는 이를 타격과 폭탄 1개로 좁힙니다 (불은 제외).
 
 <a id="m-0243"></a>
 
@@ -995,7 +995,7 @@
 
 <a id="m-0244"></a>
 
-### M-0244: Flashbang은 주변 참가자의 시야를 차단함
+### M-0244: Flashbang은 주변 참가자를 실명시킴
 
 라벨: `CONDITIONAL`. 시길: all.
 
@@ -1004,7 +1004,7 @@
 - [M-0244](../rules/items.md#m-0244) `wiki-items-069`: "Usable" ([출처](https://iceposeidon.com/safezone/wiki/items#flashbang))
   - 번역: 사용 가능
 - [M-0244](../rules/items.md#m-0244) `wiki-items-070`: "Blinds every other contestant within 30m (98ft) of you for 30s." ([출처](https://iceposeidon.com/safezone/wiki/items#flashbang))
-  - 번역: 30m (98ft) 이내의 다른 모든 참가자를 30s 동안 실명시킵니다.
+  - 번역: 당신으로부터 30m (98ft) 이내의 다른 모든 참가자를 30s 동안 실명시킵니다.
 
 **형식 모델:**
 
@@ -1056,7 +1056,7 @@
 - [M-0246](../rules/items.md#m-0246) `wiki-items-075`: "Sleeping contestants are immune." ([출처](https://iceposeidon.com/safezone/wiki/items#flashbang))
   - 번역: 잠든 참가자는 면역입니다.
 - [M-0246](../rules/items.md#m-0246) `wiki-merchant-023`: "After 65 seconds of sleep you are immune to flashbangs and to all damage except zone and unsafe circle damage." ([출처](https://iceposeidon.com/safezone/wiki/merchant#items))
-  - 번역: 65초 동안 잠을 자면 flashbang과 존 및 언세이프 서클 피해를 제외한 모든 피해에 면역이 됩니다.
+  - 번역: 65초 동안 잠을 자면 flashbang에 면역이 되고, 존 피해와 언세이프 서클(unsafe circle) 피해를 제외한 모든 피해에도 면역이 됩니다.
 
 **형식 모델:**
 
@@ -1068,7 +1068,7 @@
 
 **모순:** [C-0203](../unknowns.md#c-0203)
 
-메모 ([M-0246](../rules/items.md#m-0246)): [C-0203](../unknowns.md#c-0203) 참조. '잠든 참가자는 면역입니다'와 '65초 동안 잠을 자면 flashbang에 면역이 됩니다'가 충돌합니다.
+메모 ([M-0246](../rules/items.md#m-0246)): [C-0203](../unknowns.md#c-0203) 참조. '잠든 참가자는 면역입니다' 대 '65초 동안 잠을 자면 flashbang에 면역이 됩니다'.
 
 <a id="m-0247"></a>
 
@@ -1086,7 +1086,7 @@
 **형식 모델:**
 
 - [M-0247](../rules/items.md#m-0247) 해석 A: `mirror가 소모되고 던진 사람을 실명시킴. 피해자들의 여러 mirror는 모두 소모됨. 던진 사람은 한 번만 실명됨`
-- [M-0247](../rules/items.md#m-0247) 해석 B: `A와 같고, mirror를 가진 던진 사람은 실명되지 않음 (공격자 mirror 규칙 [M-0239](../rules/items.md#m-0239)이 우선)`
+- [M-0247](../rules/items.md#m-0247) 해석 B: `A와 같고, mirror를 가진 던진 사람은 실명되지 않음 (공격자 mirror 규칙 [M-0239](../rules/items.md#m-0239)가 우선)`
 - [M-0247](../rules/items.md#m-0247) 해석 C: `A와 같고, mirror를 가진 던진 사람은 실명됨 (flashbang 규칙이 우선)`
 - [M-0247](../rules/items.md#m-0247) 정의역: mirror를 가진 피해자 m >= 0
 
@@ -1141,17 +1141,17 @@
 - [M-0327](../rules/items.md#m-0327) `wiki-merchant-020`: "Sleeping Bag: 30 blood tokens." ([출처](https://iceposeidon.com/safezone/wiki/merchant#items))
   - 번역: Sleeping Bag: 블러드 토큰 30개.
 - [M-0327](../rules/items.md#m-0327) `wiki-merchant-025`: "Only you can pick up your bag." ([출처](https://iceposeidon.com/safezone/wiki/merchant#items))
-  - 번역: 본인만 자신의 침낭을 집어 들 수 있습니다.
+  - 번역: 본인만 자신의 Sleeping Bag을 집어 들 수 있습니다.
 - [M-0327](../rules/items.md#m-0327) `wiki-merchant-026`: "You can have only one Sleeping Bag, held or placed." ([출처](https://iceposeidon.com/safezone/wiki/merchant#items))
   - 번역: Sleeping Bag은 들고 있든 설치했든 하나만 가질 수 있습니다.
 - [M-0327](../rules/items.md#m-0327) `wiki-merchant-027`: "It cannot be dropped or stolen, only destroyed by you." ([출처](https://iceposeidon.com/safezone/wiki/merchant#items))
   - 번역: 떨어뜨리거나 도난당할 수 없으며, 본인만 파괴할 수 있습니다.
 - [M-0327](../rules/items.md#m-0327) `wiki-merchant-028`: "Greed can still steal your other items while you sleep." ([출처](https://iceposeidon.com/safezone/wiki/merchant#items))
-  - 번역: Greed는 잠든 동안에도 다른 아이템을 훔칠 수 있습니다.
+  - 번역: 당신이 자는 동안에도 Greed는 당신의 다른 아이템을 훔칠 수 있습니다.
 
 **형식 모델:**
 
-- [M-0327](../rules/items.md#m-0327) 해석 A: `토큰 30개. 소유자만 침낭을 집어 들 수 있음. 들고 있거나 설치한 침낭은 최대 1개. 떨어뜨리거나 도난당할 수 없고 소유자만 파괴할 수 있음. Greed는 잠든 참가자의 다른 아이템을 여전히 훔칠 수 있음`
+- [M-0327](../rules/items.md#m-0327) 해석 A: `토큰 30개. 소유자만 Sleeping Bag을 집어 들 수 있음. 들고 있거나 설치한 Sleeping Bag은 최대 1개. 떨어뜨리거나 도난당할 수 없고 소유자만 파괴할 수 있음. Greed는 잠든 참가자의 다른 아이템을 여전히 훔칠 수 있음`
 - [M-0327](../rules/items.md#m-0327) 매개변수 `sleeping_bag_cost_tokens`: 30
 
 메모 ([M-0327](../rules/items.md#m-0327)): Greed 페이지('Sleeping Bags cannot be stolen, but you can steal from a sleeping contestant')와 일치합니다.
@@ -1165,15 +1165,15 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0328](../rules/items.md#m-0328) `wiki-merchant-021`: "Place it and sleep from 18:00 to 06:00 local solar time, for eight hours of sleep in total." ([출처](https://iceposeidon.com/safezone/wiki/merchant#items))
-  - 번역: Sleeping Bag을 설치하고 현지 태양시 18:00부터 06:00까지 자면, 총 8시간의 수면이 됩니다.
+  - 번역: Sleeping Bag을 설치하고 현지 태양시 18:00부터 06:00 사이에 자며, 수면 시간은 총 8시간입니다.
 - [M-0328](../rules/items.md#m-0328) `wiki-merchant-022`: "While you sleep within 15m of your bag, you cannot act." ([출처](https://iceposeidon.com/safezone/wiki/merchant#items))
-  - 번역: 침낭에서 15m 이내에서 자는 동안에는 행동할 수 없습니다.
+  - 번역: Sleeping Bag에서 15m 이내에서 자는 동안에는 행동할 수 없습니다.
 - [M-0328](../rules/items.md#m-0328) `wiki-merchant-024`: "Wake up to act." ([출처](https://iceposeidon.com/safezone/wiki/merchant#items))
   - 번역: 행동하려면 일어나야 합니다.
 
 **형식 모델:**
 
-- [M-0328](../rules/items.md#m-0328) 해석 A: `침낭을 설치하고 현지 태양시 18:00부터 06:00까지 수면, 총 8시간의 수면. 침낭에서 15 m 이내에서 자는 동안 행동할 수 없음. 행동하려면 일어나야 함`
+- [M-0328](../rules/items.md#m-0328) 해석 A: `Sleeping Bag을 설치하고 현지 태양시 18:00부터 06:00까지 수면, 총 8시간의 수면. Sleeping Bag에서 15 m 이내에서 자는 동안 행동할 수 없음. 행동하려면 일어나야 함`
 - [M-0328](../rules/items.md#m-0328) 정의역: 시간, 미터
 - [M-0328](../rules/items.md#m-0328) 매개변수 `sleep_window`: 현지 태양시 18:00부터 06:00까지
 - [M-0328](../rules/items.md#m-0328) 매개변수 `sleep_total_h`: 8
@@ -1182,7 +1182,7 @@
 **미해결 질문:**
 
 - [U-0325](../unknowns.md#u-0325) (높음): Sleeping Bag: 'sleep from 18:00 to 06:00 ... for eight hours of sleep in total' 규칙은 무엇입니까?
-- [U-0326](../unknowns.md#u-0326) (낮음): '지역 태양시(Local solar time)': 무엇에 대한 지역입니까(참가자의 위치, 이벤트 장소, 기준 도시 하나)?
+- [U-0326](../unknowns.md#u-0326) (낮음): 'Local solar time'(지역 태양시): 무엇에 대한 지역입니까(참가자의 위치, 이벤트 장소, 기준 도시 하나)?
 - [U-0327](../unknowns.md#u-0327) (높음): Sleeping Bag: 65 s의 수면은 연속이어야 합니까? 잠든 사람이 15m 반경을 벗어나거나 깨어나거나 맞으면 어떻게 됩니까? 깨어나면 면역이 즉시 끝납니까?
 - [U-0300](../unknowns.md#u-0300) (보통): 무기, 함정, 상인, sleeping bag의 범위 경계(10m, 20m, 50m, 15m)는 포함입니까 미포함입니까? 거리는 지면상의 유클리드 거리입니까?
 
@@ -1212,7 +1212,7 @@
 
 **모순:** [C-0300](../unknowns.md#c-0300), [C-0301](../unknowns.md#c-0301)
 
-메모 ([M-0329](../rules/items.md#m-0329)): 다른 페이지와 충돌합니다. 로봇 피해 예외([C-0300](../unknowns.md#c-0300)), 그리고 65 s 지연과 즉시 면역의 차이([C-0301](../unknowns.md#c-0301)).
+메모 ([M-0329](../rules/items.md#m-0329)): 다른 페이지와 충돌합니다. robot 피해 예외([C-0300](../unknowns.md#c-0300)), 그리고 65 s 지연과 즉시 면역의 차이([C-0301](../unknowns.md#c-0301)).
 
 <a id="m-0330"></a>
 
@@ -1223,11 +1223,11 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0330](../rules/items.md#m-0330) `wiki-merchant-029`: "After your bag protects you, you cannot sleep in a bag again for 20 minutes, even if you pick it up and place it again." ([출처](https://iceposeidon.com/safezone/wiki/merchant#items))
-  - 번역: 침낭이 당신을 보호한 뒤에는, 다시 집어 들어 설치하더라도 20분 동안 어떤 침낭에서도 다시 잘 수 없습니다.
+  - 번역: Sleeping Bag이 당신을 보호한 뒤에는, 다시 집어 들어 설치하더라도 20분 동안 어떤 Sleeping Bag에서도 다시 잘 수 없습니다.
 
 **형식 모델:**
 
-- [M-0330](../rules/items.md#m-0330) 해석 A: `침낭이 보호한 뒤 20 min 동안 어떤 침낭에서도 잘 수 없음. 다시 집어 들어 설치해도 마찬가지`
+- [M-0330](../rules/items.md#m-0330) 해석 A: `Sleeping Bag이 보호한 뒤 20 min 동안 어떤 Sleeping Bag에서도 잘 수 없음. 다시 집어 들어 설치해도 마찬가지`
 - [M-0330](../rules/items.md#m-0330) 정의역: 분
 - [M-0330](../rules/items.md#m-0330) 매개변수 `sleep_lockout_min`: 20
 
@@ -1323,7 +1323,7 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0503](../rules/items.md#m-0503) `wiki-sigils-piety-010`: "Every item chest you claim and every crate you take gives you a random health potion instead of the item inside." ([출처](https://iceposeidon.com/safezone/wiki/sigils/piety#rules))
-  - 번역: 당신이 여는 모든 아이템 상자와 당신이 집는 모든 크레이트는 안에 든 아이템 대신 무작위 체력 포션 하나를 줍니다.
+  - 번역: 당신이 획득하는 모든 아이템 상자와 당신이 집는 모든 크레이트는 안에 든 아이템 대신 무작위 체력 포션 하나를 줍니다.
 - [M-0503](../rules/items.md#m-0503) `wiki-sigils-piety-012`: "Merchant care packages are not changed." ([출처](https://iceposeidon.com/safezone/wiki/sigils/piety#rules))
   - 번역: 상인의 보급 상자는 바뀌지 않습니다.
 
@@ -1331,7 +1331,7 @@
 
 - [M-0503](../rules/items.md#m-0503) 해석 A: `claim(item chest) 또는 take(crate) -> 무작위 등급의 체력 포션 하나가 인벤토리에 추가됨; 안에 든 아이템은 주어지지 않음; 상인의 보급 상자는 그대로; 다른 보급 상자도 그대로`
 - [M-0503](../rules/items.md#m-0503) 해석 B: `A와 같지만 상인이 아닌 보급 상자(에어드롭, 시청자, 관리자)도 변환됨`
-- [M-0503](../rules/items.md#m-0503) 정의역: 아이템 상자를 여는 행동 또는 크레이트를 집는 행동마다
+- [M-0503](../rules/items.md#m-0503) 정의역: 아이템 상자를 획득하는 행동 또는 크레이트를 집는 행동마다
 - [M-0503](../rules/items.md#m-0503) 매개변수 `potion_tier_weights`: UNKNOWN, [U-0504](../unknowns.md#u-0504) 참조
 - [M-0503](../rules/items.md#m-0503) 매개변수 `scope`: UNKNOWN, [U-0505](../unknowns.md#u-0505) 참조
 - [M-0503](../rules/items.md#m-0503) 매개변수 `overflow`: UNKNOWN, [U-0506](../unknowns.md#u-0506) 참조
@@ -1361,7 +1361,7 @@
 **형식 모델:**
 
 - [M-0504](../rules/items.md#m-0504) 해석 A: `Piety 참가자가 claim(fake chest) -> 함정 효과가 다른 참가자와 똑같이 적용됨; 체력 포션은 주어지지 않음`
-- [M-0504](../rules/items.md#m-0504) 정의역: Piety 참가자가 가짜 상자를 여는 행동
+- [M-0504](../rules/items.md#m-0504) 정의역: Piety 참가자가 가짜 상자를 획득하는 행동
 
 **상호작용:** [M-0503](../rules/items.md#m-0503), [M-0533](../rules/damage.md#m-0533)
 
@@ -1369,7 +1369,7 @@
 
 <a id="m-0506"></a>
 
-### M-0506: Piety의 체력 포션 6개 중첩, 슬롯 하나
+### M-0506: Piety의 체력 포션을 슬롯 하나에 6개까지 중첩
 
 라벨: `DOCUMENTED`. 시길: piety.
 
@@ -1564,7 +1564,7 @@
 **형식 모델:**
 
 - [M-0528](../rules/items.md#m-0528) 해석 A: `위치 x에서 사용 -> dist(x, c) <= 200 m인 모든 상자와 crate(보급 상자, 에어드롭, 가짜 상자 포함)를 사용 순간에 파괴함`
-- [M-0528](../rules/items.md#m-0528) 해석 B: `명시되지 않은 시간 동안 지속되는 장`
+- [M-0528](../rules/items.md#m-0528) 해석 B: `명시되지 않은 시간 동안 지속되는 필드`
 - [M-0528](../rules/items.md#m-0528) 정의역: 미터 단위 dist 0..200
 - [M-0528](../rules/items.md#m-0528) 매개변수 `radius_m`: 200
 - [M-0528](../rules/items.md#m-0528) 매개변수 `duration_s`: UNKNOWN, see [U-0523](../unknowns.md#u-0523)
@@ -1723,7 +1723,7 @@
 - [M-0621](../rules/items.md#m-0621) `wiki-sigils-endurance-015`: "After it lands it is a normal care package: any contestant can claim it." ([출처](https://iceposeidon.com/safezone/wiki/sigils/endurance#endurance-drops))
   - 번역: 착지한 뒤에는 일반 보급 상자이며, 어떤 참가자든 가져갈 수 있습니다.
 - [M-0621](../rules/items.md#m-0621) `wiki-sigils-endurance-016`: "It never holds a health potion or drone." ([출처](https://iceposeidon.com/safezone/wiki/sigils/endurance#endurance-drops))
-  - 번역: 체력 물약이나 드론은 절대 들어 있지 않습니다.
+  - 번역: health potion이나 drone은 절대 들어 있지 않습니다.
 
 **형식 모델:**
 
@@ -1738,7 +1738,7 @@
 
 - [U-0607](../unknowns.md#u-0607) (높음): Endurance 보급 상자 "2h 30min마다": 첫 투하는 이벤트 시작 2h30 후입니까, 시길 선택 후입니까, 이전 수령 후입니까, 그리고 어떤 상자가 "자신의 것"입니까?
 
-메모 ([M-0621](../rules/items.md#m-0621)): 낙하 시점과 착지 시점 중 어느 때의 위치인지는 명시되어 있지 않습니다(10m는 상자가 떨어질 때 참가자로부터의 거리입니다). 내용물은 체력 물약과 드론을 제외한 무작위 아이템입니다.
+메모 ([M-0621](../rules/items.md#m-0621)): 낙하 시점과 착지 시점 중 어느 때의 위치인지는 명시되어 있지 않습니다(10m는 상자가 떨어질 때 참가자로부터의 거리입니다). 내용물은 health potion과 drone을 제외한 무작위 아이템입니다.
 
 <a id="m-0624"></a>
 

@@ -29,7 +29,7 @@ M-0226:
   - >-
     사용 가능
   - >-
-    50m (164ft) 이내에 있는 다른 참가자의 지도를 20min 동안 차단하고 공격을 막습니다.
+    당신으로부터 50m (164ft) 이내에 있는 다른 참가자에 대해 20min 동안 지도를 가리고 공격을 막습니다.
   - >-
     그 안에 있는 다른 참가자는 전혀 공격할 수 없습니다: 대상 지정 공격, 스태프 구역, C4, landmine, flashbang 모두 불가합니다.
   readings:
@@ -49,7 +49,7 @@ M-0227:
     Smoke bomb 내부에서의 제한
   quotes:
   - >-
-    그 안에서는 다른 참가자를 회복하거나 훔칠 수 없고, 거래 요청을 보낼 수 없으며, Vulnerability Dart를 던질 수 없고, 상인 미사일을 발사할 수 없으며, robot에게 목표를 줄 수 없습니다.
+    그 안에서는 또한 다른 참가자를 회복하거나 훔칠 수 없고, 거래 요청을 보낼 수 없으며, Vulnerability Dart를 던질 수 없고, 상인 미사일을 발사할 수 없으며, robot에게 목표를 줄 수 없습니다.
   readings:
     A: >-
       구름 안의 다른 참가자는 다음도 할 수 없음: 다른 참가자 회복 또는 훔치기, 거래 요청 보내기, Vulnerability Dart 던지기, 상인 미사일 발사, robot에게 목표 부여
@@ -63,14 +63,14 @@ M-0228:
     밖에 있는 누구도 그 안에 있는 사람을 대상으로 지정할 수 없으며, drone도 마찬가지입니다.
   readings:
     A: >-
-      밖에 있는 누구도 구름 안의 사람을 대상으로 지정할 수 없으며, drone도 포함하고 터뜨린 사람도 포함함
+      밖에 있는 누구도 구름 안의 사람을 대상으로 지정할 수 없으며, drone도 마찬가지이며 터뜨린 사람도 포함됨
     B: >-
       터뜨린 사람은 밖에서 여전히 대상으로 지정될 수 있음
   domain: >-
     구름 안의 대상 위치
 M-0229:
   name: >-
-    Smoke bomb 사용자 예외
+    Smoke bomb을 터뜨린 사람의 예외
   quotes:
   - >-
     이를 터뜨린 참가자는 영향을 받지 않으며, 안에 있는 다른 참가자를 포함해 그 안에서 여전히 공격할 수 있습니다.
@@ -78,7 +78,7 @@ M-0229:
     A: >-
       이를 터뜨린 참가자는 영향을 받지 않으며 안에서 공격할 수 있고, 안에 있는 다른 참가자도 공격 대상에 포함됨
   domain: >-
-    사용자 불리언
+    터뜨린 사람 여부 불리언
 M-0230:
   name: >-
     Smoke bomb과 시청자 지도
@@ -97,7 +97,7 @@ M-0231:
   - >-
     Thermal goggles는 이를 투과해 봅니다.
   - >-
-    소지하고 있는 동안 smoke bomb은 지도를 차단하지 않고 공격도 막지 않습니다.
+    소지하고 있는 동안 smoke bomb은 당신의 지도를 가리지 않고 당신의 공격도 막지 않습니다.
   readings:
     A: >-
       goggles 소지: 소지자에게 smoke로 인한 지도 차단과 공격 차단 없음. M-0227의 제한은 여전히 적용됨
@@ -149,7 +149,7 @@ M-0233:
     tick_schedule: >-
       UNKNOWN, U-0214 참조
   notes: >-
-    Protection 시길: bandage가 1.1x 더 오래 지속됩니다 (132 s). 총 HP도 바뀌는지는 해당 페이지에 있습니다. 각 틱이 최대 HP에서 상한이 걸리는지는 확실하지 않습니다.
+    Protection 시길: bandage의 지속 시간이 1.1x가 됩니다 (132 s). 총 HP도 바뀌는지는 해당 페이지에 있습니다. 각 틱은 최대 HP에서 상한이 걸릴 수도 있고 아닐 수도 있습니다.
 M-0234:
   name: >-
     Bandage는 Deep Cut 출혈을 멈춤
@@ -157,7 +157,7 @@ M-0234:
   - >-
     Deep Cut 출혈도 멈춥니다.
   - >-
-    다음 활, 칼, 장검, 도끼, 마체테 또는 drone 타격이나 Poison Dart는 출혈을 일으킵니다: bandage 또는 Healing 참가자가 치료할 때까지 5분마다 1 HP.
+    당신의 다음 bow, knife, long sword, axe, machete 또는 drone 타격이나 Poison Dart는 출혈을 일으킵니다: bandage 또는 Healing 참가자가 치료할 때까지 5분마다 1 HP.
   readings:
     A: >-
       bandage를 사용하면 Deep Cut 출혈이 끝남
@@ -206,14 +206,14 @@ M-0237:
     Mirror 반사 목록
   quotes:
   - >-
-    Poison Dart, 가짜 묘비, 칼, Zarok의 도끼, 장검, 마체테, 활, 스태프, drone, C4, landmine, flashbang, 가짜 상자만 반사합니다.
+    Poison Dart, fake gravestone, knife, Zarok's axe, long sword, machete, bow, staff, drone, C4, landmine, flashbang, 가짜 상자만 반사합니다.
   - >-
-    Poison Dart, 가짜 묘비, 활, 마법사 스태프, 칼, 장검, Zarok의 도끼, 마체테, drone, C4, landmine, flashbang, 가짜 상자만 반사하며, 자신의 폭발물은 절대 반사하지 않습니다.
+    Poison Dart, fake gravestone, bow, wizard staff, knife, long sword, Zarok's axe, machete, drone, C4, landmine, flashbang, 가짜 상자만 반사하며, 자신의 폭발물은 절대 반사하지 않습니다.
   - >-
     | Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (반사)
   readings:
     A: >-
-      반사 대상 = Poison Dart, 가짜 묘비, 칼, Zarok의 도끼, 장검, 마체테, 활, 스태프, drone, C4, landmine, flashbang, 가짜 상자
+      반사 대상 = Poison Dart, fake gravestone, knife, Zarok's axe, long sword, machete, bow, staff, drone, C4, landmine, flashbang, 가짜 상자
     B: >-
       A에 trapped gift를 더함 (피해 페이지 표의 Trapped gift 행에 Mirror forcefield (반사)가 있음)
   domain: >-
@@ -225,10 +225,10 @@ M-0238:
     Mirror는 가짜 상자를 반사함
   quotes:
   - >-
-    반사된 가짜 상자는 당신이 아니라 트롤을 상자에서 잠가 버립니다.
+    반사된 가짜 상자는 또한 당신 대신 트롤이 상자를 열지 못하도록 잠급니다.
   readings:
     A: >-
-      반사된 가짜 상자는 대상이 아니라 트롤을 상자에서 잠금
+      반사된 가짜 상자는 대상이 아니라 트롤이 상자를 열지 못하도록 잠금
   domain: >-
     가짜 상자 이벤트
 M-0239:
@@ -236,10 +236,10 @@ M-0239:
     Mirror 대 공격자의 mirror
   quotes:
   - >-
-    공격자도 mirror를 갖고 있으면 공격은 아무 효과가 없고 둘 다 소모됩니다. 단 반사된 Poison Dart 또는 가짜 묘비는 예외로, 여전히 공격자를 중독시키며 공격자 자신의 mirror는 남습니다.
+    공격자도 mirror를 갖고 있으면 공격은 아무 효과가 없고 둘 다 소모됩니다. 단 반사된 Poison Dart 또는 fake gravestone은 예외로, 여전히 공격자를 중독시키며 공격자 자신의 mirror는 남습니다.
   readings:
     A: >-
-      공격자도 mirror를 가진 경우: 공격은 아무 효과가 없고 두 mirror 모두 소모됨. 예외로 반사된 Poison Dart 또는 가짜 묘비는 공격자를 중독시키며 그 mirror는 남음 (방어자의 mirror는 사용됨)
+      공격자도 mirror를 가진 경우: 공격은 아무 효과가 없고 두 mirror 모두 소모됨. 예외로 반사된 Poison Dart 또는 fake gravestone은 공격자를 중독시키며 그 mirror는 남음 (방어자의 mirror는 사용됨)
     B: >-
       예외 변형: 공격자의 mirror는 남고 방어자의 mirror도 유지됨
   domain: >-
@@ -283,7 +283,7 @@ M-0242:
   - >-
     Flak jacket은 다음 미사일, 핵, 공습 충격 또는 건십 폭탄을 막고, 그다음 소모됩니다.
   - >-
-    Flak jacket은 공습 자체는 막지만 불은 막지 못합니다.
+    Flak jacket은 타격은 막지만 불은 막지 못합니다.
   - >-
     Flak jacket은 폭탄 1개를 막습니다.
   readings:
@@ -296,7 +296,7 @@ M-0242:
   domain: >-
     나열된 종류의 타격 이벤트
   notes: >-
-    아이템 페이지는 '공습 또는 건십 타격'이라고 하고, 공격 페이지는 이를 공습 본 타격과 폭탄 1개로 좁힙니다 (불은 제외).
+    아이템 페이지는 '공습 또는 건십 타격'이라고 하고, 공격 페이지는 이를 타격과 폭탄 1개로 좁힙니다 (불은 제외).
 M-0243:
   name: >-
     Gas mask
@@ -317,12 +317,12 @@ M-0243:
       10min
 M-0244:
   name: >-
-    Flashbang은 주변 참가자의 시야를 차단함
+    Flashbang은 주변 참가자를 실명시킴
   quotes:
   - >-
     사용 가능
   - >-
-    30m (98ft) 이내의 다른 모든 참가자를 30s 동안 실명시킵니다.
+    당신으로부터 30m (98ft) 이내의 다른 모든 참가자를 30s 동안 실명시킵니다.
   readings:
     A: >-
       사용 시: 사용자로부터 30 m 이내의 다른 모든 참가자가 30 s 동안 실명됨. 실명 중 재타격: 연장 없음
@@ -361,7 +361,7 @@ M-0246:
   - >-
     잠든 참가자는 면역입니다.
   - >-
-    65초 동안 잠을 자면 flashbang과 존 및 언세이프 서클 피해를 제외한 모든 피해에 면역이 됩니다.
+    65초 동안 잠을 자면 flashbang에 면역이 되고, 존 피해와 언세이프 서클(unsafe circle) 피해를 제외한 모든 피해에도 면역이 됩니다.
   readings:
     A: >-
       Shield와 Safety bubble은 이를 막지 못함. 잠든 참가자는 면역
@@ -370,7 +370,7 @@ M-0246:
   domain: >-
     수면 상태, 수면 시간
   notes: >-
-    C-0203 참조. '잠든 참가자는 면역입니다'와 '65초 동안 잠을 자면 flashbang에 면역이 됩니다'가 충돌합니다.
+    C-0203 참조. '잠든 참가자는 면역입니다' 대 '65초 동안 잠을 자면 flashbang에 면역이 됩니다'.
 M-0247:
   name: >-
     Flashbang 대 mirror forcefield
@@ -383,7 +383,7 @@ M-0247:
     A: >-
       mirror가 소모되고 던진 사람을 실명시킴. 피해자들의 여러 mirror는 모두 소모됨. 던진 사람은 한 번만 실명됨
     B: >-
-      A와 같고, mirror를 가진 던진 사람은 실명되지 않음 (공격자 mirror 규칙 M-0239이 우선)
+      A와 같고, mirror를 가진 던진 사람은 실명되지 않음 (공격자 mirror 규칙 M-0239가 우선)
     C: >-
       A와 같고, mirror를 가진 던진 사람은 실명됨 (flashbang 규칙이 우선)
   domain: >-

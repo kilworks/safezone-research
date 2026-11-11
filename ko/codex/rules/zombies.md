@@ -10,7 +10,7 @@
 
 출처: 시청자는 세이프 존의 무작위 지점에 좀비 50마리의 호드를 풀어 놓으며, 이 좀비들에게는 주인이 없습니다 ([M-0445](../rules/zombies.md#m-0445)). Necromancy 참가자는 그 시길에 속하는 자신만의 좀비를 얻습니다. 6시간마다 최대 3회 소환하고 ([M-0446](../rules/zombies.md#m-0446)), 어느 참가자든 죽으면 좀비 하나가 생기며 ([M-0447](../rules/zombies.md#m-0447)), 호드가 풀릴 때 5마리가 더 생기고 ([M-0448](../rules/zombies.md#m-0448)), 묘비에 가드 좀비가 생깁니다 ([M-0449](../rules/zombies.md#m-0449)). 주인이 있는 좀비는 HP를 흡수하여 Necromancy 주인에게 줍니다 ([M-0635](../rules/zombies.md#m-0635)).
 
-대처 방법: 폭발은 그 안의 모든 좀비를 죽입니다. C4, Landmine, 미사일, 핵, 공습, 건쉽 폭탄, 최루 가스가 그렇습니다 ([M-0451](../rules/zombies.md#m-0451)). 사정거리 안으로 걸어 들어온 좀비는 Landmine을 터뜨리지만, 좀비는 C4를 터뜨리지 않습니다 ([M-0452](../rules/zombies.md#m-0452)). Shield, Safety bubble, Reality Shield, 또는 자신의 Sleeping Bag에서 자는 것은 면역을 줍니다 ([M-0454](../rules/zombies.md#m-0454)). Zombie repellent는 20분 동안 작동합니다 ([M-0455](../rules/zombies.md#m-0455)). Ingenuity의 Zombie killer는 10 m 이내로 들어오는 다음 좀비 열 마리를 죽이고 그동안 흡수를 멈춥니다 ([M-0453](../rules/zombies.md#m-0453), [M-0527](../rules/zombies.md#m-0527)). Necromancy는 완전히 면역입니다 ([M-0636](../rules/zombies.md#m-0636)).
+대처 방법: 폭발은 그 안의 모든 좀비를 죽입니다. C4, Landmine, 미사일, 핵, 공습, 건십 폭탄, 최루 가스가 그렇습니다 ([M-0451](../rules/zombies.md#m-0451)). 사정거리 안으로 걸어 들어온 좀비는 Landmine을 터뜨리지만, 좀비는 C4를 터뜨리지 않습니다 ([M-0452](../rules/zombies.md#m-0452)). Shield, Safety bubble, Reality Shield, 또는 자신의 Sleeping Bag에서 자는 것은 면역을 줍니다 ([M-0454](../rules/zombies.md#m-0454)). Zombie repellent는 20분 동안 작동합니다 ([M-0455](../rules/zombies.md#m-0455)). Ingenuity의 Zombie killer는 10 m 이내로 들어오는 다음 좀비 열 마리를 죽이고 그동안 흡수를 멈춥니다 ([M-0453](../rules/zombies.md#m-0453), [M-0527](../rules/zombies.md#m-0527)). Necromancy는 완전히 면역입니다 ([M-0636](../rules/zombies.md#m-0636)).
 
 플레이어가 느끼는 점: 좀비는 빠르지도 강하지도 않지만 멈추지 않으며, 그 대가는 조금씩, 조용히 사라지는 포션과 조합품으로 치러집니다 ([M-0443](../rules/zombies.md#m-0443), [M-0444](../rules/zombies.md#m-0444)). 가장 약한 점: 모든 폭발에 죽고 ([M-0451](../rules/zombies.md#m-0451)), 많은 아이템이 좀비를 막습니다 ([M-0454](../rules/zombies.md#m-0454)).
 
@@ -70,8 +70,8 @@
 
 **미해결 질문:**
 
-- [U-0425](../unknowns.md#u-0425) (높음): 좀비 흡수 타이밍: 'drain 1 HP from any contestants within 5m every 10s'. 10s 타이머는 좀비마다(전역 위상)입니까, 아니면 진입 시점부터 참가자마다입니까? 첫 흡수는 언제 발생합니까, 각 흡수는 '타격'([U-0002](../unknowns.md#u-0002))입니까, 그리고 1 HP 하한과 Kick 라이브 중 감소가 적용됩니까?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, 로봇, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0425](../unknowns.md#u-0425) (높음): 좀비 흡수 타이밍: 'drain 1 HP from any contestants within 5m every 10s'. 10s 타이머는 좀비마다(전역 위상)입니까, 아니면 진입 시점부터 참가자마다입니까? 첫 흡수는 언제 발생합니까, 각 흡수는 '타격'([U-0002](../unknowns.md#u-0002))입니까, 그리고 1 HP 하한 또는 Kick 라이브 중 감소가 적용됩니까?
+- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 <a id="m-0442"></a>
 
@@ -280,7 +280,7 @@
 
 **미해결 질문:**
 
-- [U-0429](../unknowns.md#u-0429) (보통): 가드 좀비: 가드 좀비는 스폰 지점에 머뭅니까 추격합니까? Necromancy 참가자마다 하나 나타납니까 사망마다 나타납니까? 소유자와 죽은 자도 흡수합니까, 그리고 1h 동안 존재한다는 것(Necromancy 페이지)은 그 페이지에서만 명시된 것입니까?
+- [U-0429](../unknowns.md#u-0429) (보통): 가드 좀비: 가드 좀비는 스폰 지점에 머뭅니까 추격합니까? Necromancy 참가자마다 하나 나타납니까 사망마다 나타납니까? 소유자와 죽은 자도 흡수합니까, 그리고 그 페이지(Necromancy 페이지)에만 명시된 대로 1h 동안 존재합니까?
 - [U-0008](../unknowns.md#u-0008) (높음): 좀비 30 HP 상한: 좀비 수명당입니까, 조우당입니까, 하루당입니까? 좀비가 죽으면 어떻게 됩니까?
 
 <a id="m-0450"></a>
@@ -315,11 +315,11 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0451](../rules/zombies.md#m-0451) `wiki-zombies-013`: "Blasts kill every zombie inside them: C4, landmines, missiles, nukes, airstrikes, gunship bombs and tear gas." ([출처](https://iceposeidon.com/safezone/wiki/zombies#deaths))
-  - 번역: 폭발은 그 안에 있는 모든 좀비를 죽입니다: C4, Landmine, 미사일, 핵, 공습, 건십 폭탄, 최루탄.
+  - 번역: 폭발은 그 안에 있는 모든 좀비를 죽입니다: C4, Landmine, 미사일, 핵, 공습, 건십 폭탄, 최루 가스.
 
 **형식 모델:**
 
-- [M-0451](../rules/zombies.md#m-0451) 해석 A: `C4, landmine, 미사일, 핵, 공습, 건십 폭탄 또는 최루탄의 폭발 안에 있는 좀비는 죽음`
+- [M-0451](../rules/zombies.md#m-0451) 해석 A: `C4, landmine, 미사일, 핵, 공습, 건십 폭탄 또는 최루 가스의 폭발 안에 있는 좀비는 죽음`
 - [M-0451](../rules/zombies.md#m-0451) 정의역: 폭발 범위 안의 좀비 위치
 
 **상호작용:** [M-0404](../rules/viewer.md#m-0404), [M-0405](../rules/viewer.md#m-0405), [M-0410](../rules/viewer.md#m-0410)
@@ -368,7 +368,7 @@
 
 **미해결 질문:**
 
-- [U-0430](../unknowns.md#u-0430) (낮음): Ingenuity Zombie Killer: 'kills the next ten zombies that come within 10m of its owner'와 'stops zombies draining you until it has killed ten'. 열 마리가 함께 도착하면 어떻게 집계됩니까, 흡수 차단은 열 마리까지로 제한됩니까, 그리고 순서는 접근 순입니까?
+- [U-0430](../unknowns.md#u-0430) (낮음): Ingenuity Zombie Killer: 'kills the next ten zombies that come within 10m of its owner'와 'stops zombies draining you until it has killed ten'. 함께 도착한 열 마리도 집계됩니까, 흡수 차단은 열 마리까지로 제한됩니까, 그리고 순서는 접근 순입니까?
 
 <a id="m-0454"></a>
 
@@ -429,11 +429,11 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0527](../rules/zombies.md#m-0527) `wiki-sigils-ingenuity-025`: "Kills the next ten zombies that come within 10m (33ft) of you." ([출처](https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-zombie_killer))
-  - 번역: 10m (33ft) 이내로 다가오는 다음 좀비 ten마리를 죽입니다.
+  - 번역: 10m (33ft) 이내로 다가오는 다음 좀비 10마리를 죽입니다.
 - [M-0527](../rules/zombies.md#m-0527) `wiki-sigils-ingenuity-026`: "No time limit." ([출처](https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-zombie_killer))
   - 번역: 시간 제한이 없습니다.
 - [M-0527](../rules/zombies.md#m-0527) `wiki-zombies-020`: "An Ingenuity Zombie Killer also stops zombies draining you until it has killed ten." ([출처](https://iceposeidon.com/safezone/wiki/zombies#defence))
-  - 번역: Ingenuity Zombie Killer는 열 마리를 죽일 때까지 좀비가 흡수하는 것도 막아 줍니다.
+  - 번역: Ingenuity Zombie Killer는 10마리를 죽일 때까지 좀비가 흡수하는 것도 막아 줍니다.
 
 **형식 모델:**
 
@@ -451,7 +451,7 @@
 
 - [U-0522](../unknowns.md#u-0522) (보통): Zombie killer의 "Kills the next ten zombies that come within 10m": 사용 시점에 이미 10 m 안에 있는 좀비도 죽입니까, 어떤 좀비 유형이 포함되며, 범위 안에 열 마리를 넘으면 어떻게 처리됩니까?
 
-메모 ([M-0527](../rules/zombies.md#m-0527)): 좀비 페이지도 같은 좀비 열 마리와 같은 10 m를 반복합니다. 좀비 흡수 범위는 5 m이고 좀비는 1.4 m/s로 추격하므로, 좀비는 흡수하기 전에 10 m에 도달합니다. Ingenuity는 처치한 좀비마다 토큰 1개를 받습니다 ([M-0521](../rules/economy.md#m-0521)).
+메모 ([M-0527](../rules/zombies.md#m-0527)): 좀비 페이지도 같은 좀비 10마리와 같은 10 m를 반복합니다. 좀비 흡수 범위는 5 m이고 좀비는 1.4 m/s로 추격하므로, 좀비는 흡수하기 전에 10 m에 도달합니다. Ingenuity는 처치한 좀비마다 토큰 1개를 받습니다 ([M-0521](../rules/economy.md#m-0521)).
 
 <a id="m-0631"></a>
 
@@ -518,7 +518,7 @@
 - [M-0633](../rules/zombies.md#m-0633) `wiki-sigils-necromancy-011`: "When a contestant dies within 50m (164ft) of you, a guard zombie stands 10m (33ft) from their gravestone for 1h." ([출처](https://iceposeidon.com/safezone/wiki/sigils/necromancy#rules))
   - 번역: 참가자가 당신으로부터 50m (164ft) 이내에서 사망하면, 가드 좀비가 그 묘비로부터 10m (33ft) 떨어진 곳에 1h 동안 서 있습니다.
 - [M-0633](../rules/zombies.md#m-0633) `wiki-sigils-necromancy-012`: "It drains 2 HP every 5s from anyone within 10m (33ft), up to 30 HP per contestant." ([출처](https://iceposeidon.com/safezone/wiki/sigils/necromancy#rules))
-  - 번역: 10m (33ft) 이내의 모든 사람에게서 5s마다 2 HP를 흡수하며, 참가자 한 명당 최대 30 HP까지입니다.
+  - 번역: 그 좀비는 10m (33ft) 이내의 모든 사람에게서 5s마다 2 HP를 흡수하며, 참가자 한 명당 최대 30 HP까지입니다.
 - [M-0633](../rules/zombies.md#m-0633) `wiki-zombies-010`: "a guard zombie appears 10m (33ft) from the gravestone." ([출처](https://iceposeidon.com/safezone/wiki/zombies#guard-zombies))
   - 번역: 가드 좀비는 묘비로부터 10m (33ft) 떨어진 곳에 나타납니다.
 - [M-0633](../rules/zombies.md#m-0633) `wiki-zombies-011`: "Guard zombies drain 2 HP every 5s from everyone within 10m (33ft), up to 30 HP per contestant." ([출처](https://iceposeidon.com/safezone/wiki/zombies#guard-zombies))
@@ -539,7 +539,7 @@
 
 - [U-0615](../unknowns.md#u-0615) (보통): 가드 좀비의 "up to 30 HP per contestant": 가드 좀비 한 마리당입니까, 같은 참가자에 대해 모든 가드 좀비가 공유합니까? 한 시간 내내 제자리에 서 있습니까?
 - [U-0008](../unknowns.md#u-0008) (높음): 좀비 30 HP 상한: 좀비 수명당입니까, 조우당입니까, 하루당입니까? 좀비가 죽으면 어떻게 됩니까?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, 로봇, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 메모 ([M-0633](../rules/zombies.md#m-0633)): 좀비 페이지는 가드 좀비의 지속 시간을 제시하지 않으며, 시길 페이지는 1h를 제시합니다. 첫 흡수 틱의 시점은 명시되어 있지 않습니다. 소유자 면역은 [M-0636](../rules/zombies.md#m-0636)을 참조하십시오.
 
@@ -552,9 +552,9 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0634](../rules/zombies.md#m-0634) `wiki-sigils-necromancy-013`: "When viewers send a horde, you also get 5 zombies of your own." ([출처](https://iceposeidon.com/safezone/wiki/sigils/necromancy#rules))
-  - 번역: 시청자가 군단(horde)을 보내면, 자신의 좀비도 5마리 얻습니다.
+  - 번역: 시청자가 군단(horde)을 보내면, 당신도 당신 소유의 좀비 5마리를 얻습니다.
 - [M-0634](../rules/zombies.md#m-0634) `wiki-zombies-009`: "when a horde is released, every living Necromancy contestant also gets 5 zombies where they stand." ([출처](https://iceposeidon.com/safezone/wiki/zombies#sources))
-  - 번역: 군단이 풀려나면, 생존 중인 모든 Necromancy 참가자는 서 있는 자리에 좀비도 5마리 얻습니다.
+  - 번역: 군단이 풀려나면, 생존 중인 모든 Necromancy 참가자도 서 있는 자리에 좀비 5마리를 얻습니다.
 
 **형식 모델:**
 
@@ -597,9 +597,9 @@
 
 **미해결 질문:**
 
-- [U-0613](../unknowns.md#u-0613) (높음): Necromancy의 "The HP goes to you": 얻는 HP는 피해자가 실제로 잃은 HP입니까, 소유자의 최대 HP로 제한됩니까, 그리고 막히거나 방어구에 흡수된 흡수(drain)도 HP와 토큰을 줍니까?
+- [U-0613](../unknowns.md#u-0613) (높음): Necromancy의 "The HP goes to you": 얻는 HP는 피해자가 실제로 잃은 HP입니까, 소유자의 최대 HP로 제한됩니까, 그리고 막히거나 방어구가 받아낸 흡수(drain)도 HP와 토큰을 줍니까?
 - [U-0008](../unknowns.md#u-0008) (높음): 좀비 30 HP 상한: 좀비 수명당입니까, 조우당입니까, 하루당입니까? 좀비가 죽으면 어떻게 됩니까?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, 로봇, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 메모 ([M-0635](../rules/zombies.md#m-0635)): 상한의 의미(평생 누적인지, 조우마다인지)는 [U-0008](../unknowns.md#u-0008)입니다. 1.4 m/s로 가장 가까운 참가자를 추격하는 내용은 좀비 페이지(다른 계열)에 있습니다.
 

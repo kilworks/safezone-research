@@ -28,7 +28,7 @@ U-0504:
     C: >-
       등급은 대체되는 아이템 또는 상자 종류에 따라 달라짐
   sweep_range: >-
-    4개의 가중치 각각이 [0,1] 범위이며 합은 1입니다. 균등 벡터(각 0.25)가 기준선이고, 두 극단(모두 작은 등급, 모두 gigantic)이 상자의 가치 범위를 정합니다
+    4개의 가중치 각각이 [0,1] 범위이며 합은 1입니다. 균등 벡터(각 0.25)가 기준선이고, 두 극단(모두 작은 등급, 모두 거대(gigantic) 등급)이 상자의 가치 범위를 정합니다
   resolution_paths:
   - >-
     VOD: 많은 Piety 획득 사례에서 포션 등급을 집계.
@@ -159,7 +159,7 @@ U-0513:
   question: >-
     Ingenuity의 "Recognize fake chests and gravestones, see traps, and hack landmines or C4 within 50m (164ft)": 50 m 제한은 세 능력 모두에 적용됩니까, 아니면 해킹에만 적용됩니까?
   why_it_matters: >-
-    가짜 탐지의 범위는 Ingenuity 참가자가 Trolling 함정을 통해 지도의 얼마만큼을 보는지를 결정합니다.
+    가짜 탐지의 범위는 Ingenuity 참가자가 지도의 어느 범위까지 Trolling 함정을 간파하는지를 결정합니다.
   readings:
     A: >-
       세 능력 모두 50 m 이내에서만 작동함
@@ -176,7 +176,7 @@ U-0514:
   question: >-
     landmine 또는 C4에 대한 "hack"은 무엇을 하며, 제한이 있습니까?
   why_it_matters: >-
-    Ingenuity는 해킹마다 블러드 토큰 하나를 얻습니다. 그 효과(해제, 탈취, 훔치기)가 적의 폭발물에 대한 대응이 되는지, 아니면 그것을 아군 무기로 바꾸는지를 결정합니다.
+    Ingenuity는 해킹마다 블러드 토큰 하나를 얻습니다. 그 효과(해제, 탈취, 훔치기)가 적의 폭발물에 대한 대응이 되는지, 아니면 그것을 역이용하는지를 결정합니다.
   readings:
     A: >-
       해킹이 폭발물을 해제하거나 파괴함
@@ -194,9 +194,9 @@ U-0515:
     회복 값은 정확히 더해지므로(5+5=10, 10+10=20, 20+20=40) 합치기는 회복에서 손실이 없지만 2칸 시길에서는 칸을 절약합니다. 제한은 명시되어 있지 않습니다.
   readings:
     A: >-
-      같은 크기의 체력 포션 두 개가 다음 크기 하나가 됨 (작은 것에서 중간, 큰 것, gigantic으로). gigantic은 합칠 수 없음
+      같은 크기의 체력 포션 두 개가 다음 크기 하나가 됨 (작은 것에서 중간, 큰 것, 거대(gigantic)로). 거대 포션은 합칠 수 없음
     B: >-
-      같은 종류의 포션 두 개(Eddie의 포션이나 Anti poison 포함)는 모두 합칠 수 있음
+      같은 종류의 포션 두 개(Eddie's potion이나 Anti poison 포함)는 모두 합칠 수 있음
     C: >-
       A와 같으나 명시되지 않은 쿨다운 또는 비용이 있음
   resolution_paths:
@@ -251,7 +251,7 @@ U-0518:
     C: >-
       좀비와의 조우당 한 번 굴림
     D: >-
-      A 또는 B와 같으나 Shield, 퇴치제 또는 버블에 막힌 타격은 굴리지 않음
+      A 또는 B와 같으나 Shield, repellent 또는 bubble에 막힌 타격은 굴리지 않음
   resolution_paths:
   - >-
     VOD: 좀비 근처에서 여러 조합을 가진 Ingenuity 참가자.
@@ -274,7 +274,7 @@ U-0520:
   question: >-
     Campfire 공유 풀: 여러 사람이 있을 때 풀은 어떻게 소모되며, HP가 가득 찬 주변인도 회복됩니까?
   why_it_matters: >-
-    "Heals everyone within 10m 1 HP per second from one shared pool"은 대상 N명에 대해 풀 소모가 N HP/s라는 뜻일 수도, 전체 1 HP/s라는 뜻일 수도 있습니다. 풀은 포션의 회복량(5, 10, 20, 40 HP)과 같지만 10 min 상한도 있으므로 gigantic 포션은 40 HP만 줍니다.
+    "Heals everyone within 10m 1 HP per second from one shared pool"은 대상 N명에 대해 풀 소모가 N HP/s라는 뜻일 수도, 전체 1 HP/s라는 뜻일 수도 있습니다. 풀은 포션의 회복량(5, 10, 20, 40 HP)과 같지만 10 min 상한도 있으므로 거대(gigantic) 포션은 40 HP만 줍니다.
   readings:
     A: >-
       범위 안에서 HP가 부족한 사람마다 풀에서 초당 1 HP를 가져감 (풀은 N HP/s로 소모됨)

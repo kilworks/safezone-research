@@ -8,15 +8,15 @@ Trolling(장난) 시길을 언급하는 규칙입니다. 2026-11-11 위키에 �
 
 Trolling은 "장난꾼" 계열입니다. 최대 HP 100과 인벤토리 슬롯 3개로 수치는 평범하며 ([M-0530](../rules/sigil.md#m-0530)), 정체성 전체가 다른 사람들의 삶을 성가시게 만들고 그 피해에 대한 대가를 받는 것입니다 ([M-0531](../rules/economy.md#m-0531)).
 
-장난은 세 종류입니다. 가짜 상자는 보급 상자처럼 보이며, 1시간 단위 이동 구간마다 최대 2개를 놓을 수 있고 각각 1시간 뒤에 사라집니다 ([M-0532](../rules/items.md#m-0532)). 그것을 획득한 사람은 5 HP의 피해를 입고 1시간 동안 상자를 획득할 수 없으며, 당신은 5 HP를 회복합니다. Shield는 피해는 막지만 획득 금지는 막지 못합니다 ([M-0533](../rules/damage.md#m-0533)). 피해자에게 Mirror가 있으면 반사된 가짜 상자가 대신 당신의 획득을 막습니다 ([M-0238](../rules/items.md#m-0238)). 가짜 묘비는 탈락한 참가자의 묘비를 복제하며, 이를 루팅하려는 참가자는 각각 한 번씩 중독됩니다. 하나를 설치한 뒤 2시간을 기다려야 합니다 ([M-0534](../rules/items.md#m-0534)). 언세이프 서클(unsafe circle)은 세이프 존 안에 20분 동안 설치할 수 있는 50 m (164 ft)의 원이며 쿨다운은 2시간이고, 설치할 때 당신을 포함해 살아 있는 사람이 안에 있어서는 안 됩니다 ([M-0535](../rules/zone.md#m-0535)).
+장난은 세 종류입니다. 가짜 상자는 보급 상자처럼 보이며, 이동하는 1시간 구간(rolling hour)마다 최대 2개를 놓을 수 있고 각각 1시간 뒤에 사라집니다 ([M-0532](../rules/items.md#m-0532)). 그것을 획득한 사람은 5 HP의 피해를 입고 1시간 동안 상자를 획득할 수 없으며, 당신은 5 HP를 회복합니다. Shield는 피해는 막지만 획득 금지는 막지 못합니다 ([M-0533](../rules/damage.md#m-0533)). 피해자에게 Mirror가 있으면 반사된 가짜 상자가 대신 당신의 획득을 막습니다 ([M-0238](../rules/items.md#m-0238)). fake gravestone은 탈락한 참가자의 묘비를 복제하며, 이를 루팅하려는 참가자는 각각 한 번씩 중독됩니다. 하나를 설치한 뒤 2시간을 기다려야 합니다 ([M-0534](../rules/items.md#m-0534)). 언세이프 서클(unsafe circle)은 세이프 존 안에 20분 동안 설치할 수 있는 50 m (164 ft)의 원이며 쿨다운은 2시간이고, 설치할 때 당신을 포함해 살아 있는 사람이 안에 있어서는 안 됩니다 ([M-0535](../rules/zone.md#m-0535)).
 
 서클 안에서는 세이프 존 안에 함께 있는 누구든 유예 시간 없이 2초마다 1 HP의 피해를 입습니다 ([M-0536](../rules/damage.md#m-0536)). 첫 타격 뒤에는 그 안에 머물며 면역이 없는 동안 5초마다 무작위 방어 아이템 또는 고유 조합품 하나를 잃기도 합니다 ([M-0537](../rules/items.md#m-0537)). Guardian angel, Safety bubble, Reality Shield, Death Ward는 이를 막고 Shield는 막지 못합니다 ([M-0538](../rules/damage.md#m-0538)).
 
-블러드 토큰도 얻습니다. 다른 플레이어에게 준 피해 5 HP마다 1개, 부순 보급 상자 하나마다 1개입니다 ([M-0531](../rules/economy.md#m-0531)). 그리고 시청자의 보급 상자가 3% 확률로 대신 당신 옆에 떨어집니다 ([M-0539](../rules/viewer.md#m-0539)).
+블러드 토큰도 얻습니다. 다른 플레이어에게 준 피해 5 HP마다 1개, 부순 크레이트 하나마다 1개입니다 ([M-0531](../rules/economy.md#m-0531)). 그리고 시청자의 보급 상자가 3% 확률로 대신 당신 옆에 떨어집니다 ([M-0539](../rules/viewer.md#m-0539)).
 
 기록된 바로는 가장 강한 점은 서클이 세이프 존을 방어가 닳아 없어지는 곳으로 바꾼다는 것 ([M-0537](../rules/items.md#m-0537)), 그리고 가짜 상자가 피해자에게 HP와 상자 접근을 모두 앗아간다는 것입니다 ([M-0533](../rules/damage.md#m-0533)). 가장 약한 점은 수치 보너스가 없다는 것 ([M-0530](../rules/sigil.md#m-0530)), 그리고 알맞은 방어를 가진 피해자는 서클을 그냥 무시한다는 것입니다 ([M-0538](../rules/damage.md#m-0538)).
 
-알려지지 않은 것은 다음과 같습니다. Reality Shield가 서클을 막는지에 대해 위키가 서로 어긋납니다 ([M-0538](../rules/damage.md#m-0538), [C-0502](../unknowns.md#c-0502)). 3% 전환이 모든 보급 상자에 적용되는지 시청자의 것에만 적용되는지에 대해서도 어긋납니다 ([M-0432](../rules/viewer.md#m-0432), [C-0403](../unknowns.md#c-0403)). 50 m가 반지름인지 지름인지 ([U-0535](../unknowns.md#u-0535)), 쿨다운이 설치 시점에 시작되는지 ([U-0536](../unknowns.md#u-0536)), 토큰 계산에서 준 피해가 정확히 무엇인지 ([U-0529](../unknowns.md#u-0529)), 가짜 상자 설치 횟수가 이동하는지 다시 채워지는지 ([U-0530](../unknowns.md#u-0530)), 획득 금지가 무엇까지 막는지 ([U-0531](../unknowns.md#u-0531))는 미해결 질문입니다.
+알려지지 않은 것은 다음과 같습니다. Reality Shield가 서클을 막는지에 대해 위키가 서로 어긋납니다 ([M-0538](../rules/damage.md#m-0538), [C-0502](../unknowns.md#c-0502)). 3% 전환이 모든 보급 상자에 적용되는지 시청자의 것에만 적용되는지에 대해서도 어긋납니다 ([M-0432](../rules/viewer.md#m-0432), [C-0403](../unknowns.md#c-0403)). 50 m가 반지름인지 지름인지 ([U-0535](../unknowns.md#u-0535)), 쿨다운이 설치 시점에 시작되는지 ([U-0536](../unknowns.md#u-0536)), 토큰 계산에서 준 피해가 정확히 무엇인지 ([U-0529](../unknowns.md#u-0529)), 가짜 상자 설치 한도가 이동 구간 방식인지 다시 채워지는 방식인지 ([U-0530](../unknowns.md#u-0530)), 획득 금지가 무엇까지 막는지 ([U-0531](../unknowns.md#u-0531))는 미해결 질문입니다.
 
 이 페이지는 규칙 12개(2 `DOCUMENTED`, 9 `CONDITIONAL`, 1 `UNKNOWN`)를 모았습니다. 아래의 모든 규칙은 공식 위키를 한 글자도 바꾸지 않고 인용하고 형식적 해석을 붙입니다. 문구가 여러 해석을 허용하면 모든 해석을 나열하고 질문은 열린 채로 둡니다.
 
@@ -31,18 +31,18 @@ Trolling은 "장난꾼" 계열입니다. 최대 HP 100과 인벤토리 슬롯 3�
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0238](../rules/items.md#m-0238) `wiki-items-056`: "A reflected fake chest also locks the troll out of chests instead of you." ([출처](https://iceposeidon.com/safezone/wiki/items#mirror_forcefield))
-  - 번역: 반사된 가짜 상자는 당신이 아니라 트롤을 상자에서 잠가 버립니다.
+  - 번역: 반사된 가짜 상자는 또한 당신 대신 트롤이 상자를 열지 못하도록 잠급니다.
 
 **형식 모델:**
 
-- [M-0238](../rules/items.md#m-0238) 해석 A: `반사된 가짜 상자는 대상이 아니라 트롤을 상자에서 잠금`
+- [M-0238](../rules/items.md#m-0238) 해석 A: `반사된 가짜 상자는 대상이 아니라 트롤이 상자를 열지 못하도록 잠금`
 - [M-0238](../rules/items.md#m-0238) 정의역: 가짜 상자 이벤트
 
 **상호작용:** [M-0237](../rules/items.md#m-0237)
 
 <a id="m-0432"></a>
 
-### M-0432: 보급 상자의 Trolling 쪽 방향 전환
+### M-0432: 보급 상자가 Trolling 참가자 쪽으로 빗나감
 
 라벨: `CONDITIONAL`. 시길: trolling.
 
@@ -122,9 +122,9 @@ Trolling은 "장난꾼" 계열입니다. 최대 HP 100과 인벤토리 슬롯 3�
 **미해결 질문:**
 
 - [U-0528](../unknowns.md#u-0528) (높음): Trolling의 "다른 플레이어에게 가한 5 HP당 블러드 토큰 1개": 나머지는 이월됩니까, 그리고 "가한"은 명목상의 타격입니까 실제로 통과한 HP(방어구, fortress, Kick 감소 적용 후)입니까?
-- [U-0529](../unknowns.md#u-0529) (높음): Trolling 수입 범위: 어떤 피해가 "다른 플레이어에게 가한 HP"로 인정됩니까(무기, 가짜 상자, 언세이프 서클 틱, 가짜 묘비의 독, 반사된 타격), 그리고 어떤 상자가 "누가 소환했든 파괴된 상자"로 인정됩니까?
+- [U-0529](../unknowns.md#u-0529) (높음): Trolling 수입 범위: 어떤 피해가 "다른 플레이어에게 가한 HP"로 인정됩니까(무기, 가짜 상자, 언세이프 서클 틱, fake gravestone의 독, 반사된 타격), 그리고 어떤 크레이트가 "누가 소환했든 파괴된 크레이트"로 인정됩니까?
 - [U-0001](../unknowns.md#u-0001) (치명적): 방어자의 Kick 라이브 10% 감소는 결과를 내림하는 것입니까(A), 아니면 제거되는 10%를 내림하는 것입니까(B)?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, 로봇, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 메모 ([M-0531](../rules/economy.md#m-0531)): 'other players'에는 Trolling 참가자와 좀비가 제외됩니다. 가짜 상자를 획득하면 5 HP 피해를 주고, Kick 라이브 중인 방어자는 [U-0001](../unknowns.md#u-0001)에 따라 4 또는 5를 받으므로, 해석에 따라 획득 한 번이 토큰 0개 또는 1개를 지급할 수 있습니다.
 
@@ -177,14 +177,14 @@ Trolling은 "장난꾼" 계열입니다. 최대 HP 100과 인벤토리 슬롯 3�
 - [M-0533](../rules/damage.md#m-0533) `wiki-sigils-trolling-012`: "A Shield blocks the damage but not the lockout." ([출처](https://iceposeidon.com/safezone/wiki/sigils/trolling#rules))
   - 번역: Shield는 피해는 막지만 잠금은 막지 못합니다.
 - [M-0533](../rules/damage.md#m-0533) `wiki-items-056`: "A reflected fake chest also locks the troll out of chests instead of you." ([출처](https://iceposeidon.com/safezone/wiki/items#mirror_forcefield))
-  - 번역: 반사된 가짜 상자는 본인 대신 troll이 상자를 획득하지 못하게 잠급니다.
+  - 번역: 반사된 가짜 상자는 또한 본인 대신 troll이 상자를 획득하지 못하게 잠급니다.
 
 **형식 모델:**
 
 - [M-0533](../rules/damage.md#m-0533) 해석 A: `claim(fake chest by contestant v): v가 타격 파이프라인을 거쳐 5 HP 피해를 입음 (Kick 보너스는 troll의 타격에 적용되고, 감소는 v에 적용됨). v는 3600 s 동안 상자를 획득할 수 없음. troll이 5 HP를 회복함. Shield는 피해는 막지만 잠금은 막지 못함`
 - [M-0533](../rules/damage.md#m-0533) 해석 B: `troll은 피해가 막히지 않았을 때만 회복함`
 - [M-0533](../rules/damage.md#m-0533) 해석 C: `잠금은 보급 상자와 crate에도 적용됨`
-- [M-0533](../rules/damage.md#m-0533) 정의역: 수정 전 피해 정수 5. 잠금 3600 s
+- [M-0533](../rules/damage.md#m-0533) 정의역: 보정 전 피해 정수 5. 잠금 3600 s
 - [M-0533](../rules/damage.md#m-0533) 매개변수 `damage_hp`: 5
 - [M-0533](../rules/damage.md#m-0533) 매개변수 `lockout_s`: 3600
 - [M-0533](../rules/damage.md#m-0533) 매개변수 `troll_heal_hp`: 5
@@ -195,10 +195,10 @@ Trolling은 "장난꾼" 계열입니다. 최대 HP 100과 인벤토리 슬롯 3�
 
 **미해결 질문:**
 
-- [U-0531](../unknowns.md#u-0531) (보통): 가짜 상자 잠금 "1h 동안 상자를 열 수 없음": 보급 상자와 크레이트도 막습니까, 두 번째로 열면 연장됩니까, 그리고 Shield 외의 방어 수단(Safety bubble, Sleeping Bag, Body armor)도 잠금을 남기지 않게 합니까?
+- [U-0531](../unknowns.md#u-0531) (보통): 가짜 상자 잠금 "1h 동안 상자를 열 수 없음": 보급 상자와 크레이트도 막습니까, 두 번째로 열면 연장됩니까, 그리고 Shield 외의 방어 수단(Safety bubble, Sleeping Bag, Body armor)도 잠금은 그대로 남겨 둡니까?
 - [U-0532](../unknowns.md#u-0532) (보통): Trolling 가짜 상자 "5 HP를 회복합니다": 열 때 고정된 5 HP입니까, 실제로 들어간 피해입니까, 그리고 피해자가 보호받거나 상자가 반사된 경우에도 발생합니까?
 - [U-0001](../unknowns.md#u-0001) (치명적): 방어자의 Kick 라이브 10% 감소는 결과를 내림하는 것입니까(A), 아니면 제거되는 10%를 내림하는 것입니까(B)?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, 로봇, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 메모 ([M-0533](../rules/damage.md#m-0533)): 피해 페이지 행: 가짜 상자는 Shield, Safety bubble, Sleeping Bag, Mirror forcefield(반사), Body armor(흡수)가 막으며, Kick 보너스 목록에 가짜 상자가 포함됩니다. Protection 참가자도 가짜 상자 피해를 입습니다. Mirror forcefield가 있으면 잠금을 포함한 전체 효과가 troll에게 되돌아갑니다 (아이템 페이지).
 
@@ -306,7 +306,7 @@ Trolling은 "장난꾼" 계열입니다. 최대 HP 100과 인벤토리 슬롯 3�
 
 - [U-0537](../unknowns.md#u-0537) (높음): 언세이프 서클(unsafe circle) 피해 시계: 첫 타격은 진입마다 2 s 뒤입니까(나갈 때 타이머 초기화), 아니면 전역 2 s 위상이 계속됩니까? 서클 중 세이프 존 안쪽 부분과 바깥 부분 사이를 이동하면 초기화됩니까?
 - [U-0003](../unknowns.md#u-0003) (보통): 존 피해: 세이프 존을 벗어난 뒤 첫 틱은 5 s입니까, 7 s입니까?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, 로봇, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 메모 ([M-0536](../rules/damage.md#m-0536)): Hazmat suit는 존 피해 간격마다 2 s를 늘리며(아이템 페이지), 피해 페이지에도 언세이프 서클 피해를 늦추는 것으로 나열되어 있습니다. Body armor는 이를 흡수합니다. 일반 존 피해의 첫 틱은 [U-0003](../unknowns.md#u-0003)입니다.
 
@@ -376,7 +376,7 @@ Trolling은 "장난꾼" 계열입니다. 최대 HP 100과 인벤토리 슬롯 3�
 
 **모순:** [C-0502](../unknowns.md#c-0502)
 
-메모 ([M-0538](../rules/damage.md#m-0538)): 불일치는 Reality Shield뿐입니다. 피해 페이지의 주석(다른 조항)에도 Safety bubble과 Reality Shield가 존 피해, 언세이프 서클 피해, 로봇 피해를 막는다고 되어 있어 해석 A를 뒷받침합니다.
+메모 ([M-0538](../rules/damage.md#m-0538)): 불일치는 Reality Shield뿐입니다. 피해 페이지의 주석(다른 조항)에도 Safety bubble과 Reality Shield가 존 피해, 언세이프 서클 피해, Robot 피해를 막는다고 되어 있어 해석 A를 뒷받침합니다.
 
 <a id="m-0539"></a>
 
@@ -387,7 +387,7 @@ Trolling은 "장난꾼" 계열입니다. 최대 HP 100과 인벤토리 슬롯 3�
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0539](../rules/viewer.md#m-0539) `wiki-sigils-trolling-020`: "Each crate or care package from viewers has a 3% chance to land next to a Trolling contestant instead." ([출처](https://iceposeidon.com/safezone/wiki/sigils/trolling#rules))
-  - 번역: 시청자가 보낸 각 상자 또는 보급 상자는 3% 확률로 대신 Trolling 참가자 옆에 떨어집니다.
+  - 번역: 시청자가 보낸 각 크레이트(crate) 또는 보급 상자는 3% 확률로 대신 Trolling 참가자 옆에 떨어집니다.
 - [M-0539](../rules/viewer.md#m-0539) `wiki-attacks-079`: "A care package drops a random item at a random point in the safe zones." ([출처](https://iceposeidon.com/safezone/wiki/attacks#care-package))
   - 번역: 보급 상자는 세이프 존 안의 임의의 지점에 임의의 아이템을 떨어뜨립니다.
 - [M-0539](../rules/viewer.md#m-0539) `wiki-attacks-080`: "It has a 3% chance to land within 5m (16ft) of a Trolling contestant instead." ([출처](https://iceposeidon.com/safezone/wiki/attacks#care-package))
@@ -396,9 +396,9 @@ Trolling은 "장난꾼" 계열입니다. 최대 HP 100과 인벤토리 슬롯 3�
 **형식 모델:**
 
 - [M-0539](../rules/viewer.md#m-0539) 해석 A: `시청자가 보낸 각 보급 상자: 확률 0.03으로 세이프 존 안의 임의의 지점 대신 Trolling 참가자로부터 5 m 이내에 떨어짐`
-- [M-0539](../rules/viewer.md#m-0539) 해석 B: `상자(crate)도 같은 판정을 받음`
+- [M-0539](../rules/viewer.md#m-0539) 해석 B: `크레이트(crate)도 같은 판정을 받음`
 - [M-0539](../rules/viewer.md#m-0539) 해석 C: `각 Trolling 참가자가 따로 판정`
-- [M-0539](../rules/viewer.md#m-0539) 정의역: 상자당 판정, 확률 0.03
+- [M-0539](../rules/viewer.md#m-0539) 정의역: 보급 상자당 판정, 확률 0.03
 - [M-0539](../rules/viewer.md#m-0539) 매개변수 `p`: 0.03
 - [M-0539](../rules/viewer.md#m-0539) 매개변수 `landing_radius_m`: 5
 - [M-0539](../rules/viewer.md#m-0539) 매개변수 `scope`: UNKNOWN, [U-0540](../unknowns.md#u-0540) 참조

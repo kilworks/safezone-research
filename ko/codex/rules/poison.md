@@ -10,9 +10,9 @@
 
 중독되는 방법: Poison dart나 Fake gravestone에 의해 중독될 수 있으며, 그 외에는 없습니다 ([M-0173](../rules/poison.md#m-0173)). 중독되면 1분 30초마다 1 HP를 잃습니다 ([M-0170](../rules/poison.md#m-0170)). 다시 중독되면 타이머가 초기화되며 중첩되지 않습니다 ([M-0171](../rules/poison.md#m-0171)). 독은 모든 피해를 다 주었거나 치료되었을 때만 끝납니다 ([M-0172](../rules/poison.md#m-0172)). 따라서 치료하지 않은 독은 천천히 치르는 고정된 총 청구액입니다 ([M-0172](../rules/poison.md#m-0172)).
 
-막는 방법: 독은 Anti poison, Healing의 회복, God's Fruit로 치료할 수 있습니다 ([M-0174](../rules/poison.md#m-0174)). Anti poison은 독을 치료하고 10분 동안 독에 면역이 됩니다 ([M-0221](../rules/poison.md#m-0221)). 다른 보호 수단은 독이 들어오기 전에 작동합니다. Reality Shield는 그 안에 서 있는 동안 새 독을 막고 ([M-0177](../rules/poison.md#m-0177)), Protection 시길은 완전히 면역입니다 ([M-0175](../rules/poison.md#m-0175)). Mirror forcefield는 Poison Dart나 Fake gravestone를 공격자에게 되돌립니다 ([M-0180](../rules/poison.md#m-0180)). Shield나 Safety bubble은 다르게 작동합니다. 독이 들어오는 것은 막지 않지만, 지속되는 동안 각 독 단계를 차단합니다 ([M-0136](../rules/poison.md#m-0136), [M-0179](../rules/poison.md#m-0179)).
+막는 방법: 독은 Anti poison, Healing의 회복, God's Fruit로 치료할 수 있습니다 ([M-0174](../rules/poison.md#m-0174)). Anti poison은 독을 치료하고 10분 동안 독에 면역이 되게 합니다 ([M-0221](../rules/poison.md#m-0221)). 다른 보호 수단은 독이 들어오기 전에 작동합니다. Reality Shield는 그 안에 서 있는 동안 새 독을 막고 ([M-0177](../rules/poison.md#m-0177)), Protection 시길은 완전히 면역입니다 ([M-0175](../rules/poison.md#m-0175)). Mirror forcefield는 Poison Dart나 Fake gravestone을 공격자에게 되돌립니다 ([M-0180](../rules/poison.md#m-0180)). Shield나 Safety bubble은 다르게 작동합니다. 독이 들어오는 것은 막지 않지만, 지속되는 동안 각 독 단계를 차단합니다 ([M-0136](../rules/poison.md#m-0136), [M-0179](../rules/poison.md#m-0179)).
 
-플레이어가 느끼는 점: 총량이 다 치러지거나 치료가 들어올 때까지 90초마다 1 HP가 서서히 줄어듭니다 ([M-0170](../rules/poison.md#m-0170), [M-0172](../rules/poison.md#m-0172)). 독에 효과적인 수단: 깔끔한 해결에는 Anti poison ([M-0221](../rules/poison.md#m-0221)), 영구적인 안전에는 Protection ([M-0175](../rules/poison.md#m-0175)), 되돌려 보내는 데에는 Mirror ([M-0180](../rules/poison.md#m-0180))입니다.
+플레이어가 느끼는 점: 90초마다 1 HP가 서서히 줄어들며 ([M-0170](../rules/poison.md#m-0170)), 총량이 다 치러지거나 치료가 들어올 때까지 이어집니다 ([M-0172](../rules/poison.md#m-0172)). 독에 효과적인 수단: 깔끔한 해결에는 Anti poison ([M-0221](../rules/poison.md#m-0221)), 영구적인 안전에는 Protection ([M-0175](../rules/poison.md#m-0175)), 되돌려 보내는 데에는 Mirror ([M-0180](../rules/poison.md#m-0180))입니다.
 
 규칙에 적힌 대로 독 자체의 가장 약한 점: 느리고 ([M-0170](../rules/poison.md#m-0170)), 중첩되지 않으며 ([M-0171](../rules/poison.md#m-0171)), 알려진 대응 수단이 여러 개 있습니다 ([M-0174](../rules/poison.md#m-0174)).
 
@@ -67,7 +67,7 @@
 **미해결 질문:**
 
 - [U-0115](../unknowns.md#u-0115) (보통): 독: 첫 1 HP가 즉시 들어갑니까, 1min 30s 뒤입니까, 아니면 고정된 전역 90 s 위상입니까?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, 로봇, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 메모 ([M-0170](../rules/poison.md#m-0170)): 30 min당 20 HP에 해당하며, Poison Dart가 30min 동안 20 HP만큼 중독시킨다는 다른 페이지와 일치합니다(이후의 유도 대상이며 여기서는 단정하지 않습니다). 1 HP에서는 Kick 감소가 의미가 없습니다(독이 타격일 때만 최소 1, [U-0002](../unknowns.md#u-0002)).
 
@@ -213,8 +213,8 @@
 
 **형식 모델:**
 
-- [M-0178](../rules/poison.md#m-0178) 해석 A: `자신의 bag에서 수면 중: 새 독 없음`
-- [M-0178](../rules/poison.md#m-0178) 해석 B: `자신의 bag에서 수면 중: 독 틱이 차단됨`
+- [M-0178](../rules/poison.md#m-0178) 해석 A: `자신의 Sleeping Bag(own bag)에서 수면 중: 새 독 없음`
+- [M-0178](../rules/poison.md#m-0178) 해석 B: `자신의 Sleeping Bag(own bag)에서 수면 중: 독 틱이 차단됨`
 - [M-0178](../rules/poison.md#m-0178) 해석 C: `둘 다`
 
 **미해결 질문:**

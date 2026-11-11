@@ -286,9 +286,9 @@
     자신의 Sleeping Bag에서 잠자기
   "readings":
     "A": >-
-      자신의 bag에서 수면 중: 새 독 없음
+      자신의 Sleeping Bag(own bag)에서 수면 중: 새 독 없음
     "B": >-
-      자신의 bag에서 수면 중: 독 틱이 차단됨
+      자신의 Sleeping Bag(own bag)에서 수면 중: 독 틱이 차단됨
     "C": >-
       둘 다
   "notes": >-

@@ -452,7 +452,7 @@
 
 **형식 모델:**
 
-- [M-0315](../rules/weapons.md#m-0315) 해석 A: `가까운 참가자를 30 min 동안 20 HP만큼 중독시킴(독 페이지는 1min 30s마다 1 HP를 주는데, 이는 30 min 동안 20틱임)`
+- [M-0315](../rules/weapons.md#m-0315) 해석 A: `가까운 참가자를 30 min 동안 20 HP만큼 중독시킴(독 페이지는 1min 30s마다 1 HP의 피해를 준다고 하며, 이는 30 min 동안 20틱임)`
 - [M-0315](../rules/weapons.md#m-0315) 정의역: HP, 분
 - [M-0315](../rules/weapons.md#m-0315) 매개변수 `dart_total_hp`: 20
 - [M-0315](../rules/weapons.md#m-0315) 매개변수 `dart_duration_min`: 30
@@ -608,7 +608,7 @@
 - [M-0336](../rules/weapons.md#m-0336) `wiki-merchant-042`: "Deep Cut: 20 blood tokens." ([출처](https://iceposeidon.com/safezone/wiki/merchant#upgrades))
   - 번역: Deep Cut: 블러드 토큰 20개.
 - [M-0336](../rules/weapons.md#m-0336) `wiki-merchant-043`: "Your next bow, knife, long sword, axe, machete or drone hit, or Poison Dart, causes bleeding: 1 HP every five minutes until a bandage or a Healing contestant cures it." ([출처](https://iceposeidon.com/safezone/wiki/merchant#upgrades))
-  - 번역: 다음 활, 칼, 장검, 도끼, 마체테 또는 드론 타격, 혹은 Poison Dart가 출혈을 일으키며, 붕대나 Healing 참가자가 치료할 때까지 5분마다 1 HP를 잃습니다.
+  - 번역: 다음 활, 칼, 장검, 도끼, 마체테 또는 Drone 타격, 혹은 Poison Dart가 출혈을 일으키며, 붕대나 Healing 참가자가 치료할 때까지 5분마다 1 HP를 잃습니다.
 - [M-0336](../rules/weapons.md#m-0336) `wiki-merchant-044`: "One charge." ([출처](https://iceposeidon.com/safezone/wiki/merchant#upgrades))
   - 번역: 충전 1회.
 - [M-0336](../rules/weapons.md#m-0336) `wiki-merchant-045`: "Bleeding does not stack." ([출처](https://iceposeidon.com/safezone/wiki/merchant#upgrades))
@@ -616,7 +616,7 @@
 
 **형식 모델:**
 
-- [M-0336](../rules/weapons.md#m-0336) 해석 A: `충전 1회. 다음 활, 칼, 장검, 도끼, 마체테 또는 드론 타격, 혹은 다음 Poison Dart가 출혈을 일으켜 붕대나 Healing 참가자가 치료할 때까지 5 min마다 1 HP를 잃음. 출혈은 중첩되지 않음`
+- [M-0336](../rules/weapons.md#m-0336) 해석 A: `충전 1회. 다음 활, 칼, 장검, 도끼, 마체테 또는 Drone 타격, 혹은 다음 Poison Dart가 출혈을 일으켜 붕대나 Healing 참가자가 치료할 때까지 5 min마다 1 HP를 잃음. 출혈은 중첩되지 않음`
 - [M-0336](../rules/weapons.md#m-0336) 정의역: HP, 분
 - [M-0336](../rules/weapons.md#m-0336) 매개변수 `deep_cut_cost_tokens`: 20
 - [M-0336](../rules/weapons.md#m-0336) 매개변수 `bleed_hp`: 1
@@ -626,7 +626,7 @@
 
 - [U-0332](../unknowns.md#u-0332) (보통): Deep Cut: 첫 출혈 틱은 언제이며, 출혈 중에 새 타격을 받으면 타이머가 초기화되고, 사용하지 않은 충전은 얼마나 오래 유지되며, 출혈 틱은 타격으로 계산됩니까?
 - [U-0308](../unknowns.md#u-0308) (높음): 사용(무기 사용, 화살, Deep Cut 충전, 인챈트 사용)은 막히거나 반사되거나 사거리 밖이거나 빗나간 공격에서도 소모됩니까?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, 로봇, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 메모 ([M-0336](../rules/weapons.md#m-0336)): Staff, C4, landmine은 목록에 없습니다. 붕대와 Healing의 치료는 Bandage 페이지와 Healing 페이지에 명시되어 있습니다.
 
@@ -641,19 +641,19 @@
 - [M-0337](../rules/weapons.md#m-0337) `wiki-merchant-046`: "Weapon enchantment: 15 blood tokens." ([출처](https://iceposeidon.com/safezone/wiki/merchant#enchantments))
   - 번역: Weapon enchantment: 블러드 토큰 15개.
 - [M-0337](../rules/weapons.md#m-0337) `wiki-merchant-047`: "Twice the uses and +10 damage for two hours." ([출처](https://iceposeidon.com/safezone/wiki/merchant#enchantments))
-  - 번역: 사용 횟수가 두 배가 되고 두 시간 동안 피해가 +10 됩니다.
+  - 번역: 사용 횟수가 2배가 되고 2시간 동안 피해가 +10 됩니다.
 - [M-0337](../rules/weapons.md#m-0337) `wiki-merchant-048`: "After two hours the weapon loses the bonus damage and keeps the uses it had before or the uses it has left, whichever is lower." ([출처](https://iceposeidon.com/safezone/wiki/merchant#enchantments))
-  - 번역: 두 시간이 지나면 무기는 추가 피해를 잃고, 인챈트 전의 사용 횟수와 남은 사용 횟수 중 낮은 쪽을 유지합니다.
+  - 번역: 2시간이 지나면 무기는 추가 피해를 잃고, 인챈트 전의 사용 횟수와 남은 사용 횟수 중 낮은 쪽을 유지합니다.
 - [M-0337](../rules/weapons.md#m-0337) `wiki-merchant-049`: "If you use up the enchanted uses first, a knife, machete or long sword goes back with one use left; a single-use weapon is used up." ([출처](https://iceposeidon.com/safezone/wiki/merchant#enchantments))
   - 번역: 인챈트된 사용 횟수를 먼저 다 쓰면, 칼, 마체테, 장검은 사용 횟수 1회가 남은 상태로 돌아오고, 1회용 무기는 소모됩니다.
 - [M-0337](../rules/weapons.md#m-0337) `wiki-merchant-055`: "For every other weapon, if two hours pass first, the bonus ends and the item stays as a normal item." ([출처](https://iceposeidon.com/safezone/wiki/merchant#enchantments))
-  - 번역: 그 밖의 모든 무기는 두 시간이 먼저 지나면 추가 효과가 끝나고 아이템은 일반 아이템으로 남습니다.
+  - 번역: 그 밖의 모든 무기는 2시간이 먼저 지나면 추가 효과가 끝나고 아이템은 일반 아이템으로 남습니다.
 - [M-0337](../rules/weapons.md#m-0337) `wiki-merchant-056`: "You can have one enchanted weapon, or two with Dual Wield." ([출처](https://iceposeidon.com/safezone/wiki/merchant#enchantments))
   - 번역: 인챈트된 무기는 하나만 가질 수 있으며, Dual Wield가 있으면 둘까지 가질 수 있습니다.
 
 **형식 모델:**
 
-- [M-0337](../rules/weapons.md#m-0337) 해석 A: `토큰 15개. 사용 횟수 두 배와 2 h 동안 피해 +10. 2 h 후 무기는 추가 효과를 잃고 min(이전 사용 횟수, 남은 사용 횟수)를 유지. 인챈트된 사용 횟수가 먼저 소진되면 칼, 마체테, 장검은 사용 횟수 1회가 남은 상태로 돌아오고 1회용 무기는 소모됨. 그 밖의 모든 무기는 2 h가 먼저 지나면 추가 효과가 끝나고 일반 아이템이 됨. 인챈트된 무기는 하나, Dual Wield가 있으면 둘`
+- [M-0337](../rules/weapons.md#m-0337) 해석 A: `토큰 15개. 사용 횟수 2배와 2 h 동안 피해 +10. 2 h 후 무기는 추가 효과를 잃고 min(이전 사용 횟수, 남은 사용 횟수)를 유지. 인챈트된 사용 횟수가 먼저 소진되면 칼, 마체테, 장검은 사용 횟수 1회가 남은 상태로 돌아오고 1회용 무기는 소모됨. 그 밖의 모든 무기는 2 h가 먼저 지나면 추가 효과가 끝나고 일반 아이템이 됨. 인챈트된 무기는 하나, Dual Wield가 있으면 둘`
 - [M-0337](../rules/weapons.md#m-0337) 정의역: HP, 시간, 정수 사용 횟수
 - [M-0337](../rules/weapons.md#m-0337) 매개변수 `weapon_enchant_cost_tokens`: 15
 - [M-0337](../rules/weapons.md#m-0337) 매개변수 `weapon_enchant_bonus_hp`: 10
@@ -662,7 +662,7 @@
 **미해결 질문:**
 
 - [U-0333](../unknowns.md#u-0333) (높음): 무기 인챈트 'Twice the uses ... keeps the uses it had before or the uses it has left, whichever is lower': 무엇의 두 배이며, 'the uses it had before'는 무엇입니까?
-- [U-0334](../unknowns.md#u-0334) (보통): 인챈트 시계: 2 hours는 구매 시점에 시작합니까, 무기에 적용하는 시점에 시작합니까? 그리고 'For every other weapon, if two hours pass first'는 Zarok's axe, Poison Dart, C4, landmine, drone도 제한합니까?
+- [U-0334](../unknowns.md#u-0334) (보통): 인챈트 시계: 2시간은 구매 시점에 시작합니까, 무기에 적용하는 시점에 시작합니까? 그리고 'For every other weapon, if two hours pass first'는 Zarok's axe, Poison Dart, C4, landmine, drone도 제한합니까?
 - [U-0337](../unknowns.md#u-0337) (보통): 인챈트 제한 'one enchanted weapon, or two with Dual Wield': 무기 슬롯 아이템이 아닌 C4, landmine, drone, Poison Dart도 포함합니까?
 - [U-0308](../unknowns.md#u-0308) (높음): 사용(무기 사용, 화살, Deep Cut 충전, 인챈트 사용)은 막히거나 반사되거나 사거리 밖이거나 빗나간 공격에서도 소모됩니까?
 - [U-0006](../unknowns.md#u-0006) (높음): 서버 연산은 정확합니까, 아니면 IEEE 754 binary64입니까(H-0001: Ingenuity 가격이 기본 50, 90, 100, 110일 때)?
@@ -678,19 +678,19 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0338](../rules/weapons.md#m-0338) `wiki-merchant-050`: "Zarok's Axe and Poison Dart get +10 damage for two uses, then they are used up." ([출처](https://iceposeidon.com/safezone/wiki/merchant#enchantments))
-  - 번역: Zarok's Axe와 Poison Dart는 두 번 사용하는 동안 피해가 +10 되며, 그 후 소모됩니다.
+  - 번역: Zarok's Axe와 Poison Dart는 2번 사용하는 동안 피해가 +10 되며, 그 후 소모됩니다.
 - [M-0338](../rules/weapons.md#m-0338) `wiki-merchant-051`: "Landmines and C4 get +20 damage and +10m (33ft) radius for one use, then they are used up." ([출처](https://iceposeidon.com/safezone/wiki/merchant#enchantments))
-  - 번역: Landmine과 C4는 한 번 사용하는 동안 피해 +20과 반경 +10m (33ft)를 얻으며, 그 후 소모됩니다.
+  - 번역: Landmine과 C4는 1번 사용하는 동안 피해 +20과 반경 +10m (33ft)를 얻으며, 그 후 소모됩니다.
 - [M-0338](../rules/weapons.md#m-0338) `wiki-merchant-052`: "Drones get +10 damage for one use, then they are used up." ([출처](https://iceposeidon.com/safezone/wiki/merchant#enchantments))
-  - 번역: Drone은 한 번 사용하는 동안 피해가 +10 되며, 그 후 소모됩니다.
+  - 번역: Drone은 1번 사용하는 동안 피해가 +10 되며, 그 후 소모됩니다.
 - [M-0338](../rules/weapons.md#m-0338) `wiki-merchant-053`: "A bow gets +10 damage for five shots or two hours." ([출처](https://iceposeidon.com/safezone/wiki/merchant#enchantments))
-  - 번역: 활은 5발 동안 또는 두 시간 동안 피해가 +10 됩니다.
+  - 번역: 활은 5발 동안 또는 2시간 동안 피해가 +10 됩니다.
 - [M-0338](../rules/weapons.md#m-0338) `wiki-merchant-054`: "A Wizard Staff gets +10 damage and +10m (33ft) area radius for five uses, with no time limit." ([출처](https://iceposeidon.com/safezone/wiki/merchant#enchantments))
   - 번역: Wizard Staff는 5회 사용하는 동안 피해 +10과 범위 반경 +10m (33ft)를 얻으며, 시간 제한은 없습니다.
 
 **형식 모델:**
 
-- [M-0338](../rules/weapons.md#m-0338) 해석 A: `Zarok's Axe와 Poison Dart: 두 번 사용하는 동안 피해 +10, 그 후 소모. Landmines와 C4: 한 번 사용하는 동안 피해 +20과 반경 +10 m, 그 후 소모. Drones: 한 번 사용하는 동안 피해 +10, 그 후 소모. 활: 5발 동안 또는 2 h 동안 피해 +10. Wizard Staff: 5회 사용하는 동안 피해 +10과 범위 반경 +10 m, 시간 제한 없음`
+- [M-0338](../rules/weapons.md#m-0338) 해석 A: `Zarok's Axe와 Poison Dart: 2번 사용하는 동안 피해 +10, 그 후 소모. Landmines와 C4: 1번 사용하는 동안 피해 +20과 반경 +10 m, 그 후 소모. Drones: 1번 사용하는 동안 피해 +10, 그 후 소모. 활: 5발 동안 또는 2 h 동안 피해 +10. Wizard Staff: 5회 사용하는 동안 피해 +10과 범위 반경 +10 m, 시간 제한 없음`
 - [M-0338](../rules/weapons.md#m-0338) 정의역: HP, 미터, 정수 사용 횟수
 - [M-0338](../rules/weapons.md#m-0338) 매개변수 `axe_dart_bonus_hp`: 10
 - [M-0338](../rules/weapons.md#m-0338) 매개변수 `axe_dart_uses`: 2
@@ -708,9 +708,9 @@
 **미해결 질문:**
 
 - [U-0317](../unknowns.md#u-0317) (보통): 지속 피해 아이템에서 'Poison Dart ... +10 damage for two uses'는 무엇을 뜻합니까?
-- [U-0334](../unknowns.md#u-0334) (보통): 인챈트 시계: 2 hours는 구매 시점에 시작합니까, 무기에 적용하는 시점에 시작합니까? 그리고 'For every other weapon, if two hours pass first'는 Zarok's axe, Poison Dart, C4, landmine, drone도 제한합니까?
+- [U-0334](../unknowns.md#u-0334) (보통): 인챈트 시계: 2시간은 구매 시점에 시작합니까, 무기에 적용하는 시점에 시작합니까? 그리고 'For every other weapon, if two hours pass first'는 Zarok's axe, Poison Dart, C4, landmine, drone도 제한합니까?
 - [U-0335](../unknowns.md#u-0335) (낮음): 인챈트된 bow의 'five shots or two hours': 먼저 오는 쪽입니까, 나중에 오는 쪽입니까?
-- [U-0336](../unknowns.md#u-0336) (보통): 인챈트된 C4 또는 landmine: '+10m radius'는 발동 거리에도 적용됩니까? 그리고 인챈트된 트랩으로 만든 trapped gift에 인챈트가 이어집니까?
+- [U-0336](../unknowns.md#u-0336) (보통): 인챈트된 C4 또는 landmine: '+10m radius'는 발동 거리에도 적용됩니까? 그리고 인챈트된 함정으로 만든 trapped gift에 인챈트가 이어집니까?
 - [U-0304](../unknowns.md#u-0304) (보통): 인챈트되지 않았을 때 drone, C4, landmine, Poison Dart는 각각 몇 번 사용할 수 있습니까?
 - [U-0312](../unknowns.md#u-0312) (보통): Wizard staff: '10m damage area'는 반지름입니까, 지름입니까?
 
@@ -747,7 +747,7 @@
 **미해결 질문:**
 
 - [U-0527](../unknowns.md#u-0527) (보통): Robot이 "10m 이내의 다른 플레이어에게 2s마다 1 HP 피해"를 줍니다. 2 s 시계는 전역입니까 대상별입니까, 그리고 첫 타격은 즉시 들어갑니까 한 간격 뒤에 들어갑니까?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, 로봇, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 **모순:** [C-0500](../unknowns.md#c-0500)
 

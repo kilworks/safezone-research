@@ -16,7 +16,7 @@ C-0101:
     Poison Dart, fake gravestone, bow, wizard staff, knife, long sword, Zarok's axe, machete, drone, C4, landmine, flashbang, fake chest만 반사하며, 자신의 폭발물은 절대 반사하지 않습니다.
 C-0102:
   summary: >-
-    Body Armor는 '모든 종류의 피해에 작동한다'는 설명과, Trapped gift 행(Body armor 없음) 및 아이템 페이지('A trapped gift ignores it')가 충돌합니다.
+    Body Armor는 '모든 종류의 피해에 작동한다'는 설명과, Trapped gift 행(Body armor 없음) 및 아이템 페이지('trapped gift는 이를 무시한다')가 충돌합니다.
   quotes:
   - >-
     Body Armor는 모든 종류의 피해에 작동합니다.
@@ -26,20 +26,20 @@ C-0102:
     trapped gift는 이를 무시합니다.
 C-0103:
   summary: >-
-    Death Ward의 범위: 피해 페이지는 원 밖에서 오는 피해만 막지만, Death 시길 페이지는 언세이프 서클(unsafe circle)에서 오는 타격까지 추가하고 둘 모두에 대해 2min 동안 면역이라고 합니다(Unsafe circle 피해 표 행에도 Death Ward가 나열되어 있습니다).
+    Death Ward의 범위: 피해 페이지는 서클 밖에서 오는 피해만 막지만, Death 시길 페이지는 언세이프 서클(unsafe circle)에서 오는 타격까지 추가하고 둘 모두에 대해 2min 동안 면역이라고 합니다(Unsafe circle 피해 표 행에도 Death Ward가 나열되어 있습니다).
   quotes:
   - >-
-    Death Ward: Death 참가자가 원 밖에서 받는 첫 타격은 차단되며, 원 밖에서 오는 피해는 2min 동안 차단됩니다.
+    Death Ward: Death 참가자가 서클 밖에서 받는 첫 타격은 차단되며, 서클 밖에서 오는 피해는 2min 동안 차단됩니다.
   - >-
     | Unsafe circle | Safety bubble, Guardian angel, Death Ward, Hazmat suit (둔화), Body armor (흡수)
   - >-
-    Death ward: 원 밖 또는 언세이프 서클에서 오는 첫 타격이 차단되며, 둘 모두에 대해 2min 동안 면역입니다.
+    Death ward: 서클 밖 또는 언세이프 서클에서 오는 첫 타격이 차단되며, 둘 모두에 대해 2min 동안 면역입니다.
 C-0104:
   summary: >-
-    Sleeping Bag 면역: 피해 페이지에는 지연이 없고 존, 언세이프 서클, 로봇을 제외합니다. 상인 페이지는 65초의 수면이 필요하고, flashbang을 포함하며, 존과 언세이프 서클만 제외합니다.
+    Sleeping Bag 면역: 피해 페이지에는 지연이 없고 존, 언세이프 서클, robot을 제외합니다. 상인 페이지는 65초의 수면이 필요하고, flashbang을 포함하며, 존과 언세이프 서클만 제외합니다.
   quotes:
   - >-
-    자신의 Sleeping Bag로부터 15m(49ft) 이내에서 자고 있는 참가자는 존 피해, 언세이프 서클 피해, 로봇 피해를 제외한 모든 피해에 면역입니다.
+    자신의 Sleeping Bag으로부터 15m(49ft) 이내에서 자고 있는 참가자는 존 피해, 언세이프 서클 피해, robot 피해를 제외한 모든 피해에 면역입니다.
   - >-
     65초 동안 자고 나면 flashbang과, 존 피해 및 언세이프 서클 피해를 제외한 모든 피해에 면역입니다.
 C-0105:
@@ -68,12 +68,12 @@ C-0201:
     Body Armor는 모든 종류의 피해에 작동합니다.
 C-0202:
   summary: >-
-    아이템 페이지의 Shield 예외에는 로봇 피해가 없지만, 피해 페이지는 차단되지 않는 목록에 로봇을 추가합니다.
+    아이템 페이지의 Shield 예외에는 robot 피해가 없지만, 피해 페이지는 차단되지 않는 목록에 robot을 추가합니다.
   quotes:
   - >-
     20min 동안 피해에 면역이며, 존 피해와 언세이프 서클 피해는 예외입니다.
   - >-
-    Shield는 존 피해, 언세이프 서클 피해, 로봇 피해를 막지 못합니다.
+    Shield는 존 피해, 언세이프 서클 피해, robot 피해를 막지 못합니다.
 C-0203:
   summary: >-
     아이템 페이지: 자고 있는 참가자는 flashbang에 면역입니다. 상인 페이지: 65초 동안 잔 뒤에만 면역입니다.
@@ -100,25 +100,25 @@ C-0205:
     Zombie repellent: 사용하면 20min 동안 좀비가 당신을 무시합니다.
 C-0300:
   summary: >-
-    Sleeping Bag 면역 예외: 상인 페이지는 존 피해와 언세이프 서클 피해만 나열하지만, 피해 페이지는 로봇 피해도 차단되지 않는 것으로 나열합니다.
+    Sleeping Bag 면역 예외: 상인 페이지는 존 피해와 언세이프 서클 피해만 나열하지만, 피해 페이지는 robot 피해도 차단되지 않는 것으로 나열합니다.
   quotes:
   - >-
     65초 동안 자고 나면 flashbang과, 존 피해 및 언세이프 서클 피해를 제외한 모든 피해에 면역입니다.
   - >-
-    자신의 Sleeping Bag로부터 15m(49ft) 이내에서 자고 있는 참가자는 존 피해, 언세이프 서클 피해, 로봇 피해를 제외한 모든 피해에 면역입니다.
+    자신의 Sleeping Bag으로부터 15m(49ft) 이내에서 자고 있는 참가자는 존 피해, 언세이프 서클 피해, robot 피해를 제외한 모든 피해에 면역입니다.
 C-0301:
   summary: >-
-    Sleeping Bag 면역 시점: 상인 페이지는 65초 동안 자고 난 뒤에만 면역을 부여합니다. 피해 페이지는 자신의 bag으로부터 15m 이내에서 자는 모든 참가자에게 지연 없이 부여합니다. 아이템 페이지는 자고 있는 참가자가 지연 없이 flashbang에 면역이라고 합니다.
+    Sleeping Bag 면역 시점: 상인 페이지는 65초 동안 자고 난 뒤에만 면역을 부여합니다. 피해 페이지는 자신의 Sleeping Bag으로부터 15m 이내에서 자는 모든 참가자에게 지연 없이 부여합니다. 아이템 페이지는 자고 있는 참가자가 지연 없이 flashbang에 면역이라고 합니다.
   quotes:
   - >-
     65초 동안 자고 나면 면역입니다
   - >-
-    자신의 Sleeping Bag로부터 15m(49ft) 이내에서 자고 있는 참가자는 존 피해, 언세이프 서클 피해, 로봇 피해를 제외한 모든 피해에 면역입니다.
+    자신의 Sleeping Bag으로부터 15m(49ft) 이내에서 자고 있는 참가자는 존 피해, 언세이프 서클 피해, robot 피해를 제외한 모든 피해에 면역입니다.
   - >-
     자고 있는 참가자는 면역입니다.
 C-0400:
   summary: >-
-    차단 목록이 다릅니다. 공격 페이지는 tear gas에 Gas mask, gunship 폭탄에 Flak jacket을 들지만, 피해 페이지는 같은 출처에 Shield, Safety bubble, Sleeping Bag, Body armor도 나열합니다.
+    차단 목록이 다릅니다. 공격 페이지는 tear gas에 Gas mask, gunship 폭탄에 Flak jacket을 들지만, 피해 페이지는 같은 피해원에 대해 Shield, Safety bubble, Sleeping Bag, Body armor도 나열합니다.
   quotes:
   - >-
     Gas mask가 이를 막습니다.
@@ -130,7 +130,7 @@ C-0400:
     | Gunship bomb | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (흡수)
 C-0401:
   summary: >-
-    좀비 면역 목록에는 Necromancy가 없지만, Necromancy 페이지는 좀비에 완전히 면역이라고 합니다(Damage 페이지에는 나열되어 있습니다).
+    좀비 면역 목록에는 Necromancy가 없지만, Necromancy 페이지는 좀비에 완전히 면역이라고 합니다(피해 페이지에는 나열되어 있습니다).
   quotes:
   - >-
     Shield, Safety bubble, Reality Shield, 또는 자신의 Sleeping Bag에서 자는 것으로 면역이 됩니다.
@@ -156,22 +156,22 @@ C-0403:
     시청자가 보낸 각 crate 또는 보급 상자는 대신 Trolling 참가자 바로 옆에 떨어질 확률이 3%입니다.
 C-0404:
   summary: >-
-    조합 파괴: 좀비 페이지는 '조합한 아이템'이라고 하지만, Ingenuity 페이지는 'Zombie 타격'으로 파괴되는 것을 '고유 조합'으로만 한정합니다.
+    조합 파괴: 좀비 페이지는 '조합한 아이템'이라고 하지만, Ingenuity 페이지는 '좀비 타격'으로 파괴되는 것을 '고유 조합'으로만 한정합니다.
   quotes:
   - >-
     조합한 아이템을 파괴할 확률 40%
   - >-
-    고유 조합은 거래, 도난, 루팅이 불가능하며 Zombie 타격으로 파괴될 확률이 40%입니다.
+    고유 조합은 거래, 도난, 루팅이 불가능하며 좀비 타격으로 파괴될 확률이 40%입니다.
 C-0500:
   summary: >-
-    Ingenuity 페이지: Shield와 Sleeping Bag이 Robot을 막습니다. 피해 페이지: Shield는 로봇 피해를 막지 못하며 자고 있는 참가자도 로봇 피해에 면역이 아닙니다.
+    Ingenuity 페이지: Shield와 Sleeping Bag이 Robot을 막습니다. 피해 페이지: Shield는 robot 피해를 막지 못하며 자고 있는 참가자도 robot 피해에 면역이 아닙니다.
   quotes:
   - >-
     Shield와 Sleeping Bag이 이를 막습니다.
   - >-
-    Shield는 존 피해, 언세이프 서클 피해, 로봇 피해를 막지 못합니다.
+    Shield는 존 피해, 언세이프 서클 피해, robot 피해를 막지 못합니다.
   - >-
-    자신의 Sleeping Bag로부터 15m(49ft) 이내에서 자고 있는 참가자는 존 피해, 언세이프 서클 피해, 로봇 피해를 제외한 모든 피해에 면역입니다.
+    자신의 Sleeping Bag으로부터 15m(49ft) 이내에서 자고 있는 참가자는 존 피해, 언세이프 서클 피해, robot 피해를 제외한 모든 피해에 면역입니다.
 C-0501:
   summary: >-
     Trolling 페이지: 시청자가 보낸 crate와 보급 상자가 3% 유도 판정을 합니다. 공격 페이지: 보급 상자만 판정하며(착지 거리 5 m), crate는 별개의 아이템입니다.
@@ -184,7 +184,7 @@ C-0501:
     crate에는 시청자가 구매한 아이템이 들어 있습니다.
 C-0502:
   summary: >-
-    Trolling 페이지: Reality Shield는 언세이프 서클 피해를 막습니다. 언세이프 서클의 피해 표 행에는 Reality Shield가 없습니다(같은 페이지의 notes에는 포함되어 있습니다).
+    Trolling 페이지: Reality Shield는 언세이프 서클 피해를 막습니다. 언세이프 서클의 피해 표 행에는 Reality Shield가 없습니다(같은 페이지의 참고 사항(notes)에는 포함되어 있습니다).
   quotes:
   - >-
     Guardian angel, Safety bubble, Reality Shield, 또는 Death Ward가 이를 막습니다.
@@ -202,12 +202,12 @@ C-0503:
     첫 타격 이후, 안에 머물러 있고 면역이 아닌 동안 5초마다 무작위 방어 아이템 또는 고유 조합 1개를 잃습니다.
 C-0600:
   summary: >-
-    Death ward: 시길 페이지는 원 밖 또는 언세이프 서클에서 오는 첫 타격을 막고 둘 모두에 2min 동안 면역을 주지만, 피해 페이지 본문은 원 밖에서 오는 피해만 언급합니다(피해 표는 두 행 모두에 Death Ward를 나열합니다).
+    Death ward: 시길 페이지는 서클 밖 또는 언세이프 서클에서 오는 첫 타격을 막고 둘 모두에 2min 동안 면역을 주지만, 피해 페이지 본문은 서클 밖에서 오는 피해만 언급합니다(피해 표는 두 행 모두에 Death Ward를 나열합니다).
   quotes:
   - >-
-    Death ward: 원 밖 또는 언세이프 서클에서 오는 첫 타격이 차단되며, 둘 모두에 대해 2min 동안 면역입니다.
+    Death ward: 서클 밖 또는 언세이프 서클에서 오는 첫 타격이 차단되며, 둘 모두에 대해 2min 동안 면역입니다.
   - >-
-    Death Ward: Death 참가자가 원 밖에서 받는 첫 타격은 차단되며, 원 밖에서 오는 피해는 2min 동안 차단됩니다.
+    Death Ward: Death 참가자가 서클 밖에서 받는 첫 타격은 차단되며, 서클 밖에서 오는 피해는 2min 동안 차단됩니다.
   - >-
     | Unsafe circle | Safety bubble, Guardian angel, Death Ward, Hazmat suit (둔화), Body armor (흡수)
 C-0601:

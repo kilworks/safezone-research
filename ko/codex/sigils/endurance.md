@@ -10,7 +10,7 @@ Endurance는 "일정에 맞춰 움직이는 짐꾼" 계열입니다. 가장 큰 
 
 두 번째 특징은 알아서 찾아오는 배달입니다. 2h 30min마다 각 Endurance 참가자로부터 10 m (33 ft) 이내에 보급 상자가 떨어지며, 30초 뒤에 착지합니다 ([M-0621](../rules/items.md#m-0621)). 여기에는 체력 포션이나 drone이 들어 있지 않습니다 ([M-0621](../rules/items.md#m-0621)). 누구든 획득할 수 있지만, 자기 것을 획득하면 블러드 토큰 6개를 얻고 ([M-0622](../rules/economy.md#m-0622)), 아이템 사용 5회마다 1개를 더 얻습니다 ([M-0623](../rules/economy.md#m-0623)).
 
-이 모든 것의 대가는 여러 제한입니다. 거래, 묘비 루팅, 아이템 버리기, 떨어진 아이템 줍기를 할 수 없습니다. 아이템 파괴, 상자 획득, 보급 상자 가져가기는 여전히 가능합니다 ([M-0624](../rules/items.md#m-0624)). 그래서 Endurance는 플레이어 사이의 아이템 경제에 참여할 수 없고 죽은 자를 루팅할 수도 없습니다.
+이 모든 것의 대가는 여러 제한입니다. 거래, 묘비 루팅, 아이템 버리기, 떨어진 아이템 줍기를 할 수 없습니다. 아이템 파괴, 상자 획득, 크레이트 가져가기는 여전히 가능합니다 ([M-0624](../rules/items.md#m-0624)). 그래서 Endurance는 플레이어 사이의 아이템 경제에 참여할 수 없고 죽은 자를 루팅할 수도 없습니다.
 
 플레이어가 느낄 것은 넓은 가방, 정해진 리듬으로 꾸준히 흘러드는 수입, 그리고 게임의 사회적인 부분에서 조금 벗어나 있다는 느낌입니다. 노출되는 순간은 착지 때입니다. 보급 상자는 착지하면 누구에게나 열려 있으므로 ([M-0621](../rules/items.md#m-0621)), 상자는 다른 사람들이 올 수 있는 지점을 알려 줍니다.
 
@@ -119,7 +119,7 @@ Endurance는 "일정에 맞춰 움직이는 짐꾼" 계열입니다. 가장 큰 
 - [M-0621](../rules/items.md#m-0621) `wiki-sigils-endurance-015`: "After it lands it is a normal care package: any contestant can claim it." ([출처](https://iceposeidon.com/safezone/wiki/sigils/endurance#endurance-drops))
   - 번역: 착지한 뒤에는 일반 보급 상자이며, 어떤 참가자든 가져갈 수 있습니다.
 - [M-0621](../rules/items.md#m-0621) `wiki-sigils-endurance-016`: "It never holds a health potion or drone." ([출처](https://iceposeidon.com/safezone/wiki/sigils/endurance#endurance-drops))
-  - 번역: 체력 물약이나 드론은 절대 들어 있지 않습니다.
+  - 번역: health potion이나 drone은 절대 들어 있지 않습니다.
 
 **형식 모델:**
 
@@ -134,7 +134,7 @@ Endurance는 "일정에 맞춰 움직이는 짐꾼" 계열입니다. 가장 큰 
 
 - [U-0607](../unknowns.md#u-0607) (높음): Endurance 보급 상자 "2h 30min마다": 첫 투하는 이벤트 시작 2h30 후입니까, 시길 선택 후입니까, 이전 수령 후입니까, 그리고 어떤 상자가 "자신의 것"입니까?
 
-메모 ([M-0621](../rules/items.md#m-0621)): 낙하 시점과 착지 시점 중 어느 때의 위치인지는 명시되어 있지 않습니다(10m는 상자가 떨어질 때 참가자로부터의 거리입니다). 내용물은 체력 물약과 드론을 제외한 무작위 아이템입니다.
+메모 ([M-0621](../rules/items.md#m-0621)): 낙하 시점과 착지 시점 중 어느 때의 위치인지는 명시되어 있지 않습니다(10m는 상자가 떨어질 때 참가자로부터의 거리입니다). 내용물은 health potion과 drone을 제외한 무작위 아이템입니다.
 
 <a id="m-0622"></a>
 
@@ -184,7 +184,7 @@ Endurance는 "일정에 맞춰 움직이는 짐꾼" 계열입니다. 가장 큰 
 - [U-0608](../unknowns.md#u-0608) (보통): Endurance의 "Earn one more for every five item uses": 추가 토큰은 언제 지급됩니까?
 - [U-0609](../unknowns.md#u-0609) (보통): Endurance 아이템 사용 보너스: 어떤 행동이 "아이템 사용"입니까(무기 발사, 붕대, Safety bubble, 조합, 상인 업그레이드, 계속 활성 상태인 효과)?
 
-메모 ([M-0623](../rules/economy.md#m-0623)): 아이템 페이지와 비교하십시오. 일부 효과(Safety Bubbles, 연막탄, 붕대, 조합 아이템, 상인 업그레이드)는 '활성 아이템 효과'에서 제외되며, 여기에 그것이 적용되는지는 명시되어 있지 않습니다.
+메모 ([M-0623](../rules/economy.md#m-0623)): 아이템 페이지와 비교하십시오. 일부 효과(Safety Bubbles, smoke bombs, bandages, 조합 아이템, 상인 업그레이드)는 '활성 아이템 효과'에서 제외되며, 여기에 그것이 적용되는지는 명시되어 있지 않습니다.
 
 <a id="m-0624"></a>
 

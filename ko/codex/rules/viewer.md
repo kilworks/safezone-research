@@ -8,13 +8,13 @@
 
 시청자 계열은 관객이 조종하는 게임의 일부입니다. 방송을 보는 시청자는 Cx-Bucks를 써서 세이프 존에 물건을 보냅니다. 참가자를 해치는 무기, 도움이 되는 몇 가지, 그리고 혼란만 일으키는 것들이 있습니다. 가격은 알려져 있지 않습니다 ([U-0014](../unknowns.md#u-0014)).
 
-공격: 미사일은 세이프 존 안의 한 지점을 겨냥하여 3분 뒤 그 근처의 무작위 지점에 떨어지고, 25 m 이내의 모든 사람이 10 HP의 피해를 받습니다 ([M-0403](../rules/viewer.md#m-0403), [M-0404](../rules/viewer.md#m-0404)). 핵은 1분 뒤 겨냥한 바로 그 지점에 떨어지고, 관리자가 다른 수치를 설정하지 않은 한 100 m 이내의 모든 사람이 20 HP의 피해를 받습니다 ([M-0405](../rules/viewer.md#m-0405)). 호드(horde)는 20분 동안 세이프 존에 좀비 50마리를 풀어 놓습니다 ([M-0408](../rules/viewer.md#m-0408)). 최루 가스는 10분 동안 남는 25 m 범위의 구름이며, 안에 있는 사람은 10초마다 2 HP의 피해를 받습니다 ([M-0409](../rules/viewer.md#m-0409), [M-0410](../rules/viewer.md#m-0410)). 공습은 20초 뒤 띠 모양 구역에 5 HP의 피해를 주고, 이후 5분 동안 불탑니다 ([M-0412](../rules/viewer.md#m-0412), [M-0413](../rules/viewer.md#m-0413)). 건쉽은 5분 동안 지속되며 25 m 이내에 10 HP의 피해를 주는 폭탄을 떨어뜨립니다 ([M-0415](../rules/viewer.md#m-0415), [M-0416](../rules/viewer.md#m-0416)). 현상금은 무작위로 살아 있는 참가자 한 명을 표시하고 ([M-0423](../rules/viewer.md#m-0423)), 거대 키클롭스는 200 HP를 가지며 30 m 이내에서 가장 가까운 참가자를 공격합니다 ([M-0426](../rules/viewer.md#m-0426)).
+공격: 미사일은 세이프 존 안의 한 지점을 겨냥하여 3분 뒤 그 근처의 무작위 지점에 떨어지고, 25 m 이내의 모든 사람이 10 HP의 피해를 받습니다 ([M-0403](../rules/viewer.md#m-0403), [M-0404](../rules/viewer.md#m-0404)). 핵은 1분 뒤 겨냥한 바로 그 지점에 떨어지고, 관리자가 다른 수치를 설정하지 않은 한 100 m 이내의 모든 사람이 20 HP의 피해를 받습니다 ([M-0405](../rules/viewer.md#m-0405)). 호드(horde)는 20분 동안 세이프 존에 좀비 50마리를 풀어 놓습니다 ([M-0408](../rules/viewer.md#m-0408)). 최루 가스는 10분 동안 남는 25 m 범위의 구름이며, 안에 있는 사람은 10초마다 2 HP의 피해를 받습니다 ([M-0409](../rules/viewer.md#m-0409), [M-0410](../rules/viewer.md#m-0410)). 공습은 20초 뒤 띠 모양 구역에 5 HP의 피해를 주고, 이후 5분 동안 불탑니다 ([M-0412](../rules/viewer.md#m-0412), [M-0413](../rules/viewer.md#m-0413)). 건십은 5분 동안 지속되며 25 m 이내에 10 HP의 피해를 주는 폭탄을 떨어뜨립니다 ([M-0415](../rules/viewer.md#m-0415), [M-0416](../rules/viewer.md#m-0416)). 현상금은 무작위로 살아 있는 참가자 한 명을 표시하고 ([M-0423](../rules/viewer.md#m-0423)), 거대 사이클롭스는 200 HP를 가지며 30 m 이내에서 가장 가까운 참가자를 공격합니다 ([M-0426](../rules/viewer.md#m-0426)).
 
-대처할 수 있는 것: Protection은 미사일과 건쉽에 면역입니다 ([M-0404](../rules/viewer.md#m-0404), [M-0417](../rules/viewer.md#m-0417)). Flak jacket은 미사일 하나와 건쉽 폭탄 하나를 막습니다 ([M-0404](../rules/viewer.md#m-0404), [M-0417](../rules/viewer.md#m-0417)). EMP는 10분 동안 시청자가 미사일, 핵, 호드, 최루 가스, 공습, 건쉽, 키클롭스, 현상금을 보내지 못하게 막고 ([M-0222](../rules/viewer.md#m-0222)), 이미 공중에 있는 것을 파괴합니다 ([M-0223](../rules/viewer.md#m-0223)). 그러나 EMP에 거부된 시청자 아이템은 환불 없이 사라지며 ([M-0224](../rules/viewer.md#m-0224)), 이미 지도에 있는 키클롭스, 현상금, 최루 가스, 좀비는 제거하지 못합니다 ([M-0402](../rules/viewer.md#m-0402)).
+대처할 수 있는 것: Protection은 미사일과 건십에 면역입니다 ([M-0404](../rules/viewer.md#m-0404), [M-0417](../rules/viewer.md#m-0417)). Flak jacket은 미사일 하나와 건십 폭탄 하나를 막습니다 ([M-0404](../rules/viewer.md#m-0404), [M-0417](../rules/viewer.md#m-0417)). EMP는 10분 동안 시청자가 미사일, 핵, 호드, 최루 가스, 공습, 건십, 사이클롭스, 현상금을 보내지 못하게 막고 ([M-0222](../rules/viewer.md#m-0222)), 이미 공중에 있는 것을 파괴합니다 ([M-0223](../rules/viewer.md#m-0223)). 그러나 EMP에 거부된 시청자 아이템은 환불 없이 사라지며 ([M-0224](../rules/viewer.md#m-0224)), 이미 지도에 있는 사이클롭스, 현상금, 최루 가스, 좀비는 제거하지 못합니다 ([M-0402](../rules/viewer.md#m-0402)).
 
 플레이어가 느끼는 점: 이벤트에는 예측할 수 없는 날씨가 있고, 답은 알맞은 대응 수단을 들고 다니는 것입니다. 기재된 바에 따라 참가자에게 가장 강한 것은 EMP입니다 ([M-0222](../rules/viewer.md#m-0222)). 가장 약한 것은 EMP가 제거할 수 없는 지속 효과입니다 ([M-0402](../rules/viewer.md#m-0402)).
 
-알 수 없는 것: 가격 ([U-0014](../unknowns.md#u-0014)), 공습 띠 구역의 크기 ([U-0406](../unknowns.md#u-0406), [U-0407](../unknowns.md#u-0407)), 건쉽 폭탄의 수 ([U-0409](../unknowns.md#u-0409)), 구름과 회복 서클의 크기가 반지름인지 지름인지 ([U-0404](../unknowns.md#u-0404), [U-0413](../unknowns.md#u-0413))입니다. EMP 차단이 에어드롭과 회복 서클도 포함하는지는 미해결입니다 ([U-0401](../unknowns.md#u-0401)). 위키는 Trolling의 교란을 두 곳에서 다르게 서술합니다 ([M-0432](../rules/viewer.md#m-0432), [C-0403](../unknowns.md#c-0403), [C-0501](../unknowns.md#c-0501)). 거대 키클롭스의 보상과 조종은 미해결입니다 ([U-0419](../unknowns.md#u-0419), [U-0421](../unknowns.md#u-0421)).
+알 수 없는 것: 가격 ([U-0014](../unknowns.md#u-0014)), 공습 띠 구역의 크기 ([U-0406](../unknowns.md#u-0406), [U-0407](../unknowns.md#u-0407)), 건십 폭탄의 수 ([U-0409](../unknowns.md#u-0409)), 구름과 회복 서클의 크기가 반지름인지 지름인지 ([U-0404](../unknowns.md#u-0404), [U-0413](../unknowns.md#u-0413))입니다. EMP 차단이 에어드롭과 회복 서클도 포함하는지는 미해결입니다 ([U-0401](../unknowns.md#u-0401)). 위키는 Trolling의 교란을 두 곳에서 다르게 서술합니다 ([M-0432](../rules/viewer.md#m-0432), [C-0403](../unknowns.md#c-0403), [C-0501](../unknowns.md#c-0501)). 거대 사이클롭스의 보상과 조종은 미해결입니다 ([U-0419](../unknowns.md#u-0419), [U-0421](../unknowns.md#u-0421)).
 
 이 페이지는 규칙 43개(14 `DOCUMENTED`, 29 `CONDITIONAL`)를 모았습니다. 아래의 모든 규칙은 공식 위키를 한 글자도 바꾸지 않고 인용하고 형식적 해석을 붙입니다. 문구가 여러 해석을 허용하면 모든 해석을 나열하고 질문은 열린 채로 둡니다.
 
@@ -42,7 +42,7 @@
 
 **미해결 질문:**
 
-- [U-0106](../unknowns.md#u-0106) (보통): 시청자 왕관 처치 보너스 'equal to 20% of the attack's purchase price': 반올림 규칙, 'kills'가 최종 처치를 뜻하는지 여부, 그리고 여러 시청자가 보유자를 공격했을 때 어느 공격이 해당되는지.
+- [U-0106](../unknowns.md#u-0106) (보통): 시청자 왕관 처치 보너스 'equal to 20% of the attack's purchase price': 끝수 처리 규칙, 'kills'가 최종 처치를 뜻하는지 여부, 그리고 여러 시청자가 보유자를 공격했을 때 어느 공격이 해당되는지.
 - [U-0014](../unknowns.md#u-0014) (높음): 시청자 공격의 Cx-Bucks 가격은 얼마입니까?
 
 <a id="m-0222"></a>
@@ -151,7 +151,7 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0400](../rules/viewer.md#m-0400) `wiki-attacks-001`: "While a contestant's EMP is active, viewers cannot send missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes or bounties." ([출처](https://iceposeidon.com/safezone/wiki/attacks#emp))
-  - 번역: 참가자의 EMP가 활성화된 동안에는 시청자가 미사일, 핵, 호드, 최루가스, 공습, 건십, 사이클롭스, 현상금을 보낼 수 없습니다.
+  - 번역: 참가자의 EMP가 활성화된 동안에는 시청자가 미사일, 핵, 호드, 최루 가스, 공습, 건십, 사이클롭스, 현상금을 보낼 수 없습니다.
 
 **형식 모델:**
 
@@ -194,11 +194,11 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0402](../rules/viewer.md#m-0402) `wiki-attacks-003`: "It does not remove a cyclops, a bounty, tear gas or zombies already on the map." ([출처](https://iceposeidon.com/safezone/wiki/attacks#emp))
-  - 번역: 이미 지도에 있는 사이클롭스, 현상금, 최루가스, 좀비는 제거하지 않습니다.
+  - 번역: 이미 지도에 있는 사이클롭스, 현상금, 최루 가스, 좀비는 제거하지 않습니다.
 
 **형식 모델:**
 
-- [M-0402](../rules/viewer.md#m-0402) 해석 A: `EMP 활성화는 사이클롭스, 현상금, 최루가스 구름, 좀비를 그대로 둠`
+- [M-0402](../rules/viewer.md#m-0402) 해석 A: `EMP 활성화는 사이클롭스, 현상금, 최루 가스 구름, 좀비를 그대로 둠`
 - [M-0402](../rules/viewer.md#m-0402) 정의역: 활성화 시점에 지도에 있는 오브젝트
 
 **상호작용:** [M-0400](../rules/viewer.md#m-0400), [M-0401](../rules/viewer.md#m-0401)
@@ -241,7 +241,7 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0404](../rules/viewer.md#m-0404) `wiki-attacks-007`: "Everyone within 25m (82ft) of where it lands takes 10 HP." ([출처](https://iceposeidon.com/safezone/wiki/attacks#missile))
-  - 번역: 떨어진 지점에서 25m (82ft) 이내의 모든 대상이 10 HP의 피해를 입습니다.
+  - 번역: 떨어진 지점에서 25m (82ft) 이내의 모든 사람이 10 HP의 피해를 입습니다.
 - [M-0404](../rules/viewer.md#m-0404) `wiki-attacks-008`: "The Protection sigil is immune." ([출처](https://iceposeidon.com/safezone/wiki/attacks#missile))
   - 번역: Protection 시길은 면역입니다.
 - [M-0404](../rules/viewer.md#m-0404) `wiki-attacks-009`: "A Flak jacket blocks it." ([출처](https://iceposeidon.com/safezone/wiki/attacks#missile))
@@ -261,7 +261,7 @@
 
 **미해결 질문:**
 
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, 로봇, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 - [U-0014](../unknowns.md#u-0014) (높음): 시청자 공격의 Cx-Bucks 가격은 얼마입니까?
 
 **모순:** [C-0400](../unknowns.md#c-0400)
@@ -281,7 +281,7 @@
 - [M-0405](../rules/viewer.md#m-0405) `wiki-attacks-012`: "It lands exactly there after 1min." ([출처](https://iceposeidon.com/safezone/wiki/attacks#nuke))
   - 번역: 1분 후 정확히 그 지점에 떨어집니다.
 - [M-0405](../rules/viewer.md#m-0405) `wiki-attacks-015`: "Everyone within 100m (328ft) takes 20 HP, unless an admin set other numbers." ([출처](https://iceposeidon.com/safezone/wiki/attacks#nuke))
-  - 번역: 관리자가 다른 수치를 설정하지 않는 한, 100m (328ft) 이내의 모든 대상이 20 HP의 피해를 입습니다.
+  - 번역: 관리자가 다른 수치를 설정하지 않는 한, 100m (328ft) 이내의 모든 사람이 20 HP의 피해를 입습니다.
 - [M-0405](../rules/viewer.md#m-0405) `wiki-attacks-017`: "A Flak jacket, a Shield, a Safety bubble, a Reality Shield or sleeping in your own Sleeping Bag blocks it." ([출처](https://iceposeidon.com/safezone/wiki/attacks#nuke))
   - 번역: Flak jacket, Shield, Safety bubble, Reality Shield, 또는 자신의 Sleeping Bag에서 자는 것이 이를 막습니다.
 - [M-0405](../rules/viewer.md#m-0405) `wiki-attacks-018`: "An EMP destroys a viewer nuke in the air." ([출처](https://iceposeidon.com/safezone/wiki/attacks#nuke))
@@ -289,7 +289,7 @@
 
 **형식 모델:**
 
-- [M-0405](../rules/viewer.md#m-0405) 해석 A: `세이프 존 안의 p를 조준. 60s 후 정확히 p에 낙하. 100m 이내의 모든 대상이 20 HP의 피해를 입음. Flak jacket, Shield, Safety bubble, Reality Shield 또는 자신의 Sleeping Bag이 막음. EMP는 공중에서 이를 파괴함`
+- [M-0405](../rules/viewer.md#m-0405) 해석 A: `세이프 존 안의 p를 조준. 60s 후 정확히 p에 낙하. 100m 이내의 모든 사람이 20 HP의 피해를 입음. Flak jacket, Shield, Safety bubble, Reality Shield 또는 자신의 Sleeping Bag이 막음. EMP는 공중에서 이를 파괴함`
 - [M-0405](../rules/viewer.md#m-0405) 정의역: d <= 100 m, 피해 20 HP, 비행 60 s
 - [M-0405](../rules/viewer.md#m-0405) 매개변수 `flight_time`: 60 s
 - [M-0405](../rules/viewer.md#m-0405) 매개변수 `damage`: 20 HP
@@ -317,7 +317,7 @@
 - [M-0406](../rules/viewer.md#m-0406) `wiki-attacks-014`: "An admin nuke flies for 5min unless the admin sets its flight time, damage and radius." ([출처](https://iceposeidon.com/safezone/wiki/attacks#nuke))
   - 번역: 관리자가 비행 시간, 피해, 반경을 설정하지 않는 한 관리자 핵은 5분 동안 비행합니다.
 - [M-0406](../rules/viewer.md#m-0406) `wiki-attacks-015`: "Everyone within 100m (328ft) takes 20 HP, unless an admin set other numbers." ([출처](https://iceposeidon.com/safezone/wiki/attacks#nuke))
-  - 번역: 관리자가 다른 수치를 설정하지 않는 한, 100m (328ft) 이내의 모든 대상이 20 HP의 피해를 입습니다.
+  - 번역: 관리자가 다른 수치를 설정하지 않는 한, 100m (328ft) 이내의 모든 사람이 20 HP의 피해를 입습니다.
 
 **형식 모델:**
 
@@ -380,13 +380,13 @@
 
 - [U-0403](../unknowns.md#u-0403) (높음): 좀비 수명: Horde는 20min, 가드 좀비는 1h(Necromancy 페이지)로 유지되지만, Summon, Death, Horde 보너스 좀비의 수명과 방출 시점부터 센 horde 좀비의 수명은 얼마입니까?
 - [U-0014](../unknowns.md#u-0014) (높음): 시청자 공격의 Cx-Bucks 가격은 얼마입니까?
-- [U-0432](../unknowns.md#u-0432) (보통): 시청자 공격의 동시성: 미사일, 핵, 무리, 최루탄, 공습, 건십, 현상금, healing circle에 대해 제한이 명시되어 있지 않습니다(cyclops와 illusion만 하나로 제한). 마음대로 중첩할 수 있습니까?
+- [U-0432](../unknowns.md#u-0432) (보통): 시청자 공격의 동시성: 미사일, 핵, 무리, 최루 가스, 공습, 건십, 현상금, healing circle에 대해 제한이 명시되어 있지 않습니다(cyclops와 illusion만 하나로 제한). 마음대로 중첩할 수 있습니까?
 
 메모 ([M-0408](../rules/viewer.md#m-0408)): 배치 위치는 여기서는 'in the safe zones'이고 Zombies 페이지에서는 'at random points in the safe zones'입니다. Necromancy의 보너스 좀비는 좀비 분류에 있습니다.
 
 <a id="m-0409"></a>
 
-### M-0409: 최루가스 배치
+### M-0409: 최루 가스 배치
 
 라벨: `CONDITIONAL`. 시길: all.
 
@@ -413,7 +413,7 @@
 
 <a id="m-0410"></a>
 
-### M-0410: 최루가스 피해와 좀비 처치
+### M-0410: 최루 가스 피해와 좀비 처치
 
 라벨: `CONDITIONAL`. 시길: all.
 
@@ -441,9 +441,9 @@
 **미해결 질문:**
 
 - [U-0405](../unknowns.md#u-0405) (보통): Tear gas와 좀비 처치 타이밍: 10s마다 2 HP 틱은 진입 10s 후에 시작합니까, 진입 시에 시작합니까, 구름 전체 공통의 10s 위상입니까? 좀비는 진입 즉시 죽습니까, 틱에 죽습니까? 틱은 '타격'([U-0002](../unknowns.md#u-0002))입니까?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, 로봇, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
-메모 ([M-0410](../rules/viewer.md#m-0410)): 좀비 페이지는 최루가스를 좀비를 죽이는 폭발에 포함시켜 나열합니다. Protection 시길은 최루가스에 면역이 아닙니다 (Protection 페이지).
+메모 ([M-0410](../rules/viewer.md#m-0410)): 좀비 페이지는 최루 가스를 좀비를 죽이는 폭발에 포함시켜 나열합니다. Protection 시길은 최루 가스에 면역이 아닙니다 (Protection 페이지).
 
 <a id="m-0411"></a>
 
@@ -489,7 +489,7 @@
 **형식 모델:**
 
 - [M-0412](../rules/viewer.md#m-0412) 해석 A: `세이프 존 안의 중심 p와 방향이 주어지고, 20s 후 띠 안의 모든 참가자가 5 HP의 피해를 입음`
-- [M-0412](../rules/viewer.md#m-0412) 정의역: 띠는 중심 둘레에서 방향을 따라 놓인 직사각형이며 크기는 알 수 없음
+- [M-0412](../rules/viewer.md#m-0412) 정의역: 띠는 중심을 둘러싸고 방향을 따라 놓인 직사각형이며 크기는 알 수 없음
 - [M-0412](../rules/viewer.md#m-0412) 매개변수 `width`: UNKNOWN, [U-0406](../unknowns.md#u-0406) 참조
 - [M-0412](../rules/viewer.md#m-0412) 매개변수 `length`: UNKNOWN, [U-0407](../unknowns.md#u-0407) 참조
 - [M-0412](../rules/viewer.md#m-0412) 매개변수 `damage`: 5 HP
@@ -530,7 +530,7 @@
 **미해결 질문:**
 
 - [U-0408](../unknowns.md#u-0408) (보통): Airstrike 타임라인: 20s에 착탄하고 'the strip then burns for 5min'. 화재는 착탄부터 5min 지속됩니까, 첫 1 HP 틱은 착탄 시입니까 2s 후입니까, 화재 중에 띠로 들어가면 HP를 잃습니까? 화재 틱은 타격([U-0002](../unknowns.md#u-0002))입니까?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, 로봇, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 <a id="m-0414"></a>
 
@@ -881,7 +881,7 @@
 **미해결 질문:**
 
 - [U-0418](../unknowns.md#u-0418) (높음): 현상금의 결과: 현상금은 획득되면 끝납니까(위키는 1h 또는 사망 시 종료로 기술), 그래서 반복 획득이 가능합니까? 표시된 참가자의 10 HP는 획득 시 한 번만 차감됩니까? 현상금이 없는 생존 참가자가 없을 때 누가 대상이 됩니까?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, 로봇, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 메모 ([M-0425](../rules/viewer.md#m-0425)): 피해 페이지에는 현상금 표시에 대해 Shield, Safety bubble, Sleeping Bag, Body armor가 나열되어 있습니다. Protection은 여전히 현상금 피해를 입습니다(Protection 페이지).
 
@@ -967,7 +967,7 @@
 **미해결 질문:**
 
 - [U-0422](../unknowns.md#u-0422) (낮음): Cyclops 존 피해: 'Outside the safe zones it takes zone damage'. 참가자와 같은 속도([U-0003](../unknowns.md#u-0003))입니까, 같은 단계적 증가입니까, 아니면 고정입니까?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, 로봇, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 메모 ([M-0428](../rules/viewer.md#m-0428)): 무기 페이지의 무기 목록과 비교하십시오. 여기에는 근접/원거리 무기 5개만 나열되어 있습니다.
 
@@ -996,7 +996,7 @@
 
 **미해결 질문:**
 
-- [U-0419](../unknowns.md#u-0419) (보통): Cyclops 블러드 토큰: 죽을 때 '1 blood token per damage dealt'입니다. 피해는 200 HP를 상한으로 한 초과 피해를 제외하고 집계됩니까, merchant 미사일은 '시청자 아이템'입니까, 그리고 참가자들이 먼저 피해를 입혔더라도 존 피해로 죽으면 여전히 아무것도 지급되지 않습니까?
+- [U-0419](../unknowns.md#u-0419) (보통): Cyclops 블러드 토큰: 죽을 때 '1 blood token per damage dealt'입니다. 피해는 초과 피해를 빼고 200 HP를 상한으로 집계됩니까, 상인 미사일은 '시청자 아이템'입니까, 그리고 참가자들이 먼저 피해를 입혔더라도 존 피해로 죽으면 여전히 아무것도 지급되지 않습니까?
 
 <a id="m-0430"></a>
 
@@ -1041,7 +1041,7 @@
 
 <a id="m-0432"></a>
 
-### M-0432: 보급 상자의 Trolling 쪽 방향 전환
+### M-0432: 보급 상자가 Trolling 참가자 쪽으로 빗나감
 
 라벨: `CONDITIONAL`. 시길: trolling.
 
@@ -1147,7 +1147,7 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0539](../rules/viewer.md#m-0539) `wiki-sigils-trolling-020`: "Each crate or care package from viewers has a 3% chance to land next to a Trolling contestant instead." ([출처](https://iceposeidon.com/safezone/wiki/sigils/trolling#rules))
-  - 번역: 시청자가 보낸 각 상자 또는 보급 상자는 3% 확률로 대신 Trolling 참가자 옆에 떨어집니다.
+  - 번역: 시청자가 보낸 각 크레이트(crate) 또는 보급 상자는 3% 확률로 대신 Trolling 참가자 옆에 떨어집니다.
 - [M-0539](../rules/viewer.md#m-0539) `wiki-attacks-079`: "A care package drops a random item at a random point in the safe zones." ([출처](https://iceposeidon.com/safezone/wiki/attacks#care-package))
   - 번역: 보급 상자는 세이프 존 안의 임의의 지점에 임의의 아이템을 떨어뜨립니다.
 - [M-0539](../rules/viewer.md#m-0539) `wiki-attacks-080`: "It has a 3% chance to land within 5m (16ft) of a Trolling contestant instead." ([출처](https://iceposeidon.com/safezone/wiki/attacks#care-package))
@@ -1156,9 +1156,9 @@
 **형식 모델:**
 
 - [M-0539](../rules/viewer.md#m-0539) 해석 A: `시청자가 보낸 각 보급 상자: 확률 0.03으로 세이프 존 안의 임의의 지점 대신 Trolling 참가자로부터 5 m 이내에 떨어짐`
-- [M-0539](../rules/viewer.md#m-0539) 해석 B: `상자(crate)도 같은 판정을 받음`
+- [M-0539](../rules/viewer.md#m-0539) 해석 B: `크레이트(crate)도 같은 판정을 받음`
 - [M-0539](../rules/viewer.md#m-0539) 해석 C: `각 Trolling 참가자가 따로 판정`
-- [M-0539](../rules/viewer.md#m-0539) 정의역: 상자당 판정, 확률 0.03
+- [M-0539](../rules/viewer.md#m-0539) 정의역: 보급 상자당 판정, 확률 0.03
 - [M-0539](../rules/viewer.md#m-0539) 매개변수 `p`: 0.03
 - [M-0539](../rules/viewer.md#m-0539) 매개변수 `landing_radius_m`: 5
 - [M-0539](../rules/viewer.md#m-0539) 매개변수 `scope`: UNKNOWN, [U-0540](../unknowns.md#u-0540) 참조

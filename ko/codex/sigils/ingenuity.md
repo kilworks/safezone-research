@@ -10,7 +10,7 @@ Ingenuity는 "발명가" 계열입니다. 시작은 조금 빠듯해서 최대 H
 
 조합은 아이템 2개를 합쳐 새로운 것을 만듭니다. Landmine과 Drone은 Robot이 되고, Guardian angel과 Health potion은 Campfire가 되며, Anti poison과 Health potion은 Everything potion이 되고, Safety bubble과 Zombie repellent는 Zombie killer가 되며, EMP와 Mirror forcefield는 Black hole이 되고, Shield와 Body armor는 Fortress가 됩니다 ([M-0522](../rules/items.md#m-0522)). 재료 2개가 모두 소모되는지는 미해결입니다 ([U-0517](../unknowns.md#u-0517)). 조합품은 거래, 훔치기, 루팅이 불가능하며, 좀비 타격에 40% 확률로 파괴될 수 있습니다 ([M-0520](../rules/items.md#m-0520)). 이 굴림이 어떻게 작동하는지는 미해결입니다 ([U-0518](../unknowns.md#u-0518)).
 
-얻는 것은 다음과 같습니다. Robot은 10 m 이내의 다른 플레이어를 2초마다 1 HP씩 10분 동안 타격합니다 ([M-0523](../rules/weapons.md#m-0523)). Campfire는 10 m 이내의 모든 사람을 하나의 공유 풀에서 회복시킵니다 ([M-0525](../rules/healing.md#m-0525)). Everything potion은 독을 치료하고 단계에 따라 회복시킵니다 ([M-0526](../rules/healing.md#m-0526)). Zombie killer는 근처의 다음 좀비 10마리를 죽이고 그동안 그들의 흡수를 멈춥니다 ([M-0527](../rules/zombies.md#m-0527)). Black hole은 200 m 이내의 모든 상자와 보급 상자를 파괴합니다 ([M-0528](../rules/items.md#m-0528)). Fortress는 20 m 이내의 사람들을 최대 30 HP까지 보호하고 Greed의 훔치기를 막습니다 ([M-0529](../rules/damage.md#m-0529)).
+얻는 것은 다음과 같습니다. Robot은 10 m 이내의 다른 플레이어를 2초마다 1 HP씩 10분 동안 타격합니다 ([M-0523](../rules/weapons.md#m-0523)). Campfire는 10 m 이내의 모든 사람을 하나의 공유 풀에서 회복시킵니다 ([M-0525](../rules/healing.md#m-0525)). Everything potion은 독을 치료하고 등급에 따라 회복시킵니다 ([M-0526](../rules/healing.md#m-0526)). Zombie killer는 근처의 다음 좀비 10마리를 죽이고 그동안 그들의 흡수를 멈춥니다 ([M-0527](../rules/zombies.md#m-0527)). Black hole은 200 m 이내의 모든 상자와 크레이트를 파괴합니다 ([M-0528](../rules/items.md#m-0528)). Fortress는 20 m 이내의 사람들을 최대 30 HP까지 보호하고 Greed의 훔치기를 막습니다 ([M-0529](../rules/damage.md#m-0529)).
 
 그 밖의 기술이 있습니다. 함정이 든 선물로 아이템에 landmine 또는 C4를 부착할 수 있으며 16시간에 한 번 가능합니다 ([M-0519](../rules/items.md#m-0519)). 가짜 상자와 묘비를 알아보고, 함정을 보고, 50 m 이내의 landmine 또는 C4를 해킹할 수 있습니다 ([M-0517](../rules/sigil.md#m-0517)). 같은 포션 2개를 합쳐 다음 크기의 포션으로 만들 수 있습니다 ([M-0518](../rules/items.md#m-0518)).
 
@@ -18,7 +18,7 @@ Ingenuity는 "발명가" 계열입니다. 시작은 조금 빠듯해서 최대 H
 
 가장 약한 점은 빠듯한 시작 ([M-0515](../rules/sigil.md#m-0515)), 추가 요금 ([M-0516](../rules/economy.md#m-0516)), 그리고 깨지기 쉬운 조합품 ([M-0520](../rules/items.md#m-0520))입니다.
 
-알려지지 않은 것이 많습니다. 추가 요금이 업그레이드 사다리에도 적용되는지는 미해결입니다 ([U-0322](../unknowns.md#u-0322)). 가격 계산에 정확한 산술을 쓰는지 부동소수점을 쓰는지에 따라 일부 가격이 토큰 1개씩 달라지며, 이는 미해결입니다 ([U-0006](../unknowns.md#u-0006)). Shield와 Sleeping Bag가 Robot의 피해를 막는지에 대해서는 위키 안에서도 서로 어긋납니다 ([M-0524](../rules/damage.md#m-0524), [C-0500](../unknowns.md#c-0500)). Fortress의 풀은 공유일 수도 1인당일 수도 있고 ([U-0524](../unknowns.md#u-0524)), 지속 시간은 미해결입니다 ([U-0526](../unknowns.md#u-0526)). Black hole은 즉발일 수도 지속형일 수도 있습니다 ([U-0523](../unknowns.md#u-0523)). 해킹에는 명시된 효과가 없습니다 ([U-0514](../unknowns.md#u-0514)).
+알려지지 않은 것이 많습니다. 추가 요금이 업그레이드 사다리에도 적용되는지는 미해결입니다 ([U-0322](../unknowns.md#u-0322)). 가격 계산에 정확한 산술을 쓰는지 부동소수점을 쓰는지에 따라 일부 가격이 토큰 1개씩 달라지며, 이는 미해결입니다 ([U-0006](../unknowns.md#u-0006)). Shield와 Sleeping Bag이 Robot의 피해를 막는지에 대해서는 위키 안에서도 서로 어긋납니다 ([M-0524](../rules/damage.md#m-0524), [C-0500](../unknowns.md#c-0500)). Fortress의 풀은 공유일 수도 1인당일 수도 있고 ([U-0524](../unknowns.md#u-0524)), 지속 시간은 미해결입니다 ([U-0526](../unknowns.md#u-0526)). Black hole은 즉발일 수도 지속형일 수도 있습니다 ([U-0523](../unknowns.md#u-0523)). 해킹에는 명시된 효과가 없습니다 ([U-0514](../unknowns.md#u-0514)).
 
 이 페이지는 규칙 24개(23 `CONDITIONAL`, 1 `UNKNOWN`)를 모았습니다. 아래의 모든 규칙은 공식 위키를 한 글자도 바꾸지 않고 인용하고 형식적 해석을 붙입니다. 문구가 여러 해석을 허용하면 모든 해석을 나열하고 질문은 열린 채로 둡니다.
 
@@ -247,7 +247,7 @@ Ingenuity는 "발명가" 계열입니다. 시작은 조금 빠듯해서 최대 H
 
 **미해결 질문:**
 
-- [U-0430](../unknowns.md#u-0430) (낮음): Ingenuity Zombie Killer: 'kills the next ten zombies that come within 10m of its owner'와 'stops zombies draining you until it has killed ten'. 열 마리가 함께 도착하면 어떻게 집계됩니까, 흡수 차단은 열 마리까지로 제한됩니까, 그리고 순서는 접근 순입니까?
+- [U-0430](../unknowns.md#u-0430) (낮음): Ingenuity Zombie Killer: 'kills the next ten zombies that come within 10m of its owner'와 'stops zombies draining you until it has killed ten'. 함께 도착한 열 마리도 집계됩니까, 흡수 차단은 열 마리까지로 제한됩니까, 그리고 순서는 접근 순입니까?
 
 <a id="m-0511"></a>
 
@@ -293,7 +293,7 @@ Ingenuity는 "발명가" 계열입니다. 시작은 조금 빠듯해서 최대 H
 - [M-0515](../rules/sigil.md#m-0515) `wiki-sigils-ingenuity-005`: "2" ([출처](https://iceposeidon.com/safezone/wiki/sigils/ingenuity))
   - 번역: 2
 - [M-0515](../rules/sigil.md#m-0515) `wiki-sigils-ingenuity-006`: "Start with 2 inventory slots and five separate slots for unique crafts." ([출처](https://iceposeidon.com/safezone/wiki/sigils/ingenuity#rules))
-  - 번역: 인벤토리 슬롯 2개와 고유 조합용 별도 슬롯 five개로 시작합니다.
+  - 번역: 인벤토리 슬롯 2개와 고유 조합용 별도 슬롯 5개로 시작합니다.
 - [M-0515](../rules/sigil.md#m-0515) `wiki-merchant-035`: "Ingenuity tops out at 12." ([출처](https://iceposeidon.com/safezone/wiki/merchant#upgrades))
   - 번역: Ingenuity는 최대 12에서 멈춥니다.
 
@@ -560,7 +560,7 @@ Ingenuity는 "발명가" 계열입니다. 시작은 조금 빠듯해서 최대 H
 **미해결 질문:**
 
 - [U-0527](../unknowns.md#u-0527) (보통): Robot이 "10m 이내의 다른 플레이어에게 2s마다 1 HP 피해"를 줍니다. 2 s 시계는 전역입니까 대상별입니까, 그리고 첫 타격은 즉시 들어갑니까 한 간격 뒤에 들어갑니까?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, 로봇, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 **모순:** [C-0500](../unknowns.md#c-0500)
 
@@ -656,7 +656,7 @@ Ingenuity는 "발명가" 계열입니다. 시작은 조금 빠듯해서 최대 H
 
 - [U-0521](../unknowns.md#u-0521) (낮음): Everything potion의 "Cures poison and heals by potion tier": Anti poison의 10 min 독 면역도 부여합니까?
 
-메모 ([M-0526](../rules/healing.md#m-0526)): 독 페이지는 Anti poison, Healing 회복, God's Fruit을 치료 수단으로 나열하며, Everything potion의 치료는 여기에서만 명시됩니다. Anti poison의 독 면역은 10 min 지속됩니다 (아이템 페이지).
+메모 ([M-0526](../rules/healing.md#m-0526)): 독 페이지는 Anti poison, Healing 시길의 회복, God's Fruit을 치료 수단으로 나열하며, Everything potion의 치료는 여기에서만 명시됩니다. Anti poison의 독 면역은 10 min 지속됩니다 (아이템 페이지).
 
 <a id="m-0527"></a>
 
@@ -667,11 +667,11 @@ Ingenuity는 "발명가" 계열입니다. 시작은 조금 빠듯해서 최대 H
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0527](../rules/zombies.md#m-0527) `wiki-sigils-ingenuity-025`: "Kills the next ten zombies that come within 10m (33ft) of you." ([출처](https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-zombie_killer))
-  - 번역: 10m (33ft) 이내로 다가오는 다음 좀비 ten마리를 죽입니다.
+  - 번역: 10m (33ft) 이내로 다가오는 다음 좀비 10마리를 죽입니다.
 - [M-0527](../rules/zombies.md#m-0527) `wiki-sigils-ingenuity-026`: "No time limit." ([출처](https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-zombie_killer))
   - 번역: 시간 제한이 없습니다.
 - [M-0527](../rules/zombies.md#m-0527) `wiki-zombies-020`: "An Ingenuity Zombie Killer also stops zombies draining you until it has killed ten." ([출처](https://iceposeidon.com/safezone/wiki/zombies#defence))
-  - 번역: Ingenuity Zombie Killer는 열 마리를 죽일 때까지 좀비가 흡수하는 것도 막아 줍니다.
+  - 번역: Ingenuity Zombie Killer는 10마리를 죽일 때까지 좀비가 흡수하는 것도 막아 줍니다.
 
 **형식 모델:**
 
@@ -689,7 +689,7 @@ Ingenuity는 "발명가" 계열입니다. 시작은 조금 빠듯해서 최대 H
 
 - [U-0522](../unknowns.md#u-0522) (보통): Zombie killer의 "Kills the next ten zombies that come within 10m": 사용 시점에 이미 10 m 안에 있는 좀비도 죽입니까, 어떤 좀비 유형이 포함되며, 범위 안에 열 마리를 넘으면 어떻게 처리됩니까?
 
-메모 ([M-0527](../rules/zombies.md#m-0527)): 좀비 페이지도 같은 좀비 열 마리와 같은 10 m를 반복합니다. 좀비 흡수 범위는 5 m이고 좀비는 1.4 m/s로 추격하므로, 좀비는 흡수하기 전에 10 m에 도달합니다. Ingenuity는 처치한 좀비마다 토큰 1개를 받습니다 ([M-0521](../rules/economy.md#m-0521)).
+메모 ([M-0527](../rules/zombies.md#m-0527)): 좀비 페이지도 같은 좀비 10마리와 같은 10 m를 반복합니다. 좀비 흡수 범위는 5 m이고 좀비는 1.4 m/s로 추격하므로, 좀비는 흡수하기 전에 10 m에 도달합니다. Ingenuity는 처치한 좀비마다 토큰 1개를 받습니다 ([M-0521](../rules/economy.md#m-0521)).
 
 <a id="m-0528"></a>
 
@@ -705,7 +705,7 @@ Ingenuity는 "발명가" 계열입니다. 시작은 조금 빠듯해서 최대 H
 **형식 모델:**
 
 - [M-0528](../rules/items.md#m-0528) 해석 A: `위치 x에서 사용 -> dist(x, c) <= 200 m인 모든 상자와 crate(보급 상자, 에어드롭, 가짜 상자 포함)를 사용 순간에 파괴함`
-- [M-0528](../rules/items.md#m-0528) 해석 B: `명시되지 않은 시간 동안 지속되는 장`
+- [M-0528](../rules/items.md#m-0528) 해석 B: `명시되지 않은 시간 동안 지속되는 필드`
 - [M-0528](../rules/items.md#m-0528) 정의역: 미터 단위 dist 0..200
 - [M-0528](../rules/items.md#m-0528) 매개변수 `radius_m`: 200
 - [M-0528](../rules/items.md#m-0528) 매개변수 `duration_s`: UNKNOWN, see [U-0523](../unknowns.md#u-0523)
@@ -730,7 +730,7 @@ Ingenuity는 "발명가" 계열입니다. 시작은 조금 빠듯해서 최대 H
 - [M-0529](../rules/damage.md#m-0529) `wiki-sigils-ingenuity-030`: "Protects everyone within 20m (66ft) of it for up to 30 HP, and from Sigil of Greed stealing, and zone damage." ([출처](https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-fortress))
   - 번역: 20m (66ft) 이내의 모든 이를 최대 30 HP까지, 그리고 Sigil of Greed 훔치기와 존 피해로부터 보호합니다.
 - [M-0529](../rules/damage.md#m-0529) `wiki-damage-052`: "A fortress you stand within absorbs up to its remaining durability, whoever built it." ([출처](https://iceposeidon.com/safezone/wiki/damage#order))
-  - 번역: 서 있는 fortress는 누가 지었든 남은 내구도까지 흡수합니다.
+  - 번역: 자신이 그 안에 서 있는 fortress는 누가 지었든 남은 내구도까지 흡수합니다.
 
 **형식 모델:**
 

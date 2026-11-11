@@ -8,7 +8,7 @@
 
 경제 계열은 게임의 유일한 화폐인 블러드 토큰에 관한 것입니다. 상인은 아이템, 업그레이드, 인챈트를 블러드 토큰으로 판매하며, 모든 시길이 상인에게서 구매할 수 있고, 각 시길은 저마다 다른 방식으로 토큰을 얻습니다 ([M-0320](../rules/economy.md#m-0320)).
 
-토큰 획득: 최종 처치는 25 블러드 토큰을 주며, 처치자 또는 피해자가 blood crown을 가지고 있었다면 50을 줍니다 ([M-0110](../rules/economy.md#m-0110)). 그 외에는 시길마다 고유한 수입이 있습니다. Piety는 회복과 포션 전환으로 얻습니다 ([M-0501](../rules/economy.md#m-0501), [M-0502](../rules/economy.md#m-0502)). Greed는 훔치기와 money bag으로 얻습니다 ([M-0510](../rules/economy.md#m-0510), [M-0514](../rules/economy.md#m-0514)). Ingenuity는 조합, 해킹, 그 밖의 몇 가지 행동으로 얻습니다 ([M-0521](../rules/economy.md#m-0521)). Trolling은 가한 피해와 파괴한 상자로 얻습니다 ([M-0531](../rules/economy.md#m-0531)). Death는 약탈한 묘비와 다른 죽음으로 얻습니다 ([M-0610](../rules/economy.md#m-0610)). Endurance는 자신의 보급 상자와 아이템 사용으로 얻습니다 ([M-0622](../rules/economy.md#m-0622), [M-0623](../rules/economy.md#m-0623)). Necromancy는 자신의 좀비와 그들이 흡수한 양으로 얻습니다 ([M-0630](../rules/economy.md#m-0630)). Protection은 면역이 타격을 막을 때 얻습니다 ([M-0642](../rules/economy.md#m-0642)). Healing은 회복과 부활로 얻습니다 ([M-0650](../rules/economy.md#m-0650)).
+토큰 획득: 최종 처치는 25 블러드 토큰을 주며, 처치자 또는 피해자가 blood crown을 가지고 있었다면 50을 줍니다 ([M-0110](../rules/economy.md#m-0110)). 그 외에는 시길마다 고유한 수입이 있습니다. Piety는 회복과 포션 전환으로 얻습니다 ([M-0501](../rules/economy.md#m-0501), [M-0502](../rules/economy.md#m-0502)). Greed는 훔치기와 money bag으로 얻습니다 ([M-0510](../rules/economy.md#m-0510), [M-0514](../rules/economy.md#m-0514)). Ingenuity는 조합, 해킹, 그 밖의 몇 가지 행동으로 얻습니다 ([M-0521](../rules/economy.md#m-0521)). Trolling은 가한 피해와 파괴한 크레이트로 얻습니다 ([M-0531](../rules/economy.md#m-0531)). Death는 약탈한 묘비와 다른 죽음으로 얻습니다 ([M-0610](../rules/economy.md#m-0610)). Endurance는 자신의 보급 상자와 아이템 사용으로 얻습니다 ([M-0622](../rules/economy.md#m-0622), [M-0623](../rules/economy.md#m-0623)). Necromancy는 자신의 좀비와 그들이 흡수한 양으로 얻습니다 ([M-0630](../rules/economy.md#m-0630)). Protection은 면역이 타격을 막을 때 얻습니다 ([M-0642](../rules/economy.md#m-0642)). Healing은 회복과 부활로 얻습니다 ([M-0650](../rules/economy.md#m-0650)).
 
 지출: 지도에는 최대 한 명의 상인이 있으며, 관리자가 배치하거나 세이프 존에 무작위로 나타나고, 무작위 상인은 15분 동안 머무릅니다 ([M-0321](../rules/economy.md#m-0321)). 10 m (33 ft) 이내에서 구매할 수 있으며, 아이템은 빈 인벤토리 칸이 필요합니다 ([M-0322](../rules/economy.md#m-0322)). 기본 가격 목록에는 보급 상자 10 블러드 토큰, Anti poison 12, Dual Wield 50이 포함됩니다 ([M-0324](../rules/economy.md#m-0324)). 상인의 보급 상자는 무작위 아이템 하나를 인벤토리에 바로 넣어 줍니다 ([M-0325](../rules/economy.md#m-0325)). 업그레이드는 단계식입니다. 인벤토리 칸은 40 블러드 토큰에서 시작하며 하나를 살 때마다 10씩 더 비싸지고 ([M-0332](../rules/economy.md#m-0332)), 최대 HP +10에도 같은 구조가 적용됩니다 ([M-0333](../rules/economy.md#m-0333)). Ingenuity는 10%를 더 내며 올림 처리됩니다 ([M-0323](../rules/economy.md#m-0323)).
 
@@ -161,7 +161,7 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0324](../rules/economy.md#m-0324) `wiki-merchant-012`: "Care package: 10 blood tokens." ([출처](https://iceposeidon.com/safezone/wiki/merchant#items))
-  - 번역: Care package: 블러드 토큰 10개.
+  - 번역: Care package(보급 상자): 블러드 토큰 10개.
 - [M-0324](../rules/economy.md#m-0324) `wiki-merchant-014`: "Anti poison: 12 blood tokens." ([출처](https://iceposeidon.com/safezone/wiki/merchant#items))
   - 번역: Anti poison: 블러드 토큰 12개.
 - [M-0324](../rules/economy.md#m-0324) `wiki-merchant-015`: "Vulnerability Dart: 25 blood tokens." ([출처](https://iceposeidon.com/safezone/wiki/merchant#items))
@@ -373,7 +373,7 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0510](../rules/economy.md#m-0510) `wiki-sigils-greed-007`: "A successful steal earns five blood tokens, once per victim every 24 hours." ([출처](https://iceposeidon.com/safezone/wiki/sigils/greed#rules))
-  - 번역: 훔치기에 성공하면 블러드 토큰 five개를 얻으며, 피해자 한 명당 24시간에 한 번만 가능합니다.
+  - 번역: 훔치기에 성공하면 블러드 토큰 5개를 얻으며, 피해자 한 명당 24시간에 한 번만 가능합니다.
 - [M-0510](../rules/economy.md#m-0510) `wiki-sigils-greed-014`: "Cooldown 30min." ([출처](https://iceposeidon.com/safezone/wiki/sigils/greed#rules))
   - 번역: 쿨다운 30min.
 
@@ -509,9 +509,9 @@
 **미해결 질문:**
 
 - [U-0528](../unknowns.md#u-0528) (높음): Trolling의 "다른 플레이어에게 가한 5 HP당 블러드 토큰 1개": 나머지는 이월됩니까, 그리고 "가한"은 명목상의 타격입니까 실제로 통과한 HP(방어구, fortress, Kick 감소 적용 후)입니까?
-- [U-0529](../unknowns.md#u-0529) (높음): Trolling 수입 범위: 어떤 피해가 "다른 플레이어에게 가한 HP"로 인정됩니까(무기, 가짜 상자, 언세이프 서클 틱, 가짜 묘비의 독, 반사된 타격), 그리고 어떤 상자가 "누가 소환했든 파괴된 상자"로 인정됩니까?
+- [U-0529](../unknowns.md#u-0529) (높음): Trolling 수입 범위: 어떤 피해가 "다른 플레이어에게 가한 HP"로 인정됩니까(무기, 가짜 상자, 언세이프 서클 틱, fake gravestone의 독, 반사된 타격), 그리고 어떤 크레이트가 "누가 소환했든 파괴된 크레이트"로 인정됩니까?
 - [U-0001](../unknowns.md#u-0001) (치명적): 방어자의 Kick 라이브 10% 감소는 결과를 내림하는 것입니까(A), 아니면 제거되는 10%를 내림하는 것입니까(B)?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, 로봇, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 메모 ([M-0531](../rules/economy.md#m-0531)): 'other players'에는 Trolling 참가자와 좀비가 제외됩니다. 가짜 상자를 획득하면 5 HP 피해를 주고, Kick 라이브 중인 방어자는 [U-0001](../unknowns.md#u-0001)에 따라 4 또는 5를 받으므로, 해석에 따라 획득 한 번이 토큰 0개 또는 1개를 지급할 수 있습니다.
 
@@ -535,7 +535,7 @@
 
 **미해결 질문:**
 
-- [U-0605](../unknowns.md#u-0605) (보통): Death 시길 "다른 참가자가 죽을 때마다 블러드 토큰 1개": 거리 제한이 있습니까(회복은 50m 사용), 그리고 부활이나 두 번째 사망도 다시 보상을 줍니까?
+- [U-0605](../unknowns.md#u-0605) (보통): Death 시길 "다른 참가자가 죽을 때마다 블러드 토큰 1개": 거리 제한이 있습니까(회복은 50m 기준), 그리고 부활이나 두 번째 사망도 다시 보상을 줍니까?
 - [U-0606](../unknowns.md#u-0606) (높음): Death "약탈": 아이템이나 블러드 토큰을 처음 루팅하는 것이 "묘비 약탈" 행동과 같은 5% 회복과 10 토큰을 줍니까, 그리고 부활을 위해 잠겨 있는 동안 블러드 토큰을 루팅할 수 있습니까?
 
 메모 ([M-0610](../rules/economy.md#m-0610)): 약탈 범위 10m와 회복 범위 50m는 다른 줄에 명시되어 있으며, 토큰 줄에는 범위가 없습니다.
@@ -588,7 +588,7 @@
 - [U-0608](../unknowns.md#u-0608) (보통): Endurance의 "Earn one more for every five item uses": 추가 토큰은 언제 지급됩니까?
 - [U-0609](../unknowns.md#u-0609) (보통): Endurance 아이템 사용 보너스: 어떤 행동이 "아이템 사용"입니까(무기 발사, 붕대, Safety bubble, 조합, 상인 업그레이드, 계속 활성 상태인 효과)?
 
-메모 ([M-0623](../rules/economy.md#m-0623)): 아이템 페이지와 비교하십시오. 일부 효과(Safety Bubbles, 연막탄, 붕대, 조합 아이템, 상인 업그레이드)는 '활성 아이템 효과'에서 제외되며, 여기에 그것이 적용되는지는 명시되어 있지 않습니다.
+메모 ([M-0623](../rules/economy.md#m-0623)): 아이템 페이지와 비교하십시오. 일부 효과(Safety Bubbles, smoke bombs, bandages, 조합 아이템, 상인 업그레이드)는 '활성 아이템 효과'에서 제외되며, 여기에 그것이 적용되는지는 명시되어 있지 않습니다.
 
 <a id="m-0630"></a>
 
@@ -608,7 +608,7 @@
 
 **미해결 질문:**
 
-- [U-0613](../unknowns.md#u-0613) (높음): Necromancy의 "The HP goes to you": 얻는 HP는 피해자가 실제로 잃은 HP입니까, 소유자의 최대 HP로 제한됩니까, 그리고 막히거나 방어구에 흡수된 흡수(drain)도 HP와 토큰을 줍니까?
+- [U-0613](../unknowns.md#u-0613) (높음): Necromancy의 "The HP goes to you": 얻는 HP는 피해자가 실제로 잃은 HP입니까, 소유자의 최대 HP로 제한됩니까, 그리고 막히거나 방어구가 받아낸 흡수(drain)도 HP와 토큰을 줍니까?
 - [U-0614](../unknowns.md#u-0614) (보통): 가드 좀비와 호드 보너스 좀비도 Necromancy 소유자에게 HP를 흡수해 주며 "one per HP your zombies drain"에 포함됩니까?
 
 메모 ([M-0630](../rules/economy.md#m-0630)): 호드 보너스는 좀비 5마리를 주므로 토큰도 5개입니다.
@@ -622,7 +622,7 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0642](../rules/economy.md#m-0642) `wiki-sigils-protection-010`: "A drone, missile, C4 or landmine hit earns one blood token, and an airstrike or gunship hit earns 1, but only when your own immunity blocks it." ([출처](https://iceposeidon.com/safezone/wiki/sigils/protection#rules))
-  - 번역: 드론, 미사일, C4 또는 지뢰 타격은 블러드 토큰 1개를, 공습 또는 건십 타격은 1개를 얻게 하지만, 자신의 면역이 막았을 때만 해당합니다.
+  - 번역: drone, 미사일, C4 또는 landmine 타격은 블러드 토큰 한 개를, 공습 또는 건십 타격은 1개를 얻게 하지만, 당신 자신의 면역이 막았을 때만 해당합니다.
 - [M-0642](../rules/economy.md#m-0642) `wiki-sigils-protection-011`: "A nuke hit earns twenty when your damage cut applies." ([출처](https://iceposeidon.com/safezone/wiki/sigils/protection#rules))
   - 번역: 핵폭탄(nuke) 타격은 자신의 피해 감소가 적용될 때 스무 개를 얻게 합니다.
 - [M-0642](../rules/economy.md#m-0642) `wiki-sigils-protection-012`: "A hit already blocked by something else earns nothing." ([출처](https://iceposeidon.com/safezone/wiki/sigils/protection#rules))
@@ -640,9 +640,9 @@
 **미해결 질문:**
 
 - [U-0620](../unknowns.md#u-0620) (보통): 막은 타격으로 얻는 Protection 블러드 토큰: 공습의 화염 틱, 자신의 landmine, 나열되지 않은 면역(함정 선물, 독, 보복)도 토큰을 지급합니까?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, 로봇, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
-메모 ([M-0642](../rules/economy.md#m-0642)): 독, 함정 선물, Protection 응징은 면역 목록에는 있으나 토큰 목록에는 없습니다. 핵폭탄 보너스는 토큰 20개입니다. 자신이 시길 능력으로 설치한 지뢰의 타격도 토큰을 지급하는지는 명시되어 있지 않습니다.
+메모 ([M-0642](../rules/economy.md#m-0642)): 독, 함정 선물, Protection 응징은 면역 목록에는 있으나 토큰 목록에는 없습니다. 핵폭탄 보너스는 토큰 20개입니다. 자신이 시길 능력으로 설치한 landmine의 타격도 토큰을 지급하는지는 명시되어 있지 않습니다.
 
 <a id="m-0650"></a>
 

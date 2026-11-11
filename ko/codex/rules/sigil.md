@@ -8,17 +8,17 @@
 
 시길은 참가자가 선택하는 클래스이며, 이후 그가 하는 모든 일의 틀을 만듭니다. 이 계열은 시길을 고르는 것에 관한 규칙과 각 시길에 딸린 기본 수치 및 능력을 담고 있습니다. (각 시길의 더 긴 이야기는 해당 페이지에 있습니다.)
 
-선택 자체: 각 참가자는 이벤트가 시작된 뒤 시길 하나를 고르며 ([M-0601](../rules/sigil.md#m-0601)), 선택은 최종적입니다 ([M-0600](../rules/sigil.md#m-0600)). 기한이 있는지, 끝까지 고르지 않은 사람은 어떻게 되는지는 미해결입니다 ([U-0627](../unknowns.md#u-0627)).
+선택 자체: 각 참가자는 이벤트가 시작된 뒤 시길 하나를 고르며 ([M-0601](../rules/sigil.md#m-0601)), 선택은 최종적입니다 ([M-0600](../rules/sigil.md#m-0600)). 기한이 있는지, 끝까지 고르지 않은 사람은 어떻게 되는지는 미해결 질문입니다, [U-0627](../unknowns.md#u-0627).
 
 기본 수치는 시길이 가장 먼저 바꾸는 것입니다. Piety는 최대 HP 110에 3칸입니다 ([M-0500](../rules/sigil.md#m-0500)). Greed는 최대 HP 90에 3칸입니다 ([M-0508](../rules/sigil.md#m-0508)). Ingenuity는 최대 HP 100에 2칸, 그리고 별도의 조합 칸 5개입니다 ([M-0515](../rules/sigil.md#m-0515)). Trolling, Death, Necromancy, Protection, Healing은 모두 최대 HP 100에 3칸입니다 ([M-0530](../rules/sigil.md#m-0530), [M-0602](../rules/sigil.md#m-0602), [M-0604](../rules/sigil.md#m-0604), [M-0605](../rules/sigil.md#m-0605), [M-0606](../rules/sigil.md#m-0606)). Endurance는 최대 HP 100에 10칸입니다 ([M-0603](../rules/sigil.md#m-0603)).
 
-그다음은 능력입니다. Greed는 10 m (33 ft) 이내의 참가자에게서 훔치지만 Piety 플레이어는 예외이며 ([M-0509](../rules/sigil.md#m-0509), [M-0507](../rules/sigil.md#m-0507)), Fortress 보호는 훔치기를 막습니다 ([M-0511](../rules/sigil.md#m-0511)). Greed는 두 배 먼 거리에서 상자와 보급품을 확보하기도 합니다 ([M-0512](../rules/sigil.md#m-0512)). Ingenuity는 가짜 상자와 묘비를 알아보고, 함정을 보며, 50 m 이내의 Landmine이나 C4를 해킹합니다 ([M-0517](../rules/sigil.md#m-0517)). Death는 묘비 약탈과 근처의 탈락으로 회복하며 ([M-0611](../rules/sigil.md#m-0611), [M-0613](../rules/sigil.md#m-0613)), 후반 상한이 있고 ([M-0614](../rules/sigil.md#m-0614)) 서클 밖 타격에 대한 보호막이 있습니다 ([M-0615](../rules/sigil.md#m-0615)). Protection은 긴 면역 목록을 가지며 ([M-0640](../rules/sigil.md#m-0640)), 그럼에도 존, 언세이프 서클, Robot, 무기 피해 등을 받고 ([M-0641](../rules/sigil.md#m-0641)), 2시간에 한 번 Landmine을 설치할 수 있으며 ([M-0644](../rules/sigil.md#m-0644)), 죽을 때 30 m 이내의 모든 사람을 응징합니다 ([M-0647](../rules/sigil.md#m-0647)).
+그다음은 능력입니다. Greed는 10 m (33 ft) 이내의 참가자에게서 훔치지만 Piety 플레이어는 예외이며 ([M-0509](../rules/sigil.md#m-0509), [M-0507](../rules/sigil.md#m-0507)), Fortress 보호는 훔치기를 막습니다 ([M-0511](../rules/sigil.md#m-0511)). Greed는 두 배 먼 거리에서 상자와 크레이트를 확보하기도 합니다 ([M-0512](../rules/sigil.md#m-0512)). Ingenuity는 가짜 상자와 묘비를 알아보고, 함정을 보며, 50 m 이내의 Landmine이나 C4를 해킹합니다 ([M-0517](../rules/sigil.md#m-0517)). Death는 묘비 약탈과 근처의 탈락으로 회복하며 ([M-0611](../rules/sigil.md#m-0611), [M-0613](../rules/sigil.md#m-0613)), 후반 상한이 있고 ([M-0614](../rules/sigil.md#m-0614)) 서클 밖 타격을 막는 Ward(보호막)가 있습니다 ([M-0615](../rules/sigil.md#m-0615)). Protection은 긴 면역 목록을 가지며 ([M-0640](../rules/sigil.md#m-0640)), 그럼에도 존, 언세이프 서클, Robot, 무기 피해 등을 받고 ([M-0641](../rules/sigil.md#m-0641)), 2시간에 한 번 Landmine을 설치할 수 있으며 ([M-0644](../rules/sigil.md#m-0644)), 죽을 때 30 m 이내의 모든 사람을 응징합니다 ([M-0647](../rules/sigil.md#m-0647)).
 
 플레이어가 경험하는 점: 시길을 고르는 것은 이벤트가 어떻게 전개될지에 거는 내기이며, 되돌릴 수 없습니다 ([M-0600](../rules/sigil.md#m-0600)). 수치 차이는 작으므로 정체성의 대부분은 능력에서 나옵니다 ([M-0530](../rules/sigil.md#m-0530), [M-0602](../rules/sigil.md#m-0602)).
 
 기재된 바에 따른 시길별 가장 강한 점: Endurance의 칸 수 ([M-0603](../rules/sigil.md#m-0603))와 Piety의 최대 HP ([M-0500](../rules/sigil.md#m-0500))가 가장 분명한 순수 이점이고, Protection의 면역이 가장 폭넓습니다 ([M-0640](../rules/sigil.md#m-0640)). 가장 약한 점: Greed의 낮은 HP ([M-0508](../rules/sigil.md#m-0508))와 Ingenuity의 더 작은 가방 ([M-0515](../rules/sigil.md#m-0515))입니다.
 
-알 수 없는 것: Greed가 두 배로 늘리는 확보 범위가 얼마나 큰지 ([U-0510](../unknowns.md#u-0510)), 해킹이 무엇을 하는지 ([U-0514](../unknowns.md#u-0514)), Ingenuity의 레시피 6개가 조합 칸 5개에 어떻게 들어가는지 ([U-0517](../unknowns.md#u-0517)), Death의 회복이 어떻게 반올림되고 상한이 걸리는지 ([U-0600](../unknowns.md#u-0600), [U-0602](../unknowns.md#u-0602), [U-0603](../unknowns.md#u-0603)), Ward 쿨다운이 언제 시작되는지 ([U-0604](../unknowns.md#u-0604)), Protection의 Landmine이 언제 준비되는지 ([U-0621](../unknowns.md#u-0621))입니다. 훔치는 쪽에 자리가 없을 때 Greed의 동작도 미해결입니다 ([U-0509](../unknowns.md#u-0509)).
+알 수 없는 것: Greed가 두 배로 늘리는 확보 범위가 얼마나 큰지 ([U-0510](../unknowns.md#u-0510)), 해킹이 무엇을 하는지 ([U-0514](../unknowns.md#u-0514)), Ingenuity의 레시피 6개가 조합 칸 5개에 어떻게 들어가는지 ([U-0517](../unknowns.md#u-0517)), Death의 회복이 어떻게 끝수 처리되고 상한이 걸리는지 ([U-0600](../unknowns.md#u-0600), [U-0602](../unknowns.md#u-0602), [U-0603](../unknowns.md#u-0603)), Ward 쿨다운이 언제 시작되는지 ([U-0604](../unknowns.md#u-0604)), Protection의 Landmine이 언제 준비되는지 ([U-0621](../unknowns.md#u-0621))입니다. 훔치는 쪽에 자리가 없을 때 Greed의 동작도 미해결입니다 ([U-0509](../unknowns.md#u-0509)).
 
 이 페이지는 규칙 24개(12 `DOCUMENTED`, 12 `CONDITIONAL`)를 모았습니다. 아래의 모든 규칙은 공식 위키를 한 글자도 바꾸지 않고 인용하고 형식적 해석을 붙입니다. 문구가 여러 해석을 허용하면 모든 해석을 나열하고 질문은 열린 채로 둡니다.
 
@@ -53,7 +53,7 @@
 
 **상호작용:** [M-0506](../rules/items.md#m-0506)
 
-메모 ([M-0500](../rules/sigil.md#m-0500)): 능력치 라벨은 쌍으로 읽습니다 (라벨 'Max HP' 다음에 '110 HP'; 라벨 'Slots' 다음에 '3'). 'Your max HP is 10 HP higher'라는 문장은 기준값 100에 대해 110과 일치합니다. 상인 페이지는 Piety의 최대 HP 상한을 220으로 올립니다. 그것은 상인 정형화 담당의 기록입니다. 시작 HP가 최대 HP와 같다는 것은 이 페이지에 명시되어 있지 않습니다.
+메모 ([M-0500](../rules/sigil.md#m-0500)): 능력치 라벨은 쌍으로 읽습니다 (라벨 'Max HP' 다음에 '110 HP'; 라벨 'Slots' 다음에 '3'). 'Your max HP is 10 HP higher'라는 문장은 기준값 100에 대해 110과 일치합니다. 상인 페이지는 Piety의 최대 HP 상한을 220으로 올립니다. 그것은 상인 형식화 담당의 기록입니다. 시작 HP가 최대 HP와 같다는 것은 이 페이지에 명시되어 있지 않습니다.
 
 <a id="m-0507"></a>
 
@@ -167,7 +167,7 @@
 
 <a id="m-0512"></a>
 
-### M-0512: Greed 상자와 보급 상자 도달 거리
+### M-0512: Greed의 상자와 crate 도달 거리
 
 라벨: `CONDITIONAL`. 시길: greed.
 
@@ -207,7 +207,7 @@
 - [M-0515](../rules/sigil.md#m-0515) `wiki-sigils-ingenuity-005`: "2" ([출처](https://iceposeidon.com/safezone/wiki/sigils/ingenuity))
   - 번역: 2
 - [M-0515](../rules/sigil.md#m-0515) `wiki-sigils-ingenuity-006`: "Start with 2 inventory slots and five separate slots for unique crafts." ([출처](https://iceposeidon.com/safezone/wiki/sigils/ingenuity#rules))
-  - 번역: 인벤토리 슬롯 2개와 고유 조합용 별도 슬롯 five개로 시작합니다.
+  - 번역: 인벤토리 슬롯 2개와 고유 조합용 별도 슬롯 5개로 시작합니다.
 - [M-0515](../rules/sigil.md#m-0515) `wiki-merchant-035`: "Ingenuity tops out at 12." ([출처](https://iceposeidon.com/safezone/wiki/merchant#upgrades))
   - 번역: Ingenuity는 최대 12에서 멈춥니다.
 
@@ -469,7 +469,7 @@
 - [M-0611](../rules/sigil.md#m-0611) `wiki-sigils-death-008`: "Empty gravestones can be robbed too." ([출처](https://iceposeidon.com/safezone/wiki/sigils/death#rules))
   - 번역: 빈 묘비도 약탈할 수 있습니다.
 - [M-0611](../rules/sigil.md#m-0611) `wiki-sigils-death-009`: "If you are the first to loot an item or blood tokens from a gravestone, you also rob it." ([출처](https://iceposeidon.com/safezone/wiki/sigils/death#rules))
-  - 번역: 묘비에서 아이템이나 블러드 토큰을 처음으로 루팅하면 그 묘비를 약탈한 것으로 간주됩니다.
+  - 번역: 묘비에서 아이템이나 블러드 토큰을 처음으로 루팅하면 그 묘비도 함께 약탈하게 됩니다.
 
 **형식 모델:**
 
@@ -481,7 +481,7 @@
 
 **미해결 질문:**
 
-- [U-0600](../unknowns.md#u-0600) (보통): Death 묘비 약탈 회복: 최대 HP의 5%인데, 소수 결과는 어떻게 반올림합니까(기본 최대 HP는 100이지만 상인이 최대 HP를 10씩 올려 팔기 때문에 110의 5%는 5.5입니다)?
+- [U-0600](../unknowns.md#u-0600) (보통): Death 묘비 약탈 회복: 최대 HP의 5%인데, 소수 결과의 끝수는 어떻게 처리합니까(기본 최대 HP는 100이지만 상인이 최대 HP를 10씩 올려 팔기 때문에 110의 5%는 5.5입니다)?
 - [U-0606](../unknowns.md#u-0606) (높음): Death "약탈": 아이템이나 블러드 토큰을 처음 루팅하는 것이 "묘비 약탈" 행동과 같은 5% 회복과 10 토큰을 줍니까, 그리고 부활을 위해 잠겨 있는 동안 블러드 토큰을 루팅할 수 있습니까?
 
 메모 ([M-0611](../rules/sigil.md#m-0611)): M = 100이면 모든 해석에서 HP 5입니다. 최대 HP를 넘지 않는지는 명시되어 있지 않습니다. 빈 묘비도 약탈할 수 있지만, 빈 묘비를 약탈해도 회복과 토큰을 받는지는 명시되어 있지 않습니다.
@@ -526,7 +526,7 @@
 
 - [M-0614](../rules/sigil.md#m-0614) 해석 A: `alive*5 <= N이면 HP' = min(HP + h, 0.6*M), 아니면 HP' = min(HP + h, M)`
 - [M-0614](../rules/sigil.md#m-0614) 해석 B: `A와 같으나 HP' = max(HP, min(HP + h, 0.6*M)) (HP를 낮추지 않음)`
-- [M-0614](../rules/sigil.md#m-0614) 해석 C: `상한을 반올림: floor(0.6*M) 또는 ceil(0.6*M)`
+- [M-0614](../rules/sigil.md#m-0614) 해석 C: `상한을 정수로 맞춤: floor(0.6*M) 또는 ceil(0.6*M)`
 - [M-0614](../rules/sigil.md#m-0614) 정의역: alive, N은 정수. h는 탈락당 회복에서만 나옴. 약탈 회복은 '그 회복'에 해당하지 않음
 - [M-0614](../rules/sigil.md#m-0614) 매개변수 `N`: UNKNOWN, [U-0009](../unknowns.md#u-0009) 참조
 
@@ -566,7 +566,7 @@
 **미해결 질문:**
 
 - [U-0604](../unknowns.md#u-0604) (높음): Death ward: 2h 쿨다운은 언제 시작됩니까(막힌 타격 시점, 2min 면역이 끝날 때, 또는 시길 선택 시점부터), ward는 선택 시점에 준비되어 있습니까, 그리고 어떤 피해 틱이 "첫 타격"으로 인정됩니까?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, 로봇, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 **모순:** [C-0600](../unknowns.md#c-0600)
 
@@ -581,11 +581,11 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0640](../rules/sigil.md#m-0640) `wiki-sigils-protection-008`: "Immune to poison, drones, missiles, C4, landmines, trapped gifts, airstrikes and their fire, gunship bombs and Protection retribution." ([출처](https://iceposeidon.com/safezone/wiki/sigils/protection#rules))
-  - 번역: 독, 드론, 미사일, C4, 지뢰, 함정 선물, 공습과 그 화염, 건십 폭탄, Protection 응징에 면역입니다.
+  - 번역: 독, drone, 미사일, C4, landmine, trapped gift, 공습과 그 화염, 건십 폭탄, Protection 응징에 면역입니다.
 - [M-0640](../rules/sigil.md#m-0640) `wiki-sigils-protection-006`: "Immune to" ([출처](https://iceposeidon.com/safezone/wiki/sigils/protection))
   - 번역: 면역 대상
 - [M-0640](../rules/sigil.md#m-0640) `wiki-sigils-protection-007`: "Poison, drones, missiles, C4, landmines, airstrikes, gunships" ([출처](https://iceposeidon.com/safezone/wiki/sigils/protection))
-  - 번역: 독, 드론, 미사일, C4, 지뢰, 공습, 건십
+  - 번역: 독, drone, 미사일, C4, landmine, 공습, 건십
 - [M-0640](../rules/sigil.md#m-0640) `wiki-damage-008`: "| Poison | Shield, Safety bubble, Sleeping Bag, Protection, Anti poison, Body armor (absorbs)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
   - 번역: | Poison | Shield, Safety bubble, Sleeping Bag, Protection, Anti poison, Body armor (흡수)
 - [M-0640](../rules/sigil.md#m-0640) `wiki-damage-018`: "| Drone | Shield, Safety bubble, Sleeping Bag, Protection, Mirror forcefield (reflects), Body armor (absorbs)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
@@ -603,18 +603,18 @@
 
 **모순:** [C-0601](../unknowns.md#c-0601), [C-0602](../unknowns.md#c-0602)
 
-메모 ([M-0640](../rules/sigil.md#m-0640)): 전체 문장과 피해 표가 일치합니다. 라벨 줄은 더 짧으며, [C-0601](../unknowns.md#c-0601)을 참조하십시오. 공격 페이지의 면역 언급(미사일, 공습, 건십)도 일치합니다. 핵폭탄(nuke)은 면역이 아닙니다: [M-0643](../rules/damage.md#m-0643).
+메모 ([M-0640](../rules/sigil.md#m-0640)): 전체 문장과 피해 표가 일치합니다. 라벨 줄은 더 짧으며, [C-0601](../unknowns.md#c-0601)을 참조하십시오. 공격 페이지의 면역 언급(미사일, 공습, 건십)도 일치합니다. 핵폭탄(nuke)에는 면역이 아닙니다: [M-0643](../rules/damage.md#m-0643).
 
 <a id="m-0641"></a>
 
-### M-0641: Protection도 존, 서클, 로봇, 무기 피해는 받음
+### M-0641: Protection도 존, 서클, Robot, 무기 피해는 받음
 
 라벨: `DOCUMENTED`. 시길: protection.
 
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0641](../rules/sigil.md#m-0641) `wiki-sigils-protection-009`: "Still takes zone, unsafe circle, robot, weapon, fake chest, tear gas, zombie, bleeding, cyclops and bounty damage." ([출처](https://iceposeidon.com/safezone/wiki/sigils/protection#rules))
-  - 번역: 존, 언세이프 서클(unsafe circle), 로봇, 무기, 가짜 상자, 최루가스, 좀비, 출혈, 사이클롭스, 현상금 피해는 여전히 받습니다.
+  - 번역: 존, 언세이프 서클(unsafe circle), Robot, 무기, 가짜 상자, 최루 가스, 좀비, 출혈, 사이클롭스, 현상금 피해는 여전히 받습니다.
 
 **형식 모델:**
 
@@ -626,14 +626,14 @@
 
 <a id="m-0644"></a>
 
-### M-0644: Protection 지뢰 설치 능력
+### M-0644: Protection landmine 설치 능력
 
 라벨: `CONDITIONAL`. 시길: protection.
 
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0644](../rules/sigil.md#m-0644) `wiki-sigils-protection-014`: "Place a landmine where you stand once every 2h." ([출처](https://iceposeidon.com/safezone/wiki/sigils/protection#rules))
-  - 번역: 2h마다 한 번, 서 있는 자리에 지뢰를 설치합니다.
+  - 번역: 2h마다 한 번, 서 있는 자리에 landmine을 설치합니다.
 - [M-0644](../rules/sigil.md#m-0644) `wiki-sigils-protection-015`: "It deals 15 HP to everyone within 10m (33ft) when another contestant or a zombie steps in, and kills every zombie in range." ([출처](https://iceposeidon.com/safezone/wiki/sigils/protection#rules))
   - 번역: 다른 참가자 또는 좀비가 밟으면 10m (33ft) 이내의 모든 사람에게 15 HP 피해를 주고, 범위 내의 모든 좀비를 처치합니다.
 - [M-0644](../rules/sigil.md#m-0644) `wiki-weapons-021`: "It deals 15 HP to everyone in range, you included, and kills every zombie in range." ([출처](https://iceposeidon.com/safezone/wiki/weapons#landmine))
@@ -641,7 +641,7 @@
 
 **형식 모델:**
 
-- [M-0644](../rules/sigil.md#m-0644) 해석 A: `7200 s마다 참가자는 자신의 위치에 지뢰를 설치할 수 있음. 다른 참가자 또는 좀비가 10 m 이내에 있으면 작동. 10 m 이내의 모든 사람에게 15 HP 피해. 10 m 이내의 좀비를 처치`
+- [M-0644](../rules/sigil.md#m-0644) 해석 A: `7200 s마다 참가자는 자신의 위치에 landmine을 설치할 수 있음. 다른 참가자 또는 좀비가 10 m 이내에 있으면 작동. 10 m 이내의 모든 사람에게 15 HP 피해. 10 m 이내의 좀비를 처치`
 - [M-0644](../rules/sigil.md#m-0644) 정의역: 초, 미터, HP
 - [M-0644](../rules/sigil.md#m-0644) 매개변수 `cooldown_s`: 7200
 - [M-0644](../rules/sigil.md#m-0644) 매개변수 `damage_hp`: 15
@@ -650,9 +650,9 @@
 **미해결 질문:**
 
 - [U-0621](../unknowns.md#u-0621) (보통): Protection landmine 능력: 시길 선택 즉시 준비됩니까, 2h 후에 준비됩니까, 2h는 설치 시점부터 시작됩니까, 그리고 이것은 아이템 Landmine(5개 중첩, Kick 라이브 보너스, 인챈트, 가시성)입니까?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, 로봇, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
-메모 ([M-0644](../rules/sigil.md#m-0644)): 15 HP와 10 m는 아이템 지뢰와 일치합니다. Protection은 지뢰에 면역이므로 자신의 지뢰가 자신을 해치지 않습니다.
+메모 ([M-0644](../rules/sigil.md#m-0644)): 15 HP와 10 m는 아이템 landmine과 일치합니다. Protection은 landmine에 면역이므로 자신의 landmine이 자신을 해치지 않습니다.
 
 <a id="m-0647"></a>
 
@@ -663,7 +663,7 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0647](../rules/sigil.md#m-0647) `wiki-sigils-protection-018`: "Retribution: when you die, everyone within 30m (98ft) of you takes 20 HP." ([출처](https://iceposeidon.com/safezone/wiki/sigils/protection#rules))
-  - 번역: 응징: 당신이 사망하면, 30m (98ft) 이내의 모든 사람이 20 HP 피해를 받습니다.
+  - 번역: 응징: 당신이 사망하면, 당신으로부터 30m (98ft) 이내의 모든 사람이 20 HP 피해를 받습니다.
 - [M-0647](../rules/sigil.md#m-0647) `wiki-damage-031`: "| Protection retribution | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (absorbs)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
   - 번역: | Protection retribution | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (흡수)
 
@@ -676,7 +676,7 @@
 
 **미해결 질문:**
 
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, 로봇, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 메모 ([M-0647](../rules/sigil.md#m-0647)): 다른 Protection 참가자는 면역입니다. 나중에 부활한 Protection 참가자가 영향을 받지 않는지는 명시되어 있지 않습니다. 죽인 사람이나 사망한 참가자 본인이 포함되는지도 명시되어 있지 않습니다.
 

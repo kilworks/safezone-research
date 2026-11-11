@@ -121,7 +121,7 @@
 
 **모순:** [C-0105](../unknowns.md#c-0105)
 
-메모 ([M-0112](../rules/revival.md#m-0112)): Healing 페이지는 '당신의 묘비로부터 10m 이내의 살아 있는 참가자'를 덧붙이고 '... 최대 10회까지 부활시킬 수 있다'고 하므로 [C-0104](../unknowns.md#c-0104)를 참조하십시오. 시길별 세부 사항은 비교만 하고 중복 기록하지 않았습니다.
+메모 ([M-0112](../rules/revival.md#m-0112)): Healing 페이지는 '당신의 묘비로부터 10m 이내의 살아 있는 참가자'를 덧붙이고 '... 최대 10회까지 부활시킬 수 있다'고 합니다. [C-0104](../unknowns.md#c-0104)를 참조하십시오. 시길별 세부 사항은 비교만 하고 중복 기록하지 않았습니다.
 
 <a id="m-0113"></a>
 
@@ -210,7 +210,7 @@
 
 - [M-0116](../rules/revival.md#m-0116) 해석 A: `Death 참가자가 묘비를 약탈하거나 그 첫 루팅자가 되면 revivable(grave) = false가 영구히 성립`
 
-메모 ([M-0116](../rules/revival.md#m-0116)): Death 시길 페이지('각 묘비는 한 번 약탈될 수 있으며, 약탈된 묘비는 영영 부활할 수 없다', '묘비에서 아이템이나 블러드 토큰을 처음 루팅하면 그 묘비도 약탈한 것이 된다')와 대조했으며, 같은 규칙이고 불일치는 발견되지 않았습니다. 시길별 세부 사항은 중복 기록하지 않았습니다.
+메모 ([M-0116](../rules/revival.md#m-0116)): Death 시길 페이지('각 묘비는 한 번 약탈될 수 있으며, 약탈된 묘비는 영영 부활할 수 없다', '묘비에서 아이템이나 블러드 토큰을 처음 루팅하면 그 묘비를 약탈한 것으로도 간주된다')와 대조했으며, 같은 규칙이고 불일치는 발견되지 않았습니다. 시길별 세부 사항은 중복 기록하지 않았습니다.
 
 <a id="m-0612"></a>
 
@@ -298,7 +298,7 @@
 - [M-0655](../rules/revival.md#m-0655) `wiki-sigils-healing-013`: "A revive must happen within 10min of the death." ([출처](https://iceposeidon.com/safezone/wiki/sigils/healing#rules))
   - 번역: 부활은 사망 후 10min 이내에 이루어져야 합니다.
 - [M-0655](../rules/revival.md#m-0655) `wiki-008`: "revive you within 10min of their death." ([출처](https://iceposeidon.com/safezone/wiki#damage))
-  - 번역: 그들의 사망 후 10min 이내에 당신을 부활시킬 수 있습니다.
+  - 번역: 그들의 사망 후 10min 이내에 당신을 부활시킵니다.
 
 **형식 모델:**
 
@@ -336,7 +336,7 @@
 **미해결 질문:**
 
 - [U-0625](../unknowns.md#u-0625) (높음): 부활 비용 "costs the reviver 5 HP": HP가 5 이하인 부활자를 죽일 수 있습니까, 그리고 타격 파이프라인(방어구, Fortress, Kick 라이브)을 거칩니까?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, 로봇, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 메모 ([M-0656](../rules/revival.md#m-0656)): 부활한 참가자는 묘비에서 아이템도 되찾습니다(소개 페이지). 비용이 피해 파이프라인을 거치는지는 [U-0002](../unknowns.md#u-0002)입니다.
 

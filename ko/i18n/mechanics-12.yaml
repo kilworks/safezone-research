@@ -47,7 +47,7 @@ M-0633:
   - >-
     참가자가 당신으로부터 50m (164ft) 이내에서 사망하면, 가드 좀비가 그 묘비로부터 10m (33ft) 떨어진 곳에 1h 동안 서 있습니다.
   - >-
-    10m (33ft) 이내의 모든 사람에게서 5s마다 2 HP를 흡수하며, 참가자 한 명당 최대 30 HP까지입니다.
+    그 좀비는 10m (33ft) 이내의 모든 사람에게서 5s마다 2 HP를 흡수하며, 참가자 한 명당 최대 30 HP까지입니다.
   - >-
     가드 좀비는 묘비로부터 10m (33ft) 떨어진 곳에 나타납니다.
   - >-
@@ -77,9 +77,9 @@ M-0634:
     Necromancy 군단 보너스: 좀비 5마리
   quotes:
   - >-
-    시청자가 군단(horde)을 보내면, 자신의 좀비도 5마리 얻습니다.
+    시청자가 군단(horde)을 보내면, 당신도 당신 소유의 좀비 5마리를 얻습니다.
   - >-
-    군단이 풀려나면, 생존 중인 모든 Necromancy 참가자는 서 있는 자리에 좀비도 5마리 얻습니다.
+    군단이 풀려나면, 생존 중인 모든 Necromancy 참가자도 서 있는 자리에 좀비 5마리를 얻습니다.
   readings:
     A: >-
       군단이 풀려나면, 생존 중인 각 Necromancy 참가자는 자신의 위치에 소유 좀비 5마리를 얻음
@@ -144,11 +144,11 @@ M-0640:
     Protection 면역 목록
   quotes:
   - >-
-    독, 드론, 미사일, C4, 지뢰, 함정 선물, 공습과 그 화염, 건십 폭탄, Protection 응징에 면역입니다.
+    독, drone, 미사일, C4, landmine, trapped gift, 공습과 그 화염, 건십 폭탄, Protection 응징에 면역입니다.
   - >-
     면역 대상
   - >-
-    독, 드론, 미사일, C4, 지뢰, 공습, 건십
+    독, drone, 미사일, C4, landmine, 공습, 건십
   - >-
     | Poison | Shield, Safety bubble, Sleeping Bag, Protection, Anti poison, Body armor (흡수)
   - >-
@@ -163,13 +163,13 @@ M-0640:
     A: >-
       sigil(c) = protection일 때, source in {poison, drone, missile, C4, landmine, trapped gift, airstrike impact, airstrike fire, gunship bomb, Protection retribution}이면 blocked(source, c) = true
   notes: >-
-    전체 문장과 피해 표가 일치합니다. 라벨 줄은 더 짧으며, C-0601을 참조하십시오. 공격 페이지의 면역 언급(미사일, 공습, 건십)도 일치합니다. 핵폭탄(nuke)은 면역이 아닙니다: M-0643.
+    전체 문장과 피해 표가 일치합니다. 라벨 줄은 더 짧으며, C-0601을 참조하십시오. 공격 페이지의 면역 언급(미사일, 공습, 건십)도 일치합니다. 핵폭탄(nuke)에는 면역이 아닙니다: M-0643.
 M-0641:
   name: >-
-    Protection도 존, 서클, 로봇, 무기 피해는 받음
+    Protection도 존, 서클, Robot, 무기 피해는 받음
   quotes:
   - >-
-    존, 언세이프 서클(unsafe circle), 로봇, 무기, 가짜 상자, 최루가스, 좀비, 출혈, 사이클롭스, 현상금 피해는 여전히 받습니다.
+    존, 언세이프 서클(unsafe circle), Robot, 무기, 가짜 상자, 최루 가스, 좀비, 출혈, 사이클롭스, 현상금 피해는 여전히 받습니다.
   readings:
     A: >-
       피해원 {zone, unsafe circle, robot, weapon, fake chest, tear gas, zombie, bleeding, cyclops, bounty}에 대한 Protection 차단 수단 없음
@@ -180,7 +180,7 @@ M-0642:
     Protection의 면역 차단으로 얻는 블러드 토큰
   quotes:
   - >-
-    드론, 미사일, C4 또는 지뢰 타격은 블러드 토큰 1개를, 공습 또는 건십 타격은 1개를 얻게 하지만, 자신의 면역이 막았을 때만 해당합니다.
+    drone, 미사일, C4 또는 landmine 타격은 블러드 토큰 한 개를, 공습 또는 건십 타격은 1개를 얻게 하지만, 당신 자신의 면역이 막았을 때만 해당합니다.
   - >-
     핵폭탄(nuke) 타격은 자신의 피해 감소가 적용될 때 스무 개를 얻게 합니다.
   - >-
@@ -196,7 +196,7 @@ M-0642:
     tokens_per_nuke: >-
       20
   notes: >-
-    독, 함정 선물, Protection 응징은 면역 목록에는 있으나 토큰 목록에는 없습니다. 핵폭탄 보너스는 토큰 20개입니다. 자신이 시길 능력으로 설치한 지뢰의 타격도 토큰을 지급하는지는 명시되어 있지 않습니다.
+    독, 함정 선물, Protection 응징은 면역 목록에는 있으나 토큰 목록에는 없습니다. 핵폭탄 보너스는 토큰 20개입니다. 자신이 시길 능력으로 설치한 landmine의 타격도 토큰을 지급하는지는 명시되어 있지 않습니다.
 M-0643:
   name: >-
     Protection은 핵폭탄 피해를 50% 덜 받음
@@ -218,17 +218,17 @@ M-0643:
     Kick 라이브 감소 및 최소 1 HP와의 순서는 피해 페이지(4단계와 5단계)에 주어져 있습니다. Kick 10%가 어디에 적용되는지는 U-0001을 참조하십시오.
 M-0644:
   name: >-
-    Protection 지뢰 설치 능력
+    Protection landmine 설치 능력
   quotes:
   - >-
-    2h마다 한 번, 서 있는 자리에 지뢰를 설치합니다.
+    2h마다 한 번, 서 있는 자리에 landmine을 설치합니다.
   - >-
     다른 참가자 또는 좀비가 밟으면 10m (33ft) 이내의 모든 사람에게 15 HP 피해를 주고, 범위 내의 모든 좀비를 처치합니다.
   - >-
     당신을 포함해 범위 내의 모든 사람에게 15 HP 피해를 주고, 범위 내의 모든 좀비를 처치합니다.
   readings:
     A: >-
-      7200 s마다 참가자는 자신의 위치에 지뢰를 설치할 수 있음. 다른 참가자 또는 좀비가 10 m 이내에 있으면 작동. 10 m 이내의 모든 사람에게 15 HP 피해. 10 m 이내의 좀비를 처치
+      7200 s마다 참가자는 자신의 위치에 landmine을 설치할 수 있음. 다른 참가자 또는 좀비가 10 m 이내에 있으면 작동. 10 m 이내의 모든 사람에게 15 HP 피해. 10 m 이내의 좀비를 처치
   domain: >-
     초, 미터, HP
   parameters:
@@ -239,7 +239,7 @@ M-0644:
     radius_m: >-
       10
   notes: >-
-    15 HP와 10 m는 아이템 지뢰와 일치합니다. Protection은 지뢰에 면역이므로 자신의 지뢰가 자신을 해치지 않습니다.
+    15 HP와 10 m는 아이템 landmine과 일치합니다. Protection은 landmine에 면역이므로 자신의 landmine이 자신을 해치지 않습니다.
 M-0645:
   name: >-
     Protection의 포션은 50% 덜 회복함
@@ -259,10 +259,10 @@ M-0645:
     범위(어떤 아이템이 포션에 해당하는지)는 U-0617입니다.
 M-0646:
   name: >-
-    Protection의 붕대는 1.1배 오래 지속됨
+    Protection의 붕대는 1.1배 더 오래 지속됨
   quotes:
   - >-
-    붕대가 1.1배 오래 지속됩니다.
+    붕대가 1.1배 더 오래 지속됩니다.
   - >-
     2min에 걸쳐 10 HP를 회복합니다.
   readings:
@@ -284,7 +284,7 @@ M-0647:
     사망 시 Protection 응징
   quotes:
   - >-
-    응징: 당신이 사망하면, 30m (98ft) 이내의 모든 사람이 20 HP 피해를 받습니다.
+    응징: 당신이 사망하면, 당신으로부터 30m (98ft) 이내의 모든 사람이 20 HP 피해를 받습니다.
   - >-
     | Protection retribution | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (흡수)
   readings:
@@ -404,7 +404,7 @@ M-0655:
   - >-
     부활은 사망 후 10min 이내에 이루어져야 합니다.
   - >-
-    그들의 사망 후 10min 이내에 당신을 부활시킬 수 있습니다.
+    그들의 사망 후 10min 이내에 당신을 부활시킵니다.
   readings:
     A: >-
       t_now - t_death <= 600 s일 때에 한해 부활 허용, t_death는 사망한 참가자의 사망 시각

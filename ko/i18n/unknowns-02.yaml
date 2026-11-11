@@ -77,9 +77,9 @@ U-0111:
     A: >-
       마지막 GPS 갱신 시점에 Kick 라이브 중이었으면 유예 = 30 min, 아니면 15 min이며 그 시점에 고정됩니다
     B: >-
-      Kick 라이브 중 여부는 15 min이 끝날 때 읽습니다. 그때 라이브 중이면 기한이 30 min으로 옮겨집니다
+      라이브 상태는 15 min이 끝날 때 읽습니다. 그때 라이브 중이면 기한이 30 min으로 옮겨집니다
     C: >-
-      오프라인 경과 시간은 각 순간의 Kick 라이브 중 여부에 따라 분당 1/15 또는 1/30의 가중치로 누적됩니다
+      오프라인 경과 시간은 각 순간의 라이브 상태에 따라 분당 1/15 또는 1/30의 가중치로 누적됩니다
   resolution_paths:
   - >-
     VOD: 라이브 중 휴대폰이 꺼지고 10분째에 방송이 끝난 경우의 피해 시작 시점.
@@ -311,9 +311,9 @@ U-0125:
     주최 측 설명. crown을 설명하는 페이지(패밀리 교차).
 U-0200:
   question: >-
-    C4, landmine, 화살 외에 어떤 아이템이 한 슬롯에 중첩됩니까(Piety가 아닌 체력 물약, mirror forcefield, 기타)?
+    C4, landmine, 화살 외에 어떤 아이템이 한 슬롯에 중첩됩니까(Piety가 아닌 체력 포션, mirror forcefield, 기타)?
   why_it_matters: >-
-    인벤토리 공간은 3 슬롯이므로, 중첩 규칙이 방어 수단과 물약이 몇 개 들어가는지를 결정합니다.
+    인벤토리 공간은 3 슬롯이므로, 중첩 규칙이 방어 수단과 포션이 몇 개 들어가는지를 결정합니다.
   readings:
     A: >-
       명시된 C4, landmine, 화살만 중첩됩니다
@@ -321,7 +321,7 @@ U-0200:
       다른 종류도 중첩됩니다(목록은 열려 있음: 'such as')
   resolution_paths:
   - >-
-    VOD: 인벤토리가 가득 찬 상태에서 두 번째 mirror forcefield 또는 체력 물약을 줍는 참가자.
+    VOD: 인벤토리가 가득 찬 상태에서 두 번째 mirror forcefield 또는 체력 포션을 줍는 참가자.
   - >-
     무기 페이지의 중첩 크기는 한 중첩당 5와 10입니다.
 U-0201:
@@ -341,7 +341,7 @@ U-0201:
     VOD: mirror 두 개를 든 참가자가 상한 상태에서 세 번째 효과 아이템을 사용하는 장면.
 U-0202:
   question: >-
-    상한 목록에 명시되지 않은 효과는 어떻게 동작합니까: EMP(10min), Thermal goggles(소지), Body armor, Sleeping Bag, 체력 물약? 그리고 상한 상태에서 Hazmat suit을 주우면 어떻게 됩니까?
+    상한 목록에 명시되지 않은 효과는 어떻게 동작합니까: EMP(10min), Thermal goggles(소지), Body armor, Sleeping Bag, 체력 포션? 그리고 상한 상태에서 Hazmat suit을 주우면 어떻게 됩니까?
   why_it_matters: >-
     상한의 'count' 및 'do not count' 목록은 모든 아이템을 다루지 않으며, 장비 구성 계획이 여기에 달려 있습니다.
   readings:
@@ -356,9 +356,9 @@ U-0202:
     VOD: 효과 3개를 가진 참가자가 EMP를 사용하거나 goggles 또는 Hazmat을 줍는 장면.
 U-0203:
   question: >-
-    체력 물약, bandage 틱, Eddie의 회복은 최대 HP로 제한됩니까?
+    체력 포션, bandage 틱, Eddie의 회복은 최대 HP로 제한됩니까?
   why_it_matters: >-
-    최대치를 넘는 회복 문제는 높은 HP에서 물약이 낭비되는지, Eddie의 회복이 일부 손실되는지를 결정합니다.
+    최대치를 넘는 회복 문제는 높은 HP에서 포션이 낭비되는지, Eddie의 회복이 일부 손실되는지를 결정합니다.
   readings:
     A: >-
       hp = min(maxHP, hp + h)
@@ -366,6 +366,6 @@ U-0203:
       hp가 최대 HP를 넘을 수 있습니다
   resolution_paths:
   - >-
-    VOD: 가득 찬 HP 또는 그에 가까운 HP에서 물약을 마시는 장면.
+    VOD: 가득 찬 HP 또는 그에 가까운 HP에서 포션을 마시는 장면.
   - >-
     Healing 페이지는 재생이 'up to your max HP'까지라고 합니다(명시된 곳은 여기뿐).
