@@ -1,5 +1,7 @@
 # 02. Rounding and arithmetic
 
+> **Adversarial review, 2026-11-11: T-0004 BROKEN, fixes pending.** T-0004: the {1,2,3} row assumes two successive floors; under U-0100 (one final floor, floor(9d/20)) it is {1,2}. That row is CONDITIONAL on U-0100. Other theorems on this page were UPHELD.
+
 The wiki states its percentage rules in words: "10% more, rounded down", "50% less", "15% more, rounded down", "10% higher, rounded up". This file turns each into exact integer arithmetic, proves which phrasings have a single meaning and which have two, and measures where code written with floating-point numbers would drift from the exact rule.
 
 Tests: `sim/tests/test_arith_theorems.py` (exhaustive). Drift table: `analysis/scripts/float_drift.py`, output `analysis/results/float_drift.json`. Implementation: `sim/safezone_sim/arith.py`.

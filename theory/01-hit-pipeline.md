@@ -1,5 +1,7 @@
 # 01. The hit pipeline
 
+> **Adversarial review, 2026-11-11: T-0007 BROKEN, fixes pending.** T-0007: also needs U-0102 (1 durability per HP absorbed), U-0103 reading A, and the fortress reading of M-0529 (30 HP shared versus per contestant); counterexample under U-0103 B: hits=[1], f=30 loses 1, not 0. The '12 of 12' mutation claim has no committed test. Other theorems on this page were UPHELD.
+
 The damage page says: "Every hit goes through these steps in order." (M-0117). This file writes each step as a map on (damage, defender state), states what the composition does, and lists what the text leaves open.
 
 ## The seven maps
@@ -18,7 +20,7 @@ $$
 | 4 | $R$ reductions | M-0121, M-0122 | $R(d) = r_{\text{Kick}}(h_P(d))$, with $h_P(d) = \lfloor d/2 \rfloor$ for a nuke on a Protection contestant, else $d$; $r_{\text{Kick}} = R_A$ or $R_B$ if the defender is live, else identity | none | U-0001 (reading A or B), U-0100 (where the rounding sits) |
 | 5 | $\mu$ minimum | M-0123 | $\mu(d) = \max(d, 1)$ for a hit that got through steps 1 and 3 | none | U-0002 (which sources are hits), U-0103 |
 | 6 | $F$ fortress | M-0124 | $F(d) = d - \min(d, f)$, with $f$ the remaining durability of a fortress the defender stands within | $f \leftarrow f - \min(d, f)$, shared by everyone in range, "whoever built it" | U-0102 (several fortresses) |
-| 7 | $A$ armor | M-0125 | $A(d) = d - \min(d, a)$, with $a$ the armor's remaining durability (15 new, M-0126 and the items page) | $a \leftarrow a - \min(d, a)$; armor breaks at 0 | U-0101 (does the excess of the breaking hit pass?) |
+| 7 | $A$ armor | M-0125 | $A(d) = d - \min(d, a)$, with $a$ the armor's remaining durability (15 new, M-0217) | $a \leftarrow a - \min(d, a)$; armor breaks at 0 | U-0101 (does the excess of the breaking hit pass?) |
 
 The arithmetic of steps 2 and 4 is settled in `theory/02-rounding-and-arithmetic.md`: T-0001 (single reading of the bonus), T-0002 (two readings of the reduction), T-0003 (order of halving and Kick reduction), T-0004 (when the minimum matters).
 
@@ -35,7 +37,7 @@ The arithmetic of steps 2 and 4 is settled in `theory/02-rounding-and-arithmetic
 
 *Caveats.* The fortress is shared with everyone within 20 m, so $f$ falls with other contestants' hits too. Armor enchantment changes $a$ over time (+10 up to 45, then -1 every 20 min down to 15, merchant page), which this theorem excludes. Whether 1 HP ticks reach steps 6 and 7 at all is U-0002. A trapped gift ignores body armor (items page), against the damage page's "Body Armor works on every kind of damage" (C-0102).
 
-*Label:* `DERIVED` for the arithmetic; `CONDITIONAL` on U-0101 for the game. *Test:* `sim/tests/test_pipeline_theorems.py` (property test plus exhaustive check of all sequences of up to 3 hits of 1 to 12 HP; a deliberately wrong closed form is caught on 12 of 12 sample cases).
+*Label:* `DERIVED` for the arithmetic; `CONDITIONAL` on U-0101 for the game. *Test:* `sim/tests/test_pipeline_theorems.py` (property test plus exhaustive check of all sequences of up to 3 hits of 1 to 12 HP).
 
 ## What the pipeline does not say
 

@@ -1,5 +1,7 @@
 # 05. Survival processes: clocks and the capped-HP chain
 
+> **Adversarial review, 2026-11-11: T-0008, T-0009, T-0014 BROKEN, fixes pending.** T-0008: Hazmat with a delayed first tick gives a third value, 4h+3; the fortress clause ignores M-0529 (a fortress may block zone damage entirely). T-0009: (b) holds only if the first tick comes 90 s after (re)poisoning (U-0115 reading A); under a first tick at t=0 each re-poisoning ticks at once. The condition is the meaning of 'timer' in M-0171, not U-0116. T-0014: the proof stands, but the example value 2e16 is a floating-point saturation artifact of np.linalg.inv; the exact value is far larger (reviewer: about 2.75e104, not yet re-verified). test_markov.py does not test absorption tending to 1. Other theorems on this page were UPHELD.
+
 Two kinds of results: deterministic clocks (how long a fixed damage source takes to kill or to reach its cap), and one structural theorem about HP capped at a maximum. Tests: `sim/tests/test_clocks.py`, `sim/tests/test_markov.py`.
 
 ## 5.1 Deterministic clocks
@@ -49,15 +51,15 @@ Zombies move at 1.4 m/s (M-0440) and drain within 5 m. A contestant moving strai
 
 ## 5.2 HP capped at a maximum: death is certain, and the question is when
 
-HP lives on $\{0, 1, \dots, M\}$; 0 is absorbing (elimination); healing above $M$ is wasted. Model a fixed environment as a Markov chain on HP with transition matrix $P$.
+HP lives on $\{0, 1, \dots, M\}$; 0 is absorbing (elimination, ignoring revival); healing above $M$ is wasted. Model a fixed environment as a Markov chain on HP with transition matrix $P$.
 
 **Theorem T-0014.** Suppose that from every state $h \in \{1, \dots, M\}$, one step loses at least $c \ge 1$ HP with probability at least $q > 0$. Then from every state the chain reaches 0 with probability 1, and the expected time to reach it is at most $m / q^m$ steps, where $m = \lceil M / c \rceil$.
 
 *Proof.* From any state, $m$ consecutive losses of at least $c$ reach 0; this has probability at least $q^m$. Split time into blocks of $m$ steps: each block kills with probability at least $q^m$ whatever happened before, so survival after $k$ blocks is at most $(1 - q^m)^k \to 0$, and the expected number of blocks is at most $1/q^m$. $\square$
 
-This is the discrete form of a classical fact from risk theory: a surplus process with a reflecting upper barrier (here, max HP) is ruined with probability 1 (see Asmussen and Albrecher, *Ruin Probabilities*, 2nd ed., 2010, on dividend barrier models). The proof above does not depend on that literature.
+This is the discrete form of a classical fact from risk theory: a surplus process with a reflecting upper barrier (here, max HP) is ruined with probability 1 (the dividend-barrier models of ruin theory; reference not verified here). The proof above does not depend on that literature.
 
-*Consequence: "will I eventually die" is the wrong question.* The bound can be astronomically large. `sim/tests/test_markov.py` computes the exact expected time to death $t = N\mathbf{1}$, $N = (I - Q)^{-1}$, for example chains: with $M = 100$, a 1 HP loss with probability 0.05 per step and a 5 HP heal with probability 0.5, the expected time from full HP is about $2 \times 10^{16}$ steps. Death is certain and irrelevant. The quantities that matter for the Codex are the finite-horizon survival $\Pr(\tau > T)$ over the event's duration $T$ (unknown: U-0009) and the expected time to death $\mathbb{E}[\tau]$, both computed by the simulator for each scenario.
+*Consequence: "will I eventually die" is the wrong question.* The bound can be astronomically large. `sim/tests/test_markov.py` computes the exact expected time to death $t = N\mathbf{1}$, $N = (I - Q)^{-1}$, for example chains: with $M = 100$, a 1 HP loss with probability 0.05 per step and a 5 HP heal with probability 0.5, the expected time from full HP is astronomically large (the $2 \times 10^{16}$ first printed here was a floating-point artifact; exact computation pending). Death is certain and irrelevant. The quantities that matter for the Codex are the finite-horizon survival $\Pr(\tau > T)$ over the event's duration $T$ (unknown: U-0009) and the expected time to death $\mathbb{E}[\tau]$, both computed by the simulator for each scenario.
 
 *Label:* `DERIVED` (a mathematical fact about the model). Its use for Safe Zone is `CONDITIONAL` on the environment having a loss probability bounded below, which holds whenever any damage source can reach the contestant. *Test:* `test_t0014_capped_hp_means_certain_death`.
 
