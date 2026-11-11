@@ -1,0 +1,10 @@
+id: U-0006
+question: 'Is server arithmetic exact or IEEE 754 binary64 (H-0001: Ingenuity prices at base 50, 90, 100, 110)?'
+why_it_matters: binary64 ceil(p*1.1) charges 1 extra blood token at those base prices.
+readings:
+  A: exact integer arithmetic
+  B: binary64 with ceil(p * 1.1)
+resolution_paths:
+- 'VOD: an Ingenuity contestant''s merchant screen showing Dual Wield (base 50): 55 (A) or 56 (B).'
+priority: high
+status: open

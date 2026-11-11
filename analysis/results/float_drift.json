@@ -1,0 +1,264 @@
+{
+ "python_equals_node": true,
+ "cases": [
+  {
+   "name": "kick_attack_bonus",
+   "code": "Math.floor(x * 1.1)",
+   "exact": "floor(x * 11/10)",
+   "domain": [
+    0,
+    500
+   ],
+   "what": "attacker live on Kick: +10%, rounded down (damage)",
+   "disagreements": 0,
+   "values": []
+  },
+  {
+   "name": "kick_defense",
+   "code": "Math.floor(x * 0.9)",
+   "exact": "floor(x * 9/10)",
+   "domain": [
+    0,
+    500
+   ],
+   "what": "defender live on Kick, reading A of U-0001 (damage)",
+   "disagreements": 0,
+   "values": []
+  },
+  {
+   "name": "protection_nuke",
+   "code": "Math.floor(x * 0.5)",
+   "exact": "floor(x * 1/2)",
+   "domain": [
+    0,
+    500
+   ],
+   "what": "Protection takes 50% less from a nuke (damage)",
+   "disagreements": 0,
+   "values": []
+  },
+  {
+   "name": "protection_potion",
+   "code": "Math.floor(x * 0.5)",
+   "exact": "floor(x * 1/2)",
+   "domain": [
+    0,
+    220
+   ],
+   "what": "Protection potions heal 50% less (heal; rounding not stated)",
+   "disagreements": 0,
+   "values": []
+  },
+  {
+   "name": "piety_potion",
+   "code": "Math.floor(x * 1.15)",
+   "exact": "floor(x * 23/20)",
+   "domain": [
+    0,
+    400
+   ],
+   "what": "Piety potions heal 15% more, rounded down (heal)",
+   "disagreements": 8,
+   "values": [
+    100,
+    180,
+    200,
+    220,
+    340,
+    360,
+    380,
+    400
+   ]
+  },
+  {
+   "name": "ingenuity_price",
+   "code": "Math.ceil(x * 1.1)",
+   "exact": "ceil(x * 11/10)",
+   "domain": [
+    0,
+    1000
+   ],
+   "what": "Ingenuity pays 10% more, rounded up (blood tokens)",
+   "disagreements": 54,
+   "values": [
+    50,
+    90,
+    100,
+    110,
+    170,
+    180,
+    190,
+    200,
+    210,
+    220,
+    230,
+    330,
+    340,
+    350,
+    360,
+    370,
+    380,
+    390,
+    400,
+    410,
+    420,
+    430,
+    440,
+    450,
+    460,
+    650,
+    660,
+    670,
+    680,
+    690,
+    700,
+    710,
+    720,
+    730,
+    740,
+    750,
+    760,
+    770,
+    780,
+    790
+   ]
+  },
+  {
+   "name": "eddie_gain",
+   "code": "Math.floor(x * 0.5)",
+   "exact": "floor(x * 1/2)",
+   "domain": [
+    80,
+    220
+   ],
+   "what": "Eddie's potion heals 50% of max HP (rounding not stated)",
+   "disagreements": 0,
+   "values": []
+  },
+  {
+   "name": "eddie_loss",
+   "code": "Math.floor(x * 0.3)",
+   "exact": "floor(x * 3/10)",
+   "domain": [
+    80,
+    220
+   ],
+   "what": "Eddie's potion loses 30% of max HP (rounding not stated)",
+   "disagreements": 0,
+   "values": []
+  },
+  {
+   "name": "eddie_loss_ceil",
+   "code": "Math.ceil(x * 0.3)",
+   "exact": "ceil(x * 3/10)",
+   "domain": [
+    80,
+    220
+   ],
+   "what": "same, if rounded up",
+   "disagreements": 0,
+   "values": []
+  },
+  {
+   "name": "death_rob_heal",
+   "code": "Math.floor(x * 0.05)",
+   "exact": "floor(x * 1/20)",
+   "domain": [
+    80,
+    220
+   ],
+   "what": "Death robs a grave: heal 5% of max HP (rounding not stated)",
+   "disagreements": 0,
+   "values": []
+  },
+  {
+   "name": "death_cap",
+   "code": "Math.floor(x * 0.6)",
+   "exact": "floor(x * 3/5)",
+   "domain": [
+    80,
+    220
+   ],
+   "what": "Death heal cap: 60% of max HP (rounding not stated)",
+   "disagreements": 0,
+   "values": []
+  },
+  {
+   "name": "death_alive_threshold",
+   "code": "Math.floor(x * 0.2)",
+   "exact": "floor(x * 1/5)",
+   "domain": [
+    1,
+    1000
+   ],
+   "what": "20% of contestants alive (count; rounding not stated)",
+   "disagreements": 0,
+   "values": []
+  },
+  {
+   "name": "crown_bonus",
+   "code": "Math.floor(x * 0.2)",
+   "exact": "floor(x * 1/5)",
+   "domain": [
+    0,
+    100000
+   ],
+   "what": "viewer crown kill: 20% of purchase price (Cx-Bucks; rounding not stated)",
+   "disagreements": 0,
+   "values": []
+  },
+  {
+   "name": "bandage_protection",
+   "code": "Math.ceil(x * 1.1)",
+   "exact": "ceil(x * 11/10)",
+   "domain": [
+    0,
+    7200
+   ],
+   "what": "Protection bandages last 1.1x as long (seconds, if rounded up)",
+   "disagreements": 436,
+   "values": [
+    50,
+    90,
+    100,
+    110,
+    170,
+    180,
+    190,
+    200,
+    210,
+    220,
+    230,
+    330,
+    340,
+    350,
+    360,
+    370,
+    380,
+    390,
+    400,
+    410,
+    420,
+    430,
+    440,
+    450,
+    460,
+    650,
+    660,
+    670,
+    680,
+    690,
+    700,
+    710,
+    720,
+    730,
+    740,
+    750,
+    760,
+    770,
+    780,
+    790
+   ]
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+id: U-0001
+question: Does the defender's Kick-live 10% reduction floor the result (A) or the removed 10% (B)?
+why_it_matters: 'Changes every small hit by up to 1 HP: under A, hits of 2 to 10 lose 1 HP; under B, hits below 10 are unchanged.'
+readings:
+  A: d -> floor(9d/10)
+  B: d -> d - floor(d/10)
+resolution_paths:
+- 'VOD: a live contestant taking a 5 HP hit (bow, knife, fake chest) shows -4 (A) or -5 (B).'
+- 'REA: damage formula in shipped code (client code holds none, RE-0001).'
+priority: critical
+status: open

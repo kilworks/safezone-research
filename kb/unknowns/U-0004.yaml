@@ -1,0 +1,12 @@
+id: U-0004
+question: Can Eddie's potion 30% loss kill, and do armor, fortress or Kick status apply to it?
+why_it_matters: Decides whether the potion is a last resort or a suicide at low HP.
+readings:
+  A: Loss can kill, no protection applies.
+  B: Loss can kill, pipeline applies (armor absorbs, Kick reduces).
+  C: Loss cannot take HP below 1.
+resolution_paths:
+- 'VOD: a contestant at HP <= 30% of max drinking it.'
+- The damage table lists 'Eddie's Potion backfire' as stoppable by Shield, Safety bubble, Sleeping Bag and Body armor, which supports B for blocking (to be formalized).
+priority: high
+status: open

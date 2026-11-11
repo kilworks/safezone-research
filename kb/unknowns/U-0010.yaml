@@ -1,0 +1,11 @@
+id: U-0010
+question: 'Wizard staff ''10 HP in total over 5 s'': one hit or several ticks?'
+why_it_matters: Decides whether the Kick bonus, the Kick reduction and the 1 HP minimum apply once or per tick.
+readings:
+  A: one 10 HP hit
+  B: five 2 HP ticks
+  C: ten 1 HP ticks
+resolution_paths:
+- 'VOD: HP readout during a staff area.'
+priority: medium
+status: open

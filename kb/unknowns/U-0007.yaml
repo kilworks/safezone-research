@@ -1,0 +1,10 @@
+id: U-0007
+question: 'Healing regeneration: does damage reset the 30 min timer?'
+why_it_matters: Sets the sustained regeneration rate under periodic damage.
+readings:
+  A: fixed 30 min clock, damage does not reset it
+  B: damage resets the timer
+resolution_paths:
+- 'VOD: Healing contestant HP over an hour with hits.'
+priority: medium
+status: open

@@ -1,0 +1,8 @@
+id: U-0013
+question: Do events/safe-zone/ assets belong to a previous edition with different rules?
+why_it_matters: Would identify reused versus new content.
+resolution_paths:
+- RE-0002, corpus/diffs/
+priority: low
+status: resolved
+resolution: 'Yes, the October 2026 Austin edition (RE-0002, RE-0005). Irrelevant to the rule model: only the 2026-11-11 snapshot is a rule source (project owner decision, 2026-11-11).'

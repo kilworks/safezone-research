@@ -1,0 +1,7 @@
+id: U-0009
+question: Number of contestants and event duration for Miami.
+why_it_matters: Sets the horizon T, the Death sigil's '20% or fewer alive' threshold, and every last-survivor model.
+resolution_paths:
+- Organizer statement or live overview page during the event (SCOPE.md P2).
+priority: critical
+status: open

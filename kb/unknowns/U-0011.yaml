@@ -1,0 +1,10 @@
+id: U-0011
+question: 'Revive window: ''within 10min of their death'' on the intro page versus ''within 10min of the death'' on the Healing page: whose death starts the window?'
+why_it_matters: Read literally, 'their' could refer to the reviving contestants.
+readings:
+  A: the dead contestant's death (only coherent reading)
+  B: the reviver's death
+resolution_paths:
+- Healing page wording supports A.
+priority: medium
+status: open

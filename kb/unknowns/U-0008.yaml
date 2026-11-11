@@ -1,0 +1,11 @@
+id: U-0008
+question: 'Zombie 30 HP cap: per zombie lifetime, per encounter, or per day? What happens when a zombie dies?'
+why_it_matters: Bounds total zombie damage; per-encounter would make zombies unbounded.
+readings:
+  A: per zombie lifetime, per contestant
+  B: per encounter
+  C: per time window
+resolution_paths:
+- 'VOD: one zombie re-engaging a contestant after leaving range.'
+priority: high
+status: open

@@ -3,7 +3,7 @@
 Fails (exit 1) when: a record breaks the schema; a file name does not match its id;
 an ID referenced anywhere does not exist; a source quote is not a verbatim
 substring of the clause it cites; a clause is cited by no mechanic and not listed
-in kb/flavor.yaml (only with --coverage).
+in kb/flavor/*.yaml (only with --coverage).
 
 Usage: py -3 tools/check_kb.py [--coverage]
 """
@@ -87,11 +87,15 @@ def main(argv):
                 continue  # hypotheses live in theory/, checked there
             if ref not in known:
                 errors.append(f"{rid}: dangling reference {ref}")
-    flavor_file = KB / "flavor.yaml"
-    flavor = yaml.safe_load(flavor_file.read_text("utf-8"))["clauses"] if flavor_file.exists() else {}
-    for c in flavor:
-        if c not in clauses:
-            errors.append(f"kb/flavor.yaml: clause {c} does not exist")
+    flavor = {}
+    flavor_schema = {"$ref": "#/$defs/flavor", "$defs": schema["$defs"]}
+    for f in sorted((KB / "flavor").glob("*.yaml")) if (KB / "flavor").exists() else []:
+        doc = yaml.safe_load(f.read_text("utf-8"))
+        jsonschema.validate(doc, flavor_schema)
+        for c in doc["clauses"]:
+            if c not in clauses:
+                errors.append(f"{f.relative_to(ROOT)}: clause {c} does not exist")
+        flavor.update(doc["clauses"])
     uncovered = sorted(set(clauses) - cited - set(flavor))
     if "--coverage" in argv and uncovered:
         errors.append(f"{len(uncovered)} clauses neither formalized nor flavor: {', '.join(uncovered[:15])}...")

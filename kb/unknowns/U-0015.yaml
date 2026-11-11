@@ -1,0 +1,8 @@
+id: U-0015
+question: What are the chest rules (types, claim range, spawn rate, contents)? The chests page was removed (RE-0004).
+why_it_matters: Piety, Greed, Trolling and Ingenuity mechanics all act on chests; their value depends on chest frequency.
+resolution_paths:
+- Organizer statement; VOD observation of chest spawn rates.
+- SCOPE.md P1 (search index may keep the removed text).
+priority: high
+status: open

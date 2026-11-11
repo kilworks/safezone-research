@@ -1,0 +1,12 @@
+id: U-0002
+question: Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+why_it_matters: Decides whether Kick-live reduction, the 1 HP minimum, fortress and armor apply to periodic and self-inflicted damage.
+readings:
+  A: Every HP loss is a hit and goes through all 7 steps.
+  B: Only discrete attacks are hits; periodic drains and costs bypass the pipeline.
+  C: Mixed, source by source.
+resolution_paths:
+- 'VOD: live contestant outside the zone, HP loss per 2 s tick (1 under both readings of U-0001, so watch armor durability instead).'
+- 'VOD: armor durability after zombie drain or poison.'
+priority: critical
+status: open

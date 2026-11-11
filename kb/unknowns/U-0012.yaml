@@ -1,0 +1,7 @@
+id: U-0012
+question: How is Kick-live status detected, and with what latency?
+why_it_matters: A stream drop could flip the 10% modifiers mid-fight.
+resolution_paths:
+- Organizer statement; VOD of a stream reconnect during combat.
+priority: medium
+status: open

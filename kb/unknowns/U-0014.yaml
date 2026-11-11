@@ -1,0 +1,9 @@
+id: U-0014
+question: What are the viewer attack prices in Cx-Bucks?
+why_it_matters: Without prices, section 8.10 can rank attacks by damage only, not by damage per Cx-Buck, and the crown-kill bonus (20% of the price) has no value.
+resolution_paths:
+- SCOPE.md P3 (api route 'purchasables', not called).
+- VOD of the viewer shop.
+- Shop page, out of scope today.
+priority: high
+status: open

@@ -1,0 +1,10 @@
+id: U-0005
+question: Does a mirrored hit go through the attacker's own pipeline (immunity, reductions, armor)?
+why_it_matters: Changes the value of the Mirror forcefield against armored or live attackers.
+readings:
+  A: Reflected hit runs the attacker's full pipeline.
+  B: Reflected hit lands raw.
+resolution_paths:
+- 'VOD: a reflected hit on an armored attacker.'
+priority: high
+status: open

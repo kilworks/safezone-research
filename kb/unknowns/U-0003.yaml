@@ -1,0 +1,10 @@
+id: U-0003
+question: 'Zone damage: is the first tick at 5 s or at 7 s after leaving the safe zone?'
+why_it_matters: Shifts time to death outside the zone by 2 s (T(100) = 203 s or 205 s).
+readings:
+  A: first tick at 5 s, then every 2 s
+  B: first tick at 7 s (5 s grace, then one 2 s interval)
+resolution_paths:
+- VOD with on-screen timer of a contestant leaving the zone.
+priority: medium
+status: open
