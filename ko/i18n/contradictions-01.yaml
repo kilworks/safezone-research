@@ -1,0 +1,232 @@
+C-0100:
+  summary: >-
+    소개 글은 Kick 라이브 중인 참가자가 10% 더 많은 피해를 준다고 하지만(모든 피해), 타격 파이프라인은 이 보너스를 공격자 본인의 무기 타격이라는 한정된 목록으로 제한합니다.
+  quotes:
+  - >-
+    받는 피해는 10% 줄고 주는 피해는 10% 늘어납니다
+  - >-
+    공격자가 Kick 라이브 중이면 본인의 bow, staff, knife, long sword, axe, machete, drone, C4, landmine, fake chest, trapped gift 타격이 10% 더 큰 피해를 주며, 내림 처리됩니다.
+C-0101:
+  summary: >-
+    Mirror 반사 목록에는 trapped gift가 없지만, 피해 표는 Trapped gift 행에 Mirror forcefield(반사)를 나열합니다.
+  quotes:
+  - >-
+    | Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (반사)
+  - >-
+    Poison Dart, fake gravestone, bow, wizard staff, knife, long sword, Zarok's axe, machete, drone, C4, landmine, flashbang, fake chest만 반사하며, 자신의 폭발물은 절대 반사하지 않습니다.
+C-0102:
+  summary: >-
+    Body Armor는 '모든 종류의 피해에 작동한다'는 설명과, Trapped gift 행(Body armor 없음) 및 아이템 페이지('A trapped gift ignores it')가 충돌합니다.
+  quotes:
+  - >-
+    Body Armor는 모든 종류의 피해에 작동합니다.
+  - >-
+    | Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (반사)
+  - >-
+    trapped gift는 이를 무시합니다.
+C-0103:
+  summary: >-
+    Death Ward의 범위: 피해 페이지는 원 밖에서 오는 피해만 막지만, Death 시길 페이지는 언세이프 서클(unsafe circle)에서 오는 타격까지 추가하고 둘 모두에 대해 2min 동안 면역이라고 합니다(Unsafe circle 피해 표 행에도 Death Ward가 나열되어 있습니다).
+  quotes:
+  - >-
+    Death Ward: Death 참가자가 원 밖에서 받는 첫 타격은 차단되며, 원 밖에서 오는 피해는 2min 동안 차단됩니다.
+  - >-
+    | Unsafe circle | Safety bubble, Guardian angel, Death Ward, Hazmat suit (둔화), Body armor (흡수)
+  - >-
+    Death ward: 원 밖 또는 언세이프 서클에서 오는 첫 타격이 차단되며, 둘 모두에 대해 2min 동안 면역입니다.
+C-0104:
+  summary: >-
+    Sleeping Bag 면역: 피해 페이지에는 지연이 없고 존, 언세이프 서클, 로봇을 제외합니다. 상인 페이지는 65초의 수면이 필요하고, flashbang을 포함하며, 존과 언세이프 서클만 제외합니다.
+  quotes:
+  - >-
+    자신의 Sleeping Bag로부터 15m(49ft) 이내에서 자고 있는 참가자는 존 피해, 언세이프 서클 피해, 로봇 피해를 제외한 모든 피해에 면역입니다.
+  - >-
+    65초 동안 자고 나면 flashbang과, 존 피해 및 언세이프 서클 피해를 제외한 모든 피해에 면역입니다.
+C-0105:
+  summary: >-
+    Healing 참가자의 부활: 소개 글은 어떤 참가자든 최대 2회까지 가능하다고 하지만, Healing 페이지는 묘비로부터 10m 이내에 살아 있는 참가자가 있어야 한다고 요구합니다.
+  quotes:
+  - >-
+    어떤 참가자든 Healing 참가자를 최대 2회까지 부활시킬 수 있습니다.
+  - >-
+    묘비로부터 10m(33ft) 이내에 있는 살아 있는 참가자라면 누구든 최대 2회까지 당신을 부활시킬 수 있습니다.
+C-0200:
+  summary: >-
+    아이템 페이지는 trapped gift를 제외한 13가지 반사 가능 공격을 나열하지만, 피해 페이지 표는 Trapped gift 행에 Mirror forcefield(반사)를 나열합니다.
+  quotes:
+  - >-
+    Poison Dart, fake gravestone, knife, Zarok's axe, long sword, machete, bow, staff, drone, C4, landmine, flashbang, fake chest만 반사합니다.
+  - >-
+    | Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (반사)
+C-0201:
+  summary: >-
+    아이템 페이지: trapped gift는 Body armor를 무시합니다. 피해 페이지: Body Armor는 모든 종류의 피해에 작동합니다.
+  quotes:
+  - >-
+    trapped gift는 이를 무시합니다.
+  - >-
+    Body Armor는 모든 종류의 피해에 작동합니다.
+C-0202:
+  summary: >-
+    아이템 페이지의 Shield 예외에는 로봇 피해가 없지만, 피해 페이지는 차단되지 않는 목록에 로봇을 추가합니다.
+  quotes:
+  - >-
+    20min 동안 피해에 면역이며, 존 피해와 언세이프 서클 피해는 예외입니다.
+  - >-
+    Shield는 존 피해, 언세이프 서클 피해, 로봇 피해를 막지 못합니다.
+C-0203:
+  summary: >-
+    아이템 페이지: 자고 있는 참가자는 flashbang에 면역입니다. 상인 페이지: 65초 동안 잔 뒤에만 면역입니다.
+  quotes:
+  - >-
+    자고 있는 참가자는 면역입니다.
+  - >-
+    65초 동안 자고 나면 flashbang과, 존 피해 및 언세이프 서클 피해를 제외한 모든 피해에 면역입니다.
+C-0204:
+  summary: >-
+    아이템 페이지: 취약 상태의 참가자는 Safety bubble의 보호를 받지 못합니다. 상인 페이지: Vulnerability Dart는 그들이 소유했거나 안에 서 있는 모든 Safety Bubble을 터뜨립니다.
+  quotes:
+  - >-
+    취약 상태의 참가자는 보호하지 못하며, 취약 상태에서는 사용할 수 없습니다.
+  - >-
+    그들의 Shield를 제거하고 그들이 소유했거나 안에 서 있는 모든 Safety Bubble을 터뜨리며, 10분 동안 Shield와 Safety Bubble이 그들을 보호하지 못하게 합니다.
+C-0205:
+  summary: >-
+    아이템 페이지: Zombie repellent는 좀비가 당신에게 피해를 주지 못하게 합니다. 좀비 페이지: 좀비가 당신을 무시합니다.
+  quotes:
+  - >-
+    사용하면 20min 동안 좀비가 당신에게 피해를 주지 못합니다.
+  - >-
+    Zombie repellent: 사용하면 20min 동안 좀비가 당신을 무시합니다.
+C-0300:
+  summary: >-
+    Sleeping Bag 면역 예외: 상인 페이지는 존 피해와 언세이프 서클 피해만 나열하지만, 피해 페이지는 로봇 피해도 차단되지 않는 것으로 나열합니다.
+  quotes:
+  - >-
+    65초 동안 자고 나면 flashbang과, 존 피해 및 언세이프 서클 피해를 제외한 모든 피해에 면역입니다.
+  - >-
+    자신의 Sleeping Bag로부터 15m(49ft) 이내에서 자고 있는 참가자는 존 피해, 언세이프 서클 피해, 로봇 피해를 제외한 모든 피해에 면역입니다.
+C-0301:
+  summary: >-
+    Sleeping Bag 면역 시점: 상인 페이지는 65초 동안 자고 난 뒤에만 면역을 부여합니다. 피해 페이지는 자신의 bag으로부터 15m 이내에서 자는 모든 참가자에게 지연 없이 부여합니다. 아이템 페이지는 자고 있는 참가자가 지연 없이 flashbang에 면역이라고 합니다.
+  quotes:
+  - >-
+    65초 동안 자고 나면 면역입니다
+  - >-
+    자신의 Sleeping Bag로부터 15m(49ft) 이내에서 자고 있는 참가자는 존 피해, 언세이프 서클 피해, 로봇 피해를 제외한 모든 피해에 면역입니다.
+  - >-
+    자고 있는 참가자는 면역입니다.
+C-0400:
+  summary: >-
+    차단 목록이 다릅니다. 공격 페이지는 tear gas에 Gas mask, gunship 폭탄에 Flak jacket을 들지만, 피해 페이지는 같은 출처에 Shield, Safety bubble, Sleeping Bag, Body armor도 나열합니다.
+  quotes:
+  - >-
+    Gas mask가 이를 막습니다.
+  - >-
+    | Tear gas | Shield, Safety bubble, Sleeping Bag, Gas mask, Body armor (흡수)
+  - >-
+    Flak jacket은 폭탄 1개를 막습니다.
+  - >-
+    | Gunship bomb | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (흡수)
+C-0401:
+  summary: >-
+    좀비 면역 목록에는 Necromancy가 없지만, Necromancy 페이지는 좀비에 완전히 면역이라고 합니다(Damage 페이지에는 나열되어 있습니다).
+  quotes:
+  - >-
+    Shield, Safety bubble, Reality Shield, 또는 자신의 Sleeping Bag에서 자는 것으로 면역이 됩니다.
+  - >-
+    좀비에 완전히 면역입니다.
+  - >-
+    | Zombie drain | Shield, Safety bubble, Sleeping Bag, Necromancy / Repellent, Body armor (흡수)
+C-0402:
+  summary: >-
+    Repellent 효과: 좀비가 '당신을 무시한다'(대상 지정)와 '좀비가 당신에게 피해를 주지 못한다'(피해만) 사이의 차이입니다.
+  quotes:
+  - >-
+    Zombie repellent: 사용하면 20min 동안 좀비가 당신을 무시합니다.
+  - >-
+    사용하면 20min 동안 좀비가 당신에게 피해를 주지 못합니다.
+C-0403:
+  summary: >-
+    보급 상자의 Trolling 유도: 모든 보급 상자에 대해 'Trolling 참가자로부터 5m 이내'라고 하는 반면, Trolling 페이지는 '바로 옆'이라고 하며 '시청자가 보낸' 것만 해당합니다.
+  quotes:
+  - >-
+    대신 Trolling 참가자로부터 5m(16ft) 이내에 떨어질 확률이 3%입니다.
+  - >-
+    시청자가 보낸 각 crate 또는 보급 상자는 대신 Trolling 참가자 바로 옆에 떨어질 확률이 3%입니다.
+C-0404:
+  summary: >-
+    조합 파괴: 좀비 페이지는 '조합한 아이템'이라고 하지만, Ingenuity 페이지는 'Zombie 타격'으로 파괴되는 것을 '고유 조합'으로만 한정합니다.
+  quotes:
+  - >-
+    조합한 아이템을 파괴할 확률 40%
+  - >-
+    고유 조합은 거래, 도난, 루팅이 불가능하며 Zombie 타격으로 파괴될 확률이 40%입니다.
+C-0500:
+  summary: >-
+    Ingenuity 페이지: Shield와 Sleeping Bag이 Robot을 막습니다. 피해 페이지: Shield는 로봇 피해를 막지 못하며 자고 있는 참가자도 로봇 피해에 면역이 아닙니다.
+  quotes:
+  - >-
+    Shield와 Sleeping Bag이 이를 막습니다.
+  - >-
+    Shield는 존 피해, 언세이프 서클 피해, 로봇 피해를 막지 못합니다.
+  - >-
+    자신의 Sleeping Bag로부터 15m(49ft) 이내에서 자고 있는 참가자는 존 피해, 언세이프 서클 피해, 로봇 피해를 제외한 모든 피해에 면역입니다.
+C-0501:
+  summary: >-
+    Trolling 페이지: 시청자가 보낸 crate와 보급 상자가 3% 유도 판정을 합니다. 공격 페이지: 보급 상자만 판정하며(착지 거리 5 m), crate는 별개의 아이템입니다.
+  quotes:
+  - >-
+    시청자가 보낸 각 crate 또는 보급 상자는 대신 Trolling 참가자 바로 옆에 떨어질 확률이 3%입니다.
+  - >-
+    대신 Trolling 참가자로부터 5m(16ft) 이내에 떨어질 확률이 3%입니다.
+  - >-
+    crate에는 시청자가 구매한 아이템이 들어 있습니다.
+C-0502:
+  summary: >-
+    Trolling 페이지: Reality Shield는 언세이프 서클 피해를 막습니다. 언세이프 서클의 피해 표 행에는 Reality Shield가 없습니다(같은 페이지의 notes에는 포함되어 있습니다).
+  quotes:
+  - >-
+    Guardian angel, Safety bubble, Reality Shield, 또는 Death Ward가 이를 막습니다.
+  - >-
+    Unsafe circle | Safety bubble, Guardian angel, Death Ward, Hazmat suit (둔화), Body armor (흡수)
+  - >-
+    Safety bubble과 Reality Shield는 막습니다.
+C-0503:
+  summary: >-
+    Trolling 페이지: 한 조항은 방어 아이템 손실이 첫 타격 조건 없이 5초마다 일어난다고 하고, 다른 조항은 첫 타격 이후에 시작되며 면역이 아니어야 한다고 합니다.
+  quotes:
+  - >-
+    5초마다 방어 아이템 또는 고유 조합 1개를 잃으며, 장착한 Body Armor도 포함됩니다
+  - >-
+    첫 타격 이후, 안에 머물러 있고 면역이 아닌 동안 5초마다 무작위 방어 아이템 또는 고유 조합 1개를 잃습니다.
+C-0600:
+  summary: >-
+    Death ward: 시길 페이지는 원 밖 또는 언세이프 서클에서 오는 첫 타격을 막고 둘 모두에 2min 동안 면역을 주지만, 피해 페이지 본문은 원 밖에서 오는 피해만 언급합니다(피해 표는 두 행 모두에 Death Ward를 나열합니다).
+  quotes:
+  - >-
+    Death ward: 원 밖 또는 언세이프 서클에서 오는 첫 타격이 차단되며, 둘 모두에 대해 2min 동안 면역입니다.
+  - >-
+    Death Ward: Death 참가자가 원 밖에서 받는 첫 타격은 차단되며, 원 밖에서 오는 피해는 2min 동안 차단됩니다.
+  - >-
+    | Unsafe circle | Safety bubble, Guardian angel, Death Ward, Hazmat suit (둔화), Body armor (흡수)
+C-0601:
+  summary: >-
+    Protection 면역: 능력치 카드는 독, drone, 미사일, C4, landmine, 공습, gunship을 나열하지만, 규칙 문장과 피해 표는 trapped gift, 공습의 불, Protection 보복을 추가합니다.
+  quotes:
+  - >-
+    독, drone, 미사일, C4, landmine, 공습, gunship
+  - >-
+    독, drone, 미사일, C4, landmine, trapped gift, 공습과 그 불, gunship 폭탄, Protection 보복에 면역입니다.
+  - >-
+    | Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (반사)
+C-0602:
+  summary: >-
+    Protection 전략 조언은 '대부분의 시청자 공격'에 면역이라고 하지만, 시길 페이지와 공격 페이지는 시청자 공격 8종 중 미사일, 공습, gunship에만 Protection이 면역이라고 합니다(nuke는 절반).
+  quotes:
+  - >-
+    시청자에게 인기가 없다면 Protection 시길을 고르는 것을 고려해 보십시오. 그러면 대부분의 시청자 공격에 면역이 됩니다.
+  - >-
+    독, drone, 미사일, C4, landmine, trapped gift, 공습과 그 불, gunship 폭탄, Protection 보복에 면역입니다.
+  - >-
+    참가자의 EMP가 활성화된 동안 시청자는 미사일, nuke, 호드, tear gas, 공습, gunship, 사이클롭스, 현상금을 보낼 수 없습니다.

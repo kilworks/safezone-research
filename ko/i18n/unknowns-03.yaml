@@ -1,0 +1,349 @@
+U-0204:
+  question: >-
+    최대 HP가 10의 배수가 아닐 때 Eddie의 포션의 50% 회복과 30% 손실은 어떤 방식으로 어림됩니까?
+  why_it_matters: >-
+    죽을 수도 있는 도박에서 1 차이가 발생하며, 어떤 기본 최대 HP가 존재하는지와도 연결됩니다.
+  readings:
+    A: >-
+      둘 다 내림
+    B: >-
+      둘 다 올림
+    C: >-
+      둘 다 반올림(half up)
+    D: >-
+      회복과 손실에 서로 다른 어림 방식 적용
+  sweep_range: >-
+    내림, 올림, 반올림(half up)을 회복과 손실에 각각 따로 적용 (4에서 9가지 조합). 시길이 알 수 없는 기본값에서 최대 HP를 10씩 바꾸므로 최대 HP는 90..110을 1 단위로 변화
+  resolution_paths:
+  - >-
+    VOD: 최대 HP 95 또는 105인 참가자(있다면)가 이를 마시는 장면.
+  - >-
+    시드 U-0004는 이것이 죽일 수 있는지를 묻는 것이며, 반올림과는 무관합니다.
+U-0205:
+  question: >-
+    Hazmat suit의 '간격당 +2s'는 어떤 피해 원인과 어떤 타이밍(첫 틱, 유예)을 늘립니까?
+  why_it_matters: >-
+    존 밖에서의 사망까지 걸리는 시간과, 언세이프 서클 및 로봇에 대한 이 슈트의 가치가 달라집니다.
+  readings:
+    A: >-
+      존 밖 간격만 해당, 2s -> 4s, 첫 틱은 변하지 않음
+    B: >-
+      간격 4s이고 첫 틱이 2s 지연됨
+    C: >-
+      피해 페이지에서 'slows'로 표시된 언세이프 서클 및 로봇 간격도 포함
+  sweep_range: >-
+    0..4 s (페이지에는 2라고 되어 있으며, 상한 4는 두 배가 된다는 해석을 포함)
+  resolution_paths:
+  - >-
+    VOD: Hazmat 보유자가 화면 타이머가 있는 상태로 존을 벗어나는 장면.
+  - >-
+    로봇 간격은 아이템 페이지에 없습니다.
+U-0206:
+  question: >-
+    Guardian angel의 '존 피해'에 언세이프 서클 피해가 포함됩니까?
+  why_it_matters: >-
+    피해 페이지의 표는 Guardian angel을 둘 다에 올려 두었지만, Shield의 아이템 페이지는 둘을 따로 언급합니다.
+  readings:
+    A: >-
+      존 피해만 해당
+    B: >-
+      서클 밖 피해와 언세이프 서클 피해
+  resolution_paths:
+  - >-
+    VOD: Guardian angel 보유자가 Trolling 언세이프 서클 안에 있는 장면.
+U-0207:
+  question: >-
+    Guardian angel을 끝내는 '당신을 공격한다'는 무엇을 뜻합니까?
+  why_it_matters: >-
+    함정, 독, 범위 효과, 드론 또는 도둑질이 면역을 끝내는지가 결정됩니다.
+  readings:
+    A: >-
+      다른 참가자가 당신을 대상으로 한 모든 공격 행동 (막혔는지 여부와 무관)
+    B: >-
+      피해를 주지 않는 적대 행동과 함정도 포함
+    C: >-
+      당신에게 피해를 줄 공격만 해당
+  resolution_paths:
+  - >-
+    VOD: Guardian angel 보유자가 함정, 던진 다트 또는 도둑질을 당하는 장면.
+U-0208:
+  question: >-
+    Safety bubble의 '10m'는 반지름입니까, 지름입니까?
+  why_it_matters: >-
+    보호 범위의 면적이 두 배가 되거나 4분의 1이 됩니다.
+  readings:
+    A: >-
+      반지름 10 m
+    B: >-
+      지름 10 m, 반지름 5 m
+  sweep_range: >-
+    5..10 m (지름 10 해석에서 반지름 10 해석까지)
+  resolution_paths:
+  - >-
+    VOD: 참가자들이 bubble 생성자로부터 측정된 거리에 있는 장면.
+U-0209:
+  question: >-
+    Body armor의 15 HP는 줄어드는 풀입니까, 타격당 상한입니까? 일부만 흡수된 타격은 어떻게 처리됩니까?
+  why_it_matters: >-
+    반복되는 작은 타격(존 틱, 독)에 대한 생존력이 달라집니다.
+  readings:
+    A: >-
+      15 HP의 줄어드는 풀, 마지막 타격은 부분 흡수
+    B: >-
+      타격당 상한 15 HP, 소모되지 않음
+  resolution_paths:
+  - >-
+    VOD: 반복 타격 후의 armor 내구도.
+  - >-
+    피해 페이지: 'absorbs what is left, until it breaks'는 A를 뒷받침합니다.
+U-0210:
+  question: >-
+    Body armor를 착용 중이거나 소지 중일 때 두 번째 Body armor를 얻으면 어떻게 됩니까?
+  why_it_matters: >-
+    새 armor가 거부되는지, 교체되는지, 버려지는지가 결정됩니다.
+  readings:
+    A: >-
+      거부됨
+    B: >-
+      착용 중인 것을 교체함
+  resolution_paths:
+  - >-
+    VOD: 두 번째 armor를 줍는 장면.
+U-0211:
+  question: >-
+    smoke bomb 구름은 터뜨린 위치에 고정됩니까, 사용자를 따라갑니까?
+  why_it_matters: >-
+    아이템 페이지에는 'within 50m of you'와 'inside it'이라고 되어 있습니다.
+  readings:
+    A: >-
+      중심이 고정됨
+    B: >-
+      사용자를 중심으로 함
+  resolution_paths:
+  - >-
+    VOD: 사용자가 자신의 구름에서 걸어 나가는 장면.
+U-0212:
+  question: >-
+    smoke bomb을 터뜨린 참가자를 구름 밖에서 대상으로 삼을 수 있습니까?
+  why_it_matters: >-
+    'Nobody outside can target anyone inside'라는 문장과 터뜨린 사람에 대한 예외가 그 사람에 관해 서로 맞지 않습니다.
+  readings:
+    A: >-
+      아니요, 터뜨린 사람은 구름 안에 있어 보호됨
+    B: >-
+      예, 터뜨린 사람은 영향을 받지 않으므로 대상이 될 수 있음
+  resolution_paths:
+  - >-
+    VOD: 구름 밖에서 smoke 터뜨린 사람을 공격하는 장면.
+U-0213:
+  question: >-
+    Thermal goggles의 예외는 smoke의 공격 차단과 블랙아웃에만 적용됩니까, 아니면 구름 안에서의 회복, 도둑질, 거래 제한에도 적용됩니까?
+  why_it_matters: >-
+    Items 067은 'block your attacks'라고 하는데, 회복/도둑질/거래 제한(043)은 공격이 아닙니다.
+  readings:
+    A: >-
+      공격 차단과 블랙아웃만 해당
+    B: >-
+      smoke의 모든 제한
+  resolution_paths:
+  - >-
+    VOD: goggles 보유자가 구름 안에서 도둑질이나 거래를 시도하는 장면.
+U-0214:
+  question: >-
+    Bandage의 틱 일정은 어떻게 됩니까: 2min 동안 10 HP?
+  why_it_matters: >-
+    피해, 최대 HP 상한, 치료 타이밍과의 상호작용이 달라집니다.
+  readings:
+    A: >-
+      +12 s..+120 s에 1 HP씩 10틱
+    B: >-
+      +0 s..+108 s에 1 HP씩 10틱
+    C: >-
+      24 s마다 2 HP씩 5틱
+    D: >-
+      소수 단위의 연속 회복
+  sweep_range: >-
+    120 s 동안 1..120틱 (틱당 1 HP부터 소수 단위까지)
+  resolution_paths:
+  - >-
+    VOD: bandage 사용 후의 HP 바.
+U-0215:
+  question: >-
+    mirror forcefield를 여러 개 가지고 있을 때, 한 번의 반사는 하나를 소모합니까, 전부를 소모합니까, 아니면 여러 번 반사합니까?
+  why_it_matters: >-
+    페이지에는 'Several stack'과 'Ends when it reflects an attack'이라고 하지만 개수는 밝히지 않습니다.
+  readings:
+    A: >-
+      반사당 하나
+    B: >-
+      전부 소모됨
+    C: >-
+      연속으로 여러 번 반사
+  resolution_paths:
+  - >-
+    VOD: mirror 두 개를 가진 참가자가 두 번 타격당하는 장면.
+U-0216:
+  question: >-
+    다른 방어(Shield, Safety bubble, Sleeping Bag)가 이미 막은 타격으로 Flak jacket이 소모됩니까?
+  why_it_matters: >-
+    Guardian angel은 막힌 타격에 대해 명시하지만 Flak jacket은 그렇지 않습니다.
+  readings:
+    A: >-
+      당신에 대한 모든 타격이 이를 소모함
+    B: >-
+      그것에 도달한 타격만 소모함
+  resolution_paths:
+  - >-
+    VOD: Shield와 Flak jacket을 가진 보유자가 미사일에 맞는 장면.
+U-0217:
+  question: >-
+    Mirror 대 mirror와 flashbang: 던진 사람도 mirror를 가지고 있다면 던진 사람이 실명합니까?
+  why_it_matters: >-
+    Mirror 규칙은 둘 다 소모되고 아무 일도 일어나지 않는다고 하고, flashbang 규칙은 대신 던진 사람이 실명한다고 합니다.
+  readings:
+    A: >-
+      mirror-mirror 규칙이 우선, 실명 없음
+    B: >-
+      flashbang 규칙이 우선, 던진 사람이 실명함
+  resolution_paths:
+  - >-
+    VOD: mirror 보유자가 mirror 보유자에게 flashbang을 던지는 장면.
+U-0218:
+  question: >-
+    실명한 참가자가 또 다른 flashbang에 맞으면 실명이 연장됩니까, 초기화됩니까, 무시됩니까?
+  why_it_matters: >-
+    flashbang 압박의 중첩에 영향을 줍니다.
+  readings:
+    A: >-
+      무시됨
+    B: >-
+      30 s로 초기화
+    C: >-
+      더해짐
+  sweep_range: >-
+    무시, 초기화, 최대 2 중첩까지 가산
+  resolution_paths:
+  - >-
+    VOD: 연속 flashbang 두 개.
+U-0300:
+  question: >-
+    무기, 함정, 상인, sleeping bag의 범위 경계(10m, 20m, 50m, 15m)는 포함입니까 미포함입니까? 거리는 지면상의 유클리드 거리입니까?
+  why_it_matters: >-
+    모든 'within Xm'과 'comes within Xm' 문장이 경계에서 달라집니다. 정확히 X 미터에 있는 참가자는 한 해석에서는 타격을 받고 다른 해석에서는 안전합니다.
+  readings:
+    A: >-
+      d <= R일 때, 그리고 그때에만 안쪽 (포함)
+    B: >-
+      d < R일 때, 그리고 그때에만 안쪽 (미포함)
+  resolution_paths:
+  - >-
+    VOD: C4 또는 landmine으로부터 명시된 반경과 같은 측정 거리에 있는 참가자.
+  - >-
+    REA: 배포된 거리 비교 코드 (클라이언트 코드에는 서버 로직이 없음, RE-0001).
+U-0301:
+  question: >-
+    Ingenuity 함정 부착의 'once every 16h' 제한은 C4와 landmine이 공유하는 하나의 타이머입니까, 종류별 타이머입니까? 그리고 부착 시점에 시작됩니까, 폭발 시점에 시작됩니까?
+  why_it_matters: >-
+    Ingenuity 참가자가 임의의 48h 동안 가질 수 있는 함정 선물의 수와, 오래된 함정이 다음 함정을 막는지가 결정됩니다.
+  readings:
+    A: >-
+      공유 타이머 하나, 부착 시점에 시작
+    B: >-
+      종류별(C4, landmine) 타이머 하나씩, 부착 시점에 시작
+    C: >-
+      공유 타이머, 함정 선물이 작동하거나 제거될 때 시작
+  resolution_paths:
+  - >-
+    VOD: Ingenuity 참가자가 16h 안에 C4를 붙이고 이어서 landmine을 붙이는 장면.
+U-0302:
+  question: >-
+    'Only you can see the trap.' (C4 섹션)은 함정 선물(C4가 부착된 아이템)을 가리킵니까, 설치된 C4를 가리킵니까?
+  why_it_matters: >-
+    다음 문장들은 설치된 C4를 본인과 Ingenuity 참가자만 볼 수 있다고 합니다. 지시 대상에 따라 함정 선물을 누가 보는지, Ingenuity 참가자가 보는지가 결정됩니다.
+  readings:
+    A: >-
+      함정 선물만 가리킴
+    B: >-
+      설치된 C4만 가리킴 (그러면 마지막 C4 문장은 Ingenuity를 더해 이를 반복하는 것)
+    C: >-
+      둘 다 가리킴
+  resolution_paths:
+  - >-
+    VOD: Ingenuity가 아닌 참가자의 지도에서, 근처에 설치된 C4가 있고 함정 아이템을 들고 있는 장면.
+U-0303:
+  question: >-
+    '각각 최대 5개가 한 슬롯을 공유한다 / 각각 최대 5개를 소지한다'라는 상한은 'An enchanted one uses its own slot'과 어떻게 맞물립니까?
+  why_it_matters: >-
+    참가자가 가질 수 있는 C4와 landmine의 최대 개수와 그것들이 차지하는 슬롯이 정해집니다.
+  readings:
+    A: >-
+      인챈트된 것도 5개 상한에 포함되고 별도 슬롯을 차지함
+    B: >-
+      인챈트된 것은 5개 상한 밖 (일반 5개 + 자체 슬롯)
+    C: >-
+      인챈트된 것은 한 번에 하나, 상한 밖
+  resolution_paths:
+  - >-
+    VOD: 일반 C4 5개와 인챈트된 것 하나가 있는 인벤토리 화면.
+U-0304:
+  question: >-
+    인챈트되지 않았을 때 drone, C4, landmine, Poison Dart는 각각 몇 번 사용할 수 있습니까?
+  why_it_matters: >-
+    위키는 knife, machete, sword, axe, bow의 사용 횟수는 알려 주지만 이 네 가지는 알려 주지 않으며, 인챈트 설명은 보너스 사용 횟수 후에 '소모된다'고 합니다.
+  readings:
+    A: >-
+      각각 1회 사용 (사용 시 소모)
+    B: >-
+      일부는 여러 번 사용 가능 (명시되지 않음)
+  sweep_range: >-
+    1에서 3회 사용. 인챈트 설명은 인챈트된 C4, landmine, drone이 1회, dart가 2회라고 하므로 1이 자연스러운 하한이고 3은 knife/long sword 규모를 포함
+  resolution_paths:
+  - >-
+    VOD: 각 아이템의 사용 장면.
+  - >-
+    주최 측의 발표.
+U-0305:
+  question: >-
+    Drone: 사용 후 대상은 발사 시점에 고정되어 무슨 일이 있어도 30s 뒤에 타격받습니까, 아니면 drone이 대상이 계속 보이거나 살아 있어야 합니까?
+  why_it_matters: >-
+    30s 지연 동안 drone을 피할 수 있는지(shield, bubble, 수면, 거리, Greed의 drone 도둑질)가 결정됩니다.
+  readings:
+    A: >-
+      대상은 발사 시점에 고정, 가시성에 무슨 일이 있어도 30s 뒤에 타격 적용
+    B: >-
+      t+30s에 대상이 여전히 보일 때만 타격 적용
+    C: >-
+      타격이 대상을 따라가며 t+30s에만 방어와 대조됨
+  resolution_paths:
+  - >-
+    VOD: drone 발사 후, 30s 동안 대상이 숨거나 Shield를 얻는 장면.
+U-0306:
+  question: >-
+    Ingenuity landmine 부착의 '자신에게 사용하는 아이템'에는 어떤 아이템이 해당합니까?
+  why_it_matters: >-
+    C4 설명은 'another item you hold'라고 하고, landmine 설명은 자신에게 사용하는 아이템으로 제한합니다. 유효한 아이템의 집합이 landmine 함정을 어디에 숨길 수 있는지를 결정합니다.
+  readings:
+    A: >-
+      자기 효과가 있는 소모품 (포션, bandage, shield)
+    B: >-
+      사용 가능한 모든 아이템
+    C: >-
+      회복하는 아이템만 해당
+  resolution_paths:
+  - >-
+    VOD: Ingenuity 참가자가 landmine을 여러 종류의 아이템에 붙이는 장면.
+U-0307:
+  question: >-
+    쿨다운 의미(bow 5s, knife 5s, machete 5s, long sword 10s, staff 20min): 시도 시점에 시작됩니까, 타격 시점에 시작됩니까? 그리고 무기 아이템별입니까, 참가자별입니까(Dual Wield)?
+  why_it_matters: >-
+    Dual Wield와 두 번째 무기가 있을 때 참가자별 쿨다운은 무기별 쿨다운에 비해 처리량을 절반으로 줄이며, 막히거나 빗나간 공격에도 영향을 줍니다.
+  readings:
+    A: >-
+      무기 아이템별, 공격 시점에 시작
+    B: >-
+      참가자별 (모든 무기가 공유), 공격 시점에 시작
+    C: >-
+      무기 아이템별, 타격이 확정될 때 시작
+  resolution_paths:
+  - >-
+    VOD: Dual Wield 참가자가 쿨다운 안에 두 무기를 번갈아 쓰는 장면.

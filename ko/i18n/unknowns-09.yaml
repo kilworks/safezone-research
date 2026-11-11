@@ -1,0 +1,284 @@
+U-0608:
+  question: >-
+    Endurance의 "Earn one more for every five item uses": 추가 토큰은 언제 지급됩니까?
+  why_it_matters: >-
+    Endurance 토큰 획득률이 달라집니다(5회 사용당 최대 토큰 1개 대 수령한 보급 상자당 토큰 1개).
+  readings:
+    A: >-
+      아이템 사용 5회째마다 즉시 토큰 +1 (누적 카운터)
+    B: >-
+      floor(마지막 수령 이후 사용 횟수 / 5)가 다음 보급 상자 수령 시 추가됨
+    C: >-
+      마지막 수령 이후 5회 사용이 있었다면 보급 상자 수령마다 최대 토큰 +1
+  resolution_paths:
+  - >-
+    VOD: 아이템을 5번째 사용할 때의 Endurance 토큰 카운터.
+U-0609:
+  question: >-
+    Endurance 아이템 사용 보너스: 어떤 행동이 "아이템 사용"입니까(무기 발사, 붕대, Safety bubble, 조합, 상인 업그레이드, 계속 활성 상태인 효과)?
+  why_it_matters: >-
+    U-0608의 카운터가 얼마나 빠르게 증가하는지를 결정합니다.
+  readings:
+    A: >-
+      활성 아이템 효과 규칙과 같이, 소비하거나 활성화한 모든 인벤토리 아이템
+    B: >-
+      A에서 아이템 페이지에 나열된 제외 항목(Safety bubble, 연막탄, 붕대, 조합, 상인 업그레이드)을 뺀 것
+    C: >-
+      활 발사 같은 무기 공격도 포함
+  resolution_paths:
+  - >-
+    VOD: 행동 유형별로 각 행동 뒤의 카운터 변화.
+U-0610:
+  question: >-
+    Endurance의 "cannot trade, loot gravestones, drop items or pick up dropped items": 거래 금지는 다른 사람의 제안 수신, 선물 주기, 부활로 돌려받는 아이템도 포함합니까?
+  why_it_matters: >-
+    Endurance 참가자가 실제로 얼마나 고립되는지, 그리고 팀원이 그에게 아이템을 전달할 수 있는지를 보여 줍니다.
+  readings:
+    A: >-
+      Endurance 참가자가 시작하는 행동만 차단됨
+    B: >-
+      다른 사람의 제안을 포함해 그와 관련된 모든 거래가 차단됨
+    C: >-
+      B와 같으며, 부활 시 자신의 묘비에서 복원되는 아이템도 거부됨
+  resolution_paths:
+  - >-
+    VOD: 다른 참가자가 Endurance 참가자에게 거래 요청을 보내는 장면.
+U-0611:
+  question: >-
+    Necromancy 소환 "up to 3 times every 6h": 롤링 구간입니까, 6h 고정 구간입니까, 아니면 타이머로 채워지는 3회분의 충전입니까?
+  why_it_matters: >-
+    시간당 좀비 수와 소환으로 얻는 블러드 토큰의 상한을 정합니다.
+  readings:
+    A: >-
+      롤링 구간: 임의의 6h 구간 안에서 소환은 최대 3회
+    B: >-
+      고정 구간: 카운터가 이벤트 시작부터 6h의 배수 시점에 초기화됨
+    C: >-
+      각 묶음의 첫 소환 6h 후에 카운터가 초기화됨
+    D: >-
+      2h마다 충전 1회분이 채워짐
+  resolution_paths:
+  - >-
+    VOD: 첫 소환으로부터 6h 이내와 6h 직후에 4번째 소환을 시도하는 장면.
+U-0612:
+  question: >-
+    소환 좀비, 죽음 좀비, 호드 보너스 좀비는 얼마나 오래 존재합니까("A zombie disappears when its time runs out")?
+  why_it_matters: >-
+    수명은 좀비의 흡수량과 Necromancy 블러드 토큰 수입의 상한을 정합니다. 지속 시간이 명시된 것은 가드 좀비(1h)뿐입니다.
+  sweep_range: >-
+    60 ~ 86400 s: 좀비가 의미를 가지려면 최소 1분, 어떤 이벤트 길이보다도 긴 상한으로 하루 전체이며, 기준값은 3600 s인 가드 좀비입니다.
+  resolution_paths:
+  - >-
+    VOD: 소환부터 좀비가 사라질 때까지의 시간.
+U-0613:
+  question: >-
+    Necromancy의 "The HP goes to you": 얻는 HP는 피해자가 실제로 잃은 HP입니까, 소유자의 최대 HP로 제한됩니까, 그리고 막히거나 방어구에 흡수된 흡수(drain)도 HP와 토큰을 줍니까?
+  why_it_matters: >-
+    흡수 틱당 Necromancy의 지속력과 블러드 토큰 수입을 정합니다.
+  readings:
+    A: >-
+      소유자는 피해자에게서 실제로 제거된 HP를 얻으며, 최대 HP로 제한됨
+    B: >-
+      방어구가 흡수하더라도 소유자는 틱당 명목상의 1 HP(또는 2 HP)를 얻으며, 최대 HP로 제한됨
+    C: >-
+      소유자는 명목상의 HP를 얻고 최대 HP를 넘을 수 있음
+    D: >-
+      블러드 토큰("one per HP your zombies drain")은 HP와 같은 기준을 따름
+  resolution_paths:
+  - >-
+    VOD: 방어구를 입은 피해자를 흡수할 때의 소유자 HP와 토큰 카운터.
+U-0614:
+  question: >-
+    가드 좀비와 호드 보너스 좀비도 Necromancy 소유자에게 HP를 흡수해 주며 "one per HP your zombies drain"에 포함됩니까?
+  why_it_matters: >-
+    가드 좀비가 흡수량의 큰 부분일 수도 있고, 단지 존 통제 수단일 수도 있습니다.
+  readings:
+    A: >-
+      소유자의 모든 좀비(소환, 죽음, 호드 보너스, 가드)가 HP와 토큰을 공급함
+    B: >-
+      소환, 죽음, 호드 보너스 좀비만 공급하며, 가드 좀비는 흡수만 하고 공급하지 않음
+  resolution_paths:
+  - >-
+    VOD: 피해자가 가드 좀비 근처에 서 있는 동안의 소유자 HP와 토큰.
+U-0615:
+  question: >-
+    가드 좀비의 "up to 30 HP per contestant": 가드 좀비 한 마리당입니까, 같은 참가자에 대해 모든 가드 좀비가 공유합니까? 한 시간 내내 제자리에 서 있습니까?
+  why_it_matters: >-
+    한 묘비 근처에서 여러 번 사망이 일어나면 가드가 중첩될 수 있으며, 상한에 따라 가드가 총량을 배가시키는지가 결정됩니다.
+  readings:
+    A: >-
+      참가자 한 명에 대해 가드 좀비 한 마리당 30 HP 상한(일반 좀비 규칙과 같음)
+    B: >-
+      참가자 한 명에 대해 모든 가드 좀비를 합쳐 30 HP 상한
+    C: >-
+      A이며, 한 참가자에게 상한에 도달한 가드는 그 참가자만 흡수하지 않게 됨
+  resolution_paths:
+  - >-
+    VOD: 두 가드 좀비 사이에 서 있는 참가자.
+U-0616:
+  question: >-
+    Necromancy의 "Fully immune from zombies": 다른 Necromancy 참가자의 호드 좀비와 가드 좀비에도 적용되고, 10% 포션 파괴와 40% 조합 파괴에도 적용됩니까?
+  why_it_matters: >-
+    Necromancy 참가자가 호드를 안전하게 가로지를 수 있는지를 결정합니다.
+  readings:
+    A: >-
+      모든 좀비의 모든 좀비 효과(흡수, 포션 파괴, 조합 파괴)에 면역
+    B: >-
+      흡수에만 면역이며, 다른 좀비 효과는 여전히 적용될 수 있음
+    C: >-
+      모든 좀비의 흡수에는 면역이지만, 좀비 landmine 발동에는 면역이 아님
+  resolution_paths:
+  - >-
+    VOD: 회복 포션을 가진 Necromancy 참가자가 호드 안에 있는 장면.
+U-0617:
+  question: >-
+    Protection의 "Potions heal you 50% less": 어떤 회복이 "포션"입니까(회복 포션, Eddie의 포션, God's Fruit, 붕대, 회복 서클)?
+  why_it_matters: >-
+    Protection 참가자가 여전히 얼마나 많은 회복을 쓸 수 있는지를 결정합니다.
+  readings:
+    A: >-
+      모든 등급의 회복 포션만
+    B: >-
+      회복 포션과 Eddie의 포션(최대 HP의 50%를 회복하는 도박)
+    C: >-
+      아이템으로 인한 모든 회복
+  resolution_paths:
+  - >-
+    VOD: Protection 참가자가 각 회복 아이템을 사용하는 장면.
+U-0618:
+  question: >-
+    Protection의 포션 회복 "less 50%": 등급 수치가 홀수일 때(Small potion 5 HP) 끝수 처리는 어떻게 됩니까?
+  why_it_matters: >-
+    Small potion이 2, 3 또는 2.5 HP를 줍니다.
+  readings:
+    A: >-
+      floor(h/2)
+    B: >-
+      ceil(h/2)
+    C: >-
+      h/2 (정확한 분수)
+  resolution_paths:
+  - >-
+    VOD: Protection 참가자가 Small potion을 마시는 장면.
+U-0619:
+  question: >-
+    Protection의 "Bandages last 1.1x as long": 더 긴 시간에 걸쳐 총 회복량이 같습니까, 아니면 더 긴 시간 동안 회복 속도가 같습니까?
+  why_it_matters: >-
+    132 s 동안 10 HP이거나 132 s 동안 11 HP입니다.
+  readings:
+    A: >-
+      지속 시간 = 132 s, 총량은 10 HP로 유지됨(속도 감소)
+    B: >-
+      지속 시간 = 132 s, 초당 HP는 같고 총량은 11 HP
+    C: >-
+      지속 시간이 붕대의 틱 격자에 맞춰 어림됨
+  resolution_paths:
+  - >-
+    VOD: Protection 참가자의 붕대로 인한 총 HP 증가량.
+U-0620:
+  question: >-
+    막은 타격으로 얻는 Protection 블러드 토큰: 공습의 화염 틱, 자신의 landmine, 나열되지 않은 면역(함정 선물, 독, 보복)도 토큰을 지급합니까?
+  why_it_matters: >-
+    Protection 블러드 토큰 수입과, 시청자가 이를 위해 토큰을 파밍하는지를 정합니다.
+  readings:
+    A: >-
+      공습 충격 또는 건십 폭탄당 토큰 1개뿐이며, 독, 함정 선물, 보복, 시길 자신의 landmine은 아무것도 지급하지 않음
+    B: >-
+      A에 더해 화염 틱당 토큰 1개
+    C: >-
+      "already blocked"가 적용되는 경우를 제외하고 모든 면역이 토큰 1개를 지급함
+  resolution_paths:
+  - >-
+    VOD: 공습 화염 아래에 있는 Protection 참가자.
+U-0621:
+  question: >-
+    Protection landmine 능력: 시길 선택 즉시 준비됩니까, 2h 후에 준비됩니까, 2h는 설치 시점부터 시작됩니까, 그리고 이것은 아이템 Landmine(5개 중첩, Kick 라이브 보너스, 인챈트, 가시성)입니까?
+  why_it_matters: >-
+    Protection이 설치할 수 있는 무료 landmine의 수와, 아이템 규칙과의 상호작용을 정합니다.
+  readings:
+    A: >-
+      선택 즉시 준비됨. 쿨다운은 설치 시점부터 시작되며, 그 외에는 일반 landmine 아이템 규칙이 적용됨
+    B: >-
+      첫 landmine은 선택 2h 후
+    C: >-
+      능력 landmine은 자체 규칙을 가지며 Kick 라이브 보너스를 받지 않음
+  resolution_paths:
+  - >-
+    VOD: Protection 참가자가 landmine을 설치하는 장면.
+U-0622:
+  question: >-
+    Healing 능력 "Heal a nearby contestant": 범위는 얼마입니까?
+  why_it_matters: >-
+    범위는 회복자가 얼마나 가까이 서야 하는지를 정합니다.
+  sweep_range: >-
+    1 ~ 50 m: 1 m는 의미 있는 가장 가까운 접촉, 50 m는 명시된 가장 큰 시길 범위(Death 회복, Necromancy 가드 발동)에 해당하며, 5 m와 10 m는 명시된 다른 범위입니다.
+  resolution_paths:
+  - >-
+    VOD: 측정된 거리에 있는 회복자와 대상.
+U-0623:
+  question: >-
+    Healing 능력: 회복자 자신, 이미 HP가 가득 찬 대상, 중독되지 않은 대상을 대상으로 삼을 수 있습니까? 쿨다운과 토큰은 그래도 소모됩니까?
+  why_it_matters: >-
+    회복당 블러드 토큰을 파밍할 수 있는지, 그리고 10min 쿨다운이 어떻게 작동하는지를 결정합니다.
+  readings:
+    A: >-
+      대상은 다른 사람이어야 하고, 어떤 대상이든 가능하며, 효과와 상관없이 토큰과 쿨다운이 소모됨
+    B: >-
+      대상이 이득을 얻어야 하며(HP가 최대 미만이거나 중독 또는 출혈 상태), 그때만 쿨다운과 토큰이 소모됨
+    C: >-
+      A이되 자기 자신도 허용됨
+  resolution_paths:
+  - >-
+    VOD: 회복자가 HP가 가득 찬 대상에게 능력을 사용하는 장면.
+U-0624:
+  question: >-
+    Healing 부활 카운터: "2 times"(부활되는 Healing 참가자)와 "10 times"(부활시키는 Healing 참가자): 이벤트당입니까, 쌍당입니까, 그리고 취소되거나 실패한 부활도 셉니까?
+  why_it_matters: >-
+    Healing 참가자의 생명 수와 총 부활 횟수의 상한을 정합니다.
+  readings:
+    A: >-
+      각 Healing 참가자에 대해 이벤트 전체 합계이며, 성공한 부활만 집계
+    B: >-
+      2회 규칙은 부활시키는 사람별
+    C: >-
+      부활이 취소되더라도 시도가 집계됨
+  resolution_paths:
+  - >-
+    VOD: Healing 참가자의 세 번째 부활.
+U-0625:
+  question: >-
+    부활 비용 "costs the reviver 5 HP": HP가 5 이하인 부활자를 죽일 수 있습니까, 그리고 타격 파이프라인(방어구, Fortress, Kick 라이브)을 거칩니까?
+  why_it_matters: >-
+    HP가 5 이하인 부활자는 부활 때문에 죽을 수 있으며, 부활한 참가자는 5 HP를 받습니다.
+  readings:
+    A: >-
+      부활에는 HP > 5가 필요하며, 그렇지 않으면 거부됨
+    B: >-
+      부활에는 HP >= 5가 필요하며 HP가 0이 될 수 있음(부활자 사망)
+    C: >-
+      비용은 min(5, HP - 1)
+    D: >-
+      비용이 타격 파이프라인을 거침(U-0002 참조)
+  resolution_paths:
+  - >-
+    VOD: HP 5인 부활자가 부활을 시도하는 장면.
+U-0626:
+  question: >-
+    Healing 참가자가 Healing이 아닌 참가자를 부활시키는 범위: Healing 페이지는 Healing 참가자가 부활되는 쪽일 때만 묘비로부터 10m를 제시합니다.
+  why_it_matters: >-
+    부활 경쟁 모델에 필요합니다.
+  sweep_range: >-
+    1 ~ 30 m: 1 m는 최소 접촉, 30 m는 명시된 비슷한 범위 중 가장 긴 것(10m)보다 큰 값입니다.
+  resolution_paths:
+  - >-
+    VOD: 측정된 거리에서의 부활.
+U-0627:
+  question: >-
+    시길 선택: 이벤트 시작 이후 마감 시한이 있습니까, 그리고 선택하지 않은 참가자에게는 무엇이 적용됩니까(기본 능력치, 능력 없음)?
+  why_it_matters: >-
+    지연은 시길의 패시브 타이머와 능력을 잃게 하며, 선택하지 않으면 참가자가 시길 효과 없이 남을 수 있습니다.
+  sweep_range: >-
+    0 ~ 이벤트 지속 시간(U-0009): 0은 선택이 이벤트 시작 시점에 이미 끝나 있음을 뜻하고, 상한은 가능한 가장 긴 지연입니다.
+  resolution_paths:
+  - >-
+    주최자의 발표, 선택 화면이 담긴 VOD.

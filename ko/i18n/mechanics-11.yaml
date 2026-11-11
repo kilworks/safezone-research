@@ -1,0 +1,549 @@
+M-0534:
+  name: >-
+    Fake gravestone
+  quotes:
+  - >-
+    Fake gravestone: 하나를 설치한 뒤 다음 설치까지 2h를 기다립니다.
+  - >-
+    탈락한 참가자의 묘비를 복제하며, 탈락자가 없는 동안에는 살아 있는 임의의 참가자의 묘비를 복제합니다.
+  - >-
+    이를 루팅하려는 각 참가자는 1회 중독됩니다.
+  readings:
+    A: >-
+      최대 1개 설치. 다음 설치는 설치 후 7200 s 뒤부터 허용. 복제 대상은 트롤이 고른 탈락 참가자의 묘비이며, 탈락자가 없으면 살아 있는 임의의 참가자의 묘비. 이를 루팅하려는 각 참가자는 1회 중독됨(첫 시도에 한함)
+    B: >-
+      2 h 대기는 이전 fake가 사라지는 시점부터 계산
+    C: >-
+      복제 대상은 탈락 참가자 중에서 무작위로 선택
+  domain: >-
+    시간(초 단위)
+  parameters:
+    cooldown_s: >-
+      7200
+    lifetime_s: >-
+      UNKNOWN, U-0533 참조
+    copy_source: >-
+      UNKNOWN, U-0534 참조
+    poison: >-
+      참가자당 1회
+  notes: >-
+    독의 세부 사항(1 min 30 s마다 HP 1, 초기화됨, 중첩되지 않음)은 독 페이지에 있으며, fake gravestone은 그곳의 두 가지 중독 원천 중 하나입니다. Mirror forcefield는 이를 공격자에게 되돌립니다. Ingenuity는 fake를 알아봅니다. Death 시길이 fake gravestone을 약탈하는 경우는 기술되어 있지 않습니다.
+M-0535:
+  name: >-
+    언세이프 서클(unsafe circle) 설치
+  quotes:
+  - >-
+    Unsafe circle: 세이프 존 안에 50m (164ft) 서클을 20min 동안 설치합니다.
+  - >-
+    쿨다운은 2h입니다.
+  - >-
+    설치할 때 본인을 포함해 서클 안에 살아 있는 참가자가 없어야 합니다.
+  - >-
+    Trolling 참가자는 세이프 존 안에 언세이프 서클을 설치할 수 있습니다.
+  readings:
+    A: >-
+      반지름 50 m의 place(circle, 중심 c) 수행. c는 세이프 존 안에 있어야 하고, 설치 시점에 설치자를 포함해 서클 안에 살아 있는 참가자가 없어야 함. 지속 시간 1200 s. 다음 설치는 설치 후 7200 s 뒤부터 허용
+    B: >-
+      지름 50 m (반지름 25 m)
+    C: >-
+      쿨다운 7200 s는 서클이 끝날 때부터 시작
+  domain: >-
+    시간(초 단위), 반지름(미터 단위)
+  parameters:
+    size_m: >-
+      UNKNOWN, U-0535 참조
+    duration_s: >-
+      1200
+    cooldown_s: >-
+      7200
+    cooldown_anchor: >-
+      UNKNOWN, U-0536 참조
+  notes: >-
+    '세이프 존 안'은 본문에서 설치 시점에 확인됩니다. 세이프 존은 이동하며, 세이프 존 안에 있는 부분만 피해를 줍니다(M-0536).
+M-0536:
+  name: >-
+    언세이프 서클 피해
+  quotes:
+  - >-
+    서클 안에 있으면서 세이프 존 안에도 있는 사람은 유예 시간 없이 존 피해를 받습니다
+  - >-
+    세이프 존 바깥과 같이 피해를 줍니다. 2s마다 HP 1이며, 진입 후 한 간격이 지난 시점에 첫 타격이 들어오고 유예 시간은 없습니다.
+  - >-
+    세이프 존 안에 있는 부분만 피해를 줍니다. 모든 세이프 존 바깥에서는 일반 존 피해만 받습니다.
+  readings:
+    A: >-
+      서클 안이면서 세이프 존 안에 있는 참가자 v에 대해: 안에서 2 s가 지난 뒤 2 s마다 HP 1. 5 s 유예 없음. 모든 세이프 존 바깥에서는 일반 존 피해만 받음(첫 틱은 통상의 유예 이후)
+    B: >-
+      존 안쪽 부분과 바깥쪽 부분 사이를 오가도 타이머가 유지됨
+    C: >-
+      전역 2 s 틱
+  domain: >-
+    진입 이후 t >= 0 s, 틱당 HP 1
+  parameters:
+    interval_s: >-
+      2
+    damage_hp: >-
+      1
+    grace_s: >-
+      0
+    first_hit: >-
+      진입 후 한 간격 뒤
+  notes: >-
+    Hazmat suit는 존 피해 간격마다 2 s를 늘리며(아이템 페이지), 피해 페이지에도 언세이프 서클 피해를 늦추는 것으로 나열되어 있습니다. Body armor는 이를 흡수합니다. 일반 존 피해의 첫 틱은 U-0003입니다.
+M-0537:
+  name: >-
+    언세이프 서클 방어 아이템 상실
+  quotes:
+  - >-
+    5초마다 방어 아이템 또는 고유 조합 아이템 1개를 잃으며, 장착한 Body Armor도 포함됩니다
+  - >-
+    첫 타격 이후, 서클 안에 머무르고 면역이 아닌 동안 5초마다 무작위 방어 아이템 또는 고유 조합 아이템 1개를 잃습니다.
+  - >-
+    방어 아이템은 Shields, Safety Bubbles, Guardian Angels, Hazmat Suits, Body Armor, Mirror Forcefields, Flak Jackets, Gas Masks, Zombie Repellents, Anti Poisons, Sleeping Bags입니다.
+  - >-
+    장착한 Body Armor도 안전하지 않습니다.
+  readings:
+    A: >-
+      첫 타격부터 서클 안에 있고 면역이 아닌 동안 5 s마다 {Shield, Safety Bubble, Guardian Angel, Hazmat Suit, Body Armor, Mirror Forcefield, Flak Jacket, Gas Mask, Zombie Repellent, Anti Poison, Sleeping Bag} 중 무작위 아이템 1개 또는 고유 조합 아이템 1개를 제거. 첫 상실은 t_hit + 5 s
+    B: >-
+      첫 상실은 첫 타격 시점
+    C: >-
+      시계는 진입 시점부터
+  domain: >-
+    5 s 주기. 보유한 해당 아이템 중에서 균등 무작위(분포는 명시되지 않음)
+  parameters:
+    period_s: >-
+      5
+    defense_item_types: >-
+      11
+    fate: >-
+      UNKNOWN, U-0539 참조
+    clock_start: >-
+      UNKNOWN, U-0538 참조
+  notes: >-
+    장착한 Body Armor는 명시적으로 안전하지 않습니다. 방어 목록에는 시길 능력인 Reality Shield와 Death Ward가 포함되지 않습니다. 무작위 선택이 균등한지는 명시되어 있지 않습니다.
+M-0538:
+  name: >-
+    언세이프 서클 차단 수단
+  quotes:
+  - >-
+    Guardian angel, Safety bubble, Reality Shield 또는 Death Ward가 이를 막습니다.
+  - >-
+    Shield는 막지 못합니다.
+  - >-
+    Unsafe circle | Safety bubble, Guardian angel, Death Ward, Hazmat suit (늦춤), Body armor (흡수)
+  readings:
+    A: >-
+      언세이프 서클 피해와 아이템 상실은 Guardian angel, Safety bubble, Reality Shield 또는 Death Ward가 차단함(Trolling 페이지). Shield는 차단하지 못함
+    B: >-
+      피해 표의 행: Safety bubble, Guardian angel, Death Ward가 차단. Hazmat suit는 늦춤. Body armor는 흡수. Reality Shield는 이 행에 없음
+  domain: >-
+    방어자 상태별 불리언 차단 여부
+  parameters:
+    shield_blocks: >-
+      false
+    reality_shield_blocks: >-
+      모순, C-0502 참조
+  notes: >-
+    불일치는 Reality Shield뿐입니다. 피해 페이지의 주석(다른 조항)에도 Safety bubble과 Reality Shield가 존 피해, 언세이프 서클 피해, 로봇 피해를 막는다고 되어 있어 해석 A를 뒷받침합니다.
+M-0539:
+  name: >-
+    Trolling 보급 상자 방향 전환
+  quotes:
+  - >-
+    시청자가 보낸 각 상자 또는 보급 상자는 3% 확률로 대신 Trolling 참가자 옆에 떨어집니다.
+  - >-
+    보급 상자는 세이프 존 안의 임의의 지점에 임의의 아이템을 떨어뜨립니다.
+  - >-
+    3% 확률로 대신 Trolling 참가자로부터 5m (16ft) 이내에 떨어집니다.
+  readings:
+    A: >-
+      시청자가 보낸 각 보급 상자: 확률 0.03으로 세이프 존 안의 임의의 지점 대신 Trolling 참가자로부터 5 m 이내에 떨어짐
+    B: >-
+      상자(crate)도 같은 판정을 받음
+    C: >-
+      각 Trolling 참가자가 따로 판정
+  domain: >-
+    상자당 판정, 확률 0.03
+  parameters:
+    p: >-
+      0.03
+    landing_radius_m: >-
+      5
+    scope: >-
+      UNKNOWN, U-0540 참조
+  notes: >-
+    5 m라는 거리는 공격 페이지에 있고 Trolling 페이지에는 없습니다. 범위 불일치는 모순 C-0501입니다.
+M-0600:
+  name: >-
+    시길 선택은 최종
+  quotes:
+  - >-
+    선택은 최종입니다.
+  readings:
+    A: >-
+      sigil(c)는 한 번만 배정됨. 모든 t2 >= t1 >= t_pick에 대해 sigil(c, t2) = sigil(c, t1)
+  domain: >-
+    각 참가자 c, 9개 시길 중 하나
+  notes: >-
+    재선택은 없습니다. 위키에는 선택 이후 시길을 바꾸는 요소가 없습니다.
+M-0601:
+  name: >-
+    시길 선택은 이벤트 시작 후에 이루어짐
+  quotes:
+  - >-
+    각 참가자는 이벤트가 시작된 뒤 시길을 하나 고릅니다.
+  readings:
+    A: >-
+      선택 시점 t_pick(c) > t_start이며, 알 수 없는 마감 시한으로 제한됨
+  domain: >-
+    이벤트 시작부터의 초 단위 t_pick
+  parameters:
+    sigil_pick_deadline_s: >-
+      UNKNOWN, U-0627 참조
+  notes: >-
+    이벤트 시작부터 선택 시점까지 위키는 능력치나 능력을 제시하지 않습니다. 패시브 타이머(Healing 재생, 보급 상자)는 선택 시점에 시작할 수도, 이벤트 시작 시점에 시작할 수도 있습니다(U-0007, U-0607 참조).
+M-0602:
+  name: >-
+    Death 기본 능력치: 최대 HP 100, 인벤토리 슬롯 3
+  quotes:
+  - >-
+    Max HP
+  - >-
+    100 HP
+  - >-
+    Slots
+  - >-
+    3
+  readings:
+    A: >-
+      maxHP = 100. inventory_slots = 3
+  domain: >-
+    이벤트 시작 시점
+  parameters:
+    max_hp: >-
+      100
+    inventory_slots: >-
+      3
+  notes: >-
+    상인의 업그레이드(최대 HP +10, 인벤토리 슬롯)는 플레이 중에 이 값을 바꿉니다. 이 기록은 기본값만 다룹니다. 상인 페이지는 슬롯을 13개까지로 제한하며, Endurance는 20개까지입니다.
+M-0603:
+  name: >-
+    Endurance 기본 능력치: 최대 HP 100, 인벤토리 슬롯 10
+  quotes:
+  - >-
+    Max HP
+  - >-
+    100 HP
+  - >-
+    Slots
+  - >-
+    10
+  readings:
+    A: >-
+      maxHP = 100. inventory_slots = 10
+  domain: >-
+    이벤트 시작 시점
+  parameters:
+    max_hp: >-
+      100
+    inventory_slots: >-
+      10
+  notes: >-
+    상인의 업그레이드(최대 HP +10, 인벤토리 슬롯)는 플레이 중에 이 값을 바꿉니다. 이 기록은 기본값만 다룹니다. 상인 페이지는 슬롯을 13개까지로 제한하며, Endurance는 20개까지입니다.
+M-0604:
+  name: >-
+    Necromancy 기본 능력치: 최대 HP 100, 인벤토리 슬롯 3
+  quotes:
+  - >-
+    Max HP
+  - >-
+    100 HP
+  - >-
+    Slots
+  - >-
+    3
+  readings:
+    A: >-
+      maxHP = 100. inventory_slots = 3
+  domain: >-
+    이벤트 시작 시점
+  parameters:
+    max_hp: >-
+      100
+    inventory_slots: >-
+      3
+  notes: >-
+    상인의 업그레이드(최대 HP +10, 인벤토리 슬롯)는 플레이 중에 이 값을 바꿉니다. 이 기록은 기본값만 다룹니다. 상인 페이지는 슬롯을 13개까지로 제한하며, Endurance는 20개까지입니다.
+M-0605:
+  name: >-
+    Protection 기본 능력치: 최대 HP 100, 인벤토리 슬롯 3
+  quotes:
+  - >-
+    Max HP
+  - >-
+    100 HP
+  - >-
+    Slots
+  - >-
+    3
+  readings:
+    A: >-
+      maxHP = 100. inventory_slots = 3
+  domain: >-
+    이벤트 시작 시점
+  parameters:
+    max_hp: >-
+      100
+    inventory_slots: >-
+      3
+  notes: >-
+    상인의 업그레이드(최대 HP +10, 인벤토리 슬롯)는 플레이 중에 이 값을 바꿉니다. 이 기록은 기본값만 다룹니다. 상인 페이지는 슬롯을 13개까지로 제한하며, Endurance는 20개까지입니다.
+M-0606:
+  name: >-
+    Healing 기본 능력치: 최대 HP 100, 인벤토리 슬롯 3
+  quotes:
+  - >-
+    Max HP
+  - >-
+    100 HP
+  - >-
+    Slots
+  - >-
+    3
+  readings:
+    A: >-
+      maxHP = 100. inventory_slots = 3
+  domain: >-
+    이벤트 시작 시점
+  parameters:
+    max_hp: >-
+      100
+    inventory_slots: >-
+      3
+  notes: >-
+    상인의 업그레이드(최대 HP +10, 인벤토리 슬롯)는 플레이 중에 이 값을 바꿉니다. 이 기록은 기본값만 다룹니다. 상인 페이지는 슬롯을 13개까지로 제한하며, Endurance는 20개까지입니다.
+M-0610:
+  name: >-
+    Death 블러드 토큰 수입
+  quotes:
+  - >-
+    묘비를 약탈할 때마다 블러드 토큰 10개를, 다른 참가자가 죽을 때마다 1개를 얻습니다.
+  readings:
+    A: >-
+      tokens += 묘비 약탈 1회당 10. tokens += 다른 참가자의 죽음 1회당 1(위치 무관)
+    B: >-
+      동일하되, 토큰 1개를 받으려면 50m 이내에서 죽어야 함
+  domain: >-
+    정수 토큰 수
+  parameters:
+    death_token_range_m: >-
+      UNKNOWN, U-0605 참조
+  notes: >-
+    약탈 범위 10m와 회복 범위 50m는 다른 줄에 명시되어 있으며, 토큰 줄에는 범위가 없습니다.
+M-0611:
+  name: >-
+    Death 묘비 약탈: 최대 HP의 5% 회복
+  quotes:
+  - >-
+    10m (33ft) 이내의 묘비를 약탈하면 최대 HP의 5%를 회복합니다.
+  - >-
+    빈 묘비도 약탈할 수 있습니다.
+  - >-
+    묘비에서 아이템이나 블러드 토큰을 처음으로 루팅하면 그 묘비를 약탈한 것으로 간주됩니다.
+  readings:
+    A: >-
+      heal = floor(M*5/100)
+    B: >-
+      heal = ceil(M*5/100)
+    C: >-
+      heal = M*5/100의 반올림(round half up)
+    D: >-
+      heal = M*5/100 (정확한 분수)
+  domain: >-
+    M = 최대 HP(정수, 기본값 100). 묘비까지의 거리 <= 10 m
+  notes: >-
+    M = 100이면 모든 해석에서 HP 5입니다. 최대 HP를 넘지 않는지는 명시되어 있지 않습니다. 빈 묘비도 약탈할 수 있지만, 빈 묘비를 약탈해도 회복과 토큰을 받는지는 명시되어 있지 않습니다.
+M-0612:
+  name: >-
+    약탈된 묘비: 1회뿐이며 부활 불가
+  quotes:
+  - >-
+    각 묘비는 한 번만 약탈할 수 있으며, 약탈된 묘비는 다시는 부활시킬 수 없습니다.
+  - >-
+    Sigil of death 플레이어가 당신의 묘비를 약탈하거나 가장 먼저 루팅하면, 당신은 다시는 부활할 수 없습니다.
+  readings:
+    A: >-
+      robbed(g)는 되돌릴 수 없는 플래그. robbed(g)이면 revivable(g)은 영구히 거짓
+  domain: >-
+    묘비 g
+  notes: >-
+    개요 페이지와 Death 페이지는 일치합니다. 소개 페이지는 '약탈하거나 ... 가장 먼저 루팅'이라고 하고, Death 페이지는 아이템이나 토큰을 처음 루팅하면 약탈로 친다고 합니다.
+M-0613:
+  name: >-
+    50m 이내 탈락마다 Death 회복
+  quotes:
+  - >-
+    참가자가 당신으로부터 50m (164ft) 이내에서 죽으면, 지금까지 탈락한 참가자 1명당 HP 1씩(그 참가자 포함) 회복합니다.
+  readings:
+    A: >-
+      heal = D_events (이번을 포함해 지금까지의 사망 이벤트 수)
+    B: >-
+      heal = D_dead_now (현재 죽어 있는 참가자 수, 피해자 포함)
+    C: >-
+      heal = D_distinct (한 번 이상 죽은 서로 다른 참가자 수)
+  domain: >-
+    정수 1 <= heal <= N. 피해자는 50 m 이내
+  notes: >-
+    상한을 알려면 참가자 총수(U-0009)가 필요합니다. Death 참가자 근처에서 죽을 때마다 회복이 반복됩니다. 여기서는 최대 HP 상한이 명시되어 있지 않습니다.
+M-0614:
+  name: >-
+    생존자가 20% 이하일 때 Death 회복은 최대 HP의 60%로 제한
+  quotes:
+  - >-
+    참가자의 20% 이하가 생존해 있으면, 그 회복으로는 최대 HP의 60%를 넘을 수 없습니다.
+  readings:
+    A: >-
+      alive*5 <= N이면 HP' = min(HP + h, 0.6*M), 아니면 HP' = min(HP + h, M)
+    B: >-
+      A와 같으나 HP' = max(HP, min(HP + h, 0.6*M)) (HP를 낮추지 않음)
+    C: >-
+      상한을 반올림: floor(0.6*M) 또는 ceil(0.6*M)
+  domain: >-
+    alive, N은 정수. h는 탈락당 회복에서만 나옴. 약탈 회복은 '그 회복'에 해당하지 않음
+  parameters:
+    N: >-
+      UNKNOWN, U-0009 참조
+  notes: >-
+    N은 참가자 총수이며 U-0009를 참조하십시오. 상한이 약탈 회복에도 적용되는지는 명시되어 있지 않습니다. '그 회복'은 탈락당 회복을 가리킵니다.
+M-0615:
+  name: >-
+    Death ward: 서클 바깥에서 오는 첫 타격을 막고 2min 동안 면역, 쿨다운 2h
+  quotes:
+  - >-
+    Death ward: 서클 바깥 또는 언세이프 서클에서 오는 첫 타격은 막히며, 2min 동안 두 가지 모두에 면역이 됩니다.
+  - >-
+    쿨다운은 2h입니다.
+  - >-
+    Death Ward: Death 참가자가 서클 바깥에서 받는 첫 타격은 막히며, 서클 바깥에서 오는 피해는 2min 동안 막힙니다.
+  readings:
+    A: >-
+      서클 바깥 또는 언세이프 서클에서 오는 첫 타격 시: 이를 막은 뒤 120 s 동안 두 원천 모두에 면역. 이후 능력은 7200 s 동안 사용 불가
+    B: >-
+      피해 페이지의 표현: '서클 바깥' 원천만 해당, 120 s 구간
+  domain: >-
+    초 단위
+  parameters:
+    window_s: >-
+      120
+    cooldown_s: >-
+      7200
+  notes: >-
+    피해 표는 Death Ward를 서클 바깥 행과 언세이프 서클 행 모두의 차단 수단으로 나열합니다. 피해 페이지 본문에 관한 모순은 C-0600을 참조하십시오.
+M-0620:
+  name: >-
+    Endurance 인벤토리: 3 대신 10슬롯
+  quotes:
+  - >-
+    인벤토리 슬롯이 3개가 아니라 10개입니다.
+  readings:
+    A: >-
+      slots = 10
+  parameters:
+    inventory_slots: >-
+      10
+  notes: >-
+    Slots 라벨(M-0603)과 같은 값입니다. 상인 페이지는 구매를 통해 Endurance에 최대 20까지 허용합니다.
+M-0621:
+  name: >-
+    Endurance 보급 상자 일정
+  quotes:
+  - >-
+    2h 30min마다 보급 상자가 당신으로부터 10m (33ft) 이내에 떨어집니다.
+  - >-
+    2h 30min마다 각 Endurance 참가자로부터 10m (33ft) 이내에 보급 상자가 떨어집니다.
+  - >-
+    30s 뒤에 착지합니다.
+  - >-
+    누구나 가져갈 수 있습니다.
+  - >-
+    착지한 뒤에는 일반 보급 상자이며, 어떤 참가자든 가져갈 수 있습니다.
+  - >-
+    체력 물약이나 드론은 절대 들어 있지 않습니다.
+  readings:
+    A: >-
+      t_k = t0 + k*9000 s의 고정 시계. 착지는 t_k + 30 s. 위치는 참가자로부터 10 m 이내
+    B: >-
+      이전 상자가 수령될 때 타이머가 다시 시작
+  domain: >-
+    초 단위
+  parameters:
+    period_s: >-
+      9000
+    landing_delay_s: >-
+      30
+    t0: >-
+      UNKNOWN, U-0607 참조
+  notes: >-
+    낙하 시점과 착지 시점 중 어느 때의 위치인지는 명시되어 있지 않습니다(10m는 상자가 떨어질 때 참가자로부터의 거리입니다). 내용물은 체력 물약과 드론을 제외한 무작위 아이템입니다.
+M-0622:
+  name: >-
+    자신의 보급 상자를 수령할 때의 Endurance 토큰
+  quotes:
+  - >-
+    2h 30min마다 떨어지는 자신의 보급 상자를 수령하면 블러드 토큰 6개를 얻습니다.
+  readings:
+    A: >-
+      수령자가 그 상자가 떨어진 대상인 참가자 본인일 때 tokens += 6
+    B: >-
+      다른 사람이 먼저 루팅했더라도, 수령자가 소유한 상자를 수령하면 tokens += 6
+  parameters:
+    tokens_per_claim: >-
+      6
+  notes: >-
+    누구나 수령할 수 있으므로 경쟁자가 먼저 가져갈 수 있습니다. 그 경우 소유자가 토큰을 받는지는 명시되어 있지 않습니다.
+M-0623:
+  name: >-
+    아이템 5회 사용마다 Endurance 보너스 토큰
+  quotes:
+  - >-
+    아이템을 5회 사용할 때마다 1개를 더 얻습니다.
+  readings:
+    A: >-
+      누적 아이템 사용 횟수가 5의 배수에 도달할 때마다 tokens += 1
+    B: >-
+      수령 보상 = 6 + floor(마지막 수령 이후 사용 횟수 / 5)
+    C: >-
+      수령 보상 = 5회 사용이 이루어지면 6 + 1
+  domain: >-
+    정수 카운터
+  notes: >-
+    아이템 페이지와 비교하십시오. 일부 효과(Safety Bubbles, 연막탄, 붕대, 조합 아이템, 상인 업그레이드)는 '활성 아이템 효과'에서 제외되며, 여기에 그것이 적용되는지는 명시되어 있지 않습니다.
+M-0624:
+  name: >-
+    Endurance 제한: 거래, 묘비 루팅, 버리기, 줍기 불가
+  quotes:
+  - >-
+    거래하거나, 묘비를 루팅하거나, 아이템을 버리거나, 버려진 아이템을 주울 수 없습니다.
+  - >-
+    아이템 파괴, 상자 수령, 크레이트 획득은 여전히 할 수 있습니다.
+  readings:
+    A: >-
+      행동 {trade, loot_gravestone, drop_item, pickup_dropped_item}은 비활성. {destroy_item, claim_chest, take_crate, claim_care_package}는 활성
+    B: >-
+      A에 더해, 다른 사람에게서 오는 거래 제안도 거부됨
+  notes: >-
+    묘비 루팅이 비활성이므로 Endurance 참가자는 무덤을 약탈하거나 거기서 아이템을 얻을 수 없습니다. 보급 상자 수령은 토큰 획득 규칙에 의해 허용됩니다.
+M-0630:
+  name: >-
+    Necromancy 블러드 토큰 수입
+  quotes:
+  - >-
+    가드와 호드 보너스를 포함해 자신의 좀비가 등장할 때마다 블러드 토큰 1개를, 좀비가 빼앗는 HP 1마다 1개를 얻습니다.
+  readings:
+    A: >-
+      소유한 좀비가 등장할 때마다 tokens += 1(소환, 죽음, 호드 보너스, 가드). 소유한 좀비가 빼앗은 HP 1마다 tokens += 1
+    B: >-
+      A와 같으나, 빼앗은 HP는 피해자가 방어구와 상한을 거친 뒤 실제로 잃은 HP
+  notes: >-
+    호드 보너스는 좀비 5마리를 주므로 토큰도 5개입니다.

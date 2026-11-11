@@ -1,0 +1,432 @@
+M-0100:
+  name: >-
+    세이프 존은 주최자가 이동시킴 (크기, 속도, 분할)
+  quotes:
+  - >-
+    크기나 속도가 바뀌거나 심지어 여러 개로 갈라질 수도 있습니다
+  readings:
+    A: >-
+      존의 기하는 주최자가 통제하는 외생적 과정 Z(t)이며, 규칙은 주어지지 않음
+  parameters:
+    zone_process: >-
+      UNKNOWN, U-0114 참조
+  notes: >-
+    크기 조정, 가속, 분할이 존재한다는 점만 명시되어 있습니다. 기하는 추상적인 상태로 둡니다.
+M-0101:
+  name: >-
+    세이프 존 밖 피해 틱
+  quotes:
+  - >-
+    5s 후부터 2s마다 1 HP 피해를 입기 시작합니다 (분당 30 HP)
+  readings:
+    A: >-
+      t_out >= 5: t_out = 5, 7, 9, ...에서 HP 손실 1 (첫 틱은 5 s)
+    B: >-
+      t_out >= 5: t_out = 7, 9, 11, ...에서 HP 손실 1 (첫 틱은 한 간격 더 지난 뒤)
+  domain: >-
+    t_out은 모든 세이프 존을 벗어난 뒤 경과한 정수 초, t_out >= 0
+  parameters:
+    grace_s: >-
+      5
+    interval_s: >-
+      2
+    tick_hp: >-
+      1
+  notes: >-
+    분당 30 HP라는 수치는 60/2이며 두 해석 모두에서 성립합니다. 이 틱이 7단계 파이프라인의 타격인지는 U-0002입니다. Kick 라이브 중에 내림 감소를 거친 1 HP는, U-0002가 틱을 파이프라인에 포함시키는 경우에 한해 최소(minimum)에 의해 1로 올라갑니다. 언세이프 서클(unsafe circle, Trolling 시길 페이지)도 같은 방식으로 피해를 준다고 되어 있으며, 이는 이후 페이지 간 비교 단계에서 대조합니다.
+M-0102:
+  name: >-
+    Kick 라이브 상태: 받는 피해 10% 감소, 주는 피해 10% 증가 (일반 서술)
+  quotes:
+  - >-
+    Kick에서 라이브 중이면 받는 피해가 10% 줄고 주는 피해가 10% 늘어납니다
+  readings:
+    A: >-
+      방어자 라이브: d -> floor(9*d/10); 공격자 라이브: d -> floor(11*d/10)
+    B: >-
+      방어자 라이브: d -> d - floor(d/10); 공격자 라이브: d -> floor(11*d/10)
+    C: >-
+      공격자 보너스는 파이프라인 목록에 한정되지 않고 모든 피해 원천에 적용됨 (일반적 서술)
+  domain: >-
+    d는 정수, d >= 0
+  notes: >-
+    파이프라인 페이지는 공격자 보너스를 명시된 무기 목록으로 한정하고, 방어자 감소는 끝수 처리가 적용되는 별도 단계로 서술합니다. C-0100을 참조하십시오. 감소의 끝수 처리 방식은 U-0001입니다.
+M-0103:
+  name: >-
+    Kick 라이브 상태는 오프라인 유예 시간을 두 배로 늘림 (15분에서 30분)
+  quotes:
+  - >-
+    오프라인 유예 시간이 더 길어서, 휴대폰이 꺼져도 피해를 입기 시작하기까지 15min이 아니라 30min이 주어집니다
+  readings:
+    A: >-
+      grace_s = Kick 라이브 중이면 1800, 아니면 900
+  domain: >-
+    live in {true, false}
+  parameters:
+    grace_live_s: >-
+      1800
+    grace_base_s: >-
+      900
+  notes: >-
+    라이브 상태를 읽는 시점이 미해결 지점입니다 (U-0111).
+M-0104:
+  name: >-
+    피해 전 GPS 오프라인 유예
+  quotes:
+  - >-
+    휴대폰이 GPS 갱신을 보내지 않고 마지막으로 알려진 위치가 세이프 존 안이었다면, 15min 후(Kick에서 라이브 중이면 30min 후)부터 피해를 입기 시작합니다.
+  readings:
+    A: >-
+      마지막 측위가 세이프 존 안이면: T_off >= grace (900 s, 라이브면 1800 s)에서 피해 시작
+    B: >-
+      마지막 측위가 세이프 존 안이면: T_off > grace (엄격 부등호)에서 피해 시작
+    C: >-
+      마지막 측위가 모든 세이프 존 밖이면: 유예 없음, 일반 존 밖 규칙이 적용됨 (명시되지 않았으며 조건에서 추정)
+  domain: >-
+    T_off는 마지막 GPS 갱신 이후 경과한 정수 초
+  parameters:
+    grace_base_s: >-
+      900
+    grace_live_s: >-
+      1800
+    damage_after_grace: >-
+      UNKNOWN, U-0110 참조
+  notes: >-
+    해석 C는 조건절 '마지막으로 알려진 위치가 세이프 존 안이었다면'에서만 나오며, 그렇지 않은 경우에 어떻게 되는지는 적혀 있지 않습니다. 소개 부분의 Kick 문장과 같은 수치(15min과 30min)이므로 일치합니다.
+M-0105:
+  name: >-
+    속도 규칙: 1 min 평균 속도가 20 mph를 넘으면 존 밖으로 간주
+  quotes:
+  - >-
+    너무 빠르게 움직이면 존 밖으로 간주됩니다: 1min 평균 20mph (8.94m/s)보다 빠른 경우
+  readings:
+    A: >-
+      60 s 구간의 mean_speed > 8.94 m/s이면 위반, 구간은 슬라이딩
+    B: >-
+      60 s 구간의 mean_speed > 8.9408 m/s (정확히 20 mph)이면 위반
+    C: >-
+      구간 변위는 이동 경로 길이가 아니라 양 끝점 사이 거리로 계산
+  domain: >-
+    속도 단위는 m/s, 구간은 60 s
+  parameters:
+    threshold_ms: >-
+      8.94
+    window_s: >-
+      60
+M-0106:
+  name: >-
+    속도 규칙: 임의의 15 s 구간에서 속도가 30 mph를 넘으면 존 밖으로 간주
+  quotes:
+  - >-
+    또는 어떤 15s 동안이든 30mph (13.41m/s)보다 빠른 경우
+  readings:
+    A: >-
+      어떤 15 s 구간의 mean_speed > 13.41 m/s이면 위반
+    B: >-
+      어떤 15 s 구간 중 최고 속도 > 13.41 m/s이면 위반
+    C: >-
+      정확한 임계값은 13.4112 m/s
+  domain: >-
+    속도 단위는 m/s, 구간은 15 s
+  parameters:
+    threshold_ms: >-
+      13.41
+    window_s: >-
+      15
+  notes: >-
+    구간은 두 가지로 별개입니다 (8.94의 1 min 평균, 13.41의 15 s). 표기된 m/s 값은 8.9408과 13.4112에서 반올림한 것입니다.
+M-0107:
+  name: >-
+    사망 시 묘비 생성
+  quotes:
+  - >-
+    죽으면 마지막으로 목격된 위치에 아이템이 담긴 묘비가 나타납니다.
+  - >-
+    죽으면 가지고 있던 모든 아이템이 담긴 묘비를 남깁니다.
+  readings:
+    A: >-
+      사망 시: gravestone(pos = 사망 시점의 위치, items = 소지한 모든 아이템)
+    B: >-
+      gravestone(pos = 사망 전 마지막 GPS 측위)
+  domain: >-
+    모든 참가자
+  notes: >-
+    두 문장은 같은 규칙입니다 (소개 부분과 Death/Revival 절). 묘비 속 블러드 토큰은 M-0109에서 다룹니다.
+M-0108:
+  name: >-
+    10 min 이내에 묘비를 루팅하거나 부활시킴
+  quotes:
+  - >-
+    다른 참가자는 이를 루팅하거나, 그들의 사망 후 10min 이내에 당신을 부활시킬 수 있습니다.
+  readings:
+    A: >-
+      t - t_death <= 600 s인 동안 부활 가능 (t_death는 사망한 참가자의 사망 시각)
+    B: >-
+      시간 창을 부활시키는 쪽의 사망 시점부터 계산 (대명사를 문자 그대로 읽은 경우)
+  domain: >-
+    t, t_death는 초 단위
+  parameters:
+    revive_window_s: >-
+      600
+  notes: >-
+    Healing 페이지에는 '사망 후 10min 이내'라고 되어 있으며 같은 600 s입니다. 시길별 부활 규칙(5 HP 비용, 10 m 범위)은 Healing 페이지에 있으며 여기에 중복 기록하지 않았습니다.
+M-0109:
+  name: >-
+    묘비 속 블러드 토큰은 부활이 가능한 동안 잠김
+  quotes:
+  - >-
+    묘비 속 블러드 토큰은 부활이 가능한 동안 잠긴 상태로 유지됩니다.
+  readings:
+    A: >-
+      locked(tokens) = revival_possible(grave); 그 이후에는 잠금 해제
+    B: >-
+      부활될 때까지 잠김, 상한 기준으로 부활이 여전히 가능하면 600 s가 지나도 유지
+  notes: >-
+    '부활 가능'은 시간 창, 부활 횟수 상한, Death 시길의 약탈 규칙(M-0116)에 따라 달라집니다.
+M-0110:
+  name: >-
+    최종 처치는 블러드 토큰 25개를 지급하며, 블러드 크라운이 관련되면 50개
+  quotes:
+  - >-
+    최종 처치는 블러드 토큰 25개를 지급하며, 처치자 또는 피처치자가 블러드 크라운(blood crown)을 가지고 있었다면 50개를 지급합니다.
+  readings:
+    A: >-
+      pay(kill) = crown(killer) 또는 crown(victim)이면 50, 아니면 25, 결정타 시점에 처치자에게 지급
+    B: >-
+      같은 금액을 부활 창이 끝날 때 지급
+    C: >-
+      50 = 기본 25 + 크라운 보너스 25를 당사자들이 나눔
+  domain: >-
+    pay의 단위는 블러드 토큰
+  parameters:
+    base_tokens: >-
+      25
+    crown_tokens: >-
+      50
+  notes: >-
+    Death 시길 페이지에는 다른 참가자가 죽을 때마다 토큰 1개를 얻는다는 내용도 있습니다. 다른 메커니즘이므로 합치지 않았습니다.
+M-0111:
+  name: >-
+    크라운 보유자를 처치한 시청자는 Cx-Bucks 보너스를 받음
+  quotes:
+  - >-
+    크라운 보유자를 처치한 시청자는 해당 공격 구매 가격의 20%에 해당하는 Cx-Bucks 보너스를 받습니다.
+  readings:
+    A: >-
+      bonus = floor(0.2*p)
+    B: >-
+      bonus = ceil(0.2*p)
+    C: >-
+      bonus = 0.2*p
+  domain: >-
+    p = Cx-Bucks 단위의 공격 가격
+  parameters:
+    attack_price: >-
+      UNKNOWN, U-0014 참조
+    bonus_rate: >-
+      0.2
+M-0112:
+  name: >-
+    어떤 참가자든 Healing 참가자를 최대 2회까지 부활시킬 수 있음
+  quotes:
+  - >-
+    어떤 참가자든 Healing 참가자를 최대 2회까지 부활시킬 수 있습니다.
+  readings:
+    A: >-
+      각 Healing 참가자 h에 대해 revives_received(h) <= 2
+    B: >-
+      상한은 부활시키는 쪽과 대상의 쌍마다 따로 셈
+  domain: >-
+    Healing 참가자 h
+  parameters:
+    max_revives_received: >-
+      2
+  notes: >-
+    Healing 페이지는 '당신의 묘비로부터 10m 이내의 살아 있는 참가자'를 덧붙이고 '... 최대 10회까지 부활시킬 수 있다'고 하므로 C-0104를 참조하십시오. 시길별 세부 사항은 비교만 하고 중복 기록하지 않았습니다.
+M-0113:
+  name: >-
+    Healing 참가자는 어떤 시길이든 최대 10회까지 부활시킬 수 있음
+  quotes:
+  - >-
+    Healing 참가자는 어떤 시길의 참가자든 최대 10회까지 부활시킬 수 있습니다.
+  readings:
+    A: >-
+      각 Healing 참가자 h에 대해 revives_performed(h) <= 10
+    B: >-
+      상한은 대상마다 따로 셈
+    C: >-
+      대상이 Healing이면 2회 상한(M-0112)이 우선 적용됨
+  parameters:
+    max_revives_performed: >-
+      10
+M-0114:
+  name: >-
+    부활한 참가자는 묘비에 남아 있는 아이템을 되돌려 받음
+  quotes:
+  - >-
+    부활한 참가자는 묘비에 아직 남아 있는 아이템을 되돌려 받습니다.
+  readings:
+    A: >-
+      부활 시: inventory := items(grave), 수용량 한도 적용 (M-0115); 묘비의 아이템은 제거됨
+  notes: >-
+    남아 있는 아이템만 반환됩니다. 부활 전에 루팅한 쪽이 가져간 아이템은 사라집니다.
+M-0115:
+  name: >-
+    들어가지 않는 아이템은 묘비에 남음
+  quotes:
+  - >-
+    들어가지 않는 아이템은 묘비에 남습니다.
+  readings:
+    A: >-
+      leftover = items(grave) 중 들어가는 부분집합을 뺀 나머지; leftover는 묘비에 남음
+    B: >-
+      leftover는 바닥에 떨어짐
+  parameters:
+    inventory_capacity: >-
+      UNKNOWN, U-0109 참조
+M-0116:
+  name: >-
+    Death 시길이 묘비를 약탈하거나 처음 루팅하면 부활 불가
+  quotes:
+  - >-
+    Sigil of death 플레이어가 당신의 묘비를 약탈하거나 처음으로 루팅하면, 당신은 영영 부활할 수 없습니다.
+  readings:
+    A: >-
+      Death 참가자가 묘비를 약탈하거나 그 첫 루팅자가 되면 revivable(grave) = false가 영구히 성립
+  notes: >-
+    Death 시길 페이지('각 묘비는 한 번 약탈될 수 있으며, 약탈된 묘비는 영영 부활할 수 없다', '묘비에서 아이템이나 블러드 토큰을 처음 루팅하면 그 묘비도 약탈한 것이 된다')와 대조했으며, 같은 규칙이고 불일치는 발견되지 않았습니다. 시길별 세부 사항은 중복 기록하지 않았습니다.
+M-0117:
+  name: >-
+    타격 파이프라인: 순서대로 일곱 단계
+  quotes:
+  - >-
+    모든 타격은 이 단계들을 순서대로 거칩니다.
+  readings:
+    A: >-
+      result = armor(fortress(minimum(reductions(mirror(kick_bonus(immunity(h)))))))
+  domain: >-
+    h는 정수, h >= 0, 타격 1회
+  notes: >-
+    어떤 피해 원천이 타격에 해당하는지는 U-0002입니다. 단계는 레코드 하나씩 모델링했습니다. 118 면역, 119 Kick 보너스, 120 미러, 121과 122 감소, 123 최소, 124 fortress, 125 armor입니다.
+M-0118:
+  name: >-
+    파이프라인 1단계: 면역
+  quotes:
+  - >-
+    면역
+  - >-
+    무언가가 타격을 막으면 아무 피해도 입지 않습니다.
+  readings:
+    A: >-
+      원천에 대한 차단 수단(피해 표)이 하나라도 적용되면: d := 0 후 중단
+  notes: >-
+    차단 수단의 집합은 피해 표의 행(M-0140..M-0166)에서 가져옵니다. 여러 개가 적용될 때 어느 차단 수단이 소모되는지는 U-0120입니다.
+M-0119:
+  name: >-
+    파이프라인 2단계: 공격자 Kick 보너스, 나열된 무기에 한정
+  quotes:
+  - >-
+    공격자가 Kick에서 라이브 중이면, 본인의 bow, staff, knife, long sword, axe, machete, drone, C4, landmine, fake chest, trapped gift 타격이 10% 더 큰 피해를 주며, 내림합니다.
+  readings:
+    A: >-
+      공격자가 라이브이고 source in {bow, staff, knife, long sword, axe, machete, drone, C4, landmine, fake chest, trapped gift}이면: d := floor(11*d/10) = d + floor(d/10)
+  domain: >-
+    d는 정수 >= 0; 무기 목록은 닫혀 있음 (Poison Dart, missile, nuke 등은 목록에 없음)
+  parameters:
+    bonus: >-
+      10 퍼센트
+    list: >-
+      bow, staff, knife, long sword, axe, machete, drone, C4, landmine, fake chest, trapped gift
+  notes: >-
+    내림 해석은 하나뿐입니다 (1.1*d의 floor는 binary64에서 정확함). 'staff'는 Wizard staff 범위 피해(틱, U-0010)입니다. 소개 페이지의 일반 서술('주는 피해가 10% 늘어난다')은 더 넓으며, C-0100을 참조하십시오. 보너스는 미러보다 앞서므로 반사된 타격에도 포함됩니다.
+M-0120:
+  name: >-
+    파이프라인 3단계: Mirror forcefield가 타격 전체를 되돌려 보냄
+  quotes:
+  - >-
+    Mirror forcefield는 어떤 감소도 거치기 전에 타격 전체를 대신 공격자에게 되돌려 보냅니다.
+  readings:
+    A: >-
+      방어자의 mirror가 활성 상태이고 source가 반사 가능하면: 공격자가 (2단계 이후의) d를 공격자 자신의 전체 파이프라인을 거쳐 받고, 방어자는 0을 받음
+    B: >-
+      공격자가 d를 원값 그대로 받음, 파이프라인 없음
+  notes: >-
+    '어떤 감소도 거치기 전에'는 미러가 방어자의 4~7단계보다 앞선다는 뜻입니다. 반사되는 양에는 앞선 Kick 보너스(2단계)가 포함됩니다. 공격자의 파이프라인은 U-0005입니다.
+M-0121:
+  name: >-
+    파이프라인 4a단계: Protection 시길이 nuke 피해를 절반으로 줄임
+  quotes:
+  - >-
+    Protection 참가자는 nuke로부터 받는 피해가 50% 줄어듭니다.
+  - >-
+    남는 피해는 내림합니다.
+  - >-
+    Protection 시길은 nuke에 면역이 아니지만, 받는 피해가 50% 줄어듭니다.
+  readings:
+    A: >-
+      방어자 시길이 Protection이고 source가 nuke이면: d := floor(d/2); 다른 원천은 그대로
+  domain: >-
+    d는 정수 >= 0
+  parameters:
+    nuke_reduction: >-
+      50 퍼센트
+  notes: >-
+    'nuke에 면역은 아니지만 50% 줄어듦'. Protection 페이지도 같은 규칙(50% 감소)을 다루며 불일치는 발견되지 않았습니다. floor가 어디에 적용되는지는 U-0100입니다. Flak jacket(M-0130)은 이 단계 이전에 nuke를 막습니다.
+M-0122:
+  name: >-
+    파이프라인 4b단계: 방어자 Kick 감소
+  quotes:
+  - >-
+    Kick에서 라이브 중이면 그다음 10%가 차감되며, 내림합니다.
+  readings:
+    A: >-
+      방어자 라이브: d := floor(9*d/10)
+    B: >-
+      방어자 라이브: d := d - floor(d/10)
+  domain: >-
+    d는 정수 >= 0
+  parameters:
+    reduction: >-
+      10 퍼센트
+  notes: >-
+    Protection 단계 이후에 적용됩니다 (명시된 순서). d가 10의 배수가 아니고 d >= 2이면 언제나 A와 B는 1 HP 차이가 납니다.
+M-0123:
+  name: >-
+    파이프라인 5단계: 통과한 타격은 최소 1 HP
+  quotes:
+  - >-
+    최소
+  - >-
+    통과한 타격은 언제나 최소 1 HP의 피해를 줍니다.
+  readings:
+    A: >-
+      1단계에서 막히지 않았고 미러로 반사되지 않은 타격이면 d := max(1, d)
+    B: >-
+      6단계와 7단계 이후의 최종 HP 손실 >= 1
+  domain: >-
+    d는 정수 >= 0
+  parameters:
+    minimum_hp: >-
+      1
+  notes: >-
+    '언제나'는 뒤따르는 6단계와 7단계와 취지상 충돌합니다 (U-0103).
+M-0124:
+  name: >-
+    파이프라인 6단계: fortress는 남은 내구도까지 흡수
+  quotes:
+  - >-
+    Fortress
+  - >-
+    당신이 그 안에 서 있는 fortress는 누가 지었든 남은 내구도까지 피해를 흡수합니다.
+  readings:
+    A: >-
+      방어자가 fortress 안에 서 있으면 (소유자 무관): a := min(d, dur); d := d - a; dur := dur - a
+    B: >-
+      여러 fortress가 차례로 흡수함
+  domain: >-
+    d, dur는 정수 >= 0
+  parameters:
+    fortress_durability: >-
+      이 페이지에서는 UNKNOWN, 아이템 페이지 참조
+  notes: >-
+    '누가 지었든': 소유자는 무관하며 적의 fortress도 보호합니다. 내구도 값은 다른 페이지 계열에 있습니다.

@@ -1,0 +1,441 @@
+M-0631:
+  name: >-
+    Necromancy 소환: 6h마다 최대 3회
+  quotes:
+  - >-
+    서 있는 자리에 좀비를 소환합니다. 6h마다 최대 3회입니다.
+  - >-
+    Necromancy 참가자는 서 있는 자리에 좀비를 소환합니다. 6h마다 최대 3회입니다.
+  readings:
+    A: >-
+      임의의 연속 21600 s 안에 소환은 최대 3회
+    B: >-
+      카운터가 21600 s의 고정 경계마다 초기화됨
+    C: >-
+      충전 3회, 한 묶음의 첫 소환으로부터 6 h 후에 다시 충전
+  domain: >-
+    초
+  parameters:
+    summon_cap: >-
+      3
+    window_s: >-
+      21600
+    zombie_lifetime_s: >-
+      UNKNOWN, U-0612 참조
+  notes: >-
+    두 페이지의 내용이 일치합니다.
+M-0632:
+  name: >-
+    Necromancy 사망 좀비, 10m 이내
+  quotes:
+  - >-
+    어떤 참가자든 사망하면, 당신의 좀비 한 마리가 당신으로부터 10m (33ft) 이내에 나타납니다.
+  - >-
+    어떤 참가자든 사망하면, 생존 중인 모든 Necromancy 참가자는 자신으로부터 10m (33ft) 이내에 좀비를 얻습니다.
+  readings:
+    A: >-
+      어떤 참가자의 사망이든 한 번마다, 생존 중인 각 Necromancy 참가자는 10 m 이내에 소유 좀비 한 마리를 얻음
+  parameters:
+    zombie_lifetime_s: >-
+      UNKNOWN, U-0612 참조
+  notes: >-
+    좀비 페이지는 '생존 중인'을 덧붙입니다. 사망이 일어나는 거리에는 제한이 없습니다. Necromancy 참가자 본인이 사망하는 경우는 다루지 않습니다.
+M-0633:
+  name: >-
+    Necromancy 가드 좀비, 묘비 옆
+  quotes:
+  - >-
+    참가자가 당신으로부터 50m (164ft) 이내에서 사망하면, 가드 좀비가 그 묘비로부터 10m (33ft) 떨어진 곳에 1h 동안 서 있습니다.
+  - >-
+    10m (33ft) 이내의 모든 사람에게서 5s마다 2 HP를 흡수하며, 참가자 한 명당 최대 30 HP까지입니다.
+  - >-
+    가드 좀비는 묘비로부터 10m (33ft) 떨어진 곳에 나타납니다.
+  - >-
+    가드 좀비는 10m (33ft) 이내의 모든 사람에게서 5s마다 2 HP를 흡수하며, 참가자 한 명당 최대 30 HP까지입니다.
+  readings:
+    A: >-
+      Necromancy 참가자로부터 50 m 이내에서 사망할 때마다: 가드 좀비가 묘비로부터 10 m 떨어진 곳에 3600 s 동안 존재하고, 10 m 이내에서 5 s마다 2 HP를 흡수하며, 가드 좀비 한 마리당 참가자 한 명에게서 최대 30 HP
+    B: >-
+      A와 같되, 30 HP 상한을 모든 가드 좀비가 공유함
+  domain: >-
+    초, HP
+  parameters:
+    duration_s: >-
+      3600
+    drain_hp: >-
+      2
+    interval_s: >-
+      5
+    radius_m: >-
+      10
+    cap_hp: >-
+      30
+  notes: >-
+    좀비 페이지는 가드 좀비의 지속 시간을 제시하지 않으며, 시길 페이지는 1h를 제시합니다. 첫 흡수 틱의 시점은 명시되어 있지 않습니다. 소유자 면역은 M-0636을 참조하십시오.
+M-0634:
+  name: >-
+    Necromancy 군단 보너스: 좀비 5마리
+  quotes:
+  - >-
+    시청자가 군단(horde)을 보내면, 자신의 좀비도 5마리 얻습니다.
+  - >-
+    군단이 풀려나면, 생존 중인 모든 Necromancy 참가자는 서 있는 자리에 좀비도 5마리 얻습니다.
+  readings:
+    A: >-
+      군단이 풀려나면, 생존 중인 각 Necromancy 참가자는 자신의 위치에 소유 좀비 5마리를 얻음
+  parameters:
+    bonus_zombies: >-
+      5
+    zombie_lifetime_s: >-
+      UNKNOWN, U-0612 참조
+  notes: >-
+    좀비 페이지는 '생존 중인'과 '서 있는 자리에'를 덧붙입니다. 군단 좀비(50마리, 무작위 지점)에는 소유자가 없으므로 이 메커니즘에 포함되지 않습니다.
+M-0635:
+  name: >-
+    Necromancy 소유 좀비의 흡수와 HP 이전
+  quotes:
+  - >-
+    당신의 좀비는 5m (16ft) 이내의 참가자에게서 10s마다 1 HP를 흡수하며, 좀비 한 마리당 참가자 한 명에게서 최대 30 HP까지입니다.
+  - >-
+    그 HP는 당신에게 갑니다.
+  - >-
+    5m (16ft) 이내의 모든 참가자에게서 10s마다 1 HP를 흡수합니다.
+  - >-
+    각 좀비는 참가자 한 명에게서 최대 30 HP까지만 흡수할 수 있습니다.
+  readings:
+    A: >-
+      소유 좀비 한 마리마다 10 s마다, 5 m 이내의 참가자 각각에 대해: 피해자 -1 HP (좀비 한 마리당 피해자 한 명에게서 총 30까지), 소유자 += 실제로 제거된 HP, maxHP가 상한
+    B: >-
+      방어구와 무관하게 틱마다 소유자 += 명목상 1 HP, maxHP가 상한
+  domain: >-
+    정수 HP
+  parameters:
+    drain_hp: >-
+      1
+    interval_s: >-
+      10
+    radius_m: >-
+      5
+    cap_hp: >-
+      30
+  notes: >-
+    상한의 의미(평생 누적인지, 조우마다인지)는 U-0008입니다. 1.4 m/s로 가장 가까운 참가자를 추격하는 내용은 좀비 페이지(다른 계열)에 있습니다.
+M-0636:
+  name: >-
+    Necromancy의 좀비 면역
+  quotes:
+  - >-
+    면역 대상
+  - >-
+    좀비
+  - >-
+    좀비로부터 완전히 면역입니다.
+  - >-
+    | Zombie drain | Shield, Safety bubble, Sleeping Bag, Necromancy / Repellent, Body armor (흡수)
+  readings:
+    A: >-
+      좀비가 Necromancy 참가자에게 주는 피해 = 0 (모든 좀비, 모든 소유자)
+    B: >-
+      흡수에 대해서만 A
+  notes: >-
+    피해 표는 Necromancy를 좀비 흡수 행의 차단 수단으로 기재하고 있어 일치합니다.
+M-0640:
+  name: >-
+    Protection 면역 목록
+  quotes:
+  - >-
+    독, 드론, 미사일, C4, 지뢰, 함정 선물, 공습과 그 화염, 건십 폭탄, Protection 응징에 면역입니다.
+  - >-
+    면역 대상
+  - >-
+    독, 드론, 미사일, C4, 지뢰, 공습, 건십
+  - >-
+    | Poison | Shield, Safety bubble, Sleeping Bag, Protection, Anti poison, Body armor (흡수)
+  - >-
+    | Drone | Shield, Safety bubble, Sleeping Bag, Protection, Mirror forcefield (반사), Body armor (흡수)
+  - >-
+    | Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (반사)
+  - >-
+    | Airstrike fire | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (흡수)
+  - >-
+    | Protection retribution | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (흡수)
+  readings:
+    A: >-
+      sigil(c) = protection일 때, source in {poison, drone, missile, C4, landmine, trapped gift, airstrike impact, airstrike fire, gunship bomb, Protection retribution}이면 blocked(source, c) = true
+  notes: >-
+    전체 문장과 피해 표가 일치합니다. 라벨 줄은 더 짧으며, C-0601을 참조하십시오. 공격 페이지의 면역 언급(미사일, 공습, 건십)도 일치합니다. 핵폭탄(nuke)은 면역이 아닙니다: M-0643.
+M-0641:
+  name: >-
+    Protection도 존, 서클, 로봇, 무기 피해는 받음
+  quotes:
+  - >-
+    존, 언세이프 서클(unsafe circle), 로봇, 무기, 가짜 상자, 최루가스, 좀비, 출혈, 사이클롭스, 현상금 피해는 여전히 받습니다.
+  readings:
+    A: >-
+      피해원 {zone, unsafe circle, robot, weapon, fake chest, tear gas, zombie, bleeding, cyclops, bounty}에 대한 Protection 차단 수단 없음
+  notes: >-
+    피해 표와 일치합니다. 표에서 Protection은 이 행들 중 어디에도 나타나지 않습니다.
+M-0642:
+  name: >-
+    Protection의 면역 차단으로 얻는 블러드 토큰
+  quotes:
+  - >-
+    드론, 미사일, C4 또는 지뢰 타격은 블러드 토큰 1개를, 공습 또는 건십 타격은 1개를 얻게 하지만, 자신의 면역이 막았을 때만 해당합니다.
+  - >-
+    핵폭탄(nuke) 타격은 자신의 피해 감소가 적용될 때 스무 개를 얻게 합니다.
+  - >-
+    이미 다른 수단으로 막힌 타격은 아무것도 얻지 못합니다.
+  readings:
+    A: >-
+      막아 낸 {drone, missile, C4, landmine, airstrike, gunship} 타격 1회당 tokens += 1, 50% 감소에 도달한 nuke 타격 1회당 += 20, 다른 차단 수단이 이미 타격을 막았다면 += 0
+    B: >-
+      A에 더해 airstrike fire 틱도 지급함
+  parameters:
+    tokens_per_block: >-
+      1
+    tokens_per_nuke: >-
+      20
+  notes: >-
+    독, 함정 선물, Protection 응징은 면역 목록에는 있으나 토큰 목록에는 없습니다. 핵폭탄 보너스는 토큰 20개입니다. 자신이 시길 능력으로 설치한 지뢰의 타격도 토큰을 지급하는지는 명시되어 있지 않습니다.
+M-0643:
+  name: >-
+    Protection은 핵폭탄 피해를 50% 덜 받음
+  quotes:
+  - >-
+    핵폭탄은 당신에게 50% 적은 피해를 줍니다.
+  - >-
+    Protection 참가자는 핵폭탄 피해를 50% 덜 받습니다.
+  - >-
+    남은 피해는 내림합니다.
+  - >-
+    Protection 시길은 면역이 아니지만, 피해를 50% 덜 받습니다.
+  readings:
+    A: >-
+      d -> floor(d/2) (감소 4단계, Kick 라이브 감소 이전)
+  domain: >-
+    d는 정수
+  notes: >-
+    Kick 라이브 감소 및 최소 1 HP와의 순서는 피해 페이지(4단계와 5단계)에 주어져 있습니다. Kick 10%가 어디에 적용되는지는 U-0001을 참조하십시오.
+M-0644:
+  name: >-
+    Protection 지뢰 설치 능력
+  quotes:
+  - >-
+    2h마다 한 번, 서 있는 자리에 지뢰를 설치합니다.
+  - >-
+    다른 참가자 또는 좀비가 밟으면 10m (33ft) 이내의 모든 사람에게 15 HP 피해를 주고, 범위 내의 모든 좀비를 처치합니다.
+  - >-
+    당신을 포함해 범위 내의 모든 사람에게 15 HP 피해를 주고, 범위 내의 모든 좀비를 처치합니다.
+  readings:
+    A: >-
+      7200 s마다 참가자는 자신의 위치에 지뢰를 설치할 수 있음. 다른 참가자 또는 좀비가 10 m 이내에 있으면 작동. 10 m 이내의 모든 사람에게 15 HP 피해. 10 m 이내의 좀비를 처치
+  domain: >-
+    초, 미터, HP
+  parameters:
+    cooldown_s: >-
+      7200
+    damage_hp: >-
+      15
+    radius_m: >-
+      10
+  notes: >-
+    15 HP와 10 m는 아이템 지뢰와 일치합니다. Protection은 지뢰에 면역이므로 자신의 지뢰가 자신을 해치지 않습니다.
+M-0645:
+  name: >-
+    Protection의 포션은 50% 덜 회복함
+  quotes:
+  - >-
+    포션이 당신을 50% 덜 회복시킵니다.
+  readings:
+    A: >-
+      heal -> floor(h/2)
+    B: >-
+      heal -> ceil(h/2)
+    C: >-
+      heal -> h/2 (정확히)
+  domain: >-
+    h는 정수: 체력 포션 등급 5, 10, 20, 40, Eddie의 포션은 최대 HP의 50%
+  notes: >-
+    범위(어떤 아이템이 포션에 해당하는지)는 U-0617입니다.
+M-0646:
+  name: >-
+    Protection의 붕대는 1.1배 오래 지속됨
+  quotes:
+  - >-
+    붕대가 1.1배 오래 지속됩니다.
+  - >-
+    2min에 걸쳐 10 HP를 회복합니다.
+  readings:
+    A: >-
+      붕대: 132 s에 걸쳐 총 10 HP
+    B: >-
+      붕대: 기존 속도 그대로 132 s에 걸쳐 총 11 HP
+  domain: >-
+    초, HP
+  parameters:
+    duration_factor: >-
+      1.1
+    base_duration_s: >-
+      120
+  notes: >-
+    상호 참조: 붕대 아이템 페이지(2 min에 걸쳐 10 HP 회복).
+M-0647:
+  name: >-
+    사망 시 Protection 응징
+  quotes:
+  - >-
+    응징: 당신이 사망하면, 30m (98ft) 이내의 모든 사람이 20 HP 피해를 받습니다.
+  - >-
+    | Protection retribution | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (흡수)
+  readings:
+    A: >-
+      Protection 참가자가 사망하면: 30 m 이내의 다른 모든 참가자가 20 HP 피해를 받음 (피해 표의 차단 수단이 적용됨)
+  domain: >-
+    미터, HP
+  parameters:
+    radius_m: >-
+      30
+    damage_hp: >-
+      20
+  notes: >-
+    다른 Protection 참가자는 면역입니다. 나중에 부활한 Protection 참가자가 영향을 받지 않는지는 명시되어 있지 않습니다. 죽인 사람이나 사망한 참가자 본인이 포함되는지도 명시되어 있지 않습니다.
+M-0650:
+  name: >-
+    Healing 블러드 토큰: 회복 1회당 1개, 부활 1회당 20개
+  quotes:
+  - >-
+    회복 1회당 블러드 토큰 한 개, 부활 1회당 스무 개를 얻습니다.
+  readings:
+    A: >-
+      회복 능력을 1회 사용할 때마다 tokens += 1, 부활을 1회 완료할 때마다 += 20
+  parameters:
+    tokens_per_heal: >-
+      1
+    tokens_per_revive: >-
+      20
+  notes: >-
+    HP가 가득 찬 대상에게 회복해도 지급되는지는 U-0623입니다.
+M-0651:
+  name: >-
+    Healing 능력: 1 HP 회복, 독 치료, 출혈 중단, 쿨다운 10min
+  quotes:
+  - >-
+    근처의 참가자를 1 HP 회복시키고 그 독을 치료합니다.
+  - >-
+    Healing은 Deep Cut 출혈도 멈춥니다.
+  - >-
+    쿨다운 10min.
+  readings:
+    A: >-
+      범위 r 안의 대상: HP += 1 (최대 HP가 상한), 독 치료, Deep Cut 출혈 중단. 다음 사용은 600 s 후
+  domain: >-
+    초, HP
+  parameters:
+    heal_hp: >-
+      1
+    cooldown_s: >-
+      600
+    range_m: >-
+      UNKNOWN, U-0622 참조
+  notes: >-
+    독 페이지('Healing healing'이 독을 치료함)와 상인의 Deep Cut 설명(붕대 또는 Healing 참가자가 치료)과 일치합니다.
+M-0652:
+  name: >-
+    Healing 자연 재생: 30min마다 1 HP
+  quotes:
+  - >-
+    30min마다 1 HP를 재생하며, 최대 HP까지입니다.
+  readings:
+    A: >-
+      고정된 시계로 1800 s마다, 피해를 입어도 초기화되지 않음
+    B: >-
+      피해를 입으면 1800 s 타이머가 초기화됨
+  domain: >-
+    초
+  parameters:
+    regen_hp: >-
+      1
+    period_s: >-
+      1800
+  notes: >-
+    Necromancy가 아니라 Healing에 속합니다. 시계의 시작 시점(이벤트 시작인지, 시길 선택인지)도 미해결입니다.
+M-0653:
+  name: >-
+    Healing 참가자는 어떤 참가자에게든 최대 2회 부활될 수 있음
+  quotes:
+  - >-
+    당신의 묘비로부터 10m (33ft) 이내에 있는 생존 중인 참가자는 누구든 당신을 최대 2회까지 부활시킬 수 있습니다.
+  - >-
+    어떤 참가자든 Healing 참가자를 최대 2회까지 부활시킬 수 있습니다.
+  - >-
+    죽음이 항상 끝은 아닙니다. Healing 참가자가 당신을 부활시킬 수도 있습니다.
+  readings:
+    A: >-
+      부활시키는 사람이 생존 중이고, g로부터 10 m 이내에 있으며, revives_of(target) < 2일 때 revive(g) 허용
+    B: >-
+      제한을 부활시키는 사람별로 셈
+  parameters:
+    max_revives_of_healing: >-
+      2
+    range_m: >-
+      10
+  notes: >-
+    전략 페이지의 문장은 Healing 참가자만 부활시키는 사람으로 언급하며, 다른 경로는 언급하지 않습니다.
+M-0654:
+  name: >-
+    Healing 참가자는 어떤 시길이든 최대 10회 부활시킴
+  quotes:
+  - >-
+    어떤 시길의 참가자든 최대 10회까지 부활시킬 수 있습니다.
+  - >-
+    Healing 참가자는 어떤 시길의 참가자든 최대 10회까지 부활시킬 수 있습니다.
+  readings:
+    A: >-
+      Healing 참가자 h마다 revives_by(h) < 10, 성공한 부활 기준
+  parameters:
+    max_revives_by: >-
+      10
+    range_m: >-
+      UNKNOWN, U-0626 참조
+M-0655:
+  name: >-
+    부활 가능 시간: 사망 후 10min
+  quotes:
+  - >-
+    부활은 사망 후 10min 이내에 이루어져야 합니다.
+  - >-
+    그들의 사망 후 10min 이내에 당신을 부활시킬 수 있습니다.
+  readings:
+    A: >-
+      t_now - t_death <= 600 s일 때에 한해 부활 허용, t_death는 사망한 참가자의 사망 시각
+    B: >-
+      t_death는 부활시키는 사람의 것
+  domain: >-
+    초
+  parameters:
+    window_s: >-
+      600
+  notes: >-
+    경계(<= 인지 < 인지)는 명시되어 있지 않습니다. wiki-012와 비교하십시오: 묘비 안의 블러드 토큰은 부활이 가능한 동안 잠겨 있습니다.
+M-0656:
+  name: >-
+    부활 비용 5 HP, 5 HP로 복귀
+  quotes:
+  - >-
+    부활시키는 사람은 5 HP를 소모하고, 참가자는 5 HP로 돌아옵니다.
+  readings:
+    A: >-
+      부활시키는 사람 HP -= 5 (HP > 5 필요), 대상 HP := 5
+    B: >-
+      부활시키는 사람이 0까지 떨어져 사망할 수 있음
+    C: >-
+      부활시키는 사람 HP -= min(5, HP-1)
+  domain: >-
+    정수 HP
+  parameters:
+    cost_hp: >-
+      5
+    revived_hp: >-
+      5
+  notes: >-
+    부활한 참가자는 묘비에서 아이템도 되찾습니다(소개 페이지). 비용이 피해 파이프라인을 거치는지는 U-0002입니다.

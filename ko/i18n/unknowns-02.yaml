@@ -1,0 +1,371 @@
+U-0107:
+  question: >-
+    부활 횟수 제한 '2 times'(Healing 참가자에게)와 '10 times'(Healing 참가자에 의한)는 무엇에 붙는 카운터입니까?
+  why_it_matters: >-
+    Healing 참가자가 가진 목숨 수와, Healing 부활자가 이벤트 전체에서 수행할 수 있는 부활 횟수를 결정합니다.
+  readings:
+    A: >-
+      2 = 특정 Healing 참가자가 (어떤 부활자에게서든) 평생 받을 수 있는 부활 총횟수. 10 = 특정 Healing 참가자가 평생 수행할 수 있는 부활 총횟수
+    B: >-
+      2와 10은 (부활자, 대상) 쌍마다 적용됩니다
+    C: >-
+      2 = 대상의 목숨당. 10 = 부활자당 하루 또는 한 시간당
+    D: >-
+      Healing 참가자가 다른 Healing 참가자를 부활시키면 두 제한이 모두 적용되고 더 낮은 쪽(2)이 우선하거나, 10만 적용됩니다
+  resolution_paths:
+  - >-
+    VOD: Healing 참가자가 세 번째로 부활한 장면, Healing 부활자가 열한 번째 부활을 수행한 장면.
+  - >-
+    주최 측 설명.
+U-0108:
+  question: >-
+    비Healing 참가자는 누가 부활시킬 수 있습니까? 두 규칙에서 암시되는 대로 Healing 참가자만입니까, 아니면 다른 규칙에 따라 누구든 가능합니까?
+  why_it_matters: >-
+    주변에 살아 있는 Healing 참가자가 없을 때 죽은 비Healing 참가자를 부활시킬 수 있는지를 결정합니다.
+  readings:
+    A: >-
+      Healing 참가자만 비Healing 참가자를 부활시킬 수 있고, 다른 참가자는 Healing 참가자만 부활시킬 수 있습니다
+    B: >-
+      어떤 참가자든 모든 참가자를 부활시킬 수 있고, 2-times 규칙은 Healing 대상에만 해당하는 제한입니다
+  resolution_paths:
+  - >-
+    VOD: 비Healing 참가자가 다른 비Healing 참가자를 부활시키는 장면.
+  - >-
+    주최 측 설명.
+U-0109:
+  question: >-
+    'Items that do not fit stay in the gravestone': 부활 시 용량 규칙은 무엇이며, 묘비에 남은 아이템은 이후 어떻게 됩니까?
+  why_it_matters: >-
+    사망 후 인벤토리가 얼마나 남는지, 남은 아이템을 계속 루팅할 수 있는지를 결정합니다.
+  readings:
+    A: >-
+      용량은 범주별 일반 소지 한도이며, 남은 아이템은 누구나 루팅할 수 있는 상태로 남습니다
+    B: >-
+      남은 아이템은 묘비에 남지만 해당 시간 동안만 블러드 토큰처럼 잠깁니다
+  sweep_range: >-
+    모든 범주 합산 0 ~ 12 슬롯. 상한은 아이템 페이지에서 확인된 어떤 소지 구성보다 높게 잡은 스윕 선택이며 위키 값이 아닙니다
+  resolution_paths:
+  - >-
+    VOD: 사망과 부활 사이에 새 아이템을 주운 참가자의 부활.
+  - >-
+    아이템 페이지의 소지 한도를 이 규칙에 대조해 읽기(패밀리 교차).
+U-0110:
+  question: >-
+    오프라인 유예가 끝난 뒤('you start taking damage after 15min') 어떤 피해가 적용됩니까? 서클 밖 규칙(5 s 유예 후 2 s마다 1 HP), 즉시 틱 주기, 또는 다른 것입니까?
+  why_it_matters: >-
+    휴대폰이 꺼진 참가자가 HP를 얼마나 빨리 잃는지, 유예 이후 사망까지의 시간을 정합니다.
+  readings:
+    A: >-
+      서클 밖과 동일: 5 s 유예 후 2 s마다 1 HP
+    B: >-
+      유예 종료 시점부터 2 s마다 1 HP, 추가 5 s 없음
+    C: >-
+      이 페이지에 주어지지 않은 다른 속도
+  sweep_range: >-
+    0 ~ 5 s: 피해가 유예 종료 시점에 시작하면 0, 서클 밖 유예가 다시 적용되면 5
+  resolution_paths:
+  - >-
+    VOD: 휴대폰이 꺼지고 15 min이 지난 참가자.
+  - >-
+    REA: 배포된 GPS 감시 로직.
+U-0111:
+  question: >-
+    오프라인 유예 타이머의 의미: 마지막 GPS 갱신으로부터만 측정됩니까, 이후의 GPS 갱신이 타이머를 초기화합니까, 그리고 'live on Kick'은 GPS가 끊긴 순간(A), 만료 시점(B), 또는 부분 누적을 쓰는 연속 평가(C) 중 언제 판정됩니까?
+  why_it_matters: >-
+    장애 중 방송 끊김이나 재연결에 따라 유예가 15 min과 30 min 사이에서 달라지며, U-0012의 탐지 지연과 연결됩니다.
+  readings:
+    A: >-
+      마지막 GPS 갱신 시점에 Kick 라이브 중이었으면 유예 = 30 min, 아니면 15 min이며 그 시점에 고정됩니다
+    B: >-
+      Kick 라이브 중 여부는 15 min이 끝날 때 읽습니다. 그때 라이브 중이면 기한이 30 min으로 옮겨집니다
+    C: >-
+      오프라인 경과 시간은 각 순간의 Kick 라이브 중 여부에 따라 분당 1/15 또는 1/30의 가중치로 누적됩니다
+  resolution_paths:
+  - >-
+    VOD: 라이브 중 휴대폰이 꺼지고 10분째에 방송이 끝난 경우의 피해 시작 시점.
+  - >-
+    주최 측 설명.
+U-0112:
+  question: >-
+    속도 규칙의 평균: '20mph on average over 1min'은 슬라이딩 윈도, 고정 윈도, 거리 대 시간의 비율 중 무엇입니까? '30mph over any 15s'는 15 s 윈도의 같은 평균입니까, 아니면 최고 속도입니까? 비교는 엄격합니까? 8.94와 13.41 m/s가 정확한 임계값입니까?
+  why_it_matters: >-
+    차량 탑승이나 GPS 점프에서 누가 너무 빠르게 이동하는 것으로 분류되는지, 그리고 발동 경계를 정확히 결정합니다.
+  readings:
+    A: >-
+      슬라이딩 윈도, 평균 속도 = 변위 경로 길이 / 윈도 길이, 엄격한 >, 임계값은 표기된 대로 8.94와 13.41 m/s
+    B: >-
+      같지만 임계값이 정확히 8.9408과 13.4112 m/s
+    C: >-
+      경로 길이가 아니라 윈도 안에서 시작점과 끝점 사이의 직선 변위
+    D: >-
+      15 s 규칙은 순간 최고 속도를 사용합니다
+  resolution_paths:
+  - >-
+    VOD/GPS 기록: 임계값 부근의 차량 이동.
+  - >-
+    REA: 배포된 속도 검사.
+U-0113:
+  question: >-
+    'Moving too fast counts as being outside': 속도 규칙이 발동하면 5 s 유예와 2 s당 1 HP가 서클 밖처럼 적용됩니까, 언제부터 시작됩니까, 그리고 속도가 떨어지는 즉시 끝납니까?
+  why_it_matters: >-
+    빠른 이동의 대가를 정합니다: 즉시 틱인지, 5 s 지연과 히스테리시스인지.
+  readings:
+    A: >-
+      위반 = 서클 밖. 일반 5 s 유예 뒤 틱이 시작되고, 윈도가 다시 정상이 되면 끝납니다
+    B: >-
+      유예 없이 틱이 즉시 시작됩니다
+    C: >-
+      윈도가 다시 정상이 될 때까지 서클 밖 상태가 유지되며, 이는 속도 하락보다 최대 윈도 길이만큼 늦습니다
+  sweep_range: >-
+    0 ~ 5 s: 유예가 없으면 0, 서클 밖 유예와 같으면 5
+  resolution_paths:
+  - >-
+    VOD: 빠른 탑승 중인 참가자의 속도 대비 HP 타임라인.
+U-0114:
+  question: >-
+    존이 'split apart'할 수 있습니다: 세이프 존이 여럿일 때 'leave a safezone' 피해는 모든 존의 밖에 있을 때(A) 발동합니까, 아니면 마지막으로 있던 존을 떠날 때(B) 발동합니까?
+  why_it_matters: >-
+    두 존 사이를 건너는 것이 손실인지를 결정하며, 존이 갈라질 때 핵심입니다.
+  readings:
+    A: >-
+      위치가 어느 세이프 존 안에도 없을 때만 피해 시계가 흐릅니다
+    B: >-
+      존을 떠날 때 피해 시계가 흐르고, 어느 존에든 다시 들어가면 재시작됩니다
+    C: >-
+      피해 시계는 참가자마다 지정된 하나의 존에 묶입니다
+  resolution_paths:
+  - >-
+    VOD: 존이 갈라지는 이벤트와 두 존 사이를 건너는 참가자.
+  - >-
+    주최 측 설명.
+U-0115:
+  question: >-
+    독: 첫 1 HP가 즉시 들어갑니까, 1min 30s 뒤입니까, 아니면 고정된 전역 90 s 위상입니까?
+  why_it_matters: >-
+    어느 시점에서 끊어도 총 피해가 1 HP 달라지며, 해독 수단의 가치가 달라집니다.
+  readings:
+    A: >-
+      중독 후 t = 90 s에 첫 틱, 이후 90 s마다
+    B: >-
+      t = 0에 첫 틱, 이후 90 s마다
+    C: >-
+      중독 시작과 무관하게 전역 90 s 격자에 따라 틱
+  resolution_paths:
+  - >-
+    VOD: Poison Dart에 맞은 뒤 시계가 있는 중독 참가자의 HP.
+U-0116:
+  question: >-
+    독 'Getting poisoned again resets the timer, it doesn't stack': 초기화는 90 s 카운트다운만 다시 시작합니까, 아니면 아직 가해질 남은 총 피해도 복원합니까? 총량은 얼마입니까?
+  why_it_matters: >-
+    재중독은 무한 연장(총량 복원)일 수도, 단순 지연일 수도 있으며, 페이지에는 총량이 주어져 있지 않습니다.
+  readings:
+    A: >-
+      카운트다운이 다시 시작되고 남은 피해는 그대로입니다
+    B: >-
+      카운트다운과 남은 피해가 모두 전체 총량으로 다시 시작됩니다
+    C: >-
+      카운트다운이 다시 시작되고 남은 피해는 max(remaining, new total)입니다
+  sweep_range: >-
+    1 ~ 40 HP: 하한은 1틱, 상한은 어느 페이지에서든 확인된 가장 큰 총량(20 HP)의 두 배이며 스윕 선택입니다
+  resolution_paths:
+  - >-
+    VOD: 두 번 중독된 참가자의 시간 대비 손실 HP.
+  - >-
+    아이템/공격 페이지가 독 한 가지 출처의 총량을 제시하므로 비교합니다.
+U-0117:
+  question: >-
+    Shield 또는 Safety bubble은 'blocks each poison step while it lasts': 막힌 단계는 소모됩니까('all its damage'에 산입), 아니면 건너뜁니까(독이 연장)? 보호받는 동안 카운트다운은 계속됩니까?
+  why_it_matters: >-
+    일시적 방어가 독을 무효로 하는지, 잠시 멈출 뿐인지를 결정합니다.
+  readings:
+    A: >-
+      막힌 단계는 소모됩니다: 남은 단계가 줄어들고 HP는 잃지 않습니다
+    B: >-
+      막힌 단계는 건너뜁니다: 남은 단계는 그대로이며 독이 연장됩니다
+    C: >-
+      보호받는 동안 독 타이머가 멈춥니다
+  resolution_paths:
+  - >-
+    VOD: 중독된 참가자가 bubble에 들어갔다 나오는 장면.
+U-0118:
+  question: >-
+    'Sleeping in your own Sleeping Bag'은 Poison 면역 목록에 동사 없이 라벨로만 나옵니다: 새 독을 막습니까, 각 단계를 막습니까, 둘 다입니까?
+  why_it_matters: >-
+    라벨의 의미에 따라 자는 사람이 아예 중독될 수 있는지가 달라집니다(다트는 여전히 중독시키고 단계는 막힘). Poison에 대해 Sleeping Bag을 나열한 피해 표의 행을 참조하십시오.
+  readings:
+    A: >-
+      자신의 bag에서 자는 동안 새 독이 없습니다(Anti poison과 같음)
+    B: >-
+      자는 동안 기존 및 새 독 단계가 막힙니다(Shield와 같음)
+    C: >-
+      둘 다
+  resolution_paths:
+  - >-
+    VOD: 자고 있는 참가자에게 쓴 Poison Dart.
+U-0119:
+  question: >-
+    Death Ward: 2 min의 면역은 첫 번째로 막은 타격에서 시작합니까, 시길을 선택한 때 시작합니까? 'Cooldown 2h'는 활성화 시점에 시작합니까, 2 min이 끝난 때 시작합니까? 그리고 Ward는 쿨다운당 한 번만 사용할 수 있습니까?
+  why_it_matters: >-
+    Death 참가자가 서클 밖 피해를 얼마나 자주 무시할 수 있는지를 정합니다.
+  readings:
+    A: >-
+      2 min 윈도는 첫 번째로 막은 타격에서 시작하며, 쿨다운 2 h는 그 시점부터입니다
+    B: >-
+      2 min 윈도는 참가자의 활성화로 시작하며, 쿨다운 2 h는 활성화 시점부터입니다
+    C: >-
+      쿨다운은 2 min 윈도가 끝날 때 시작합니다
+  resolution_paths:
+  - >-
+    VOD: 첫 서클 밖 타격 이후의 Death 참가자.
+  - >-
+    이 기록에 대조해 읽는 Death 시길 페이지(패밀리 교차).
+U-0120:
+  question: >-
+    한 번의 타격에 여러 방어 수단(Shield, Safety bubble, Flak jacket, Sleeping Bag, Reality Shield, Protection)이 적용될 때, 어느 것이 'blocker'이고 어떤 아이템이 소모됩니까? 명시된 유일한 규칙은 'a hit already blocked by something else does not use [the Flak jacket] up'입니다.
+  why_it_matters: >-
+    소모품을 겹쳐 쓰면 낭비되는지, 어떤 방어를 먼저 장착해야 하는지를 결정합니다.
+  readings:
+    A: >-
+      고정된 우선순위가 있고, 적용 가능한 첫 번째 차단 수단만 소모됩니다
+    B: >-
+      적용 가능한 차단 수단이 모두 소모됩니다
+    C: >-
+      소모되지 않는 차단 수단(면역)이 소모품보다 우선하며, 소모품은 다른 것이 막지 않을 때만 소모됩니다
+  resolution_paths:
+  - >-
+    VOD: Flak jacket과 Shield를 가진 참가자에 대한 타격.
+  - >-
+    REA: 배포된 타격 판정 로직.
+U-0121:
+  question: >-
+    자해 타격('hit by your own C4 and landmine'): 공격자 = 방어자로 전체 파이프라인이 실행되어 Kick 보너스(2단계)와 Kick 감소(4단계)가 포함됩니까? 그리고 자신이 가진 차단 수단(Protection, Shield)이 적용됩니까?
+  why_it_matters: >-
+    자신 근처에서 폭발시키는 것의 실제 비용을 결정합니다.
+  readings:
+    A: >-
+      전체 파이프라인, 공격자 보너스와 방어자 감소가 모두 적용되고 Mirror는 건너뜁니다(자기 폭발물에는 절대 적용되지 않음)
+    B: >-
+      자해 타격에는 Kick 보너스가 없습니다
+    C: >-
+      자신이 가진 Protection 또는 Shield가 있으면 무해합니다
+  resolution_paths:
+  - >-
+    VOD: 라이브 중인 참가자의 자폭.
+U-0122:
+  question: >-
+    Wiki-damage-002는 'Reality Shield block every kind of damage. absorbs every kind of damage.'(뒤섞임)로 되어 있습니다: 어느 문장이 어느 아이템의 것입니까(Reality Shield는 모든 종류를 막고, Body armor는 모든 종류를 흡수)?
+  why_it_matters: >-
+    Reality Shield가 모든 피해를 막는다는 유일한 진술이며, 표에는 나열되어 있지 않습니다.
+  readings:
+    A: >-
+      Reality Shield는 모든 종류의 피해를 막고, Body armor는 모든 종류의 피해를 흡수합니다(표의 설명문)
+    B: >-
+      Reality Shield는 Shield 주석이 제외하는 것을 뺀 모든 종류의 피해를 막습니다
+  resolution_paths:
+  - >-
+    렌더링된 페이지를 다시 가져와 머리글 텍스트 확인.
+  - >-
+    아이템 페이지의 Reality Shield 섹션.
+U-0123:
+  question: >-
+    피해 표의 Hazmat suit '(slows)': 느려짐은 존 피해, 언세이프 서클(unsafe circle) 피해, Robot 피해에 어떤 영향을 줍니까(틱 간격 배수, 피해 비율)?
+  why_it_matters: >-
+    계수가 없으면 존 생존 면에서 Hazmat suit을 Body armor와 비교해 가격을 매길 수 없습니다.
+  readings:
+    A: >-
+      틱 간격에 배수를 곱합니다(틱이 줄어듦)
+    B: >-
+      시간에 따라 각 틱이 1 HP 미만으로 줄어듭니다(분수 누적)
+    C: >-
+      이동만 느려지고 피해는 느려지지 않습니다
+  sweep_range: >-
+    틱 간격의 1.0 ~ 4.0배: 1.0은 효과 없음, 4.0은 'slows'에 대한 상한 추측이며 스윕 선택입니다
+  resolution_paths:
+  - >-
+    아이템 페이지의 Hazmat suit 섹션(패밀리 교차).
+U-0124:
+  question: >-
+    묘비 위치 'where you were last seen': 사망 순간의 위치입니까, 마지막으로 수신된 GPS 위치입니까?
+  why_it_matters: >-
+    GPS가 없는 사망(오프라인)과 루팅하는 사람의 10 m 식 범위에서 중요합니다.
+  readings:
+    A: >-
+      사망 시 위치
+    B: >-
+      사망 전 마지막으로 수신된 GPS 위치
+  resolution_paths:
+  - >-
+    VOD: 오프라인 참가자의 사망.
+U-0125:
+  question: >-
+    Blood crown: 처치 시점에 누가 이를 'held'했습니까(처치 이전인지, 같은 처치로 이전된 이후인지), 그리고 어떻게 얻고 잃습니까?
+  why_it_matters: >-
+    25 대 50 토큰 지급이 이에 달려 있으며, 이 조항 집합의 페이지에는 crown 규칙이 없습니다.
+  readings:
+    A: >-
+      처치가 확정되기 전의 보유자 상태를 읽습니다
+    B: >-
+      crown 이전이 확정된 후의 보유자 상태를 읽습니다
+  resolution_paths:
+  - >-
+    주최 측 설명. crown을 설명하는 페이지(패밀리 교차).
+U-0200:
+  question: >-
+    C4, landmine, 화살 외에 어떤 아이템이 한 슬롯에 중첩됩니까(Piety가 아닌 체력 물약, mirror forcefield, 기타)?
+  why_it_matters: >-
+    인벤토리 공간은 3 슬롯이므로, 중첩 규칙이 방어 수단과 물약이 몇 개 들어가는지를 결정합니다.
+  readings:
+    A: >-
+      명시된 C4, landmine, 화살만 중첩됩니다
+    B: >-
+      다른 종류도 중첩됩니다(목록은 열려 있음: 'such as')
+  resolution_paths:
+  - >-
+    VOD: 인벤토리가 가득 찬 상태에서 두 번째 mirror forcefield 또는 체력 물약을 줍는 참가자.
+  - >-
+    무기 페이지의 중첩 크기는 한 중첩당 5와 10입니다.
+U-0201:
+  question: >-
+    여러 mirror forcefield는 하나의 효과로 셉니까, 아니면 각각 효과 3개 상한에 하나씩 산입됩니까?
+  why_it_matters: >-
+    상한 3 아래에 mirror가 몇 개 들어가는지와 Shield 및 Flak jacket을 위해 남는 자리를 결정합니다.
+  readings:
+    A: >-
+      각 mirror를 따로 셉니다
+    B: >-
+      모든 mirror가 하나의 효과로 셉니다
+    C: >-
+      들고만 있고 'used'하지 않은 mirror는 활성화되기 전까지 세지 않습니다
+  resolution_paths:
+  - >-
+    VOD: mirror 두 개를 든 참가자가 상한 상태에서 세 번째 효과 아이템을 사용하는 장면.
+U-0202:
+  question: >-
+    상한 목록에 명시되지 않은 효과는 어떻게 동작합니까: EMP(10min), Thermal goggles(소지), Body armor, Sleeping Bag, 체력 물약? 그리고 상한 상태에서 Hazmat suit을 주우면 어떻게 됩니까?
+  why_it_matters: >-
+    상한의 'count' 및 'do not count' 목록은 모든 아이템을 다루지 않으며, 장비 구성 계획이 여기에 달려 있습니다.
+  readings:
+    A: >-
+      명시된 아이템만 세며, EMP와 goggles는 세지 않습니다
+    B: >-
+      EMP는 시간제 아이템 효과로 세고, goggles는 Hazmat suit처럼 소지하는 동안 셉니다
+    C: >-
+      상한에서는 Hazmat suit 줍기가 거부됩니다
+  resolution_paths:
+  - >-
+    VOD: 효과 3개를 가진 참가자가 EMP를 사용하거나 goggles 또는 Hazmat을 줍는 장면.
+U-0203:
+  question: >-
+    체력 물약, bandage 틱, Eddie의 회복은 최대 HP로 제한됩니까?
+  why_it_matters: >-
+    최대치를 넘는 회복 문제는 높은 HP에서 물약이 낭비되는지, Eddie의 회복이 일부 손실되는지를 결정합니다.
+  readings:
+    A: >-
+      hp = min(maxHP, hp + h)
+    B: >-
+      hp가 최대 HP를 넘을 수 있습니다
+  resolution_paths:
+  - >-
+    VOD: 가득 찬 HP 또는 그에 가까운 HP에서 물약을 마시는 장면.
+  - >-
+    Healing 페이지는 재생이 'up to your max HP'까지라고 합니다(명시된 곳은 여기뿐).

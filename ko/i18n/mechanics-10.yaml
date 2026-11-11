@@ -1,0 +1,640 @@
+M-0509:
+  name: >-
+    Greed 훔치기 행동
+  quotes:
+  - >-
+    훔치기: 10m (33ft) 이내의 참가자에게서 원하는 아이템 하나를 가져옵니다.
+  - >-
+    장착한 무기와 착용한 Body Armor는 훔칠 수 있습니다.
+  - >-
+    Sleeping Bag은 훔칠 수 없지만, 잠든 참가자에게서는 훔칠 수 있습니다.
+  - >-
+    Piety 플레이어에게서는 훔칠 수 없습니다.
+  readings:
+    A: >-
+      steal(thief, victim, item): dist <= 10 m이고, thief가 Greed를 가지며, victim이 Piety가 아니고, victim이 fortress의 보호를 받지 않으며, item이 victim의 인벤토리에 있거나 장착한 무기 또는 착용한 Body Armor이고, item이 Sleeping Bag이 아닐 것을 요구함. victim은 잠들어 있어도 됨. item을 thief에게 옮김
+  domain: >-
+    미터 단위 dist 0..10 (경계 포함) (원문은 'within 10m'라고 표기)
+  parameters:
+    range_m: >-
+      10
+    items_per_use: >-
+      1
+  notes: >-
+    smoke bomb 안에서는, 그리고 실명 상태에서는 사용할 수 없습니다 (아이템 페이지, 다른 계열). 상인 페이지는 Greed가 피해자가 잠든 동안 다른 아이템을 훔칠 수 있음을 확인합니다. 10 m가 경계를 포함하는지 여부는 명시되어 있지 않으며, 모델은 <=를 사용합니다.
+M-0510:
+  name: >-
+    Greed 훔치기 보상과 쿨다운
+  quotes:
+  - >-
+    훔치기에 성공하면 블러드 토큰 five개를 얻으며, 피해자 한 명당 24시간에 한 번만 가능합니다.
+  - >-
+    쿨다운 30min.
+  readings:
+    A: >-
+      성공한 훔치기마다 블러드 토큰 5개를 보상으로 받으며, 피해자 한 명당 최대 24 h의 롤링 구간에 한 번이고, 훔치기는 30 min마다 가능함
+    B: >-
+      특정 피해자는 도둑에게 24 h당 최대 한 번만 성공적으로 털릴 수 있음
+    C: >-
+      쿨다운 30 min은 어떤 사용에서든 시작되거나, 성공한 뒤에만 시작됨
+  domain: >-
+    초 단위 시간: 쿨다운 1800 s, 구간 86400 s
+  parameters:
+    reward_tokens: >-
+      5
+    per_victim_window_s: >-
+      86400
+    cooldown_s: >-
+      1800
+  notes: >-
+    'Cooldown 30min'은 같은 목록에서 Steal 문장 바로 뒤에 있으므로 훔치기 쿨다운으로 인용했습니다. 서로 다른 피해자는 30 min마다 털 수 있습니다.
+M-0511:
+  name: >-
+    Fortress가 훔치기를 막음
+  quotes:
+  - >-
+    Fortress 보호는 훔치기를 막습니다.
+  - >-
+    Sigil of Greed 훔치기로부터
+  readings:
+    A: >-
+      victim이 활성 fortress의 20 m 이내에 서 있으면 steal(thief, victim)이 실패함
+  domain: >-
+    fortress에 대한 피해자의 위치, 반경 20 m
+  parameters:
+    fortress_radius_m: >-
+      20
+  notes: >-
+    시간에 따른 fortress의 존재 여부(수명, U-0526)에 좌우됩니다. fortress 안에 있는 도둑이 바깥에서 훔칠 수 있는지는 명시되어 있지 않습니다.
+M-0512:
+  name: >-
+    Greed 상자와 보급 상자 도달 거리
+  quotes:
+  - >-
+    2배 더 먼 거리에서 상자를 획득하고 crate를 열거나 가져올 수 있습니다.
+  readings:
+    A: >-
+      claim_range_greed = 2 * claim_range_base (상자 획득 및 crate 열기/가져오기 거리)
+  domain: >-
+    미터
+  parameters:
+    claim_range_base_m: >-
+      UNKNOWN, see U-0510
+    multiplier: >-
+      2
+  notes: >-
+    이 문장에는 보급 상자가 언급되지 않으며, 상자와 crate만 언급됩니다.
+M-0513:
+  name: >-
+    Greed 상자 Shield 확률
+  quotes:
+  - >-
+    획득하는 진짜 상자마다 25% 확률로 20min 동안 Shield를 얻습니다.
+  - >-
+    취약한 상태에서는 확률 판정이 없습니다.
+  - >-
+    Greed 상자 shield
+  readings:
+    A: >-
+      취약하지 않은 상태에서 claim(real chest)하면 확률 0.25로 1200 s 동안 Shield를 부여함. 취약한 동안에는 판정이 없음. 이 Shield는 활성 아이템 효과 3개 제한에 포함되지 않음
+    B: >-
+      기존 Shield와 겹칠 때의 규칙이 정의되어 있지 않음
+  domain: >-
+    진짜 상자 획득 1회당. 20 min = 1200 s
+  parameters:
+    p: >-
+      0.25
+    duration_s: >-
+      1200
+    stack_rule: >-
+      UNKNOWN, see U-0511
+  notes: >-
+    아이템 페이지는 Greed 상자 shield가 3개 제한에 포함되는 활성 아이템 효과가 아니라고 명시하므로, 아이템 사용이 아닙니다. 가짜 상자는 판정하지 않습니다 ('real chest'). Shield를 제거하는 Vulnerability Dart가 이 Shield도 제거하는지는 적혀 있지 않으며, Shield 아이템 문구는 Vulnerability Dart가 이를 제거한다고 말합니다.
+M-0514:
+  name: >-
+    Greed 돈주머니 수입
+  quotes:
+  - >-
+    획득하는 진짜 상자마다, 그리고 가져오는 crate마다 돈주머니에 블러드 토큰 하나가 추가됩니다.
+  readings:
+    A: >-
+      claim(real chest) 또는 take(crate) -> money_bag += 블러드 토큰 1, 돈주머니 = 일반 잔액
+    B: >-
+      돈주머니는 명시되지 않은 시점에 지급되는 별도의 저장소임
+  domain: >-
+    진짜 상자 획득 1회당, 그리고 crate를 가져올 때마다
+  parameters:
+    tokens_per_claim: >-
+      1
+    money_bag_semantics: >-
+      UNKNOWN, see U-0512
+  notes: >-
+    Greed의 다른 수입은 훔치기 보상입니다 (M-0510). 가짜 상자는 아무것도 주지 않습니다.
+M-0515:
+  name: >-
+    Ingenuity 기본 최대 HP와 슬롯
+  quotes:
+  - >-
+    최대 HP
+  - >-
+    100 HP
+  - >-
+    슬롯
+  - >-
+    2
+  - >-
+    인벤토리 슬롯 2개와 고유 조합용 별도 슬롯 five개로 시작합니다.
+  - >-
+    Ingenuity는 최대 12에서 멈춥니다.
+  readings:
+    A: >-
+      maxHP = 100. 인벤토리 슬롯 = 2. 인벤토리 슬롯을 쓰지 않는 고유 조합용 별도 슬롯 5개가 추가됨. 상인 슬롯 업그레이드는 합계 12에서 상한
+    B: >-
+      조합 슬롯 5개는 레시피에 관계없이 조합품을 하나씩 담음 (레시피는 6개)
+    C: >-
+      조합 슬롯 5개는 레시피 종류당 조합품 하나를 담고, 같은 종류의 조합품은 중첩됨
+  domain: >-
+    이벤트 시작 시점의 정수 개수
+  parameters:
+    max_hp: >-
+      100
+    inventory_slots: >-
+      2
+    craft_slots: >-
+      5
+    slot_cap_with_upgrades: >-
+      12
+  notes: >-
+    레시피 6개가 조합 슬롯 5개를 공유하며, 조합품이 슬롯을 차지하는 방식은 미해결입니다. 아이템 페이지의 'You can carry up to 3 items'는 일반 기본값이며 시길 값 2로 대체됩니다. 상인 페이지의 상한 12는 2 + 구매 10회와 같으므로 일치합니다.
+M-0516:
+  name: >-
+    Ingenuity 상인 가격 10 퍼센트 인상, 올림
+  quotes:
+  - >-
+    상인 가격은 10% 높으며, 올림합니다.
+  - >-
+    Ingenuity 참가자는 10% 더 지불하며, 올림합니다.
+  readings:
+    A: >-
+      price_I(p) = ceil(11 * p / 10), 정확한 정수
+    B: >-
+      IEEE 754 binary64에서 price_I(p) = ceil(p * 1.1): p=50이면 56, p=90이면 100, p=100이면 111, p=110이면 122 (이 기준 가격에서 A보다 토큰 하나 더 많음)
+  domain: >-
+    p는 블러드 토큰 단위의 양의 정수 기본 가격, 예: 10, 12, 15, 20, 25, 30, 40, 50 및 단계적으로 오르는 40+10k 업그레이드
+  parameters:
+    markup: >-
+      10%
+    rounding: >-
+      올림
+  notes: >-
+    이 기록은 Ingenuity 쪽 진술이며, 상인 페이지가 같은 문장을 반복합니다 (같은 의미, 불일치 없음). 기본 가격: Care package 10, Anti poison 12, Vulnerability Dart 25, Sleeping Bag 30, Missile 10, Dual Wield 50, Deep Cut 20, 무기 인챈트 15, 방어구 인챈트 30, 슬롯과 HP 업그레이드는 40부터 (상인 페이지). 인상이 업그레이드에도 적용되는지는 'Merchant prices'라는 표현으로 정해집니다.
+M-0517:
+  name: >-
+    Ingenuity의 가짜와 함정 탐지, landmine과 C4 해킹
+  quotes:
+  - >-
+    50m (164ft) 이내에서 가짜 상자와 묘비를 알아보고, 함정을 보고, landmine 또는 C4를 해킹합니다.
+  readings:
+    A: >-
+      e in {fake chest, fake gravestone, trap, landmine, C4}에 대해: dist <= 50일 때에 한해 Ingenuity가 e를 올바르게 봄. dist <= 50일 때에 한해 hack(e) 허용
+    B: >-
+      해킹만 50 m로 제한됨. 알아보기와 함정 시야에는 거리 제한이 없음
+    C: >-
+      알아보기와 시야는 맵 전체. 해킹은 50 m 이내
+  domain: >-
+    미터 단위 dist 0..50
+  parameters:
+    radius_m: >-
+      50
+    hack_effect: >-
+      UNKNOWN, see U-0514
+  notes: >-
+    다른 페이지: Landmine 페이지는 Sigil of Ingenuity가 설치된 landmine을 항상 본다고 말하며, Black hole은 가짜 상자도 파괴합니다. Ingenuity는 해킹마다 블러드 토큰 하나를 얻습니다.
+M-0518:
+  name: >-
+    Ingenuity 포션 합치기
+  quotes:
+  - >-
+    같은 포션 두 개를 합쳐 다음 크기로 만들며, gigantic까지 가능합니다.
+  readings:
+    A: >-
+      tier(p1) = tier(p2) < gigantic인 combine(p1, p2) -> 다음 등급의 포션 하나
+    B: >-
+      같은 종류의 같은 포션 두 개는 무엇이든 합쳐짐
+  domain: >-
+    등급 small < medium < large < gigantic. 회복량 5, 10, 20, 40 (아이템 페이지)이므로 합쳐도 손실 없음
+  parameters:
+    results: >-
+      small+small=medium; medium+medium=large; large+large=gigantic (합치기 결과)
+  notes: >-
+    비용이나 쿨다운은 명시되어 있지 않습니다. Campfire와 Everything potion의 재료로 쓰입니다. 합친 포션이 풀 또는 회복량을 정합니다.
+M-0519:
+  name: >-
+    Ingenuity 함정 선물
+  quotes:
+  - >-
+    아이템에 landmine 또는 C4를 붙여 함정 선물을 만듭니다. 16h에 한 번 가능합니다.
+  - >-
+    함정이라는 것은 본인만 볼 수 있습니다.
+  readings:
+    A: >-
+      attach(trap in {landmine, C4}, item) -> 함정 선물. 공유 쿨다운 하나 16 h = 57600 s. 소유자만 함정임을 볼 수 있음
+    B: >-
+      landmine과 C4에 각각 별도의 16 h 쿨다운이 있음
+    C: >-
+      다른 Ingenuity 참가자도 이를 볼 수 있음
+  domain: >-
+    초 단위 시간
+  parameters:
+    cooldown_s: >-
+      57600
+    trap_types: >-
+      landmine, C4
+  notes: >-
+    C4 페이지는 C4가 '보유한 다른 아이템'에 붙는다고 말하고, Landmine 페이지는 '자신에게 사용하는 아이템'에 붙는다고 말하며, 각각 16h에 한 번을 반복합니다. 피해량(C4 23 HP, landmine 11 HP)은 무기 페이지에 있으며 여기에는 기록하지 않았습니다. 함정 선물은 Body armor를 무시하고 Safety bubble을 통해서도 소지자에게 피해를 줍니다 (아이템 페이지).
+M-0520:
+  name: >-
+    Ingenuity 고유 조합품 제한과 좀비에 의한 파괴
+  quotes:
+  - >-
+    고유 조합품은 거래, 훔치기, 루팅이 불가능하며 좀비 타격으로 파괴될 확률이 40%입니다.
+  - >-
+    조합한 아이템이 파괴될 확률 40%
+  readings:
+    A: >-
+      조합품 c: 거래 불가, 훔치기 불가, 루팅 불가. 좀비의 흡수 타격마다 모든 조합품에 대해 확률 0.40으로 파괴
+    B: >-
+      좀비 타격마다 한 번 판정하며 확률 0.40으로 무작위 조합품 하나를 파괴
+    C: >-
+      좀비와의 접촉 1회당 0.40 판정 한 번
+  domain: >-
+    판정당 확률 0.4. 좀비당 타격 빈도는 10 s에 흡수 1회 (가드 좀비는 5 s에 2 HP)
+  parameters:
+    p_destroy: >-
+      0.4
+    roll_unit: >-
+      UNKNOWN, see U-0518
+  notes: >-
+    Ingenuity 페이지와 좀비 페이지는 40%에서 일치합니다 ('unique crafts'와 'crafted items'는 같은 집합). Greed는 이를 훔칠 수 없으며, Black hole과 Fortress도 조합품입니다. 'looted'는 조합품이 묘비 루팅에 들어가지 않음을 암시하지만, 사망 시 운명은 명시되어 있지 않습니다.
+M-0521:
+  name: >-
+    Ingenuity 블러드 토큰 수입
+  quotes:
+  - >-
+    조합, 해킹, Black Hole로 파괴한 상자, Campfire가 누구에게든 회복시킨 HP, 처치한 좀비마다 블러드 토큰 하나를 얻습니다.
+  readings:
+    A: >-
+      조합마다 +1 토큰. 해킹마다 +1. Black Hole로 파괴한 진짜 아이템 상자마다 +1. 참가자의 Campfire가 누구에게든 회복시킨 HP마다 +1. Zombie killer로 처치한 좀비마다 +1
+    B: >-
+      Black Hole로 파괴한 상자에는 crate, 보급 상자, 에어드롭, 가짜 상자가 포함됨. 좀비는 수단에 관계없이 처치한 것으로 셈
+  domain: >-
+    이벤트를 발생 건수마다 셈. 상한은 명시되어 있지 않음
+  parameters:
+    per_craft: >-
+      1
+    per_hack: >-
+      1
+    per_chest_black_hole: >-
+      1
+    per_campfire_hp: >-
+      1
+    per_zombie_killed: >-
+      1
+  notes: >-
+    Campfire 항목은 Piety, Trolling과 달리 5 HP당이 아니라 HP당 지급됩니다.
+M-0522:
+  name: >-
+    Ingenuity 조합 레시피
+  quotes:
+  - >-
+    Landmine Drone으로 만듭니다
+  - >-
+    Guardian angel Health potion으로 만듭니다
+  - >-
+    Anti poison Health potion으로 만듭니다
+  - >-
+    Safety bubble Zombie repellent로 만듭니다
+  - >-
+    EMP Mirror forcefield로 만듭니다
+  - >-
+    Shield Body armor로 만듭니다
+  readings:
+    A: >-
+      craft(Robot) = Landmine + Drone; craft(Campfire) = Guardian angel + Health potion; craft(Everything potion) = Anti poison + Health potion; craft(Zombie killer) = Safety bubble + Zombie repellent; craft(Black hole) = EMP + Mirror forcefield; craft(Fortress) = Shield + Body armor; 재료 둘 다 소모됨
+    B: >-
+      재료 하나만 소모됨
+  domain: >-
+    레시피는 라벨에서 읽은 아이템 이름의 순서 없는 쌍
+  parameters:
+    robot: >-
+      Landmine,Drone
+    campfire: >-
+      Guardian angel,Health potion (재료)
+    everything_potion: >-
+      Anti poison,Health potion (재료)
+    zombie_killer: >-
+      Safety bubble,Zombie repellent (재료)
+    black_hole: >-
+      EMP,Mirror forcefield
+    fortress: >-
+      Shield,Body armor
+  notes: >-
+    라벨은 두 재료 이름을 구분자 없이 이어서 나열하므로, 알려진 아이템 이름(Guardian angel, Health potion, Anti poison, Safety bubble, Zombie repellent, Mirror forcefield, Body armor, Landmine, Drone, EMP, Shield)으로 나눕니다. 합친 포션 크기는 Campfire와 Everything potion에 쓰입니다. 조합품은 3개 효과 아이템 제한에 포함되지 않습니다 (아이템 페이지).
+M-0523:
+  name: >-
+    Robot 조합품의 피해와 이동
+  quotes:
+  - >-
+    10분 동안 10m (33ft) 이내의 다른 플레이어에게 2s마다 1 HP의 피해를 줍니다.
+  - >-
+    가만히 두거나 따라갈 플레이어를 골라 1.4m/s (3.13mph)로 따라가게 합니다.
+  readings:
+    A: >-
+      robot은 600 s 동안 활성. 전역 2 s 시계. 틱마다 10 m 이내의 다른 모든 플레이어가 1 HP 피해를 입음. robot은 가만히 있거나 선택한 플레이어를 1.4 m/s로 따라감
+    B: >-
+      대상별 타이머, 첫 타격은 진입 2 s 후
+    C: >-
+      대상별, 첫 타격은 진입 시점이고 이후 2 s마다
+  domain: >-
+    t는 0..600 s. 거리는 미터. 속도 1.4 m/s (3.13 mph)
+  parameters:
+    duration_s: >-
+      600
+    interval_s: >-
+      2
+    damage_hp: >-
+      1
+    radius_m: >-
+      10
+    speed_mps: >-
+      1.4
+    clock: >-
+      UNKNOWN, see U-0527
+  notes: >-
+    'other players'에는 소유자가 제외됩니다. robot은 피해 표(다른 페이지)의 출처이며, 그 피해가 7단계 타격 파이프라인을 거치는지는 U-0002입니다. 상인 아이템으로 참가자가 robot에 목표를 줄 수 있습니다 (아이템 페이지). 차단 수단은 M-0524에 있습니다.
+M-0524:
+  name: >-
+    Robot 피해 차단 수단
+  quotes:
+  - >-
+    Shield와 Sleeping Bag이 막아 줍니다.
+  - >-
+    Shield는 존 피해, 언세이프 서클 피해, robot 피해를 막지 못합니다.
+  - >-
+    Robot | Safety bubble, Hazmat suit (감속), Body armor (흡수)
+  readings:
+    A: >-
+      robot 피해는 Shield와 Sleeping Bag이 막음 (Ingenuity 페이지)
+    B: >-
+      robot 피해는 Shield나 Sleeping Bag이 막지 못함 (피해 페이지). Safety bubble이 막고, Hazmat suit이 감속시키고, Body armor가 흡수함
+  domain: >-
+    방어자 상태별 차단 여부 (참/거짓)
+  parameters:
+    shield_blocks: >-
+      모순, C-0500 참조
+    sleeping_bag_blocks: >-
+      모순, C-0500 참조
+  notes: >-
+    모순 C-0500. 피해 페이지는 robot 피해를 sleeping bag 면역의 예외로도 나열합니다.
+M-0525:
+  name: >-
+    Campfire 조합품
+  quotes:
+  - >-
+    10m (33ft) 이내의 모든 이를 포션의 회복량과 같은 하나의 공유 풀에서 초당 1 HP씩 회복시킵니다.
+  - >-
+    풀이 비거나 10min이 지나면 꺼집니다.
+  - >-
+    Piety와 Protection의 포션 변경은 적용되지 않습니다.
+  readings:
+    A: >-
+      campfire 풀 = 사용한 포션의 회복량 (small 5, medium 10, large 20, gigantic 40 HP, 기본값). 매초 10 m 이내에서 HP가 줄어든 모든 참가자가 +1 HP를 받고 풀은 -1. 풀이 0이 되거나 600 s 후에 끝남
+    B: >-
+      풀은 공유되어 합계로 초당 1 HP를 지급함
+    C: >-
+      범위 안의 모든 참가자가 줄어든 HP와 관계없이 초당 1 HP씩 풀에서 소모함
+  domain: >-
+    풀은 정수 0..40. 지속 시간 600 s
+  parameters:
+    rate_hp_per_s: >-
+      1
+    radius_m: >-
+      10
+    max_duration_s: >-
+      600
+    pool: >-
+      포션의 등급 회복량, Piety +15% 없음, Protection -50% 없음
+    pool_drain: >-
+      UNKNOWN, see U-0520
+  notes: >-
+    Piety와 Protection의 포션 변경은 적용되지 않는다고 명시되어 있으므로, 풀은 등급의 원래 값입니다. Campfire의 회복은 Ingenuity 수입(HP당 토큰 1개)에서 HP로 셈하며, Piety 제외/포함 문제 U-0502에도 해당됩니다. 'Everyone'에는 소유자와 다른 시길이 포함되며, 적은 제외되지 않습니다.
+M-0526:
+  name: >-
+    Everything potion 조합품
+  quotes:
+  - >-
+    독을 치료하고 포션 등급에 따라 회복합니다.
+  readings:
+    A: >-
+      사용 -> 독 치료. 재료인 Health potion의 등급만큼 HP 회복
+    B: >-
+      A와 같고, Anti poison 아이템처럼 600 s의 독 면역도 부여함
+  domain: >-
+    등급은 5, 10, 20, 40 HP
+  parameters:
+    heal: >-
+      재료 포션의 등급
+    immunity: >-
+      UNKNOWN, see U-0521
+  notes: >-
+    독 페이지는 Anti poison, Healing 회복, God's Fruit을 치료 수단으로 나열하며, Everything potion의 치료는 여기에서만 명시됩니다. Anti poison의 독 면역은 10 min 지속됩니다 (아이템 페이지).
+M-0527:
+  name: >-
+    Zombie killer 조합품
+  quotes:
+  - >-
+    10m (33ft) 이내로 다가오는 다음 좀비 ten마리를 죽입니다.
+  - >-
+    시간 제한이 없습니다.
+  - >-
+    Ingenuity Zombie Killer는 열 마리를 죽일 때까지 좀비가 흡수하는 것도 막아 줍니다.
+  readings:
+    A: >-
+      소유자의 10 m 이내로 다가오는 다음 좀비 10마리에 대해: 좀비를 죽임. 10마리가 죽을 때까지 좀비는 소유자를 흡수하지 않음. 만료 없음
+    B: >-
+      사용 시점에 이미 10 m 안에 있던 좀비는 셈에 포함되지 않음
+    C: >-
+      가드 좀비와 무리 좀비는 셈에서 제외됨
+  domain: >-
+    처치 카운터 0..10. 반경 10 m. 시간 제한 없음
+  parameters:
+    kills: >-
+      10
+    radius_m: >-
+      10
+    expiry: >-
+      없음
+  notes: >-
+    좀비 페이지도 같은 좀비 열 마리와 같은 10 m를 반복합니다. 좀비 흡수 범위는 5 m이고 좀비는 1.4 m/s로 추격하므로, 좀비는 흡수하기 전에 10 m에 도달합니다. Ingenuity는 처치한 좀비마다 토큰 1개를 받습니다 (M-0521).
+M-0528:
+  name: >-
+    Black hole 조합품
+  quotes:
+  - >-
+    200m (656ft) 이내의 모든 상자와 crate를 파괴하며, 보급 상자, 에어드롭, 가짜 상자도 포함합니다.
+  readings:
+    A: >-
+      위치 x에서 사용 -> dist(x, c) <= 200 m인 모든 상자와 crate(보급 상자, 에어드롭, 가짜 상자 포함)를 사용 순간에 파괴함
+    B: >-
+      명시되지 않은 시간 동안 지속되는 장
+  domain: >-
+    미터 단위 dist 0..200
+  parameters:
+    radius_m: >-
+      200
+    duration_s: >-
+      UNKNOWN, see U-0523
+  notes: >-
+    어떤 수단으로든 crate를 파괴하면 Trolling에게 지급(누가 생성했든 파괴한 crate당 토큰 1개)될 수 있고, 상자에 대해서는 Ingenuity 토큰도 지급될 수 있습니다 (M-0521).
+M-0529:
+  name: >-
+    Fortress 조합품
+  quotes:
+  - >-
+    20m (66ft) 이내의 모든 이를 최대 30 HP까지, 그리고 Sigil of Greed 훔치기와 존 피해로부터 보호합니다.
+  - >-
+    서 있는 fortress는 누가 지었든 남은 내구도까지 흡수합니다.
+  readings:
+    A: >-
+      x에 있는 fortress: x의 20 m 이내 모든 참가자가 보호됨. 내구도 D = 30을 공유. 타격 6단계가 min(d, D)를 흡수하고 D -= 흡수량. Greed 훔치기도 막음. 존 피해는 완전히 면역
+    B: >-
+      보호받는 참가자마다 30 HP의 흡수
+    C: >-
+      존 피해는 내구도에서 흡수됨
+  domain: >-
+    미터 단위 dist 0..20. D는 정수 0..30
+  parameters:
+    radius_m: >-
+      20
+    durability_hp: >-
+      30
+    duration_s: >-
+      UNKNOWN, see U-0526
+  notes: >-
+    피해 페이지: 'A fortress you stand within absorbs up to its remaining durability, whoever built it' (6단계, Armor 이전). Ingenuity 문구는 세 가지 보호를 나열합니다: HP 흡수, Greed 훔치기, 존 피해.
+M-0530:
+  name: >-
+    Trolling 기본 최대 HP와 인벤토리 슬롯
+  quotes:
+  - >-
+    최대 HP
+  - >-
+    100 HP
+  - >-
+    슬롯
+  - >-
+    3
+  readings:
+    A: >-
+      maxHP_trolling = 100; slots_trolling = 3
+  domain: >-
+    이벤트 시작 시점의 정수 HP와 슬롯 개수
+  parameters:
+    max_hp: >-
+      100
+    slots: >-
+      3
+  notes: >-
+    라벨은 쌍으로 읽습니다 (Max HP 다음 100 HP, Slots 다음 3).
+M-0531:
+  name: >-
+    Trolling 블러드 토큰 수입
+  quotes:
+  - >-
+    다른 플레이어에게 준 피해 5 HP마다, 그리고 누가 생성했든 파괴한 crate마다 블러드 토큰 하나를 얻습니다.
+  readings:
+    A: >-
+      tokens += floor(D_total / 5) (참가자 때문에 다른 플레이어가 잃은 누적 HP 기준), 더하기 누가 생성했든 파괴한 crate당 1
+    B: >-
+      tokens += 타격당 floor(d / 5), 나머지는 버림
+    C: >-
+      D는 방어구, fortress, Kick 감소 이전의 명목 타격을 셈
+    D: >-
+      참가자의 함정이 주는 주기적 피해가 셈에 포함되는지는 U-0529에 따름
+  domain: >-
+    d는 타격당 정수 HP. crate 개수는 정수
+  parameters:
+    hp_per_token: >-
+      5
+    tokens_per_crate: >-
+      1
+    hp_basis: >-
+      UNKNOWN, see U-0528
+    source_scope: >-
+      UNKNOWN, see U-0529
+  notes: >-
+    'other players'에는 Trolling 참가자와 좀비가 제외됩니다. 가짜 상자를 획득하면 5 HP 피해를 주고, Kick 라이브 중인 방어자는 U-0001에 따라 4 또는 5를 받으므로, 해석에 따라 획득 한 번이 토큰 0개 또는 1개를 지급할 수 있습니다.
+M-0532:
+  name: >-
+    가짜 상자 설치
+  quotes:
+  - >-
+    가짜 상자: 롤링 1시간당 최대 2개까지 설치합니다.
+  - >-
+    보급 상자처럼 보입니다.
+  - >-
+    1h 후에 사라집니다.
+  readings:
+    A: >-
+      직전 3600 s 동안 설치가 2회 미만일 때에 한해 place(fake chest) 허용. 보급 상자처럼 보임. 설치 3600 s 후에 사라짐
+    B: >-
+      충전 2개가 1800 s마다 하나씩 회복됨
+    C: >-
+      시계 기준 1시간당 2개
+  domain: >-
+    초 단위 시간
+  parameters:
+    limit: >-
+      2
+    window_s: >-
+      3600
+    lifetime_s: >-
+      3600
+    limit_semantics: >-
+      UNKNOWN, see U-0530
+  notes: >-
+    1 h 동안 지속되므로 해석 A에서 활성 개수는 최대 2입니다. 가짜는 Ingenuity만 알아봅니다 (M-0517). 위치 제약과 표시되는 아이템은 명시되어 있지 않습니다.
+M-0533:
+  name: >-
+    가짜 상자 획득 효과
+  quotes:
+  - >-
+    이를 획득한 참가자는 5 HP 피해를 입고 1h 동안 상자를 획득할 수 없습니다.
+  - >-
+    5 HP를 회복합니다.
+  - >-
+    Shield는 피해는 막지만 잠금은 막지 못합니다.
+  - >-
+    반사된 가짜 상자는 본인 대신 troll이 상자를 획득하지 못하게 잠급니다.
+  readings:
+    A: >-
+      claim(fake chest by contestant v): v가 타격 파이프라인을 거쳐 5 HP 피해를 입음 (Kick 보너스는 troll의 타격에 적용되고, 감소는 v에 적용됨). v는 3600 s 동안 상자를 획득할 수 없음. troll이 5 HP를 회복함. Shield는 피해는 막지만 잠금은 막지 못함
+    B: >-
+      troll은 피해가 막히지 않았을 때만 회복함
+    C: >-
+      잠금은 보급 상자와 crate에도 적용됨
+  domain: >-
+    수정 전 피해 정수 5. 잠금 3600 s
+  parameters:
+    damage_hp: >-
+      5
+    lockout_s: >-
+      3600
+    troll_heal_hp: >-
+      5
+    lockout_scope: >-
+      UNKNOWN, see U-0531
+    heal_condition: >-
+      UNKNOWN, see U-0532
+  notes: >-
+    피해 페이지 행: 가짜 상자는 Shield, Safety bubble, Sleeping Bag, Mirror forcefield(반사), Body armor(흡수)가 막으며, Kick 보너스 목록에 가짜 상자가 포함됩니다. Protection 참가자도 가짜 상자 피해를 입습니다. Mirror forcefield가 있으면 잠금을 포함한 전체 효과가 troll에게 되돌아갑니다 (아이템 페이지).

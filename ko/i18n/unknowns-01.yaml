@@ -1,0 +1,326 @@
+U-0000:
+  question: >-
+    보고된 $5,000 시청자 상금의 출처와 정확한 조건은 무엇입니까?
+  why_it_matters: >-
+    시청자 경제 모델(8.10절)에서 시청자의 목표를 정합니다. 이것이 없으면 시청자 전략은 Cx-Buck당 피해를 최대화하는 것으로만 설정할 수 있습니다.
+  readings:
+    A: >-
+      $5,000 상금은 존재하지 않으며, 시청자 상금은 금액이 정해지지 않은 '상위 3명 시청자' 현금 상금입니다.
+    B: >-
+      $5,000 상금이 존재하며, 아직 찾지 못한 조건이 있습니다.
+  resolution_paths:
+  - >-
+    주최자의 X 게시물을 직접 읽습니다(kil의 로그인된 브라우저 세션이 필요합니다).
+  - >-
+    방송 중 주최자의 발언(VOD 타임스탬프).
+  - >-
+    kil이 SCOPE.md에 추가하는 경우 /events 또는 /safezone/recap 페이지.
+U-0001:
+  question: >-
+    방어자의 Kick 라이브 10% 감소는 결과를 내림하는 것입니까(A), 아니면 제거되는 10%를 내림하는 것입니까(B)?
+  why_it_matters: >-
+    작은 타격마다 최대 1 HP씩 결과가 달라집니다. A에서는 2에서 10까지의 타격이 1 HP를 잃고, B에서는 10 미만의 타격은 변하지 않습니다.
+  readings:
+    A: >-
+      d -> floor(9d/10)
+    B: >-
+      d -> d - floor(d/10)
+  resolution_paths:
+  - >-
+    VOD: 5 HP 타격(활, 칼, 가짜 상자)을 받는 라이브 참가자에게 -4(A) 또는 -5(B)가 표시됩니다.
+  - >-
+    REA: 배포된 코드의 피해 공식(클라이언트 코드에는 공식이 없습니다, RE-0001).
+U-0002:
+  question: >-
+    어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, 로봇, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+  why_it_matters: >-
+    Kick 라이브 감소, 최소 1 HP, fortress와 armor가 주기적 피해와 자해 피해에도 적용되는지를 정합니다.
+  readings:
+    A: >-
+      모든 HP 손실은 타격이며 7단계를 모두 거칩니다.
+    B: >-
+      개별 공격만 타격이며, 주기적 드레인과 비용은 파이프라인을 우회합니다.
+    C: >-
+      원천에 따라 혼합됩니다.
+  resolution_paths:
+  - >-
+    VOD: 존 밖에 있는 라이브 참가자의 2 s 틱당 HP 손실(U-0001의 두 해석 모두에서 1이므로 대신 armor 내구도를 관찰합니다).
+  - >-
+    VOD: 좀비 드레인 또는 독 이후의 armor 내구도.
+U-0003:
+  question: >-
+    존 피해: 세이프 존을 벗어난 뒤 첫 틱은 5 s입니까, 7 s입니까?
+  why_it_matters: >-
+    존 밖에서 사망하기까지의 시간이 2 s 달라집니다(T(100) = 203 s 또는 205 s).
+  readings:
+    A: >-
+      첫 틱은 5 s, 이후 2 s마다
+    B: >-
+      첫 틱은 7 s(5 s 유예 후 2 s 간격 한 번)
+  resolution_paths:
+  - >-
+    존을 벗어나는 참가자를 화면 내 타이머와 함께 담은 VOD.
+U-0004:
+  question: >-
+    Eddie의 물약 30% 손실이 사망을 일으킬 수 있으며, armor, fortress 또는 Kick 상태가 여기에 적용됩니까?
+  why_it_matters: >-
+    물약이 최후의 수단인지, 낮은 HP에서의 자살인지를 정합니다.
+  readings:
+    A: >-
+      손실로 사망할 수 있으며 어떤 보호도 적용되지 않습니다.
+    B: >-
+      손실로 사망할 수 있으며 파이프라인이 적용됩니다(armor가 흡수하고 Kick이 감소시킵니다).
+    C: >-
+      손실로 HP가 1 아래로 내려갈 수 없습니다.
+  resolution_paths:
+  - >-
+    VOD: 최대 HP의 30% 이하인 참가자가 이 물약을 마시는 장면.
+  - >-
+    피해 표는 'Eddie's Potion backfire'를 Shield, Safety bubble, Sleeping Bag, Body armor로 막을 수 있다고 기재하며, 이는 차단에 관해 B를 뒷받침합니다(공식화 예정).
+U-0005:
+  question: >-
+    반사된 타격은 공격자 자신의 파이프라인(면역, 감소, armor)을 거칩니까?
+  why_it_matters: >-
+    armor를 가진 공격자 또는 라이브 공격자를 상대로 한 Mirror forcefield의 가치가 달라집니다.
+  readings:
+    A: >-
+      반사된 타격은 공격자의 전체 파이프라인을 거칩니다.
+    B: >-
+      반사된 타격은 가공 없이 그대로 적중합니다.
+  resolution_paths:
+  - >-
+    VOD: armor를 가진 공격자에게 반사된 타격.
+U-0006:
+  question: >-
+    서버 연산은 정확합니까, 아니면 IEEE 754 binary64입니까(H-0001: Ingenuity 가격이 기본 50, 90, 100, 110일 때)?
+  why_it_matters: >-
+    binary64의 ceil(p*1.1)은 해당 기본 가격에서 블러드 토큰 1개를 더 청구합니다.
+  readings:
+    A: >-
+      정확한 정수 연산
+    B: >-
+      ceil(p * 1.1)을 쓰는 binary64
+  resolution_paths:
+  - >-
+    VOD: Ingenuity 참가자의 상인 화면에서 Dual Wield(기본 50)가 55(A) 또는 56(B)로 표시됩니다.
+U-0007:
+  question: >-
+    Healing 재생: 피해가 30 min 타이머를 초기화합니까?
+  why_it_matters: >-
+    주기적 피해 상황에서 지속 재생 속도를 정합니다.
+  readings:
+    A: >-
+      30 min 고정 시계이며 피해가 이를 초기화하지 않습니다
+    B: >-
+      피해가 타이머를 초기화합니다
+  resolution_paths:
+  - >-
+    VOD: 타격을 받는 Healing 참가자의 한 시간 동안의 HP.
+U-0008:
+  question: >-
+    좀비 30 HP 상한: 좀비 수명당입니까, 조우당입니까, 하루당입니까? 좀비가 죽으면 어떻게 됩니까?
+  why_it_matters: >-
+    좀비 피해 총량의 한계를 정합니다. 조우당이라면 좀비 피해는 무제한이 됩니다.
+  readings:
+    A: >-
+      좀비 수명당, 참가자별
+    B: >-
+      조우당
+    C: >-
+      시간 구간당
+  resolution_paths:
+  - >-
+    VOD: 범위를 벗어난 뒤 참가자와 다시 교전하는 좀비 한 마리.
+U-0009:
+  question: >-
+    Miami의 참가자 수와 이벤트 기간.
+  why_it_matters: >-
+    지평 T, Death 시길의 '20% 이하 생존' 임계값, 그리고 모든 최후 생존자 모델을 정합니다.
+  resolution_paths:
+  - >-
+    주최자의 발언 또는 이벤트 중 라이브 개요 페이지(SCOPE.md P2).
+U-0010:
+  question: >-
+    Wizard staff의 '5 s 동안 총 10 HP': 한 번의 타격입니까, 여러 번의 틱입니까?
+  why_it_matters: >-
+    Kick 보너스, Kick 감소, 최소 1 HP가 한 번만 적용되는지 틱마다 적용되는지를 정합니다.
+  readings:
+    A: >-
+      10 HP 타격 한 번
+    B: >-
+      2 HP 틱 다섯 번
+    C: >-
+      1 HP 틱 열 번
+  resolution_paths:
+  - >-
+    VOD: staff 범위 효과 중의 HP 표시.
+U-0011:
+  question: >-
+    부활 제한 시간: 소개 페이지의 'within 10min of their death'와 Healing 페이지의 'within 10min of the death' 중, 누구의 사망이 제한 시간을 시작시킵니까?
+  why_it_matters: >-
+    문자 그대로 읽으면 'their'는 부활시키는 참가자들을 가리킬 수 있습니다.
+  readings:
+    A: >-
+      죽은 참가자의 사망(유일하게 일관된 해석)
+    B: >-
+      부활시키는 사람의 사망
+  resolution_paths:
+  - >-
+    Healing 페이지의 표현이 A를 뒷받침합니다.
+U-0012:
+  question: >-
+    Kick 라이브 상태는 어떻게 감지되며, 지연은 얼마입니까?
+  why_it_matters: >-
+    스트림이 끊기면 전투 도중 10% 보정이 뒤바뀔 수 있습니다.
+  resolution_paths:
+  - >-
+    주최자의 발언, 전투 중 스트림 재접속이 담긴 VOD.
+U-0013:
+  question: >-
+    events/safe-zone/ 에셋은 규칙이 다른 이전 판에 속합니까?
+  why_it_matters: >-
+    재사용된 콘텐츠와 새 콘텐츠를 구분할 수 있게 됩니다.
+  resolution_paths:
+  - >-
+    RE-0002, corpus/diffs/
+  resolution: >-
+    그렇습니다. 2026년 10월 Austin 판입니다(RE-0002, RE-0005). 규칙 모델과는 무관합니다. 2026-11-11 스냅샷만이 규칙의 출처입니다(프로젝트 소유자 결정, 2026-11-11).
+U-0014:
+  question: >-
+    시청자 공격의 Cx-Bucks 가격은 얼마입니까?
+  why_it_matters: >-
+    가격이 없으면 8.10절은 공격을 Cx-Buck당 피해가 아니라 피해만으로 순위를 매길 수 있고, 왕관 처치 보너스(가격의 20%)는 값을 갖지 못합니다.
+  resolution_paths:
+  - >-
+    SCOPE.md P3(api 경로 'purchasables', 호출하지 않음).
+  - >-
+    시청자 상점의 VOD.
+  - >-
+    상점 페이지, 현재는 범위 밖입니다.
+U-0015:
+  question: >-
+    상자 규칙(종류, 획득 범위, 생성 빈도, 내용물)은 무엇입니까? 상자 페이지는 삭제되었습니다(RE-0004).
+  why_it_matters: >-
+    Piety, Greed, Trolling, Ingenuity의 메커니즘은 모두 상자에 작용하므로, 그 가치는 상자 빈도에 달려 있습니다.
+  resolution_paths:
+  - >-
+    주최자의 발언, 상자 생성 빈도를 관찰한 VOD.
+  - >-
+    SCOPE.md P1(검색 색인에 삭제된 텍스트가 남아 있을 수 있습니다).
+U-0100:
+  question: >-
+    4단계의 'The damage left is rounded down'은 어디에 적용됩니까? Protection 50% 결과에만 적용됩니까, 아니면 모든 감소 이후의 최종 내림 한 번으로 적용되며 Kick 10%는 내림하지 않은 값에서 계산됩니까?
+  why_it_matters: >-
+    Kick 라이브 상태인 Protection 참가자가 nuke를 맞을 때 홀수 피해가 달라집니다. 중간 내림 후 Kick을 적용하는 경우와, 정확한 절반에 Kick을 적용하는 경우의 차이입니다.
+  readings:
+    A: >-
+      x -> floor(x/2) 후, 그 정수에 Kick 감소(U-0001 해석)를 적용
+    B: >-
+      x -> floor(0.9*(x/2)), 최종 내림 한 번만 적용(Kick 비율을 정확한 절반에 적용)
+  resolution_paths:
+  - >-
+    VOD: 라이브 Protection 참가자가 기본 피해가 홀수인 nuke를 맞고, HP 감소량을 읽습니다.
+  - >-
+    REA: 배포된 코드의 피해 공식.
+U-0101:
+  question: >-
+    Body armor가 'absorbs what is left, until it breaks'일 때, 남은 내구도보다 큰 타격은 초과분을 통과시킵니까(A), 아니면 타격 전체가 흡수되고 armor만 부서집니까(B)? 내구도는 흡수한 HP 1당 1씩 줄어듭니까?
+  why_it_matters: >-
+    armor 내구도가 HP 풀(초과분이 통과)인지 타격 횟수인지를 정하며, armor를 가진 모든 참가자의 유효 HP가 달라집니다.
+  readings:
+    A: >-
+      absorbed = min(h, dur); dur -= absorbed; 초과분 h - absorbed가 HP에 도달
+    B: >-
+      if h > 0 and dur > 0: absorbed = h (타격 전체), dur -= h, 0 아래로는 내려가지 않음, dur이 0에 도달하면 armor가 부서지고 초과분은 소실
+    C: >-
+      타격의 크기와 무관하게 타격 1회당 내구도 1 감소
+  resolution_paths:
+  - >-
+    VOD: 내구도가 보이는 armor 착용 참가자가 남은 내구도보다 큰 타격을 받는 장면.
+  - >-
+    REA: 배포된 armor 코드.
+U-0102:
+  question: >-
+    Fortress 단계: 참가자가 여러 fortress 안에 서 있을 때 한 번의 타격을 몇 개의 fortress가 흡수할 수 있으며, 어떤 순서이고, 내구도는 흡수한 HP 1당 1씩 줄어듭니까?
+  why_it_matters: >-
+    중첩된 fortress가 내구도를 합산하는지, 그리고 fortress 내구도가 HP 풀인지를 정합니다.
+  readings:
+    A: >-
+      fortress 하나(가장 가깝거나 먼저 지어진 것)가 min(h, dur)을 흡수하고 dur -= absorbed
+    B: >-
+      범위 안의 모든 fortress가 h = 0이 될 때까지 차례로 흡수
+    C: >-
+      흡수는 HP당이 아니라 타격당
+  resolution_paths:
+  - >-
+    VOD: 겹치는 fortress 두 개 안에 있는 참가자가 타격을 받는 장면.
+  - >-
+    아이템 페이지의 fortress 규칙을 이 단계와 대조해 읽습니다(교차 계열).
+U-0103:
+  question: >-
+    'A hit that gets through always does at least 1 HP'는 7단계 중 5단계입니다. fortress(6단계)와 armor(7단계)가 최종 HP 손실을 여전히 0으로 줄일 수 있습니까?
+  why_it_matters: >-
+    6단계와 7단계가 전부 흡수할 수 있다면 'always at least 1 HP'는 5단계까지만 성립합니다. 최소 1 HP가 최종이라면 armor와 fortress는 아주 작은 타격으로부터 참가자를 완전히 보호할 수 없습니다.
+  readings:
+    A: >-
+      명시된 순서: h5 = max(1, h4) 후 fortress와 armor가 차감하며, 최종 HP 손실은 0이 될 수 있음
+    B: >-
+      최종 HP 손실 = max(1, h7): 최소값이 마지막에 적용됨
+    C: >-
+      최소값은 5단계에 0이 아니고 흡수되지 않은 채 도달한 타격에만 적용
+  resolution_paths:
+  - >-
+    VOD: armor 착용 참가자가 1 HP 원천(존 틱, 독 단계, 감소 이후의 활)을 받는 장면.
+  - >-
+    REA: 배포된 코드의 피해 공식.
+U-0104:
+  question: >-
+    'A final kill pays 25 blood tokens, or 50 if the killer or victim held the blood crown': 누가 지급받으며, 무엇이 처치를 'final'로 만들고, 지급은 언제 이루어집니까?
+  why_it_matters: >-
+    처치로 얻는 블러드 토큰 수입은 전투의 주된 자원 흐름입니다. 수령인과 시점에 따라 부활이 지급을 취소하는지가 정해집니다.
+  readings:
+    A: >-
+      처치한 사람이 결정타 시점에 25를 지급받음(왕관이 있으면 50)
+    B: >-
+      처치한 사람이 부활 제한 시간이 부활 없이 끝난 뒤 지급받음(final = 부활되지 않음)
+    C: >-
+      처치한 사람이 25를 지급받고, 왕관이 관련되면 추가 25가 다른 곳으로 가므로 총 지급액은 50
+  resolution_paths:
+  - >-
+    VOD: 결정타 시점과 10 min 후의 처치자 블러드 토큰 카운터.
+  - >-
+    주최자의 발언.
+U-0105:
+  question: >-
+    'Blood tokens in the grave stay locked while revival is possible': 누구의 토큰이며, 얼마 동안이고, 잠금이 끝나면 어떻게 됩니까?
+  why_it_matters: >-
+    루팅하는 사람(Death 시길 포함)이 묘비에서 토큰을 가져갈 수 있는 시점과, 부활한 참가자가 돌려받는 것을 정합니다.
+  readings:
+    A: >-
+      죽은 참가자의 토큰은 10 min 동안 잠기고 그 후 루팅할 수 있으며, 부활하면 돌려받음
+    B: >-
+      부활이 일어나거나 다른 이유(부활 상한, 강탈)로 부활이 불가능해질 때까지 잠김
+    C: >-
+      처치한 사람에게 지급된 토큰도 제한 시간이 끝날 때까지 묘비에 잠김
+  resolution_paths:
+  - >-
+    VOD: 10 min 전과 후에 루팅된 묘비.
+  - >-
+    Death 시길 페이지의 'first to loot items or blood tokens' 규칙과 대조합니다.
+U-0106:
+  question: >-
+    시청자 왕관 처치 보너스 'equal to 20% of the attack's purchase price': 반올림 규칙, 'kills'가 최종 처치를 뜻하는지 여부, 그리고 여러 시청자가 보유자를 공격했을 때 어느 공격이 해당되는지.
+  why_it_matters: >-
+    이 규칙이 없으면 가격(U-0014)을 알게 되더라도 시청자에게 왕관 처치의 가치를 계산할 수 없습니다.
+  readings:
+    A: >-
+      bonus = floor(0.2*p)
+    B: >-
+      bonus = ceil(0.2*p)
+    C: >-
+      bonus = 0.2*p 그대로(소수 Cx-Bucks 허용)
+  resolution_paths:
+  - >-
+    VOD/화면: 가격이 알려진 공격으로 왕관 처치를 한 뒤 시청자의 Cx-Bucks 잔액.
+  - >-
+    주최자의 발언.

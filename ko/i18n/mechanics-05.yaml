@@ -1,0 +1,403 @@
+M-0224:
+  name: >-
+    EMP는 시청자 아이템을 환불 없이 거부함
+  quotes:
+  - >-
+    환불 없음: EMP 때문에 거부된 시청자 아이템은 사라집니다.
+  readings:
+    A: >-
+      EMP 때문에 거부된 시청자 아이템은 사라지며 가격은 반환되지 않음
+  domain: >-
+    시청자 전송 이벤트
+  notes: >-
+    가격은 U-0014입니다.
+M-0225:
+  name: >-
+    EMP는 어떤 지도도 차단하지 않음
+  quotes:
+  - >-
+    어떤 지도도 차단하지 않습니다.
+  readings:
+    A: >-
+      EMP는 누구의 지도 가시성도 바꾸지 않음
+  domain: >-
+    지도 상태
+M-0226:
+  name: >-
+    Smoke bomb의 범위, 지속 시간, 다른 참가자에 대한 효과
+  quotes:
+  - >-
+    사용 가능
+  - >-
+    50m (164ft) 이내에 있는 다른 참가자의 지도를 20min 동안 차단하고 공격을 막습니다.
+  - >-
+    그 안에 있는 다른 참가자는 전혀 공격할 수 없습니다: 대상 지정 공격, 스태프 구역, C4, landmine, flashbang 모두 불가합니다.
+  readings:
+    A: >-
+      구름 = 터뜨린 위치에 고정된 반지름 50 m의 원판, 20min. 안에 있는 다른 참가자는 지도가 차단되고 공격할 수 없음 (대상 지정 공격, 스태프 구역, C4, landmine, flashbang)
+    B: >-
+      동일하나 중심이 사용자를 따라 이동함
+  domain: >-
+    위치는 추상화, t in [0, 1200) 초
+  parameters:
+    radius: >-
+      50 m
+    duration: >-
+      20min
+M-0227:
+  name: >-
+    Smoke bomb 내부에서의 제한
+  quotes:
+  - >-
+    그 안에서는 다른 참가자를 회복하거나 훔칠 수 없고, 거래 요청을 보낼 수 없으며, Vulnerability Dart를 던질 수 없고, 상인 미사일을 발사할 수 없으며, robot에게 목표를 줄 수 없습니다.
+  readings:
+    A: >-
+      구름 안의 다른 참가자는 다음도 할 수 없음: 다른 참가자 회복 또는 훔치기, 거래 요청 보내기, Vulnerability Dart 던지기, 상인 미사일 발사, robot에게 목표 부여
+  domain: >-
+    행동 집합
+M-0228:
+  name: >-
+    Smoke bomb 외부의 대상 지정 차단
+  quotes:
+  - >-
+    밖에 있는 누구도 그 안에 있는 사람을 대상으로 지정할 수 없으며, drone도 마찬가지입니다.
+  readings:
+    A: >-
+      밖에 있는 누구도 구름 안의 사람을 대상으로 지정할 수 없으며, drone도 포함하고 터뜨린 사람도 포함함
+    B: >-
+      터뜨린 사람은 밖에서 여전히 대상으로 지정될 수 있음
+  domain: >-
+    구름 안의 대상 위치
+M-0229:
+  name: >-
+    Smoke bomb 사용자 예외
+  quotes:
+  - >-
+    이를 터뜨린 참가자는 영향을 받지 않으며, 안에 있는 다른 참가자를 포함해 그 안에서 여전히 공격할 수 있습니다.
+  readings:
+    A: >-
+      이를 터뜨린 참가자는 영향을 받지 않으며 안에서 공격할 수 있고, 안에 있는 다른 참가자도 공격 대상에 포함됨
+  domain: >-
+    사용자 불리언
+M-0230:
+  name: >-
+    Smoke bomb과 시청자 지도
+  quotes:
+  - >-
+    시청자는 여전히 지도에서 모든 사람을 봅니다.
+  readings:
+    A: >-
+      시청자는 smoke와 관계없이 지도에서 모든 참가자를 봄
+  domain: >-
+    시청자 화면
+M-0231:
+  name: >-
+    Thermal goggles 대 Smoke bomb
+  quotes:
+  - >-
+    Thermal goggles는 이를 투과해 봅니다.
+  - >-
+    소지하고 있는 동안 smoke bomb은 지도를 차단하지 않고 공격도 막지 않습니다.
+  readings:
+    A: >-
+      goggles 소지: 소지자에게 smoke로 인한 지도 차단과 공격 차단 없음. M-0227의 제한은 여전히 적용됨
+    B: >-
+      goggles 소지: 소지자에게 M-0227의 제한을 포함해 어떤 종류의 smoke 제한도 없음
+  domain: >-
+    소지 불리언
+  notes: >-
+    공격 페이지 (cyclops): 구름 안에서는 Thermal goggles를 갖고 있지 않으면 무기와 drone이 그것을 맞힐 수 없습니다.
+M-0232:
+  name: >-
+    Thermal goggles는 환영 복사본을 간파함
+  quotes:
+  - >-
+    환영도 간파합니다: 참가자의 복사본은 실제 참가자가 아니라 복사본으로 보입니다.
+  - >-
+    Thermal goggles는 이를 복사본으로 보여 줍니다.
+  readings:
+    A: >-
+      소지하는 동안 환영 복사본은 실제 참가자가 아니라 복사본으로 보임
+  domain: >-
+    소지 불리언
+M-0233:
+  name: >-
+    Bandage의 지속 회복
+  quotes:
+  - >-
+    사용 가능
+  - >-
+    2min 동안 10 HP를 회복합니다.
+  - >-
+    피해를 받아도 중단되지 않습니다.
+  readings:
+    A: >-
+      1 HP씩 10틱, 첫 틱은 +12 s, 마지막 틱은 +120 s
+    B: >-
+      1 HP씩 10틱, 첫 틱은 +0 s, 마지막 틱은 +108 s
+    C: >-
+      24 s마다 2 HP씩 5틱
+    D: >-
+      12 s당 1 HP를 소수 단위로 누적하는 연속 회복 (총 120 s)
+  domain: >-
+    t in [0,120] 초. 총 10 HP. 피해는 중단시키지 않음
+  parameters:
+    total: >-
+      10 HP
+    duration: >-
+      2min
+    tick_schedule: >-
+      UNKNOWN, U-0214 참조
+  notes: >-
+    Protection 시길: bandage가 1.1x 더 오래 지속됩니다 (132 s). 총 HP도 바뀌는지는 해당 페이지에 있습니다. 각 틱이 최대 HP에서 상한이 걸리는지는 확실하지 않습니다.
+M-0234:
+  name: >-
+    Bandage는 Deep Cut 출혈을 멈춤
+  quotes:
+  - >-
+    Deep Cut 출혈도 멈춥니다.
+  - >-
+    다음 활, 칼, 장검, 도끼, 마체테 또는 drone 타격이나 Poison Dart는 출혈을 일으킵니다: bandage 또는 Healing 참가자가 치료할 때까지 5분마다 1 HP.
+  readings:
+    A: >-
+      bandage를 사용하면 Deep Cut 출혈이 끝남
+  domain: >-
+    출혈 불리언
+  notes: >-
+    상인 페이지: 출혈은 bandage 또는 Healing 참가자가 치료할 때까지 5분마다 1 HP입니다. 사용 시점에 멈추는지 회복이 끝날 때 멈추는지는 명시되어 있지 않습니다.
+M-0235:
+  name: >-
+    Mirror forcefield는 다음 공격을 반사함
+  quotes:
+  - >-
+    사용 가능
+  - >-
+    다음 공격을 공격자에게 되돌립니다.
+  - >-
+    Mirror forcefield는 대신 타격 전체를 어떤 감소도 적용되기 전에 공격자에게 되돌려 보냅니다.
+  readings:
+    A: >-
+      자신에게 오는 다음 반사 가능한 공격이 타격 전체로, 어떤 감소도 적용되기 전에 공격자에게 되돌아감. 공격자 자신의 파이프라인이 적용됨
+    B: >-
+      반사된 타격은 공격자의 방어를 건너뛰고 그 파이프라인을 우회함
+  domain: >-
+    공격 이벤트
+M-0236:
+  name: >-
+    Mirror forcefield는 중첩됨
+  quotes:
+  - >-
+    여러 개가 중첩됩니다.
+  - >-
+    Mirror Forcefield는 처음으로 반사하는 공격에 소모됩니다.
+  readings:
+    A: >-
+      여러 개의 mirror를 보유할 수 있으며, 반사 1회가 정확히 1개를 소모함
+    B: >-
+      여러 개의 mirror를 보유할 수 있으며, 첫 반사가 전부 소모함
+    C: >-
+      여러 개의 mirror가 연속된 여러 번의 반사를 제공함
+  domain: >-
+    mirror 수 n >= 0
+  notes: >-
+    명시된 경우는 Flashbang뿐입니다: 여러 forcefield가 모두 소모됩니다 (M-0247).
+M-0237:
+  name: >-
+    Mirror 반사 목록
+  quotes:
+  - >-
+    Poison Dart, 가짜 묘비, 칼, Zarok의 도끼, 장검, 마체테, 활, 스태프, drone, C4, landmine, flashbang, 가짜 상자만 반사합니다.
+  - >-
+    Poison Dart, 가짜 묘비, 활, 마법사 스태프, 칼, 장검, Zarok의 도끼, 마체테, drone, C4, landmine, flashbang, 가짜 상자만 반사하며, 자신의 폭발물은 절대 반사하지 않습니다.
+  - >-
+    | Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (반사)
+  readings:
+    A: >-
+      반사 대상 = Poison Dart, 가짜 묘비, 칼, Zarok의 도끼, 장검, 마체테, 활, 스태프, drone, C4, landmine, flashbang, 가짜 상자
+    B: >-
+      A에 trapped gift를 더함 (피해 페이지 표의 Trapped gift 행에 Mirror forcefield (반사)가 있음)
+  domain: >-
+    A의 공격 종류 13가지. trapped gift 여부는 미해결
+  notes: >-
+    아이템 목록과 피해 페이지 문장은 13가지에서 일치하지만, 피해 페이지 표에는 trapped gift가 추가되어 있습니다. C-0200 참조. 피해 페이지에는 또한 자신의 폭발물은 절대 반사하지 않는다고 되어 있습니다.
+M-0238:
+  name: >-
+    Mirror는 가짜 상자를 반사함
+  quotes:
+  - >-
+    반사된 가짜 상자는 당신이 아니라 트롤을 상자에서 잠가 버립니다.
+  readings:
+    A: >-
+      반사된 가짜 상자는 대상이 아니라 트롤을 상자에서 잠금
+  domain: >-
+    가짜 상자 이벤트
+M-0239:
+  name: >-
+    Mirror 대 공격자의 mirror
+  quotes:
+  - >-
+    공격자도 mirror를 갖고 있으면 공격은 아무 효과가 없고 둘 다 소모됩니다. 단 반사된 Poison Dart 또는 가짜 묘비는 예외로, 여전히 공격자를 중독시키며 공격자 자신의 mirror는 남습니다.
+  readings:
+    A: >-
+      공격자도 mirror를 가진 경우: 공격은 아무 효과가 없고 두 mirror 모두 소모됨. 예외로 반사된 Poison Dart 또는 가짜 묘비는 공격자를 중독시키며 그 mirror는 남음 (방어자의 mirror는 사용됨)
+    B: >-
+      예외 변형: 공격자의 mirror는 남고 방어자의 mirror도 유지됨
+  domain: >-
+    양측 모두 mirror를 1개 이상 보유
+M-0240:
+  name: >-
+    Mirror의 지속 시간과 종료
+  quotes:
+  - >-
+    시간 제한 없음.
+  - >-
+    공격을 반사하거나 사망하면 끝납니다.
+  readings:
+    A: >-
+      타이머 없음. 공격을 반사하거나 사망하면 끝남
+  domain: >-
+    mirror 상태
+M-0241:
+  name: >-
+    Mirror는 시청자, 관리자, 존, 좀비 피해를 무시함
+  quotes:
+  - >-
+    미사일, 핵, 가스 같은 시청자 또는 관리자 공격과 존 및 좀비는 절대 반사하지 않습니다.
+  - >-
+    이들은 mirror를 소모시키지 않습니다.
+  readings:
+    A: >-
+      시청자 또는 관리자 공격 (미사일, 핵, 가스), 존 피해, 좀비는 절대 반사하지 않으며, 이들은 mirror를 소모시키지 않음
+  domain: >-
+    피해 출처 종류
+M-0242:
+  name: >-
+    Flak jacket은 폭발 타격 1회를 막음
+  quotes:
+  - >-
+    사용 가능
+  - >-
+    자신에게 오는 다음 미사일, 핵, 공습 또는 건십 타격을 막는 데 사용합니다.
+  - >-
+    타격으로 소모될 때까지 활성 상태로 유지됩니다.
+  - >-
+    Flak jacket은 다음 미사일, 핵, 공습 충격 또는 건십 폭탄을 막고, 그다음 소모됩니다.
+  - >-
+    Flak jacket은 공습 자체는 막지만 불은 막지 못합니다.
+  - >-
+    Flak jacket은 폭탄 1개를 막습니다.
+  readings:
+    A: >-
+      보유자에게 닿는 다음 미사일, 핵, 공습 충격 또는 건십 폭탄을 막고, 그 타격으로 소모됨. 공습의 불은 막지 못함
+    B: >-
+      A와 같으나, Shield/Safety bubble/Sleeping Bag이 이미 막은 타격도 이를 소모함
+    C: >-
+      A와 같으나, 앞서 이미 막힌 타격은 이를 소모하지 않음
+  domain: >-
+    나열된 종류의 타격 이벤트
+  notes: >-
+    아이템 페이지는 '공습 또는 건십 타격'이라고 하고, 공격 페이지는 이를 공습 본 타격과 폭탄 1개로 좁힙니다 (불은 제외).
+M-0243:
+  name: >-
+    Gas mask
+  quotes:
+  - >-
+    사용 가능
+  - >-
+    사용하면 10min 동안 최루 가스에 면역이 됩니다.
+  - >-
+    Gas mask는 최루 가스를 막습니다.
+  readings:
+    A: >-
+      사용 후 10min 동안 최루 가스는 사용자에게 아무 영향이 없음
+  domain: >-
+    t in [0, 600) 초
+  parameters:
+    duration: >-
+      10min
+M-0244:
+  name: >-
+    Flashbang은 주변 참가자의 시야를 차단함
+  quotes:
+  - >-
+    사용 가능
+  - >-
+    30m (98ft) 이내의 다른 모든 참가자를 30s 동안 실명시킵니다.
+  readings:
+    A: >-
+      사용 시: 사용자로부터 30 m 이내의 다른 모든 참가자가 30 s 동안 실명됨. 실명 중 재타격: 연장 없음
+    B: >-
+      실명 중 재타격하면 타이머가 30 s로 초기화됨
+    C: >-
+      실명 중 재타격하면 30 s가 추가됨
+  domain: >-
+    거리 d <= 30 m (경계 포함 여부는 미해결)
+  parameters:
+    radius: >-
+      30 m
+    duration: >-
+      30s
+M-0245:
+  name: >-
+    실명 제한
+  quotes:
+  - >-
+    실명된 참가자는 이동만 할 수 있습니다: 지도를 볼 수 없고, 아이템을 사용, 설치, 조준할 수 없으며, 공격, 훔치기, 루팅, 수령, 조합을 하거나 거래를 시작할 수 없습니다.
+  - >-
+    거래를 닫는 것은 여전히 가능합니다.
+  - >-
+    이미 활성화된 효과는 계속 작동합니다.
+  readings:
+    A: >-
+      실명: 이동만 가능. 지도 보기, 아이템 사용/설치/조준, 공격, 훔치기, 루팅, 수령, 조합, 거래 시작은 불가. 거래 닫기는 가능. 이미 활성화된 효과는 계속 작동함
+  domain: >-
+    실명 불리언
+M-0246:
+  name: >-
+    Flashbang 면역과 막지 못하는 것
+  quotes:
+  - >-
+    Shield와 Safety bubble은 이를 막지 못합니다.
+  - >-
+    잠든 참가자는 면역입니다.
+  - >-
+    65초 동안 잠을 자면 flashbang과 존 및 언세이프 서클 피해를 제외한 모든 피해에 면역이 됩니다.
+  readings:
+    A: >-
+      Shield와 Safety bubble은 이를 막지 못함. 잠든 참가자는 면역
+    B: >-
+      자신의 Sleeping Bag에서 65 s 동안 잠을 잔 뒤에만 면역 (상인 페이지)
+  domain: >-
+    수면 상태, 수면 시간
+  notes: >-
+    C-0203 참조. '잠든 참가자는 면역입니다'와 '65초 동안 잠을 자면 flashbang에 면역이 됩니다'가 충돌합니다.
+M-0247:
+  name: >-
+    Flashbang 대 mirror forcefield
+  quotes:
+  - >-
+    mirror forcefield는 소모되고 대신 당신을 실명시킵니다.
+  - >-
+    여러 forcefield는 모두 소모되지만, 실명은 한 번만 됩니다.
+  readings:
+    A: >-
+      mirror가 소모되고 던진 사람을 실명시킴. 피해자들의 여러 mirror는 모두 소모됨. 던진 사람은 한 번만 실명됨
+    B: >-
+      A와 같고, mirror를 가진 던진 사람은 실명되지 않음 (공격자 mirror 규칙 M-0239이 우선)
+    C: >-
+      A와 같고, mirror를 가진 던진 사람은 실명됨 (flashbang 규칙이 우선)
+  domain: >-
+    mirror를 가진 피해자 m >= 0
+M-0300:
+  name: >-
+    무기 입수처
+  quotes:
+  - >-
+    참가자는 상자, 보급 상자, 크레이트에서 이를 찾습니다.
+  readings:
+    A: >-
+      무기 아이템은 상자, 보급 상자, 크레이트를 통해서만 게임에 들어옴 (다른 곳에 명시된 거래와 상인 보급 상자 포함)
+  domain: >-
+    아이템 획득
+  notes: >-
+    상자, 보급 상자, 크레이트 규칙은 이 페이지에 없습니다 (U-0015). 거래와 상인 보급 상자는 다른 페이지에 명시되어 있습니다.

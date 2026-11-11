@@ -1,0 +1,358 @@
+U-0503:
+  question: >-
+    Piety의 "heal you 15% more, rounded down": 무엇이 내림되며, 최대 HP 상한 적용과 비교해 어느 단계에서 내림됩니까?
+  why_it_matters: >-
+    네 가지 포션 등급은 정확한 산술에서도 binary64에서도 같은 합계(5, 11, 23, 46)를 줍니다. 따라서 미해결인 부분은 HP 상한에서의 연산 순서와 사용되는 기본값입니다.
+  readings:
+    A: >-
+      heal = floor(1.15 * h)이며 h는 등급 값이고, 그다음 부족한 HP로 상한 적용
+    B: >-
+      heal = h + floor(0.15 * h)이고, 그다음 상한 적용 (모든 정수 h에서 A와 동일)
+    C: >-
+      heal = floor(1.15 * min(h, missing HP)): 보너스가 실제 회복량에 적용됨
+  resolution_paths:
+  - >-
+    VOD: 최대 HP보다 1에서 10 HP 낮은 Piety 참가자가 중간 포션을 마시는 장면.
+  - >-
+    VOD: 낮은 HP에서 각 등급을 마신 뒤의 HP 표시 (+5, +11, +23, +46 예상).
+U-0504:
+  question: >-
+    Piety 참가자가 상자나 크레이트에서 얻는 "random health potion"의 크기 분포는 어떠합니까?
+  why_it_matters: >-
+    상자당 기대 회복량과 변환된 포션의 블러드 토큰 가치(토큰 1, 2, 3 또는 4개)는 등급별 가중치에 달려 있으나, 위키는 이를 제시하지 않습니다.
+  readings:
+    A: >-
+      네 등급에 균등 (각 1/4)
+    B: >-
+      작은 등급 쪽으로 치우침 (일반적인 체력 포션 드롭 표처럼)
+    C: >-
+      등급은 대체되는 아이템 또는 상자 종류에 따라 달라짐
+  sweep_range: >-
+    4개의 가중치 각각이 [0,1] 범위이며 합은 1입니다. 균등 벡터(각 0.25)가 기준선이고, 두 극단(모두 작은 등급, 모두 gigantic)이 상자의 가치 범위를 정합니다
+  resolution_paths:
+  - >-
+    VOD: 많은 Piety 획득 사례에서 포션 등급을 집계.
+  - >-
+    주최 측의 발표.
+U-0505:
+  question: >-
+    Piety 상자 변환 범위: "item chests"와 크레이트만 변환됩니까, 아니면 다른 보급 상자(에어드롭, 관리자, 시청자, Endurance)도 포션으로 바뀝니까?
+  why_it_matters: >-
+    상인 보급 상자만 변하지 않는다고 명시되어 있으며, 루팅의 큰 비중을 차지하는 다른 모든 보급 상자에 대해서는 본문이 아무 말도 하지 않습니다.
+  readings:
+    A: >-
+      item chests와 크레이트만 변환되고, 모든 보급 상자는 변하지 않음 (상인 문장은 부연 설명)
+    B: >-
+      상인 것을 제외한 item chests, 크레이트, 모든 보급 상자가 변환됨
+  resolution_paths:
+  - >-
+    VOD: 시청자 또는 에어드롭 보급 상자를 획득하는 Piety 참가자.
+  - >-
+    주최 측의 발표.
+U-0506:
+  question: >-
+    포션 중첩이 이미 6개이거나(또는 인벤토리가 포션을 받을 수 없을 때) Piety가 상자나 크레이트를 획득하면 어떻게 됩니까?
+  why_it_matters: >-
+    상한에서 상자 획득이 비용 없는 행동인지, 그리고 포션이 사라지는지 떨어지는지를 결정합니다.
+  readings:
+    A: >-
+      획득이 거부되고 상자는 그대로 남음
+    B: >-
+      상자가 소모되고 포션은 사라짐
+    C: >-
+      포션이 참가자의 발치에 떨어짐 (공격 페이지의 hunter potion처럼)
+  resolution_paths:
+  - >-
+    VOD: 중첩이 6개로 가득 찬 Piety 참가자가 상자를 획득하는 장면.
+U-0507:
+  question: >-
+    Greed의 "A successful steal earns five blood tokens, once per victim every 24 hours": 24 h 제한은 토큰 지급만 제한합니까, 아니면 훔치기 자체를 제한합니까?
+  why_it_matters: >-
+    지급만 제한된다면 Greed 참가자는 아이템을 노리고 한 피해자에게서 30 min마다 계속 훔칠 수 있습니다. 그렇지 않다면 각 피해자는 같은 도둑에게 하루에 최대 한 개의 아이템만 잃습니다.
+  readings:
+    A: >-
+      같은 피해자에게서의 훔치기는 쿨다운마다 허용되며, 토큰 5개는 피해자당 24 h에 최대 한 번만 지급됨
+    B: >-
+      특정 피해자는 해당 도둑에게 24 h에 최대 한 번만 훔치기에 성공당할 수 있음
+  resolution_paths:
+  - >-
+    VOD: Greed 참가자가 24 h 안에 같은 피해자에게서 두 번 훔치는 장면 (쿨다운 30 min).
+  - >-
+    주최 측의 발표.
+U-0508:
+  question: >-
+    Greed 타이머: 30 min 쿨다운은 모든 훔치기 시도에서 시작됩니까, 아니면 성공한 훔치기에서만 시작됩니까? 그리고 피해자별 24 h 구간은 마지막 지급 시점을 기준(롤링)으로 합니까, 아니면 일일 시계를 기준으로 합니까?
+  why_it_matters: >-
+    실패한 훔치기(fortress, Piety 피해자, 빈 인벤토리)는 30 min을 소모하거나 아무것도 소모하지 않습니다. 일일 시계에서는 초기화 시점 전후의 짧은 시간 안에 두 번 지급될 수 있습니다.
+  readings:
+    A: >-
+      쿨다운은 Steal을 사용하기만 하면 시작되고, 24 h 구간은 해당 피해자에 대한 마지막 지급부터 롤링됨
+    B: >-
+      쿨다운은 성공한 훔치기에서만 시작되고, 24 h 구간은 롤링됨
+    C: >-
+      A 또는 B와 같으나 24 h 구간이 고정된 일일 시각에 초기화됨
+  resolution_paths:
+  - >-
+    VOD: Greed 참가자가 fortress로 보호받는 대상 또는 Piety 대상에게 Steal을 사용한 뒤 다시 시도하는 장면.
+U-0509:
+  question: >-
+    도둑에게 공간이 없을 때의 Greed Steal: 인벤토리가 가득 찼거나, 도둑이 이미 방어구를 가진 상태에서 Body Armor를 훔치면 어떻게 됩니까?
+  why_it_matters: >-
+    Body Armor는 "at most one, including equipped armor"를 허용하므로, 방어구를 착용한 Greed 참가자에게서 이를 훔치는 것은 불가능하거나 방어구 하나를 버리게 됩니다.
+  readings:
+    A: >-
+      도둑이 아이템을 가질 수 없으면 훔치기가 거부됨
+    B: >-
+      아이템이 도둑의 발치에 떨어짐
+    C: >-
+      훔친 아이템이 기존 아이템을 대체하거나 버리게 함
+  resolution_paths:
+  - >-
+    VOD: 인벤토리가 가득 찬 Greed 참가자가 Steal을 사용하는 장면.
+U-0510:
+  question: >-
+    Greed가 두 배로 늘리는("2x as far away") 상자와 크레이트의 기본 획득 범위는 얼마입니까?
+  why_it_matters: >-
+    자료 어디에도 일반 획득 또는 가져가기 범위가 없어서(상자 페이지가 삭제됨) Greed의 사거리는 아직 숫자가 아닙니다.
+  sweep_range: >-
+    2에서 20 m: 위키의 다른 접촉 행동은 10 m(훔치기, 상인, 묘비 루팅, 회복 범위)를 사용하므로 10 m이 중심값이고, 2 m / 20 m은 근접 접촉과 넓은 사거리의 경계입니다
+  resolution_paths:
+  - >-
+    VOD: Greed가 아닌 참가자와 Greed 참가자가 상자를 획득할 수 있는 거리.
+  - >-
+    SCOPE.md P1 (삭제된 상자 페이지).
+U-0511:
+  question: >-
+    Greed 상자 Shield: 참가자가 이미 활성 Shield(아이템 또는 이전 상자 Shield)를 가지고 있으면 어떻게 됩니까?
+  why_it_matters: >-
+    반복된 상자 획득이 보호를 연장하는지, 그리고 Greed 참가자가 얼마나 오래 면역을 유지할 수 있는지를 결정합니다. 위키는 상자 Shield가 3개 효과 제한에 포함되지 않는다고도 말합니다.
+  readings:
+    A: >-
+      새 Shield가 타이머를 20 min으로 갱신함
+    B: >-
+      새 Shield가 남은 시간에 20 min을 더함
+    C: >-
+      Shield가 활성인 동안 새 굴림은 무시됨
+    D: >-
+      독립된 Shield들이 공존함
+  resolution_paths:
+  - >-
+    VOD: Greed 참가자가 Shield 상태에서 두 번째 상자를 획득하는 장면.
+U-0512:
+  question: >-
+    Greed의 "adds a blood token to your money bag": money bag은 일반 블러드 토큰 잔액입니까, 아니면 나중에 지급되는 별도의 저장소입니까?
+  why_it_matters: >-
+    이 용어는 자료에 한 번만 나옵니다. 별도의 bag이라면 상인에게서 토큰을 쓸 수 있는 시점과 토큰이 묘비에 떨어지는지 여부가 달라집니다.
+  readings:
+    A: >-
+      money bag은 일반 잔액이며, 토큰 +1은 즉시 반영되고 사용 가능함
+    B: >-
+      별도 저장소이며 어떤 조건(시간, 상인 방문, 사망)에서 풀림
+    C: >-
+      별도 저장소이며 사망 시 사라지거나 묘비에 잠김
+  resolution_paths:
+  - >-
+    VOD: 상자를 획득한 직후 Greed 참가자의 토큰 카운터.
+  - >-
+    주최 측의 발표.
+U-0513:
+  question: >-
+    Ingenuity의 "Recognize fake chests and gravestones, see traps, and hack landmines or C4 within 50m (164ft)": 50 m 제한은 세 능력 모두에 적용됩니까, 아니면 해킹에만 적용됩니까?
+  why_it_matters: >-
+    가짜 탐지의 범위는 Ingenuity 참가자가 Trolling 함정을 통해 지도의 얼마만큼을 보는지를 결정합니다.
+  readings:
+    A: >-
+      세 능력 모두 50 m 이내에서만 작동함
+    B: >-
+      해킹만 50 m로 제한되고, 가짜 알아보기와 함정 보기에는 명시된 범위가 없음
+    C: >-
+      알아보기와 보기는 소유자에게 지도 전체에 적용되고, 해킹은 50 m 이내
+  sweep_range: >-
+    50 m(기재된 대로)에서 지도 전체까지. 하한은 문자 그대로의 50 m입니다
+  resolution_paths:
+  - >-
+    VOD: 가짜 상자로부터 여러 거리에 있을 때 Ingenuity 참가자의 지도.
+U-0514:
+  question: >-
+    landmine 또는 C4에 대한 "hack"은 무엇을 하며, 제한이 있습니까?
+  why_it_matters: >-
+    Ingenuity는 해킹마다 블러드 토큰 하나를 얻습니다. 그 효과(해제, 탈취, 훔치기)가 적의 폭발물에 대한 대응이 되는지, 아니면 그것을 아군 무기로 바꾸는지를 결정합니다.
+  readings:
+    A: >-
+      해킹이 폭발물을 해제하거나 파괴함
+    B: >-
+      해킹이 Ingenuity 참가자에게 통제권을 넘김 (시길 문구에 "take control of traps"라고 되어 있음)
+    C: >-
+      해킹이 폭발물을 드러내고 Ingenuity 참가자가 집어 들 수 있게 함
+  resolution_paths:
+  - >-
+    VOD: Ingenuity 참가자가 적의 landmine을 해킹하는 장면.
+U-0515:
+  question: >-
+    Ingenuity 포션 합치기: "two matching potions"는 무슨 뜻이며, 비용이나 제한이 있습니까?
+  why_it_matters: >-
+    회복 값은 정확히 더해지므로(5+5=10, 10+10=20, 20+20=40) 합치기는 회복에서 손실이 없지만 2칸 시길에서는 칸을 절약합니다. 제한은 명시되어 있지 않습니다.
+  readings:
+    A: >-
+      같은 크기의 체력 포션 두 개가 다음 크기 하나가 됨 (작은 것에서 중간, 큰 것, gigantic으로). gigantic은 합칠 수 없음
+    B: >-
+      같은 종류의 포션 두 개(Eddie의 포션이나 Anti poison 포함)는 모두 합칠 수 있음
+    C: >-
+      A와 같으나 명시되지 않은 쿨다운 또는 비용이 있음
+  resolution_paths:
+  - >-
+    VOD: Ingenuity 참가자가 포션을 합치는 장면.
+U-0516:
+  question: >-
+    Trapped gift: 16 h 제한은 landmine과 C4 부착이 공유합니까, 그리고 누가 함정을 볼 수 있습니까(소유자만, 아니면 다른 Ingenuity 참가자도)?
+  why_it_matters: >-
+    Ingenuity 페이지는 이 둘에 대해 "once every 16h"라고 하며, C4와 Landmine 페이지는 각각에 대해 이를 반복하고, 한 줄은 "Only you and Sigil of Ingenuity contestants can see it"라고 합니다.
+  readings:
+    A: >-
+      어떤 부착이든 16 h의 단일 공유 쿨다운
+    B: >-
+      C4 부착과 landmine 부착에 각각 별도의 16 h 쿨다운
+    C: >-
+      가시성: 소유자만 함정을 봄
+    D: >-
+      가시성: 소유자와 모든 Ingenuity 참가자가 봄
+  resolution_paths:
+  - >-
+    VOD: Ingenuity 참가자가 16 h 안에 landmine을 부착한 뒤 C4를 부착하는 장면.
+  - >-
+    VOD: 두 번째 Ingenuity 참가자가 trapped gift를 살펴보는 장면.
+U-0517:
+  question: >-
+    Ingenuity 조합: 명시된 재료 두 개가 모두 소모됩니까, 조합 하나가 5개 조합 칸 중 하나를 차지합니까, 그리고 레시피 6개가 5칸에 어떻게 맞습니까?
+  why_it_matters: >-
+    레시피는 6개이고 조합 칸은 5개입니다. 같은 종류의 조합이 중첩되는지, 재료가 돌아오는지가 몇 개의 조합을 보유할 수 있는지를 결정합니다.
+  readings:
+    A: >-
+      재료 두 개가 모두 소모되고, 각 조합은 5개 조합 칸 중 하나를 차지하며, 칸이 가득 찰 때까지 같은 레시피를 반복해서 조합할 수 있음
+    B: >-
+      조합은 한 칸 안에서 종류별로 중첩됨
+    C: >-
+      재료 하나만 소모됨
+  resolution_paths:
+  - >-
+    VOD: 조합 인벤토리가 가득 찬 Ingenuity 참가자가 조합하는 장면.
+  - >-
+    주최 측의 발표.
+U-0518:
+  question: >-
+    고유 조합의 "40% chance to be destroyed by Zombie hits": 굴림은 흡수 타격마다, 좀비마다, 아니면 조합마다 이루어지며, 막힌 타격도 굴립니까?
+  why_it_matters: >-
+    좀비 근처에서 조합의 기대 수명을 정합니다. 좀비는 10 s마다(가드 좀비는 5 s마다) 흡수하므로, 타격마다 굴리면 거의 모든 조합이 빠르게 파괴됩니다.
+  readings:
+    A: >-
+      각 흡수 타격이 보유한 조합마다 한 번씩 굴리며 각각 40%
+    B: >-
+      각 흡수 타격이 한 번 굴리고 무작위 조합 하나를 파괴함
+    C: >-
+      좀비와의 조우당 한 번 굴림
+    D: >-
+      A 또는 B와 같으나 Shield, 퇴치제 또는 버블에 막힌 타격은 굴리지 않음
+  resolution_paths:
+  - >-
+    VOD: 좀비 근처에서 여러 조합을 가진 Ingenuity 참가자.
+U-0519:
+  question: >-
+    Ingenuity 수입: "craft, hack, chest destroyed by Black Hole, HP your Campfire heals on anyone, or zombie killed"에 무엇이 포함됩니까?
+  why_it_matters: >-
+    크레이트, 보급 상자, 에어드롭, 가짜 상자도 Black Hole에 파괴되지만 "chest"만 적혀 있습니다. "zombie killed"는 누구의 처치인지 말하지 않으며, Campfire HP는 명목값일 수도 실효값일 수도 있습니다.
+  readings:
+    A: >-
+      zombie killed = 참가자의 Zombie killer가 처치한 좀비. chests = 실제 아이템 상자만. Campfire HP = 실제로 회복된 HP (HP가 가득 찬 주변인은 아무것도 지급하지 않음)
+    B: >-
+      zombie killed = 참가자가 어떤 수단으로든 처치한 좀비. chests = Black Hole이 파괴하는 모든 상자, 크레이트, 보급 상자, 가짜 상자. Campfire HP = 소모된 풀
+    C: >-
+      항목마다 혼합
+  resolution_paths:
+  - >-
+    VOD: 여러 보관함 근처에서 Black Hole이 터진 뒤 Ingenuity 참가자의 토큰 카운터.
+U-0520:
+  question: >-
+    Campfire 공유 풀: 여러 사람이 있을 때 풀은 어떻게 소모되며, HP가 가득 찬 주변인도 회복됩니까?
+  why_it_matters: >-
+    "Heals everyone within 10m 1 HP per second from one shared pool"은 대상 N명에 대해 풀 소모가 N HP/s라는 뜻일 수도, 전체 1 HP/s라는 뜻일 수도 있습니다. 풀은 포션의 회복량(5, 10, 20, 40 HP)과 같지만 10 min 상한도 있으므로 gigantic 포션은 40 HP만 줍니다.
+  readings:
+    A: >-
+      범위 안에서 HP가 부족한 사람마다 풀에서 초당 1 HP를 가져감 (풀은 N HP/s로 소모됨)
+    B: >-
+      풀은 범위 안의 사람들에게 나누어 합계 초당 1 HP를 지급함
+    C: >-
+      범위 안의 모든 사람이 해당되며, HP가 가득 찬 사람도 각각 1 HP/s를 소모함
+  resolution_paths:
+  - >-
+    VOD: 범위 안에 참가자가 1명, 이어서 2명 있는 Campfire.
+U-0521:
+  question: >-
+    Everything potion의 "Cures poison and heals by potion tier": Anti poison의 10 min 독 면역도 부여합니까?
+  why_it_matters: >-
+    레시피는 Anti poison과 Health potion을 사용하며, Anti poison 아이템은 10 min 면역을 줍니다.
+  readings:
+    A: >-
+      독을 치료하고 등급만큼만 HP를 회복함
+    B: >-
+      10 min의 독 면역도 부여함
+  resolution_paths:
+  - >-
+    VOD: Ingenuity 참가자가 포션을 사용한 뒤 중독되는 장면.
+U-0522:
+  question: >-
+    Zombie killer의 "Kills the next ten zombies that come within 10m": 사용 시점에 이미 10 m 안에 있는 좀비도 죽입니까, 어떤 좀비 유형이 포함되며, 범위 안에 열 마리를 넘으면 어떻게 처리됩니까?
+  why_it_matters: >-
+    이 조합이 무리(좀비 50마리)로부터 지켜 주는지, 아니면 도착하는 열 마리에게만 작동하는지를 결정합니다. 가드 좀비와 무리가 포함되는지도 결정합니다.
+  readings:
+    A: >-
+      10 m 안으로 들어오거나 이미 안에 있는 첫 열 마리(유형 무관)를 도착 순간마다 한 마리씩 죽임
+    B: >-
+      사용 후에 10 m 안으로 들어온 좀비만 해당하며, 이미 안에 있는 좀비는 세지 않음
+    C: >-
+      가드 좀비와 무리 좀비는 제외됨
+  resolution_paths:
+  - >-
+    VOD: 무리 한가운데에서 이 조합을 사용하는 장면.
+U-0523:
+  question: >-
+    Black hole: 즉시 발동입니까, 지속됩니까, 어디를 중심으로 하며, 누가 이득을 얻습니까?
+  why_it_matters: >-
+    "Destroys every chest and crate within 200m"는 발동 시점의 일회성으로 읽힙니다. 남아 있는 장이라면 나중에 생성되는 상자도 파괴할 것입니다.
+  readings:
+    A: >-
+      사용한 장소에서 반경 200 m의 일회성
+    B: >-
+      명시되지 않은 시간 동안 지속되는 장
+    C: >-
+      사용 시 참가자를 중심으로 함
+  sweep_range: >-
+    0(기재된 대로 즉시)에서 600 s: 10 min은 다른 조합(Robot, Campfire)의 가장 긴 명시 타이머와 일치합니다
+  resolution_paths:
+  - >-
+    VOD: Black hole 사용 뒤 새 상자가 생성되는 장면.
+U-0524:
+  question: >-
+    Fortress의 "up to 30 HP": 20 m 안의 모두가 공유하는 하나의 풀입니까, 아니면 한 사람당 30 HP입니까?
+  why_it_matters: >-
+    공유 풀 30 HP는 미사일 2발이면 사라집니다. 인원별이면 집단을 훨씬 오래 보호합니다. 피해 페이지는 "absorbs up to its remaining durability"라고 하는데, 이는 하나의 공유 내구도를 시사합니다.
+  readings:
+    A: >-
+      30 HP의 공유 내구도 하나이며, 안에 있는 누구에게든 타격이 있으면 소모됨
+    B: >-
+      보호받는 참가자마다 30 HP의 흡수량
+  resolution_paths:
+  - >-
+    VOD: fortress 안의 참가자 두 명이 모두 타격을 받는 장면.
+U-0525:
+  question: >-
+    Fortress와 존 피해: 존 피해는 30 HP 내구도에서 흡수됩니까, 아니면 완전히 무시됩니까?
+  why_it_matters: >-
+    페이지는 존 피해를 30 HP 흡수 옆에 나열하지만, "from Sigil of Greed stealing, and zone damage"로부터 보호한다고도 하며, 이는 별개 종류의 보호입니다.
+  readings:
+    A: >-
+      fortress 안에서 존 피해는 완전히 면역되며 내구도를 사용하지 않음
+    B: >-
+      존 피해는 틱당 1 HP씩 30 HP 내구도에서 흡수됨
+  resolution_paths:
+  - >-
+    VOD: 세이프 존 밖의 fortress 안에 서 있는 참가자.

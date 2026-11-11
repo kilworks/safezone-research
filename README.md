@@ -2,6 +2,8 @@
 
 # Safe Zone Codex
 
+English | [한국어](ko/README.md)
+
 **Every sentence of a rulebook hides a formula. We find them, prove what follows, and say plainly what nobody knows yet.**
 
 ![status](https://img.shields.io/badge/status-work%20in%20progress-orange)

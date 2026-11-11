@@ -1,0 +1,336 @@
+U-0308:
+  question: >-
+    사용(무기 사용, 화살, Deep Cut 충전, 인챈트 사용)은 막히거나 반사되거나 사거리 밖이거나 빗나간 공격에서도 소모됩니까?
+  why_it_matters: >-
+    Shield, Safety Bubble, Mirror, Sleeping Bag이 공격자의 제한된 사용 횟수(knife 2, long sword 3)와 충전을 헛되이 소모시키는지 결정합니다.
+  readings:
+    A: >-
+      시도할 때마다 소모됨
+    B: >-
+      타격이 적중할 때만 소모됨
+    C: >-
+      방어 아이템에 막힌 타격을 제외하고 소모됨
+  resolution_paths:
+  - >-
+    VOD: Shield를 가진 참가자를 knife로 찌른 뒤 남은 knife 사용 횟수를 셉니다.
+U-0309:
+  question: >-
+    Poison Dart, Zarok's axe, Huge machete의 '근처(nearby)'의 범위는 얼마입니까?
+  why_it_matters: >-
+    다른 근접 무기는 10m(knife, long sword)로 명시되어 있지만, 이 세 가지는 수치가 없어 사거리와 위치 선정을 모델링할 수 없습니다.
+  sweep_range: >-
+    5에서 50 m: knife와 long sword의 사거리는 10m, bow는 20m, staff 설치는 50m이므로 근접 무기의 '근처'는 5와 50 사이로 한정됩니다
+  resolution_paths:
+  - >-
+    주최 측의 발표.
+  - >-
+    VOD: axe 또는 machete 타격이 성공했을 때의 측정 거리.
+U-0310:
+  question: >-
+    Zarok's axe: 사용자의 체력이 떨어질수록 피해가 최대 체력일 때 5 HP에서 25 HP로 어떻게 올라갑니까(선형인지, 단계적인지, 최대 HP에 대한 비율인지, 25는 어디에서 도달하는지)?
+  why_it_matters: >-
+    axe의 가치 전체가 이 곡선에 달려 있습니다. 모든 HP 수준에서의 피해와 25 HP에 도달할 수 있는지 여부를 정합니다.
+  readings:
+    A: >-
+      사용자의 최대 HP 대비 손실 비율에 선형: 5 + 20*(1 - h/H), H = 현재 최대 HP, 25는 h = 0에서 도달
+    B: >-
+      손실 비율에 선형이며 25는 h = 1(생존 상태의 최저 HP)에서 도달
+    C: >-
+      고정된 100 HP 기준에 대한 절대 HP에 선형: 5 + 20*(100 - h)/100, [5, 25]로 제한
+    D: >-
+      사용자의 HP 구간별 단계적 변화(구간 경계는 명시되지 않음)
+  resolution_paths:
+  - >-
+    VOD: 사용자의 여러 HP 값(최대, 절반, 낮음)에서의 axe 타격.
+  - >-
+    REA: 무기 피해 공식이 배포물에 포함되어 있다면 그것.
+U-0311:
+  question: >-
+    Zarok's axe: 정수가 아닌 피해 값은 어떤 방식으로 정수로 처리됩니까?
+  why_it_matters: >-
+    대부분의 HP 수준에서 피해가 최대 1 HP까지 달라집니다(그 위에 Kick 보너스와 최소 1 HP가 적용됩니다).
+  readings:
+    A: >-
+      floor
+    B: >-
+      ceil
+    C: >-
+      반올림(round half up)
+  resolution_paths:
+  - >-
+    VOD: 곡선이 소수를 내는 HP에서의 axe 타격.
+U-0312:
+  question: >-
+    Wizard staff: '10m damage area'는 반지름입니까, 지름입니까?
+  why_it_matters: >-
+    덮는 면적이 두 배가 되거나 4분의 1이 됩니다. 인챈트 문구는 '+10m area radius'라고 하여 반지름임을 시사할 뿐입니다.
+  readings:
+    A: >-
+      반지름 10m
+    B: >-
+      지름 10m(반지름 5m)
+  resolution_paths:
+  - >-
+    VOD: 중심에서 측정한 거리별 참가자의 HP 손실.
+U-0313:
+  question: >-
+    Wizard staff: 5s 중 일부 시간만 범위 안에 있던 참가자는 10 HP 전체를 받습니까, 일부만 받습니까? 설치 후에 들어온 참가자도 피해를 받습니까?
+  why_it_matters: >-
+    범위에서 재빨리 벗어나면 피해를 피할 수 있는지, 이동 경로 앞에 설치하는 것이 통하는지를 결정합니다.
+  readings:
+    A: >-
+      설치 시점에 범위 안에 있던 모두가 10 HP 전체를 받음
+    B: >-
+      범위 안에 있는 동안에만 피해가 누적됨(범위 안에 있던 시간에 비례)
+    C: >-
+      5s 중 어느 순간이든 범위 안에 있던 모두가 10 HP 전체를 한 번 받음
+  resolution_paths:
+  - >-
+    VOD: 활성 staff 범위를 벗어나거나 들어오는 참가자.
+U-0314:
+  question: >-
+    Wizard staff 'Each use costs 2 blood tokens': Ingenuity의 10% 할증이 여기에 적용됩니까? 토큰이 2개 미만이면 어떻게 됩니까?
+  why_it_matters: >-
+    ceil(2*1.1) = 3이면 Ingenuity 참가자에게 staff가 3분의 1 비싸집니다. 이것은 상인 가격이 아닙니다.
+  readings:
+    A: >-
+      모든 시길에 2 토큰(상인 가격이 아님)
+    B: >-
+      Ingenuity는 ceil(2*1.1) = 3을 지불
+    C: >-
+      비용보다 적으면 사용할 수 없음
+  resolution_paths:
+  - >-
+    VOD: staff 사용 전후의 Ingenuity 참가자의 토큰 수.
+U-0315:
+  question: >-
+    Poison Dart: 이미 중독된 참가자가 다시 다트를 맞으면(또는 Fake gravestone에 맞으면) 새 독이 20 HP 전체 일정을 다시 시작합니까, 남은 분량을 대체합니까, 더해집니까?
+  why_it_matters: >-
+    독 페이지는 재중독이 타이머를 초기화하고 중첩되지 않는다고 하지만, 초기화되는 양(20 HP 전체인지 남은 분량인지)은 명시되어 있지 않습니다.
+  readings:
+    A: >-
+      새 다트로부터 20 HP 일정을 새로 시작함
+    B: >-
+      이전 독의 남은 HP를 유지하고 간격 타이머만 다시 시작함
+    C: >-
+      중독된 동안 두 번째 다트는 무시됨
+  resolution_paths:
+  - >-
+    VOD: 다트를 두 번 맞은 참가자의 HP와 타이머.
+U-0316:
+  question: >-
+    Poison Dart: '20 HP over 30min'과 독 페이지의 1min 30s마다 1 HP를 함께 보면, 첫 틱은 1min 30s에 옵니까, 즉시 옵니까?
+  why_it_matters: >-
+    모든 다트 틱이 1min 30s씩 밀리고 마지막 HP의 시각도 달라집니다.
+  readings:
+    A: >-
+      틱이 90, 180, ..., 1800 s에 발생(20틱, 마지막은 30min)
+    B: >-
+      틱이 0, 90, ..., 1710 s에 발생(20틱, 첫 틱은 즉시)
+  resolution_paths:
+  - >-
+    VOD: 중독된 참가자의 HP 타임라인.
+U-0317:
+  question: >-
+    지속 피해 아이템에서 'Poison Dart ... +10 damage for two uses'는 무엇을 뜻합니까?
+  why_it_matters: >-
+    인챈트된 다트의 독은 총 10 HP를 더할 수도, 사용마다 10 HP를 더할 수도, 즉발 타격일 수도 있습니다.
+  readings:
+    A: >-
+      인챈트된 다트 각각은 같은 30min 동안 총 30 HP로 중독시킴
+    B: >-
+      인챈트된 다트 각각은 30min 동안 20 HP로 중독시키고 즉시 10 HP를 더함
+    C: >-
+      인챈트된 다트 각각은 간격을 1min 30s로 유지한 채 30 HP로 중독시킴(따라서 45min)
+  resolution_paths:
+  - >-
+    VOD: 참가자에게 사용한 인챈트된 다트.
+U-0318:
+  question: >-
+    둘 다 붙어 있는 Poison Dart와 Zarok's axe에서 Equippable과 Usable 라벨은 무엇을 뜻합니까?
+  why_it_matters: >-
+    다트와 axe가 무기 슬롯에 들어가는지, 던지거나 인벤토리에서 소모되는지, 두 방식이 모두 존재하는지를 결정합니다.
+  readings:
+    A: >-
+      Equippable = 무기 슬롯에 들고 있음, Usable = 사용 시 소모됨. 두 라벨은 아이템을 어느 쪽으로든 쓸 수 있다는 뜻
+    B: >-
+      두 라벨은 순차적: 장착해서 들고, 그다음 한 번 사용
+  resolution_paths:
+  - >-
+    VOD: axe 또는 다트를 든 참가자의 인벤토리와 무기 슬롯.
+U-0319:
+  question: >-
+    이벤트 시작 후 첫 무작위 상인은 언제 나타납니까?
+  why_it_matters: >-
+    상인 주기(15min 체류, 30min에서 1h 부재)에는 명시된 위상이 없습니다. 초반 구매력과 블러드 토큰 비축이 이에 달려 있습니다.
+  sweep_range: >-
+    이벤트 시작 후 0에서 75 min: 75 min은 가장 긴 전체 주기(15 min 체류 + 1h 부재)이므로 한 주기 안의 모든 위상이 포함됩니다
+  resolution_paths:
+  - >-
+    VOD: 이벤트 시작부터 상인이 처음 나타날 때까지.
+  - >-
+    주최 측의 발표.
+U-0320:
+  question: >-
+    상인 복귀 지연: 'after 30min to 1h'는 떠난 시점부터 측정합니까, 도착한 시점부터 측정합니까? 그 범위 안에서의 분포는 어떻습니까?
+  why_it_matters: >-
+    방문 사이에 참가자가 블러드 토큰을 얼마나 모아야 하는지(부재 30에서 60 min 대 15에서 45 min)와 상인이 있는 시간의 장기 비율을 정합니다.
+  readings:
+    A: >-
+      떠난 시점부터 [30, 60] min에 걸쳐 균등
+    B: >-
+      도착한 시점부터 [30, 60] min에 걸쳐 균등(부재 15에서 45 min)
+    C: >-
+      떠난 시점부터 [30, 60] min 안에서 고정되거나 균등하지 않음
+  sweep_range: >-
+    명시된 대로 30에서 60 min, 해석 A 또는 B. 분포 형태(균등, 양 끝값만)를 변화시킴
+  resolution_paths:
+  - >-
+    VOD: 여러 주기에 걸친 상인의 출발과 다음 도착 타임스탬프.
+U-0321:
+  question: >-
+    어떤 상인 구매에 빈 인벤토리 슬롯이 필요합니까('Items need a free inventory slot')?
+  why_it_matters: >-
+    아이템만 명시되어 있습니다. missile, Deep Cut, Dual Wield, 인챈트, 업그레이드는 슬롯이 필요하지 않을 수 있습니다. 인벤토리가 가득 찬 상태의 보급 상자는 다루어지지 않습니다.
+  readings:
+    A: >-
+      보급 상자, anti poison, Vulnerability Dart, Sleeping Bag은 슬롯이 필요하고 missile과 업그레이드는 필요 없음
+    B: >-
+      missile도 슬롯이 필요함
+    C: >-
+      보급 상자 아이템이 무기라면 무기 슬롯으로 갈 수 있으며 그 경우 슬롯이 필요 없음
+  resolution_paths:
+  - >-
+    VOD: 인벤토리가 가득 찬 상태에서의 구매.
+U-0322:
+  question: >-
+    Ingenuity의 'pay 10% more, rounded up'은 40 + 10k 업그레이드 사다리에 어떻게 적용됩니까?
+  why_it_matters: >-
+    현재 가격마다 적용하는지, 시작 가격에만 적용하는지, 증가분에 적용하는지에 따라 사다리 전체와 업그레이드 N개를 사는 총비용이 달라집니다.
+  readings:
+    A: >-
+      각 가격 p가 ceil(1.1*p)가 됨: 44, 55, 66, ...
+    B: >-
+      시작 가격만 인상됨: 44, 54, 64, ...
+  resolution_paths:
+  - >-
+    VOD: 처음 세 번의 슬롯 업그레이드에 대한 Ingenuity 참가자의 상인 화면.
+U-0323:
+  question: >-
+    상인의 보급 상자는 어떤 아이템을 줍니까: 'One random item'의 분포는?
+  why_it_matters: >-
+    10 블러드 토큰의 기댓값을 정합니다. 무기, C4, drone이 나오는지, 결과가 무기 슬롯에 들어가는지도 포함됩니다.
+  sweep_range: >-
+    아이템 페이지와 무기 페이지의 아이템 목록 전체에 걸친 균등 분포 대 저렴한 아이템 쪽으로 치우친 가중 분포. 둘을 구별하려면 최소 30회의 개봉을 표본으로 삼습니다
+  resolution_paths:
+  - >-
+    VOD: 상인 보급 상자 결과의 표본.
+  - >-
+    주최 측의 발표.
+U-0324:
+  question: >-
+    Vulnerability Dart: 이미 취약한 참가자에게 두 번째 다트를 쓰면 초기화됩니까, 연장됩니까, 아무 일도 없습니까? 10분은 던진 시점부터입니까, 명중한 시점부터입니까?
+  why_it_matters: >-
+    무방비 구간의 길이를 정합니다. 다트를 반복하면 대상을 영구히 취약한 상태로 둘 수 있습니다.
+  readings:
+    A: >-
+      새 다트가 10 min 타이머를 지금부터 새 10 min으로 초기화함
+    B: >-
+      새 다트가 10 min을 더함
+    C: >-
+      이미 취약한 동안에는 효과 없음
+  resolution_paths:
+  - >-
+    VOD: 5 min 간격으로 다트 두 발을 맞은 참가자.
+U-0325:
+  question: >-
+    Sleeping Bag: 'sleep from 18:00 to 06:00 ... for eight hours of sleep in total' 규칙은 무엇입니까?
+  why_it_matters: >-
+    창은 12시간인데 수면은 8시간입니다. 위키는 8h가 연속된 블록인지, 총 예산인지, 하룻밤의 상한인지 밝히지 않습니다.
+  readings:
+    A: >-
+      수면은 18:00과 06:00 사이에만 허용됨. 총 수면 시간은 8h로 제한되며 나누어 잘 수 있음
+    B: >-
+      창 안에 들어가야 하는 연속 8h 블록 하나
+    C: >-
+      bag은 이벤트 전체에 걸쳐 총 8h의 수면을 담음
+  sweep_range: >-
+    명시된 대로 8. 예산을 나누어 쓰는 경우를 테스트함
+  resolution_paths:
+  - >-
+    VOD: 창 동안 잠을 자는 참가자.
+  - >-
+    주최 측의 발표.
+U-0326:
+  question: >-
+    '지역 태양시(Local solar time)': 무엇에 대한 지역입니까(참가자의 위치, 이벤트 장소, 기준 도시 하나)?
+  why_it_matters: >-
+    기상과 수면 창이 이에 달려 있습니다. 경도 1도당 약 4분씩 차이가 나며, 기준 시계를 쓰면 시간대에 따라 더 크게 달라집니다.
+  readings:
+    A: >-
+      참가자 자신의 위치에서의 태양시
+    B: >-
+      이벤트의 기준 위치 한 곳에서의 태양시
+    C: >-
+      참가자 휴대폰의 현지 시계 시각
+  resolution_paths:
+  - >-
+    주최 측의 발표.
+U-0327:
+  question: >-
+    Sleeping Bag: 65 s의 수면은 연속이어야 합니까? 잠든 사람이 15m 반경을 벗어나거나 깨어나거나 맞으면 어떻게 됩니까? 깨어나면 면역이 즉시 끝납니까?
+  why_it_matters: >-
+    처음 65 s가 노출 구간입니다. 범위를 벗어나거나 깨어나면 카운터가 초기화되는지가 정해지며, flashbang(섬광탄) 면역과 피해 면역이 여기에 달려 있습니다.
+  readings:
+    A: >-
+      65 s는 연속이어야 함. 15m를 벗어나거나 깨어나면 초기화되고 면역이 끝남
+    B: >-
+      65 s는 밤 동안 누적됨
+    C: >-
+      한 번 도달하면 면역은 잠든 사람이 깨어날 때까지, 15m 밖에서도 지속됨
+  resolution_paths:
+  - >-
+    VOD: bag의 범위를 벗어나는 잠든 사람. 수면 30초째의 타격.
+U-0328:
+  question: >-
+    Sleeping Bag: 20분의 '다시 잠들 수 없음(cannot sleep again)' 제한은 언제 시작됩니까(bag이 처음 보호하는 순간, 깨어날 때, 마지막으로 막은 피해 시점 중)?
+  why_it_matters: >-
+    참가자가 얼마나 오래 잘 수 있는지가 달라집니다. 보호가 시작되는 65 s 시점에 제한이 시작되면 8h 동안 자는 사람은 깨어나기 훨씬 전에 제한에 걸립니다.
+  readings:
+    A: >-
+      bag이 보호를 시작할 때(65 s 수면 후) 시작됨
+    B: >-
+      잠든 사람이 깨어날 때 시작됨
+    C: >-
+      bag이 마지막으로 막은 피해 시점에 시작됨
+  resolution_paths:
+  - >-
+    VOD: 깨어나서 다시 자려고 하는 사람.
+U-0329:
+  question: >-
+    Inventory slot과 +10 maximum HP의 'for each one you already bought' 카운터는 별개입니까, 공유됩니까?
+  why_it_matters: >-
+    공유 카운트에서는 슬롯 10개와 HP 업그레이드 10개를 사는 비용이 크게 달라집니다(두 번째 종류가 첫 번째가 멈춘 곳에서 시작합니다).
+  readings:
+    A: >-
+      별개의 카운터: 각 사다리는 40 + 10k이며 k는 그 사다리의 구매 횟수
+    B: >-
+      두 업그레이드에 걸쳐 하나의 공유 카운터
+  resolution_paths:
+  - >-
+    VOD: 슬롯 업그레이드 한 번 뒤의 상인 화면(HP 가격이 40입니까, 50입니까?).
+U-0330:
+  question: >-
+    Max HP upgrade: HP 상한(200, Piety는 220) 외에 구매 한도가 있습니까? 시길별로 각 상한에 도달하려면 몇 번을 구매해야 합니까?
+  why_it_matters: >-
+    기본 HP 100에서 상한 200은 10번 구매입니다. Piety(기본 110)는 11번이어야 220에 도달하고, Greed(기본 90)는 200에 11번이 필요합니다. 위키는 구매 한도를 슬롯에만 명시합니다.
+  readings:
+    A: >-
+      구매 한도 없음, HP 상한만 있음(Greed 11, Piety 11, 나머지는 10번 구매)
+    B: >-
+      모두 10번 구매 한도(Piety는 210에서 멈추며 이는 220 상한과 모순됨)
+  sweep_range: >-
+    10에서 12번 구매: 상한은 기본 100이면 10, 기본 90 또는 110이면 11을 의미함
+  resolution_paths:
+  - >-
+    VOD: HP 업그레이드를 10번, 11번 한 뒤의 Piety 참가자.

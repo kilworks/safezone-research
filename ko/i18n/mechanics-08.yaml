@@ -1,0 +1,519 @@
+M-0411:
+  name: >-
+    최루 가스 대응 수단
+  quotes:
+  - >-
+    Gas mask가 이를 막습니다.
+  - >-
+    EMP가 활성화된 동안에는 시청자가 최루 가스를 보낼 수 없습니다.
+  readings:
+    A: >-
+      Gas mask는 최루 가스를 막고, EMP가 활성화된 동안에는 최루 가스를 보낼 수 없음
+  domain: >-
+    참가자별 불리언
+  notes: >-
+    피해 페이지에는 Shield, Safety bubble, Sleeping Bag, Body armor도 함께 나열되어 있습니다. C-0400을 참조하십시오.
+M-0412:
+  name: >-
+    Airstrike 폭격
+  quotes:
+  - >-
+    시청자는 세이프 존 안에서 중심점과 방향을 고릅니다.
+  - >-
+    20s 후 띠 안에 있는 모든 사람이 5 HP의 피해를 입습니다.
+  readings:
+    A: >-
+      세이프 존 안의 중심 p와 방향이 주어지고, 20s 후 띠 안의 모든 참가자가 5 HP의 피해를 입음
+  domain: >-
+    띠는 중심 둘레에서 방향을 따라 놓인 직사각형이며 크기는 알 수 없음
+  parameters:
+    width: >-
+      UNKNOWN, U-0406 참조
+    length: >-
+      UNKNOWN, U-0407 참조
+    damage: >-
+      5 HP
+    delay: >-
+      20 s
+    price_cx_bucks: >-
+      UNKNOWN, U-0014 참조
+M-0413:
+  name: >-
+    Airstrike 화염
+  quotes:
+  - >-
+    이후 띠는 5min 동안 불탑니다.
+  - >-
+    안에 있는 누구든 2s마다 1 HP를 잃습니다.
+  readings:
+    A: >-
+      착탄 시점부터 300 s 동안 띠 안의 참가자는 2s마다 1 HP를 잃으며, 첫 틱은 +2s에 발생함
+    B: >-
+      첫 틱이 착탄 시점에 발생함
+    C: >-
+      화염이 구매 시점부터 시작되어 300 s에 끝남
+  domain: >-
+    t는 구매 시점부터의 초 단위 시간이며 착탄은 t=20
+  parameters:
+    duration: >-
+      300 s
+    damage: >-
+      1 HP
+    period: >-
+      2 s
+M-0414:
+  name: >-
+    Airstrike 대응 수단
+  quotes:
+  - >-
+    Shield가 화염을 막습니다.
+  - >-
+    Guardian angel과 Hazmat suit는 도움이 되지 않습니다.
+  - >-
+    Protection 시길은 폭격과 그 화염에 면역입니다.
+  - >-
+    Flak jacket은 폭격을 막지만 화염은 막지 못합니다.
+  - >-
+    EMP는 폭격과 그 화염을 제거합니다.
+  readings:
+    A: >-
+      화염: Shield가 막음, Guardian angel과 Hazmat suit는 도움이 되지 않음, Protection은 폭격과 화염에 면역, Flak jacket은 폭격을 막지만 화염은 막지 못함, EMP는 폭격과 화염을 제거함
+  domain: >-
+    참가자별, 단계별(폭격, 화염)
+  notes: >-
+    피해 페이지: airstrike 화염은 Shield, Safety bubble, Sleeping Bag, Protection, Body armor(흡수)가 막습니다. 더 적은 수단을 나열한 공격 페이지와 일치합니다.
+M-0415:
+  name: >-
+    Gunship 지속 시간과 폭탄 투하 주기
+  quotes:
+  - >-
+    구매자는 5min 동안 gunship을 얻습니다.
+  - >-
+    목표 서클은 무작위 세이프 존 둘레를 75m/s (167.77mph)로 훑습니다.
+  - >-
+    구매자는 10s에 한 번씩 목표 서클에 폭탄을 투하합니다.
+  readings:
+    A: >-
+      gunship은 300 s 동안 존재하며 10s마다 폭탄 1개를 투하함(폭탄 30개)
+    B: >-
+      폭탄 29개
+    C: >-
+      폭탄 31개
+    D: >-
+      폭탄 투하는 수동이며 쿨다운은 10s
+  domain: >-
+    t in [0, 300] s
+  parameters:
+    duration: >-
+      300 s
+    drop_period: >-
+      10 s
+    target_circle_speed: >-
+      75 m/s
+    price_cx_bucks: >-
+      UNKNOWN, U-0014 참조
+M-0416:
+  name: >-
+    Gunship 폭탄 효과
+  quotes:
+  - >-
+    각 폭탄은 5s 후에 떨어져 25m (82ft) 이내의 모든 사람에게 10 HP의 피해를 줍니다.
+  readings:
+    A: >-
+      폭탄은 투하 5s 후에 떨어지며 25m 이내의 모든 사람이 10 HP의 피해를 입음
+  domain: >-
+    d <= 25 m
+  parameters:
+    delay: >-
+      5 s
+    damage: >-
+      10 HP
+    radius: >-
+      25 m
+M-0417:
+  name: >-
+    Gunship 대응 수단
+  quotes:
+  - >-
+    Protection 시길은 면역입니다.
+  - >-
+    Flak jacket은 폭탄 하나를 막습니다.
+  - >-
+    EMP는 gunship과 떨어지는 폭탄을 제거합니다.
+  readings:
+    A: >-
+      Protection은 면역이고, Flak jacket은 폭탄 하나를 막으며, EMP는 gunship과 떨어지는 폭탄을 제거함
+  domain: >-
+    참가자별
+  notes: >-
+    피해 페이지에는 gunship 폭탄의 추가 방어 수단으로 Shield, Safety bubble, Sleeping Bag, Body armor가 나열되어 있습니다. C-0400을 참조하십시오.
+M-0418:
+  name: >-
+    Emergency airdrop (긴급 에어드롭)
+  quotes:
+  - >-
+    보급 상자 5개가 세이프 존 안의 무작위 지점에서 10m (33ft) 이내에 떨어집니다.
+  - >-
+    5min 후에 착지합니다.
+  - >-
+    각각 무작위 아이템 하나를 담고 있으며 다른 보급 상자와 똑같이 수령합니다.
+  readings:
+    A: >-
+      보급 상자 5개가 착지 시점 t+300s에 세이프 존의 무작위 한 지점에서 10m 이내에 떨어지며, 각각 무작위 아이템 하나를 담고, 다른 보급 상자와 똑같이 수령함
+  domain: >-
+    상자 5개, 10 m 범위로 분산
+  parameters:
+    packages: >-
+      5
+    flight_time: >-
+      300 s
+    spread: >-
+      10 m
+    price_cx_bucks: >-
+      UNKNOWN, U-0014 참조
+M-0419:
+  name: >-
+    Healing circle (회복 서클)
+  quotes:
+  - >-
+    세이프 존 안의 무작위 지점에 50m (164ft) 서클이 나타납니다.
+  - >-
+    1min 후 서클 안에 있는 살아 있는 모든 참가자가 25 HP를 회복합니다.
+  readings:
+    A: >-
+      무작위 지점에 반지름 50m 서클이 생기고, +60s에 서클 안의 살아 있는 각 참가자가 min(25, maxhp - hp)만큼 회복함
+    B: >-
+      지름 50m
+  domain: >-
+    t=60 s
+  parameters:
+    delay: >-
+      60 s
+    heal: >-
+      25 HP
+    size: >-
+      50 m
+    price_cx_bucks: >-
+      UNKNOWN, U-0014 참조
+  notes: >-
+    Piety 토큰은 healing circle을 집계합니다(Piety 페이지).
+M-0420:
+  name: >-
+    Illusion 복제체
+  quotes:
+  - >-
+    10min 동안 살아 있는 모든 참가자의 복제체가 세이프 존을 1.4m/s (3.13mph)로 돌아다닙니다.
+  - >-
+    생존자가 10명 미만이면 각 참가자가 여러 개의 복제체를 얻으며, 총 최대 30개입니다.
+  - >-
+    자신의 복제체는 절대 보이지 않습니다.
+  readings:
+    A: >-
+      600 s 동안 살아 있는 각 참가자에게 복제체가 하나씩 있으며, n < 10이면 각각 floor(30/n)개
+    B: >-
+      ceil(30/n), 최대 30으로 제한
+    C: >-
+      n >= 10이면 상한 없음
+  domain: >-
+    살아 있는 참가자 n명, 복제체는 1.4 m/s로 이동하며 시청자에게는 자신의 복제체가 보이지 않음
+  parameters:
+    duration: >-
+      600 s
+    speed: >-
+      1.4 m/s
+    max_total: >-
+      30
+    price_cx_bucks: >-
+      UNKNOWN, U-0014 참조
+  notes: >-
+    '복제체가 실제 참가자처럼 보인다'는 외형상의 설명이지만 Thermal goggles와 연결됩니다.
+M-0421:
+  name: >-
+    Illusion 복제체 상호작용
+  quotes:
+  - >-
+    Thermal goggles는 이들을 복제체로 보여 줍니다.
+  - >-
+    복제체를 공격하면 공격을 소모하고 복제체가 터집니다.
+  - >-
+    아무도 피해를 입지 않습니다.
+  - >-
+    폭발이나 staff 범위는 그 안의 모든 복제체를 터뜨립니다.
+  readings:
+    A: >-
+      Thermal goggles로 복제체를 구분할 수 있고, 복제체를 공격하면 공격이 소모되며 복제체가 사라지고, HP는 잃지 않으며, 폭발이나 staff 범위는 그 안의 모든 복제체를 제거함
+  domain: >-
+    공격별, 범위별
+  notes: >-
+    Thermal goggles는 아이템 페이지에 있습니다.
+M-0422:
+  name: >-
+    Illusion 단독 실행과 쿨다운
+  quotes:
+  - >-
+    illusion은 한 번에 하나만 실행할 수 있습니다.
+  - >-
+    다음 illusion은 끝난 뒤 30min 후에 시작할 수 있습니다.
+  readings:
+    A: >-
+      illusion은 한 번에 하나이며, 새 illusion은 이전 것이 끝난 뒤 30 min 후에 시작할 수 있음
+    B: >-
+      시작 시점으로부터 30 min 후
+  domain: >-
+    t는 초 단위
+  parameters:
+    cooldown: >-
+      1800 s
+    duration: >-
+      600 s
+M-0423:
+  name: >-
+    현상금 표시
+  quotes:
+  - >-
+    현상금이 없는 살아 있는 참가자 중 무작위로 한 명이 표시됩니다.
+  - >-
+    표시는 지도에서 그 참가자를 따라다닙니다.
+  readings:
+    A: >-
+      현상금이 없는 살아 있는 참가자 중 균등하게 무작위로 한 명이 표시되며, 표시는 그 참가자를 따라다님
+  domain: >-
+    현상금이 없는 살아 있는 참가자의 집합
+  parameters:
+    price_cx_bucks: >-
+      UNKNOWN, U-0014 참조
+  notes: >-
+    모든 참가자에게 이미 현상금이 있을 때의 대상 자격은 정의되어 있지 않습니다.
+M-0424:
+  name: >-
+    현상금 획득
+  quotes:
+  - >-
+    표시된 참가자의 5m (16ft) 이내에 1min 동안 머문 첫 다른 참가자가 현상금을 얻습니다.
+  - >-
+    사냥꾼은 10 HP를 회복하고 무작위 체력 포션을 얻습니다.
+  - >-
+    인벤토리가 가득 차 있으면 포션은 발치에 떨어집니다.
+  readings:
+    A: >-
+      연속: 한 사냥꾼이 표시된 참가자의 5m 이내에 60s 연속으로 머묾
+    B: >-
+      누적 60s
+    C: >-
+      공유 카운터
+  domain: >-
+    d <= 5 m, 60 s, 사냥꾼은 표시된 참가자와 다른 사람
+  parameters:
+    range: >-
+      5 m
+    hold: >-
+      60 s
+    heal: >-
+      10 HP
+    reward: >-
+      무작위 체력 포션 하나
+  notes: >-
+    인벤토리가 가득 차 있으면 포션은 사냥꾼의 발치에 떨어집니다.
+M-0425:
+  name: >-
+    현상금 피해와 만료
+  quotes:
+  - >-
+    표시된 참가자는 10 HP의 피해를 입습니다.
+  - >-
+    현상금은 1h 후 또는 표시된 참가자가 죽으면 끝납니다.
+  readings:
+    A: >-
+      표시된 참가자가 10 HP의 피해를 입으며, 현상금은 3600 s 후 또는 표시된 참가자가 죽으면 끝남
+  domain: >-
+    t in [0, 3600] s
+  parameters:
+    damage: >-
+      10 HP
+    duration: >-
+      3600 s
+  notes: >-
+    피해 페이지에는 현상금 표시에 대해 Shield, Safety bubble, Sleeping Bag, Body armor가 나열되어 있습니다. Protection은 여전히 현상금 피해를 입습니다(Protection 페이지).
+M-0426:
+  name: >-
+    Cyclops 능력치와 공격
+  quotes:
+  - >-
+    HP는 200이고 0.8m/s (1.79mph)로 걷습니다.
+  - >-
+    5s마다 30m (98ft) 이내에서 가장 가까운 참가자를 타격해 10 HP의 피해를 줍니다.
+  readings:
+    A: >-
+      HP 200, 속도 0.8 m/s, 5s마다 30m 이내에서 가장 가까운 참가자를 타격해 10 HP의 피해를 줌
+  domain: >-
+    d <= 30 m
+  parameters:
+    hp: >-
+      200
+    speed: >-
+      0.8 m/s
+    period: >-
+      5 s
+    damage: >-
+      10 HP
+    price_cx_bucks: >-
+      UNKNOWN, U-0014 참조
+M-0427:
+  name: >-
+    Cyclops 조종 투표
+  quotes:
+  - >-
+    cyclops가 지도에 있는 동안 구매자만이 아니라 모든 시청자가 그 방향에 투표할 수 있습니다.
+  - >-
+    가장 많이 득표한 방향이 5s마다 채택됩니다.
+  readings:
+    A: >-
+      모든 시청자가 투표하며 5s마다 가장 많이 득표한 방향이 선택됨
+  domain: >-
+    t는 5 s 구간 단위
+  parameters:
+    window: >-
+      5 s
+M-0428:
+  name: >-
+    Cyclops가 받는 피해
+  quotes:
+  - >-
+    참가자는 bow, knife, long sword, Zarok's axe 또는 machete로 무기 사거리 안에서, 또는 drone으로 어디서든 이를 공격합니다.
+  - >-
+    모든 피해가 통합니다: 무기, drone, C4, landmine, staff, 핵, 미사일, airstrike, 최루 가스, gunship 폭탄.
+  - >-
+    세이프 존 밖에서는 존 피해를 입습니다.
+  - >-
+    smoke bomb 구름 안으로도, 구름 밖으로도 공격할 수 없습니다.
+  - >-
+    구름 안에서는 Thermal goggles를 갖고 있지 않으면 무기와 drone으로 맞힐 수 없지만, 폭발과 피해 범위는 여전히 피해를 줍니다.
+  readings:
+    A: >-
+      bow, knife, long sword, Zarok's axe, machete는 사거리 안에서, drone은 어떤 거리에서든 통하고, 모든 종류의 피해가 통하며, 세이프 존 밖에서는 존 피해를 입고, smoke bomb은 양방향 공격을 막으며, 무기와 drone은 Thermal goggles가 있어야만 맞고, 폭발과 범위 피해는 여전히 피해를 줌
+  domain: >-
+    cyclops hp 0..200
+  notes: >-
+    무기 페이지의 무기 목록과 비교하십시오. 여기에는 근접/원거리 무기 5개만 나열되어 있습니다.
+M-0429:
+  name: >-
+    Cyclops 블러드 토큰
+  quotes:
+  - >-
+    죽으면 각 참가자는 자신이 입힌 피해 1당 블러드 토큰 1개를 얻습니다.
+  - >-
+    시청자 아이템의 피해로는 아무것도 얻지 못합니다.
+  - >-
+    존이 죽이면 아무도 아무것도 얻지 못합니다.
+  readings:
+    A: >-
+      참가자들에 의해 죽으면 각자 입힌 HP 1당 토큰 1개를 얻고, 시청자 아이템의 피해로는 얻지 못하며, 존이 죽이면 아무도 받지 못함
+  domain: >-
+    참가자별 정수 d, 참가자 전체에 대한 합
+  parameters:
+    rate: >-
+      피해 1당 토큰 1개
+M-0430:
+  name: >-
+    Cyclops 동시 존재와 재등장
+  quotes:
+  - >-
+    지도에는 한 번에 cyclops 하나만 있을 수 있습니다.
+  - >-
+    다음 cyclops는 죽은 뒤 3h 후에 나올 수 있습니다.
+  readings:
+    A: >-
+      지도에는 최대 하나이며, 다음 cyclops는 이전 것이 죽은 뒤 10800 s 후에 나올 수 있음
+  domain: >-
+    t는 초 단위
+  parameters:
+    cooldown: >-
+      10800 s
+M-0431:
+  name: >-
+    보급 상자 투하
+  quotes:
+  - >-
+    보급 상자는 세이프 존 안의 무작위 지점에 무작위 아이템 하나를 떨어뜨립니다.
+  readings:
+    A: >-
+      무작위 아이템이 든 보급 상자 하나가 세이프 존 안의 무작위 지점에 떨어짐
+  domain: >-
+    세이프 존 안에서 균등하게 분포한 점
+M-0432:
+  name: >-
+    보급 상자의 Trolling 쪽 방향 전환
+  quotes:
+  - >-
+    3% 확률로 대신 Trolling 참가자의 5m (16ft) 이내에 떨어집니다.
+  readings:
+    A: >-
+      각 보급 상자는 확률 0.03으로 대신 Trolling 참가자의 5m 이내에 떨어짐
+  domain: >-
+    p = 3%, 거리 <= 5 m
+  parameters:
+    p: >-
+      0.03
+    radius: >-
+      5 m
+  notes: >-
+    Trolling 페이지의 문구: '시청자가 보낸 각 상자 또는 보급 상자는 3% 확률로 대신 Trolling 참가자 옆에 떨어집니다' (C-0403).
+M-0433:
+  name: >-
+    시청자 상자
+  quotes:
+  - >-
+    상자에는 시청자가 산 아이템이 들어 있습니다.
+  - >-
+    누군가 열기 전까지는 다른 모든 상자와 똑같이 보입니다.
+  readings:
+    A: >-
+      상자에는 시청자가 산 아이템이 들어 있으며 열기 전까지는 다른 상자와 겉모습이 같음
+  domain: >-
+    상자별
+  notes: >-
+    가짜 상자는 다른 페이지에서 설명합니다. 겉모습이 같다는 점이 Trolling의 미끼입니다.
+M-0434:
+  name: >-
+    God's Fruit (관리자)
+  quotes:
+  - >-
+    관리자만 발사할 수 있습니다.
+  - >-
+    5min 후 조준한 바로 그 지점에 떨어집니다.
+  - >-
+    100m (328ft) 이내의 모든 사람이 20 HP를 회복하고 독이 치유되며, HP가 가득 차 있어도 마찬가지입니다.
+  readings:
+    A: >-
+      관리자가 발사하고, 300 s 후 조준 지점에 떨어지며, 100m 이내의 모든 사람이 HP가 가득 차 있어도 20 HP를 회복하고 독이 치유됨
+  domain: >-
+    d <= 100 m, hp += 20 (최대 HP 상한 적용 여부는 명시되지 않음)
+  parameters:
+    flight_time: >-
+      300 s
+    heal: >-
+      20 HP
+    radius: >-
+      100 m
+  notes: >-
+    최대 HP를 넘는 초과 회복은 명시되어 있지 않으며, 부활 상태의 참가자에게 미치는 효과도 언급되어 있지 않습니다.
+M-0435:
+  name: >-
+    Reality Shield (관리자)
+  quotes:
+  - >-
+    관리자가 설치합니다.
+  - >-
+    30m (98ft) 이내의 모든 사람은 모든 피해, 좀비, 새로운 독에 면역입니다.
+  readings:
+    A: >-
+      관리자가 설치하며, 30m 이내의 모든 사람은 모든 피해, 좀비, 새로운 독에 면역임
+  domain: >-
+    d <= 30 m
+  parameters:
+    radius: >-
+      30 m
+    duration: >-
+      UNKNOWN, U-0423 참조
+  notes: >-
+    아이템 페이지는 Safety bubble을 '존 피해를 포함한 피해와 좀비에 면역'이라고 나열합니다. 공격 페이지는 Reality Shield를 핵 방어 수단에 포함합니다.

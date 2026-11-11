@@ -1,6 +1,6 @@
 # Safe Zone Codex: index
 
-Everything in this encyclopedia, one click away. Rules are quoted word for word from the official wiki (snapshot 2026-11-11), translated into formulas, and every ambiguity is listed as an open question. Labels: `DOCUMENTED` (the wiki says it), `DERIVED` (proven), `CONDITIONAL` (proven under one reading of an open question), `CONTRADICTED` (two pages disagree), `UNKNOWN`. Back to the [project README](../README.md).
+Everything in this encyclopedia, one click away. Rules are quoted word for word from the official wiki (snapshot 2026-11-11), translated into formulas, and every ambiguity is listed as an open question. Labels: `DOCUMENTED` (the wiki says it), `DERIVED` (proven), `CONDITIONAL` (proven under one reading of an open question), `CONTRADICTED` (two pages disagree), `UNKNOWN`. Back to the [project README](../README.md). [한국어](../ko/codex/index.md).
 
 ## Sigils
 

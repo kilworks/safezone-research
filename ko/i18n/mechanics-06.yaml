@@ -1,0 +1,569 @@
+M-0301:
+  name: >-
+    무기 슬롯 소속
+  quotes:
+  - >-
+    근접 무기, 활, 지팡이, Poison Dart는 무기 슬롯에 들어갑니다.
+  - >-
+    무기 슬롯과 착용 장비 슬롯은 인벤토리 공간을 사용하지 않습니다.
+  readings:
+    A: >-
+      근접 무기, 활, 지팡이, Poison Dart는 무기 슬롯에 들어가며, 무기 슬롯과 착용 장비는 인벤토리 공간을 사용하지 않음
+  domain: >-
+    아이템 배치
+  notes: >-
+    C4, Landmine, Drone, 화살은 무기 슬롯 아이템으로 나열되어 있지 않으며 인벤토리 슬롯을 사용합니다. 두 번째 무기 슬롯은 M-0334를 참조하십시오.
+M-0302:
+  name: >-
+    C4 설치와 폭발
+  quotes:
+  - >-
+    사용 가능
+  - >-
+    서 있는 자리에 설치한 뒤 언제든지 기폭할 수 있습니다.
+  - >-
+    10m (33ft) 이내의 모든 사람에게 20 HP의 피해를 주며, 본인도 포함됩니다.
+  readings:
+    A: >-
+      자신의 위치에 설치하고 이후 아무 때나 기폭함. C4로부터의 거리가 10 m 이하인 모든 참가자(설치자 포함)가 20 HP의 피해를 받음
+  domain: >-
+    거리(미터), 피해(HP)
+  parameters:
+    c4_damage_hp: >-
+      20
+    c4_radius_m: >-
+      10
+  notes: >-
+    좀비는 C4를 작동시키지 않습니다(다른 페이지). 폭발은 범위 안의 좀비를 죽입니다(좀비 페이지).
+M-0303:
+  name: >-
+    C4 함정 선물 (Ingenuity 부착)
+  quotes:
+  - >-
+    Ingenuity 시길이 있으면 16h마다 한 번, 들고 있는 다른 아이템에 C4 하나를 부착할 수 있습니다.
+  - >-
+    다른 참가자가 그 아이템을 들고 있을 때 기폭합니다.
+  - >-
+    그 참가자만 23 HP의 피해를 받습니다.
+  - >-
+    아이템을 들고 있는 동안에는 본인에게 피해가 없습니다.
+  readings:
+    A: >-
+      들고 있는 다른 아이템에 C4 하나를 부착하며 16h당 최대 한 번. 다른 참가자가 그것을 들고 있을 때 기폭하면 그 참가자만 23 HP의 피해를 받고, 소유자는 들고 있는 동안 피해를 받지 않음
+  domain: >-
+    HP, 시간
+  parameters:
+    trapped_gift_c4_damage_hp: >-
+      23
+    attach_cooldown_h: >-
+      16
+  notes: >-
+    23 HP는 도출 없이 명시된 그대로 기록했습니다. 함정 선물은 다른 페이지의 차단 표(Shield, Sleeping Bag, Protection, Mirror)와 Kick 보너스 목록에도 나옵니다.
+M-0304:
+  name: >-
+    C4 가시성
+  quotes:
+  - >-
+    함정은 본인만 볼 수 있습니다.
+  - >-
+    본인과 Sigil of Ingenuity 참가자만 볼 수 있습니다.
+  readings:
+    A: >-
+      설치된 C4는 소유자와 Sigil of Ingenuity 참가자만 볼 수 있으며, 함정 선물은 소유자만 볼 수 있음
+    B: >-
+      '함정은 본인만 볼 수 있습니다'는 설치된 C4를 가리킴(뒤의 문장이 Ingenuity를 더해 같은 내용을 반복함)
+  notes: >-
+    Landmine과 달리 C4에는 다른 참가자의 근접 가시성도, 시청자 가시성도 명시되어 있지 않습니다.
+M-0305:
+  name: >-
+    C4 중첩과 슬롯
+  quotes:
+  - >-
+    Landmine과 C4는 중첩됩니다. 각각 최대 5개가 인벤토리 슬롯 하나를 공유하며, 각각 최대 5개까지만 소지할 수 있습니다.
+  - >-
+    인챈트된 것은 자체 슬롯을 사용합니다.
+  readings:
+    A: >-
+      C4는 인벤토리 슬롯 하나에 최대 5개. 최대 5개까지 소지. 인챈트된 C4는 자체 슬롯을 차지함
+  domain: >-
+    정수 개수
+  parameters:
+    c4_stack: >-
+      5
+    c4_carry_max: >-
+      5
+  notes: >-
+    같은 문장이 아이템 페이지에도 있습니다(문구 동일, 모순 없음).
+M-0306:
+  name: >-
+    Drone 공격
+  quotes:
+  - >-
+    사용 가능
+  - >-
+    보이는 참가자를 거리에 상관없이 공격합니다.
+  - >-
+    30s 후에 10 HP의 타격을 줍니다.
+  readings:
+    A: >-
+      보이는 참가자를 거리에 상관없이 공격하며, 10 HP의 타격은 사용 30 s 후에 적중함
+  domain: >-
+    HP, 초
+  parameters:
+    drone_damage_hp: >-
+      10
+    drone_delay_s: >-
+      30
+    drone_uses: >-
+      UNKNOWN, U-0304 참조
+  notes: >-
+    '사용 가능' 라벨만 있습니다. 피해 표(다른 페이지)에 따르면 Drone은 Shield, Safety Bubble, Sleeping Bag, Protection, Mirror, Body Armor에 막힙니다.
+M-0307:
+  name: >-
+    Landmine 설치, 발동, 폭발
+  quotes:
+  - >-
+    사용 가능
+  - >-
+    서 있는 자리에 설치합니다.
+  - >-
+    다른 참가자나 좀비가 10m (33ft) 이내로 들어오면 발동합니다.
+  - >-
+    범위 안의 모든 사람에게 15 HP의 피해를 주며, 본인도 포함되고, 범위 안의 모든 좀비를 죽입니다.
+  readings:
+    A: >-
+      자신의 위치에 설치하며, 다른 참가자나 좀비가 거리 10 m 이하에 있을 때 발동함. 범위 안의 모든 사람(설치자 포함)에게 15 HP의 피해를 주고 범위 안의 모든 좀비를 죽임
+  domain: >-
+    거리(미터), 피해(HP)
+  parameters:
+    landmine_damage_hp: >-
+      15
+    landmine_radius_m: >-
+      10
+  notes: >-
+    Landmine에 면역인 참가자(Protection)가 발동시켜도 여전히 폭발하는지는 명시되어 있지 않습니다.
+M-0308:
+  name: >-
+    Landmine 함정 선물 (Ingenuity 부착)
+  quotes:
+  - >-
+    Ingenuity 시길이 있으면 16h마다 한 번, 자신에게 사용하는 아이템에 Landmine 하나를 부착할 수 있습니다.
+  - >-
+    다른 참가자가 그 아이템을 사용하면 발동하고, 아이템은 소모되며 그 효과는 적용되지 않습니다.
+  - >-
+    그 참가자만 11 HP의 피해를 받습니다.
+  readings:
+    A: >-
+      자신에게 사용하는 아이템에 Landmine 하나를 부착하며 16h당 최대 한 번. 다른 참가자가 그 아이템을 사용하면 발동함: 아이템은 소모되고 효과는 적용되지 않으며, 그 참가자만 11 HP의 피해를 받음
+  domain: >-
+    HP, 시간
+  parameters:
+    trapped_gift_landmine_damage_hp: >-
+      11
+    attach_cooldown_h: >-
+      16
+  notes: >-
+    11 HP는 도출 없이 명시된 그대로 기록했습니다.
+M-0309:
+  name: >-
+    Landmine 가시성
+  quotes:
+  - >-
+    함정은 본인만 볼 수 있습니다.
+  - >-
+    다른 참가자는 20m (66ft) 이내에서만 볼 수 있습니다.
+  - >-
+    Sigil of Ingenuity는 항상 볼 수 있습니다.
+  - >-
+    시청자는 항상 볼 수 있습니다.
+  readings:
+    A: >-
+      소유자는 볼 수 있음. 다른 참가자는 20 m 이내에서만 볼 수 있음. Sigil of Ingenuity 참가자는 항상 볼 수 있음. 시청자는 항상 볼 수 있음
+  domain: >-
+    거리(미터)
+  parameters:
+    other_see_radius_m: >-
+      20
+  notes: >-
+    '함정은 본인만 볼 수 있습니다'는 부착 문장 뒤에 오므로 위치상 함정 선물(아이템)을 가리킵니다. 설치된 Landmine의 규칙은 그다음 문장들입니다.
+M-0310:
+  name: >-
+    Landmine 중첩과 슬롯
+  quotes:
+  - >-
+    Landmine과 C4는 중첩됩니다. 각각 최대 5개가 인벤토리 슬롯 하나를 공유하며, 각각 최대 5개까지만 소지할 수 있습니다.
+  - >-
+    인챈트된 것은 자체 슬롯을 사용합니다.
+  readings:
+    A: >-
+      Landmine은 인벤토리 슬롯 하나에 최대 5개. 최대 5개까지 소지. 인챈트된 Landmine은 자체 슬롯을 차지함
+  domain: >-
+    정수 개수
+  parameters:
+    landmine_stack: >-
+      5
+    landmine_carry_max: >-
+      5
+M-0311:
+  name: >-
+    활
+  quotes:
+  - >-
+    장착 가능
+  - >-
+    20m (66ft) 이내에 5 HP의 타격을 주며, 쿨다운은 5s입니다.
+  - >-
+    한 발마다 화살 하나를 사용합니다.
+  - >-
+    화살이 없으면 쏠 수 없습니다.
+  - >-
+    활은 사용 횟수에 제한이 없고 부서지지 않습니다.
+  readings:
+    A: >-
+      거리 20 m 이하에 5 HP의 타격. 쿨다운 5 s. 한 발마다 화살 하나를 사용. 화살이 없으면 쏠 수 없음. 사용 횟수 무제한이며 부서지지 않음
+  domain: >-
+    HP, 미터, 초
+  parameters:
+    bow_damage_hp: >-
+      5
+    bow_range_m: >-
+      20
+    bow_cooldown_s: >-
+      5
+  notes: >-
+    활은 다른 페이지의 Kick 보너스 목록과 Mirror 목록에 나옵니다.
+M-0312:
+  name: >-
+    화살과 중첩
+  quotes:
+  - >-
+    활의 탄약입니다.
+  - >-
+    상자 드롭에는 10개가 들어 있습니다.
+  - >-
+    화살은 중첩됩니다. 새 화살은 이미 소지한 묶음에 합쳐지며 묶음당 최대 10개이므로 추가 슬롯이 필요하지 않습니다.
+  - >-
+    그 이상의 화살은 새 묶음을 시작하며 슬롯을 사용합니다.
+  readings:
+    A: >-
+      상자 드롭에는 화살 10개가 들어 있음. 화살은 소지한 묶음에 묶음당 최대 10개까지 합쳐짐. 그 이상은 슬롯을 차지하는 새 묶음을 시작함
+  domain: >-
+    정수 개수
+  parameters:
+    chest_drop_arrows: >-
+      10
+    arrow_stack: >-
+      10
+  notes: >-
+    새 묶음은 인벤토리 슬롯을 사용합니다(기본 3개, 아이템 페이지). 상자 규칙은 U-0015입니다.
+M-0313:
+  name: >-
+    Wizard staff 범위
+  quotes:
+  - >-
+    장착 가능
+  - >-
+    자신으로부터 50m (164ft) 이내의 지도상 지점을 골라 10m (33ft)의 피해 구역을 설치하며, 참가자 위에도 설치할 수 있습니다.
+  - >-
+    5s 동안 지속되며 안에 있는 모든 사람에게 총 10 HP의 피해를 주고, 본인도 포함됩니다.
+  readings:
+    A: >-
+      사용자로부터 거리 50 m 이하의 지점을 고르면, 10 m 구역(반지름 또는 지름, U-0312 참조)이 5 s 동안 지속되며 안에 있는 모든 사람(사용자 포함)에게 총 10 HP의 피해를 줌
+  domain: >-
+    HP, 미터, 초
+  parameters:
+    staff_placement_range_m: >-
+      50
+    staff_area_m: >-
+      10
+    staff_duration_s: >-
+      5
+    staff_total_damage_hp: >-
+      10
+  notes: >-
+    지점은 참가자 위일 수 있습니다. 'Wizard Staff area'는 다른 페이지의 피해 표에 있는 행입니다.
+M-0314:
+  name: >-
+    Wizard staff 비용, 쿨다운, 내구도
+  quotes:
+  - >-
+    한 번 사용할 때마다 블러드 토큰 2개가 듭니다.
+  - >-
+    쿨다운 20min.
+  - >-
+    지팡이는 부서지지 않습니다.
+  readings:
+    A: >-
+      한 번 사용할 때마다 블러드 토큰 2개가 듦. 쿨다운 20 min. 부서지지 않음(사용 횟수 무제한)
+  domain: >-
+    블러드 토큰, 분
+  parameters:
+    staff_cost_tokens: >-
+      2
+    staff_cooldown_min: >-
+      20
+M-0315:
+  name: >-
+    Poison Dart
+  quotes:
+  - >-
+    장착 가능, 사용 가능
+  - >-
+    가까운 참가자를 30min 동안 20 HP만큼 중독시킵니다.
+  readings:
+    A: >-
+      가까운 참가자를 30 min 동안 20 HP만큼 중독시킴(독 페이지는 1min 30s마다 1 HP를 주는데, 이는 30 min 동안 20틱임)
+  domain: >-
+    HP, 분
+  parameters:
+    dart_total_hp: >-
+      20
+    dart_duration_min: >-
+      30
+    dart_range_m: >-
+      UNKNOWN, U-0309 참조
+    dart_uses: >-
+      UNKNOWN, U-0304 참조
+  notes: >-
+    독 페이지와 교차 확인: 30 min / 90 s = 1 HP짜리 20틱 = 20 HP로 일치하며 모순은 없습니다. Dart는 피해 페이지의 Kick 보너스 목록에 없습니다. 다시 중독시키면 타이머가 초기화되며 중첩되지 않습니다(독 페이지).
+M-0316:
+  name: >-
+    Assassin's knife
+  quotes:
+  - >-
+    장착 가능
+  - >-
+    10m (33ft) 이내의 참가자를 찔러 5 HP의 피해를 줍니다.
+  - >-
+    2회 사용, 쿨다운 5s.
+  readings:
+    A: >-
+      거리 10 m 이하의 참가자를 찔러 5 HP의 피해를 줌. 2회 사용. 쿨다운 5 s
+  domain: >-
+    HP, 미터, 초
+  parameters:
+    knife_damage_hp: >-
+      5
+    knife_range_m: >-
+      10
+    knife_uses: >-
+      2
+    knife_cooldown_s: >-
+      5
+M-0317:
+  name: >-
+    Zarok's axe
+  quotes:
+  - >-
+    장착 가능, 사용 가능
+  - >-
+    가까운 참가자에게 체력이 가득할 때 5 HP의 타격을 주며, 자신의 체력이 떨어질수록 최대 25 HP까지 올라갑니다.
+  - >-
+    1회용.
+  readings:
+    A: >-
+      가까운 참가자를 타격함. 피해는 체력이 가득할 때 5 HP이고 사용자의 체력이 떨어질수록 25 HP까지 올라감(곡선은 U-0310). 1회용
+    B: >-
+      피해가 사용자가 아니라 대상의 체력에 따라 달라짐
+  domain: >-
+    HP 정수, 1 <= h <= 최대 HP
+  parameters:
+    axe_min_damage_hp: >-
+      5
+    axe_max_damage_hp: >-
+      25
+    axe_range_m: >-
+      UNKNOWN, U-0309 참조
+    axe_uses: >-
+      1
+  notes: >-
+    '자신의 체력'은 사용자의 체력으로 해석합니다. 해당 문장이 '가까운 참가자에게 타격을 줍니다' 뒤에 오므로 해석 B도 유지합니다.
+M-0318:
+  name: >-
+    Huge machete
+  quotes:
+  - >-
+    장착 가능
+  - >-
+    관리자만 지급할 수 있습니다.
+  - >-
+    가까운 참가자에게 10 HP의 타격을 줍니다.
+  - >-
+    10회 사용, 쿨다운 5s.
+  readings:
+    A: >-
+      관리자만 지급할 수 있음. 가까운 참가자에게 10 HP의 타격을 줌. 10회 사용. 쿨다운 5 s
+  domain: >-
+    HP, 초
+  parameters:
+    machete_damage_hp: >-
+      10
+    machete_range_m: >-
+      UNKNOWN, U-0309 참조
+    machete_uses: >-
+      10
+    machete_cooldown_s: >-
+      5
+  notes: >-
+    상인 페이지의 인챈트 설명과 Deep Cut 목록에 나오는 'machete'는 Huge machete로 해석합니다.
+M-0319:
+  name: >-
+    Long sword
+  quotes:
+  - >-
+    장착 가능
+  - >-
+    10m (33ft) 이내의 참가자에게 10 HP의 타격을 줍니다.
+  - >-
+    3회 사용, 쿨다운 10s.
+  readings:
+    A: >-
+      거리 10 m 이하의 참가자에게 10 HP의 타격을 줌. 3회 사용. 쿨다운 10 s
+  domain: >-
+    HP, 미터, 초
+  parameters:
+    sword_damage_hp: >-
+      10
+    sword_range_m: >-
+      10
+    sword_uses: >-
+      3
+    sword_cooldown_s: >-
+      10
+M-0320:
+  name: >-
+    상인 개요와 화폐
+  quotes:
+  - >-
+    상인은 블러드 토큰을 받고 아이템, 업그레이드, 인챈트를 판매합니다.
+  - >-
+    모든 시길이 상인에게서 구매할 수 있습니다.
+  - >-
+    블러드 토큰으로만 지불합니다.
+  - >-
+    각 시길은 저마다의 방식으로 블러드 토큰을 얻습니다.
+  readings:
+    A: >-
+      상인은 아이템, 업그레이드, 인챈트를 판매함. 모든 시길이 구매할 수 있음. 지불은 블러드 토큰으로만 함. 각 시길은 저마다의 방식으로 토큰을 얻음
+  domain: >-
+    블러드 토큰(정수)
+  notes: >-
+    획득 규칙은 각 시길 페이지에 있습니다.
+M-0321:
+  name: >-
+    상인 등장과 체류 주기
+  quotes:
+  - >-
+    지도에 상인은 최대 한 명만 있습니다.
+  - >-
+    관리자가 직접 배치하거나, 세이프 존 안 또는 관리자가 고른 구역 안에 무작위로 나타나게 합니다.
+  - >-
+    무작위 상인은 15min 동안 머뭅니다.
+  - >-
+    그 뒤 떠났다가 30min에서 1h 후에 새로운 무작위 지점에 돌아옵니다.
+  readings:
+    A: >-
+      지도에 상인은 최대 한 명. 관리자가 직접 배치하거나 세이프 존 안 또는 관리자가 고른 구역 안에 무작위로 나타나게 함. 무작위 상인은 15 min 동안 머문 뒤 떠났다가, 떠난 시점부터 측정한 [30, 60] min 범위의 지연 후에 새로운 무작위 지점에 돌아옴
+    B: >-
+      지연이 떠난 시점이 아니라 도착한 시점부터 측정됨
+  domain: >-
+    분
+  parameters:
+    merchant_stay_min: >-
+      15
+    merchant_return_delay_min: >-
+      30에서 60
+    merchant_first_spawn_min: >-
+      UNKNOWN, U-0319 참조
+  notes: >-
+    관리자가 배치한 상인의 체류 시간은 명시되어 있지 않으며, '무작위 상인'만 15 min 동안 머뭅니다.
+M-0322:
+  name: >-
+    상인 구매 거리와 슬롯 요건
+  quotes:
+  - >-
+    상인으로부터 10m (33ft) 이내에서 구매합니다.
+  - >-
+    아이템에는 빈 인벤토리 슬롯이 필요합니다.
+  readings:
+    A: >-
+      상인으로부터 거리 10 m 이하에서만 구매할 수 있음. 아이템 구매에는 빈 인벤토리 슬롯이 필요함
+  domain: >-
+    미터
+  parameters:
+    merchant_range_m: >-
+      10
+M-0323:
+  name: >-
+    Ingenuity 상인 추가 요금
+  quotes:
+  - >-
+    Ingenuity 참가자는 10%를 더 내며, 금액은 올림합니다.
+  readings:
+    A: >-
+      가격 p는 ceil(11*p/10)이 됨(정확한 산술)
+    B: >-
+      가격 p는 binary64에서 ceil(p*1.1)이 됨
+  domain: >-
+    정수 p >= 1
+  notes: >-
+    같은 문장이 Ingenuity 페이지에도 있습니다('Merchant prices are 10% higher, rounded up', 상인 가격이 10% 높으며 올림한다는 뜻). 모순은 없습니다. 해석 A와 B는 기본 가격 50, 90, 100, 110에서 토큰 1개 차이가 납니다(U-0006). 추가 요금이 단계별 가격표에 어떻게 적용되는지는 U-0322입니다.
+M-0324:
+  name: >-
+    상인 기본 가격 목록
+  quotes:
+  - >-
+    Care package: 블러드 토큰 10개.
+  - >-
+    Anti poison: 블러드 토큰 12개.
+  - >-
+    Vulnerability Dart: 블러드 토큰 25개.
+  - >-
+    Sleeping Bag: 블러드 토큰 30개.
+  - >-
+    Missile: 블러드 토큰 10개.
+  - >-
+    Dual Wield: 블러드 토큰 50개.
+  - >-
+    Deep Cut: 블러드 토큰 20개.
+  - >-
+    Weapon enchantment: 블러드 토큰 15개.
+  - >-
+    Armor enchantment: 블러드 토큰 30개.
+  readings:
+    A: >-
+      Ingenuity 추가 요금 이전의, 블러드 토큰 단위의 고정 기본 가격
+  domain: >-
+    블러드 토큰
+  parameters:
+    care_package: >-
+      10
+    anti_poison: >-
+      12
+    vulnerability_dart: >-
+      25
+    sleeping_bag: >-
+      30
+    missile: >-
+      10
+    dual_wield: >-
+      50
+    deep_cut: >-
+      20
+    weapon_enchantment: >-
+      15
+    armor_enchantment: >-
+      30
+  notes: >-
+    단계별 가격(슬롯, 최대 HP)은 M-0332와 M-0333입니다. Ingenuity 참가자는 더 많이 냅니다. M-0323을 참조하십시오.
+M-0325:
+  name: >-
+    상인 Care package(보급 상자) 내용물
+  quotes:
+  - >-
+    무작위 아이템 하나가 인벤토리에 곧바로 들어옵니다.
+  readings:
+    A: >-
+      무작위 아이템 하나가 인벤토리에 곧바로 들어옴
+  notes: >-
+    Piety: 'Merchant care packages are not changed'(상인 보급 상자는 바뀌지 않는다는 뜻, Piety 페이지). Endurance 자체의 보급 상자에는 포션이나 Drone이 들어 있지 않지만, 상인의 것에 대해서는 그런 언급이 없습니다.

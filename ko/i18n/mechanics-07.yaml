@@ -1,0 +1,568 @@
+M-0326:
+  name: >-
+    Vulnerability Dart
+  quotes:
+  - >-
+    Vulnerability Dart: 블러드 토큰 25개.
+  - >-
+    10m 이내의 참가자에게 던집니다.
+  - >-
+    대상의 Shield를 제거하고, 대상이 소유했거나 안에 서 있는 모든 Safety Bubble을 터뜨리며, 10분 동안 Shield와 Safety Bubble이 대상을 보호하지 못하게 합니다.
+  - >-
+    취약한 상태에서는 Shield나 Safety Bubble을 사용할 수 없습니다.
+  readings:
+    A: >-
+      거리 <= 10 m의 참가자에게 던짐. 대상의 Shield를 제거하고, 대상이 소유했거나 안에 서 있는 모든 Safety Bubble을 터뜨리며, 10 min 동안 Shield와 Safety Bubble이 대상을 보호하지 못하고 대상은 이를 사용할 수 없음
+  domain: >-
+    미터, 분
+  parameters:
+    dart_cost_tokens: >-
+      25
+    dart_range_m: >-
+      10
+    vulnerable_duration_min: >-
+      10
+  notes: >-
+    터뜨려지는 Safety Bubble에는 다른 참가자도 함께 서 있는 것이 포함됩니다. Safety Bubble 안에 있는 상태에서는 Safety Bubble을 던질 수 없습니다 (Safety Bubble 페이지).
+M-0327:
+  name: >-
+    Sleeping Bag 소유권
+  quotes:
+  - >-
+    Sleeping Bag: 블러드 토큰 30개.
+  - >-
+    본인만 자신의 침낭을 집어 들 수 있습니다.
+  - >-
+    Sleeping Bag은 들고 있든 설치했든 하나만 가질 수 있습니다.
+  - >-
+    떨어뜨리거나 도난당할 수 없으며, 본인만 파괴할 수 있습니다.
+  - >-
+    Greed는 잠든 동안에도 다른 아이템을 훔칠 수 있습니다.
+  readings:
+    A: >-
+      토큰 30개. 소유자만 침낭을 집어 들 수 있음. 들고 있거나 설치한 침낭은 최대 1개. 떨어뜨리거나 도난당할 수 없고 소유자만 파괴할 수 있음. Greed는 잠든 참가자의 다른 아이템을 여전히 훔칠 수 있음
+  parameters:
+    sleeping_bag_cost_tokens: >-
+      30
+  notes: >-
+    Greed 페이지('Sleeping Bags cannot be stolen, but you can steal from a sleeping contestant')와 일치합니다.
+M-0328:
+  name: >-
+    Sleeping Bag 수면 시간대와 행동 불능
+  quotes:
+  - >-
+    Sleeping Bag을 설치하고 현지 태양시 18:00부터 06:00까지 자면, 총 8시간의 수면이 됩니다.
+  - >-
+    침낭에서 15m 이내에서 자는 동안에는 행동할 수 없습니다.
+  - >-
+    행동하려면 일어나야 합니다.
+  readings:
+    A: >-
+      침낭을 설치하고 현지 태양시 18:00부터 06:00까지 수면, 총 8시간의 수면. 침낭에서 15 m 이내에서 자는 동안 행동할 수 없음. 행동하려면 일어나야 함
+  domain: >-
+    시간, 미터
+  parameters:
+    sleep_window: >-
+      현지 태양시 18:00부터 06:00까지
+    sleep_total_h: >-
+      8
+    sleep_radius_m: >-
+      15
+M-0329:
+  name: >-
+    Sleeping Bag 면역
+  quotes:
+  - >-
+    Sleeping Bag에서 65초 동안 잔 참가자는 대상으로 지정될 수 없습니다.
+  - >-
+    65초 동안 자고 나면 섬광탄과, 존 피해 및 언세이프 서클(unsafe circle) 피해를 제외한 모든 피해에 면역입니다.
+  readings:
+    A: >-
+      65 s 동안 잔 뒤: 대상으로 지정될 수 없고, 섬광탄과, 존 피해 및 언세이프 서클 피해를 제외한 모든 피해에 면역
+  domain: >-
+    초
+  parameters:
+    sleep_immunity_delay_s: >-
+      65
+  notes: >-
+    다른 페이지와 충돌합니다. 로봇 피해 예외(C-0300), 그리고 65 s 지연과 즉시 면역의 차이(C-0301).
+M-0330:
+  name: >-
+    Sleeping Bag 재사용 제한
+  quotes:
+  - >-
+    침낭이 당신을 보호한 뒤에는, 다시 집어 들어 설치하더라도 20분 동안 어떤 침낭에서도 다시 잘 수 없습니다.
+  readings:
+    A: >-
+      침낭이 보호한 뒤 20 min 동안 어떤 침낭에서도 잘 수 없음. 다시 집어 들어 설치해도 마찬가지
+  domain: >-
+    분
+  parameters:
+    sleep_lockout_min: >-
+      20
+M-0331:
+  name: >-
+    상인 미사일
+  quotes:
+  - >-
+    Missile: 블러드 토큰 10개.
+  - >-
+    지도상의 정확한 위치에 표준 미사일을 발사합니다.
+  - >-
+    발사 30초 후에 떨어집니다.
+  readings:
+    A: >-
+      토큰 10개. 지도상의 정확한 위치에 표준 미사일을 발사. 발사 30 s 후에 떨어짐
+  domain: >-
+    토큰, 초
+  parameters:
+    missile_cost_tokens: >-
+      10
+    missile_delay_s: >-
+      30
+    missile_damage_hp: >-
+      UNKNOWN, U-0340 참조
+  notes: >-
+    Smoke bomb은 그 폭탄 안에서 발사하는 것을 막습니다 (Smoke bomb 페이지).
+M-0332:
+  name: >-
+    인벤토리 슬롯 업그레이드 단계
+  quotes:
+  - >-
+    Inventory slot: 블러드 토큰 40개에서 시작하며, 이미 구매한 개수마다 10개씩 더 듭니다.
+  - >-
+    최대 10개의 슬롯을 구매할 수 있어 최대 13슬롯이 되며, Endurance는 20슬롯입니다.
+  - >-
+    Ingenuity는 12슬롯에서 멈춥니다.
+  readings:
+    A: >-
+      k번째 구매(k = 0, 1, ...)의 가격은 40 + 10*k 토큰. 구매는 최대 10회. 슬롯 = 기본 + 구매 횟수이므로 최대 13(기본 3), Endurance는 20(기본 10), Ingenuity는 12(기본 2)
+  domain: >-
+    k는 정수, 0 <= k <= 9
+  parameters:
+    slot_ladder_start: >-
+      40
+    slot_ladder_step: >-
+      10
+    slot_purchase_max: >-
+      10
+    slot_cap_default: >-
+      13
+    slot_cap_endurance: >-
+      20
+    slot_cap_ingenuity: >-
+      12
+  notes: >-
+    시길 페이지와 교차 확인: Ingenuity는 2슬롯으로 시작(2+10=12), Endurance는 10(10+10=20), 나머지는 3(3+10=13)이며 일치하고 모순은 없습니다.
+M-0333:
+  name: >-
+    최대 HP 업그레이드 단계
+  quotes:
+  - >-
+    +10 maximum HP: 블러드 토큰 40개에서 시작하며, 이미 구매한 개수마다 10개씩 더 듭니다.
+  - >-
+    최대 HP는 200까지 올라가며, Piety는 220까지 올라갑니다.
+  readings:
+    A: >-
+      k번째 구매의 가격은 40 + 10*k 토큰이며 최대 HP를 10 늘림. 최대 HP의 상한은 200, Piety는 220
+  domain: >-
+    k는 0 이상의 정수
+  parameters:
+    hp_ladder_start: >-
+      40
+    hp_ladder_step: >-
+      10
+    hp_per_purchase: >-
+      10
+    hp_cap_default: >-
+      200
+    hp_cap_piety: >-
+      220
+    hp_purchase_limit: >-
+      UNKNOWN, U-0330 참조
+  notes: >-
+    기본 최대 HP: Greed 90, Piety 110, 나머지 100 (시길 페이지). 상한이 명시된 유일한 제한입니다.
+M-0334:
+  name: >-
+    Dual Wield
+  quotes:
+  - >-
+    Dual Wield: 블러드 토큰 50개.
+  - >-
+    두 번째 무기 슬롯과 두 번째 인챈트된 무기를 해금합니다.
+  - >-
+    무기 슬롯과 착용 장비 슬롯은 인벤토리 공간을 사용하지 않습니다.
+  readings:
+    A: >-
+      토큰 50개. 두 번째 무기 슬롯과 두 번째 인챈트된 무기를 해금. 무기 슬롯과 착용 장비 슬롯은 인벤토리 공간을 사용하지 않음
+  parameters:
+    dual_wield_cost_tokens: >-
+      50
+  notes: >-
+    첫 번째 무기 슬롯은 'a second weapon slot'이라는 문구에서 암시됩니다. 기본 가격 50은 binary64 문제(U-0006, Ingenuity)에 걸리는 가격입니다.
+M-0335:
+  name: >-
+    Body armor 소지 제한
+  quotes:
+  - >-
+    Body Armor는 최대 하나만 소지할 수 있습니다.
+  readings:
+    A: >-
+      소지하는 Body Armor는 최대 1개
+  notes: >-
+    Body Armor 페이지에도 'Carry at most one, including equipped armor'라고 되어 있어 같은 규칙입니다.
+M-0336:
+  name: >-
+    Deep Cut 출혈
+  quotes:
+  - >-
+    Deep Cut: 블러드 토큰 20개.
+  - >-
+    다음 활, 칼, 장검, 도끼, 마체테 또는 드론 타격, 혹은 Poison Dart가 출혈을 일으키며, 붕대나 Healing 참가자가 치료할 때까지 5분마다 1 HP를 잃습니다.
+  - >-
+    충전 1회.
+  - >-
+    출혈은 중첩되지 않습니다.
+  readings:
+    A: >-
+      충전 1회. 다음 활, 칼, 장검, 도끼, 마체테 또는 드론 타격, 혹은 다음 Poison Dart가 출혈을 일으켜 붕대나 Healing 참가자가 치료할 때까지 5 min마다 1 HP를 잃음. 출혈은 중첩되지 않음
+  domain: >-
+    HP, 분
+  parameters:
+    deep_cut_cost_tokens: >-
+      20
+    bleed_hp: >-
+      1
+    bleed_interval_min: >-
+      5
+  notes: >-
+    Staff, C4, landmine은 목록에 없습니다. 붕대와 Healing의 치료는 Bandage 페이지와 Healing 페이지에 명시되어 있습니다.
+M-0337:
+  name: >-
+    무기 인챈트 (일반 규칙)
+  quotes:
+  - >-
+    Weapon enchantment: 블러드 토큰 15개.
+  - >-
+    사용 횟수가 두 배가 되고 두 시간 동안 피해가 +10 됩니다.
+  - >-
+    두 시간이 지나면 무기는 추가 피해를 잃고, 인챈트 전의 사용 횟수와 남은 사용 횟수 중 낮은 쪽을 유지합니다.
+  - >-
+    인챈트된 사용 횟수를 먼저 다 쓰면, 칼, 마체테, 장검은 사용 횟수 1회가 남은 상태로 돌아오고, 1회용 무기는 소모됩니다.
+  - >-
+    그 밖의 모든 무기는 두 시간이 먼저 지나면 추가 효과가 끝나고 아이템은 일반 아이템으로 남습니다.
+  - >-
+    인챈트된 무기는 하나만 가질 수 있으며, Dual Wield가 있으면 둘까지 가질 수 있습니다.
+  readings:
+    A: >-
+      토큰 15개. 사용 횟수 두 배와 2 h 동안 피해 +10. 2 h 후 무기는 추가 효과를 잃고 min(이전 사용 횟수, 남은 사용 횟수)를 유지. 인챈트된 사용 횟수가 먼저 소진되면 칼, 마체테, 장검은 사용 횟수 1회가 남은 상태로 돌아오고 1회용 무기는 소모됨. 그 밖의 모든 무기는 2 h가 먼저 지나면 추가 효과가 끝나고 일반 아이템이 됨. 인챈트된 무기는 하나, Dual Wield가 있으면 둘
+  domain: >-
+    HP, 시간, 정수 사용 횟수
+  parameters:
+    weapon_enchant_cost_tokens: >-
+      15
+    weapon_enchant_bonus_hp: >-
+      10
+    weapon_enchant_duration_h: >-
+      2
+  notes: >-
+    특정 무기는 M-0338에서 이 일반 규칙보다 우선합니다. 기본 가격 15는 Ingenuity에서 binary64 문제가 되는 가격에 해당하지 않습니다.
+M-0338:
+  name: >-
+    무기 인챈트 무기별 추가 효과
+  quotes:
+  - >-
+    Zarok's Axe와 Poison Dart는 두 번 사용하는 동안 피해가 +10 되며, 그 후 소모됩니다.
+  - >-
+    Landmine과 C4는 한 번 사용하는 동안 피해 +20과 반경 +10m (33ft)를 얻으며, 그 후 소모됩니다.
+  - >-
+    Drone은 한 번 사용하는 동안 피해가 +10 되며, 그 후 소모됩니다.
+  - >-
+    활은 5발 동안 또는 두 시간 동안 피해가 +10 됩니다.
+  - >-
+    Wizard Staff는 5회 사용하는 동안 피해 +10과 범위 반경 +10m (33ft)를 얻으며, 시간 제한은 없습니다.
+  readings:
+    A: >-
+      Zarok's Axe와 Poison Dart: 두 번 사용하는 동안 피해 +10, 그 후 소모. Landmines와 C4: 한 번 사용하는 동안 피해 +20과 반경 +10 m, 그 후 소모. Drones: 한 번 사용하는 동안 피해 +10, 그 후 소모. 활: 5발 동안 또는 2 h 동안 피해 +10. Wizard Staff: 5회 사용하는 동안 피해 +10과 범위 반경 +10 m, 시간 제한 없음
+  domain: >-
+    HP, 미터, 정수 사용 횟수
+  parameters:
+    axe_dart_bonus_hp: >-
+      10
+    axe_dart_uses: >-
+      2
+    trap_bonus_hp: >-
+      20
+    trap_bonus_radius_m: >-
+      10
+    drone_bonus_hp: >-
+      10
+    bow_bonus_hp: >-
+      10
+    bow_bonus_shots: >-
+      5
+    staff_bonus_hp: >-
+      10
+    staff_bonus_radius_m: >-
+      10
+    staff_enchant_uses: >-
+      5
+  notes: >-
+    인챈트된 staff에서 '+10 damage'가 범위의 총 10 HP에 더해지는지(총 20 HP) 여부는 U-0010(틱)에 포함되며 따로 명시되어 있지 않습니다.
+M-0339:
+  name: >-
+    방어구 인챈트와 감소
+  quotes:
+  - >-
+    Armor enchantment: 블러드 토큰 30개. 내구도 +10, 최대 45까지.
+  - >-
+    이후 20분마다 내구도가 1씩 줄어 15까지 내려갑니다.
+  readings:
+    A: >-
+      토큰 30개. 내구도 +10, 최대 45까지. 이후 20 min마다 내구도 1씩 감소, 15까지
+  domain: >-
+    내구도는 정수, 분
+  parameters:
+    armor_enchant_cost_tokens: >-
+      30
+    armor_enchant_bonus: >-
+      10
+    armor_cap: >-
+      45
+    armor_decay_interval_min: >-
+      20
+    armor_decay_floor: >-
+      15
+  notes: >-
+    기본 방어구 내구도는 이 페이지가 아니라 Body Armor 페이지에 있습니다(거기에는 'Absorbs up to 15 HP of damage'라고 되어 있습니다).
+M-0400:
+  name: >-
+    EMP가 시청자의 공격 구매를 막음
+  quotes:
+  - >-
+    참가자의 EMP가 활성화된 동안에는 시청자가 미사일, 핵, 호드, 최루가스, 공습, 건십, 사이클롭스, 현상금을 보낼 수 없습니다.
+  readings:
+    A: >-
+      EMP가 시간 t에 활성 상태 => {missile, nuke, horde, tear_gas, airstrike, gunship, cyclops, bounty}에 대한 시청자의 전송이 거부됨
+  domain: >-
+    t는 EMP 활성 중의 초 단위 시간, 공격 유형 8개의 집합
+  parameters:
+    emp_duration: >-
+      10 min (이 페이지가 아니라 Items 페이지)
+  notes: >-
+    Emergency airdrop, healing circle, illusion, crates는 목록에 없으며, 이것들이 막히는지 여부는 U-0401입니다. Items 페이지에도 10min과 'No refunds'가 있습니다. 다른 분류와의 연결: EMP 아이템(items).
+M-0401:
+  name: >-
+    EMP가 공중의 시청자 무기를 파괴함
+  quotes:
+  - >-
+    공중에 있는 시청자의 미사일과 핵, 그리고 이미 진행 중인 공습과 건십을 파괴하며, 불과 떨어지는 폭탄도 포함됩니다.
+  readings:
+    A: >-
+      EMP 활성화 시: 공중에 있는 시청자의 모든 미사일과 핵, 그리고 진행 중인 모든 공습과 건십을 불과 떨어지는 폭탄까지 포함하여 삭제
+  domain: >-
+    활성화 시점에 비행 중인 오브젝트
+  notes: >-
+    Admin nuke는 'viewer nukes'에 포함되지 않습니다 (attacks-018). 건십에 대한 'Already in play'에는 남은 시간이 포함됩니다.
+M-0402:
+  name: >-
+    EMP는 지속 효과를 제거하지 않음
+  quotes:
+  - >-
+    이미 지도에 있는 사이클롭스, 현상금, 최루가스, 좀비는 제거하지 않습니다.
+  readings:
+    A: >-
+      EMP 활성화는 사이클롭스, 현상금, 최루가스 구름, 좀비를 그대로 둠
+  domain: >-
+    활성화 시점에 지도에 있는 오브젝트
+M-0403:
+  name: >-
+    시청자 미사일의 조준과 낙하
+  quotes:
+  - >-
+    시청자는 세이프 존 안의 한 지점을 조준합니다.
+  - >-
+    3분 후 그 지점 근처의 무작위 위치에 떨어집니다.
+  - >-
+    폭발 전체가 조준 지점에서 100m (328ft) 이내에 머뭅니다.
+  readings:
+    A: >-
+      조준 지점 p는 세이프 존 안. t+180s에 p+o에 낙하, |o| <= 75 (폭발은 100m 이내)
+    B: >-
+      동일하되 |o| <= 100
+  domain: >-
+    p는 세이프 존 안, o는 무작위 오프셋, t = 발사 시각(초)
+  parameters:
+    flight_time: >-
+      180 s
+    max_blast_extent: >-
+      100 m
+    price_cx_bucks: >-
+      UNKNOWN, U-0014 참조
+M-0404:
+  name: >-
+    시청자 미사일의 피해와 대응 수단
+  quotes:
+  - >-
+    떨어진 지점에서 25m (82ft) 이내의 모든 대상이 10 HP의 피해를 입습니다.
+  - >-
+    Protection 시길은 면역입니다.
+  - >-
+    Flak jacket이 막아 줍니다.
+  - >-
+    EMP는 공중에서 이를 파괴합니다.
+  readings:
+    A: >-
+      낙하 지점에서 25m 이내의 각 참가자는 Protection 시길(면역) 또는 Flak jacket(차단)이 적용되지 않는 한 10 HP의 피해를 입음. EMP는 비행 중에 이를 파괴함
+  domain: >-
+    거리 d는 미터 단위, d <= 25. 피해 10 HP
+  parameters:
+    damage: >-
+      10 HP
+    radius: >-
+      25 m
+    price_cx_bucks: >-
+      UNKNOWN, U-0014 참조
+  notes: >-
+    Damage 페이지에는 이 페이지보다 더 많은 차단 수단(Shield, Safety bubble, Sleeping Bag, Body armor 흡수)이 나열되어 있습니다. C-0400을 참조하십시오. Merchant missile(블러드 토큰)은 별개의 아이템이며 여기서는 모델링하지 않았습니다.
+M-0405:
+  name: >-
+    시청자 핵
+  quotes:
+  - >-
+    시청자는 세이프 존 안의 한 지점을 조준합니다.
+  - >-
+    1분 후 정확히 그 지점에 떨어집니다.
+  - >-
+    관리자가 다른 수치를 설정하지 않는 한, 100m (328ft) 이내의 모든 대상이 20 HP의 피해를 입습니다.
+  - >-
+    Flak jacket, Shield, Safety bubble, Reality Shield, 또는 자신의 Sleeping Bag에서 자는 것이 이를 막습니다.
+  - >-
+    EMP는 공중에서 시청자 핵을 파괴합니다.
+  readings:
+    A: >-
+      세이프 존 안의 p를 조준. 60s 후 정확히 p에 낙하. 100m 이내의 모든 대상이 20 HP의 피해를 입음. Flak jacket, Shield, Safety bubble, Reality Shield 또는 자신의 Sleeping Bag이 막음. EMP는 공중에서 이를 파괴함
+  domain: >-
+    d <= 100 m, 피해 20 HP, 비행 60 s
+  parameters:
+    flight_time: >-
+      60 s
+    damage: >-
+      20 HP
+    radius: >-
+      100 m
+    price_cx_bucks: >-
+      UNKNOWN, U-0014 참조
+  notes: >-
+    Damage 페이지에는 Body armor(흡수)도 나열되어 있지만 attacks 페이지에는 없습니다(충돌이 아니며, 방어구는 부분 차단입니다).
+M-0406:
+  name: >-
+    관리자 핵
+  quotes:
+  - >-
+    관리자도 발사할 수 있습니다.
+  - >-
+    관리자가 비행 시간, 피해, 반경을 설정하지 않는 한 관리자 핵은 5분 동안 비행합니다.
+  - >-
+    관리자가 다른 수치를 설정하지 않는 한, 100m (328ft) 이내의 모든 대상이 20 HP의 피해를 입습니다.
+  readings:
+    A: >-
+      관리자 발사: 관리자가 비행 시간, 피해, 반경을 설정하지 않는 한 비행 300 s, 피해 20 HP, 반경 100 m
+  domain: >-
+    관리자가 고른 값은 양수
+  parameters:
+    default_flight_time: >-
+      300 s
+    default_damage: >-
+      20 HP
+    default_radius: >-
+      100 m
+  notes: >-
+    EMP 문구는 시청자 핵만 명시하므로, 문면상 관리자 핵은 EMP에 파괴되지 않습니다.
+M-0407:
+  name: >-
+    Protection 시길에 대한 핵 피해 감소
+  quotes:
+  - >-
+    Protection 시길은 면역이 아니지만 피해를 50% 덜 받습니다.
+  readings:
+    A: >-
+      d -> floor(d/2)
+    B: >-
+      d -> ceil(d/2)
+    C: >-
+      d -> d/2
+  domain: >-
+    d는 핵의 정수 HP이며, 기본값 20은 모든 해석에서 10이 됨
+  notes: >-
+    Protection은 핵에 면역이 아닙니다(미사일과 다릅니다). 다른 분류와의 연결: Protection 시길 페이지, 피해 파이프라인 순서.
+M-0408:
+  name: >-
+    호드
+  quotes:
+  - >-
+    좀비 50마리가 20분 동안 세이프 존에 나타납니다.
+  readings:
+    A: >-
+      구매 시 좀비 50마리가 세이프 존에 나타남. 각각 20 min 동안 존재
+  domain: >-
+    수 50, 지속 시간 20 min
+  parameters:
+    zombies: >-
+      50
+    duration: >-
+      20 min
+    price_cx_bucks: >-
+      UNKNOWN, U-0014 참조
+  notes: >-
+    배치 위치는 여기서는 'in the safe zones'이고 Zombies 페이지에서는 'at random points in the safe zones'입니다. Necromancy의 보너스 좀비는 좀비 분류에 있습니다.
+M-0409:
+  name: >-
+    최루가스 배치
+  quotes:
+  - >-
+    구매자가 세이프 존 안에서 25m (82ft) 크기의 구름이 나타날 위치를 고릅니다.
+  - >-
+    구름의 가장자리는 모든 참가자로부터 최소 20m (66ft) 떨어져 있어야 합니다.
+  readings:
+    A: >-
+      중심 c는 세이프 존 안. 모든 참가자 q에 대해 |c-q| - 25 >= 20 (반경 해석)
+    B: >-
+      |c-q| - 12.5 >= 20 (지름 해석)
+  domain: >-
+    c는 세이프 존 안, 미터
+  parameters:
+    cloud_size: >-
+      25 m
+    min_edge_gap: >-
+      20 m
+    price_cx_bucks: >-
+      UNKNOWN, U-0014 참조
+M-0410:
+  name: >-
+    최루가스 피해와 좀비 처치
+  quotes:
+  - >-
+    10분 동안 유지됩니다.
+  - >-
+    안에 있는 사람은 10초마다 2 HP를 잃습니다.
+  - >-
+    안에 있는 좀비를 죽입니다.
+  readings:
+    A: >-
+      600 s 동안, 안에 있는 참가자는 10s마다 2 HP를 잃음, 첫 틱은 진입별 타이머 기준
+    B: >-
+      첫 틱은 진입 시
+    C: >-
+      구름 전체에 공통인 10s 위상. 안에 있는 좀비는 죽음
+  domain: >-
+    t는 [0, 600] s 범위
+  parameters:
+    duration: >-
+      600 s
+    damage: >-
+      2 HP
+    period: >-
+      10 s
+  notes: >-
+    좀비 페이지는 최루가스를 좀비를 죽이는 폭발에 포함시켜 나열합니다. Protection 시길은 최루가스에 면역이 아닙니다 (Protection 페이지).

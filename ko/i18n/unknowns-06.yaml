@@ -1,0 +1,351 @@
+U-0413:
+  question: >-
+    Healing circle: 50m 원은 반지름입니까 지름입니까, 구성원 판정은 +60s에만 이루어집니까 아니면 지속적으로 이루어집니까, 그리고 25 HP 회복은 최대 HP를 넘어서도 적용됩니까? 이 회복은 Healing 및 Piety 토큰에 포함됩니까?
+  why_it_matters: >-
+    누가 혜택을 받는지(이동하는 참가자는 60s 전에 벗어날 수 있음)와 최대 HP일 때의 회복량을 결정합니다.
+  readings:
+    A: >-
+      반지름 50m, 구성원은 t+60s에 판정, 회복 min(25, max-hp)
+    B: >-
+      지름 50m(반지름 25m), t+60s에 판정
+    C: >-
+      구성원을 지속적으로 판정, 60s 후 진입 시 회복
+  sweep_range: >-
+    25 to 50 m. 위키는 크기로 '50m'만 제시합니다
+  resolution_paths:
+  - >-
+    VOD: 화면 타이머와 함께 이벤트를 실시간으로 관찰합니다.
+U-0414:
+  question: >-
+    Illusion 복사본 수: 'a copy of every living contestant'이고, 10명 미만 생존 시 'several copies, up to 30 in total'입니다. 각자 몇 개씩 생기고, 30개는 어떻게 나뉘며, 10명 이상일 때 총합은 30으로 제한됩니까?
+  why_it_matters: >-
+    복사본의 밀도와 공격이 실제 참가자에게 적중할 확률을 정합니다.
+  readings:
+    A: >-
+      n < 10일 때 각자 복사본 수 = floor(30/n), 총합 최대 30
+    B: >-
+      각자 복사본 수 = ceil(30/n), 총합은 30으로 제한
+    C: >-
+      정확히 30개를 무작위로 분배
+    D: >-
+      n >= 10: n개 복사본, 제한 없음. n >= 30이면 30개를 초과
+  sweep_range: >-
+    10 to 40 copies. 30은 10명 미만의 참가자에 대해 명시되어 있고, n>=10인 경우는 위키가 제한하지 않습니다
+  resolution_paths:
+  - >-
+    VOD: 화면 타이머와 함께 이벤트를 실시간으로 관찰합니다.
+U-0415:
+  question: >-
+    'attacking a copy uses up your attack'는 무엇을 소모합니까: 무기 내구도, 공격 슬롯, 아이템, 쿨다운? 이는 staff, drone, C4, landmine에도 적용되며, 복사본을 식별하는 Thermal goggle 보유자에게도 적용됩니까?
+  why_it_matters: >-
+    공격자가 대상을 잘못 식별했을 때의 비용입니다.
+  readings:
+    A: >-
+      일반 타격과 마찬가지로 아이템의 충전 또는 사용 1회
+    B: >-
+      쿨다운만
+    C: >-
+      내구도 1 포인트와 쿨다운
+  resolution_paths:
+  - >-
+    illusion 복사본에 대한 무기 타격 VOD.
+U-0416:
+  question: >-
+    Illusion 쿨다운: 'The next one can start 30min after it ends'. 'it ends'는 10min 만료를 뜻합니까, 파괴된 illusion을 뜻합니까? 그리고 illusion이 진행 중일 때 이루어진 구매는 어떻게 됩니까(대기열, 거부, 환불)?
+  why_it_matters: >-
+    illusion의 발생 빈도를 제한합니다(약 40min에 한 번).
+  readings:
+    A: >-
+      10min 만료 후 30min, 대기 중의 구매는 거부
+    B: >-
+      직전 시작 후 30min
+    C: >-
+      구매는 대기열에 들어가 가능한 가장 이른 시각에 시작
+  resolution_paths:
+  - >-
+    VOD: 화면 타이머와 함께 이벤트를 실시간으로 관찰합니다.
+U-0417:
+  question: >-
+    현상금 획득: 'The first other contestant to stay within 5m of them for 1min claims it'. 60s는 연속(범위를 벗어나면 초기화)입니까, 누적입니까, 아니면 짧은 이탈을 허용합니까? 표시된 참가자의 이동이 관련됩니까, 그리고 여러 추적자가 각각 따로 집계됩니까?
+  why_it_matters: >-
+    추격으로 현상금을 획득할 수 있는지와 기대 지급 속도를 결정합니다.
+  readings:
+    A: >-
+      추적자마다 연속 60s 카운터, 범위를 벗어나면 초기화
+    B: >-
+      추적자마다 누적 60s 카운터
+    C: >-
+      범위 안에 다른 참가자가 없을 때 초기화되는 공유 카운터 하나
+  resolution_paths:
+  - >-
+    움직이는 대상에 대한 현상금 획득 VOD.
+U-0418:
+  question: >-
+    현상금의 결과: 현상금은 획득되면 끝납니까(위키는 1h 또는 사망 시 종료로 기술), 그래서 반복 획득이 가능합니까? 표시된 참가자의 10 HP는 획득 시 한 번만 차감됩니까? 현상금이 없는 생존 참가자가 없을 때 누가 대상이 됩니까?
+  why_it_matters: >-
+    획득 후에도 지속되는 현상금은 반복해서 지급되고 피해를 줄 것입니다.
+  readings:
+    A: >-
+      획득하면 현상금이 끝나고 10 HP 피해는 한 번만 발생
+    B: >-
+      현상금이 지속되며 매 1min마다 다시 획득 가능
+    C: >-
+      현상금이 지속되며 다른 추적자의 획득에 대해서만 유효
+  resolution_paths:
+  - >-
+    VOD: 획득 후의 현상금 표시.
+U-0419:
+  question: >-
+    Cyclops 블러드 토큰: 죽을 때 '1 blood token per damage dealt'입니다. 피해는 200 HP를 상한으로 한 초과 피해를 제외하고 집계됩니까, merchant 미사일은 '시청자 아이템'입니까, 그리고 참가자들이 먼저 피해를 입혔더라도 존 피해로 죽으면 여전히 아무것도 지급되지 않습니까?
+  why_it_matters: >-
+    Cyclops는 주요 토큰 공급원이며, 총합은 200으로 제한되거나 초과 피해로 인해 제한이 없습니다.
+  readings:
+    A: >-
+      지급량 = 실제로 제거된 HP(총 <= 200). merchant 미사일 포함
+    B: >-
+      초과 피해를 포함한 원래 피해로 지급량 계산
+    C: >-
+      merchant 미사일은 시청자 아이템으로 취급되어 아무것도 지급하지 않음
+  resolution_paths:
+  - >-
+    토큰 기록이 있는 cyclops 처치 VOD.
+U-0420:
+  question: >-
+    Cyclops 공격 타이밍과 대상: 'Every 5s it hits the nearest contestant within 30m for 10 HP'. 첫 타격은 스폰+5s입니까, 아니면 대상이 처음 범위에 들어올 때입니까? 동률은 어떻게 처리합니까? 이 피해는 피해 파이프라인(U-0002)을 거칩니까?
+  why_it_matters: >-
+    cyclops 근처에 서 있는 참가자가 받는 피해: 10 HP / 5s = 2 HP/s.
+  readings:
+    A: >-
+      스폰부터 전역 5s 타이머, 범위 안에 참가자가 있으면 타격
+    B: >-
+      참가자가 범위에 들어올 때 타이머 시작
+    C: >-
+      타격은 7단계 파이프라인을 거침
+  resolution_paths:
+  - >-
+    VOD: 화면 타이머와 함께 이벤트를 실시간으로 관찰합니다.
+U-0421:
+  question: >-
+    Cyclops 조종 투표: 방향의 집합은 무엇이며, 아무도 투표하지 않으면 승자가 유지됩니까, 그리고 투표는 시청자마다 5s 구간마다 집계됩니까?
+  why_it_matters: >-
+    cyclops를 참가자 쪽으로 얼마나 유도할 수 있는지를 결정합니다.
+  readings:
+    A: >-
+      연속적인 방위, 투표의 평균
+    B: >-
+      이산적인 방향, 5s 구간마다 최다 득표
+    C: >-
+      투표가 없으면 이전 방향 유지
+  resolution_paths:
+  - >-
+    cyclops 투표 UI의 VOD.
+U-0422:
+  question: >-
+    Cyclops 존 피해: 'Outside the safe zones it takes zone damage'. 참가자와 같은 속도(U-0003)입니까, 같은 단계적 증가입니까, 아니면 고정입니까?
+  why_it_matters: >-
+    세이프 존 밖의 cyclops가 존 피해만으로 죽어 아무것도 지급하지 않는지 여부입니다.
+  readings:
+    A: >-
+      참가자와 같은 2s 틱과 같은 규칙
+    B: >-
+      다른 규칙
+  resolution_paths:
+  - >-
+    존 밖에 있는 cyclops의 VOD.
+U-0423:
+  question: >-
+    Reality Shield: 지속 시간이 주어지지 않았고, 'Everyone within 30m'는 반지름입니까 지름입니까, 그리고 'immune to all damage, zombies and new poison'은 이미 걸린 독이 계속 진행되는 것을 뜻합니까?
+  why_it_matters: >-
+    관리자용 도구이지만 핵 대응과 독 치료를 결정합니다.
+  readings:
+    A: >-
+      제거될 때까지 영구
+    B: >-
+      시간 제한 있음(비공개)
+    C: >-
+      반지름 30m
+    D: >-
+      지름 30m
+  sweep_range: >-
+    60 to 86400 s. 시간이 명시되지 않았으며, 이벤트 규모가 상한입니다
+  resolution_paths:
+  - >-
+    관리자의 발표.
+U-0424:
+  question: >-
+    좀비 대상 지정: 'nearest valid contestant, at any distance'. 무엇이 참가자를 유효하게 만듭니까(생존, 면역 아님, repellent 아님, Necromancy 아님)? 가장 가까운 대상은 얼마나 자주 다시 평가됩니까, 그리고 좀비는 지형을 따라 경로를 찾습니까?
+  why_it_matters: >-
+    좀비가 확실한 추격자인지 여부를 결정합니다.
+  readings:
+    A: >-
+      유효 = 생존이고 현재 좀비에 면역이 아님, 가장 가까운 대상을 매 틱 다시 평가
+    B: >-
+      유효 = 생존만. 면역은 흡수 시점에 적용
+  resolution_paths:
+  - >-
+    VOD: 화면 타이머와 함께 이벤트를 실시간으로 관찰합니다.
+U-0425:
+  question: >-
+    좀비 흡수 타이밍: 'drain 1 HP from any contestants within 5m every 10s'. 10s 타이머는 좀비마다(전역 위상)입니까, 아니면 진입 시점부터 참가자마다입니까? 첫 흡수는 언제 발생합니까, 각 흡수는 '타격'(U-0002)입니까, 그리고 1 HP 하한과 Kick 라이브 중 감소가 적용됩니까?
+  why_it_matters: >-
+    많은 좀비에 의한 초당 흡수량: 좀비 50마리가 모두 범위 안에 있으면 5 HP/s입니다.
+  readings:
+    A: >-
+      좀비마다: 틱 시점에 5m 안에 있는 모든 참가자가 1 HP를 잃음
+    B: >-
+      좀비와 참가자 쌍마다, 타이머는 진입 시 시작
+    C: >-
+      좀비마다, 첫 틱은 스폰 후 10s
+  resolution_paths:
+  - >-
+    VOD: 좀비 한 마리가 접근한 참가자, 시간 측정.
+U-0426:
+  question: >-
+    포션 파괴 판정: '10% chance to break one of your health potions'. 흡수 틱마다입니까, 조우마다입니까, 좀비마다입니까? 어느 포션이 파괴됩니까, 그리고 포션이 없을 때나 흡수가 차단될 때도 판정이 이루어집니까?
+  why_it_matters: >-
+    틱마다 판정하면 좀비 옆에서 약 100s마다 포션 하나가 깨집니다. 조우마다라면 훨씬 적습니다.
+  readings:
+    A: >-
+      좀비마다 흡수 틱당 한 번 판정
+    B: >-
+      좀비마다 참가자당 한 번 판정(첫 접촉)
+    C: >-
+      HP가 실제로 줄어든 흡수 사건에 대해서만 한 번 판정
+  resolution_paths:
+  - >-
+    VOD: 화면 타이머와 함께 이벤트를 실시간으로 관찰합니다.
+U-0427:
+  question: >-
+    조합 파괴 판정: '40% chance to destroy crafted items'(Ingenuity 페이지는 'unique crafts'와 'Zombie hits'라고 함). 흡수 틱마다입니까 조우마다입니까, 아이템 하나입니까 모든 조합품입니까, 그리고 고유하지 않은 조합품도 포함됩니까?
+  why_it_matters: >-
+    Ingenuity의 조합품이 좀비와 접촉한 뒤에도 남는지를 결정합니다.
+  readings:
+    A: >-
+      흡수 틱마다, 무작위 조합품 하나
+    B: >-
+      조우마다, 무작위 조합품 하나
+    C: >-
+      틱마다, 모든 조합품이 각각 독립적으로 판정
+  resolution_paths:
+  - >-
+    VOD: 화면 타이머와 함께 이벤트를 실시간으로 관찰합니다.
+U-0428:
+  question: >-
+    Summon 빈도: 'up to 3 times every 6h'. 고정된 6h 구간입니까, 이동하는 6h 창입니까, 아니면 세 번째 사용 후 쿨다운입니까?
+  why_it_matters: >-
+    Summon으로 얻는 Necromancy 수입의 상한을 정합니다.
+  readings:
+    A: >-
+      이동 창: 임의의 6h 안에 최대 3회 사용
+    B: >-
+      이벤트 시작부터 고정된 6h 구간
+    C: >-
+      세 번째 사용 후 6h 잠금
+  resolution_paths:
+  - >-
+    Necromancy 참가자가 네 번 summon하는 VOD.
+U-0429:
+  question: >-
+    가드 좀비: 가드 좀비는 스폰 지점에 머뭅니까 추격합니까? Necromancy 참가자마다 하나 나타납니까 사망마다 나타납니까? 소유자와 죽은 자도 흡수합니까, 그리고 1h 동안 존재한다는 것(Necromancy 페이지)은 그 페이지에서만 명시된 것입니까?
+  why_it_matters: >-
+    가드 좀비는 2 HP/5s(0.4 HP/s)를 흡수하며 최대 30 HP까지: 상한을 채우는 데 75s입니다.
+  readings:
+    A: >-
+      1h 동안 정지, 10m 안의 Necromancy가 아닌 참가자를 흡수
+    B: >-
+      일반 좀비처럼 추격
+    C: >-
+      Necromancy 수와 관계없이 사망마다 하나
+  resolution_paths:
+  - >-
+    VOD: 화면 타이머와 함께 이벤트를 실시간으로 관찰합니다.
+U-0430:
+  question: >-
+    Ingenuity Zombie Killer: 'kills the next ten zombies that come within 10m of its owner'와 'stops zombies draining you until it has killed ten'. 열 마리가 함께 도착하면 어떻게 집계됩니까, 흡수 차단은 열 마리까지로 제한됩니까, 그리고 순서는 접근 순입니까?
+  why_it_matters: >-
+    50마리 무리에 대한 방어 가치입니다.
+  readings:
+    A: >-
+      열 마리를 처치한 뒤 종료, 동시에 도착한 좀비는 거리순으로 처치
+    B: >-
+      임의의 순간에 10m 안에 있는 서로 다른 좀비 열 마리
+  resolution_paths:
+  - >-
+    VOD.
+U-0431:
+  question: >-
+    Zombie repellent: 'zombies ignore you for 20min'(Zombies 페이지)과 'stop zombies hurting you'(Items)가 다릅니다. 무시한다는 것은 대상 지정에서 제외되어 좀비가 다른 참가자를 쫓는다는 뜻입니까, 아니면 흡수만 막는다는 뜻입니까?
+  why_it_matters: >-
+    보호받지 못하는 참가자들 사이에서 좀비가 어떻게 재분배되는지에 영향을 줍니다.
+  readings:
+    A: >-
+      흡수에만 면역, 여전히 추격당함
+    B: >-
+      대상 집합에서 제외
+  resolution_paths:
+  - >-
+    VOD.
+U-0432:
+  question: >-
+    시청자 공격의 동시성: 미사일, 핵, 무리, 최루탄, 공습, 건십, 현상금, healing circle에 대해 제한이 명시되어 있지 않습니다(cyclops와 illusion만 하나로 제한). 마음대로 중첩할 수 있습니까?
+  why_it_matters: >-
+    제한 없는 중첩은 총 피해가 가격으로만 제한되게 만듭니다(U-0014).
+  readings:
+    A: >-
+      제한 없이 중첩 가능, Cx-Bucks로 제한
+    B: >-
+      유형별 제한이 있으나 비공개
+  resolution_paths:
+  - >-
+    상점 페이지와 VOD.
+U-0500:
+  question: >-
+    Piety 'one blood token per 5 HP healed': 나머지는 회복 사건 사이에 이월됩니까(누적 카운터), 아니면 사건마다 내림됩니까?
+  why_it_matters: >-
+    작은 회복(campfire 초당 1 HP, bandage 틱, Healing sigil의 1 HP 회복, 5/11/23/46 HP 포션)이 토큰을 전혀 주는지를 결정합니다. 사건마다 내림하면 1 HP씩의 잔회복은 0이 될 수 있습니다.
+  readings:
+    A: >-
+      토큰 = floor(H_total / 5), H_total은 시작 이후 누적된 해당 회복 HP(나머지 이월)
+    B: >-
+      사건당 토큰 = floor(h / 5), 회복 사건마다 나머지를 버림
+    C: >-
+      B와 같지만 지속 회복(2min 동안 10 HP의 bandage, Campfire 1 HP/s)은 틱마다 하나의 사건이므로 1 HP 틱은 아무것도 주지 않음
+  resolution_paths:
+  - >-
+    VOD: 여러 번의 회복에 걸쳐 Piety 참가자의 블러드 토큰 카운터를 관찰합니다. 연속된 3 HP 회복 두 번은 합계 토큰 1개(A) 또는 0개(B, C)를 줍니다.
+  - >-
+    REA: 배포된 서버 로직의 토큰 지급 코드(클라이언트 코드에는 없음, RE-0001).
+U-0501:
+  question: >-
+    Piety 토큰 카운터: 'HP healed'는 포션의 명목상 수치를 뜻합니까, 실제로 회복된 HP를 뜻합니까, 그리고 +15% 보너스가 포함됩니까?
+  why_it_matters: >-
+    최대 HP에 가까운 Piety 참가자는 거의 HP를 얻지 못한 채 포션을 마실 수 있습니다. 포션당 토큰 수확량이 최대 9개까지 달라집니다(gigantic potion).
+  readings:
+    A: >-
+      실제로 회복된 HP(최대 HP로 제한), +15% 보너스 적용 후
+    B: >-
+      +15% 보너스 적용 후의 명목 회복량(초과 회복 포함)
+    C: >-
+      보너스 적용 전의 명목 회복량(원래 등급 값 5/10/20/40, 초과 회복 포함)
+    D: >-
+      실제로 회복된 HP, 보너스는 포함하지 않음
+  resolution_paths:
+  - >-
+    VOD: 여러 번의 회복에 걸쳐 Piety 참가자의 블러드 토큰 카운터를 관찰합니다. 최대 HP일 때와 최대치보다 1 HP 낮을 때 포션을 마시고 토큰 증가량을 비교합니다.
+  - >-
+    REA: 회복 처리 코드.
+U-0502:
+  question: >-
+    Piety 'from any source except revives, Campfires and healing circles included': Campfire와 healing circle은 집계됩니까(부활만 제외), 아니면 부활과 함께 제외됩니까?
+  why_it_matters: >-
+    끝의 'included'라는 구절은 예외 목록에 붙거나 집계되는 출처에 붙습니다. 'healing circle'이라는 용어는 코퍼스의 다른 곳에는 나오지 않습니다. Ingenuity Campfire 옆에 서 있는 것이 Piety 토큰을 주는지 여부가 달라집니다.
+  readings:
+    A: >-
+      부활을 제외한 모든 회복이 집계됨. Campfire 회복과 healing circle은 명시적으로 포함
+    B: >-
+      부활, Campfire, healing circle이 모두 제외됨. 그 밖의 모든 것은 집계
+  resolution_paths:
+  - >-
+    VOD: Campfire로 회복되는 Piety 참가자, 회복 전후의 토큰 카운터.
+  - >-
+    주최 측의 발표.

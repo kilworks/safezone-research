@@ -1,0 +1,331 @@
+M-0125:
+  name: >-
+    파이프라인 7단계: Body armor가 남은 피해를 파괴될 때까지 흡수함
+  quotes:
+  - >-
+    Armor
+  - >-
+    Body armor는 남은 피해를 파괴될 때까지 흡수합니다.
+  readings:
+    A: >-
+      a := min(d, dur); d := d - a; dur := dur - a; dur = 0이면 파괴됨
+    B: >-
+      남은 d 전체가 흡수되고 초과분은 소실되며, dur가 0에 도달하면 파괴됨
+  domain: >-
+    d, dur는 0 이상의 정수
+  parameters:
+    armor_durability: >-
+      이 페이지에서는 UNKNOWN, 아이템 페이지 참조
+M-0126:
+  name: >-
+    Body armor의 적용 범위: 모든 종류의 피해, 한 개만 소지 가능
+  quotes:
+  - >-
+    Body Armor는 모든 종류의 피해에 적용됩니다.
+  - >-
+    한 개만 소지할 수 있습니다.
+  readings:
+    A: >-
+      armor는 표에 '(absorbs)'로 표시된 모든 피해 원천에 적용됨
+    B: >-
+      armor는 예외 없이 모든 원천에 적용됨 (문자 그대로)
+  parameters:
+    max_carried: >-
+      1
+  notes: >-
+    표의 Trapped gift 행에는 'Body armor' 항목이 없고, 아이템 페이지에는 'A trapped gift ignores it'라고 되어 있습니다: C-0102.
+M-0127:
+  name: >-
+    Reality Shield와 Body armor 머리 문장 (뒤섞임)
+  quotes:
+  - >-
+    Reality Shield 모든 종류의 피해를 막습니다. 모든 종류의 피해를 흡수합니다.
+  readings:
+    A: >-
+      Reality Shield: 모든 종류의 피해를 막음; Body armor: 모든 종류의 피해를 흡수함
+  notes: >-
+    이 문장은 스냅샷에서 깨져 있습니다 ('Reality Shield block every kind of damage. absorbs every kind of damage.'). 표에는 Reality Shield 열이 없습니다.
+M-0128:
+  name: >-
+    Shield는 존, 언세이프 서클(unsafe circle), 로봇 피해를 막지 못하며, Safety bubble과 Reality Shield는 막음
+  quotes:
+  - >-
+    Shield는 존, 언세이프 서클(unsafe circle), 로봇 피해를 막지 못합니다.
+  - >-
+    Safety bubble과 Reality Shield는 막습니다.
+  readings:
+    A: >-
+      blocks(Shield)는 {outside circle, unsafe circle, robot}을 제외함; blocks(Safety bubble)와 blocks(Reality Shield)는 이를 포함함
+  notes: >-
+    표와 일치합니다: 세 행에는 Safety bubble이 있고 Shield는 없습니다. 해당 행에서 Reality Shield는 M-0127에 의존합니다.
+M-0129:
+  name: >-
+    취약한 참가자: Shield나 Safety bubble의 보호를 받지 못함
+  quotes:
+  - >-
+    취약한 참가자는 Shield나 Safety Bubble의 보호를 받지 못합니다.
+  readings:
+    A: >-
+      vulnerable이면: Shield와 Safety bubble은 차단 집합에서 제거됨
+  notes: >-
+    Vulnerability Dart 자체는 다른 페이지에 있습니다.
+M-0130:
+  name: >-
+    Flak jacket은 다음 missile, nuke, airstrike impact, gunship bomb을 막고 소모됨
+  quotes:
+  - >-
+    Flak jacket은 다음 missile, nuke, airstrike impact 또는 gunship bomb을 막고 소모됩니다.
+  - >-
+    airstrike fire는 막지 못합니다.
+  - >-
+    이미 다른 것에 의해 막힌 타격은 이를 소모시키지 않습니다.
+  readings:
+    A: >-
+      source in {missile, nuke, airstrike impact, gunship bomb}이고 jacket 보유 중이며 다른 차단 수단이 적용되지 않았으면: d := 0 이고 jacket 소모됨; airstrike fire는 막지 못함
+  notes: >-
+    표의 행과 일치합니다 (Missile, Nuke, Airstrike impact, Gunship bomb에는 Flak jacket이 있고, Airstrike fire에는 없음).
+M-0131:
+  name: >-
+    Gas mask는 tear gas를 막음
+  quotes:
+  - >-
+    Gas mask는 tear gas를 막습니다.
+  readings:
+    A: >-
+      blocks(Gas mask)는 tear gas를 포함함
+  notes: >-
+    Tear gas 행과 일치합니다.
+M-0132:
+  name: >-
+    Sleeping Bag 면역: 자신의 Sleeping Bag에서 15 m 이내이면 존, 언세이프 서클(unsafe circle), 로봇을 제외한 모든 피해에 면역
+  quotes:
+  - >-
+    자신의 Sleeping Bag에서 15m (49ft) 이내에서 자고 있는 참가자는 존, 언세이프 서클(unsafe circle), 로봇 피해를 제외한 모든 피해에 면역입니다.
+  readings:
+    A: >-
+      asleep이고 dist(self, own_bag) <= 15 m이면: {outside circle, unsafe circle, robot}을 제외한 모든 원천에 면역
+  domain: >-
+    dist는 미터 단위
+  parameters:
+    radius_m: >-
+      15
+  notes: >-
+    상인 페이지에는 65 s 지연과 flashbang이 추가되어 있고 존과 언세이프 서클(unsafe circle)만 제외합니다 (로봇 없음): C-0105. 해당 세 원천의 피해 표 행에는 명시된 대로 면역이 없습니다.
+M-0133:
+  name: >-
+    폭발 범위에 서 있으면 자신의 C4와 landmine에 피해를 입음
+  quotes:
+  - >-
+    폭발 범위에 서 있으면 자신의 C4와 landmine에 맞습니다.
+  readings:
+    A: >-
+      C4와 landmine에서는 attacker = defender가 허용됨; 타격은 파이프라인을 거침
+  notes: >-
+    Mirror는 자신의 폭발물을 반사하지 않습니다 (M-0135).
+M-0134:
+  name: >-
+    Mirror forcefield는 처음 반사한 공격에서 소모됨
+  quotes:
+  - >-
+    Mirror Forcefield는 처음 반사한 공격에서 소모됩니다.
+  readings:
+    A: >-
+      mirror는 첫 반사에서 소모됨; 막힌 공격이나 반사할 수 없는 공격은 이를 소모시키지 않음
+M-0135:
+  name: >-
+    Mirror forcefield가 반사할 수 있는 원천 목록
+  quotes:
+  - >-
+    Poison Dart, fake gravestone, bow, wizard staff, knife, long sword, Zarok's axe, machete, drone, C4, landmine, flashbang, fake chest만 반사하며, 자신의 폭발물은 절대 반사하지 않습니다.
+  readings:
+    A: >-
+      source in {Poison Dart, fake gravestone, bow, wizard staff, knife, long sword, Zarok's axe, machete, drone, C4, landmine, flashbang, fake chest}이고 자신의 폭발물이 아닐 때, 그리고 그때에만 반사
+  notes: >-
+    표에는 Trapped gift 행에도 Mirror forcefield (reflects)가 있지만 이 목록에는 빠져 있습니다: C-0101.
+M-0136:
+  name: >-
+    Shield나 Safety bubble은 착탄이 아니라 각 독 단계를 막음
+  quotes:
+  - >-
+    Shield나 Safety Bubble은 독이 걸리는 것을 막지 못하지만, 지속되는 동안 각 독 단계를 막습니다.
+  readings:
+    A: >-
+      타격 시 poisoned := true; Shield나 Safety bubble이 활성인 동안 각 독 틱은 차단됨
+  notes: >-
+    Poison 페이지의 면역 설명과 같습니다 (M-0179).
+M-0137:
+  name: >-
+    Death Ward: 서클 밖 첫 타격 차단 후 2 min 동안 서클 밖 면역, 쿨다운 2 h
+  quotes:
+  - >-
+    Death Ward: Death 참가자가 서클 밖에서 받는 첫 타격은 차단되며, 서클 밖의 피해는 2min 동안 차단됩니다.
+  - >-
+    쿨다운 2h.
+  readings:
+    A: >-
+      Death 참가자: 서클 밖 첫 타격 차단; 서클 밖 피해는 120 s 동안 차단; 이후 쿨다운 7200 s
+    B: >-
+      차단 구간과 쿨다운은 활성화 시점에 시작됨
+  parameters:
+    window_s: >-
+      120
+    cooldown_s: >-
+      7200
+  notes: >-
+    Death 시길 페이지는 ward를 다르게 서술합니다 (언세이프 서클(unsafe circle)을 추가함): C-0103. 시길 고유 메커니즘은 중복 기록하지 않았습니다.
+M-0140:
+  name: >-
+    피해 원천 'Outside the circle'과 이를 막는 수단
+  quotes:
+  - >-
+    | Outside the circle | Safety bubble, Guardian angel, Death Ward, Hazmat suit (둔화), Body armor (흡수)
+  readings:
+    A: >-
+      blockers(Outside the circle) = {Safety bubble: 막음; Guardian angel: 막음; Death Ward: 막음; Hazmat suit: 둔화시킴; Body armor: 흡수함}
+  domain: >-
+    원천 'Outside the circle'의 타격 1회
+  notes: >-
+    주기적 존 피해: Body armor와 Kick이 적용되는지는 U-0002에서 다룹니다.
+M-0141:
+  name: >-
+    피해 원천 'Unsafe circle'과 이를 막는 수단
+  quotes:
+  - >-
+    | Unsafe circle | Safety bubble, Guardian angel, Death Ward, Hazmat suit (둔화), Body armor (흡수)
+  readings:
+    A: >-
+      blockers(Unsafe circle) = {Safety bubble: 막음; Guardian angel: 막음; Death Ward: 막음; Hazmat suit: 둔화시킴; Body armor: 흡수함}
+  domain: >-
+    원천 'Unsafe circle'의 타격 1회
+  notes: >-
+    Unsafe circle (Trolling). Trolling 페이지는 Guardian angel, Safety bubble, Reality Shield, Death Ward를 차단 수단으로 열거합니다: 같은 집합이며, C-0103은 Death Ward의 범위에 관한 것입니다.
+M-0142:
+  name: >-
+    피해 원천 'Robot'과 이를 막는 수단
+  quotes:
+  - >-
+    | Robot | Safety bubble, Hazmat suit (둔화), Body armor (흡수)
+  readings:
+    A: >-
+      blockers(Robot) = {Safety bubble: 막음; Hazmat suit: 둔화시킴; Body armor: 흡수함}
+  domain: >-
+    원천 'Robot'의 타격 1회
+  notes: >-
+    Robot 피해는 Shield (M-0128)로도 Sleeping Bag (M-0132)으로도 막히지 않습니다.
+M-0143:
+  name: >-
+    피해 원천 'Poison'과 이를 막는 수단
+  quotes:
+  - >-
+    | Poison | Shield, Safety bubble, Sleeping Bag, Protection, Anti poison, Body armor (흡수)
+  readings:
+    A: >-
+      blockers(Poison) = {Shield: 막음; Safety bubble: 막음; Sleeping Bag: 막음; Protection: 막음; Anti poison: 막음; Body armor: 흡수함}
+  domain: >-
+    원천 'Poison'의 타격 1회
+  notes: >-
+    Poison 페이지: Protection은 면역, Anti poison은 새 독 없음, Reality Shield는 새 독 없음; 여기서 '막음'은 독 틱을 막는다는 뜻입니다. Poison Dart가 반사되는 공격이므로 Mirror는 없습니다 (M-0180).
+M-0144:
+  name: >-
+    피해 원천 'Tear gas'와 이를 막는 수단
+  quotes:
+  - >-
+    | Tear gas | Shield, Safety bubble, Sleeping Bag, Gas mask, Body armor (흡수)
+  readings:
+    A: >-
+      blockers(Tear gas) = {Shield: 막음; Safety bubble: 막음; Sleeping Bag: 막음; Gas mask: 막음; Body armor: 흡수함}
+  domain: >-
+    원천 'Tear gas'의 타격 1회
+  notes: >-
+    Tear gas: Gas mask가 열거되어 있으며 M-0131과 일치합니다.
+M-0145:
+  name: >-
+    피해 원천 'Zombie drain'과 이를 막는 수단
+  quotes:
+  - >-
+    | Zombie drain | Shield, Safety bubble, Sleeping Bag, Necromancy / Repellent, Body armor (흡수)
+  readings:
+    A: >-
+      blockers(Zombie drain) = {Shield: 막음; Safety bubble: 막음; Sleeping Bag: 막음; Necromancy / Repellent: 막음; Body armor: 흡수함}
+  domain: >-
+    원천 'Zombie drain'의 타격 1회
+  notes: >-
+    Zombie drain (주기적). 'Necromancy / Repellent'는 Necromancy 시길 또는 Zombie repellent로 해석합니다.
+M-0146:
+  name: >-
+    피해 원천 'Bow'와 이를 막는 수단
+  quotes:
+  - >-
+    | Bow | Shield, Safety bubble, Sleeping Bag, Mirror forcefield (반사), Body armor (흡수)
+  readings:
+    A: >-
+      blockers(Bow) = {Shield: 막음; Safety bubble: 막음; Sleeping Bag: 막음; Mirror forcefield: 반사함; Body armor: 흡수함}
+  domain: >-
+    원천 'Bow'의 타격 1회
+  notes: >-
+    공격자의 Kick 보너스가 이 원천에 적용됩니다 (2단계 목록).
+M-0147:
+  name: >-
+    피해 원천 'Wizard Staff area'와 이를 막는 수단
+  quotes:
+  - >-
+    | Wizard Staff area | Shield, Safety bubble, Sleeping Bag, Mirror forcefield (반사), Body armor (흡수)
+  readings:
+    A: >-
+      blockers(Wizard Staff area) = {Shield: 막음; Safety bubble: 막음; Sleeping Bag: 막음; Mirror forcefield: 반사함; Body armor: 흡수함}
+  domain: >-
+    원천 'Wizard Staff area'의 타격 1회
+  notes: >-
+    Wizard staff 범위 피해 (5 s 동안의 범위 틱, U-0010). 공격자의 Kick 보너스가 이 원천에 적용됩니다 (2단계 목록).
+M-0148:
+  name: >-
+    피해 원천 'Assassin's Knife'와 이를 막는 수단
+  quotes:
+  - >-
+    | Assassin's Knife | Shield, Safety bubble, Sleeping Bag, Mirror forcefield (반사), Body armor (흡수)
+  readings:
+    A: >-
+      blockers(Assassin's Knife) = {Shield: 막음; Safety bubble: 막음; Sleeping Bag: 막음; Mirror forcefield: 반사함; Body armor: 흡수함}
+  domain: >-
+    원천 'Assassin's Knife'의 타격 1회
+  notes: >-
+    공격자의 Kick 보너스가 이 원천에 적용됩니다 (2단계 목록).
+M-0149:
+  name: >-
+    피해 원천 'Long Sword'와 이를 막는 수단
+  quotes:
+  - >-
+    | Long Sword | Shield, Safety bubble, Sleeping Bag, Mirror forcefield (반사), Body armor (흡수)
+  readings:
+    A: >-
+      blockers(Long Sword) = {Shield: 막음; Safety bubble: 막음; Sleeping Bag: 막음; Mirror forcefield: 반사함; Body armor: 흡수함}
+  domain: >-
+    원천 'Long Sword'의 타격 1회
+  notes: >-
+    공격자의 Kick 보너스가 이 원천에 적용됩니다 (2단계 목록).
+M-0150:
+  name: >-
+    피해 원천 'Zarok's Axe'와 이를 막는 수단
+  quotes:
+  - >-
+    | Zarok's Axe | Shield, Safety bubble, Sleeping Bag, Mirror forcefield (반사), Body armor (흡수)
+  readings:
+    A: >-
+      blockers(Zarok's Axe) = {Shield: 막음; Safety bubble: 막음; Sleeping Bag: 막음; Mirror forcefield: 반사함; Body armor: 흡수함}
+  domain: >-
+    원천 'Zarok's Axe'의 타격 1회
+  notes: >-
+    공격자의 Kick 보너스가 이 원천에 적용됩니다 (2단계 목록).
+M-0151:
+  name: >-
+    피해 원천 'Huge Machete'와 이를 막는 수단
+  quotes:
+  - >-
+    | Huge Machete | Shield, Safety bubble, Sleeping Bag, Mirror forcefield (반사), Body armor (흡수)
+  readings:
+    A: >-
+      blockers(Huge Machete) = {Shield: 막음; Safety bubble: 막음; Sleeping Bag: 막음; Mirror forcefield: 반사함; Body armor: 흡수함}
+  domain: >-
+    원천 'Huge Machete'의 타격 1회
+  notes: >-
+    공격자의 Kick 보너스가 이 원천에 적용됩니다 (2단계 목록).

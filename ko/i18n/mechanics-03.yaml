@@ -1,0 +1,306 @@
+"M-0152":
+  "name": >-
+    피해 원천 'Deep Cut bleeding': 이를 막는 수단
+  "quotes":
+  - >-
+    | Deep Cut bleeding | Shield, Safety bubble, Sleeping Bag, Body armor (흡수)
+  "readings":
+    "A": >-
+      blockers(Deep Cut bleeding) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Body armor: 흡수}
+  "domain": >-
+    원천 'Deep Cut bleeding'의 타격 1회
+  "notes": >-
+    Deep Cut bleeding(주기적).
+"M-0153":
+  "name": >-
+    피해 원천 'Drone': 이를 막는 수단
+  "quotes":
+  - >-
+    | Drone | Shield, Safety bubble, Sleeping Bag, Protection, Mirror forcefield (반사), Body armor (흡수)
+  "readings":
+    "A": >-
+      blockers(Drone) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Protection: 차단; Mirror forcefield: 반사; Body armor: 흡수}
+  "domain": >-
+    원천 'Drone'의 타격 1회
+  "notes": >-
+    공격자의 Kick 보너스가 이 원천에 적용됩니다(2단계 목록).
+"M-0154":
+  "name": >-
+    피해 원천 'C4': 이를 막는 수단
+  "quotes":
+  - >-
+    | C4 | Shield, Safety bubble, Sleeping Bag, Protection, Mirror forcefield (반사), Body armor (흡수)
+  "readings":
+    "A": >-
+      blockers(C4) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Protection: 차단; Mirror forcefield: 반사; Body armor: 흡수}
+  "domain": >-
+    원천 'C4'의 타격 1회
+  "notes": >-
+    공격자의 Kick 보너스가 이 원천에 적용됩니다(2단계 목록).
+"M-0155":
+  "name": >-
+    피해 원천 'Landmine': 이를 막는 수단
+  "quotes":
+  - >-
+    | Landmine | Shield, Safety bubble, Sleeping Bag, Protection, Mirror forcefield (반사), Body armor (흡수)
+  "readings":
+    "A": >-
+      blockers(Landmine) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Protection: 차단; Mirror forcefield: 반사; Body armor: 흡수}
+  "domain": >-
+    원천 'Landmine'의 타격 1회
+  "notes": >-
+    공격자의 Kick 보너스가 이 원천에 적용됩니다(2단계 목록).
+"M-0156":
+  "name": >-
+    피해 원천 'Trapped gift': 이를 막는 수단
+  "quotes":
+  - >-
+    | Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (반사)
+  "readings":
+    "A": >-
+      blockers(Trapped gift) = {Shield: 차단; Sleeping Bag: 차단; Protection: 차단; Mirror forcefield: 반사}
+  "domain": >-
+    원천 'Trapped gift'의 타격 1회
+  "notes": >-
+    Safety bubble과 Body armor는 목록에 없습니다. 아이템 페이지에 'A trapped gift ignores it'(방어구)와 'A trapped gift still hurts the holder'(버블)라고 되어 있습니다. C-0101과 C-0102를 참조하십시오. 공격자의 Kick 보너스가 이 원천에 적용됩니다(2단계 목록).
+"M-0157":
+  "name": >-
+    피해 원천 'Fake chest': 이를 막는 수단
+  "quotes":
+  - >-
+    | Fake chest | Shield, Safety bubble, Sleeping Bag, Mirror forcefield (반사), Body armor (흡수)
+  "readings":
+    "A": >-
+      blockers(Fake chest) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Mirror forcefield: 반사; Body armor: 흡수}
+  "domain": >-
+    원천 'Fake chest'의 타격 1회
+  "notes": >-
+    공격자의 Kick 보너스가 이 원천에 적용됩니다(2단계 목록).
+"M-0158":
+  "name": >-
+    피해 원천 'Missile': 이를 막는 수단
+  "quotes":
+  - >-
+    | Missile | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (흡수)
+  "readings":
+    "A": >-
+      blockers(Missile) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Protection: 차단; Flak jacket: 차단; Body armor: 흡수}
+  "domain": >-
+    원천 'Missile'의 타격 1회
+"M-0159":
+  "name": >-
+    피해 원천 'Nuke': 이를 막는 수단
+  "quotes":
+  - >-
+    | Nuke | Shield, Safety bubble, Sleeping Bag, Flak jacket, Body armor (흡수)
+  "readings":
+    "A": >-
+      blockers(Nuke) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Flak jacket: 차단; Body armor: 흡수}
+  "domain": >-
+    원천 'Nuke'의 타격 1회
+"M-0160":
+  "name": >-
+    피해 원천 'Airstrike impact': 이를 막는 수단
+  "quotes":
+  - >-
+    | Airstrike impact | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (흡수)
+  "readings":
+    "A": >-
+      blockers(Airstrike impact) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Protection: 차단; Flak jacket: 차단; Body armor: 흡수}
+  "domain": >-
+    원천 'Airstrike impact'의 타격 1회
+"M-0161":
+  "name": >-
+    피해 원천 'Airstrike fire': 이를 막는 수단
+  "quotes":
+  - >-
+    | Airstrike fire | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (흡수)
+  "readings":
+    "A": >-
+      blockers(Airstrike fire) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Protection: 차단; Body armor: 흡수}
+  "domain": >-
+    원천 'Airstrike fire'의 타격 1회
+"M-0162":
+  "name": >-
+    피해 원천 'Gunship bomb': 이를 막는 수단
+  "quotes":
+  - >-
+    | Gunship bomb | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (흡수)
+  "readings":
+    "A": >-
+      blockers(Gunship bomb) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Protection: 차단; Flak jacket: 차단; Body armor: 흡수}
+  "domain": >-
+    원천 'Gunship bomb'의 타격 1회
+"M-0163":
+  "name": >-
+    피해 원천 'Giant cyclops attack': 이를 막는 수단
+  "quotes":
+  - >-
+    | Giant cyclops attack | Shield, Safety bubble, Sleeping Bag, Body armor (흡수)
+  "readings":
+    "A": >-
+      blockers(Giant cyclops attack) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Body armor: 흡수}
+  "domain": >-
+    원천 'Giant cyclops attack'의 타격 1회
+"M-0164":
+  "name": >-
+    피해 원천 'Bounty mark': 이를 막는 수단
+  "quotes":
+  - >-
+    | Bounty mark | Shield, Safety bubble, Sleeping Bag, Body armor (흡수)
+  "readings":
+    "A": >-
+      blockers(Bounty mark) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Body armor: 흡수}
+  "domain": >-
+    원천 'Bounty mark'의 타격 1회
+"M-0165":
+  "name": >-
+    피해 원천 'Eddie's Potion backfire': 이를 막는 수단
+  "quotes":
+  - >-
+    | Eddie's Potion backfire | Shield, Safety bubble, Sleeping Bag, Body armor (흡수)
+  "readings":
+    "A": >-
+      blockers(Eddie's Potion backfire) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Body armor: 흡수}
+  "domain": >-
+    원천 'Eddie's Potion backfire'의 타격 1회
+  "notes": >-
+    시드 U-0004 메모와 일치합니다: Shield, Safety bubble, Sleeping Bag, Body armor가 이를 막으며, 이는 차단에 대한 해석 B를 뒷받침합니다.
+"M-0166":
+  "name": >-
+    피해 원천 'Protection retribution': 이를 막는 수단
+  "quotes":
+  - >-
+    | Protection retribution | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (흡수)
+  "readings":
+    "A": >-
+      blockers(Protection retribution) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Protection: 차단; Body armor: 흡수}
+  "domain": >-
+    원천 'Protection retribution'의 타격 1회
+"M-0170":
+  "name": >-
+    독 틱: 1min 30s마다 1 HP
+  "quotes":
+  - >-
+    독은 1min 30s마다 1 HP의 피해를 줍니다.
+  "readings":
+    "A": >-
+      중독 상태 동안: t_p = 90, 180, ...에서 HP 1 감소
+    "B": >-
+      첫 감소는 t_p = 0에서 발생
+  "domain": >-
+    중독 이후 경과한 초 t_p
+  "parameters":
+    "tick_hp": >-
+      1
+    "interval_s": >-
+      90
+  "notes": >-
+    30 min당 20 HP에 해당하며, Poison Dart가 30min 동안 20 HP만큼 중독시킨다는 다른 페이지와 일치합니다(이후의 유도 대상이며 여기서는 단정하지 않습니다). 1 HP에서는 Kick 감소가 의미가 없습니다(독이 타격일 때만 최소 1, U-0002).
+"M-0171":
+  "name": >-
+    다시 중독되면 타이머가 초기화되며 중첩되지 않음
+  "quotes":
+  - >-
+    다시 중독되면 타이머가 초기화되며, 중첩되지 않습니다.
+  "readings":
+    "A": >-
+      다시 중독: countdown := 90 s; damage_remaining은 변하지 않음
+    "B": >-
+      countdown := 90 s 및 damage_remaining := total
+  "parameters":
+    "total_hp": >-
+      UNKNOWN, U-0116 참조
+"M-0172":
+  "name": >-
+    독은 모든 피해를 입히거나 치료되면 끝남
+  "quotes":
+  - >-
+    독은 모든 피해를 입혔거나 치료된 경우에만 끝납니다.
+  "readings":
+    "A": >-
+      damage_dealt = total 또는 치료 이벤트일 때, 그리고 그때에만 poisoned := false
+  "parameters":
+    "total_hp": >-
+      UNKNOWN, U-0116 참조
+  "notes": >-
+    차단된 틱이 입힌 피해로 계산되는지는 U-0117에서 다룹니다.
+"M-0173":
+  "name": >-
+    독의 원천: Poison dart와 Fake gravestone
+  "quotes":
+  - >-
+    Poison dart 또는 Fake gravestone에 의해 중독될 수 있습니다.
+  "readings":
+    "A": >-
+      독 이벤트는 정확히 두 원천에서 발생: Poison dart, Fake gravestone
+  "notes": >-
+    다른 페이지에는 효과 존이나 다른 아이템이 중독시킬 수 있다고 되어 있지만, 이 페이지는 이 둘만 나열합니다('can be poisoned by').
+"M-0174":
+  "name": >-
+    독의 치료: Anti poison, Healing 회복, God's Fruit
+  "quotes":
+  - >-
+    독은 다음으로 치료할 수 있습니다: Anti poison, Healing 회복(Healing healing), 또는 God's Fruit
+  "readings":
+    "A": >-
+      치료 이벤트: Anti poison, Healing 참가자의 회복, God's Fruit
+  "notes": >-
+    귀속은 원문에 적힌 그대로 유지했습니다: 'Healing healing'은 Healing 시길에 의한 회복을 뜻합니다.
+"M-0175":
+  "name": >-
+    Protection 시길은 독에 완전 면역
+  "quotes":
+  - >-
+    Protection 시길: 완전 면역
+  "readings":
+    "A": >-
+      sigil = Protection: poisoned는 결코 true가 되지 않음
+  "notes": >-
+    피해 표의 Poison 행에 Protection이 나열되어 있어 일치합니다.
+"M-0176":
+  "name": >-
+    Anti poison: 지속되는 동안 새 독 없음
+  "quotes":
+  - >-
+    Anti poison: 지속되는 동안 새로운 독이 걸리지 않습니다.
+  "readings":
+    "A": >-
+      Anti poison 활성 동안: 새 독 이벤트는 무시됨; 기존 독은 이 조항의 영향을 받지 않음
+  "notes": >-
+    치료와 면역: 아이템 페이지에는 Anti poison이 독을 치료하고 10 min의 면역을 준다고 되어 있습니다. 이 페이지는 치료를 따로 나열합니다(M-0174). 지속 시간은 아이템 페이지에 있습니다.
+"M-0177":
+  "name": >-
+    Reality Shield: 내부에 서 있는 동안 새 독 없음
+  "quotes":
+  - >-
+    Reality Shield: 그 안에 서 있는 동안 새로운 독이 걸리지 않습니다.
+  "readings":
+    "A": >-
+      Reality Shield 내부 위치: 새 독 이벤트는 무시됨
+"M-0178":
+  "name": >-
+    자신의 Sleeping Bag에서 잠자기(독 면역 목록)
+  "quotes":
+  - >-
+    자신의 Sleeping Bag에서 잠자기
+  "readings":
+    "A": >-
+      자신의 bag에서 수면 중: 새 독 없음
+    "B": >-
+      자신의 bag에서 수면 중: 독 틱이 차단됨
+    "C": >-
+      둘 다
+  "notes": >-
+    스냅샷에는 동사 없이 항목명만 있습니다.
+"M-0179":
+  "name": >-
+    Shield 또는 Safety bubble은 중독을 막지 않지만 독 피해는 차단함
+  "quotes":
+  - >-
+    Shield 또는 Safety bubble은 중독 자체를 막지는 않지만, 독 피해는 차단합니다.
+  "readings":
+    "A": >-
+      독 이벤트는 수용됨; Shield 또는 Safety bubble이 활성인 동안 틱이 차단됨
+  "notes": >-
+    피해 페이지의 메모(M-0136)와 동일하며, 불일치는 발견되지 않았습니다.

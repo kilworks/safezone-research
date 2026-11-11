@@ -1,0 +1,475 @@
+M-0440:
+  name: >-
+    좀비 추격
+  quotes:
+  - >-
+    좀비는 맵을 돌아다니며 참가자를 쫓아가 참가자의 HP를 깎습니다.
+  - >-
+    좀비는 거리와 상관없이 가장 가까운 유효한 참가자를 1.4m/s (3.13mph)의 속도로 쫓아갑니다.
+  readings:
+    A: >-
+      각 좀비는 거리와 상관없이 가장 가까운 유효한 참가자를 향해 1.4 m/s로 이동함
+  domain: >-
+    유효 집합이 정의되지 않음
+  parameters:
+    speed: >-
+      1.4 m/s
+    valid: >-
+      UNKNOWN, U-0424 참조
+M-0441:
+  name: >-
+    좀비의 HP 흡수
+  quotes:
+  - >-
+    5m (16ft) 이내에 있는 모든 참가자에게서 10s마다 1 HP를 흡수합니다.
+  readings:
+    A: >-
+      좀비 하나당 10s마다: 5m 이내의 각 참가자가 1 HP를 잃음
+    B: >-
+      좀비와 참가자 쌍마다 진입 시점부터 따로 타이머가 돎
+  domain: >-
+    d <= 5 m, 주기 10 s
+  parameters:
+    damage: >-
+      1 HP
+    period: >-
+      10 s
+    range: >-
+      5 m
+M-0442:
+  name: >-
+    좀비의 HP 흡수 상한
+  quotes:
+  - >-
+    각 좀비는 각 참가자에게서 최대 30 HP까지만 흡수할 수 있습니다.
+  readings:
+    A: >-
+      (좀비, 참가자) 쌍마다 좀비의 수명 동안 흡수한 총량 <= 30 HP
+    B: >-
+      조우(encounter)마다 적용
+    C: >-
+      시간 구간마다 적용
+  domain: >-
+    쌍마다 정수 0..30
+  parameters:
+    cap: >-
+      30 HP
+M-0443:
+  name: >-
+    좀비가 체력 포션을 부숨
+  quotes:
+  - >-
+    좀비는 10%의 확률로 보유한 체력 포션 하나를 부숩니다.
+  readings:
+    A: >-
+      p = 0.1, 흡수 틱마다
+    B: >-
+      p = 0.1, 조우마다
+    C: >-
+      p = 0.1, 잃은 HP마다
+  domain: >-
+    p in {0.1}
+  parameters:
+    p: >-
+      0.1
+M-0444:
+  name: >-
+    좀비가 조합한 아이템을 파괴함
+  quotes:
+  - >-
+    조합한 아이템을 파괴할 40%의 확률
+  readings:
+    A: >-
+      p = 0.4, 흡수 틱마다, 무작위 조합 아이템 하나
+    B: >-
+      조우마다 적용
+    C: >-
+      각 조합 아이템에 독립적으로 적용
+  domain: >-
+    p in {0.4}
+  parameters:
+    p: >-
+      0.4
+  notes: >-
+    Ingenuity 페이지는 'unique crafts'와 'Zombie hits'라고 적고 있습니다 (C-0404).
+M-0445:
+  name: >-
+    호드 좀비
+  quotes:
+  - >-
+    Horde: 시청자가 세이프 존의 무작위 지점에 좀비 50마리를 풀어놓습니다.
+  - >-
+    호드 좀비에는 주인이 없습니다.
+  readings:
+    A: >-
+      시청자가 세이프 존의 무작위 지점에 주인 없는 좀비 50마리를 풀어놓음
+  domain: >-
+    수량 50
+  parameters:
+    count: >-
+      50
+    lifetime: >-
+      20 min (공격 페이지)
+  notes: >-
+    주인 없음: 어떤 Necromancy 참가자도 이 좀비로 토큰을 얻지 못합니다.
+M-0446:
+  name: >-
+    좀비 소환 (Zombie Summon)
+  quotes:
+  - >-
+    Summon: Necromancy 참가자는 6h마다 최대 3번, 자신이 서 있는 곳에 좀비를 소환합니다.
+  readings:
+    A: >-
+      임의의 6h 동안 소환은 최대 3번; 좀비는 참가자가 서 있는 곳에 나타남
+    B: >-
+      고정 블록
+    C: >-
+      6h 잠금
+  domain: >-
+    6h당 사용 횟수 <= 3
+  parameters:
+    uses: >-
+      3
+    window: >-
+      6 h
+M-0447:
+  name: >-
+    어떤 사망이든 발생하면 좀비 등장
+  quotes:
+  - >-
+    Death: 어떤 참가자가 죽으면, 살아 있는 모든 Necromancy 참가자는 자신으로부터 10m (33ft) 이내에 좀비를 얻습니다.
+  readings:
+    A: >-
+      어떤 참가자가 죽을 때마다, 살아 있는 각 Necromancy 참가자는 10m 이내에 좀비를 얻음
+  domain: >-
+    반경 10 m
+  parameters:
+    radius: >-
+      10 m
+  notes: >-
+    Necromancy 페이지에도 같은 규칙이 있으며, 좀비가 나타날 때마다 블러드 토큰을 얻는다고 되어 있습니다.
+M-0448:
+  name: >-
+    호드 보너스
+  quotes:
+  - >-
+    Horde bonus: 호드가 풀려날 때, 살아 있는 모든 Necromancy 참가자는 자신이 서 있는 곳에 좀비 5마리도 얻습니다.
+  readings:
+    A: >-
+      호드가 풀려날 때, 살아 있는 각 Necromancy 참가자는 자신이 서 있는 곳에 좀비 5마리를 얻음
+  domain: >-
+    수량 5
+  parameters:
+    count: >-
+      5
+M-0449:
+  name: >-
+    가드 좀비
+  quotes:
+  - >-
+    참가자가 Necromancy 참가자로부터 50m (164ft) 이내에서 죽으면, 묘비에서 10m (33ft) 떨어진 곳에 가드 좀비가 나타납니다.
+  - >-
+    가드 좀비는 10m (33ft) 이내의 모든 사람에게서 5s마다 2 HP를 흡수하며, 참가자당 최대 30 HP까지 흡수합니다.
+  readings:
+    A: >-
+      Necromancy 참가자로부터 50m 이내에서 사망 발생: 묘비에서 10m 떨어진 곳에 가드 좀비가 나타나 10m 이내의 참가자에게서 5s마다 2 HP를 흡수하며, 참가자당 최대 30 HP까지 흡수함
+  domain: >-
+    d(death, necromancer) <= 50 m; 흡수 범위 10 m
+  parameters:
+    hp: >-
+      2
+    period: >-
+      5 s
+    range: >-
+      10 m
+    cap: >-
+      30 HP
+    lifetime: >-
+      1 h (Necromancy 페이지)
+M-0450:
+  name: >-
+    좀비 소멸
+  quotes:
+  - >-
+    좀비는 시간이 다 되면 사라집니다.
+  readings:
+    A: >-
+      좀비는 수명이 다하면 제거됨
+  domain: >-
+    좀비마다
+  parameters:
+    lifetime: >-
+      UNKNOWN, U-0403 참조
+M-0451:
+  name: >-
+    폭발이 좀비를 죽임
+  quotes:
+  - >-
+    폭발은 그 안에 있는 모든 좀비를 죽입니다: C4, Landmine, 미사일, 핵, 공습, 건십 폭탄, 최루탄.
+  readings:
+    A: >-
+      C4, landmine, 미사일, 핵, 공습, 건십 폭탄 또는 최루탄의 폭발 안에 있는 좀비는 죽음
+  domain: >-
+    폭발 범위 안의 좀비 위치
+  notes: >-
+    공습의 불은 처치 수단으로 나열되어 있지 않습니다 (공습의 폭발만 나열됨).
+M-0452:
+  name: >-
+    Landmine 및 C4와 좀비
+  quotes:
+  - >-
+    Landmine의 범위 안으로 걸어 들어온 좀비는 그것을 터뜨립니다.
+  - >-
+    좀비는 C4를 터뜨리지 않습니다.
+  readings:
+    A: >-
+      landmine의 범위 안으로 걸어 들어온 좀비는 그것을 작동시키고, 좀비는 C4를 절대 작동시키지 않음
+  domain: >-
+    불리언
+M-0453:
+  name: >-
+    Ingenuity Zombie Killer
+  quotes:
+  - >-
+    Ingenuity Zombie Killer는 주인으로부터 10m (33ft) 이내로 들어오는 다음 좀비 열 마리를 죽입니다.
+  - >-
+    시간 제한이 없습니다.
+  - >-
+    Ingenuity Zombie Killer는 열 마리를 죽일 때까지 좀비가 당신에게서 HP를 흡수하는 것도 막아 줍니다.
+  readings:
+    A: >-
+      주인으로부터 10m 이내로 들어오는 다음 좀비 10마리를 죽임; 시간 제한 없음; 열 마리를 죽일 때까지 좀비의 흡수를 막음
+  domain: >-
+    수량 0..10
+  parameters:
+    kills: >-
+      10
+    radius: >-
+      10 m
+M-0454:
+  name: >-
+    좀비 면역 아이템
+  quotes:
+  - >-
+    Shield, Safety bubble, Reality Shield, 또는 자신의 Sleeping Bag에서 자는 것으로 면역이 됩니다.
+  readings:
+    A: >-
+      Shield, Safety bubble, Reality Shield 또는 자신의 Sleeping Bag에서 자는 것 => 좀비에 면역
+  domain: >-
+    참가자마다 불리언
+  notes: >-
+    Necromancy는 Necromancy 페이지와 Damage 페이지에서는 완전 면역으로 나열되어 있지만 여기에는 없습니다 (C-0401).
+M-0455:
+  name: >-
+    Zombie repellent
+  quotes:
+  - >-
+    Zombie repellent: 사용하면 20min 동안 좀비가 당신을 무시합니다.
+  readings:
+    A: >-
+      1200 s 동안 좀비가 사용자를 무시함 (흡수만 해당)
+    B: >-
+      대상 집합에서 제외됨
+  domain: >-
+    t in [0, 1200] s
+  parameters:
+    duration: >-
+      1200 s
+  notes: >-
+    아이템 페이지: 'stop zombies hurting you for 20min' (C-0402).
+M-0500:
+  name: >-
+    Piety의 기본 최대 HP와 인벤토리 슬롯
+  quotes:
+  - >-
+    최대 HP
+  - >-
+    110 HP
+  - >-
+    슬롯
+  - >-
+    3
+  - >-
+    최대 HP가 10 HP 더 높습니다.
+  readings:
+    A: >-
+      maxHP_piety = 110; slots_piety = 3; maxHP = base + 10, 여기서 base = 100 (Ingenuity와 Trolling 라벨은 100을 제시함)
+  domain: >-
+    이벤트 시작 시점의 HP와 슬롯 수(정수)
+  parameters:
+    max_hp: >-
+      110
+    slots: >-
+      3
+    max_hp_delta_vs_base: >-
+      +10
+  notes: >-
+    능력치 라벨은 쌍으로 읽습니다 (라벨 'Max HP' 다음에 '110 HP'; 라벨 'Slots' 다음에 '3'). 'Your max HP is 10 HP higher'라는 문장은 기준값 100에 대해 110과 일치합니다. 상인 페이지는 Piety의 최대 HP 상한을 220으로 올립니다. 그것은 상인 정형화 담당의 기록입니다. 시작 HP가 최대 HP와 같다는 것은 이 페이지에 명시되어 있지 않습니다.
+M-0501:
+  name: >-
+    Piety의 회복으로 얻는 블러드 토큰
+  quotes:
+  - >-
+    부활을 제외한 모든 출처에서 5 HP 회복할 때마다 블러드 토큰 하나를 얻습니다. Campfire와 회복 서클도 포함됩니다.
+  readings:
+    A: >-
+      tokens += floor(H_total / 5), 자격이 되는 누적 HP 기준; 부활을 제외한 모든 회복이 산입되며 Campfire와 회복 서클도 포함됨
+    B: >-
+      tokens += floor(h / 5), 이벤트마다 적용하고 나머지는 버림, 같은 제외 목록
+    C: >-
+      Campfire, 회복 서클, 부활은 모두 집계에서 제외됨
+  domain: >-
+    회복 이벤트마다 정수 h >= 0; H_total은 누적값
+  parameters:
+    hp_per_token: >-
+      5
+    tokens_per_step: >-
+      1
+    hp_basis: >-
+      UNKNOWN, U-0501 참조
+  notes: >-
+    명시된 출처: 부활을 제외한 모든 회복. 포션, 붕대, Healing 시길의 회복, Campfire가 후보 출처입니다. 변환된 포션은 결코 회복하지 않습니다. 변환 메커니즘을 참조하십시오. +15% 포션 보너스는 포션이 회복하는 HP를 바꾸므로, 명목값과 보너스가 적용된 값 중 어느 쪽이 산입되는지는 U-0501에 있습니다.
+M-0502:
+  name: >-
+    Piety의 포션을 블러드 토큰으로 변환
+  quotes:
+  - >-
+    small, medium, large 또는 gigantic 포션을 각각 블러드 토큰 1, 2, 3 또는 4개로 변환합니다.
+  - >-
+    변환된 포션은 회복으로 치지 않습니다.
+  readings:
+    A: >-
+      변환한 포션 하나당 tokens(small)=1, tokens(medium)=2, tokens(large)=3, tokens(gigantic)=4; 변환된 포션은 아무것도 회복하지 않으며 회복 토큰 적립도 발생시키지 않음
+  domain: >-
+    포션 등급 in {small, medium, large, gigantic}; 중첩된 수량 0..6
+  parameters:
+    small: >-
+      1
+    medium: >-
+      2
+    large: >-
+      3
+    gigantic: >-
+      4
+  notes: >-
+    이 페이지는 변환 행동의 쿨다운이나 장소를 알려 주지 않습니다. 변환된 포션은 회복이 아니므로, 회복으로 얻는 Piety 토큰(M-0501)은 변환된 포션에는 적립되지 않습니다. 포션 회복량은 아이템 페이지에 있습니다: Small 5, Medium 10, Large 20, Gigantic 40 HP (다른 계열의 조항이므로 여기에서는 인용하지 않음).
+M-0503:
+  name: >-
+    Piety의 상자와 크레이트가 무작위 체력 포션으로 바뀜
+  quotes:
+  - >-
+    당신이 여는 모든 아이템 상자와 당신이 집는 모든 크레이트는 안에 든 아이템 대신 무작위 체력 포션 하나를 줍니다.
+  - >-
+    상인의 보급 상자는 바뀌지 않습니다.
+  readings:
+    A: >-
+      claim(item chest) 또는 take(crate) -> 무작위 등급의 체력 포션 하나가 인벤토리에 추가됨; 안에 든 아이템은 주어지지 않음; 상인의 보급 상자는 그대로; 다른 보급 상자도 그대로
+    B: >-
+      A와 같지만 상인이 아닌 보급 상자(에어드롭, 시청자, 관리자)도 변환됨
+  domain: >-
+    아이템 상자를 여는 행동 또는 크레이트를 집는 행동마다
+  parameters:
+    potion_tier_weights: >-
+      UNKNOWN, U-0504 참조
+    scope: >-
+      UNKNOWN, U-0505 참조
+    overflow: >-
+      UNKNOWN, U-0506 참조
+  notes: >-
+    상자가 무엇인지에 대한 모든 내용은 삭제된 상자 페이지에서 나온 것입니다. U-0015를 참조하십시오. 가짜 상자는 아이템 상자가 아닙니다. 다음 메커니즘을 참조하십시오. Piety의 아이템 루팅에는 안에 든 아이템이 결코 포함되지 않습니다 (상자에서 무기도 방어구도 나오지 않음). Greed 참가자는 상자에서 자신만의 보너스를 굴립니다 (별도의 시길).
+M-0504:
+  name: >-
+    가짜 상자는 Piety에게도 함정을 작동시킴
+  quotes:
+  - >-
+    가짜 상자는 여전히 함정을 작동시킵니다.
+  readings:
+    A: >-
+      Piety 참가자가 claim(fake chest) -> 함정 효과가 다른 참가자와 똑같이 적용됨; 체력 포션은 주어지지 않음
+  domain: >-
+    Piety 참가자가 가짜 상자를 여는 행동
+  notes: >-
+    함정 효과 자체는 Trolling 페이지에 있으며 (5 HP 피해와 상자 잠금) M-0533에서 모델링됩니다. Piety 참가자가 가짜 상자와 진짜 상자를 구별할 수 있는지는 명시되어 있지 않습니다 (Ingenuity만 가짜를 알아봄).
+M-0505:
+  name: >-
+    Piety의 체력 포션 15% 보너스
+  quotes:
+  - >-
+    체력 포션이 15% 더 많이 회복시키며, 내림합니다.
+  readings:
+    A: >-
+      heal(h) = floor(1.15 * h): 등급 5, 10, 20, 40은 각각 5, 11, 23, 46이 됨
+    B: >-
+      heal(h) = h + floor(0.15 * h): 모든 정수 h에서 A와 같은 값
+    C: >-
+      heal = floor(1.15 * min(h, missing HP)): 보너스가 실제 회복량에 적용됨
+  domain: >-
+    h in {5, 10, 20, 40}; binary64의 1.15*h는 5.75, 11.5, 23.0, 46.0을 주므로 floor는 정확한 값과 같음
+  parameters:
+    bonus: >-
+      15%
+  notes: >-
+    'Health potions'만 명시되어 있습니다. Campfire 풀과 Everything potion은 별개의 효과입니다. Ingenuity 페이지는 Piety와 Protection의 포션 변경이 Campfire에는 적용되지 않는다고 적고 있습니다. Protection 시길은 포션에서 50% 덜 회복합니다 (다른 페이지).
+M-0506:
+  name: >-
+    Piety의 체력 포션 6개 중첩, 슬롯 하나
+  quotes:
+  - >-
+    모든 체력 포션이 인벤토리 슬롯 하나를 공유하며, 최대 6개까지입니다.
+  - >-
+    Piety 참가자는 체력 포션을 슬롯 하나에 최대 6개까지 중첩합니다.
+  readings:
+    A: >-
+      모든 등급의 체력 포션이 인벤토리 슬롯 하나를 차지하며 중첩 상한은 6; 슬롯 용량은 3 (M-0500)
+  domain: >-
+    포션 수량 0..6
+  parameters:
+    stack_cap: >-
+      6
+    slots_for_potions: >-
+      1
+  notes: >-
+    두 페이지가 일치합니다: 슬롯 하나, 최대 6개. 등급이 섞인 포션이 슬롯을 공유하는지는 'All your health potions'에서 읽어낸 것입니다. 좀비는 10%의 확률로 체력 포션 하나를 부수는데 (좀비 페이지), 이는 Piety에게 가장 중요합니다.
+M-0507:
+  name: >-
+    Piety는 Greed의 절도에 면역
+  quotes:
+  - >-
+    Greed 플레이어에게 아이템을 도둑맞는 것에 면역입니다.
+  - >-
+    Piety 플레이어에게서는 훔칠 수 없습니다.
+  readings:
+    A: >-
+      피해자가 Piety 시길을 가지고 있으면 steal(thief, victim)은 거부됨
+  domain: >-
+    Greed 시길을 가진 모든 도둑, Piety 시길을 가진 모든 피해자
+  notes: >-
+    두 페이지는 양쪽에서 같은 말을 하고 있습니다. Piety 참가자가 다른 경로로 아이템을 잃는 것(좀비의 파손, 방어 아이템의 언세이프 서클 손실)은 막아 주지 않습니다.
+M-0508:
+  name: >-
+    Greed의 기본 최대 HP와 인벤토리 슬롯
+  quotes:
+  - >-
+    최대 HP
+  - >-
+    90 HP
+  - >-
+    슬롯
+  - >-
+    3
+  - >-
+    최대 HP가 10 HP 더 낮습니다.
+  readings:
+    A: >-
+      maxHP_greed = 90; slots_greed = 3; maxHP = base - 10, 여기서 base = 100
+  domain: >-
+    이벤트 시작 시점의 HP와 슬롯 수(정수)
+  parameters:
+    max_hp: >-
+      90
+    slots: >-
+      3
+    max_hp_delta_vs_base: >-
+      -10
+  notes: >-
+    상인의 HP 업그레이드는 한 번에 +10이며 상한은 200입니다 (Piety는 220). Greed가 몇 번 구매해야 상한에 도달하는지는 상인 페이지의 문제입니다 (90 + 10k = 200이면 k = 11이 필요함).

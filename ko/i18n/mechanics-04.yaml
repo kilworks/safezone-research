@@ -1,0 +1,449 @@
+M-0180:
+  name: >-
+    Mirror forcefield가 Poison Dart 또는 Fake gravestone을 공격자에게 되돌림
+  quotes:
+  - >-
+    Mirror forcefield는 Poison Dart 또는 fake gravestone을 공격자에게 되돌립니다.
+  readings:
+    A: >-
+      방어자의 mirror가 활성 상태이고 source in {Poison Dart, fake gravestone}: 공격자가 중독되고 방어자는 중독되지 않음
+  notes: >-
+    아이템 페이지에는 mirror를 가진 공격자를 상대로 하면 다트가 여전히 공격자를 중독시키고 그 mirror는 남는다고 덧붙여 있습니다. 중복 기록하지 않았습니다.
+M-0200:
+  name: >-
+    아이템 3개의 인벤토리 용량
+  quotes:
+  - >-
+    아이템을 최대 3개까지 휴대할 수 있으며, 일부 아이템은 중첩할 수 있습니다(C4/Landmines/Arrows 등).
+  readings:
+    A: >-
+      slots_used <= 3 (기본 용량)
+  domain: >-
+    slots_used 정수 0..3
+  parameters:
+    capacity: >-
+      3
+  notes: >-
+    아이템 페이지의 기본값입니다. 다른 페이지는 일부 시길에 다른 용량을 제시하며(Endurance 10, Ingenuity 2에 조합 칸 5), 이는 각 시길 계열에 속합니다.
+M-0201:
+  name: >-
+    한 칸에 중첩되는 아이템
+  quotes:
+  - >-
+    아이템을 최대 3개까지 휴대할 수 있으며, 일부 아이템은 중첩할 수 있습니다(C4/Landmines/Arrows 등).
+  readings:
+    A: >-
+      중첩 가능 = {C4, Landmines, Arrows}만 해당. 그 외 모든 아이템은 개당 한 칸을 차지함
+    B: >-
+      목록은 열려 있음('등'): 다른 아이템(mirror forcefield, Piety가 아닌 경우의 물약 등)도 중첩될 수 있음
+  domain: >-
+    아이템 종류. 중첩 크기: 무기 페이지에 따르면 C4/landmines는 5, arrows는 10
+  notes: >-
+    중첩 크기는 아이템 페이지에 없습니다. 무기 페이지는 C4와 landmines에 5, 화살 묶음당 10을 제시합니다.
+M-0202:
+  name: >-
+    Piety 체력 물약 6개 중첩
+  quotes:
+  - >-
+    Piety 참가자는 체력 물약을 한 칸에 최대 6개까지 중첩합니다.
+  readings:
+    A: >-
+      Piety 참가자의 모든 체력 물약이 한 칸을 공유하며, 개수 <= 6
+  domain: >-
+    물약 개수 0..6
+  notes: >-
+    Piety 페이지와 같습니다(모든 체력 물약이 인벤토리 한 칸을 공유하며 최대 6개). 다른 참가자의 물약 중첩에 대해서는 아이템 페이지에 언급이 없습니다(U-0200 참조).
+M-0203:
+  name: >-
+    활성 아이템 효과 3개 상한
+  quotes:
+  - >-
+    활성 아이템 효과는 한 번에 최대 3개까지 가질 수 있습니다.
+  readings:
+    A: >-
+      count(참가자의 활성 아이템 효과) <= 3 (항상)
+  domain: >-
+    정수 0..3
+  parameters:
+    cap: >-
+      3
+M-0204:
+  name: >-
+    효과 상한에서 아이템 사용 거부
+  quotes:
+  - >-
+    상한에 도달하면 아이템은 거부되고 그대로 보유합니다.
+  readings:
+    A: >-
+      count == 3일 때 효과를 추가하는 아이템을 사용: 사용이 거부되고, 아이템은 인벤토리에 남으며, 상태는 변하지 않음
+  domain: >-
+    count 0..3. 아이템 사용 이벤트
+  notes: >-
+    Hazmat suit는 '휴대하는 동안' 효과로 계산되므로(사용 행동 없음), 상한에서 주웠을 때 어떻게 되는지는 페이지에 나와 있지 않습니다(U-0202).
+M-0205:
+  name: >-
+    상한에 포함되는 효과
+  quotes:
+  - >-
+    다음은 포함됩니다: Shield, Guardian angel, Mirror forcefield, Anti poison 면역, Flak jacket, Gas mask, Zombie repellent, 그리고 휴대하는 동안의 Hazmat suit.
+  readings:
+    A: >-
+      계산 대상 = Shield, Guardian angel, Mirror forcefield, Anti poison 면역, Flak jacket, Gas mask, Zombie repellent, Hazmat suit(휴대 중). 그 외는 없음
+    B: >-
+      같은 목록이지만 각 Mirror forcefield를 따로 계산함(여러 개가 중첩될 수 있음)
+    C: >-
+      같은 목록이지만 모든 Mirror forcefield를 합쳐 한 번만 계산함
+  domain: >-
+    효과 종류의 집합. mirror의 중복 계산 여부는 미해결
+  notes: >-
+    어느 목록에도 언급되지 않은 것: EMP(10min 시간제), Thermal goggles(역시 '휴대하는 동안'), Body armor, Sleeping Bag, 체력 물약. U-0202 참조.
+M-0206:
+  name: >-
+    상한에 포함되지 않는 효과
+  quotes:
+  - >-
+    다음은 포함되지 않습니다: Safety Bubbles, smoke bombs, bandages, 조합 아이템, 상인 업그레이드, 그리고 Greed chest shield처럼 아이템 사용에서 비롯되지 않은 효과.
+  readings:
+    A: >-
+      계산 제외 = Safety Bubbles, smoke bombs, bandages, 조합 아이템, 상인 업그레이드, 그리고 아이템 사용에서 비롯되지 않은 효과(예: Greed chest shield)
+  domain: >-
+    효과 종류의 집합
+  notes: >-
+    Greed chest shield는 Shield 아이템과 별개의 효과입니다. Shield처럼 막는지는 Greed 페이지에 속합니다.
+M-0207:
+  name: >-
+    등급별 체력 물약 회복량
+  quotes:
+  - >-
+    사용 가능
+  - >-
+    등급별로 회복합니다: Small 5 HP, Medium 10 HP, Large 20 HP, Gigantic 40 HP.
+  readings:
+    A: >-
+      hp' = min(maxHP, hp + h)
+    B: >-
+      hp' = hp + h, 최대 HP 상한 없음(상한은 다른 곳에서 적용되거나 전혀 적용되지 않음)
+  domain: >-
+    tier in {Small, Medium, Large, Gigantic}; 0 < hp <= maxHP
+  parameters:
+    Small: >-
+      5 HP
+    Medium: >-
+      10 HP
+    Large: >-
+      20 HP
+    Gigantic: >-
+      40 HP
+  notes: >-
+    Piety는 자체 페이지에서 15% 내림을 더합니다: 정확한 정수 연산에서 5->5, 10->11, 20->23, 40->46입니다(binary64는 U-0006). 현상금 보상은 무작위 체력 물약을 줍니다(공격 페이지).
+M-0208:
+  name: >-
+    Eddie's potion의 도박
+  quotes:
+  - >-
+    사용 가능
+  - >-
+    도박입니다: 10% 확률로 최대 HP의 50%를 회복합니다.
+  - >-
+    그렇지 않으면 최대 HP의 30%를 잃습니다.
+  readings:
+    A: >-
+      p=0.1: hp += floor(M/2); 아니면 hp -= floor(3*M/10)
+    B: >-
+      p=0.1: hp += ceil(M/2); 아니면 hp -= ceil(3*M/10)
+    C: >-
+      p=0.1: hp += round(M/2); 아니면 hp -= round(3*M/10) (0.5는 올림)
+    D: >-
+      혼합: 회복과 손실의 어림 방향이 서로 반대임
+  domain: >-
+    M = 최대 HP 정수; hp 1..M; 결과는 서로 배타적, P(heal)=1/10, P(loss)=9/10
+  parameters:
+    heal_chance: >-
+      10%
+    heal_fraction: >-
+      최대 HP의 50%
+    loss_fraction: >-
+      최대 HP의 30%
+    rounding: >-
+      UNKNOWN, U-0204 참조
+  notes: >-
+    M이 10의 배수이면 모든 해석이 일치합니다(회복 M/2, 손실 3M/10). 시길은 최대 HP를 10만큼 바꾸므로(Piety +10, Greed -10), 기본 HP가 10의 배수가 아닐 때만 반올림이 문제가 됩니다. 피해 페이지는 Eddie's Potion 역효과를 Shield, Safety bubble, Sleeping Bag, Body armor(흡수)가 막는 것으로 나열합니다(U-0004 참조). 회복량은 '잃은 HP'가 아니라 '최대 HP'의 비율입니다.
+M-0209:
+  name: >-
+    Hazmat suit가 존 피해 간격을 늘림
+  quotes:
+  - >-
+    휴대하는 동안 각 존 피해 간격이 2s 길어집니다.
+  readings:
+    A: >-
+      휴대 중: 존 밖 피해 간격 = 2s + 2s = 4s, 유예/첫 틱은 변하지 않음
+    B: >-
+      휴대 중: 모든 간격이 4s이고 첫 틱도 2s 지연됨
+    C: >-
+      휴대 중: +2s가 언세이프 서클(unsafe circle) 및 robot 피해 간격에도 적용됨(피해 페이지는 서클 밖, 언세이프 서클, robot에 대해 Hazmat suit (slows)를 나열함)
+  domain: >-
+    휴대 상태 불리언; 간격 s는 초 단위
+  parameters:
+    added_interval: >-
+      2s
+    base_interval: >-
+      2s (존 페이지: 2s마다 1 HP)
+  notes: >-
+    틱당 피해는 변하지 않으므로, 단순한 해석에서는 존 소모 속도가 절반이 됩니다(4s마다 1 HP). Hazmat은 휴대하는 동안 효과 3개 상한에 포함됩니다.
+M-0210:
+  name: >-
+    Guardian angel의 존 면역
+  quotes:
+  - >-
+    사용 가능
+  - >-
+    10min 동안 존 피해에 면역입니다.
+  readings:
+    A: >-
+      사용 후 10min 동안 세이프 존 밖에 있어서 받는 피해 = 0
+    B: >-
+      위와 같고, 언세이프 서클(unsafe circle) 피해도 0
+  domain: >-
+    사용 후 t in [0, 600)초
+  parameters:
+    duration: >-
+      10min
+  notes: >-
+    피해 페이지의 표는 Guardian angel을 '서클 밖'과 '언세이프 서클' 모두에 나열하지만, 아이템 페이지는 '존 피해'만 말합니다. 같은 페이지의 Shield 문장은 존과 언세이프 서클을 따로 명시합니다.
+M-0211:
+  name: >-
+    Guardian angel의 종료 조건
+  quotes:
+  - >-
+    다른 참가자가 당신을 공격하면, shield나 bubble이 타격을 막더라도 종료됩니다.
+  readings:
+    A: >-
+      대상이 자신인 다른 참가자의 첫 공격에서, Shield나 Safety bubble에 막혔는지와 상관없이 종료됨. 시청자와 관리자의 공격은 제외
+    B: >-
+      A에 더해, 피해를 주지 않는 적대 행동(steal, Vulnerability Dart, flashbang)과 자신이 설치한 트랩을 다른 참가자가 발동시킨 경우도 포함
+    C: >-
+      막기 전에 실제로 피해를 입혔을 공격일 때만 종료됨. 즉 더 앞서 무력화된 공격(빗나감, smoke, mirror)은 종료시키지 않음
+  domain: >-
+    이벤트: attack(attacker!=you, target=you)
+  notes: >-
+    명시된 내용: 막힌 타격도 종료시킵니다. 미해결: 범위 효과, 트랩, 독 틱, drone, 반사된 공격에서 '당신을 공격한다'가 무엇을 뜻하는지.
+M-0212:
+  name: >-
+    Safety bubble의 생성, 크기, 지속 시간
+  quotes:
+  - >-
+    사용 가능
+  - >-
+    서 있는 곳에 10m(33ft) bubble을 10min 동안 만듭니다.
+  readings:
+    A: >-
+      bubble = 사용 지점의 사용자를 중심으로 한 반지름 10 m의 원판, 600 s 지속
+    B: >-
+      bubble = 지름 10 m, 반지름 5 m의 원판
+  domain: >-
+    위치는 추상적; t in [0, 600)
+  parameters:
+    size: >-
+      10 m (33 ft)
+    duration: >-
+      10min
+M-0213:
+  name: >-
+    Safety bubble의 면역
+  quotes:
+  - >-
+    안에 있는 모든 사람은 존 피해를 포함해 피해와 좀비에 면역입니다.
+  - >-
+    함정이 설치된 선물은 여전히 소지자에게 피해를 줍니다.
+  readings:
+    A: >-
+      안에 있는 모든 참가자: 피해 = 0이며 좀비가 해칠 수 없음(존 피해 포함). 예외: 함정이 설치된 선물은 여전히 소지자에게 피해를 줌
+  domain: >-
+    inside(position, bubble) 불리언
+  notes: >-
+    피해 페이지: Safety bubble은 독이 걸리는 것을 막지는 않지만 독의 각 단계를 막습니다. Flashbang은 막지 못합니다(flashbang 절). 경계 포함 여부는 명시되어 있지 않습니다.
+M-0214:
+  name: >-
+    Safety bubble과 취약한 참가자
+  quotes:
+  - >-
+    취약한 참가자는 보호하지 않으며, 취약한 동안에는 사용할 수 없습니다.
+  readings:
+    A: >-
+      취약한 참가자는 bubble 보호를 받지 못하고 bubble을 사용할 수 없음. bubble 자체는 다른 사람들에게 남음
+    B: >-
+      Vulnerability Dart는 그들이 소유하거나 그 안에 서 있는 모든 bubble을 터뜨림(상인 페이지). bubble은 모두에게서 사라짐
+  domain: >-
+    vulnerable 불리언
+  notes: >-
+    C-0204 참조. 아이템 페이지는 취약한 참가자가 보호받지 못한다고만 말하고, 상인 페이지는 다트가 bubble을 터뜨린다고 말합니다.
+M-0215:
+  name: >-
+    Shield의 지속 시간과 취약 상태
+  quotes:
+  - >-
+    사용 가능
+  - >-
+    취약한 동안에는 사용할 수 없으며, Vulnerability Dart가 이를 제거합니다.
+  readings:
+    A: >-
+      Shield는 20min 지속. 취약한 동안 사용 불가. Vulnerability Dart가 제거함
+  domain: >-
+    t in [0, 1200)초
+  parameters:
+    duration: >-
+      20min
+M-0216:
+  name: >-
+    Shield의 피해 제외 항목
+  quotes:
+  - >-
+    존 피해와 언세이프 서클 피해를 제외한 피해에 20min 동안 면역입니다.
+  - >-
+    Shield는 존, 언세이프 서클, robot 피해를 막지 않습니다.
+  readings:
+    A: >-
+      Shield는 존 피해와 언세이프 서클 피해를 제외한 모든 피해를 막음
+    B: >-
+      Shield는 존, 언세이프 서클, robot 피해를 제외한 모든 피해를 막음(피해 페이지)
+  domain: >-
+    피해 원인의 종류
+  notes: >-
+    C-0202 참조. 독: Shield는 독이 걸리는 것을 막지는 않지만 각 단계를 막습니다(피해 페이지). Flashbang은 Shield가 막지 못합니다.
+M-0217:
+  name: >-
+    Body armor의 흡수 풀
+  quotes:
+  - >-
+    장착 가능
+  - >-
+    최대 15 HP의 피해를 흡수합니다.
+  - >-
+    Body armor는 남은 피해를 부서질 때까지 흡수합니다.
+  readings:
+    A: >-
+      armor는 15 HP의 풀을 가짐: 타격마다 풀에서 min(pool, damage_left) HP를 잃고, 이후 pool-=absorbed. 0이 되면 파괴됨
+    B: >-
+      armor는 타격당 최대 15 HP를 흡수하며 소진되지 않음
+  domain: >-
+    풀 정수 0..15
+  parameters:
+    capacity: >-
+      15 HP
+  notes: >-
+    피해 페이지의 '부서질 때까지'는 소모되는 풀(A)을 뒷받침하지만, 일부만 흡수된 타격에 대해서는 명시되어 있지 않습니다. 파이프라인 순서는 피해 페이지에 속합니다.
+M-0218:
+  name: >-
+    함정이 설치된 선물은 Body armor를 무시함
+  quotes:
+  - >-
+    함정이 설치된 선물은 이를 무시합니다.
+  - >-
+    Body Armor는 모든 종류의 피해에 작동합니다.
+  readings:
+    A: >-
+      함정이 설치된 선물의 피해는 Body armor를 우회함
+    B: >-
+      Body armor는 함정이 설치된 선물을 포함해 모든 종류의 피해에 작동함
+  domain: >-
+    피해 원인의 종류
+  notes: >-
+    C-0201 참조. 피해 페이지 표의 Trapped gift 행도 Safety bubble과 Body armor를 생략하며, 이는 A와 일치합니다.
+M-0219:
+  name: >-
+    Body armor 장착 칸과 휴대 한도
+  quotes:
+  - >-
+    얻으면 armor 칸에 들어갑니다.
+  - >-
+    장착한 armor를 포함해 최대 하나만 휴대합니다.
+  - >-
+    무기와 착용 장비 칸은 인벤토리 공간을 사용하지 않습니다.
+  - >-
+    Body Armor는 최대 하나만 휴대합니다.
+  readings:
+    A: >-
+      armor는 획득 시 인벤토리 칸이 아니라 armor 칸으로 들어감. 장착한 것을 포함해 armor는 총 1개까지. 추가 armor는 거부됨
+    B: >-
+      두 번째 armor는 장착한 것을 대체하거나 그것과 맞바뀜
+  domain: >-
+    armor 개수 0..1
+M-0220:
+  name: >-
+    Zombie repellent
+  quotes:
+  - >-
+    사용 가능
+  - >-
+    20min 동안 좀비가 당신을 해치지 못하게 하려면 사용하십시오.
+  - >-
+    사용자 본인만 보호합니다.
+  - >-
+    Zombie repellent: 사용하면 20min 동안 좀비가 당신을 무시합니다.
+  readings:
+    A: >-
+      사용 후 20min 동안: 당신에 대한 좀비 피해 = 0. 좀비는 여전히 당신을 표적으로 삼고 쫓음
+    B: >-
+      사용 후 20min 동안: 좀비가 당신을 완전히 무시함(유효한 표적이 아님). 다른 사람들을 쫓음
+    C: >-
+      사용자 본인에게만 적용되며, 근처의 다른 사람에게는 적용되지 않음
+  domain: >-
+    t in [0, 1200)초
+  parameters:
+    duration: >-
+      20min
+  notes: >-
+    C-0205 참조. '좀비가 당신을 해치지 못하게 한다'(아이템 페이지)와 '좀비가 당신을 무시한다'(좀비 페이지)가 다릅니다. '사용자 본인만 보호합니다'는 모든 해석에서 성립합니다.
+M-0221:
+  name: >-
+    Anti poison
+  quotes:
+  - >-
+    사용 가능
+  - >-
+    독을 치료하고 10min 동안 독에 면역이 됩니다.
+  - >-
+    Anti poison: 지속되는 동안 새로운 독이 걸리지 않습니다.
+  readings:
+    A: >-
+      사용 시: 현재 독이 치료됨. 10min 동안 새로운 독이 적용될 수 없음
+  domain: >-
+    t in [0, 600)초
+  parameters:
+    duration: >-
+      10min
+M-0222:
+  name: >-
+    EMP가 시청자의 전송을 차단함
+  quotes:
+  - >-
+    사용 가능
+  - >-
+    10min 동안 시청자가 missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes, bounties를 보내지 못하게 합니다.
+  - >-
+    참가자의 EMP가 활성인 동안 시청자는 missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes, bounties를 보낼 수 없습니다.
+  readings:
+    A: >-
+      10min 동안 시청자가 보낼 수 없는 것: missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes, bounties
+  domain: >-
+    t in [0, 600)초
+  parameters:
+    duration: >-
+      10min
+  notes: >-
+    공격 페이지와 비교하면 같은 여덟 항목입니다. 다른 시청자 아이템은 목록에 없습니다. EMP가 전역으로 적용되는지, 사용자 자신의 세이프 존 조준에만 적용되는지는 어느 페이지에도 명시되어 있지 않습니다(시청자 공격은 세이프 존 안의 지점을 겨냥합니다).
+M-0223:
+  name: >-
+    EMP가 공중의 시청자 아이템을 파괴함
+  quotes:
+  - >-
+    공중에 이미 떠 있는 모든 시청자 missile과 nuke, 그리고 이미 진행 중인 모든 airstrike와 gunship을 타오르는 불까지 포함해 파괴합니다.
+  - >-
+    공중의 시청자 missiles와 nukes, 그리고 이미 진행 중인 airstrikes와 gunships를 불과 떨어지는 폭탄까지 포함해 파괴합니다.
+  readings:
+    A: >-
+      사용 시: 공중의 모든 시청자 missile과 nuke, 진행 중인 모든 airstrike와 gunship이 불과 떨어지는 폭탄까지 포함해 파괴됨
+  domain: >-
+    즉시 효과
+  notes: >-
+    공격 페이지는 이미 맵에 있는 cyclops, bounty, tear gas, 좀비는 제거되지 않는다고 덧붙입니다.
