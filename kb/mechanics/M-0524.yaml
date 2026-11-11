@@ -1,0 +1,33 @@
+id: M-0524
+name: Robot damage blockers
+family: damage
+sigils:
+- ingenuity
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-robot
+  snapshot: '2026-11-11'
+  quote: Shields and Sleeping Bags stop it.
+  clause: wiki-sigils-ingenuity-016
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  quote: A Shield does not block zone, unsafe circle or robot damage.
+  clause: wiki-damage-058
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  quote: Robot | Safety bubble, Hazmat suit (slows), Body armor (absorbs)
+  clause: wiki-damage-007
+formal:
+  readings:
+    A: robot damage is stopped by Shield and Sleeping Bag (Ingenuity page)
+    B: robot damage is not stopped by Shield or by a Sleeping Bag (damage page); stopped by Safety bubble, slowed
+      by Hazmat suit, absorbed by Body armor
+  domain: boolean block per defender state
+  parameters:
+    shield_blocks: contradicted, see C-0500
+    sleeping_bag_blocks: contradicted, see C-0500
+depends_on: []
+interacts_with:
+- M-0523
+label: UNKNOWN
+open_unknowns: []
+notes: Contradiction C-0500. The damage page also lists robot damage as an exception to the sleeping-bag immunity.

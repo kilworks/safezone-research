@@ -1,0 +1,43 @@
+id: M-0500
+name: Piety base max HP and inventory slots
+family: sigil
+sigils:
+- piety
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/piety
+  snapshot: '2026-11-11'
+  quote: Max HP
+  clause: wiki-sigils-piety-002
+- url: https://iceposeidon.com/safezone/wiki/sigils/piety
+  snapshot: '2026-11-11'
+  quote: 110 HP
+  clause: wiki-sigils-piety-003
+- url: https://iceposeidon.com/safezone/wiki/sigils/piety
+  snapshot: '2026-11-11'
+  quote: Slots
+  clause: wiki-sigils-piety-004
+- url: https://iceposeidon.com/safezone/wiki/sigils/piety
+  snapshot: '2026-11-11'
+  quote: '3'
+  clause: wiki-sigils-piety-005
+- url: https://iceposeidon.com/safezone/wiki/sigils/piety#rules
+  snapshot: '2026-11-11'
+  quote: Your max HP is 10 HP higher.
+  clause: wiki-sigils-piety-006
+formal:
+  readings:
+    A: maxHP_piety = 110; slots_piety = 3; maxHP = base + 10 where base = 100 (the Ingenuity and Trolling labels
+      give 100)
+  domain: integer HP and slot counts at event start
+  parameters:
+    max_hp: '110'
+    slots: '3'
+    max_hp_delta_vs_base: '+10'
+depends_on: []
+interacts_with:
+- M-0506
+label: DOCUMENTED
+open_unknowns: []
+notes: Stat labels are read as pairs (label 'Max HP' then '110 HP'; label 'Slots' then '3'). The sentence 'Your
+  max HP is 10 HP higher' agrees with 110 against a base of 100. The merchant page raises the maximum HP cap to
+  220 for Piety; that is the merchant formalizer's record. Starting HP equal to max HP is not stated on this page.

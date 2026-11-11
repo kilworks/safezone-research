@@ -1,0 +1,15 @@
+id: U-0513
+question: 'Ingenuity ''Recognize fake chests and gravestones, see traps, and hack landmines or C4 within 50m (164ft)'':
+  does the 50 m limit apply to all three abilities or only to hacking?'
+why_it_matters: Scope of fake detection decides how much of the map an Ingenuity contestant sees through Trolling
+  traps.
+readings:
+  A: all three abilities work only within 50 m
+  B: only hacking is limited to 50 m; recognizing fakes and seeing traps has no stated range
+  C: recognizing and seeing are map-wide for the owner, hacking within 50 m
+parameter: ingenuity_detect_radius_m
+sweep_range: 50 m (as written) up to map-wide; the lower bound is the literal 50 m
+resolution_paths:
+- 'VOD: an Ingenuity contestant''s map at various distances from a fake chest.'
+priority: medium
+status: open

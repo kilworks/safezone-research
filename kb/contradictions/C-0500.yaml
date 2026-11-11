@@ -1,0 +1,21 @@
+id: C-0500
+summary: 'Ingenuity page: Shields and Sleeping Bags stop the Robot. Damage page: Shield does not block robot damage
+  and a sleeping contestant is not immune to robot damage.'
+sides:
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-robot
+  snapshot: '2026-11-11'
+  quote: Shields and Sleeping Bags stop it.
+  clause: wiki-sigils-ingenuity-016
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  quote: A Shield does not block zone, unsafe circle or robot damage.
+  clause: wiki-damage-058
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  quote: A sleeping contestant within 15m (49ft) of their own Sleeping Bag is immune to all damage except zone,
+    unsafe circle and robot damage.
+  clause: wiki-damage-067
+mechanics:
+- M-0523
+- M-0524
+status: open

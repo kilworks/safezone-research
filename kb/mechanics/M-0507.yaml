@@ -1,0 +1,27 @@
+id: M-0507
+name: Piety immunity to theft by Greed
+family: sigil
+sigils:
+- piety
+- greed
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/piety#rules
+  snapshot: '2026-11-11'
+  quote: You are immune to having your items stolen by Greed players.
+  clause: wiki-sigils-piety-015
+- url: https://iceposeidon.com/safezone/wiki/sigils/greed#rules
+  snapshot: '2026-11-11'
+  quote: You cannot steal from Piety players.
+  clause: wiki-sigils-greed-017
+formal:
+  readings:
+    A: steal(thief, victim) is refused when victim has sigil Piety
+  domain: any thief with sigil Greed, any victim with sigil Piety
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0509
+label: DOCUMENTED
+open_unknowns: []
+notes: The two pages say the same thing from each side. Does not protect Piety contestants from other sources of
+  item loss (zombie breakage, unsafe circle loss for defense items).

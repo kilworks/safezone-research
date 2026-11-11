@@ -1,0 +1,50 @@
+id: M-0533
+name: Fake chest claim effect
+family: damage
+sigils:
+- trolling
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#rules
+  snapshot: '2026-11-11'
+  quote: A contestant who claims it takes 5 HP damage and cannot claim chests for 1h.
+  clause: wiki-sigils-trolling-009
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#rules
+  snapshot: '2026-11-11'
+  quote: You heal 5 HP.
+  clause: wiki-sigils-trolling-010
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#rules
+  snapshot: '2026-11-11'
+  quote: A Shield blocks the damage but not the lockout.
+  clause: wiki-sigils-trolling-012
+- url: https://iceposeidon.com/safezone/wiki/items#mirror_forcefield
+  snapshot: '2026-11-11'
+  quote: A reflected fake chest also locks the troll out of chests instead of you.
+  clause: wiki-items-056
+formal:
+  readings:
+    A: 'claim(fake chest by contestant v): v takes 5 HP through the hit pipeline (Kick bonus applies to the troll''s
+      hit, reductions apply to v); v cannot claim chests for 3600 s; the troll heals 5 HP; a Shield blocks the damage
+      but not the lockout'
+    B: troll heals only when damage is not blocked
+    C: lockout covers care packages and crates too
+  domain: damage integer 5 before modifiers; lockout 3600 s
+  parameters:
+    damage_hp: '5'
+    lockout_s: '3600'
+    troll_heal_hp: '5'
+    lockout_scope: UNKNOWN, see U-0531
+    heal_condition: UNKNOWN, see U-0532
+depends_on:
+- M-0532
+interacts_with:
+- M-0531
+- M-0504
+label: CONDITIONAL
+open_unknowns:
+- U-0531
+- U-0532
+- U-0001
+- U-0002
+notes: 'Damage page row: fake chest is stopped by Shield, Safety bubble, Sleeping Bag, Mirror forcefield (reflects)
+  and Body armor (absorbs); the Kick bonus list includes the fake chest. Protection contestants still take fake
+  chest damage. With a Mirror forcefield the whole effect returns to the troll including the lockout (items page).'

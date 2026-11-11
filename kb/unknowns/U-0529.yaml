@@ -1,0 +1,22 @@
+id: U-0529
+question: 'Trolling income scope: which damage counts as ''HP dealt to other players'' (weapons, fake chest, unsafe
+  circle ticks, poison from the fake gravestone, reflected hits), and which crates count as ''crate destroyed, whoever
+  spawned it''?'
+why_it_matters: Unsafe circle ticks are 1 HP each and a periodic source; whether they pay depends on whether periodic
+  damage is a hit (U-0002). Crates destroyed by an Ingenuity Black hole or by another contestant may or may not
+  pay the Trolling contestant.
+readings:
+  A: damage by the contestant's own weapons and traps only; crates destroyed by the contestant's own action
+  B: also unsafe circle ticks and poison steps caused by the contestant's traps; crates destroyed by anyone near
+    them
+  C: damage counts only when it reduces the target's HP; crates destroyed by the contestant only, including viewer-bought
+    crates
+resolution_paths:
+- 'VOD: Trolling token counter after an unsafe circle with a victim inside.'
+- Organizer statement.
+priority: high
+status: open
+related:
+- U-0002
+- U-0528
+- U-0519

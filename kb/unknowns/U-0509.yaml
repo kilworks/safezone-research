@@ -1,0 +1,13 @@
+id: U-0509
+question: 'Greed Steal when the thief has no room: what happens if the inventory is full, or Body Armor is stolen
+  while the thief already carries armor?'
+why_it_matters: Body Armor allows 'at most one, including equipped armor'; stealing it from an armored Greed contestant
+  is either impossible or discards one armor.
+readings:
+  A: steal refused when the thief cannot hold the item
+  B: item drops at the thief's feet
+  C: the stolen item replaces or discards an existing one
+resolution_paths:
+- 'VOD: a Greed contestant with a full inventory using Steal.'
+priority: low
+status: open

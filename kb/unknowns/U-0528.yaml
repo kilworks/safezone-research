@@ -1,0 +1,18 @@
+id: U-0528
+question: 'Trolling ''one blood token per 5 HP dealt to other players'': is the remainder carried, and is ''dealt''
+  the nominal hit or the HP that actually got through (after armor, fortress, Kick reduction)?'
+why_it_matters: 'A 5 HP fake chest pays 1 token only if the full 5 HP counts: a Kick-live victim takes 4 HP under
+  reading A of U-0001, and armor or a Shield can absorb all of it.'
+readings:
+  A: cumulative counter over HP actually lost by the victim, floor(total / 5) tokens, remainder carried
+  B: per hit floor(d / 5) over the hit after reductions, remainder discarded
+  C: cumulative or per hit, but over the nominal hit before armor, fortress and Kick reduction
+  D: damage absorbed by Body Armor or a fortress counts as dealt
+resolution_paths:
+- 'VOD: Trolling contestant token counter after fake chest claims on armored, shielded and Kick-live victims.'
+priority: high
+status: open
+related:
+- U-0001
+- U-0002
+- U-0500

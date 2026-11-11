@@ -1,0 +1,39 @@
+id: M-0532
+name: Fake chest placement
+family: items
+sigils:
+- trolling
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#rules
+  snapshot: '2026-11-11'
+  quote: 'Fake chest: place up to 2 per rolling hour.'
+  clause: wiki-sigils-trolling-007
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#rules
+  snapshot: '2026-11-11'
+  quote: It looks like a care package.
+  clause: wiki-sigils-trolling-008
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#rules
+  snapshot: '2026-11-11'
+  quote: It vanishes after 1h.
+  clause: wiki-sigils-trolling-011
+formal:
+  readings:
+    A: place(fake chest) allowed iff fewer than 2 placements in the previous 3600 s; it looks like a care package;
+      it vanishes 3600 s after placement
+    B: two charges regained one per 1800 s
+    C: 2 per clock hour
+  domain: time in seconds
+  parameters:
+    limit: '2'
+    window_s: '3600'
+    lifetime_s: '3600'
+    limit_semantics: UNKNOWN, see U-0530
+depends_on: []
+interacts_with:
+- M-0533
+- M-0517
+label: CONDITIONAL
+open_unknowns:
+- U-0530
+notes: Since it lasts 1 h, the active count under reading A is at most 2. Only Ingenuity recognizes fakes (M-0517).
+  Location constraints and the item shown are not stated.

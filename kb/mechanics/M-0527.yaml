@@ -1,0 +1,38 @@
+id: M-0527
+name: Zombie killer craft
+family: zombies
+sigils:
+- ingenuity
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-zombie_killer
+  snapshot: '2026-11-11'
+  quote: Kills the next ten zombies that come within 10m (33ft) of you.
+  clause: wiki-sigils-ingenuity-025
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-zombie_killer
+  snapshot: '2026-11-11'
+  quote: No time limit.
+  clause: wiki-sigils-ingenuity-026
+- url: https://iceposeidon.com/safezone/wiki/zombies#defence
+  snapshot: '2026-11-11'
+  quote: An Ingenuity Zombie Killer also stops zombies draining you until it has killed ten.
+  clause: wiki-zombies-020
+formal:
+  readings:
+    A: 'for the next 10 zombies that come within 10 m of the owner: kill the zombie; zombies do not drain the owner
+      until 10 have been killed; no expiry'
+    B: zombies already inside 10 m at use are not counted
+    C: guard zombies and horde zombies are excluded from the count
+  domain: kills counter 0..10; radius 10 m; no time limit
+  parameters:
+    kills: '10'
+    radius_m: '10'
+    expiry: none
+depends_on: []
+interacts_with:
+- M-0521
+- M-0520
+label: CONDITIONAL
+open_unknowns:
+- U-0522
+notes: Zombies page repeats the same ten zombies and the same 10 m. Zombie drain range is 5 m and zombies chase
+  at 1.4 m/s, so a zombie reaches 10 m before it can drain. Pays 1 token per zombie killed for Ingenuity (M-0521).

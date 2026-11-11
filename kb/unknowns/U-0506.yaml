@@ -1,0 +1,14 @@
+id: U-0506
+question: 'Piety claiming a chest or crate when the potion stack is already at 6 (or the inventory cannot take a
+  potion): what happens?'
+why_it_matters: Decides whether chest claims are free actions at the cap and whether potions are lost or dropped.
+readings:
+  A: claim refused, chest stays
+  B: chest consumed, potion lost
+  C: potion drops at the contestant's feet (as the hunter potion does in the attacks page)
+resolution_paths:
+- 'VOD: Piety contestant with a full stack of 6 claiming a chest.'
+priority: low
+status: open
+related:
+- U-0015

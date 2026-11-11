@@ -1,0 +1,14 @@
+id: U-0510
+question: What is the base claim range for chests and crates that Greed doubles ('2x as far away')?
+why_it_matters: No page in the corpus gives the ordinary claim or take range (the chests page was removed), so the
+  Greed reach is not a number yet.
+parameter: chest_claim_range_base_m
+sweep_range: '2 to 20 m: other contact actions on the wiki use 10 m (steal, merchant, gravestone robbing, heal range),
+  so 10 m is the central value and 2 m / 20 m bound close contact and a wide reach'
+resolution_paths:
+- 'VOD: distance at which a non-Greed contestant can claim a chest versus a Greed one.'
+- SCOPE.md P1 (removed chests page).
+priority: high
+status: open
+related:
+- U-0015

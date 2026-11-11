@@ -1,0 +1,16 @@
+id: U-0511
+question: 'Greed chest Shield: what happens when the contestant already has an active Shield (item or earlier chest
+  Shield)?'
+why_it_matters: Decides whether repeated chest claims extend protection and how long a Greed contestant can stay
+  immune; the wiki also says the chest Shield is not counted toward the 3-effect limit.
+readings:
+  A: new Shield refreshes the timer to 20 min
+  B: new Shield adds 20 min to the remaining time
+  C: new roll ignored while a Shield is active
+  D: independent Shields coexist
+resolution_paths:
+- 'VOD: a Greed contestant claiming a second chest while shielded.'
+priority: medium
+status: open
+related:
+- U-0015

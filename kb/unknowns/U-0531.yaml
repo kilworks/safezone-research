@@ -1,0 +1,17 @@
+id: U-0531
+question: 'Fake chest lockout ''cannot claim chests for 1h'': does it block care packages and crates too, does a
+  second claim extend it, and do blockers other than a Shield (Safety bubble, Sleeping Bag, Body armor) also leave
+  it standing?'
+why_it_matters: The fake chest looks like a care package; the lockout protects the troll's items only if it covers
+  what the victim would claim next.
+readings:
+  A: lockout covers item chests only; a second claim of a fake chest during lockout is not possible
+  B: lockout covers chests, care packages and crates
+  C: every blocker that stops the 5 HP leaves the lockout (damage and lockout are separate effects)
+  D: only a Shield is stated to leave it; other blockers are unspecified
+resolution_paths:
+- 'VOD: a victim claiming a fake chest, then a care package within 1 h.'
+priority: medium
+status: open
+related:
+- U-0015

@@ -1,0 +1,35 @@
+id: M-0521
+name: Ingenuity blood token income
+family: economy
+sigils:
+- ingenuity
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#rules
+  snapshot: '2026-11-11'
+  quote: Earn one blood token per craft, hack, chest destroyed by Black Hole, HP your Campfire heals on anyone,
+    or zombie killed.
+  clause: wiki-sigils-ingenuity-013
+formal:
+  readings:
+    A: +1 token per craft; +1 per hack; +1 per real item chest destroyed by Black Hole; +1 per HP healed on anyone
+      by the contestant's Campfire; +1 per zombie killed by the Zombie killer
+    B: chests destroyed by Black Hole includes crates, care packages, airdrops and fake chests; zombie killed by
+      any means
+  domain: events counted per occurrence; no cap stated
+  parameters:
+    per_craft: '1'
+    per_hack: '1'
+    per_chest_black_hole: '1'
+    per_campfire_hp: '1'
+    per_zombie_killed: '1'
+depends_on: []
+interacts_with:
+- M-0522
+- M-0525
+- M-0527
+- M-0528
+- M-0517
+label: CONDITIONAL
+open_unknowns:
+- U-0519
+notes: The Campfire term pays per HP (not per 5 HP), unlike Piety and Trolling.

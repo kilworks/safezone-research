@@ -1,0 +1,26 @@
+id: M-0518
+name: Ingenuity potion combining
+family: items
+sigils:
+- ingenuity
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#rules
+  snapshot: '2026-11-11'
+  quote: Combine two matching potions into the next size, up to gigantic.
+  clause: wiki-sigils-ingenuity-009
+formal:
+  readings:
+    A: combine(p1, p2) with tier(p1) = tier(p2) < gigantic -> one potion of the next tier
+    B: any two matching potions of one kind combine
+  domain: tiers small < medium < large < gigantic; heal values 5, 10, 20, 40 (items page) so combining is lossless
+  parameters:
+    results: small+small=medium; medium+medium=large; large+large=gigantic
+depends_on: []
+interacts_with:
+- M-0525
+- M-0526
+label: CONDITIONAL
+open_unknowns:
+- U-0515
+notes: 'No cost or cooldown stated. Used as the Campfire and Everything potion ingredients: a combined potion sets
+  the pool or the heal.'

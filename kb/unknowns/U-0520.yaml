@@ -1,0 +1,15 @@
+id: U-0520
+question: 'Campfire shared pool: how does the pool drain with several people, and are full-HP bystanders healed?'
+why_it_matters: '''Heals everyone within 10m 1 HP per second from one shared pool'' gives pool drain N HP/s for
+  N targets or 1 HP/s total; the pool equals the potion''s heal (5, 10, 20, 40 HP) but also the 10 min cap, so a
+  gigantic potion gives 40 HP only.'
+readings:
+  A: each person in range with missing HP takes 1 HP per second from the pool (pool drains N HP/s)
+  B: the pool pays 1 HP per second in total, split among those in range
+  C: every person in range counts, including those at full HP, and drains 1 HP/s each
+resolution_paths:
+- 'VOD: a Campfire with 1, then 2 contestants in range.'
+priority: high
+status: open
+related:
+- U-0502

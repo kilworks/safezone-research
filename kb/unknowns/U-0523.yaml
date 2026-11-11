@@ -1,0 +1,15 @@
+id: U-0523
+question: 'Black hole: is it instant or does it persist, centered where, and who gets the benefit?'
+why_it_matters: '''Destroys every chest and crate within 200m'' reads as a one-shot at activation; a lingering field
+  would also destroy chests spawning later.'
+readings:
+  A: one-shot at the place where it is used, radius 200 m
+  B: persistent field for an unstated duration
+  C: centered on the contestant at use
+parameter: black_hole_duration_s
+sweep_range: '0 (instant, as written) to 600 s: ten minutes matches the longest stated timers of the other crafts
+  (Robot, Campfire)'
+resolution_paths:
+- 'VOD: Black hole use followed by new chest spawns.'
+priority: medium
+status: open

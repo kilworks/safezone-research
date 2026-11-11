@@ -1,0 +1,26 @@
+id: M-0514
+name: Greed money bag income
+family: economy
+sigils:
+- greed
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/greed#rules
+  snapshot: '2026-11-11'
+  quote: Each real chest you claim and each crate you take adds a blood token to your money bag.
+  clause: wiki-sigils-greed-012
+formal:
+  readings:
+    A: claim(real chest) or take(crate) -> money_bag += 1 blood token, money bag = ordinary balance
+    B: money bag is a separate store paid at an unstated moment
+  domain: per claim of a real chest and per crate taken
+  parameters:
+    tokens_per_claim: '1'
+    money_bag_semantics: UNKNOWN, see U-0512
+depends_on: []
+interacts_with:
+- M-0510
+label: CONDITIONAL
+open_unknowns:
+- U-0512
+- U-0015
+notes: Other Greed income is the steal reward (M-0510). Fake chests give nothing.

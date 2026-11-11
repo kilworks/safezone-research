@@ -1,0 +1,39 @@
+id: M-0503
+name: Piety chest and crate to random health potion
+family: items
+sigils:
+- piety
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/piety#rules
+  snapshot: '2026-11-11'
+  quote: Every item chest you claim and every crate you take gives you a random health potion instead of the item
+    inside.
+  clause: wiki-sigils-piety-010
+- url: https://iceposeidon.com/safezone/wiki/sigils/piety#rules
+  snapshot: '2026-11-11'
+  quote: Merchant care packages are not changed.
+  clause: wiki-sigils-piety-012
+formal:
+  readings:
+    A: claim(item chest) or take(crate) -> add one health potion of random tier to inventory; the inside item is
+      not given; merchant care packages unchanged; other care packages unchanged
+    B: as A but non-merchant care packages (airdrop, viewer, admin) also convert
+  domain: per claim of an item chest or take of a crate
+  parameters:
+    potion_tier_weights: UNKNOWN, see U-0504
+    scope: UNKNOWN, see U-0505
+    overflow: UNKNOWN, see U-0506
+depends_on: []
+interacts_with:
+- M-0504
+- M-0506
+- M-0502
+label: CONDITIONAL
+open_unknowns:
+- U-0504
+- U-0505
+- U-0506
+- U-0015
+notes: Everything about what chests are comes from the removed chests page, see U-0015. Fake chests are not item
+  chests, see the next mechanic. Piety item loot never includes the item inside (no weapon, no armor from chests).
+  Greed contestants roll their own bonuses on chests (separate sigil).

@@ -1,0 +1,41 @@
+id: M-0534
+name: Fake gravestone
+family: items
+sigils:
+- trolling
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#rules
+  snapshot: '2026-11-11'
+  quote: 'Fake gravestone: place one, then wait 2h before the next.'
+  clause: wiki-sigils-trolling-013
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#rules
+  snapshot: '2026-11-11'
+  quote: It copies the gravestone of an eliminated contestant, or of a random living one while nobody is eliminated.
+  clause: wiki-sigils-trolling-014
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#rules
+  snapshot: '2026-11-11'
+  quote: Each contestant who tries to loot it is poisoned once.
+  clause: wiki-sigils-trolling-015
+formal:
+  readings:
+    A: place at most one; next placement allowed 7200 s after placement; copy = gravestone of an eliminated contestant
+      chosen by the troll, else a random living contestant's if nobody is eliminated; each contestant who tries
+      to loot it is poisoned once (first attempt only)
+    B: 2 h wait counted from the moment the previous fake disappears
+    C: copy chosen at random among eliminated contestants
+  domain: time in seconds
+  parameters:
+    cooldown_s: '7200'
+    lifetime_s: UNKNOWN, see U-0533
+    copy_source: UNKNOWN, see U-0534
+    poison: once per contestant
+depends_on: []
+interacts_with:
+- M-0517
+label: CONDITIONAL
+open_unknowns:
+- U-0533
+- U-0534
+notes: Poison details (1 HP every 1 min 30 s, resets, does not stack) are on the poison page; a fake gravestone
+  is one of the two poisoning sources there. A Mirror forcefield turns it back on the attacker. Ingenuity recognizes
+  fakes. Death-sigil robbing of a fake gravestone is not described.

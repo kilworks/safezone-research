@@ -1,0 +1,14 @@
+id: U-0527
+question: 'Robot ''deals 1 HP every 2s to other players within 10m'': is the 2 s clock global or per target, and
+  does the first hit come immediately or after one interval?'
+why_it_matters: Changes total damage for fast passers-by and whether a target that stays only 1 s is hit at all.
+readings:
+  A: 'global 2 s clock: each tick hits everyone in range at that instant'
+  B: per-target timer, first hit one interval (2 s) after the target enters range (like the unsafe circle)
+  C: per-target, first hit immediately at entry and then every 2 s
+resolution_paths:
+- 'VOD: a contestant walking past a robot.'
+priority: medium
+status: open
+related:
+- U-0002

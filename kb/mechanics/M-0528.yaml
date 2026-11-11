@@ -1,0 +1,29 @@
+id: M-0528
+name: Black hole craft
+family: items
+sigils:
+- ingenuity
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-black_hole
+  snapshot: '2026-11-11'
+  quote: Destroys every chest and crate within 200m (656ft), including care packages, airdrops and fake chests.
+  clause: wiki-sigils-ingenuity-028
+formal:
+  readings:
+    A: use at position x -> destroy every chest and crate with dist(x, c) <= 200 m, including care packages, airdrops
+      and fake chests, at the instant of use
+    B: persistent field for an unstated duration
+  domain: dist in metres 0..200
+  parameters:
+    radius_m: '200'
+    duration_s: UNKNOWN, see U-0523
+depends_on: []
+interacts_with:
+- M-0521
+- M-0531
+label: CONDITIONAL
+open_unknowns:
+- U-0523
+- U-0015
+notes: Destruction of crates by any means can also pay Trolling (one token per crate destroyed, whoever spawned
+  it) and Ingenuity tokens for chests (M-0521).

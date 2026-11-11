@@ -1,0 +1,27 @@
+id: M-0526
+name: Everything potion craft
+family: healing
+sigils:
+- ingenuity
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-everything_potion
+  snapshot: '2026-11-11'
+  quote: Cures poison and heals by potion tier.
+  clause: wiki-sigils-ingenuity-023
+formal:
+  readings:
+    A: use -> cure poison; heal tier HP of the Health potion ingredient
+    B: as A and also grant 600 s of poison immunity as the Anti poison item does
+  domain: tier in 5, 10, 20, 40 HP
+  parameters:
+    heal: tier of the ingredient potion
+    immunity: UNKNOWN, see U-0521
+depends_on: []
+interacts_with:
+- M-0522
+- M-0518
+label: CONDITIONAL
+open_unknowns:
+- U-0521
+notes: The poison page lists Anti poison, Healing healing and God's Fruit as cures; the Everything potion cure is
+  stated here only. Poison immunity from Anti poison lasts 10 min (items page).

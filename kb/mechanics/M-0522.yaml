@@ -1,0 +1,56 @@
+id: M-0522
+name: Ingenuity craft recipes
+family: items
+sigils:
+- ingenuity
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-robot
+  snapshot: '2026-11-11'
+  quote: Made from Landmine Drone
+  clause: wiki-sigils-ingenuity-014
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-campfire
+  snapshot: '2026-11-11'
+  quote: Made from Guardian angel Health potion
+  clause: wiki-sigils-ingenuity-018
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-everything_potion
+  snapshot: '2026-11-11'
+  quote: Made from Anti poison Health potion
+  clause: wiki-sigils-ingenuity-022
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-zombie_killer
+  snapshot: '2026-11-11'
+  quote: Made from Safety bubble Zombie repellent
+  clause: wiki-sigils-ingenuity-024
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-black_hole
+  snapshot: '2026-11-11'
+  quote: Made from EMP Mirror forcefield
+  clause: wiki-sigils-ingenuity-027
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-fortress
+  snapshot: '2026-11-11'
+  quote: Made from Shield Body armor
+  clause: wiki-sigils-ingenuity-029
+formal:
+  readings:
+    A: craft(Robot) = Landmine + Drone; craft(Campfire) = Guardian angel + Health potion; craft(Everything potion)
+      = Anti poison + Health potion; craft(Zombie killer) = Safety bubble + Zombie repellent; craft(Black hole)
+      = EMP + Mirror forcefield; craft(Fortress) = Shield + Body armor; both ingredients consumed
+    B: only one ingredient is consumed
+  domain: recipes are unordered pairs of item names as read from the labels
+  parameters:
+    robot: Landmine,Drone
+    campfire: Guardian angel,Health potion
+    everything_potion: Anti poison,Health potion
+    zombie_killer: Safety bubble,Zombie repellent
+    black_hole: EMP,Mirror forcefield
+    fortress: Shield,Body armor
+depends_on: []
+interacts_with:
+- M-0515
+- M-0520
+- M-0521
+label: CONDITIONAL
+open_unknowns:
+- U-0517
+notes: Labels list the two ingredient names back to back without a separator; splitting is by known item names (Guardian
+  angel, Health potion, Anti poison, Safety bubble, Zombie repellent, Mirror forcefield, Body armor, Landmine, Drone,
+  EMP, Shield). The combined potion sizes feed Campfire and Everything potion. Crafts are not counted in the 3-effect
+  item limit (items page).

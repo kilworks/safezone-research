@@ -1,0 +1,11 @@
+id: U-0524
+question: 'Fortress ''up to 30 HP'': one pool shared by everyone inside 20 m, or 30 HP for each person?'
+why_it_matters: A shared pool of 30 HP is gone after 2 missiles; per person it protects a group much longer. The
+  damage page says it 'absorbs up to its remaining durability', which suggests one shared durability.
+readings:
+  A: one shared durability of 30 HP, consumed by any hit on anyone inside
+  B: 30 HP of absorption per protected contestant
+resolution_paths:
+- 'VOD: two contestants inside a fortress, hits on both.'
+priority: high
+status: open

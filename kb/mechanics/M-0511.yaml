@@ -1,0 +1,30 @@
+id: M-0511
+name: Fortress prevents stealing
+family: sigil
+sigils:
+- greed
+- ingenuity
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/greed#rules
+  snapshot: '2026-11-11'
+  quote: Fortress protection prevents stealing.
+  clause: wiki-sigils-greed-008
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-fortress
+  snapshot: '2026-11-11'
+  quote: from Sigil of Greed stealing
+  clause: wiki-sigils-ingenuity-030
+formal:
+  readings:
+    A: steal(thief, victim) fails when victim stands within 20 m of an active fortress
+  domain: victim position relative to fortress, 20 m radius
+  parameters:
+    fortress_radius_m: '20'
+depends_on:
+- M-0529
+interacts_with:
+- M-0509
+label: CONDITIONAL
+open_unknowns:
+- U-0526
+notes: Depends on fortress presence over time (lifetime, U-0526). Whether the thief inside a fortress can steal
+  outside it is not stated.

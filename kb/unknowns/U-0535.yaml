@@ -1,0 +1,13 @@
+id: U-0535
+question: 'Unsafe circle ''50m (164ft) circle'': is 50 m the radius or the diameter?'
+why_it_matters: Area differs by a factor of 4 (about 7854 m2 versus 1963 m2).
+readings:
+  A: radius 50 m
+  B: diameter 50 m (radius 25 m)
+parameter: unsafe_circle_radius_m
+sweep_range: 25 to 50 m (diameter versus radius reading)
+resolution_paths:
+- 'VOD: placing a circle and measuring on the map.'
+- Organizer statement.
+priority: high
+status: open

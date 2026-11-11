@@ -1,0 +1,15 @@
+id: U-0532
+question: 'Trolling fake chest ''You heal 5 HP'': fixed 5 HP at claim time, or the damage that actually landed,
+  and does it happen when the victim is protected or the chest is reflected?'
+why_it_matters: Decides whether a Shield, Safety bubble or Mirror denies the troll the heal, and whether a Kick-reduced
+  hit heals 4 or 5.
+readings:
+  A: heal 5 HP whenever the chest is claimed, regardless of protection
+  B: heal equals the damage the victim lost
+  C: heal only when the damage was not blocked; a reflected chest heals nobody
+resolution_paths:
+- 'VOD: troll HP before and after a claim by a shielded victim.'
+priority: medium
+status: open
+related:
+- U-0001

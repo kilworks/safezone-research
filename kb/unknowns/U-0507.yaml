@@ -1,0 +1,16 @@
+id: U-0507
+question: 'Greed ''A successful steal earns five blood tokens, once per victim every 24 hours'': does the 24 h limit
+  cap the token payout only, or the steals themselves?'
+why_it_matters: If only the payout is capped, a Greed contestant can keep stealing from one victim every 30 min
+  for items; otherwise each victim loses at most one item a day to a given thief.
+readings:
+  A: steals from the same victim are allowed every cooldown; the 5 tokens are paid at most once per victim per 24
+    h
+  B: a given victim can be successfully stolen from at most once per 24 h by that thief
+resolution_paths:
+- 'VOD: a Greed contestant stealing twice from the same victim within 24 h (cooldown 30 min).'
+- Organizer statement.
+priority: high
+status: open
+related:
+- U-0508

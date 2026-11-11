@@ -1,0 +1,13 @@
+id: U-0515
+question: 'Ingenuity potion combining: what does ''two matching potions'' mean, and are there costs or limits?'
+why_it_matters: Heal values add up exactly (5+5=10, 10+10=20, 20+20=40), so combining is lossless for healing but
+  saves slots for a 2-slot sigil; the limits are unstated.
+readings:
+  A: two health potions of the same size give one of the next size (small to medium to large to gigantic); gigantic
+    cannot combine
+  B: any two potions of the same kind (including Eddie's potion or Anti poison) combine
+  C: as A with a cooldown or a cost not stated
+resolution_paths:
+- 'VOD: an Ingenuity contestant combining potions.'
+priority: low
+status: open

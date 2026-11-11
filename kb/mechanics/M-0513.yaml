@@ -1,0 +1,37 @@
+id: M-0513
+name: Greed chest Shield roll
+family: items
+sigils:
+- greed
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/greed#rules
+  snapshot: '2026-11-11'
+  quote: Each real chest you claim has a 25% chance to give you a Shield for 20min.
+  clause: wiki-sigils-greed-010
+- url: https://iceposeidon.com/safezone/wiki/sigils/greed#rules
+  snapshot: '2026-11-11'
+  quote: No roll while you are vulnerable.
+  clause: wiki-sigils-greed-011
+- url: https://iceposeidon.com/safezone/wiki/items#effects
+  snapshot: '2026-11-11'
+  quote: a Greed chest shield
+  clause: wiki-items-007
+formal:
+  readings:
+    A: claim(real chest) while not vulnerable -> with probability 0.25 grant Shield for 1200 s; no roll while vulnerable;
+      the Shield does not count toward the 3 active item effects limit
+    B: overlap rule with an existing Shield undefined
+  domain: per real chest claim; 20 min = 1200 s
+  parameters:
+    p: '0.25'
+    duration_s: '1200'
+    stack_rule: UNKNOWN, see U-0511
+depends_on: []
+interacts_with:
+- M-0512
+label: CONDITIONAL
+open_unknowns:
+- U-0511
+notes: The items page says explicitly that a Greed chest shield is not an active item effect for the limit of 3,
+  so it is not an item use. Fake chests do not roll ('real chest'). Whether the Vulnerability Dart (which removes
+  a Shield) removes this one is not written; the Shield item text says a Vulnerability Dart removes it.

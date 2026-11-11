@@ -1,0 +1,29 @@
+id: M-0505
+name: Piety health potion bonus of 15%
+family: healing
+sigils:
+- piety
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/piety#rules
+  snapshot: '2026-11-11'
+  quote: Health potions heal you 15% more, rounded down.
+  clause: wiki-sigils-piety-013
+formal:
+  readings:
+    A: 'heal(h) = floor(1.15 * h): tiers 5, 10, 20, 40 give 5, 11, 23, 46'
+    B: 'heal(h) = h + floor(0.15 * h): same values as A on every integer h'
+    C: 'heal = floor(1.15 * min(h, missing HP)): bonus applied to the effective heal'
+  domain: h in {5, 10, 20, 40}; binary64 1.15*h gives 5.75, 11.5, 23.0, 46.0 so floor equals the exact values
+  parameters:
+    bonus: 15%
+depends_on: []
+interacts_with:
+- M-0501
+- M-0525
+label: CONDITIONAL
+open_unknowns:
+- U-0503
+- U-0006
+notes: 'Only ''Health potions'' are named. The Campfire pool and Everything potion are separate effects: the Ingenuity
+  page says Piety and Protection potion changes do not apply to the Campfire. The Protection sigil heals 50% less
+  from potions (another page).'

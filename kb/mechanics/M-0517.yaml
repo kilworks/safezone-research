@@ -1,0 +1,30 @@
+id: M-0517
+name: Ingenuity detection of fakes and traps, hacking of landmines and C4
+family: sigil
+sigils:
+- ingenuity
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#rules
+  snapshot: '2026-11-11'
+  quote: Recognize fake chests and gravestones, see traps, and hack landmines or C4 within 50m (164ft).
+  clause: wiki-sigils-ingenuity-008
+formal:
+  readings:
+    A: 'for entity e in {fake chest, fake gravestone, trap, landmine, C4}: Ingenuity sees e correctly iff dist <=
+      50; hack(e) allowed iff dist <= 50'
+    B: only hack is limited to 50 m; recognition and trap sight have no range
+    C: recognition and sight map-wide; hack within 50 m
+  domain: dist in metres 0..50
+  parameters:
+    radius_m: '50'
+    hack_effect: UNKNOWN, see U-0514
+depends_on: []
+interacts_with:
+- M-0521
+- M-0519
+label: CONDITIONAL
+open_unknowns:
+- U-0513
+- U-0514
+notes: 'Other pages: Landmine page says a Sigil of Ingenuity always sees a placed landmine; Black hole destroys
+  fake chests too. Ingenuity earns a blood token per hack.'

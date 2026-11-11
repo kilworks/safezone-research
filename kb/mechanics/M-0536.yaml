@@ -1,0 +1,42 @@
+id: M-0536
+name: Unsafe circle damage
+family: damage
+sigils:
+- trolling
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#rules
+  snapshot: '2026-11-11'
+  quote: Anyone inside it who is also inside a safe zone takes zone damage with no grace period
+  clause: wiki-sigils-trolling-017
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#unsafe
+  snapshot: '2026-11-11'
+  quote: 'It hurts like the outside of the safe zone: 1 HP every 2s, first hit one interval after you enter, with
+    no grace period.'
+  clause: wiki-sigils-trolling-022
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#unsafe
+  snapshot: '2026-11-11'
+  quote: 'Only the part inside a safe zone hurts: outside every safe zone you take normal zone damage only.'
+  clause: wiki-sigils-trolling-023
+formal:
+  readings:
+    A: 'for contestant v in circle and in a safe zone: after 2 s inside, 1 HP every 2 s; no 5 s grace; outside every
+      safe zone only normal zone damage (first tick after the ordinary grace)'
+    B: timer persists across moving between the inside-zone and outside-zone parts
+    C: global 2 s ticks
+  domain: t >= 0 s since entry; 1 HP per tick
+  parameters:
+    interval_s: '2'
+    damage_hp: '1'
+    grace_s: '0'
+    first_hit: one interval after entry
+depends_on: []
+interacts_with:
+- M-0537
+- M-0538
+label: CONDITIONAL
+open_unknowns:
+- U-0537
+- U-0003
+- U-0002
+notes: Hazmat suit lengthens each zone damage interval by 2 s (items page) and the damage page lists it as slowing
+  unsafe circle damage; Body armor absorbs. The ordinary zone damage first tick is U-0003.

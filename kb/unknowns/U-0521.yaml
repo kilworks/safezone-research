@@ -1,0 +1,11 @@
+id: U-0521
+question: 'Everything potion ''Cures poison and heals by potion tier'': does it also grant the 10 min poison immunity
+  of an Anti poison?'
+why_it_matters: The recipe uses an Anti poison and a Health potion; the Anti poison item gives immunity for 10 min.
+readings:
+  A: cures poison and heals tier HP only
+  B: also grants 10 min of poison immunity
+resolution_paths:
+- 'VOD: an Ingenuity contestant using the potion, then being poisoned.'
+priority: low
+status: open

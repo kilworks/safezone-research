@@ -1,0 +1,14 @@
+id: U-0538
+question: 'Unsafe circle item loss: when does the first loss happen relative to entry and to the first hit?'
+why_it_matters: Two clauses word it differently ('every five seconds' while inside versus 'after your first hit
+  ... every five seconds'); first loss time differs by 0 to 5 s.
+readings:
+  A: first loss at t_hit + 5 s, then every 5 s
+  B: first loss at the first hit, then every 5 s
+  C: first loss 5 s after entry, then every 5 s, independent of the first hit
+resolution_paths:
+- 'VOD: a contestant with several defense items entering the circle.'
+priority: high
+status: open
+related:
+- U-0537

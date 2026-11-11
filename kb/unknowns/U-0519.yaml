@@ -1,0 +1,15 @@
+id: U-0519
+question: 'Ingenuity income: what counts as ''craft, hack, chest destroyed by Black Hole, HP your Campfire heals
+  on anyone, or zombie killed''?'
+why_it_matters: Crates, care packages, airdrops and fake chests are also destroyed by the Black Hole but only 'chest'
+  is written; 'zombie killed' does not say whose kill; Campfire HP could be nominal or effective.
+readings:
+  A: zombie killed = any zombie killed by the contestant's Zombie killer; chests = real item chests only; Campfire
+    HP = effective HP restored (full-HP bystanders pay nothing)
+  B: zombie killed = any zombie the contestant kills by any means; chests = every chest, crate, care package and
+    fake chest the Black Hole destroys; Campfire HP = pool consumed
+  C: mixed per item
+resolution_paths:
+- 'VOD: token counter of an Ingenuity contestant after a Black Hole near several containers.'
+priority: medium
+status: open

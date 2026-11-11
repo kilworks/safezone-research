@@ -1,0 +1,16 @@
+id: U-0502
+question: 'Piety ''from any source except revives, Campfires and healing circles included'': are Campfires and healing
+  circles counted (only revives excluded) or excluded together with revives?'
+why_it_matters: The trailing phrase 'included' attaches either to the exception list or to the counted sources;
+  the term 'healing circle' appears nowhere else in the corpus. Changes whether standing at an Ingenuity Campfire
+  pays Piety tokens.
+readings:
+  A: all healing except revives counts; Campfire healing and healing circles are explicitly included
+  B: revives, Campfires and healing circles are all excluded; everything else counts
+resolution_paths:
+- 'VOD: Piety contestant healed by a Campfire, token counter before and after.'
+- Organizer statement.
+priority: high
+status: open
+related:
+- U-0500

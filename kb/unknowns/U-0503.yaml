@@ -1,0 +1,17 @@
+id: U-0503
+question: 'Piety ''heal you 15% more, rounded down'': what is rounded, and at which step relative to the max-HP
+  clamp?'
+why_it_matters: The four potion tiers give the same totals under exact arithmetic and under binary64 (5, 11, 23,
+  46), so the open part is the order of operations at the HP cap and the base value used.
+readings:
+  A: heal = floor(1.15 * h) with h the tier value, then clamped by missing HP
+  B: heal = h + floor(0.15 * h), then clamped (equal to A for every integer h)
+  C: 'heal = floor(1.15 * min(h, missing HP)): bonus applied to the effective heal'
+resolution_paths:
+- 'VOD: Piety contestant 1 to 10 HP below max drinking a medium potion.'
+- 'VOD: HP readout after drinking each tier from low HP (expect +5, +11, +23, +46).'
+priority: medium
+status: open
+related:
+- U-0006
+- U-0501

@@ -1,0 +1,19 @@
+id: C-0501
+summary: 'Trolling page: crates and care packages from viewers roll the 3% diversion. Attacks page: only care packages
+  roll (with a 5 m landing distance); a crate is a separate item.'
+sides:
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#rules
+  snapshot: '2026-11-11'
+  quote: Each crate or care package from viewers has a 3% chance to land next to a Trolling contestant instead.
+  clause: wiki-sigils-trolling-020
+- url: https://iceposeidon.com/safezone/wiki/attacks#care-package
+  snapshot: '2026-11-11'
+  quote: It has a 3% chance to land within 5m (16ft) of a Trolling contestant instead.
+  clause: wiki-attacks-080
+- url: https://iceposeidon.com/safezone/wiki/attacks#care-package
+  snapshot: '2026-11-11'
+  quote: A crate holds an item bought by a viewer.
+  clause: wiki-attacks-081
+mechanics:
+- M-0539
+status: open

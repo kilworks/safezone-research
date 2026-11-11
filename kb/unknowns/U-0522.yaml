@@ -1,0 +1,15 @@
+id: U-0522
+question: 'Zombie killer ''Kills the next ten zombies that come within 10m'': does it kill zombies already inside
+  10 m when used, which zombie types count, and are more than ten in range handled?'
+why_it_matters: Decides whether the craft protects against a horde (50 zombies) or only ten arrivals; also whether
+  guard zombies and hordes count.
+readings:
+  A: kills the first ten zombies (any type) that enter or are inside 10 m, one per instant of arrival
+  B: only zombies that enter 10 m after use; those already inside are not counted
+  C: guard zombies and horde zombies are excluded
+resolution_paths:
+- 'VOD: using the craft inside a horde.'
+priority: medium
+status: open
+related:
+- U-0519

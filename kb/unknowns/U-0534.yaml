@@ -1,0 +1,12 @@
+id: U-0534
+question: 'Fake gravestone copy source: when someone is eliminated, who chooses which eliminated contestant is copied?'
+why_it_matters: '''copies the gravestone of an eliminated contestant, or of a random living one while nobody is
+  eliminated'': the contrast suggests randomness only in the fallback case.'
+readings:
+  A: the troll picks one eliminated contestant; random living contestant only if there is none
+  B: random among eliminated contestants; random among living ones if none
+  C: the most recent eliminated contestant
+resolution_paths:
+- 'VOD: fake gravestones placed after one and after several eliminations.'
+priority: low
+status: open

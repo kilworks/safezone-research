@@ -1,0 +1,15 @@
+id: U-0516
+question: 'Trapped gift: is the 16 h limit shared between landmine and C4 attachments, and who can see the trap
+  (the owner only, or also other Ingenuity contestants)?'
+why_it_matters: The Ingenuity page says 'once every 16h' for the pair; the C4 and Landmine pages repeat it for each,
+  and one line says 'Only you and Sigil of Ingenuity contestants can see it'.
+readings:
+  A: one shared cooldown of 16 h for any attachment
+  B: separate 16 h cooldowns for C4 and for landmine attachments
+  C: 'visibility: only the owner sees the trap'
+  D: 'visibility: the owner and every Ingenuity contestant see it'
+resolution_paths:
+- 'VOD: an Ingenuity contestant attaching a landmine then a C4 within 16 h.'
+- 'VOD: a second Ingenuity contestant inspecting a trapped gift.'
+priority: medium
+status: open

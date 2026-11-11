@@ -1,0 +1,33 @@
+id: M-0516
+name: Ingenuity merchant prices plus 10 percent rounded up
+family: economy
+sigils:
+- ingenuity
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#rules
+  snapshot: '2026-11-11'
+  quote: Merchant prices are 10% higher, rounded up.
+  clause: wiki-sigils-ingenuity-007
+- url: https://iceposeidon.com/safezone/wiki/merchant#paying
+  snapshot: '2026-11-11'
+  quote: Ingenuity contestants pay 10% more, rounded up.
+  clause: wiki-merchant-011
+formal:
+  readings:
+    A: price_I(p) = ceil(11 * p / 10), exact integers
+    B: 'price_I(p) = ceil(p * 1.1) in IEEE 754 binary64: gives 56 for p=50, 100 for p=90, 111 for p=100, 122 for
+      p=110 (one token more than A at those bases)'
+  domain: p positive integer base price in blood tokens, e.g. 10, 12, 15, 20, 25, 30, 40, 50 and escalating 40+10k
+    upgrades
+  parameters:
+    markup: 10%
+    rounding: up
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0006
+notes: 'This record is the Ingenuity-side statement; the merchant page repeats the same sentence (same meaning,
+  no mismatch). Base prices: Care package 10, Anti poison 12, Vulnerability Dart 25, Sleeping Bag 30, Missile 10,
+  Dual Wield 50, Deep Cut 20, weapon enchantment 15, armor enchantment 30, slots and HP upgrades from 40 (merchant
+  page). Whether the markup applies to upgrades is stated by ''Merchant prices''.'

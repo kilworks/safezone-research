@@ -1,0 +1,36 @@
+id: M-0539
+name: Trolling care package diversion
+family: viewer
+sigils:
+- trolling
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#rules
+  snapshot: '2026-11-11'
+  quote: Each crate or care package from viewers has a 3% chance to land next to a Trolling contestant instead.
+  clause: wiki-sigils-trolling-020
+- url: https://iceposeidon.com/safezone/wiki/attacks#care-package
+  snapshot: '2026-11-11'
+  quote: A care package drops a random item at a random point in the safe zones.
+  clause: wiki-attacks-079
+- url: https://iceposeidon.com/safezone/wiki/attacks#care-package
+  snapshot: '2026-11-11'
+  quote: It has a 3% chance to land within 5m (16ft) of a Trolling contestant instead.
+  clause: wiki-attacks-080
+formal:
+  readings:
+    A: 'each viewer care package: with probability 0.03 it lands within 5 m of a Trolling contestant instead of
+      a random point in the safe zones'
+    B: crates also roll
+    C: each Trolling contestant rolls separately
+  domain: per package; probability 0.03
+  parameters:
+    p: '0.03'
+    landing_radius_m: '5'
+    scope: UNKNOWN, see U-0540
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0540
+- U-0015
+notes: The attacks page gives the 5 m distance; the Trolling page does not. Scope mismatch is contradiction C-0501.

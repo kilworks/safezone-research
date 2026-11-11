@@ -1,0 +1,16 @@
+id: U-0512
+question: 'Greed ''adds a blood token to your money bag'': is the money bag the ordinary blood-token balance, or
+  a separate store that is paid out later?'
+why_it_matters: The term appears once in the corpus. A separate bag changes when tokens are spendable at the merchant
+  and whether they drop into the gravestone.
+readings:
+  A: the money bag is the ordinary balance; +1 token is immediate and spendable
+  B: a separate store, released at some trigger (time, merchant visit, death)
+  C: a separate store that is lost or locked in the gravestone on death
+resolution_paths:
+- 'VOD: a Greed contestant''s token counter right after claiming a chest.'
+- Organizer statement.
+priority: high
+status: open
+related:
+- U-0015

@@ -1,0 +1,11 @@
+id: U-0526
+question: 'Fortress lifetime and position: how long does it stay, and is it fixed where it is placed?'
+why_it_matters: Without a duration the 30 HP could be a permanent camp; the page gives none.
+parameter: fortress_duration_s
+sweep_range: 'from 600 s (the Campfire and Robot cap) to the event length: 10 min is the lower bound set by sibling
+  crafts, the whole event the upper bound'
+resolution_paths:
+- 'VOD: a fortress after several minutes.'
+- Organizer statement.
+priority: high
+status: open

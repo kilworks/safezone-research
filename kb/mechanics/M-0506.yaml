@@ -1,0 +1,29 @@
+id: M-0506
+name: Piety health potion stack of 6 in one slot
+family: items
+sigils:
+- piety
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/piety#rules
+  snapshot: '2026-11-11'
+  quote: All your health potions share one inventory slot, up to 6 potions.
+  clause: wiki-sigils-piety-014
+- url: https://iceposeidon.com/safezone/wiki/items#inventory
+  snapshot: '2026-11-11'
+  quote: Piety contestants stack up to 6 health potions in one slot.
+  clause: wiki-items-003
+formal:
+  readings:
+    A: all health potions of any tier occupy one inventory slot, stack cap 6; slot capacity 3 (M-0500)
+  domain: potion count 0..6
+  parameters:
+    stack_cap: '6'
+    slots_for_potions: '1'
+depends_on: []
+interacts_with:
+- M-0500
+- M-0503
+label: DOCUMENTED
+open_unknowns: []
+notes: 'Both pages agree: one slot, up to 6. Whether mixed tiers share the slot is read from ''All your health potions''.
+  Zombies have a 10% chance to break one of your health potions (zombies page), which matters most for Piety.'

@@ -1,0 +1,19 @@
+id: C-0502
+summary: 'Trolling page: a Reality Shield blocks unsafe circle damage. Damage table row for unsafe circle omits
+  the Reality Shield (the notes on the same page include it).'
+sides:
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#unsafe
+  snapshot: '2026-11-11'
+  quote: A Guardian angel, a Safety bubble, a Reality Shield or a Death Ward blocks it.
+  clause: wiki-sigils-trolling-027
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  quote: Unsafe circle | Safety bubble, Guardian angel, Death Ward, Hazmat suit (slows), Body armor (absorbs)
+  clause: wiki-damage-006
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  quote: A Safety bubble and a Reality Shield do.
+  clause: wiki-damage-059
+mechanics:
+- M-0538
+status: open

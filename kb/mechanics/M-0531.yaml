@@ -1,0 +1,36 @@
+id: M-0531
+name: Trolling blood token income
+family: economy
+sigils:
+- trolling
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#rules
+  snapshot: '2026-11-11'
+  quote: Earn one blood token per 5 HP dealt to other players and per crate destroyed, whoever spawned it.
+  clause: wiki-sigils-trolling-006
+formal:
+  readings:
+    A: tokens += floor(D_total / 5) over cumulative HP lost by other players because of the contestant, plus 1 per
+      crate destroyed whoever spawned it
+    B: tokens += floor(d / 5) per hit, remainder discarded
+    C: D counts the nominal hit before armor, fortress and Kick reduction
+    D: periodic damage from the contestant's traps counts or not, per U-0529
+  domain: d integer HP per hit; crate count integer
+  parameters:
+    hp_per_token: '5'
+    tokens_per_crate: '1'
+    hp_basis: UNKNOWN, see U-0528
+    source_scope: UNKNOWN, see U-0529
+depends_on: []
+interacts_with:
+- M-0533
+- M-0536
+- M-0528
+label: CONDITIONAL
+open_unknowns:
+- U-0528
+- U-0529
+- U-0001
+- U-0002
+notes: '''other players'' excludes the Trolling contestant and zombies. A fake chest claim deals 5 HP, a Kick-live
+  defender takes 4 or 5 depending on U-0001, so one claim may pay 0 or 1 token depending on readings.'

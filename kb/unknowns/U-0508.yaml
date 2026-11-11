@@ -1,0 +1,15 @@
+id: U-0508
+question: 'Greed timers: does the 30 min cooldown start at any steal attempt or only at a successful steal, and
+  is the 24 h per-victim window anchored at the last payout (rolling) or at a daily clock?'
+why_it_matters: A failed steal (fortress, Piety victim, empty inventory) either costs 30 min or nothing; a daily
+  clock allows two payouts in a short span around the reset.
+readings:
+  A: cooldown starts on any use of Steal; the 24 h window is rolling from the last payout for that victim
+  B: cooldown starts only on a successful steal; rolling 24 h window
+  C: as A or B but the 24 h window resets at a fixed daily time
+resolution_paths:
+- 'VOD: a Greed contestant using Steal on a fortress-protected or Piety target, then retrying.'
+priority: medium
+status: open
+related:
+- U-0507

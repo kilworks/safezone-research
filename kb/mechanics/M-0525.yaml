@@ -1,0 +1,45 @@
+id: M-0525
+name: Campfire craft
+family: healing
+sigils:
+- ingenuity
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-campfire
+  snapshot: '2026-11-11'
+  quote: Heals everyone within 10m (33ft) 1 HP per second from one shared pool equal to the potion's heal.
+  clause: wiki-sigils-ingenuity-019
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-campfire
+  snapshot: '2026-11-11'
+  quote: It burns out when the pool is empty or after 10min.
+  clause: wiki-sigils-ingenuity-020
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-campfire
+  snapshot: '2026-11-11'
+  quote: Piety and Protection potion changes do not apply.
+  clause: wiki-sigils-ingenuity-021
+formal:
+  readings:
+    A: campfire pool = heal of the potion used (small 5, medium 10, large 20, gigantic 40 HP, base values); each
+      second every contestant within 10 m with missing HP gets +1 HP and the pool -1; it ends at pool 0 or after
+      600 s
+    B: pool pays 1 HP per second in total, shared
+    C: every contestant in range drains 1 HP per second from the pool regardless of missing HP
+  domain: pool integer 0..40; duration 600 s
+  parameters:
+    rate_hp_per_s: '1'
+    radius_m: '10'
+    max_duration_s: '600'
+    pool: tier heal of the potion, no Piety +15%, no Protection -50%
+    pool_drain: UNKNOWN, see U-0520
+depends_on: []
+interacts_with:
+- M-0521
+- M-0505
+- M-0518
+- M-0501
+label: CONDITIONAL
+open_unknowns:
+- U-0520
+- U-0502
+notes: Piety and Protection potion changes are stated not to apply, so the pool is the raw tier value. A heal from
+  a Campfire counts as HP for the Ingenuity income (1 token per HP) and is in the Piety exclusion/inclusion question
+  U-0502. 'Everyone' includes the owner and other sigils; enemies are not excluded.

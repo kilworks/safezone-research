@@ -1,0 +1,24 @@
+id: M-0512
+name: Greed chest and crate reach
+family: sigil
+sigils:
+- greed
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/greed#rules
+  snapshot: '2026-11-11'
+  quote: You can claim chests and open or take crates from 2x as far away.
+  clause: wiki-sigils-greed-009
+formal:
+  readings:
+    A: claim_range_greed = 2 * claim_range_base for chests, open/take range for crates
+  domain: metres
+  parameters:
+    claim_range_base_m: UNKNOWN, see U-0510
+    multiplier: '2'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0510
+- U-0015
+notes: Care packages are not named in this sentence; only chests and crates.

@@ -1,0 +1,17 @@
+id: U-0517
+question: 'Ingenuity crafts: are both named ingredients consumed, does a craft occupy one of the five craft slots,
+  and how do six recipes fit five slots?'
+why_it_matters: Six recipes exist and five craft slots; whether crafts of one type stack and whether ingredients
+  return decide how many crafts can be held.
+readings:
+  A: both ingredients are consumed; each craft occupies one of the 5 craft slots; the same recipe can be crafted
+    repeatedly until slots are full
+  B: crafts stack by type inside a slot
+  C: only one ingredient is consumed
+resolution_paths:
+- 'VOD: an Ingenuity contestant crafting with a full craft inventory.'
+- Organizer statement.
+priority: high
+status: open
+related:
+- U-0515

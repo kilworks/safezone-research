@@ -1,0 +1,33 @@
+id: M-0502
+name: Piety potion to blood token conversion
+family: economy
+sigils:
+- piety
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/piety#rules
+  snapshot: '2026-11-11'
+  quote: Convert small, medium, large or gigantic potions into 1, 2, 3 or 4 blood tokens.
+  clause: wiki-sigils-piety-008
+- url: https://iceposeidon.com/safezone/wiki/sigils/piety#rules
+  snapshot: '2026-11-11'
+  quote: Converted potions do not count as healing.
+  clause: wiki-sigils-piety-009
+formal:
+  readings:
+    A: tokens(small)=1, tokens(medium)=2, tokens(large)=3, tokens(gigantic)=4 per potion converted; a converted
+      potion heals nothing and produces no healing-token credit
+  domain: potion tier in {small, medium, large, gigantic}; count 0..6 in the stack
+  parameters:
+    small: '1'
+    medium: '2'
+    large: '3'
+    gigantic: '4'
+depends_on: []
+interacts_with:
+- M-0501
+- M-0503
+label: DOCUMENTED
+open_unknowns: []
+notes: 'The page gives no cooldown or location for the conversion action. Piety tokens from healing (M-0501) are
+  not earned for converted potions because they are not healing. Potion heal values are on the items page: Small
+  5, Medium 10, Large 20, Gigantic 40 HP (not cited here: those are another family''s clauses).'

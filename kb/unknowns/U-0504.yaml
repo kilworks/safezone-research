@@ -1,0 +1,18 @@
+id: U-0504
+question: What is the size distribution of the 'random health potion' a Piety contestant gets from a chest or crate?
+why_it_matters: Expected healing per chest and the blood-token value of converted potions (1, 2, 3 or 4 tokens)
+  depend on the tier weights; the wiki gives none.
+readings:
+  A: uniform over the four tiers (1/4 each)
+  B: weighted toward small tiers (as an ordinary health-potion drop table)
+  C: tier depends on the replaced item or chest type
+parameter: piety_potion_tier_weights
+sweep_range: each of 4 weights in [0,1] summing to 1; the uniform vector (0.25 each) is the baseline and the two
+  extremes (all small, all gigantic) bound the value of a chest
+resolution_paths:
+- 'VOD: tally potion tiers from many Piety claims.'
+- Organizer statement.
+priority: high
+status: open
+related:
+- U-0015

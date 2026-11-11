@@ -1,0 +1,16 @@
+id: U-0539
+question: 'Unsafe circle item loss: is the lost item destroyed or dropped, does ''not immune'' pause the clock or
+  just skip the loss, and are active effects (not inventory) affected?'
+why_it_matters: Dropped items can be looted by the troll; destroyed items are gone. Immunity by Guardian angel,
+  Safety bubble, Reality Shield or Death Ward stops both damage and loss.
+readings:
+  A: destroyed, inventory items and unique crafts only
+  B: dropped at the contestant's feet
+  C: destroyed, and active effects (a running Shield, a worn Hazmat suit) are removed too
+  D: clock keeps running while immune, the loss is skipped; or clock pauses while immune
+resolution_paths:
+- 'VOD: contestant losing items in an unsafe circle.'
+priority: medium
+status: open
+related:
+- U-0538

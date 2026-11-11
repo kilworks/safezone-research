@@ -1,0 +1,52 @@
+id: M-0515
+name: Ingenuity base max HP and slots
+family: sigil
+sigils:
+- ingenuity
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity
+  snapshot: '2026-11-11'
+  quote: Max HP
+  clause: wiki-sigils-ingenuity-002
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity
+  snapshot: '2026-11-11'
+  quote: 100 HP
+  clause: wiki-sigils-ingenuity-003
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity
+  snapshot: '2026-11-11'
+  quote: Slots
+  clause: wiki-sigils-ingenuity-004
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity
+  snapshot: '2026-11-11'
+  quote: '2'
+  clause: wiki-sigils-ingenuity-005
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#rules
+  snapshot: '2026-11-11'
+  quote: Start with 2 inventory slots and five separate slots for unique crafts.
+  clause: wiki-sigils-ingenuity-006
+- url: https://iceposeidon.com/safezone/wiki/merchant#upgrades
+  snapshot: '2026-11-11'
+  quote: Ingenuity tops out at 12.
+  clause: wiki-merchant-035
+formal:
+  readings:
+    A: maxHP = 100; inventory slots = 2; plus 5 separate slots for unique crafts that do not use inventory slots;
+      merchant slot upgrades cap at 12 total
+    B: the 5 craft slots hold crafts of any recipe, one each (6 recipes exist)
+    C: the 5 craft slots hold one craft per recipe type and crafts of one type stack
+  domain: integer counts at event start
+  parameters:
+    max_hp: '100'
+    inventory_slots: '2'
+    craft_slots: '5'
+    slot_cap_with_upgrades: '12'
+depends_on: []
+interacts_with:
+- M-0520
+- M-0522
+label: CONDITIONAL
+open_unknowns:
+- U-0517
+notes: 'Six recipes share five craft slots; how crafts occupy them is open. Items page: ''You can carry up to 3
+  items'' is the ordinary default, replaced by the sigil value 2. The merchant page cap of 12 equals 2 + 10 purchases,
+  consistent.'

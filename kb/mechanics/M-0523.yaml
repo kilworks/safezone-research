@@ -1,0 +1,39 @@
+id: M-0523
+name: Robot craft damage and movement
+family: weapons
+sigils:
+- ingenuity
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-robot
+  snapshot: '2026-11-11'
+  quote: For ten minutes it deals 1 HP every 2s to other players within 10m (33ft).
+  clause: wiki-sigils-ingenuity-015
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#recipe-robot
+  snapshot: '2026-11-11'
+  quote: Leave it still or pick a player to follow at 1.4m/s (3.13mph).
+  clause: wiki-sigils-ingenuity-017
+formal:
+  readings:
+    A: 'robot active for 600 s; global 2 s clock; each tick: every other player within 10 m takes 1 HP; robot stays
+      still or follows a chosen player at 1.4 m/s'
+    B: per-target timer, first hit 2 s after entry
+    C: per-target, first hit at entry then every 2 s
+  domain: t in 0..600 s; distance in metres; speed 1.4 m/s (3.13 mph)
+  parameters:
+    duration_s: '600'
+    interval_s: '2'
+    damage_hp: '1'
+    radius_m: '10'
+    speed_mps: '1.4'
+    clock: UNKNOWN, see U-0527
+depends_on: []
+interacts_with:
+- M-0524
+- M-0522
+label: CONDITIONAL
+open_unknowns:
+- U-0527
+- U-0002
+notes: '''other players'' excludes the owner. The robot is a damage-table source (another page); whether its damage
+  passes the 7-step hit pipeline is U-0002. A merchant item lets a contestant give a robot a target (items page).
+  Blockers are in M-0524.'

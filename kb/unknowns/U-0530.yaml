@@ -1,0 +1,12 @@
+id: U-0530
+question: 'Fake chest ''up to 2 per rolling hour'': sliding window over placement times, or two charges that refill?'
+why_it_matters: 'Changes the maximum fake chest placement rate: a sliding window never allows a third within 60
+  min; a token bucket allows 2 immediately then 1 per 30 min.'
+readings:
+  A: at most 2 placements in any 60 min window (sliding)
+  B: 2 charges, one regained every 30 min
+  C: 2 per clock hour (fixed window), contrary to the word rolling
+resolution_paths:
+- 'VOD: Trolling contestant placing fake chests at 0, 10 and 40 min.'
+priority: medium
+status: open

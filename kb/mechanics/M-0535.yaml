@@ -1,0 +1,44 @@
+id: M-0535
+name: Unsafe circle placement
+family: zone
+sigils:
+- trolling
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#rules
+  snapshot: '2026-11-11'
+  quote: 'Unsafe circle: place a 50m (164ft) circle inside a safe zone for 20min.'
+  clause: wiki-sigils-trolling-016
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#rules
+  snapshot: '2026-11-11'
+  quote: Cooldown 2h.
+  clause: wiki-sigils-trolling-018
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#rules
+  snapshot: '2026-11-11'
+  quote: No living contestant, you included, may be inside the circle when you place it.
+  clause: wiki-sigils-trolling-019
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#unsafe
+  snapshot: '2026-11-11'
+  quote: A Trolling contestant can place an unsafe circle inside a safe zone.
+  clause: wiki-sigils-trolling-021
+formal:
+  readings:
+    A: place(circle, centre c) with radius 50 m, c inside a safe zone, no living contestant inside it at placement,
+      the placer included; lasts 1200 s; next placement allowed 7200 s after placement
+    B: diameter 50 m (radius 25 m)
+    C: cooldown 7200 s starts when the circle ends
+  domain: time in seconds; radius in metres
+  parameters:
+    size_m: UNKNOWN, see U-0535
+    duration_s: '1200'
+    cooldown_s: '7200'
+    cooldown_anchor: UNKNOWN, see U-0536
+depends_on: []
+interacts_with:
+- M-0536
+- M-0537
+label: CONDITIONAL
+open_unknowns:
+- U-0535
+- U-0536
+notes: '''inside a safe zone'' is checked at placement in the text; the safe zone moves, and only the part inside
+  a safe zone hurts (M-0536).'

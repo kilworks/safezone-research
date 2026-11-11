@@ -1,0 +1,17 @@
+id: U-0537
+question: 'Unsafe circle damage clock: is the first hit 2 s after each entry (timer resets on exit) or does a global
+  2 s phase continue? Does moving between the part of the circle inside a safe zone and the outside part reset it?'
+why_it_matters: Changes the damage for contestants who skirt the edge; also interacts with the 5 s grace of ordinary
+  zone damage (U-0003).
+readings:
+  A: 'per-contestant timer: first hit 2 s after entering the damaging part, reset on leaving'
+  B: timer persists while the contestant is inside the circle, even when crossing between inside-zone and outside-zone
+    parts
+  C: global 2 s ticks while inside
+resolution_paths:
+- 'VOD: contestant entering and leaving an unsafe circle.'
+priority: high
+status: open
+related:
+- U-0003
+- U-0002

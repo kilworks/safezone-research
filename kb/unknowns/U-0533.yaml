@@ -1,0 +1,16 @@
+id: U-0533
+question: 'Fake gravestone: how long does it last, and does the 2 h wait start at placement or when the previous
+  one disappears?'
+why_it_matters: The page gives no lifetime for the fake gravestone; the 2 h cooldown or 'wait' could run from placement
+  or from the removal.
+readings:
+  A: 2 h from placement; lifetime unlimited until looted
+  B: 2 h from the moment the previous fake gravestone is gone
+  C: 2 h from placement; lifetime shorter than 2 h
+parameter: fake_gravestone_lifetime_s
+sweep_range: '600 s to the event length: below 600 s it would vanish before anyone loots it, the upper bound is
+  permanent'
+resolution_paths:
+- 'VOD: a fake gravestone observed for hours.'
+priority: medium
+status: open

@@ -1,0 +1,12 @@
+id: U-0514
+question: What does 'hack' do to a landmine or C4, and is there a limit?
+why_it_matters: Ingenuity earns a blood token per hack; the effect (disarm, take over, steal) decides whether it
+  counters enemy explosives or turns them.
+readings:
+  A: hack disarms or destroys the explosive
+  B: hack transfers control to the Ingenuity contestant (the sigil text says 'take control of traps')
+  C: hack reveals and lets the Ingenuity contestant pick it up
+resolution_paths:
+- 'VOD: an Ingenuity contestant hacking an enemy landmine.'
+priority: high
+status: open

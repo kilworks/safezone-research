@@ -1,0 +1,14 @@
+id: U-0525
+question: 'Fortress and zone damage: is zone damage absorbed from the 30 HP durability or ignored entirely?'
+why_it_matters: The page lists zone damage next to the 30 HP absorption but also says it protects 'from Sigil of
+  Greed stealing, and zone damage', a separate kind of protection.
+readings:
+  A: zone damage inside a fortress is fully immunized and does not use durability
+  B: zone damage is absorbed 1 HP per tick from the 30 HP durability
+resolution_paths:
+- 'VOD: a contestant standing in a fortress outside the safe zone.'
+priority: high
+status: open
+related:
+- U-0002
+- U-0003

@@ -1,0 +1,19 @@
+id: U-0500
+question: 'Piety ''one blood token per 5 HP healed'': is the remainder carried between heal events (cumulative counter)
+  or floored per event?'
+why_it_matters: Decides whether small heals (campfire 1 HP per second, bandage ticks, Healing sigil 1 HP heals,
+  potions of 5/11/23/46 HP) earn tokens at all; per-event flooring can make a 1 HP trickle worth 0.
+readings:
+  A: tokens = floor(H_total / 5) with H_total the cumulative qualifying HP healed since the start (remainder carried)
+  B: tokens per event = floor(h / 5), remainder discarded at each heal event
+  C: like B but a continuous heal (bandage 10 HP over 2min, Campfire 1 HP/s) is one event per tick, so ticks of
+    1 HP earn nothing
+resolution_paths:
+- 'VOD: observe the blood-token counter of a Piety contestant across several heals. Two consecutive 3 HP heals pay
+  1 token total (A) or 0 (B, C).'
+- 'REA: token-award code in shipped server logic (client code holds none, RE-0001).'
+priority: high
+status: open
+related:
+- U-0501
+- U-0502

@@ -1,0 +1,33 @@
+id: M-0519
+name: Ingenuity trapped gift
+family: items
+sigils:
+- ingenuity
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#rules
+  snapshot: '2026-11-11'
+  quote: Attach a landmine or C4 to an item to make a trapped gift, once every 16h.
+  clause: wiki-sigils-ingenuity-010
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#rules
+  snapshot: '2026-11-11'
+  quote: Only you can see it is trapped.
+  clause: wiki-sigils-ingenuity-011
+formal:
+  readings:
+    A: attach(trap in {landmine, C4}, item) -> trapped gift; one shared cooldown 16 h = 57600 s; only the owner
+      can see that it is trapped
+    B: separate 16 h cooldowns for landmine and C4
+    C: other Ingenuity contestants also see it
+  domain: time in seconds
+  parameters:
+    cooldown_s: '57600'
+    trap_types: landmine, C4
+depends_on: []
+interacts_with:
+- M-0517
+label: CONDITIONAL
+open_unknowns:
+- U-0516
+notes: The C4 page says C4 attaches 'to another item you hold' and the Landmine page 'to an item you use on yourself';
+  each repeats once every 16h. Damages (23 HP C4, 11 HP landmine) are on the weapons page and are not recorded here.
+  A trapped gift ignores Body armor and hurts the holder through a Safety bubble (items page).

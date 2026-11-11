@@ -1,0 +1,40 @@
+id: M-0508
+name: Greed base max HP and inventory slots
+family: sigil
+sigils:
+- greed
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/greed
+  snapshot: '2026-11-11'
+  quote: Max HP
+  clause: wiki-sigils-greed-002
+- url: https://iceposeidon.com/safezone/wiki/sigils/greed
+  snapshot: '2026-11-11'
+  quote: 90 HP
+  clause: wiki-sigils-greed-003
+- url: https://iceposeidon.com/safezone/wiki/sigils/greed
+  snapshot: '2026-11-11'
+  quote: Slots
+  clause: wiki-sigils-greed-004
+- url: https://iceposeidon.com/safezone/wiki/sigils/greed
+  snapshot: '2026-11-11'
+  quote: '3'
+  clause: wiki-sigils-greed-005
+- url: https://iceposeidon.com/safezone/wiki/sigils/greed#rules
+  snapshot: '2026-11-11'
+  quote: Your max HP is 10 HP lower.
+  clause: wiki-sigils-greed-006
+formal:
+  readings:
+    A: maxHP_greed = 90; slots_greed = 3; maxHP = base - 10 where base = 100
+  domain: integer HP and slot counts at event start
+  parameters:
+    max_hp: '90'
+    slots: '3'
+    max_hp_delta_vs_base: '-10'
+depends_on: []
+interacts_with: []
+label: DOCUMENTED
+open_unknowns: []
+notes: Merchant HP upgrades are +10 each with a cap of 200 (220 for Piety); how many Greed purchases reach the cap
+  is a merchant-page question (90 + 10k = 200 needs k = 11).

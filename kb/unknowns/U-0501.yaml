@@ -1,0 +1,19 @@
+id: U-0501
+question: 'Piety token counter: does ''HP healed'' mean the nominal potion amount or the HP actually restored, and
+  is the +15% bonus included?'
+why_it_matters: A Piety contestant near full HP can drink a potion for almost no HP; the token yield per potion
+  changes by up to 9 tokens (gigantic potion).
+readings:
+  A: effective HP restored (clamped by max HP), after the +15% bonus
+  B: nominal heal after the +15% bonus (overheal counts)
+  C: nominal heal before the bonus (raw tier value 5/10/20/40, overheal counts)
+  D: effective HP restored, bonus not counted
+resolution_paths:
+- 'VOD: observe the blood-token counter of a Piety contestant across several heals. Drink a potion at full HP and
+  at 1 HP below max, compare token gain.'
+- 'REA: heal handler.'
+priority: high
+status: open
+related:
+- U-0500
+- U-0503

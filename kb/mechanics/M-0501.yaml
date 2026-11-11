@@ -1,0 +1,33 @@
+id: M-0501
+name: Piety blood tokens from healing
+family: economy
+sigils:
+- piety
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/piety#rules
+  snapshot: '2026-11-11'
+  quote: Earn one blood token per 5 HP healed from any source except revives, Campfires and healing circles included.
+  clause: wiki-sigils-piety-007
+formal:
+  readings:
+    A: tokens += floor(H_total / 5) over cumulative qualifying HP; all healing except revives counts, Campfire and
+      healing circles included
+    B: tokens += floor(h / 5) per event, remainder dropped, same exclusion list
+    C: Campfires, healing circles and revives are all excluded from the count
+  domain: h integer >= 0 per heal event; H_total cumulative
+  parameters:
+    hp_per_token: '5'
+    tokens_per_step: '1'
+    hp_basis: UNKNOWN, see U-0501
+depends_on:
+- M-0505
+interacts_with:
+- M-0502
+label: CONDITIONAL
+open_unknowns:
+- U-0500
+- U-0501
+- U-0502
+notes: 'Sources named: any healing except revives. Potions, bandages, Healing sigil heals and Campfires are candidate
+  sources. Converted potions never heal, see the conversion mechanic. The +15% potion bonus changes the HP that
+  a potion heals, so which of the nominal or boosted value counts is in U-0501.'

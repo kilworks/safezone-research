@@ -1,0 +1,17 @@
+id: U-0540
+question: 'Trolling care package diversion ''3% chance to land next to a Trolling contestant'': which packages roll,
+  how is the contestant chosen with several Trolling contestants, and is the draw once per package?'
+why_it_matters: The Trolling page says crates and care packages from viewers; the attacks page says only care packages
+  (any care package), landing within 5 m. With N Trolling contestants the chance of a diversion may be 3% total
+  or 3% each.
+readings:
+  A: every care package rolls once (3%); on success a Trolling contestant is chosen uniformly; crates are not affected
+  B: crates and care packages bought by viewers roll once each (3%)
+  C: each Trolling contestant rolls independently, 3% each, per package
+resolution_paths:
+- 'VOD: tally of care package landing points over many drops.'
+- Organizer statement.
+priority: medium
+status: open
+related:
+- U-0015

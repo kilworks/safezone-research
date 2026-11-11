@@ -1,0 +1,16 @@
+id: C-0503
+summary: 'Trolling page: one clause says defense item loss every five seconds with no first-hit condition, another
+  says it starts after the first hit and requires being not immune.'
+sides:
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#rules
+  snapshot: '2026-11-11'
+  quote: loses one defense item or unique craft every five seconds, equipped Body Armor included
+  clause: wiki-sigils-trolling-017
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#unsafe
+  snapshot: '2026-11-11'
+  quote: After your first hit, you lose one random defense item or unique craft every five seconds while you stay
+    inside and are not immune.
+  clause: wiki-sigils-trolling-024
+mechanics:
+- M-0537
+status: open

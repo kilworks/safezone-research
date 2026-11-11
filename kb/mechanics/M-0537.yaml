@@ -1,0 +1,46 @@
+id: M-0537
+name: Unsafe circle defense item loss
+family: items
+sigils:
+- trolling
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#rules
+  snapshot: '2026-11-11'
+  quote: loses one defense item or unique craft every five seconds, equipped Body Armor included
+  clause: wiki-sigils-trolling-017
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#unsafe
+  snapshot: '2026-11-11'
+  quote: After your first hit, you lose one random defense item or unique craft every five seconds while you stay
+    inside and are not immune.
+  clause: wiki-sigils-trolling-024
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#unsafe
+  snapshot: '2026-11-11'
+  quote: Defense items are Shields, Safety Bubbles, Guardian Angels, Hazmat Suits, Body Armor, Mirror Forcefields,
+    Flak Jackets, Gas Masks, Zombie Repellents, Anti Poisons and Sleeping Bags.
+  clause: wiki-sigils-trolling-025
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#unsafe
+  snapshot: '2026-11-11'
+  quote: Equipped Body Armor is not safe.
+  clause: wiki-sigils-trolling-026
+formal:
+  readings:
+    A: 'from the first hit, every 5 s while inside and not immune: remove one random item from {Shield, Safety Bubble,
+      Guardian Angel, Hazmat Suit, Body Armor, Mirror Forcefield, Flak Jacket, Gas Mask, Zombie Repellent, Anti
+      Poison, Sleeping Bag} or a unique craft; first loss at t_hit + 5 s'
+    B: first loss at the first hit
+    C: clock from entry
+  domain: 5 s period; random uniform over the held qualifying items (distribution not stated)
+  parameters:
+    period_s: '5'
+    defense_item_types: '11'
+    fate: UNKNOWN, see U-0539
+    clock_start: UNKNOWN, see U-0538
+depends_on: []
+interacts_with:
+- M-0536
+label: CONDITIONAL
+open_unknowns:
+- U-0538
+- U-0539
+notes: Equipped Body Armor is explicitly not safe. The defense list excludes the sigil abilities Reality Shield
+  and Death Ward. Uniformity of the random choice is not stated.

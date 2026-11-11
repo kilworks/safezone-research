@@ -1,0 +1,16 @@
+id: U-0518
+question: 'Unique crafts ''40% chance to be destroyed by Zombie hits'': is the roll per drain hit, per zombie, or
+  per craft, and does a blocked hit roll?'
+why_it_matters: Sets the expected lifetime of crafts near zombies; zombies drain every 10 s (guard zombies every
+  5 s), so per-hit rolling destroys nearly every craft quickly.
+readings:
+  A: each drain hit rolls once per craft held, 40% each
+  B: each drain hit rolls once and destroys one random craft
+  C: one roll per zombie encounter
+  D: as A or B but a hit blocked by Shield, repellent or bubble does not roll
+resolution_paths:
+- 'VOD: Ingenuity contestant holding several crafts near a zombie.'
+priority: high
+status: open
+related:
+- U-0002

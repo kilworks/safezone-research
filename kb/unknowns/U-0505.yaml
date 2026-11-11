@@ -1,0 +1,15 @@
+id: U-0505
+question: 'Piety chest conversion scope: do only ''item chests'' and crates convert, or do other care packages (airdrop,
+  admin, viewer, Endurance) also turn into potions?'
+why_it_matters: Only merchant care packages are named as unchanged; the text is silent on every other care package,
+  which are a large share of loot.
+readings:
+  A: only item chests and crates convert; every care package is unchanged (the merchant sentence is a clarification)
+  B: item chests, crates and all care packages convert except merchant ones
+resolution_paths:
+- 'VOD: Piety contestant claiming a viewer or airdrop care package.'
+- Organizer statement.
+priority: medium
+status: open
+related:
+- U-0015

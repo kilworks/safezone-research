@@ -1,0 +1,12 @@
+id: U-0536
+question: 'Unsafe circle ''Cooldown 2h'' with a 20 min duration: does the cooldown start at placement or when the
+  circle ends?'
+why_it_matters: Placement-anchored allows a new circle 100 min after the previous one expired; end-anchored 120
+  min.
+readings:
+  A: 2 h from placement
+  B: 2 h from the end of the circle (2 h 20 min from placement)
+resolution_paths:
+- 'VOD: second circle placed at 2 h versus 2 h 20 min.'
+priority: low
+status: open
