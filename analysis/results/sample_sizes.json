@@ -1,0 +1,175 @@
+{
+ "method": "Section 8.11: how many observed trials a VOD logger needs to test each stated probability.",
+ "cases": [
+  {
+   "name": "eddie_heal",
+   "p0": 0.1,
+   "p1": 0.15,
+   "source": "items#eddies_potion: 10% chance to heal",
+   "alpha": 0.05,
+   "power": 0.8,
+   "n_normal": 252.16,
+   "n_normal_ceil": 253,
+   "n_exact_binomial": 270,
+   "small_samples": {
+    "10": {
+     "k": 1,
+     "cp95": [
+      0.0025,
+      0.445
+     ]
+    },
+    "30": {
+     "k": 3,
+     "cp95": [
+      0.0211,
+      0.2653
+     ]
+    },
+    "100": {
+     "k": 10,
+     "cp95": [
+      0.049,
+      0.1762
+     ]
+    }
+   }
+  },
+  {
+   "name": "zombie_potion_break",
+   "p0": 0.1,
+   "p1": 0.15,
+   "source": "zombies: 10% chance to break a health potion",
+   "alpha": 0.05,
+   "power": 0.8,
+   "n_normal": 252.16,
+   "n_normal_ceil": 253,
+   "n_exact_binomial": 270,
+   "small_samples": {
+    "10": {
+     "k": 1,
+     "cp95": [
+      0.0025,
+      0.445
+     ]
+    },
+    "30": {
+     "k": 3,
+     "cp95": [
+      0.0211,
+      0.2653
+     ]
+    },
+    "100": {
+     "k": 10,
+     "cp95": [
+      0.049,
+      0.1762
+     ]
+    }
+   }
+  },
+  {
+   "name": "zombie_craft_destroy",
+   "p0": 0.4,
+   "p1": 0.5,
+   "source": "zombies and ingenuity: 40% chance to destroy crafted items",
+   "alpha": 0.05,
+   "power": 0.8,
+   "n_normal": 150.46,
+   "n_normal_ceil": 151,
+   "n_exact_binomial": 158,
+   "small_samples": {
+    "10": {
+     "k": 4,
+     "cp95": [
+      0.1216,
+      0.7376
+     ]
+    },
+    "30": {
+     "k": 12,
+     "cp95": [
+      0.2266,
+      0.594
+     ]
+    },
+    "100": {
+     "k": 40,
+     "cp95": [
+      0.3033,
+      0.5028
+     ]
+    }
+   }
+  },
+  {
+   "name": "greed_chest_shield",
+   "p0": 0.25,
+   "p1": 0.35,
+   "source": "greed: 25% chance to give a Shield",
+   "alpha": 0.05,
+   "power": 0.8,
+   "n_normal": 124.03,
+   "n_normal_ceil": 125,
+   "n_exact_binomial": 129,
+   "small_samples": {
+    "10": {
+     "k": 2,
+     "cp95": [
+      0.0252,
+      0.5561
+     ]
+    },
+    "30": {
+     "k": 8,
+     "cp95": [
+      0.1228,
+      0.4589
+     ]
+    },
+    "100": {
+     "k": 25,
+     "cp95": [
+      0.1688,
+      0.3466
+     ]
+    }
+   }
+  },
+  {
+   "name": "trolling_care_package",
+   "p0": 0.03,
+   "p1": 0.06,
+   "source": "attacks and trolling: 3% chance to land next to a Trolling contestant",
+   "alpha": 0.05,
+   "power": 0.8,
+   "n_normal": 256.5,
+   "n_normal_ceil": 257,
+   "n_exact_binomial": 282,
+   "small_samples": {
+    "10": {
+     "k": 0,
+     "cp95": [
+      0.0,
+      0.3085
+     ]
+    },
+    "30": {
+     "k": 1,
+     "cp95": [
+      0.0008,
+      0.1722
+     ]
+    },
+    "100": {
+     "k": 3,
+     "cp95": [
+      0.0062,
+      0.0852
+     ]
+    }
+   }
+  }
+ ]
+}
