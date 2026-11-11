@@ -286,6 +286,8 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0450](../rules/zombies.md#m-0450) domain: per zombie
 - [M-0450](../rules/zombies.md#m-0450) parameter `lifetime`: UNKNOWN, see [U-0403](../unknowns.md#u-0403)
 
+**Consequences:** [T-0013](../theorems/T-0013.md)
+
 **Open questions:**
 
 - [U-0403](../unknowns.md#u-0403) (high): Zombie lifetime: the Horde lasts 20min and guard zombies 1h (Necromancy page), but what is the lifetime of Summon, Death and Horde-bonus zombies, and of horde zombies counted from release?
@@ -588,7 +590,7 @@ Notes ([M-0636](../rules/zombies.md#m-0636)): The damage table lists Necromancy 
 
 ## Simulation check
 
-Theorems with tests in `sim/tests/`: [T-0010](../theorems/T-0010.md)
+Theorems with tests in `sim/tests/`: [T-0010](../theorems/T-0010.md), [T-0013](../theorems/T-0013.md)
 
 ## Open questions
 

@@ -1,6 +1,6 @@
 # 05. Survival processes: clocks and the capped-HP chain
 
-> **Adversarial review, 2026-11-11:** T-0008, T-0009, T-0013, T-0014 (example value and test) were found BROKEN by a fresh reviewer and corrected the same day (conditions added, values completed, tests extended). The corrections have not been re-reviewed yet. The other theorems on this page were UPHELD.
+> **Adversarial review, 2026-11-11:** T-0008, T-0009, T-0013, T-0014 (example value and test) were found BROKEN by a fresh reviewer and corrected the same day. A second fresh reviewer re-attacked the corrected versions on 2026-11-11 and found all four UPHELD. The other theorems on this page were UPHELD at the first review.
 
 Two kinds of results: deterministic clocks (how long a fixed damage source takes to kill or to reach its cap), and one structural theorem about HP capped at a maximum. Tests: `sim/tests/test_clocks.py`, `sim/tests/test_markov.py`.
 
@@ -45,7 +45,9 @@ Poison deals 1 HP every 90 s (M-0170); "Getting poisoned again resets the timer,
 
 ### T-0013: walking away from a zombie
 
-Regular zombies move at 1.4 m/s (M-0440) and drain within 5 m. Guard zombies drain within 10 m (M-0449) and are not covered here. A contestant moving straight away at $v > 1.4$ m/s from distance $r_0 \le 5$ m leaves drain range after $(5 - r_0)/(v - 1.4)$ s, in a straight-line pursuit model. At a brisk 2 m/s from contact, that is 8.3 s, before the first 10 s tick (under the reading that the first tick comes one interval after contact). Below 1.4 m/s a zombie that keeps chasing catches up. It chases the nearest valid contestant "at any distance" (U-0424) until its time runs out (M-0450, U-0403), so a stationary contestant is reached unless the zombie expires or picks someone nearer first.
+Regular zombies move at 1.4 m/s (M-0440) and drain within 5 m (M-0441). Guard zombies drain within 10 m (M-0449) and are not covered here.
+
+**Theorem T-0013.** A contestant moving straight away at $v > 1.4$ m/s from distance $r_0 \le 5$ m leaves drain range after $(5 - r_0)/(v - 1.4)$ s, in a straight-line pursuit model. At a brisk 2 m/s from contact, that is 8.3 s, before the first 10 s tick (under the reading that the first tick comes one interval after contact). Below 1.4 m/s a zombie that keeps chasing catches up. It chases the nearest valid contestant "at any distance" (U-0424) until its time runs out (M-0450, U-0403), so a stationary contestant is reached unless the zombie expires or picks someone nearer first.
 
 *Label:* `CONDITIONAL` on U-0425 (tick timing), U-0424 and U-0403; the pursuit model is a simplification (straight line, no obstacles), not a rule. *Test:* `test_t0013_zombie_escape` checks the arithmetic only.
 
@@ -53,13 +55,13 @@ Regular zombies move at 1.4 m/s (M-0440) and drain within 5 m. Guard zombies dra
 
 HP lives on $\{0, 1, \dots, M\}$; 0 is absorbing (elimination, ignoring revival); healing above $M$ is wasted. Model a fixed environment as a Markov chain on HP with transition matrix $P$.
 
-**Theorem T-0014.** Suppose that from every state $h \in \{1, \dots, M\}$, one step loses at least $c \ge 1$ HP with probability at least $q > 0$. Then from every state the chain reaches 0 with probability 1, and the expected time to reach it is at most $m / q^m$ steps, where $m = \lceil M / c \rceil$.
+**Theorem T-0014.** Suppose that from every state $h \in \{1, \dots, M\}$, one step leads to a state at most $\max(h - c, 0)$ with probability at least $q > 0$ (a loss of at least $c$ HP, clipped at 0). Then from every state the chain reaches 0 with probability 1, and the expected time to reach it is at most $m / q^m$ steps, where $m = \lceil M / c \rceil$.
 
 *Proof.* From any state, $m$ consecutive losses of at least $c$ reach 0; this has probability at least $q^m$. Split time into blocks of $m$ steps: each block kills with probability at least $q^m$ whatever happened before, so survival after $k$ blocks is at most $(1 - q^m)^k \to 0$, and the expected number of blocks is at most $1/q^m$. $\square$
 
 This is the discrete form of a classical fact from risk theory: a surplus process with a reflecting upper barrier (here, max HP) is ruined with probability 1 (the dividend-barrier models of ruin theory; reference not verified here). The proof above does not depend on that literature.
 
-*Consequence: "will I eventually die" is the wrong question.* The bound can be astronomically large. `sim/tests/test_markov.py` computes the exact expected time to death $t = N\mathbf{1}$, $N = (I - Q)^{-1}$, for example chains: with $M = 100$, a 1 HP loss with probability 0.05 per step and a 5 HP heal with probability 0.5, the expected time from full HP is about $2.75 \times 10^{104}$ steps ($10^{104.44}$, computed exactly with rational arithmetic by Gaussian elimination; the $2 \times 10^{16}$ first printed here was a floating-point saturation artifact of a float matrix inverse). Death is certain and irrelevant. The quantities that matter for the Codex are the finite-horizon survival $\Pr(\tau > T)$ over the event's duration $T$ (unknown: U-0009) and the expected time to death $\mathbb{E}[\tau]$, both computed by the simulator for each scenario.
+*Consequence: "will I eventually die" is the wrong question.* The bound can be astronomically large. `sim/tests/test_markov.py` computes the exact expected time to death $t = N\mathbf{1}$, $N = (I - Q)^{-1}$, for example chains: with $M = 100$, a 1 HP loss with probability 0.05 per step and a 5 HP heal with probability 0.5 (otherwise HP stays put, probability 0.45), the expected time from full HP is about $2.75 \times 10^{104}$ steps ($10^{104.44}$, computed exactly with rational arithmetic by Gaussian elimination; the $2 \times 10^{16}$ first printed here was a floating-point saturation artifact of a float matrix inverse). Death is certain and irrelevant. The quantities that matter for the Codex are the finite-horizon survival $\Pr(\tau > T)$ over the event's duration $T$ (unknown: U-0009) and the expected time to death $\mathbb{E}[\tau]$, both computed by the simulator for each scenario.
 
 *Label:* `DERIVED` (a mathematical fact about the model). Its use for Safe Zone is `CONDITIONAL` on the environment having a loss probability bounded below, which holds whenever any damage source can reach the contestant. *Test:* `test_t0014_capped_hp_means_certain_death`.
 

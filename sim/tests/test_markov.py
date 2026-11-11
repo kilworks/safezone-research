@@ -45,10 +45,10 @@ def test_t0014_absorption_tends_to_one():
     assert dist[0] > 0.99
 
 
-def test_t0014_exact_value():
-    # exact expected absorption time from full HP, rational Gaussian elimination (M = 20 keeps it fast)
+def exact_time_from_full(M):
+    # exact expected absorption time from full HP, rational Gaussian elimination
     from fractions import Fraction as F
-    M, ph, pl = 20, F(5, 100), F(1, 2)
+    ph, pl = F(5, 100), F(1, 2)
     A = [[F(0)] * M + [F(1)] for _ in range(M)]
     for h in range(1, M + 1):
         A[h - 1][h - 1] += 1
@@ -63,4 +63,9 @@ def test_t0014_exact_value():
     x = [F(0)] * M
     for i in range(M - 1, -1, -1):
         x[i] = (A[i][M] - sum(A[i][j] * x[j] for j in range(i + 1, M))) / A[i][i]
-    assert 1e21 < x[-1] < 2e21  # the reviewer's exact value 1.35e21; the float inverse gave 2e16
+    return x[-1]
+
+
+def test_t0014_exact_value():
+    assert 1e21 < exact_time_from_full(20) < 2e21  # the reviewer's exact value 1.35e21; the float inverse gave 2e16
+    assert 2.75e104 < exact_time_from_full(100) < 2.76e104  # the example in theory/05

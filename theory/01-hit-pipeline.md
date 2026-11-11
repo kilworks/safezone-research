@@ -1,6 +1,6 @@
 # 01. The hit pipeline
 
-> **Adversarial review, 2026-11-11:** T-0007 were found BROKEN by a fresh reviewer and corrected the same day (conditions added, values completed, tests extended). The corrections have not been re-reviewed yet. The other theorems on this page were UPHELD.
+> **Adversarial review, 2026-11-11:** T-0007 was found BROKEN by a fresh reviewer and corrected the same day. A second fresh reviewer re-attacked the corrected version (exhaustive check of 3,822,949 cases) and found it UPHELD. The other theorems on this page were UPHELD at the first review.
 
 The damage page says: "Every hit goes through these steps in order." (M-0117). This file writes each step as a map on (damage, defender state), states what the composition does, and lists what the text leaves open.
 

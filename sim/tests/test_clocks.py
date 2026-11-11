@@ -68,3 +68,4 @@ def test_t0013_zombie_escape():
             t = (5 - r0) / (v - 1.4)
             assert t >= 0
     assert abs((5 - 0) / (2.0 - 1.4) - 8.333333) < 1e-5  # brisk walk: out in 8.3 s, before the first 10 s tick
+    assert abs((5 - 2.5) / (2.0 - 1.4) - 4.166667) < 1e-5  # starting 2.5 m away halves it: r0 matters

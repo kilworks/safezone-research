@@ -1,6 +1,6 @@
 # 02. Rounding and arithmetic
 
-> **Adversarial review, 2026-11-11:** T-0004 were found BROKEN by a fresh reviewer and corrected the same day (conditions added, values completed, tests extended). The corrections have not been re-reviewed yet. The other theorems on this page were UPHELD.
+> **Adversarial review, 2026-11-11:** T-0004 was found BROKEN by a fresh reviewer and corrected the same day. A second fresh reviewer re-attacked the corrected version (exhaustive check of d = 1..4999 over every modifier and reading) and found it UPHELD. The other theorems on this page were UPHELD at the first review.
 
 The wiki states its percentage rules in words: "10% more, rounded down", "50% less", "15% more, rounded down", "10% higher, rounded up". This file turns each into exact integer arithmetic, proves which phrasings have a single meaning and which have two, and measures where code written with floating-point numbers would drift from the exact rule.
 
@@ -49,7 +49,7 @@ The damage page orders step 4 as: halve a nuke for a Protection contestant, roun
 
 ## T-0004: when the 1 HP minimum changes the outcome
 
-**Theorem T-0004.** With the documented order of step 4, the minimum step (M-0123, "A hit that gets through always does at least 1 HP") changes the result of a raw hit $d \ge 1$ exactly in these cases:
+**Theorem T-0004.** With the documented order of step 4, the minimum step (M-0123, "A hit that gets through always does at least 1 HP") changes the step-5 output (not necessarily the final HP loss, since fortress and armor come after) of a raw hit $d \ge 1$ exactly in these cases:
 
 | Defender state | Reading A | Reading B |
 |---|---|---|
@@ -59,7 +59,7 @@ The damage page orders step 4 as: halve a nuke for a Protection contestant, roun
 | Protection, nuke, live, one final floor $\lfloor 9d/20 \rfloor$ (U-0100 reading B) | $d \in \{1,2\}$ | not defined by U-0100 B |
 | any other | never | never |
 
-*Proof.* The minimum changes the outcome iff the reduced value is 0 while $d \ge 1$. $R_A(d) = 0 \iff 9d < 10 \iff d = 1$; $R_B(d) = d - \lfloor d/10 \rfloor \ge 1$ for $d \ge 1$; $H(d) = 0 \iff d = 1$; $R_A(H(d)) = 0 \iff H(d) \le 1 \iff d \le 3$; with one final floor, $\lfloor 9d/20 \rfloor = 0 \iff 9d < 20 \iff d \le 2$; $R_B(H(d)) = 0 \iff H(d) = 0 \iff d = 1$. $\square$
+*Proof.* The minimum changes the outcome iff the reduced value is 0 while $d \ge 1$. $R_A(d) = 0 \iff 9d < 10 \iff d = 1$; $R_B(d) = d - \lfloor d/10 \rfloor \ge 1$ for $d \ge 1$; $H(d) = 0 \iff d = 1$; $R_A(H(d)) = 0 \iff H(d) \le 1 \iff d \le 3$; with one final floor, $\lfloor 9d/20 \rfloor = 0 \iff 9d < 20 \iff d \le 2$; $R_B(H(d)) = 0 \iff H(d) = 0 \iff d = 1$. The attacker's Kick bonus (step 2) leaves every row unchanged: $\lfloor 11d/10 \rfloor = d$ for $d \le 9$, and every row only involves $d \le 3$. $\square$
 *Consequence.* The minimum step matters only for hits of 3 HP or less. No documented attack deals that little except the 1 HP ticks (zone, unsafe circle, robot, poison, bleeding, airstrike fire, zombie drain) and the 2 HP ticks (guard zombies, tear gas), plus Wizard staff ticks if a staff area ticks (U-0010). Whether those ticks are "hits" that go through the pipeline is U-0002. Whether fortress and armor can still absorb that last HP is U-0103.
 *Label:* `DERIVED` for each row as stated; which row applies is `CONDITIONAL` on U-0100, and the in-game relevance on U-0002. *Test:* `test_t0004_minimum_step_changes_outcome_only_for_tiny_hits`.
 

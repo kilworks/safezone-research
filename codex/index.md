@@ -42,6 +42,7 @@ Everything in this encyclopedia, one click away. Rules are quoted word for word 
 - [T-0010](theorems/T-0010.md): from theory/05-survival-processes.md
 - [T-0011](theorems/T-0011.md): from theory/05-survival-processes.md
 - [T-0012](theorems/T-0012.md): from theory/05-survival-processes.md
+- [T-0013](theorems/T-0013.md): from theory/05-survival-processes.md
 - [T-0014](theorems/T-0014.md): from theory/05-survival-processes.md
 
 ## Open questions
