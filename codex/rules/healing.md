@@ -4,6 +4,22 @@
 
 Rules of the `healing` family, as the wiki states them on 2026-11-11.
 
+### In plain words
+
+The healing family covers every way to get HP back while alive. (Bringing someone back from death belongs to the revival family instead.) There are the common consumables, a few sigil bonuses and penalties, and the Healing sigil's own abilities.
+
+The basics are potions and bandages. A health potion heals by tier: Small 5 HP, Medium 10 HP, Large 20 HP, Gigantic 40 HP ([M-0207](../rules/healing.md#m-0207)). Eddie's potion is a gamble: 10% chance to heal 50% of your max HP, otherwise you lose 30% of your max HP ([M-0208](../rules/healing.md#m-0208)). A bandage heals 10 HP over 2 minutes, and taking damage does not stop it ([M-0233](../rules/healing.md#m-0233)). A bandage also stops Deep Cut bleeding ([M-0234](../rules/healing.md#m-0234)).
+
+Sigils then bend those numbers. Piety potions heal 15% more, rounded down ([M-0505](../rules/healing.md#m-0505)). Protection potions heal 50% less ([M-0645](../rules/healing.md#m-0645)), while its bandages last 1.1x as long ([M-0646](../rules/healing.md#m-0646)). Ingenuity can craft a Campfire, which heals everyone within 10 m (33 ft) 1 HP per second from one shared pool equal to the potion's heal ([M-0525](../rules/healing.md#m-0525)), and an Everything potion that cures poison and heals by potion tier ([M-0526](../rules/healing.md#m-0526)). The Healing sigil itself heals a nearby contestant for 1 HP, cures their poison and stops Deep Cut bleeding, with a 10 minute cooldown ([M-0651](../rules/healing.md#m-0651)). It is the Healing sigil, not any other, that regenerates 1 HP every 30 minutes up to its max HP ([M-0652](../rules/healing.md#m-0652)).
+
+What a player would feel: healing is mostly a matter of what you carry. Potions are quick and bandages are slow but safe from interruption ([M-0233](../rules/healing.md#m-0233)). The gamble in Eddie's potion is a real risk, since the downside is a large loss ([M-0208](../rules/healing.md#m-0208)).
+
+Good against: bandages and the Healing sigil's ability both stop Deep Cut bleeding ([M-0234](../rules/healing.md#m-0234), [M-0651](../rules/healing.md#m-0651)). The Healing ability also cures poison ([M-0651](../rules/healing.md#m-0651)).
+
+Weakest as written: small numbers. The Healing sigil's own heal is 1 HP ([M-0651](../rules/healing.md#m-0651)), and its regeneration is 1 HP every 30 minutes ([M-0652](../rules/healing.md#m-0652)).
+
+What is unknown: whether potions, bandage ticks and Eddie's heal cap at max HP ([U-0203](../unknowns.md#u-0203)), the bandage tick schedule ([U-0214](../unknowns.md#u-0214)), and how Eddie's amounts round ([U-0204](../unknowns.md#u-0204)). It is open whether Eddie's loss can kill ([U-0004](../unknowns.md#u-0004)). It is open whether the Piety bonus rounds before or after the max HP clamp ([U-0503](../unknowns.md#u-0503)). It is open which heals count as potions for Protection ([U-0617](../unknowns.md#u-0617)), and its rounding ([U-0618](../unknowns.md#u-0618)). It is open how the Campfire pool drains with several people ([U-0520](../unknowns.md#u-0520)), and whether damage resets the regeneration timer ([U-0007](../unknowns.md#u-0007)).
+
 This page gathers 11 rules (1 `DOCUMENTED`, 10 `CONDITIONAL`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
 
 ## Rules

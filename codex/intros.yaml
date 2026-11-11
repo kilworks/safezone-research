@@ -1,11 +1,11 @@
 sigil:piety: |
   Think of Piety as the "potion hoarder" class. Every contestant picks a sigil, a kind of class, and Piety is built around health potions and the blood tokens you can turn them into. The base numbers are a little better than the default: 110 maximum HP and 3 inventory slots (M-0500), and the Upgrade ladder can push that maximum to 220 instead of 200 (M-0333).
 
-  The core loop is simple. Potions heal you 15% more, rounded down (M-0505), and all your potions share a single slot, up to 6 of them (M-0506). That is a real convenience, because the potions never eat the other slots. Chests and crates are also bent toward this plan: each item chest you claim and each crate you take gives you a random health potion instead of the item inside (M-0503). Merchant care packages are not changed (M-0503).
+  The core loop is simple. Potions heal you 15% more, rounded down (M-0505), and all your potions share a single slot, up to 6 of them (M-0506). Chests and crates are also bent toward this plan: each item chest you claim and each crate you take gives you a random health potion instead of the item inside (M-0503). Merchant care packages are not changed (M-0503).
 
-  Piety also has a money side. You earn one blood token for every 5 HP healed from any source except revives (M-0501). Alternatively, you can convert potions into tokens instead of drinking them: 1, 2, 3 or 4 tokens for a small, medium, large or gigantic potion, and a converted potion counts as no healing (M-0502). So each potion is either HP now or money now, not both.
+  Piety also has a money side. You earn one blood token for every 5 HP healed from any source except revives (M-0501). Alternatively, you can convert potions into tokens instead of drinking them: 1, 2, 3 or 4 tokens for a small, medium, large or gigantic potion, and a converted potion counts as no healing (M-0502).
 
-  What would you feel in play? Mostly steadiness: lots of healing on hand, little inventory juggling. You are also protected against one specific nuisance: Greed players cannot steal from you (M-0507). One caution is that a fake chest still springs its trap on you, and you get no potion from it (M-0504).
+  You are also protected against one specific nuisance: Greed players cannot steal from you (M-0507). One caution is that a fake chest still springs its trap on you, and you get no potion from it (M-0504).
 
   Strongest points as the rules read: the stack of 6 (M-0506), the theft immunity (M-0507), and the flexibility of potion-or-token (M-0502).
 
@@ -31,7 +31,7 @@ sigil:ingenuity: |
 
   What you get: the Robot hits other players within 10 m for 1 HP every 2 seconds for ten minutes (M-0523). The Campfire heals everyone within 10 m from one shared pool (M-0525). The Everything potion cures poison and heals by tier (M-0526). The Zombie killer kills the next ten zombies near you and stops their drain meanwhile (M-0527). The Black hole destroys every chest and crate within 200 m (M-0528). The Fortress protects people within 20 m for up to 30 HP and blocks Greed stealing (M-0529).
 
-  Other tricks: attach a landmine or C4 to an item as a trapped gift, once every 16 hours (M-0519); recognize fake chests and gravestones, see traps, and hack landmines or C4 within 50 m (M-0517); combine two matching potions into the next size (M-0518). Income comes from crafting, hacking and a few other actions (M-0521).
+  Other tricks: attach a landmine or C4 to an item as a trapped gift, once every 16 hours (M-0519); recognize fake chests and gravestones, see traps, and hack landmines or C4 within 50 m (M-0517); combine two matching potions into the next size (M-0518).
 
   Strongest as written: the range of tools, and knowing about traps and fakes (M-0517). Zombie drain is one thing it handles well, through the Zombie killer (M-0527).
 
@@ -57,7 +57,7 @@ sigil:death: |
 
   Death also feeds on eliminations. You earn ten blood tokens per gravestone robbed and one whenever another contestant dies (M-0610). When a contestant dies within 50 m (164 ft) of you, you heal 1 HP for every contestant eliminated so far, them included (M-0613). Later in the event this is capped: when 20% or fewer of the contestants are alive, that heal cannot take you above 60% of your max HP (M-0614).
 
-  For defense there is the Death Ward: the first hit from outside the circle is blocked, and you are protected for 2 minutes, with a 2 hour cooldown (M-0615). The same ability is worded more narrowly on the damage page (M-0137).
+  For defense there is the Death Ward: the first hit from outside the circle is blocked, and you are protected for 2 minutes, with a 2 hour cooldown (M-0615). The damage page words the same ability more narrowly (M-0137, C-0103, C-0600).
 
   Strongest as written: the permanent harm done to a victim's revival chances (M-0116), and healing that grows with the death count (M-0613). Weakest: the healing is capped late in the event (M-0614), and it needs bodies nearby (M-0613).
 
@@ -86,3 +86,159 @@ sigil:necromancy: |
   Strongest as written: the immunity (M-0636) and the way the sigil scales with deaths (M-0632, M-0633). Weakest: it depends on events, deaths, hordes and a limited summon (M-0631), and it has no stat bonus (M-0604).
 
   What is unknown: how long summoned, death and horde-bonus zombies live (U-0612), and whether the summon limit is a rolling window, fixed blocks or charges (U-0428, U-0611). It is open whether guard zombies and horde-bonus zombies send drained HP to you and count for tokens (U-0614), and whether the HP gained is what the victim really lost (U-0613). It is open whether the 30 HP cap is per zombie lifetime, per encounter or per day (U-0008), and whether the immunity covers other Necromancers' zombies (U-0616). Whether guard zombies chase or stay put is open (U-0429).
+sigil:protection: |
+  Protection is the "tank" class. Its stats are the plain ones, 100 maximum HP and 3 inventory slots (M-0605), but it comes with the longest immunity list in the game: poison, drones, missiles, C4, landmines, trapped gifts, airstrikes and their fire, gunship bombs and Protection retribution (M-0640). Nukes are not blocked, but they deal 50% less to you (M-0643), rounded down (M-0121). Poison in particular cannot touch you (M-0175).
+
+  It does not make you invincible. You still take zone, unsafe circle, robot, weapon, fake chest, tear gas, zombie, bleeding, cyclops and bounty damage (M-0641). So the sigil is strong against the viewer-driven explosive attacks and poison, and not against a person with a weapon or against the shrinking zone.
+
+  The costs are in healing. Potions heal you 50% less (M-0645), while bandages last 1.1x as long (M-0646). In exchange, your immunity pays: a drone, missile, C4 or landmine hit earns one blood token, an airstrike or gunship hit earns 1, and a nuke hit earns twenty, but only when your own protection does the blocking (M-0642).
+
+  Two active features turn you into a threat. You can place a landmine where you stand once every 2 hours; it deals 15 HP to everyone within 10 m and kills every zombie in range (M-0644). And when you die, everyone within 30 m (98 ft) takes 20 HP (M-0647).
+
+  What a player would feel: calm while others are being bombed, then pressure from the things that are not blocked. Strongest as written: the immunity list (M-0640) and the nuke cut (M-0643). Weakest: the potion penalty (M-0645) and the open exposure to zone and weapons (M-0641).
+
+  What is unknown: whether the 50% potion cut rounds down or up (U-0618), and which heals count as potions (U-0617). It is open whether bandages heal more in total or the same amount over a longer time (U-0619). It is open whether the landmine ability is ready at the pick (U-0621). It is open whether the unlisted blocks pay tokens (U-0620). Where the rounding sits in the damage steps is open (U-0100), and so is how odd nuke damage is rounded (U-0402).
+sigil:healing: |
+  Healing is the "medic" class. Its stats are the plain ones, 100 maximum HP and 3 inventory slots (M-0606), and its job is to keep people alive, including by bringing them back.
+
+  The everyday tool is the heal ability: you heal a nearby contestant for 1 HP and cure their poison, it also stops Deep Cut bleeding, and the cooldown is 10 minutes (M-0651). Poison can be cured by Anti poison, Healing healing, or God's Fruit, so a Healing player is one of three answers to poison (M-0174). You also regenerate 1 HP every 30 minutes, up to your max HP (M-0652). Note that this slow regeneration is Healing's own, not a power of any other sigil (M-0652).
+
+  The big tool is revival. A Healing contestant can revive a contestant of any sigil, up to 10 times (M-0654). A revive must happen within 10 minutes of the death (M-0655), it costs the reviver 5 HP, and it brings the contestant back with 5 HP (M-0656). Healing players are also easier to bring back themselves: any living contestant within 10 m (33 ft) of your gravestone can revive you, up to 2 times (M-0653).
+
+  Income is small and steady: one blood token per heal and twenty per revive (M-0650). So a Healing player earns most from revives (M-0650).
+
+  What a player would feel: a patient role. The heal is tiny and slow (M-0651), so the weight of the sigil sits in the revives (M-0654) and the poison cure (M-0174). Strongest as written: revival of any sigil (M-0654) and the poison and bleeding cure (M-0651). Weakest: the heal is 1 HP with a 10 minute cooldown (M-0651), and the revive costs you HP (M-0656).
+
+  What is unknown: the range of the heal (U-0622), and whether it can target yourself or a full-HP target and still spend the cooldown (U-0623). It is open what the revive counters attach to, the event, the pair or the target (U-0107, U-0624), and who can revive a non-Healing contestant (U-0108). It is open whose death starts the 10 minute window (U-0011), and whether the 5 HP cost can kill you (U-0625). Whether damage resets the regeneration timer is open too (U-0007).
+family:damage: |
+  The damage family answers one question: when something hurts you, how much actually lands? The wiki gives two tools. One is a table that lists, for each damage source, what stops it. The other is a seven-step "hit pipeline" that every hit goes through, in order (M-0117).
+
+  The steps are roughly these. Step 1 is immunity: if anything blocks the hit, you take nothing (M-0118). Step 2 is the attacker's Kick bonus, which makes listed weapons deal 10% more, rounded down, when the attacker is live on Kick (M-0119). Step 3 is the Mirror forcefield, which sends the whole hit back to the attacker (M-0120) and only reflects a listed set of sources (M-0135). Step 4 holds the reductions: a Protection contestant takes 50% less from a nuke (M-0121), and a contestant live on Kick takes off 10%, rounded down (M-0122). Step 5 says a hit that gets through does at least 1 HP (M-0123). Step 6 is the fortress, which absorbs up to its remaining durability (M-0124). Step 7 is Body armor, which absorbs what is left until it breaks (M-0125).
+
+  In practice, a player is protected by layers. A Shield does not block zone, unsafe circle or robot damage, while a Safety bubble and a Reality Shield do (M-0128). A vulnerable contestant gets no protection from a Shield or a Safety Bubble (M-0129). You are hit by your own C4 and landmine if you stand in the blast (M-0133).
+
+  What each defense is good against, as the table says: Flak jacket blocks missiles, nukes, airstrike impact and gunship bombs (M-0158, M-0159, M-0160, M-0162), while Protection blocks poison, drones, C4, landmines and several others (M-0143, M-0153, M-0154, M-0155). Body armor absorbs in almost every row (M-0125).
+
+  Where the rules are shaky: the wiki disagrees with itself on what stops robot damage (M-0524, C-0500) and on whether a Reality Shield stops the unsafe circle (M-0538, C-0502). Which sources even go through the pipeline is open (U-0002). Rounding questions are open, for the Kick reduction (U-0001) and where "rounded down" sits (U-0100). It is open whether armor passes excess damage through (U-0101), whether several fortresses absorb in turn (U-0102), whether a mirrored hit uses the attacker's pipeline (U-0005), and which blocker is used when several apply (U-0120).
+family:economy: |
+  The economy family is about blood tokens, the only money in the game. The merchant sells items, upgrades and enchantments for blood tokens, every sigil can buy from it, and each sigil earns tokens in its own way (M-0320).
+
+  Getting tokens: a final kill pays 25 blood tokens, or 50 if the killer or victim held the blood crown (M-0110). Beyond that, each sigil has its own income. Piety earns from healing and from converting potions (M-0501, M-0502). Greed earns from steals and from its money bag (M-0510, M-0514). Ingenuity earns from crafts, hacks and a few other actions (M-0521). Trolling earns from damage dealt and crates destroyed (M-0531). Death earns from robbed gravestones and other deaths (M-0610). Endurance earns from its own care packages and item uses (M-0622, M-0623). Necromancy earns from its zombies and what they drain (M-0630). Protection earns when its immunity blocks a hit (M-0642). Healing earns from heals and revives (M-0650).
+
+  Spending: at most one merchant is on the map, placed by admins or appearing at random in the safe zones, and a random merchant stays for 15 minutes (M-0321). You buy from within 10 m (33 ft), and items need a free inventory slot (M-0322). The base price list includes a care package at 10 blood tokens, Anti poison at 12 and Dual Wield at 50 (M-0324). A merchant care package gives one random item straight into your inventory (M-0325). Upgrades are ladders: an inventory slot starts at 40 blood tokens and costs 10 more for each one bought (M-0332), and the same shape applies to +10 maximum HP (M-0333). Ingenuity pays 10% more, rounded up (M-0323).
+
+  What a player would feel: a steady race between earning and buying, with the sigil deciding how you earn. Strongest points as written: the large one-off payouts, such as the kill reward (M-0110). Weakest: many income rules depend on wording that is open.
+
+  What is unknown: how the surcharge meets the ladders (U-0322), whether prices use exact or floating arithmetic (U-0006), and whether the slot and HP counters are shared (U-0329). It is open who counts as holding the crown (U-0125) and what a "final" kill is (U-0104). It is open when the first merchant appears (U-0319) and how long it stays away (U-0320). It is open what the merchant care package gives (U-0323), and whether buying more maximum HP also heals (U-0331).
+family:healing: |
+  The healing family covers every way to get HP back while alive. (Bringing someone back from death belongs to the revival family instead.) There are the common consumables, a few sigil bonuses and penalties, and the Healing sigil's own abilities.
+
+  The basics are potions and bandages. A health potion heals by tier: Small 5 HP, Medium 10 HP, Large 20 HP, Gigantic 40 HP (M-0207). Eddie's potion is a gamble: 10% chance to heal 50% of your max HP, otherwise you lose 30% of your max HP (M-0208). A bandage heals 10 HP over 2 minutes, and taking damage does not stop it (M-0233). A bandage also stops Deep Cut bleeding (M-0234).
+
+  Sigils then bend those numbers. Piety potions heal 15% more, rounded down (M-0505). Protection potions heal 50% less (M-0645), while its bandages last 1.1x as long (M-0646). Ingenuity can craft a Campfire, which heals everyone within 10 m (33 ft) 1 HP per second from one shared pool equal to the potion's heal (M-0525), and an Everything potion that cures poison and heals by potion tier (M-0526). The Healing sigil itself heals a nearby contestant for 1 HP, cures their poison and stops Deep Cut bleeding, with a 10 minute cooldown (M-0651). It is the Healing sigil, not any other, that regenerates 1 HP every 30 minutes up to its max HP (M-0652).
+
+  What a player would feel: healing is mostly a matter of what you carry. Potions are quick and bandages are slow but safe from interruption (M-0233). The gamble in Eddie's potion is a real risk, since the downside is a large loss (M-0208).
+
+  Good against: bandages and the Healing sigil's ability both stop Deep Cut bleeding (M-0234, M-0651). The Healing ability also cures poison (M-0651).
+
+  Weakest as written: small numbers. The Healing sigil's own heal is 1 HP (M-0651), and its regeneration is 1 HP every 30 minutes (M-0652).
+
+  What is unknown: whether potions, bandage ticks and Eddie's heal cap at max HP (U-0203), the bandage tick schedule (U-0214), and how Eddie's amounts round (U-0204). It is open whether Eddie's loss can kill (U-0004). It is open whether the Piety bonus rounds before or after the max HP clamp (U-0503). It is open which heals count as potions for Protection (U-0617), and its rounding (U-0618). It is open how the Campfire pool drains with several people (U-0520), and whether damage resets the regeneration timer (U-0007).
+family:items: |
+  The items family is the toolbox: what you can carry, what each item does, and how long it lasts. Most of it is defense, with a few tricks on top.
+
+  Space first. You can carry up to 3 items, and some stack, such as C4, Landmines and Arrows (M-0200, M-0201). You can have at most 3 active item effects at once, and at the limit the item is refused and you keep it (M-0203, M-0204). A Shield, a Guardian angel, a Mirror forcefield, Anti poison immunity, a Flak jacket, a Gas mask, Zombie repellent and a carried Hazmat suit count toward that cap (M-0205), while Safety Bubbles, smoke bombs, bandages, crafts and merchant upgrades do not (M-0206).
+
+  The defenses each have a specialty. A Shield gives immunity for 20 minutes but you cannot use it while vulnerable (M-0215). A Safety bubble makes everyone inside immune to damage and zombies, zone damage included (M-0213), for 10 minutes (M-0212). Guardian angel gives immunity to zone damage for 10 minutes (M-0210). A Mirror forcefield reflects the next attack back at the attacker (M-0235), and is used up by it (M-0134). A Flak jacket blocks the next missile, nuke, airstrike impact or gunship bomb (M-0130), and a Gas mask blocks tear gas (M-0131). Body armor absorbs a pool of damage (M-0217). The Sleeping Bag protects a sleeper within 15 m of it (M-0132).
+
+  The tricks: a flashbang blinds every other contestant within 30 m for 30 seconds (M-0244), and a smoke bomb blacks out the map and blocks attacks within 50 m for 20 minutes (M-0226). Thermal goggles see through smoke (M-0231) and show illusion copies as copies (M-0232).
+
+  Good against: Flak jacket versus explosives (M-0130), Gas mask versus tear gas (M-0131), Mirror versus weapon hits (M-0235).
+
+  Weakest: the Mirror only reflects a listed set and never viewer or admin attacks, the zone or zombies (M-0241).
+
+  What is unknown, and what the wiki disagrees on: Shield exclusions (M-0216, C-0202), whether a trapped gift ignores Body armor (M-0218, C-0201), the Mirror's list (M-0237, C-0200), flashbang immunity while sleeping (M-0246, C-0203), the bubble for vulnerable players (M-0214, C-0204), and what Zombie repellent does (M-0220, C-0205). Open: how several Mirrors behave (U-0215), whether the Body armor pool depletes (U-0209), and what a second armor does (U-0210). Also open: the bubble's 10 m as radius or diameter (U-0208), and which other items stack (U-0200).
+family:poison: |
+  Poison is the slow, nagging damage in the game: not a big hit, but a clock that keeps ticking until something stops it. This family explains how you get poisoned, how it hurts, and what ends it.
+
+  How you get it: you can be poisoned by a Poison dart or a Fake gravestone, and by nothing else (M-0173). Once poisoned, you lose 1 HP every 1 minute 30 seconds (M-0170). Getting poisoned again resets the timer and does not stack (M-0171). Poison ends only when it has done all its damage, or if it is cured (M-0172). So an uncured poison is a fixed total bill, paid slowly (M-0172).
+
+  How to stop it: poison can be cured by Anti poison, Healing healing, or God's Fruit (M-0174). Anti poison cures poison and makes you immune to it for 10 minutes (M-0221). Other protections work before the poison lands: the Reality Shield stops new poison while you stand inside it (M-0177), and the Protection sigil is fully immune (M-0175). A Mirror forcefield turns a Poison Dart or a fake gravestone back on the attacker (M-0180). A Shield or a Safety bubble works differently: it does not stop the poison from landing, but blocks each poison step while it lasts (M-0136, M-0179).
+
+  What a player would feel: a slow loss of 1 HP every 90 seconds (M-0170) until the total is paid or a cure lands (M-0172). Good against poison: Anti poison for a clean fix (M-0221), Protection for permanent safety (M-0175), a Mirror for sending it back (M-0180).
+
+  Weakest point of the poison itself as the rules read: it is slow (M-0170), it does not stack (M-0171), and it has several known counters (M-0174).
+
+  What is unknown: whether the first 1 HP lands at once or after the first interval (U-0115). It is open whether a second poisoning only restarts the countdown or also refills the damage still to come (U-0116). It is open whether a step blocked by a Shield or Safety bubble counts as damage done or just delays the poison (U-0117). It is open whether sleeping in your own Sleeping Bag prevents new poison, blocks ticks, or both (U-0118). Whether a mirrored poison goes through the attacker's own protections is open too (U-0005).
+family:revival: |
+  The revival family covers what happens when a contestant dies and whether they can come back. Death here is not always the end, but the window is short and a few things can close it for good.
+
+  When you die, a gravestone with your items appears where you were last seen (M-0107). Other contestants can loot it, or revive you within 10 minutes of the death (M-0108). Blood tokens in the grave stay locked while revival is possible (M-0109). If a revive happens, the revived contestant gets back the items still in the gravestone (M-0114), and items that do not fit stay in the gravestone (M-0115).
+
+  Who can do the reviving is tied to the Healing sigil. A Healing contestant can revive a contestant of any sigil, up to 10 times (M-0113, M-0654). It must happen within 10 minutes of the death (M-0655), and it costs the reviver 5 HP and brings the contestant back with 5 HP (M-0656). In the other direction, any living contestant within 10 m (33 ft) of a Healing contestant's gravestone can revive them, up to 2 times (M-0112, M-0653).
+
+  The thing that ends it: if a Sigil of death player robs your gravestone, or is the first to loot it, you can never be revived (M-0116). Each gravestone can be robbed once, and a robbed gravestone can never be revived (M-0612). So from a player's point of view, the 10 minute window can be cut short by a Death player, and the hope is to be revived before one arrives (M-0116).
+
+  Strongest as written: a Healing reviver can bring back any sigil (M-0113). Weakest: the cost to the reviver (M-0656), the short window (M-0655), and the permanent block from Death (M-0116).
+
+  What is unknown: whose death starts the 10 minute window (U-0011), and whether anyone other than a Healing contestant can revive a non-Healing one (U-0108). It is open what the 2 and 10 limits are attached to (U-0107, U-0624). The wiki also words the Healing revive limit differently on two pages (C-0105). It is open how long the locked tokens stay locked and what happens at the end of the lock (U-0105). It is open what the capacity rule is when items are returned (U-0109), whether the grave is where you died or at your last GPS fix (U-0124), and whether the 5 HP cost can kill the reviver (U-0625).
+family:sigil: |
+  A sigil is the class a contestant chooses, and it shapes everything they do afterwards. This family holds the rules about choosing one and the base numbers and abilities that come with each. (The longer story of each sigil lives on its own page.)
+
+  The choice itself: each contestant picks one sigil after the event starts (M-0601), and the choice is final (M-0600). Whether there is a deadline, and what happens to someone who never picks, is open, U-0627.
+
+  Base stats are the first thing a sigil changes. Piety has 110 max HP and 3 slots (M-0500). Greed has 90 max HP and 3 slots (M-0508). Ingenuity has 100 max HP, 2 slots and 5 separate craft slots (M-0515). Trolling, Death, Necromancy, Protection and Healing all have 100 max HP and 3 slots (M-0530, M-0602, M-0604, M-0605, M-0606). Endurance has 100 max HP and 10 slots (M-0603).
+
+  Then come the abilities. Greed steals from contestants within 10 m (33 ft), except Piety players (M-0509, M-0507), and Fortress protection prevents stealing (M-0511). Greed also claims chests and crates from twice as far away (M-0512). Ingenuity recognizes fake chests and gravestones, sees traps and hacks landmines or C4 within 50 m (M-0517). Death heals from robbing gravestones and from eliminations nearby (M-0611, M-0613), with a late cap (M-0614) and a ward against outside-the-circle hits (M-0615). Protection carries a long immunity list (M-0640), still takes zone, unsafe circle, robot and weapon damage among others (M-0641), can place a landmine once every 2 hours (M-0644), and punishes anyone within 30 m when it dies (M-0647).
+
+  What a player would experience: picking a sigil is a bet on how the event will go, and you cannot take it back (M-0600). The stat differences are small, so most of the identity comes from the abilities (M-0530, M-0602).
+
+  Strongest as written, per sigil: Endurance's slot count (M-0603) and Piety's maximum HP (M-0500) are the clearest raw advantages, and Protection's immunities are the widest (M-0640). Weakest: Greed's lower HP (M-0508) and Ingenuity's smaller bag (M-0515).
+
+  What is unknown: how big the claim range that Greed doubles is (U-0510), what hacking does (U-0514), how Ingenuity's six recipes fit five craft slots (U-0517), how Death's heals round and cap (U-0600, U-0602, U-0603), when the Ward cooldown starts (U-0604), and when the Protection landmine is ready (U-0621). Greed's behavior when the thief has no room is also open (U-0509).
+family:viewer: |
+  The viewer family is the part of the game that the audience controls. Viewers watching the stream spend Cx-Bucks to send things into the safe zones: weapons that hurt contestants, a few things that help them, and some that just cause confusion. The prices are not known (U-0014).
+
+  The attacks. A missile is aimed at a point inside a safe zone, lands 3 minutes later at a random spot near it, and everyone within 25 m takes 10 HP (M-0403, M-0404). A nuke lands exactly where aimed after 1 minute and everyone within 100 m takes 20 HP, unless an admin set other numbers (M-0405). A horde puts 50 zombies in the safe zones for 20 minutes (M-0408). Tear gas is a 25 m cloud that stays for 10 minutes and takes 2 HP every 10 seconds from anyone inside (M-0409, M-0410). An airstrike hits a strip for 5 HP after 20 seconds, then burns for 5 minutes (M-0412, M-0413). A gunship lasts 5 minutes and drops bombs that deal 10 HP within 25 m (M-0415, M-0416). A bounty marks a random living contestant (M-0423), and a giant cyclops has 200 HP and hits the nearest contestant within 30 m (M-0426).
+
+  What can be done about it: Protection is immune to missiles and gunships (M-0404, M-0417). A Flak jacket blocks a missile, and one gunship bomb (M-0404, M-0417). An EMP stops viewers sending missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes and bounties for 10 minutes (M-0222), and destroys those already in the air (M-0223). But a viewer item refused by an EMP is lost, with no refund (M-0224), and it does not remove a cyclops, bounty, tear gas or zombies already on the map (M-0402).
+
+  What a player would feel: the event has weather you cannot predict, and the answer is to carry the right counter. Strongest as written for contestants: the EMP (M-0222). Weakest: standing effects that the EMP cannot remove (M-0402).
+
+  What is unknown: the prices (U-0014), the airstrike strip size (U-0406, U-0407), the gunship bomb count (U-0409), and whether the cloud and healing circle sizes are radii or diameters (U-0404, U-0413). It is open whether the EMP block also covers airdrops and healing circles (U-0401). The wiki words the Trolling diversion differently in two places (M-0432, C-0403, C-0501). The giant cyclops payout and steering are open (U-0419, U-0421).
+family:weapons: |
+  The weapons family is everything a contestant can use to hurt another contestant directly. Contestants find them in chests, care packages and crates (M-0300). Melee weapons, bows, staffs and Poison Darts fit a weapon slot, and weapon slots do not use inventory space (M-0301).
+
+  The melee and ranged tools each have their own profile. The Bow hits for 5 HP within 20 m with a 5 second cooldown, uses one arrow per shot, and never breaks (M-0311). The Assassin's knife stabs within 10 m for 5 HP, with 2 uses (M-0316). The Long sword hits within 10 m for 10 HP, with 3 uses and a 10 second cooldown (M-0319). Zarok's axe hits for 5 HP at full health, rising to 25 HP as your health drops, and is single use (M-0317). The Huge machete hits for 10 HP, has 10 uses, and only admins can give it out (M-0318). The Wizard staff places a damage area within 50 m of you that lasts 5 seconds and deals 10 HP in total (M-0313), costs 2 blood tokens per use, and has a 20 minute cooldown (M-0314). The Poison Dart poisons a nearby contestant for 20 HP over 30 minutes (M-0315).
+
+  Then the explosives and drones. C4 is placed where you stand and detonated later, dealing 20 HP within 10 m, you included (M-0302). A landmine triggers when another contestant or a zombie comes within 10 m and deals 15 HP to everyone in range, you included (M-0307). Both stack, up to 5 in one slot (M-0305, M-0310). A drone strikes any contestant you can see, at any distance, for 10 HP after 30 seconds (M-0306). Ingenuity can also make a robot (M-0523).
+
+  Good against: the drone reaches anyone you can see (M-0306), while C4 and landmines punish crowds (M-0302, M-0307).
+
+  Weakest as written: single-use and limited-use weapons (M-0317, M-0316), and the self-damage of your own explosives (M-0302, M-0307).
+
+  What is unknown: how many uses the drone, C4, landmine and Dart have (U-0304), what "nearby" means for the Dart, axe and machete (U-0309), how the axe damage curve rises (U-0310), whether a blocked or reflected attack costs a use (U-0308), and when cooldowns start (U-0307). It is open whether the staff's 10 m is a radius or a diameter (U-0312).
+family:zombies: |
+  Zombies are slow, patient pests that roam the map and wear people down. They chase the nearest valid contestant, at any distance, at 1.4 m/s (M-0440), and drain 1 HP from any contestant within 5 m every 10 seconds (M-0441). Each zombie can drain at most 30 HP from each contestant (M-0442). They also have a 10% chance to break one of your health potions (M-0443), and a 40% chance to destroy crafted items (M-0444). A zombie disappears when its time runs out (M-0450).
+
+  Where they come from: viewers release a horde of 50 zombies at random points in the safe zones, and those zombies have no owner (M-0445). Necromancy contestants get zombies of their own, which belong to that sigil: a summon up to 3 times every 6 hours (M-0446), a zombie when any contestant dies (M-0447), 5 more when a horde is released (M-0448), and guard zombies at gravestones (M-0449). The owned zombies drain HP and give it to the Necromancy owner (M-0635).
+
+  How to deal with them. Blasts kill every zombie inside them: C4, landmines, missiles, nukes, airstrikes, gunship bombs and tear gas (M-0451). A zombie that walks within range of a landmine sets it off, and zombies do not set off C4 (M-0452). A Shield, a Safety bubble, a Reality Shield or sleeping in your own Sleeping Bag makes you immune (M-0454). Zombie repellent works for 20 minutes (M-0455). Ingenuity's Zombie killer kills the next ten zombies that come within 10 m and stops the drain meanwhile (M-0453, M-0527). Necromancy is fully immune (M-0636).
+
+  What a player would feel: zombies are not fast or strong, but they never stop, and the cost is paid in small amounts, in potions and crafts that quietly disappear (M-0443, M-0444). Weakest: they are killed by every blast (M-0451), and many items stop them (M-0454).
+
+  What is unknown: the wiki disagrees on what repellent does, ignoring versus stopping damage (M-0455, C-0402), and on whether Necromancy is on the immunity list (M-0454, C-0401). It also disagrees about which crafts the 40% applies to (M-0444, C-0404). Open: how long zombies live (U-0403), whether the drain timer is per zombie or per contestant (U-0425), whether the 30 HP cap is per lifetime or per encounter (U-0008), how the potion break roll works (U-0426), and what makes a contestant a valid target (U-0424).
+family:zone: |
+  The zone family is the rule that keeps everyone moving and honest. Contestants must stay inside the safe zone, which is tracked by the GPS in their phone. The organizer can move it, so it can change in size or speed, or even split apart (M-0100).
+
+  The main penalty is simple. When you are outside, after 5 seconds you start taking 1 HP damage every 2 seconds (M-0101).
+
+  There are two ways to be "outside" without actually stepping out. Moving too fast counts as being outside: faster than 20 mph on average over 1 minute (M-0105), or faster than 30 mph over any 15 seconds (M-0106). And if your phone stops sending GPS updates while your last known location was inside a safe zone, you start taking damage after 15 minutes, or 30 minutes if you are live on Kick (M-0104). The longer offline grace for Kick-live contestants is the same rule stated on its own (M-0103).
+
+  The Trolling sigil can turn part of a safe zone into a danger area: its unsafe circle is placed inside a safe zone for 20 minutes, with a 2 hour cooldown (M-0535).
+
+  What defenses exist? A Hazmat suit makes each zone damage interval 2 s longer while you carry it (M-0209). Guardian angel gives immunity to zone damage for 10 minutes (M-0210). A Safety bubble makes everyone inside immune to damage, zone damage included (M-0213). A Shield does not block zone damage (M-0128).
+
+  Strongest as written: it applies to everyone equally, and is not tied to any sigil (M-0101). Weakest: it depends on a phone and GPS, which can fail through no fault of the player (M-0104).
+
+  What is unknown: whether the first tick comes at 5 seconds or at 7 seconds (U-0003). It is open what damage applies once the offline grace ends (U-0110), and whether a later GPS update resets the grace timer (U-0111). It is open how the speed averaging works, as a sliding window, a fixed window or a ratio (U-0112), and what exactly happens when the speed rule trips (U-0113). With several safe zones, it is open whether damage starts when you are outside every zone or when you leave the one you were last in (U-0114). Unsafe circle details, radius or diameter and when the cooldown starts, are open too (U-0535, U-0536).

@@ -12,7 +12,7 @@ The central action is robbing gravestones. Within 10 m (33 ft) you can rob a gra
 
 Death also feeds on eliminations. You earn ten blood tokens per gravestone robbed and one whenever another contestant dies ([M-0610](../rules/economy.md#m-0610)). When a contestant dies within 50 m (164 ft) of you, you heal 1 HP for every contestant eliminated so far, them included ([M-0613](../rules/sigil.md#m-0613)). Later in the event this is capped: when 20% or fewer of the contestants are alive, that heal cannot take you above 60% of your max HP ([M-0614](../rules/sigil.md#m-0614)).
 
-For defense there is the Death Ward: the first hit from outside the circle is blocked, and you are protected for 2 minutes, with a 2 hour cooldown ([M-0615](../rules/sigil.md#m-0615)). The same ability is worded more narrowly on the damage page ([M-0137](../rules/damage.md#m-0137)).
+For defense there is the Death Ward: the first hit from outside the circle is blocked, and you are protected for 2 minutes, with a 2 hour cooldown ([M-0615](../rules/sigil.md#m-0615)). The damage page words the same ability more narrowly ([M-0137](../rules/damage.md#m-0137), [C-0103](../unknowns.md#c-0103), [C-0600](../unknowns.md#c-0600)).
 
 Strongest as written: the permanent harm done to a victim's revival chances ([M-0116](../rules/revival.md#m-0116)), and healing that grows with the death count ([M-0613](../rules/sigil.md#m-0613)). Weakest: the healing is capped late in the event ([M-0614](../rules/sigil.md#m-0614)), and it needs bodies nearby ([M-0613](../rules/sigil.md#m-0613)).
 

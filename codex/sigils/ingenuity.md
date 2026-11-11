@@ -12,7 +12,7 @@ Crafting combines two items into something new: Landmine plus Drone gives a Robo
 
 What you get: the Robot hits other players within 10 m for 1 HP every 2 seconds for ten minutes ([M-0523](../rules/weapons.md#m-0523)). The Campfire heals everyone within 10 m from one shared pool ([M-0525](../rules/healing.md#m-0525)). The Everything potion cures poison and heals by tier ([M-0526](../rules/healing.md#m-0526)). The Zombie killer kills the next ten zombies near you and stops their drain meanwhile ([M-0527](../rules/zombies.md#m-0527)). The Black hole destroys every chest and crate within 200 m ([M-0528](../rules/items.md#m-0528)). The Fortress protects people within 20 m for up to 30 HP and blocks Greed stealing ([M-0529](../rules/damage.md#m-0529)).
 
-Other tricks: attach a landmine or C4 to an item as a trapped gift, once every 16 hours ([M-0519](../rules/items.md#m-0519)); recognize fake chests and gravestones, see traps, and hack landmines or C4 within 50 m ([M-0517](../rules/sigil.md#m-0517)); combine two matching potions into the next size ([M-0518](../rules/items.md#m-0518)). Income comes from crafting, hacking and a few other actions ([M-0521](../rules/economy.md#m-0521)).
+Other tricks: attach a landmine or C4 to an item as a trapped gift, once every 16 hours ([M-0519](../rules/items.md#m-0519)); recognize fake chests and gravestones, see traps, and hack landmines or C4 within 50 m ([M-0517](../rules/sigil.md#m-0517)); combine two matching potions into the next size ([M-0518](../rules/items.md#m-0518)).
 
 Strongest as written: the range of tools, and knowing about traps and fakes ([M-0517](../rules/sigil.md#m-0517)). Zombie drain is one thing it handles well, through the Zombie killer ([M-0527](../rules/zombies.md#m-0527)).
 

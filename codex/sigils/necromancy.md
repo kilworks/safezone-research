@@ -4,6 +4,20 @@
 
 Rules that name the Sigil of Necromancy, as the wiki states them on 2026-11-11.
 
+### In plain words
+
+Necromancy is the "zombie master" class. Its stats are the plain ones, 100 maximum HP and 3 inventory slots ([M-0604](../rules/sigil.md#m-0604)), but it is the only sigil that makes zombies work for it. Zombies are normally a threat to everyone; for a Necromancer they are a power source, and the sigil makes you fully immune to zombies ([M-0636](../rules/zombies.md#m-0636)).
+
+Zombies come to you in four ways. You can summon one where you stand, up to 3 times every 6 hours ([M-0631](../rules/zombies.md#m-0631)). When any contestant dies, a zombie of yours appears within 10 m (33 ft) of you ([M-0632](../rules/zombies.md#m-0632)). When viewers send a horde, you also get 5 zombies of your own ([M-0634](../rules/zombies.md#m-0634)). And when a contestant dies within 50 m (164 ft) of you, a guard zombie stands 10 m from their gravestone for 1 hour, draining 2 HP every 5 seconds from anyone within 10 m, up to 30 HP per contestant ([M-0633](../rules/zombies.md#m-0633)).
+
+The zombies you own drain 1 HP every 10 seconds from contestants within 5 m (16 ft), up to 30 HP per contestant for each zombie, and the HP goes to you ([M-0635](../rules/zombies.md#m-0635)). You also earn one blood token for each zombie of yours that appears and one per HP your zombies drain ([M-0630](../rules/economy.md#m-0630)).
+
+In play you would feel like a slow, spreading menace: the more people die, the more zombies you collect, and the more HP you steal from anyone who walks near them. Your bodyguards are the zombies themselves, because nobody else is immune ([M-0636](../rules/zombies.md#m-0636)).
+
+Strongest as written: the immunity ([M-0636](../rules/zombies.md#m-0636)) and the way the sigil scales with deaths ([M-0632](../rules/zombies.md#m-0632), [M-0633](../rules/zombies.md#m-0633)). Weakest: it depends on events, deaths, hordes and a limited summon ([M-0631](../rules/zombies.md#m-0631)), and it has no stat bonus ([M-0604](../rules/sigil.md#m-0604)).
+
+What is unknown: how long summoned, death and horde-bonus zombies live ([U-0612](../unknowns.md#u-0612)), and whether the summon limit is a rolling window, fixed blocks or charges ([U-0428](../unknowns.md#u-0428), [U-0611](../unknowns.md#u-0611)). It is open whether guard zombies and horde-bonus zombies send drained HP to you and count for tokens ([U-0614](../unknowns.md#u-0614)), and whether the HP gained is what the victim really lost ([U-0613](../unknowns.md#u-0613)). It is open whether the 30 HP cap is per zombie lifetime, per encounter or per day ([U-0008](../unknowns.md#u-0008)), and whether the immunity covers other Necromancers' zombies ([U-0616](../unknowns.md#u-0616)). Whether guard zombies chase or stay put is open ([U-0429](../unknowns.md#u-0429)).
+
 This page gathers 12 rules (1 `DOCUMENTED`, 11 `CONDITIONAL`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
 
 ## Rules

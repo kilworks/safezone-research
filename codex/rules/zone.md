@@ -4,6 +4,22 @@
 
 Rules of the `zone` family, as the wiki states them on 2026-11-11.
 
+### In plain words
+
+The zone family is the rule that keeps everyone moving and honest. Contestants must stay inside the safe zone, which is tracked by the GPS in their phone. The organizer can move it, so it can change in size or speed, or even split apart ([M-0100](../rules/zone.md#m-0100)).
+
+The main penalty is simple. When you are outside, after 5 seconds you start taking 1 HP damage every 2 seconds ([M-0101](../rules/zone.md#m-0101)).
+
+There are two ways to be "outside" without actually stepping out. Moving too fast counts as being outside: faster than 20 mph on average over 1 minute ([M-0105](../rules/zone.md#m-0105)), or faster than 30 mph over any 15 seconds ([M-0106](../rules/zone.md#m-0106)). And if your phone stops sending GPS updates while your last known location was inside a safe zone, you start taking damage after 15 minutes, or 30 minutes if you are live on Kick ([M-0104](../rules/zone.md#m-0104)). The longer offline grace for Kick-live contestants is the same rule stated on its own ([M-0103](../rules/zone.md#m-0103)).
+
+The Trolling sigil can turn part of a safe zone into a danger area: its unsafe circle is placed inside a safe zone for 20 minutes, with a 2 hour cooldown ([M-0535](../rules/zone.md#m-0535)).
+
+What defenses exist? A Hazmat suit makes each zone damage interval 2 s longer while you carry it ([M-0209](../rules/items.md#m-0209)). Guardian angel gives immunity to zone damage for 10 minutes ([M-0210](../rules/items.md#m-0210)). A Safety bubble makes everyone inside immune to damage, zone damage included ([M-0213](../rules/items.md#m-0213)). A Shield does not block zone damage ([M-0128](../rules/damage.md#m-0128)).
+
+Strongest as written: it applies to everyone equally, and is not tied to any sigil ([M-0101](../rules/zone.md#m-0101)). Weakest: it depends on a phone and GPS, which can fail through no fault of the player ([M-0104](../rules/zone.md#m-0104)).
+
+What is unknown: whether the first tick comes at 5 seconds or at 7 seconds ([U-0003](../unknowns.md#u-0003)). It is open what damage applies once the offline grace ends ([U-0110](../unknowns.md#u-0110)), and whether a later GPS update resets the grace timer ([U-0111](../unknowns.md#u-0111)). It is open how the speed averaging works, as a sliding window, a fixed window or a ratio ([U-0112](../unknowns.md#u-0112)), and what exactly happens when the speed rule trips ([U-0113](../unknowns.md#u-0113)). With several safe zones, it is open whether damage starts when you are outside every zone or when you leave the one you were last in ([U-0114](../unknowns.md#u-0114)). Unsafe circle details, radius or diameter and when the cooldown starts, are open too ([U-0535](../unknowns.md#u-0535), [U-0536](../unknowns.md#u-0536)).
+
 This page gathers 7 rules (7 `CONDITIONAL`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
 
 ## Rules

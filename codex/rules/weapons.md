@@ -4,6 +4,20 @@
 
 Rules of the `weapons` family, as the wiki states them on 2026-11-11.
 
+### In plain words
+
+The weapons family is everything a contestant can use to hurt another contestant directly. Contestants find them in chests, care packages and crates ([M-0300](../rules/weapons.md#m-0300)). Melee weapons, bows, staffs and Poison Darts fit a weapon slot, and weapon slots do not use inventory space ([M-0301](../rules/weapons.md#m-0301)).
+
+The melee and ranged tools each have their own profile. The Bow hits for 5 HP within 20 m with a 5 second cooldown, uses one arrow per shot, and never breaks ([M-0311](../rules/weapons.md#m-0311)). The Assassin's knife stabs within 10 m for 5 HP, with 2 uses ([M-0316](../rules/weapons.md#m-0316)). The Long sword hits within 10 m for 10 HP, with 3 uses and a 10 second cooldown ([M-0319](../rules/weapons.md#m-0319)). Zarok's axe hits for 5 HP at full health, rising to 25 HP as your health drops, and is single use ([M-0317](../rules/weapons.md#m-0317)). The Huge machete hits for 10 HP, has 10 uses, and only admins can give it out ([M-0318](../rules/weapons.md#m-0318)). The Wizard staff places a damage area within 50 m of you that lasts 5 seconds and deals 10 HP in total ([M-0313](../rules/weapons.md#m-0313)), costs 2 blood tokens per use, and has a 20 minute cooldown ([M-0314](../rules/weapons.md#m-0314)). The Poison Dart poisons a nearby contestant for 20 HP over 30 minutes ([M-0315](../rules/weapons.md#m-0315)).
+
+Then the explosives and drones. C4 is placed where you stand and detonated later, dealing 20 HP within 10 m, you included ([M-0302](../rules/weapons.md#m-0302)). A landmine triggers when another contestant or a zombie comes within 10 m and deals 15 HP to everyone in range, you included ([M-0307](../rules/weapons.md#m-0307)). Both stack, up to 5 in one slot ([M-0305](../rules/weapons.md#m-0305), [M-0310](../rules/weapons.md#m-0310)). A drone strikes any contestant you can see, at any distance, for 10 HP after 30 seconds ([M-0306](../rules/weapons.md#m-0306)). Ingenuity can also make a robot ([M-0523](../rules/weapons.md#m-0523)).
+
+Good against: the drone reaches anyone you can see ([M-0306](../rules/weapons.md#m-0306)), while C4 and landmines punish crowds ([M-0302](../rules/weapons.md#m-0302), [M-0307](../rules/weapons.md#m-0307)).
+
+Weakest as written: single-use and limited-use weapons ([M-0317](../rules/weapons.md#m-0317), [M-0316](../rules/weapons.md#m-0316)), and the self-damage of your own explosives ([M-0302](../rules/weapons.md#m-0302), [M-0307](../rules/weapons.md#m-0307)).
+
+What is unknown: how many uses the drone, C4, landmine and Dart have ([U-0304](../unknowns.md#u-0304)), what "nearby" means for the Dart, axe and machete ([U-0309](../unknowns.md#u-0309)), how the axe damage curve rises ([U-0310](../unknowns.md#u-0310)), whether a blocked or reflected attack costs a use ([U-0308](../unknowns.md#u-0308)), and when cooldowns start ([U-0307](../unknowns.md#u-0307)). It is open whether the staff's 10 m is a radius or a diameter ([U-0312](../unknowns.md#u-0312)).
+
 This page gathers 24 rules (2 `DOCUMENTED`, 22 `CONDITIONAL`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
 
 ## Rules

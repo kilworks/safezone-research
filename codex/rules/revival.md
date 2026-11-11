@@ -4,6 +4,20 @@
 
 Rules of the `revival` family, as the wiki states them on 2026-11-11.
 
+### In plain words
+
+The revival family covers what happens when a contestant dies and whether they can come back. Death here is not always the end, but the window is short and a few things can close it for good.
+
+When you die, a gravestone with your items appears where you were last seen ([M-0107](../rules/revival.md#m-0107)). Other contestants can loot it, or revive you within 10 minutes of the death ([M-0108](../rules/revival.md#m-0108)). Blood tokens in the grave stay locked while revival is possible ([M-0109](../rules/revival.md#m-0109)). If a revive happens, the revived contestant gets back the items still in the gravestone ([M-0114](../rules/revival.md#m-0114)), and items that do not fit stay in the gravestone ([M-0115](../rules/revival.md#m-0115)).
+
+Who can do the reviving is tied to the Healing sigil. A Healing contestant can revive a contestant of any sigil, up to 10 times ([M-0113](../rules/revival.md#m-0113), [M-0654](../rules/revival.md#m-0654)). It must happen within 10 minutes of the death ([M-0655](../rules/revival.md#m-0655)), and it costs the reviver 5 HP and brings the contestant back with 5 HP ([M-0656](../rules/revival.md#m-0656)). In the other direction, any living contestant within 10 m (33 ft) of a Healing contestant's gravestone can revive them, up to 2 times ([M-0112](../rules/revival.md#m-0112), [M-0653](../rules/revival.md#m-0653)).
+
+The thing that ends it: if a Sigil of death player robs your gravestone, or is the first to loot it, you can never be revived ([M-0116](../rules/revival.md#m-0116)). Each gravestone can be robbed once, and a robbed gravestone can never be revived ([M-0612](../rules/revival.md#m-0612)). So from a player's point of view, the 10 minute window can be cut short by a Death player, and the hope is to be revived before one arrives ([M-0116](../rules/revival.md#m-0116)).
+
+Strongest as written: a Healing reviver can bring back any sigil ([M-0113](../rules/revival.md#m-0113)). Weakest: the cost to the reviver ([M-0656](../rules/revival.md#m-0656)), the short window ([M-0655](../rules/revival.md#m-0655)), and the permanent block from Death ([M-0116](../rules/revival.md#m-0116)).
+
+What is unknown: whose death starts the 10 minute window ([U-0011](../unknowns.md#u-0011)), and whether anyone other than a Healing contestant can revive a non-Healing one ([U-0108](../unknowns.md#u-0108)). It is open what the 2 and 10 limits are attached to ([U-0107](../unknowns.md#u-0107), [U-0624](../unknowns.md#u-0624)). The wiki also words the Healing revive limit differently on two pages ([C-0105](../unknowns.md#c-0105)). It is open how long the locked tokens stay locked and what happens at the end of the lock ([U-0105](../unknowns.md#u-0105)). It is open what the capacity rule is when items are returned ([U-0109](../unknowns.md#u-0109)), whether the grave is where you died or at your last GPS fix ([U-0124](../unknowns.md#u-0124)), and whether the 5 HP cost can kill the reviver ([U-0625](../unknowns.md#u-0625)).
+
 This page gathers 13 rules (2 `DOCUMENTED`, 11 `CONDITIONAL`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
 
 ## Rules

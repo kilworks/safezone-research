@@ -4,6 +4,18 @@
 
 Rules of the `economy` family, as the wiki states them on 2026-11-11.
 
+### In plain words
+
+The economy family is about blood tokens, the only money in the game. The merchant sells items, upgrades and enchantments for blood tokens, every sigil can buy from it, and each sigil earns tokens in its own way ([M-0320](../rules/economy.md#m-0320)).
+
+Getting tokens: a final kill pays 25 blood tokens, or 50 if the killer or victim held the blood crown ([M-0110](../rules/economy.md#m-0110)). Beyond that, each sigil has its own income. Piety earns from healing and from converting potions ([M-0501](../rules/economy.md#m-0501), [M-0502](../rules/economy.md#m-0502)). Greed earns from steals and from its money bag ([M-0510](../rules/economy.md#m-0510), [M-0514](../rules/economy.md#m-0514)). Ingenuity earns from crafts, hacks and a few other actions ([M-0521](../rules/economy.md#m-0521)). Trolling earns from damage dealt and crates destroyed ([M-0531](../rules/economy.md#m-0531)). Death earns from robbed gravestones and other deaths ([M-0610](../rules/economy.md#m-0610)). Endurance earns from its own care packages and item uses ([M-0622](../rules/economy.md#m-0622), [M-0623](../rules/economy.md#m-0623)). Necromancy earns from its zombies and what they drain ([M-0630](../rules/economy.md#m-0630)). Protection earns when its immunity blocks a hit ([M-0642](../rules/economy.md#m-0642)). Healing earns from heals and revives ([M-0650](../rules/economy.md#m-0650)).
+
+Spending: at most one merchant is on the map, placed by admins or appearing at random in the safe zones, and a random merchant stays for 15 minutes ([M-0321](../rules/economy.md#m-0321)). You buy from within 10 m (33 ft), and items need a free inventory slot ([M-0322](../rules/economy.md#m-0322)). The base price list includes a care package at 10 blood tokens, Anti poison at 12 and Dual Wield at 50 ([M-0324](../rules/economy.md#m-0324)). A merchant care package gives one random item straight into your inventory ([M-0325](../rules/economy.md#m-0325)). Upgrades are ladders: an inventory slot starts at 40 blood tokens and costs 10 more for each one bought ([M-0332](../rules/economy.md#m-0332)), and the same shape applies to +10 maximum HP ([M-0333](../rules/economy.md#m-0333)). Ingenuity pays 10% more, rounded up ([M-0323](../rules/economy.md#m-0323)).
+
+What a player would feel: a steady race between earning and buying, with the sigil deciding how you earn. Strongest points as written: the large one-off payouts, such as the kill reward ([M-0110](../rules/economy.md#m-0110)). Weakest: many income rules depend on wording that is open.
+
+What is unknown: how the surcharge meets the ladders ([U-0322](../unknowns.md#u-0322)), whether prices use exact or floating arithmetic ([U-0006](../unknowns.md#u-0006)), and whether the slot and HP counters are shared ([U-0329](../unknowns.md#u-0329)). It is open who counts as holding the crown ([U-0125](../unknowns.md#u-0125)) and what a "final" kill is ([U-0104](../unknowns.md#u-0104)). It is open when the first merchant appears ([U-0319](../unknowns.md#u-0319)) and how long it stays away ([U-0320](../unknowns.md#u-0320)). It is open what the merchant care package gives ([U-0323](../unknowns.md#u-0323)), and whether buying more maximum HP also heals ([U-0331](../unknowns.md#u-0331)).
+
 This page gathers 23 rules (4 `DOCUMENTED`, 19 `CONDITIONAL`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
 
 ## Rules

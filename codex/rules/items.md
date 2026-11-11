@@ -4,6 +4,22 @@
 
 Rules of the `items` family, as the wiki states them on 2026-11-11.
 
+### In plain words
+
+The items family is the toolbox: what you can carry, what each item does, and how long it lasts. Most of it is defense, with a few tricks on top.
+
+Space first. You can carry up to 3 items, and some stack, such as C4, Landmines and Arrows ([M-0200](../rules/items.md#m-0200), [M-0201](../rules/items.md#m-0201)). You can have at most 3 active item effects at once, and at the limit the item is refused and you keep it ([M-0203](../rules/items.md#m-0203), [M-0204](../rules/items.md#m-0204)). A Shield, a Guardian angel, a Mirror forcefield, Anti poison immunity, a Flak jacket, a Gas mask, Zombie repellent and a carried Hazmat suit count toward that cap ([M-0205](../rules/items.md#m-0205)), while Safety Bubbles, smoke bombs, bandages, crafts and merchant upgrades do not ([M-0206](../rules/items.md#m-0206)).
+
+The defenses each have a specialty. A Shield gives immunity for 20 minutes but you cannot use it while vulnerable ([M-0215](../rules/items.md#m-0215)). A Safety bubble makes everyone inside immune to damage and zombies, zone damage included ([M-0213](../rules/items.md#m-0213)), for 10 minutes ([M-0212](../rules/items.md#m-0212)). Guardian angel gives immunity to zone damage for 10 minutes ([M-0210](../rules/items.md#m-0210)). A Mirror forcefield reflects the next attack back at the attacker ([M-0235](../rules/items.md#m-0235)), and is used up by it ([M-0134](../rules/items.md#m-0134)). A Flak jacket blocks the next missile, nuke, airstrike impact or gunship bomb ([M-0130](../rules/items.md#m-0130)), and a Gas mask blocks tear gas ([M-0131](../rules/items.md#m-0131)). Body armor absorbs a pool of damage ([M-0217](../rules/items.md#m-0217)). The Sleeping Bag protects a sleeper within 15 m of it ([M-0132](../rules/items.md#m-0132)).
+
+The tricks: a flashbang blinds every other contestant within 30 m for 30 seconds ([M-0244](../rules/items.md#m-0244)), and a smoke bomb blacks out the map and blocks attacks within 50 m for 20 minutes ([M-0226](../rules/items.md#m-0226)). Thermal goggles see through smoke ([M-0231](../rules/items.md#m-0231)) and show illusion copies as copies ([M-0232](../rules/items.md#m-0232)).
+
+Good against: Flak jacket versus explosives ([M-0130](../rules/items.md#m-0130)), Gas mask versus tear gas ([M-0131](../rules/items.md#m-0131)), Mirror versus weapon hits ([M-0235](../rules/items.md#m-0235)).
+
+Weakest: the Mirror only reflects a listed set and never viewer or admin attacks, the zone or zombies ([M-0241](../rules/items.md#m-0241)).
+
+What is unknown, and what the wiki disagrees on: Shield exclusions ([M-0216](../rules/items.md#m-0216), [C-0202](../unknowns.md#c-0202)), whether a trapped gift ignores Body armor ([M-0218](../rules/items.md#m-0218), [C-0201](../unknowns.md#c-0201)), the Mirror's list ([M-0237](../rules/items.md#m-0237), [C-0200](../unknowns.md#c-0200)), flashbang immunity while sleeping ([M-0246](../rules/items.md#m-0246), [C-0203](../unknowns.md#c-0203)), the bubble for vulnerable players ([M-0214](../rules/items.md#m-0214), [C-0204](../unknowns.md#c-0204)), and what Zombie repellent does ([M-0220](../rules/items.md#m-0220), [C-0205](../unknowns.md#c-0205)). Open: how several Mirrors behave ([U-0215](../unknowns.md#u-0215)), whether the Body armor pool depletes ([U-0209](../unknowns.md#u-0209)), and what a second armor does ([U-0210](../unknowns.md#u-0210)). Also open: the bubble's 10 m as radius or diameter ([U-0208](../unknowns.md#u-0208)), and which other items stack ([U-0200](../unknowns.md#u-0200)).
+
 This page gathers 67 rules (21 `DOCUMENTED`, 40 `CONDITIONAL`, 6 `CONTRADICTED`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
 
 ## Rules

@@ -4,6 +4,18 @@
 
 Rules of the `viewer` family, as the wiki states them on 2026-11-11.
 
+### In plain words
+
+The viewer family is the part of the game that the audience controls. Viewers watching the stream spend Cx-Bucks to send things into the safe zones: weapons that hurt contestants, a few things that help them, and some that just cause confusion. The prices are not known ([U-0014](../unknowns.md#u-0014)).
+
+The attacks. A missile is aimed at a point inside a safe zone, lands 3 minutes later at a random spot near it, and everyone within 25 m takes 10 HP ([M-0403](../rules/viewer.md#m-0403), [M-0404](../rules/viewer.md#m-0404)). A nuke lands exactly where aimed after 1 minute and everyone within 100 m takes 20 HP, unless an admin set other numbers ([M-0405](../rules/viewer.md#m-0405)). A horde puts 50 zombies in the safe zones for 20 minutes ([M-0408](../rules/viewer.md#m-0408)). Tear gas is a 25 m cloud that stays for 10 minutes and takes 2 HP every 10 seconds from anyone inside ([M-0409](../rules/viewer.md#m-0409), [M-0410](../rules/viewer.md#m-0410)). An airstrike hits a strip for 5 HP after 20 seconds, then burns for 5 minutes ([M-0412](../rules/viewer.md#m-0412), [M-0413](../rules/viewer.md#m-0413)). A gunship lasts 5 minutes and drops bombs that deal 10 HP within 25 m ([M-0415](../rules/viewer.md#m-0415), [M-0416](../rules/viewer.md#m-0416)). A bounty marks a random living contestant ([M-0423](../rules/viewer.md#m-0423)), and a giant cyclops has 200 HP and hits the nearest contestant within 30 m ([M-0426](../rules/viewer.md#m-0426)).
+
+What can be done about it: Protection is immune to missiles and gunships ([M-0404](../rules/viewer.md#m-0404), [M-0417](../rules/viewer.md#m-0417)). A Flak jacket blocks a missile, and one gunship bomb ([M-0404](../rules/viewer.md#m-0404), [M-0417](../rules/viewer.md#m-0417)). An EMP stops viewers sending missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes and bounties for 10 minutes ([M-0222](../rules/viewer.md#m-0222)), and destroys those already in the air ([M-0223](../rules/viewer.md#m-0223)). But a viewer item refused by an EMP is lost, with no refund ([M-0224](../rules/viewer.md#m-0224)), and it does not remove a cyclops, bounty, tear gas or zombies already on the map ([M-0402](../rules/viewer.md#m-0402)).
+
+What a player would feel: the event has weather you cannot predict, and the answer is to carry the right counter. Strongest as written for contestants: the EMP ([M-0222](../rules/viewer.md#m-0222)). Weakest: standing effects that the EMP cannot remove ([M-0402](../rules/viewer.md#m-0402)).
+
+What is unknown: the prices ([U-0014](../unknowns.md#u-0014)), the airstrike strip size ([U-0406](../unknowns.md#u-0406), [U-0407](../unknowns.md#u-0407)), the gunship bomb count ([U-0409](../unknowns.md#u-0409)), and whether the cloud and healing circle sizes are radii or diameters ([U-0404](../unknowns.md#u-0404), [U-0413](../unknowns.md#u-0413)). It is open whether the EMP block also covers airdrops and healing circles ([U-0401](../unknowns.md#u-0401)). The wiki words the Trolling diversion differently in two places ([M-0432](../rules/viewer.md#m-0432), [C-0403](../unknowns.md#c-0403), [C-0501](../unknowns.md#c-0501)). The giant cyclops payout and steering are open ([U-0419](../unknowns.md#u-0419), [U-0421](../unknowns.md#u-0421)).
+
 This page gathers 43 rules (14 `DOCUMENTED`, 29 `CONDITIONAL`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
 
 ## Rules

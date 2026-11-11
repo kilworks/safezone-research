@@ -4,6 +4,20 @@
 
 Rules that name the Sigil of Protection, as the wiki states them on 2026-11-11.
 
+### In plain words
+
+Protection is the "tank" class. Its stats are the plain ones, 100 maximum HP and 3 inventory slots ([M-0605](../rules/sigil.md#m-0605)), but it comes with the longest immunity list in the game: poison, drones, missiles, C4, landmines, trapped gifts, airstrikes and their fire, gunship bombs and Protection retribution ([M-0640](../rules/sigil.md#m-0640)). Nukes are not blocked, but they deal 50% less to you ([M-0643](../rules/damage.md#m-0643)), rounded down ([M-0121](../rules/damage.md#m-0121)). Poison in particular cannot touch you ([M-0175](../rules/poison.md#m-0175)).
+
+It does not make you invincible. You still take zone, unsafe circle, robot, weapon, fake chest, tear gas, zombie, bleeding, cyclops and bounty damage ([M-0641](../rules/sigil.md#m-0641)). So the sigil is strong against the viewer-driven explosive attacks and poison, and not against a person with a weapon or against the shrinking zone.
+
+The costs are in healing. Potions heal you 50% less ([M-0645](../rules/healing.md#m-0645)), while bandages last 1.1x as long ([M-0646](../rules/healing.md#m-0646)). In exchange, your immunity pays: a drone, missile, C4 or landmine hit earns one blood token, an airstrike or gunship hit earns 1, and a nuke hit earns twenty, but only when your own protection does the blocking ([M-0642](../rules/economy.md#m-0642)).
+
+Two active features turn you into a threat. You can place a landmine where you stand once every 2 hours; it deals 15 HP to everyone within 10 m and kills every zombie in range ([M-0644](../rules/sigil.md#m-0644)). And when you die, everyone within 30 m (98 ft) takes 20 HP ([M-0647](../rules/sigil.md#m-0647)).
+
+What a player would feel: calm while others are being bombed, then pressure from the things that are not blocked. Strongest as written: the immunity list ([M-0640](../rules/sigil.md#m-0640)) and the nuke cut ([M-0643](../rules/damage.md#m-0643)). Weakest: the potion penalty ([M-0645](../rules/healing.md#m-0645)) and the open exposure to zone and weapons ([M-0641](../rules/sigil.md#m-0641)).
+
+What is unknown: whether the 50% potion cut rounds down or up ([U-0618](../unknowns.md#u-0618)), and which heals count as potions ([U-0617](../unknowns.md#u-0617)). It is open whether bandages heal more in total or the same amount over a longer time ([U-0619](../unknowns.md#u-0619)). It is open whether the landmine ability is ready at the pick ([U-0621](../unknowns.md#u-0621)). It is open whether the unlisted blocks pay tokens ([U-0620](../unknowns.md#u-0620)). Where the rounding sits in the damage steps is open ([U-0100](../unknowns.md#u-0100)), and so is how odd nuke damage is rounded ([U-0402](../unknowns.md#u-0402)).
+
 This page gathers 12 rules (5 `DOCUMENTED`, 7 `CONDITIONAL`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
 
 ## Rules

@@ -4,6 +4,22 @@
 
 Rules of the `sigil` family, as the wiki states them on 2026-11-11.
 
+### In plain words
+
+A sigil is the class a contestant chooses, and it shapes everything they do afterwards. This family holds the rules about choosing one and the base numbers and abilities that come with each. (The longer story of each sigil lives on its own page.)
+
+The choice itself: each contestant picks one sigil after the event starts ([M-0601](../rules/sigil.md#m-0601)), and the choice is final ([M-0600](../rules/sigil.md#m-0600)). Whether there is a deadline, and what happens to someone who never picks, is open, [U-0627](../unknowns.md#u-0627).
+
+Base stats are the first thing a sigil changes. Piety has 110 max HP and 3 slots ([M-0500](../rules/sigil.md#m-0500)). Greed has 90 max HP and 3 slots ([M-0508](../rules/sigil.md#m-0508)). Ingenuity has 100 max HP, 2 slots and 5 separate craft slots ([M-0515](../rules/sigil.md#m-0515)). Trolling, Death, Necromancy, Protection and Healing all have 100 max HP and 3 slots ([M-0530](../rules/sigil.md#m-0530), [M-0602](../rules/sigil.md#m-0602), [M-0604](../rules/sigil.md#m-0604), [M-0605](../rules/sigil.md#m-0605), [M-0606](../rules/sigil.md#m-0606)). Endurance has 100 max HP and 10 slots ([M-0603](../rules/sigil.md#m-0603)).
+
+Then come the abilities. Greed steals from contestants within 10 m (33 ft), except Piety players ([M-0509](../rules/sigil.md#m-0509), [M-0507](../rules/sigil.md#m-0507)), and Fortress protection prevents stealing ([M-0511](../rules/sigil.md#m-0511)). Greed also claims chests and crates from twice as far away ([M-0512](../rules/sigil.md#m-0512)). Ingenuity recognizes fake chests and gravestones, sees traps and hacks landmines or C4 within 50 m ([M-0517](../rules/sigil.md#m-0517)). Death heals from robbing gravestones and from eliminations nearby ([M-0611](../rules/sigil.md#m-0611), [M-0613](../rules/sigil.md#m-0613)), with a late cap ([M-0614](../rules/sigil.md#m-0614)) and a ward against outside-the-circle hits ([M-0615](../rules/sigil.md#m-0615)). Protection carries a long immunity list ([M-0640](../rules/sigil.md#m-0640)), still takes zone, unsafe circle, robot and weapon damage among others ([M-0641](../rules/sigil.md#m-0641)), can place a landmine once every 2 hours ([M-0644](../rules/sigil.md#m-0644)), and punishes anyone within 30 m when it dies ([M-0647](../rules/sigil.md#m-0647)).
+
+What a player would experience: picking a sigil is a bet on how the event will go, and you cannot take it back ([M-0600](../rules/sigil.md#m-0600)). The stat differences are small, so most of the identity comes from the abilities ([M-0530](../rules/sigil.md#m-0530), [M-0602](../rules/sigil.md#m-0602)).
+
+Strongest as written, per sigil: Endurance's slot count ([M-0603](../rules/sigil.md#m-0603)) and Piety's maximum HP ([M-0500](../rules/sigil.md#m-0500)) are the clearest raw advantages, and Protection's immunities are the widest ([M-0640](../rules/sigil.md#m-0640)). Weakest: Greed's lower HP ([M-0508](../rules/sigil.md#m-0508)) and Ingenuity's smaller bag ([M-0515](../rules/sigil.md#m-0515)).
+
+What is unknown: how big the claim range that Greed doubles is ([U-0510](../unknowns.md#u-0510)), what hacking does ([U-0514](../unknowns.md#u-0514)), how Ingenuity's six recipes fit five craft slots ([U-0517](../unknowns.md#u-0517)), how Death's heals round and cap ([U-0600](../unknowns.md#u-0600), [U-0602](../unknowns.md#u-0602), [U-0603](../unknowns.md#u-0603)), when the Ward cooldown starts ([U-0604](../unknowns.md#u-0604)), and when the Protection landmine is ready ([U-0621](../unknowns.md#u-0621)). Greed's behavior when the thief has no room is also open ([U-0509](../unknowns.md#u-0509)).
+
 This page gathers 24 rules (12 `DOCUMENTED`, 12 `CONDITIONAL`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
 
 ## Rules

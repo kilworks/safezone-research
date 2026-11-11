@@ -4,6 +4,18 @@
 
 Rules of the `damage` family, as the wiki states them on 2026-11-11.
 
+### In plain words
+
+The damage family answers one question: when something hurts you, how much actually lands? The wiki gives two tools. One is a table that lists, for each damage source, what stops it. The other is a seven-step "hit pipeline" that every hit goes through, in order ([M-0117](../rules/damage.md#m-0117)).
+
+The steps are roughly these. Step 1 is immunity: if anything blocks the hit, you take nothing ([M-0118](../rules/damage.md#m-0118)). Step 2 is the attacker's Kick bonus, which makes listed weapons deal 10% more, rounded down, when the attacker is live on Kick ([M-0119](../rules/damage.md#m-0119)). Step 3 is the Mirror forcefield, which sends the whole hit back to the attacker ([M-0120](../rules/damage.md#m-0120)) and only reflects a listed set of sources ([M-0135](../rules/damage.md#m-0135)). Step 4 holds the reductions: a Protection contestant takes 50% less from a nuke ([M-0121](../rules/damage.md#m-0121)), and a contestant live on Kick takes off 10%, rounded down ([M-0122](../rules/damage.md#m-0122)). Step 5 says a hit that gets through does at least 1 HP ([M-0123](../rules/damage.md#m-0123)). Step 6 is the fortress, which absorbs up to its remaining durability ([M-0124](../rules/damage.md#m-0124)). Step 7 is Body armor, which absorbs what is left until it breaks ([M-0125](../rules/damage.md#m-0125)).
+
+In practice, a player is protected by layers. A Shield does not block zone, unsafe circle or robot damage, while a Safety bubble and a Reality Shield do ([M-0128](../rules/damage.md#m-0128)). A vulnerable contestant gets no protection from a Shield or a Safety Bubble ([M-0129](../rules/damage.md#m-0129)). You are hit by your own C4 and landmine if you stand in the blast ([M-0133](../rules/damage.md#m-0133)).
+
+What each defense is good against, as the table says: Flak jacket blocks missiles, nukes, airstrike impact and gunship bombs ([M-0158](../rules/damage.md#m-0158), [M-0159](../rules/damage.md#m-0159), [M-0160](../rules/damage.md#m-0160), [M-0162](../rules/damage.md#m-0162)), while Protection blocks poison, drones, C4, landmines and several others ([M-0143](../rules/damage.md#m-0143), [M-0153](../rules/damage.md#m-0153), [M-0154](../rules/damage.md#m-0154), [M-0155](../rules/damage.md#m-0155)). Body armor absorbs in almost every row ([M-0125](../rules/damage.md#m-0125)).
+
+Where the rules are shaky: the wiki disagrees with itself on what stops robot damage ([M-0524](../rules/damage.md#m-0524), [C-0500](../unknowns.md#c-0500)) and on whether a Reality Shield stops the unsafe circle ([M-0538](../rules/damage.md#m-0538), [C-0502](../unknowns.md#c-0502)). Which sources even go through the pipeline is open ([U-0002](../unknowns.md#u-0002)). Rounding questions are open, for the Kick reduction ([U-0001](../unknowns.md#u-0001)) and where "rounded down" sits ([U-0100](../unknowns.md#u-0100)). It is open whether armor passes excess damage through ([U-0101](../unknowns.md#u-0101)), whether several fortresses absorb in turn ([U-0102](../unknowns.md#u-0102)), whether a mirrored hit uses the attacker's pipeline ([U-0005](../unknowns.md#u-0005)), and which blocker is used when several apply ([U-0120](../unknowns.md#u-0120)).
+
 This page gathers 48 rules (11 `DOCUMENTED`, 35 `CONDITIONAL`, 2 `UNKNOWN`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
 
 ## Rules

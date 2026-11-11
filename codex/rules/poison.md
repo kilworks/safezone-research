@@ -4,6 +4,20 @@
 
 Rules of the `poison` family, as the wiki states them on 2026-11-11.
 
+### In plain words
+
+Poison is the slow, nagging damage in the game: not a big hit, but a clock that keeps ticking until something stops it. This family explains how you get poisoned, how it hurts, and what ends it.
+
+How you get it: you can be poisoned by a Poison dart or a Fake gravestone, and by nothing else ([M-0173](../rules/poison.md#m-0173)). Once poisoned, you lose 1 HP every 1 minute 30 seconds ([M-0170](../rules/poison.md#m-0170)). Getting poisoned again resets the timer and does not stack ([M-0171](../rules/poison.md#m-0171)). Poison ends only when it has done all its damage, or if it is cured ([M-0172](../rules/poison.md#m-0172)). So an uncured poison is a fixed total bill, paid slowly ([M-0172](../rules/poison.md#m-0172)).
+
+How to stop it: poison can be cured by Anti poison, Healing healing, or God's Fruit ([M-0174](../rules/poison.md#m-0174)). Anti poison cures poison and makes you immune to it for 10 minutes ([M-0221](../rules/poison.md#m-0221)). Other protections work before the poison lands: the Reality Shield stops new poison while you stand inside it ([M-0177](../rules/poison.md#m-0177)), and the Protection sigil is fully immune ([M-0175](../rules/poison.md#m-0175)). A Mirror forcefield turns a Poison Dart or a fake gravestone back on the attacker ([M-0180](../rules/poison.md#m-0180)). A Shield or a Safety bubble works differently: it does not stop the poison from landing, but blocks each poison step while it lasts ([M-0136](../rules/poison.md#m-0136), [M-0179](../rules/poison.md#m-0179)).
+
+What a player would feel: a slow loss of 1 HP every 90 seconds ([M-0170](../rules/poison.md#m-0170)) until the total is paid or a cure lands ([M-0172](../rules/poison.md#m-0172)). Good against poison: Anti poison for a clean fix ([M-0221](../rules/poison.md#m-0221)), Protection for permanent safety ([M-0175](../rules/poison.md#m-0175)), a Mirror for sending it back ([M-0180](../rules/poison.md#m-0180)).
+
+Weakest point of the poison itself as the rules read: it is slow ([M-0170](../rules/poison.md#m-0170)), it does not stack ([M-0171](../rules/poison.md#m-0171)), and it has several known counters ([M-0174](../rules/poison.md#m-0174)).
+
+What is unknown: whether the first 1 HP lands at once or after the first interval ([U-0115](../unknowns.md#u-0115)). It is open whether a second poisoning only restarts the countdown or also refills the damage still to come ([U-0116](../unknowns.md#u-0116)). It is open whether a step blocked by a Shield or Safety bubble counts as damage done or just delays the poison ([U-0117](../unknowns.md#u-0117)). It is open whether sleeping in your own Sleeping Bag prevents new poison, blocks ticks, or both ([U-0118](../unknowns.md#u-0118)). Whether a mirrored poison goes through the attacker's own protections is open too ([U-0005](../unknowns.md#u-0005)).
+
 This page gathers 13 rules (6 `DOCUMENTED`, 7 `CONDITIONAL`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
 
 ## Rules

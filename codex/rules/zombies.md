@@ -4,6 +4,18 @@
 
 Rules of the `zombies` family, as the wiki states them on 2026-11-11.
 
+### In plain words
+
+Zombies are slow, patient pests that roam the map and wear people down. They chase the nearest valid contestant, at any distance, at 1.4 m/s ([M-0440](../rules/zombies.md#m-0440)), and drain 1 HP from any contestant within 5 m every 10 seconds ([M-0441](../rules/zombies.md#m-0441)). Each zombie can drain at most 30 HP from each contestant ([M-0442](../rules/zombies.md#m-0442)). They also have a 10% chance to break one of your health potions ([M-0443](../rules/zombies.md#m-0443)), and a 40% chance to destroy crafted items ([M-0444](../rules/zombies.md#m-0444)). A zombie disappears when its time runs out ([M-0450](../rules/zombies.md#m-0450)).
+
+Where they come from: viewers release a horde of 50 zombies at random points in the safe zones, and those zombies have no owner ([M-0445](../rules/zombies.md#m-0445)). Necromancy contestants get zombies of their own, which belong to that sigil: a summon up to 3 times every 6 hours ([M-0446](../rules/zombies.md#m-0446)), a zombie when any contestant dies ([M-0447](../rules/zombies.md#m-0447)), 5 more when a horde is released ([M-0448](../rules/zombies.md#m-0448)), and guard zombies at gravestones ([M-0449](../rules/zombies.md#m-0449)). The owned zombies drain HP and give it to the Necromancy owner ([M-0635](../rules/zombies.md#m-0635)).
+
+How to deal with them. Blasts kill every zombie inside them: C4, landmines, missiles, nukes, airstrikes, gunship bombs and tear gas ([M-0451](../rules/zombies.md#m-0451)). A zombie that walks within range of a landmine sets it off, and zombies do not set off C4 ([M-0452](../rules/zombies.md#m-0452)). A Shield, a Safety bubble, a Reality Shield or sleeping in your own Sleeping Bag makes you immune ([M-0454](../rules/zombies.md#m-0454)). Zombie repellent works for 20 minutes ([M-0455](../rules/zombies.md#m-0455)). Ingenuity's Zombie killer kills the next ten zombies that come within 10 m and stops the drain meanwhile ([M-0453](../rules/zombies.md#m-0453), [M-0527](../rules/zombies.md#m-0527)). Necromancy is fully immune ([M-0636](../rules/zombies.md#m-0636)).
+
+What a player would feel: zombies are not fast or strong, but they never stop, and the cost is paid in small amounts, in potions and crafts that quietly disappear ([M-0443](../rules/zombies.md#m-0443), [M-0444](../rules/zombies.md#m-0444)). Weakest: they are killed by every blast ([M-0451](../rules/zombies.md#m-0451)), and many items stop them ([M-0454](../rules/zombies.md#m-0454)).
+
+What is unknown: the wiki disagrees on what repellent does, ignoring versus stopping damage ([M-0455](../rules/zombies.md#m-0455), [C-0402](../unknowns.md#c-0402)), and on whether Necromancy is on the immunity list ([M-0454](../rules/zombies.md#m-0454), [C-0401](../unknowns.md#c-0401)). It also disagrees about which crafts the 40% applies to ([M-0444](../rules/zombies.md#m-0444), [C-0404](../unknowns.md#c-0404)). Open: how long zombies live ([U-0403](../unknowns.md#u-0403)), whether the drain timer is per zombie or per contestant ([U-0425](../unknowns.md#u-0425)), whether the 30 HP cap is per lifetime or per encounter ([U-0008](../unknowns.md#u-0008)), how the potion break roll works ([U-0426](../unknowns.md#u-0426)), and what makes a contestant a valid target ([U-0424](../unknowns.md#u-0424)).
+
 This page gathers 23 rules (2 `DOCUMENTED`, 21 `CONDITIONAL`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
 
 ## Rules

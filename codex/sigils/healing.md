@@ -4,6 +4,20 @@
 
 Rules that name the Sigil of Healing, as the wiki states them on 2026-11-11.
 
+### In plain words
+
+Healing is the "medic" class. Its stats are the plain ones, 100 maximum HP and 3 inventory slots ([M-0606](../rules/sigil.md#m-0606)), and its job is to keep people alive, including by bringing them back.
+
+The everyday tool is the heal ability: you heal a nearby contestant for 1 HP and cure their poison, it also stops Deep Cut bleeding, and the cooldown is 10 minutes ([M-0651](../rules/healing.md#m-0651)). Poison can be cured by Anti poison, Healing healing, or God's Fruit, so a Healing player is one of three answers to poison ([M-0174](../rules/poison.md#m-0174)). You also regenerate 1 HP every 30 minutes, up to your max HP ([M-0652](../rules/healing.md#m-0652)). Note that this slow regeneration is Healing's own, not a power of any other sigil ([M-0652](../rules/healing.md#m-0652)).
+
+The big tool is revival. A Healing contestant can revive a contestant of any sigil, up to 10 times ([M-0654](../rules/revival.md#m-0654)). A revive must happen within 10 minutes of the death ([M-0655](../rules/revival.md#m-0655)), it costs the reviver 5 HP, and it brings the contestant back with 5 HP ([M-0656](../rules/revival.md#m-0656)). Healing players are also easier to bring back themselves: any living contestant within 10 m (33 ft) of your gravestone can revive you, up to 2 times ([M-0653](../rules/revival.md#m-0653)).
+
+Income is small and steady: one blood token per heal and twenty per revive ([M-0650](../rules/economy.md#m-0650)). So a Healing player earns most from revives ([M-0650](../rules/economy.md#m-0650)).
+
+What a player would feel: a patient role. The heal is tiny and slow ([M-0651](../rules/healing.md#m-0651)), so the weight of the sigil sits in the revives ([M-0654](../rules/revival.md#m-0654)) and the poison cure ([M-0174](../rules/poison.md#m-0174)). Strongest as written: revival of any sigil ([M-0654](../rules/revival.md#m-0654)) and the poison and bleeding cure ([M-0651](../rules/healing.md#m-0651)). Weakest: the heal is 1 HP with a 10 minute cooldown ([M-0651](../rules/healing.md#m-0651)), and the revive costs you HP ([M-0656](../rules/revival.md#m-0656)).
+
+What is unknown: the range of the heal ([U-0622](../unknowns.md#u-0622)), and whether it can target yourself or a full-HP target and still spend the cooldown ([U-0623](../unknowns.md#u-0623)). It is open what the revive counters attach to, the event, the pair or the target ([U-0107](../unknowns.md#u-0107), [U-0624](../unknowns.md#u-0624)), and who can revive a non-Healing contestant ([U-0108](../unknowns.md#u-0108)). It is open whose death starts the 10 minute window ([U-0011](../unknowns.md#u-0011)), and whether the 5 HP cost can kill you ([U-0625](../unknowns.md#u-0625)). Whether damage resets the regeneration timer is open too ([U-0007](../unknowns.md#u-0007)).
+
 This page gathers 11 rules (2 `DOCUMENTED`, 9 `CONDITIONAL`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
 
 ## Rules
