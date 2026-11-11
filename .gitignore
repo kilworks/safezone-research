@@ -1,0 +1,9 @@
+# Third-party bytes never enter the public repo (see SCOPE.md)
+corpus/raw/
+re/evidence/raw/
+*.har
+
+__pycache__/
+.venv/
+.pytest_cache/
+.hypothesis/
