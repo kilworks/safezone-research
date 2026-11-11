@@ -43,6 +43,11 @@ Each line needs kil to write "yes" next to it. Until then, nothing here is reque
 - Publishing the site's or app's code. The public repository contains hashes, extraction scripts, short attributed quotations and derived facts only.
 - Uploading any downloaded artifact to a third-party service.
 
+## Amendments by kil
+
+- 2026-11-11: the repository is public "as is", including `corpus/clauses/` (the full wiki text, split into attributed clauses with source URL and snapshot date). This overrides the "short attributed quotations only" limit above for the clause corpus. Site code and downloaded assets stay out of the repository.
+- 2026-11-11: only the 2026-11-11 snapshot is a rule source; October 2026 captures are history only (`corpus/diffs/`).
+
 ## Contest rules gate
 
 Phase 0 locates the official contest rules (wiki, Kick, Discord, X posts by the organizer) and quotes them in `corpus/rules.md`. If any rule forbids this kind of analysis, work stops and kil is told before anything else happens.
