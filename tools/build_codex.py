@@ -38,7 +38,7 @@ def unknown_link(u, depth="../"):
 
 def mechanic_block(m, unknowns, contra_by_mech, theorems_by_mech):
     mid = m["id"]
-    out = [f"### {mid}: {m['name']}", "", f"Label: `{m['label']}`. Sigils: {', '.join(m['sigils'])}.", "",
+    out = [f'<a id="{mid.lower()}"></a>', "", f"### {mid}: {m['name']}", "", f"Label: `{m['label']}`. Sigils: {', '.join(m['sigils'])}.", "",
            "**Official text** (snapshot 2026-11-11):", ""]
     for s in m["sources"]:
         out.append(f"- {mid} `{s['clause']}`: \"{s['quote']}\" ([source]({s['url']}))")
@@ -99,8 +99,29 @@ def theorems():
     return found
 
 
+ID = re.compile(r"(?<![\[#/\w-])([MUCT])-(\d{4})\b(?!\])")
+
+
+def linkify(text, prefix, family_of):
+    """Make every M-, U-, C-, T- id a link; prefix is the path from the page to codex/. Headings stay plain."""
+    def sub(m):
+        i = f"{m.group(1)}-{m.group(2)}"
+        if m.group(1) == "M":
+            fam = family_of.get(i)
+            return f"[{i}]({prefix}rules/{fam}.md#{i.lower()})" if fam else i
+        if m.group(1) == "T":
+            return f"[{i}]({prefix}theorems/{i}.md)"
+        return f"[{i}]({prefix}unknowns.md#{i.lower()})"
+    return "\n".join(l if l.startswith(("#", "<a ")) else ID.sub(sub, l) for l in text.split("\n"))
+
+
+def write(path, text, prefix, family_of):
+    path.write_text(linkify(text, prefix, family_of), "utf-8", newline="\n")
+
+
 def main():
     mechs, unknowns, contras = load("mechanics"), load("unknowns"), load("contradictions")
+    family_of = {m["id"]: m["family"] for m in mechs.values()}
     contra_by_mech = defaultdict(set)
     for c in contras.values():
         for m in c.get("mechanics", []):
@@ -118,17 +139,15 @@ def main():
         families[m["family"]].append(m)
     for fam, ms in sorted(families.items()):
         intro = f"Rules of the `{fam}` family, as the wiki states them on 2026-11-11."
-        (CODEX / "rules" / f"{fam}.md").write_text(page(f"Rules: {fam}", ms, unknowns, contra_by_mech, theorems_by_mech, intro),
-                                                   "utf-8", newline="\n")
+        write(CODEX / "rules" / f"{fam}.md", page(f"Rules: {fam}", ms, unknowns, contra_by_mech, theorems_by_mech, intro), "../", family_of)
     for s in SIGILS:
         ms = [m for m in mechs.values() if s in m["sigils"]]
         intro = f"Rules that name the Sigil of {s.capitalize()}, as the wiki states them on 2026-11-11."
-        (CODEX / "sigils" / f"{s}.md").write_text(page(f"Sigil of {s.capitalize()}", ms, unknowns, contra_by_mech, theorems_by_mech, intro),
-                                                  "utf-8", newline="\n")
+        write(CODEX / "sigils" / f"{s}.md", page(f"Sigil of {s.capitalize()}", ms, unknowns, contra_by_mech, theorems_by_mech, intro), "../", family_of)
     for tid, (fname, body, _) in sorted(thms.items()):
-        (CODEX / "theorems" / f"{tid}.md").write_text(
+        write(CODEX / "theorems" / f"{tid}.md", 
             f"# {tid}\n\nExtracted from [theory/{fname}](../../theory/{fname}), where the full context, the proof and the test are.\n\n"
-            + body.replace("](", "](../../theory/").replace("](../../theory/http", "](http") + "\n", "utf-8", newline="\n")
+            + body.replace("](", "](../../theory/").replace("](../../theory/http", "](http") + "\n", "../", family_of)
 
     out = ["# Open questions and contradictions", "",
            "Everything the official wiki leaves undecided, as of the 2026-11-11 snapshot. Each question lists the competing readings and "
@@ -153,7 +172,18 @@ def main():
         out += [f"### {c['id']}", "", f"{c['id']}: {c['summary']} Status: `{c['status']}`.", ""]
         out += [f"- {c['id']} `{s['clause']}`: \"{s['quote']}\" ([source]({s['url']}))" for s in c["sides"]]
         out.append("")
-    (CODEX / "unknowns.md").write_text("\n".join(out), "utf-8", newline="\n")
+    write(CODEX / "unknowns.md", "\n".join(out), "", family_of)
+    idx = ["# Safe Zone Codex: index", "",
+           "Everything in this encyclopedia, one click away. Rules are quoted word for word from the official wiki "
+           "(snapshot 2026-11-11), translated into formulas, and every ambiguity is listed as an open question. "
+           "Labels: `DOCUMENTED` (the wiki says it), `DERIVED` (proven), `CONDITIONAL` (proven under one reading of an open question), "
+           "`CONTRADICTED` (two pages disagree), `UNKNOWN`. Back to the [project README](../README.md).", "",
+           "## Sigils", ""] + [f"- [Sigil of {s.capitalize()}](sigils/{s}.md)" for s in SIGILS]
+    idx += ["", "## Rules by family", ""] + [f"- [{f}](rules/{f}.md): {len(ms)} rules" for f, ms in sorted(families.items())]
+    idx += ["", "## Theorems", ""] + [f"- {t}: from theory/{thms[t][0]}" for t in sorted(thms)]
+    idx += ["", "## Open questions", "", "- [All open questions and contradictions](unknowns.md)", "",
+            "## Every rule", ""] + [f"- {m['id']}: {m['name']} (`{m['label']}`)" for m in sorted(mechs.values(), key=lambda m: m["id"])]
+    write(CODEX / "index.md", "\n".join(idx) + "\n", "", family_of)
     print(f"rules {len(families)} pages, sigils {len(SIGILS)}, theorems {len(thms)}, unknowns {len(unknowns)}, contradictions {len(contras)}")
 
 

@@ -43,7 +43,7 @@ It sounds precise. It is not. "Rounded down" can apply to the damage you receive
 | A: round the result | $\lfloor 9d/10 \rfloor$ | **4** |
 | B: round the 10% removed | $d - \lfloor d/10 \rfloor$ | **5** |
 
-We proved (theorem T-0002) that the two readings differ by exactly 1 HP on every hit that is not a multiple of 10. So the wiki's promise "you take 10% less damage" is worth either *about 1 HP off almost every small hit* or *nothing at all on small hits*. One frame of one stream would settle it. Until then, both readings stay in every model.
+We proved (theorem [T-0002](codex/theorems/T-0002.md)) that the two readings differ by exactly 1 HP on every hit that is not a multiple of 10. So the wiki's promise "you take 10% less damage" is worth either *about 1 HP off almost every small hit* or *nothing at all on small hits*. One frame of one stream would settle it. Until then, both readings stay in every model.
 
 ### 2. Every rule interacts with others, and the interactions are where the surprises are
 
@@ -63,9 +63,9 @@ flowchart LR
 
 Chain them and things fall out that no single sentence says:
 
-- **The live-streaming attack bonus does nothing to weak weapons.** "+10%, rounded down" adds $\lfloor d/10 \rfloor$, which is zero for every hit under 10 HP. Bows, knives and fake chests (5 HP each) are unaffected. *(T-0001, proven for every value.)*
-- **A fortress and body armor behave like one shared pool.** Under the natural reading, they absorb the first 45 HP of damage no matter how it arrives: one big hit or forty-five tiny ones. *(T-0007.)*
-- **Poison can cancel itself.** "Getting poisoned again resets the timer." If that timer is the clock to the next tick, then re-poisoning someone every 89 seconds or less means they **never take poison damage**. A weapon, used eagerly, becomes a shield. *(T-0009, conditional on how the reset works.)*
+- **The live-streaming attack bonus does nothing to weak weapons.** "+10%, rounded down" adds $\lfloor d/10 \rfloor$, which is zero for every hit under 10 HP. Bows, knives and fake chests (5 HP each) are unaffected. *([T-0001](codex/theorems/T-0001.md), proven for every value.)*
+- **A fortress and body armor behave like one shared pool.** Under the natural reading, they absorb the first 45 HP of damage no matter how it arrives: one big hit or forty-five tiny ones. *([T-0007](codex/theorems/T-0007.md).)*
+- **Poison can cancel itself.** "Getting poisoned again resets the timer." If that timer is the clock to the next tick, then re-poisoning someone every 89 seconds or less means they **never take poison damage**. A weapon, used eagerly, becomes a shield. *([T-0009](codex/theorems/T-0009.md), conditional on how the reset works.)*
 
 ### 3. What cannot be derived must be named, not guessed
 
@@ -131,7 +131,7 @@ flowchart TD
 
 | Folder | What you will find |
 |---|---|
-| [`codex/`](codex/) | **Start here.** One page per [sigil](codex/sigils/), per [rule family](codex/rules/), per [theorem](codex/theorems/), and [every open question](codex/unknowns.md). |
+| [`codex/`](codex/index.md) | **Start here: [the full index](codex/index.md).** One page per [sigil](codex/sigils/), per [rule family](codex/rules/), per [theorem](codex/theorems/), and [every open question](codex/unknowns.md). |
 | [`theory/`](theory/) | The mathematics, written for a reader with high-school maths. |
 | [`kb/`](kb/) | The machine-readable knowledge base (one YAML file per rule). |
 | [`corpus/`](corpus/) | The wiki text, split sentence by sentence, with hashes and sources. |
