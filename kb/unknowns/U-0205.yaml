@@ -1,0 +1,17 @@
+id: U-0205
+question: 'Hazmat suit ''+2s per interval'': which damage sources and which timings (first tick, grace) does it lengthen?'
+why_it_matters: Changes time to death outside the zone and the value of the suit against unsafe circle and robots.
+readings:
+  A: only outside-zone interval, 2s -> 4s, first tick unchanged
+  B: interval 4s and first tick delayed by 2s
+  C: also unsafe circle and robot intervals, which the damage page marks 'slows'
+parameter: hazmat_added_interval_s
+sweep_range: 0..4 s (page says 2; bound 4 covers a doubling reading)
+resolution_paths:
+- 'VOD: a Hazmat carrier leaving the zone with an on-screen timer.'
+- Robot interval is not on the Items page.
+priority: high
+status: open
+related:
+- M-0209
+- U-0003

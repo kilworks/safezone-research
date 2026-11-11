@@ -1,0 +1,33 @@
+id: M-0315
+name: Poison Dart
+family: weapons
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/weapons#poison_dart
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-046
+  quote: EquippableUsable
+- url: https://iceposeidon.com/safezone/wiki/weapons#poison_dart
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-047
+  quote: Poison a nearby contestant for 20 HP over 30min.
+formal:
+  readings:
+    A: poison a nearby contestant for 20 HP over 30 min (the poison page gives 1 HP every 1min 30s, which is 20 ticks in 30 min)
+  domain: HP, minutes
+  parameters:
+    dart_total_hp: '20'
+    dart_duration_min: '30'
+    dart_range_m: UNKNOWN, see U-0309
+    dart_uses: UNKNOWN, see U-0304
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0309
+- U-0315
+- U-0316
+- U-0304
+- U-0318
+notes: 'Cross-check with the poison page: 30 min / 90 s = 20 ticks of 1 HP = 20 HP, consistent, no contradiction. The dart is not on the Kick bonus list of the damage page. Re-poisoning resets the timer and does not stack (poison page).'

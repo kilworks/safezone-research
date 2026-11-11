@@ -1,0 +1,33 @@
+id: M-0615
+name: 'Death ward: block the first outside-circle hit and 2min of immunity, 2h cooldown'
+family: sigil
+sigils:
+- death
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/death#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-death-013
+  quote: 'Death ward: the first hit from outside the circle or from an unsafe circle is blocked and you are immune to both for 2min.'
+- url: https://iceposeidon.com/safezone/wiki/sigils/death#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-death-014
+  quote: Cooldown 2h.
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  clause: wiki-damage-073
+  quote: 'Death Ward: a Death contestant''s first hit from outside the circle is blocked, and damage from outside the circle is blocked for 2min.'
+formal:
+  readings:
+    A: 'on first hit from outside circle or unsafe circle: block it, then immune to both sources for 120 s; ability then unavailable for 7200 s'
+    B: 'damage-page wording: only ''outside the circle'' sources, 120 s window'
+  domain: seconds
+  parameters:
+    window_s: '120'
+    cooldown_s: '7200'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0604
+- U-0002
+notes: The damage table lists Death Ward as a blocker for both the outside-circle and unsafe-circle rows. See contradiction C-0600 about the prose on the damage page.

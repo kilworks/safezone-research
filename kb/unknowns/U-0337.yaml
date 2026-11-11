@@ -1,0 +1,10 @@
+id: U-0337
+question: 'Enchantment limit ''one enchanted weapon, or two with Dual Wield'': does it count C4, landmine, drone and Poison Dart, which are not weapon slot items?'
+why_it_matters: Decides whether a contestant can hold an enchanted C4 and an enchanted bow together at one slot.
+readings:
+  A: limit counts every enchanted item including C4, landmine and drone
+  B: limit counts only weapon slot items (melee, bows, staffs, Poison Darts)
+resolution_paths:
+- 'VOD: buying a second weapon enchantment with an enchanted C4 held.'
+priority: medium
+status: open

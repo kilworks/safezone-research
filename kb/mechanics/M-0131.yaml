@@ -1,0 +1,18 @@
+id: M-0131
+name: Gas mask blocks tear gas
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  clause: wiki-damage-066
+  quote: A Gas mask blocks tear gas.
+formal:
+  readings:
+    A: blocks(Gas mask) includes tear gas
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: DOCUMENTED
+notes: Consistent with the Tear gas row.

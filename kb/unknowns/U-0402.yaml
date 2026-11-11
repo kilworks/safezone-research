@@ -1,0 +1,17 @@
+id: U-0402
+question: 'Nuke damage cut for the Protection sigil: ''50% less'' of 20 HP is 10 HP, but how are odd admin-set damages rounded, and is the cut applied before or after other reductions?'
+why_it_matters: Admin nukes may set any damage; an odd value makes floor, ceil and exact fractions differ, and order changes totals with Kick-live and armor.
+readings:
+  A: d -> floor(d/2)
+  B: d -> ceil(d/2)
+  C: d -> d/2 exact (no rounding)
+parameter: admin_nuke_damage
+sweep_range: 1 to 100 HP; the wiki gives only the 20 HP default and no admin range
+resolution_paths:
+- VOD of an admin nuke with odd damage on a Protection contestant.
+- Damage page order of operations (U-0001, U-0006).
+priority: low
+status: open
+related:
+- U-0001
+- U-0006

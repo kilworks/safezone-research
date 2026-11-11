@@ -1,0 +1,12 @@
+id: U-0607
+question: 'Endurance care packages ''every 2h 30min'': first drop 2h30 after the event start, after the sigil pick, or after the previous claim, and which packages are ''your own''?'
+why_it_matters: Fixes how many six-token claims an Endurance contestant can make during an event and when supply arrives.
+readings:
+  A: fixed clock from event start
+  B: fixed clock from the sigil pick
+  C: timer restarts when the previous package is claimed or lands
+  D: '''your own'' = the package that fell near you, whoever stands there; E: also requires you to be the claimer'
+resolution_paths:
+- 'VOD: first Endurance drop timestamp against the event start and the sigil pick.'
+priority: high
+status: open

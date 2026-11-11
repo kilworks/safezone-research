@@ -1,0 +1,20 @@
+id: M-0133
+name: Own C4 and landmine hit you if you stand in the blast
+family: damage
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  clause: wiki-damage-068
+  quote: You are hit by your own C4 and landmine if you stand in the blast.
+formal:
+  readings:
+    A: attacker = defender is allowed for C4 and landmine; the hit goes through the pipeline
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0121
+notes: Mirror never reflects your own explosives (M-0135).

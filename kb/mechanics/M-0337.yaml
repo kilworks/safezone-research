@@ -1,0 +1,48 @@
+id: M-0337
+name: Weapon enchantment (general rule)
+family: weapons
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/merchant#enchantments
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-046
+  quote: 'Weapon enchantment: 15 blood tokens.'
+- url: https://iceposeidon.com/safezone/wiki/merchant#enchantments
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-047
+  quote: Twice the uses and +10 damage for two hours.
+- url: https://iceposeidon.com/safezone/wiki/merchant#enchantments
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-048
+  quote: After two hours the weapon loses the bonus damage and keeps the uses it had before or the uses it has left, whichever is lower.
+- url: https://iceposeidon.com/safezone/wiki/merchant#enchantments
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-049
+  quote: If you use up the enchanted uses first, a knife, machete or long sword goes back with one use left; a single-use weapon is used up.
+- url: https://iceposeidon.com/safezone/wiki/merchant#enchantments
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-055
+  quote: For every other weapon, if two hours pass first, the bonus ends and the item stays as a normal item.
+- url: https://iceposeidon.com/safezone/wiki/merchant#enchantments
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-056
+  quote: You can have one enchanted weapon, or two with Dual Wield.
+formal:
+  readings:
+    A: 15 tokens; twice the uses and +10 damage for 2 h; after 2 h the weapon loses the bonus and keeps min(uses before, uses left); if the enchanted uses run out first, a knife, machete or long sword returns with 1 use left and a single-use weapon is used up; for every other weapon, if 2 h pass first the bonus ends and the item is normal; one enchanted weapon, two with Dual Wield
+  domain: HP, hours, integer uses
+  parameters:
+    weapon_enchant_cost_tokens: '15'
+    weapon_enchant_bonus_hp: '10'
+    weapon_enchant_duration_h: '2'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0333
+- U-0334
+- U-0337
+- U-0308
+- U-0006
+notes: Specific weapons override this general rule in M-0338. Base 15 is not one of the binary64 trouble prices for Ingenuity.

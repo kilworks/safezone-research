@@ -1,0 +1,21 @@
+id: M-0402
+name: EMP does not remove standing effects
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#emp
+  snapshot: '2026-11-11'
+  quote: It does not remove a cyclops, a bounty, tear gas or zombies already on the map.
+  clause: wiki-attacks-003
+formal:
+  readings:
+    A: EMP activation leaves cyclops, bounties, tear gas clouds and zombies unchanged
+  domain: objects on the map at activation
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0400
+- M-0401
+label: DOCUMENTED
+open_unknowns: []

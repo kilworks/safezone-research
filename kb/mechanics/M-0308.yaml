@@ -1,0 +1,32 @@
+id: M-0308
+name: Landmine trapped gift (Ingenuity attach)
+family: weapons
+sigils:
+- ingenuity
+sources:
+- url: https://iceposeidon.com/safezone/wiki/weapons#landmine
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-022
+  quote: With the Ingenuity sigil you can attach one landmine to an item you use on yourself, once every 16h.
+- url: https://iceposeidon.com/safezone/wiki/weapons#landmine
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-024
+  quote: It fires when another contestant uses that item, the item is used up and its effect does not apply.
+- url: https://iceposeidon.com/safezone/wiki/weapons#landmine
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-025
+  quote: Only that contestant takes 11 HP.
+formal:
+  readings:
+    A: 'attach one landmine to an item used on yourself, at most once per 16h; it fires when another contestant uses that item: the item is used up, its effect does not apply, only that contestant takes 11 HP'
+  domain: HP, hours
+  parameters:
+    trapped_gift_landmine_damage_hp: '11'
+    attach_cooldown_h: '16'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0301
+- U-0306
+notes: 11 HP is recorded as stated, no derivation.

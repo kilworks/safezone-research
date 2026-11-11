@@ -1,0 +1,11 @@
+id: U-0308
+question: Is a use (weapon use, arrow, Deep Cut charge, enchanted use) consumed by an attack that is blocked, reflected, out of range or missing?
+why_it_matters: Decides whether Shields, Safety Bubbles, Mirror and Sleeping Bags waste an attacker's limited uses (knife 2, long sword 3) and charges.
+readings:
+  A: consumed on every attempt
+  B: consumed only when the hit lands
+  C: consumed unless the hit is blocked by a defense item
+resolution_paths:
+- 'VOD: knife stab at a Shielded contestant, then count the knife uses left.'
+priority: high
+status: open

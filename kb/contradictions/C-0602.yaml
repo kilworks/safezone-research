@@ -1,0 +1,20 @@
+id: C-0602
+summary: Protection strategy advice says immune from 'most viewer attacks'; the sigil and attack pages make Protection immune to missiles, airstrikes and gunships only, out of eight viewer attack types (nukes halved).
+sides:
+- url: https://iceposeidon.com/safezone/wiki/strategy#sigils
+  snapshot: '2026-11-11'
+  clause: wiki-strategy-006
+  quote: If you are unpopular with viewers, consider picking the Protection sigil, so you are immune from most viewer attacks.
+- url: https://iceposeidon.com/safezone/wiki/sigils/protection#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-protection-008
+  quote: Immune to poison, drones, missiles, C4, landmines, trapped gifts, airstrikes and their fire, gunship bombs and Protection retribution.
+- url: https://iceposeidon.com/safezone/wiki/attacks#emp
+  snapshot: '2026-11-11'
+  clause: wiki-attacks-001
+  quote: While a contestant's EMP is active, viewers cannot send missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes or bounties.
+mechanics:
+- M-0640
+- M-0641
+- M-0643
+status: open

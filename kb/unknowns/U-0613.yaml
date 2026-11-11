@@ -1,0 +1,12 @@
+id: U-0613
+question: 'Necromancy ''The HP goes to you'': is the gain the HP the victim actually lost, is it capped at the owner''s max HP, and does a blocked or armor-absorbed drain give HP and tokens?'
+why_it_matters: Sets Necromancy sustain and blood-token income per drain tick.
+readings:
+  A: owner gains HP actually removed from the victim, capped at max HP
+  B: owner gains the nominal 1 HP (or 2 HP) per tick even when armor absorbs it, capped at max HP
+  C: owner gains nominal HP and may exceed max HP
+  D: blood tokens ('one per HP your zombies drain') follow the same measure as the HP
+resolution_paths:
+- 'VOD: drain on an armored victim, owner HP and token counter.'
+priority: high
+status: open

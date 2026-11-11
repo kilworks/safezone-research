@@ -1,0 +1,18 @@
+id: M-0225
+name: EMP does not black out any map
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#emp
+  snapshot: '2026-11-11'
+  clause: wiki-items-039
+  quote: Does not black out any map.
+formal:
+  readings:
+    A: EMP does not alter map visibility for anyone
+  domain: map state
+  parameters: {}
+depends_on: []
+label: DOCUMENTED
+open_unknowns: []

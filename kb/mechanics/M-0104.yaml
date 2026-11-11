@@ -1,0 +1,29 @@
+id: M-0104
+name: GPS offline grace before damage
+family: zone
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki#damage
+  snapshot: '2026-11-11'
+  clause: wiki-009
+  quote: If your phone stops sending GPS updates, and your last known location was inside a safezone, you start taking damage after 15min, or 30min if you are live on Kick.
+formal:
+  readings:
+    A: 'if last fix inside a safezone: damage begins at T_off >= grace (900 s, or 1800 s if live)'
+    B: 'if last fix inside a safezone: damage begins at T_off > grace (strict)'
+    C: 'if last fix outside every safezone: no grace, the ordinary outside rule runs (not stated, assumed from the condition)'
+  domain: T_off integer seconds since the last GPS update
+  parameters:
+    grace_base_s: '900'
+    grace_live_s: '1800'
+    damage_after_grace: UNKNOWN, see U-0110
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0110
+- U-0111
+- U-0012
+notes: 'Reading C is stated only by the conditional clause ''and your last known location was inside a safezone''; what happens otherwise is not written. Same numbers as the intro Kick sentence (15 and
+  30 min): consistent.'

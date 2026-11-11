@@ -1,0 +1,14 @@
+id: C-0402
+summary: 'Repellent effect: zombies ''ignore you'' (targeting) versus ''stop zombies hurting you'' (damage only).'
+sides:
+- url: https://iceposeidon.com/safezone/wiki/zombies#defence
+  snapshot: '2026-11-11'
+  quote: 'Zombie repellent: use it and zombies ignore you for 20min.'
+  clause: wiki-zombies-019
+- url: https://iceposeidon.com/safezone/wiki/items#zombie_repellent
+  snapshot: '2026-11-11'
+  quote: Use it to stop zombies hurting you for 20min.
+  clause: wiki-items-031
+mechanics:
+- M-0455
+status: open

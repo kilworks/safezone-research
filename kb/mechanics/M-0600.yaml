@@ -1,0 +1,19 @@
+id: M-0600
+name: Sigil choice is final
+family: sigil
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-002
+  quote: The choice is final.
+formal:
+  readings:
+    A: sigil(c) is assigned once; sigil(c, t2) = sigil(c, t1) for all t2 >= t1 >= t_pick
+  domain: each contestant c, one of nine sigils
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: DOCUMENTED
+notes: No respec. Nothing in the wiki changes a sigil after the pick.

@@ -1,0 +1,33 @@
+id: M-0217
+name: Body armor absorption pool
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#body_armor
+  snapshot: '2026-11-11'
+  clause: wiki-items-025
+  quote: Equippable
+- url: https://iceposeidon.com/safezone/wiki/items#body_armor
+  snapshot: '2026-11-11'
+  clause: wiki-items-026
+  quote: Absorbs up to 15 HP of damage.
+- url: https://iceposeidon.com/safezone/wiki/damage#order
+  snapshot: '2026-11-11'
+  clause: wiki-damage-055
+  quote: Body armor absorbs what is left, until it breaks.
+formal:
+  readings:
+    A: 'armor holds a pool of 15 HP: each hit loses min(pool, damage_left) HP from the pool, then pool-=absorbed; broken at 0'
+    B: armor absorbs up to 15 HP per hit and is never depleted
+  domain: pool integer 0..15
+  parameters:
+    capacity: 15 HP
+depends_on: []
+interacts_with:
+- M-0218
+- M-0219
+label: CONDITIONAL
+open_unknowns:
+- U-0209
+notes: '''Until it breaks'' on the damage page supports a depleting pool (A), but a partly absorbed hit is not specified. Pipeline order belongs to the damage page.'

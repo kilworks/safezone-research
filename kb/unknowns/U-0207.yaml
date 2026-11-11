@@ -1,0 +1,13 @@
+id: U-0207
+question: What counts as 'attacks you' for ending a Guardian angel?
+why_it_matters: Decides whether traps, poison, area effects, drones or thefts end the immunity.
+readings:
+  A: any attack action by another contestant targeting you, blocked or not
+  B: also non-damage hostile actions and traps
+  C: only attacks that would damage you
+resolution_paths:
+- 'VOD: a Guardian angel holder hit by a trap, a thrown dart or a steal.'
+priority: high
+status: open
+related:
+- M-0211

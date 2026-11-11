@@ -1,0 +1,46 @@
+id: M-0640
+name: Protection immunity list
+family: sigil
+sigils:
+- protection
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/protection#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-protection-008
+  quote: Immune to poison, drones, missiles, C4, landmines, trapped gifts, airstrikes and their fire, gunship bombs and Protection retribution.
+- url: https://iceposeidon.com/safezone/wiki/sigils/protection
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-protection-006
+  quote: Immune to
+- url: https://iceposeidon.com/safezone/wiki/sigils/protection
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-protection-007
+  quote: Poison, drones, missiles, C4, landmines, airstrikes, gunships
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  clause: wiki-damage-008
+  quote: '| Poison | Shield, Safety bubble, Sleeping Bag, Protection, Anti poison, Body armor (absorbs)'
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  clause: wiki-damage-018
+  quote: '| Drone | Shield, Safety bubble, Sleeping Bag, Protection, Mirror forcefield (reflects), Body armor (absorbs)'
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  clause: wiki-damage-021
+  quote: '| Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (reflects)'
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  clause: wiki-damage-026
+  quote: '| Airstrike fire | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (absorbs)'
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  clause: wiki-damage-031
+  quote: '| Protection retribution | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (absorbs)'
+formal:
+  readings:
+    A: blocked(source, c) = true for source in {poison, drone, missile, C4, landmine, trapped gift, airstrike impact, airstrike fire, gunship bomb, Protection retribution} when sigil(c) = protection
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: DOCUMENTED
+notes: 'The full sentence and the damage table agree. The label line is shorter, see C-0601. Mentions of immunity on the attacks page (missile, airstrike, gunship) agree. Nuke is not immune: M-0643.'

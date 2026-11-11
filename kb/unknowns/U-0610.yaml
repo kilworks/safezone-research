@@ -1,0 +1,11 @@
+id: U-0610
+question: 'Endurance ''cannot trade, loot gravestones, drop items or pick up dropped items'': does trade ban cover receiving offers from others, giving gifts, and the items returned by a revive?'
+why_it_matters: Shows how isolated an Endurance contestant really is, and whether a teammate can pass items to them.
+readings:
+  A: only actions the Endurance contestant starts are blocked
+  B: any trade involving them is blocked, including offers from others
+  C: as B, and items restored from their own gravestone on a revive are also refused
+resolution_paths:
+- 'VOD: another contestant sending a trade request to an Endurance contestant.'
+priority: medium
+status: open

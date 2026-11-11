@@ -1,0 +1,14 @@
+id: C-0104
+summary: 'Sleeping Bag immunity: damage page has no delay and excludes zone, unsafe circle and robot; merchant page needs 65 seconds of sleep, covers flashbangs and excludes only zone and unsafe circle.'
+sides:
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  clause: wiki-damage-067
+  quote: A sleeping contestant within 15m (49ft) of their own Sleeping Bag is immune to all damage except zone, unsafe circle and robot damage.
+- url: https://iceposeidon.com/safezone/wiki/merchant#items
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-023
+  quote: After 65 seconds of sleep you are immune to flashbangs and to all damage except zone and unsafe circle damage.
+mechanics:
+- M-0132
+status: open

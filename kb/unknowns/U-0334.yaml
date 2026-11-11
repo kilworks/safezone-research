@@ -1,0 +1,11 @@
+id: U-0334
+question: 'Enchantment clocks: does the 2 hours start at purchase or at applying it to a weapon, and does ''For every other weapon, if two hours pass first'' also bound the Zarok''s axe, Poison Dart, C4, landmine and drone?'
+why_it_matters: Without a time limit those items could stay enchanted indefinitely (they only end by use).
+readings:
+  A: 2 h from purchase; limit applies only to knife, machete, long sword (the 'every other weapon' group) and to the bow
+  B: 2 h from purchase; limit applies to every enchanted weapon except the staff
+  C: 2 h from applying the enchantment to a weapon
+resolution_paths:
+- 'VOD: enchanted axe or landmine kept for more than 2 h.'
+priority: medium
+status: open

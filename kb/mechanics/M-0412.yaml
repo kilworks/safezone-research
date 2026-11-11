@@ -1,0 +1,31 @@
+id: M-0412
+name: Airstrike strike
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#airstrike
+  snapshot: '2026-11-11'
+  quote: The viewer picks the centre inside a safe zone and the direction.
+  clause: wiki-attacks-027
+- url: https://iceposeidon.com/safezone/wiki/attacks#airstrike
+  snapshot: '2026-11-11'
+  quote: 20s later, everyone in the strip takes 5 HP.
+  clause: wiki-attacks-028
+formal:
+  readings:
+    A: centre p inside a safe zone and a direction; 20s later every contestant in the strip takes 5 HP
+  domain: strip is a rectangle around the centre along the direction; dimensions unknown
+  parameters:
+    width: UNKNOWN, see U-0406
+    length: UNKNOWN, see U-0407
+    damage: 5 HP
+    delay: 20 s
+    price_cx_bucks: UNKNOWN, see U-0014
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0406
+- U-0407
+- U-0014

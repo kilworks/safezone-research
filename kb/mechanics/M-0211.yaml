@@ -1,0 +1,24 @@
+id: M-0211
+name: Guardian angel end condition
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#guardian_angel
+  snapshot: '2026-11-11'
+  clause: wiki-items-016
+  quote: Ends when another contestant attacks you, even if a shield or bubble blocks the hit.
+formal:
+  readings:
+    A: ends at the first attack by another contestant whose target is you, whether or not it is blocked by Shield or Safety bubble; viewer and admin attacks excluded
+    B: A, and also non-damaging hostile actions (steal, Vulnerability Dart, flashbang) and triggers of your own placed traps by others
+    C: ends only when an attack would actually have damaged you before blocks, i.e. an attack that is neutralized earlier (miss, smoke, mirror) does not end it
+  domain: 'events: attack(attacker!=you, target=you)'
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0210
+label: CONDITIONAL
+open_unknowns:
+- U-0207
+notes: 'Explicit: a blocked hit still ends it. Open: what counts as ''attacks you'' for area effects, traps, poison ticks, drones and reflected attacks.'

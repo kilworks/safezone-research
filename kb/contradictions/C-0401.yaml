@@ -1,0 +1,18 @@
+id: C-0401
+summary: Zombie immunity list omits Necromancy, which the Necromancy page calls fully immune from zombies (the Damage page lists it).
+sides:
+- url: https://iceposeidon.com/safezone/wiki/zombies#defence
+  snapshot: '2026-11-11'
+  quote: A Shield, a Safety bubble, a Reality Shield or sleeping in your own Sleeping Bag makes you immune.
+  clause: wiki-zombies-018
+- url: https://iceposeidon.com/safezone/wiki/sigils/necromancy#rules
+  snapshot: '2026-11-11'
+  quote: Fully immune from zombies.
+  clause: wiki-sigils-necromancy-016
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  quote: '| Zombie drain | Shield, Safety bubble, Sleeping Bag, Necromancy / Repellent, Body armor (absorbs)'
+  clause: wiki-damage-010
+mechanics:
+- M-0454
+status: open

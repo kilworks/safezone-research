@@ -1,0 +1,11 @@
+id: U-0338
+question: 'Armor enchantment ''+10 durability, up to 45'': can it be bought repeatedly, is 45 a cap on durability after the enchant, and from what base?'
+why_it_matters: The armor base durability is on another page (Body Armor 15 HP absorb); a repeat purchase path could reach 45.
+readings:
+  A: each purchase adds 10, capped at 45 total durability
+  B: one enchantment per armor; the cap only constrains the starting durability
+  C: enchantment sets durability to min(current + 10, 45)
+resolution_paths:
+- 'VOD: armor durability readout before and after buying twice.'
+priority: medium
+status: open

@@ -1,0 +1,27 @@
+id: M-0423
+name: Bounty marking
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#bounty
+  snapshot: '2026-11-11'
+  quote: A random living contestant who has no bounty is marked.
+  clause: wiki-attacks-058
+- url: https://iceposeidon.com/safezone/wiki/attacks#bounty
+  snapshot: '2026-11-11'
+  quote: The marker follows them on the map.
+  clause: wiki-attacks-059
+formal:
+  readings:
+    A: a uniformly random living contestant without a bounty is marked; the marker follows them
+  domain: set of living contestants without a bounty
+  parameters:
+    price_cx_bucks: UNKNOWN, see U-0014
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0418
+- U-0014
+notes: Eligibility when everybody already has a bounty is undefined.

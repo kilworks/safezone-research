@@ -1,0 +1,33 @@
+id: M-0644
+name: Protection landmine placement ability
+family: sigil
+sigils:
+- protection
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/protection#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-protection-014
+  quote: Place a landmine where you stand once every 2h.
+- url: https://iceposeidon.com/safezone/wiki/sigils/protection#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-protection-015
+  quote: It deals 15 HP to everyone within 10m (33ft) when another contestant or a zombie steps in, and kills every zombie in range.
+- url: https://iceposeidon.com/safezone/wiki/weapons#landmine
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-021
+  quote: It deals 15 HP to everyone in range, you included, and kills every zombie in range.
+formal:
+  readings:
+    A: every 7200 s the contestant may place a landmine at their position; trigger when another contestant or a zombie is within 10 m; deals 15 HP to everyone within 10 m; kills zombies within 10 m
+  domain: seconds, metres, HP
+  parameters:
+    cooldown_s: '7200'
+    damage_hp: '15'
+    radius_m: '10'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0621
+- U-0002
+notes: The 15 HP and 10 m match the item landmine. Protection is itself immune to landmines, so its own mine does not hurt it.

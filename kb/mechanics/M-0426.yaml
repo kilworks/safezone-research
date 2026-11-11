@@ -1,0 +1,30 @@
+id: M-0426
+name: Cyclops stats and attack
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#cyclops
+  snapshot: '2026-11-11'
+  quote: It has 200 HP and walks at 0.8m/s (1.79mph).
+  clause: wiki-attacks-065
+- url: https://iceposeidon.com/safezone/wiki/attacks#cyclops
+  snapshot: '2026-11-11'
+  quote: Every 5s it hits the nearest contestant within 30m (98ft) for 10 HP.
+  clause: wiki-attacks-066
+formal:
+  readings:
+    A: 200 HP, speed 0.8 m/s; every 5s hits the nearest contestant within 30m for 10 HP
+  domain: d <= 30 m
+  parameters:
+    hp: '200'
+    speed: 0.8 m/s
+    period: 5 s
+    damage: 10 HP
+    price_cx_bucks: UNKNOWN, see U-0014
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0420
+- U-0014

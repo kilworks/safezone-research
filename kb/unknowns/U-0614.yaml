@@ -1,0 +1,10 @@
+id: U-0614
+question: Do guard zombies and horde-bonus zombies drain HP to their Necromancy owner and count in 'one per HP your zombies drain'?
+why_it_matters: Guard zombies could be a large part of the drain, or only a zone-control tool.
+readings:
+  A: all zombies of the owner (summoned, death, horde bonus, guard) feed HP and tokens
+  B: only summoned, death and horde-bonus zombies feed; guard zombies drain without feeding
+resolution_paths:
+- 'VOD: owner HP and tokens while a victim stands near a guard zombie.'
+priority: medium
+status: open

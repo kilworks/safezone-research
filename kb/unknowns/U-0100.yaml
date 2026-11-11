@@ -1,0 +1,15 @@
+id: U-0100
+question: 'Where does ''The damage left is rounded down'' apply in step 4: to the Protection 50% result only, or as one final floor after all reductions, with the Kick 10% computed on the unrounded value?'
+why_it_matters: 'Changes odd damages when a Protection contestant who is live on Kick takes a nuke: intermediate floor then Kick, versus Kick on the exact half.'
+readings:
+  A: x -> floor(x/2), then the Kick reduction (U-0001 reading) applied to that integer
+  B: x -> floor(0.9*(x/2)) with one final floor (Kick percentage applied to the exact half)
+resolution_paths:
+- 'VOD: a live Protection contestant taking a nuke of odd base damage, read the HP drop.'
+- 'REA: damage formula in shipped code.'
+priority: low
+status: open
+related:
+- M-0121
+- M-0122
+- U-0001

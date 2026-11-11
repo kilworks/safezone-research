@@ -1,0 +1,32 @@
+id: M-0653
+name: Healing contestant revived by any contestant, up to 2 times
+family: revival
+sigils:
+- healing
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/healing#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-healing-011
+  quote: Any living contestant within 10m (33ft) of your gravestone can revive you, up to 2 times.
+- url: https://iceposeidon.com/safezone/wiki#death
+  snapshot: '2026-11-11'
+  clause: wiki-015
+  quote: Any contestant can revive a Healing contestant, up to 2 times.
+- url: https://iceposeidon.com/safezone/wiki/strategy#death
+  snapshot: '2026-11-11'
+  clause: wiki-strategy-014
+  quote: Death is not always the end, a Healing contestant could revive you.
+formal:
+  readings:
+    A: revive(g) allowed if reviver is living, within 10 m of g, and revives_of(target) < 2
+    B: limit counted per reviver
+  parameters:
+    max_revives_of_healing: '2'
+    range_m: '10'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0624
+- U-0011
+notes: The strategy sentence only names the Healing contestant as a reviver; it does not mention the other path.

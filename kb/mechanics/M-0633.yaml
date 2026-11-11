@@ -1,0 +1,41 @@
+id: M-0633
+name: Necromancy guard zombie at a gravestone
+family: zombies
+sigils:
+- necromancy
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/necromancy#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-necromancy-011
+  quote: When a contestant dies within 50m (164ft) of you, a guard zombie stands 10m (33ft) from their gravestone for 1h.
+- url: https://iceposeidon.com/safezone/wiki/sigils/necromancy#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-necromancy-012
+  quote: It drains 2 HP every 5s from anyone within 10m (33ft), up to 30 HP per contestant.
+- url: https://iceposeidon.com/safezone/wiki/zombies#guard-zombies
+  snapshot: '2026-11-11'
+  clause: wiki-zombies-010
+  quote: a guard zombie appears 10m (33ft) from the gravestone.
+- url: https://iceposeidon.com/safezone/wiki/zombies#guard-zombies
+  snapshot: '2026-11-11'
+  clause: wiki-zombies-011
+  quote: Guard zombies drain 2 HP every 5s from everyone within 10m (33ft), up to 30 HP per contestant.
+formal:
+  readings:
+    A: 'per death within 50 m of a Necromancy contestant: guard zombie at 10 m from the grave for 3600 s, drains 2 HP per 5 s within 10 m, at most 30 HP per contestant per guard zombie'
+    B: A, with the 30 HP cap shared by all guard zombies
+  domain: seconds, HP
+  parameters:
+    duration_s: '3600'
+    drain_hp: '2'
+    interval_s: '5'
+    radius_m: '10'
+    cap_hp: '30'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0615
+- U-0008
+- U-0002
+notes: 'The zombies page gives no duration for the guard zombie; the sigil page gives 1h. First drain tick timing is not stated. Owner immunity: see M-0636.'

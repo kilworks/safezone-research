@@ -1,0 +1,22 @@
+id: M-0447
+name: Zombie on any death
+family: zombies
+sigils:
+- necromancy
+sources:
+- url: https://iceposeidon.com/safezone/wiki/zombies#sources
+  snapshot: '2026-11-11'
+  quote: 'Death: when any contestant dies, every living Necromancy contestant gets a zombie within 10m (33ft) of themselves.'
+  clause: wiki-zombies-008
+formal:
+  readings:
+    A: on any contestant death, each living Necromancy contestant gets a zombie within 10m
+  domain: radius 10 m
+  parameters:
+    radius: 10 m
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0403
+notes: 'Necromancy page: same rule, and blood token per zombie appearing.'

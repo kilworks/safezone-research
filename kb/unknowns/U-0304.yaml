@@ -1,0 +1,13 @@
+id: U-0304
+question: How many uses do the drone, C4, landmine and Poison Dart have when not enchanted?
+why_it_matters: The wiki gives uses for knife, machete, sword, axe and bow but not for these four, and the enchantment text says they are 'used up' after the bonus uses.
+readings:
+  A: single use each (consumed on use)
+  B: some have several uses (not stated)
+parameter: uses_unstated_items
+sweep_range: 1 to 3 uses; the enchantment text says 1 use for enchanted C4, landmine and drone and 2 for the dart, so 1 is the natural lower bound and 3 covers the knife/long sword scale
+resolution_paths:
+- 'VOD: use of each item.'
+- Organizer statement.
+priority: medium
+status: open

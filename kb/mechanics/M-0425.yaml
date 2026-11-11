@@ -1,0 +1,30 @@
+id: M-0425
+name: Bounty damage and expiry
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#bounty
+  snapshot: '2026-11-11'
+  quote: The marked contestant takes 10 HP.
+  clause: wiki-attacks-063
+- url: https://iceposeidon.com/safezone/wiki/attacks#bounty
+  snapshot: '2026-11-11'
+  quote: The bounty ends after 1h, or when the marked contestant dies.
+  clause: wiki-attacks-064
+formal:
+  readings:
+    A: marked contestant takes 10 HP; bounty ends after 3600 s or on the marked contestant's death
+  domain: t in [0, 3600] s
+  parameters:
+    damage: 10 HP
+    duration: 3600 s
+depends_on:
+- M-0423
+- M-0424
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0418
+- U-0002
+notes: Damage page lists Shield, Safety bubble, Sleeping Bag, Body armor for the bounty mark. Protection still takes bounty damage (Protection page).

@@ -1,0 +1,21 @@
+id: M-0450
+name: Zombie expiry
+family: zombies
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/zombies#deaths
+  snapshot: '2026-11-11'
+  quote: A zombie disappears when its time runs out.
+  clause: wiki-zombies-012
+formal:
+  readings:
+    A: a zombie is removed when its lifetime elapses
+  domain: per zombie
+  parameters:
+    lifetime: UNKNOWN, see U-0403
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0403

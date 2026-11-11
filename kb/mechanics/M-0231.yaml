@@ -1,0 +1,29 @@
+id: M-0231
+name: Thermal goggles versus smoke bomb
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#smoke_bomb
+  snapshot: '2026-11-11'
+  clause: wiki-items-046
+  quote: Thermal goggles see through it.
+- url: https://iceposeidon.com/safezone/wiki/items#thermal_goggles
+  snapshot: '2026-11-11'
+  clause: wiki-items-067
+  quote: While you carry them, smoke bombs do not black out your map or block your attacks.
+formal:
+  readings:
+    A: 'carried goggles: no map blackout and no attack block from smoke for the carrier; the restrictions of M-0227 still apply'
+    B: 'carried goggles: no smoke restriction of any kind for the carrier, including those of M-0227'
+  domain: carry boolean
+  parameters: {}
+depends_on:
+- M-0226
+interacts_with:
+- M-0227
+label: CONDITIONAL
+open_unknowns:
+- U-0213
+- U-0202
+notes: 'Attacks page (cyclops): weapons and drones cannot hit it inside a cloud unless you hold Thermal goggles.'

@@ -1,0 +1,27 @@
+id: M-0614
+name: Death heal cap at 60% max HP when 20% or fewer alive
+family: sigil
+sigils:
+- death
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/death#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-death-012
+  quote: When 20% or fewer of the contestants are alive, that heal cannot take you above 60% of your max HP.
+formal:
+  readings:
+    A: 'if alive*5 <= N: HP'' = min(HP + h, 0.6*M) else HP'' = min(HP + h, M)'
+    B: as A but HP' = max(HP, min(HP + h, 0.6*M)) (never lowers)
+    C: 'cap rounded: floor(0.6*M) or ceil(0.6*M)'
+  domain: alive, N integers; h from the per-elimination heal only; the rob heal is not named by 'that heal'
+  parameters:
+    N: UNKNOWN, see U-0009
+depends_on:
+- M-0613
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0602
+- U-0603
+- U-0009
+notes: 'N is the contestant total, see U-0009. Whether the cap applies to the rob heal is not stated: ''that heal'' points to the per-elimination heal.'

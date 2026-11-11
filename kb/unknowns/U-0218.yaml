@@ -1,0 +1,15 @@
+id: U-0218
+question: If a contestant is blinded and hit by another flashbang, is the blind extended, reset or ignored?
+why_it_matters: Affects stacking of flashbang pressure.
+readings:
+  A: ignored
+  B: reset to 30 s
+  C: added
+parameter: flashbang_reapply_rule
+sweep_range: ignored, reset, additive up to 2 stacks
+resolution_paths:
+- 'VOD: double flashbang.'
+priority: low
+status: open
+related:
+- M-0244

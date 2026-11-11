@@ -1,0 +1,34 @@
+id: M-0316
+name: Assassin's knife
+family: weapons
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/weapons#assassins_knife
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-048
+  quote: Equippable
+- url: https://iceposeidon.com/safezone/wiki/weapons#assassins_knife
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-049
+  quote: Stabs a contestant within 10m (33ft) for 5 HP.
+- url: https://iceposeidon.com/safezone/wiki/weapons#assassins_knife
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-050
+  quote: 2 uses, cooldown 5s.
+formal:
+  readings:
+    A: stab a contestant at distance <= 10 m for 5 HP; 2 uses; cooldown 5 s
+  domain: HP, metres, seconds
+  parameters:
+    knife_damage_hp: '5'
+    knife_range_m: '10'
+    knife_uses: '2'
+    knife_cooldown_s: '5'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0300
+- U-0307
+- U-0308

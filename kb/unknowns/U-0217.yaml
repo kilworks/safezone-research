@@ -1,0 +1,13 @@
+id: U-0217
+question: 'Mirror versus mirror and flashbang: if the thrower also holds a mirror, is the thrower blinded?'
+why_it_matters: Mirror rule says both are used up and nothing happens; flashbang rule says the thrower is blinded instead.
+readings:
+  A: mirror-mirror rule wins, no blind
+  B: flashbang rule wins, thrower blinded
+resolution_paths:
+- 'VOD: flashbang thrown by a mirror holder into a mirror holder.'
+priority: low
+status: open
+related:
+- M-0239
+- M-0247

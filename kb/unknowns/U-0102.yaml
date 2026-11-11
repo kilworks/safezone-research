@@ -1,0 +1,14 @@
+id: U-0102
+question: 'Fortress step: how many fortresses can absorb one hit when the contestant stands within several, in which order, and is durability lost 1 per HP absorbed?'
+why_it_matters: Decides whether stacked fortresses add durability and whether fortress durability is a pool of HP.
+readings:
+  A: one fortress (nearest or first built) absorbs min(h, dur) and dur -= absorbed
+  B: all fortresses in range absorb in turn until h = 0
+  C: absorption is per hit, not per HP
+resolution_paths:
+- 'VOD: contestant inside two overlapping fortresses taking a hit.'
+- Items page fortress rules read against this step (cross-family).
+priority: medium
+status: open
+related:
+- M-0124

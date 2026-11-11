@@ -1,0 +1,29 @@
+id: M-0210
+name: Guardian angel zone immunity
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#guardian_angel
+  snapshot: '2026-11-11'
+  clause: wiki-items-014
+  quote: Usable
+- url: https://iceposeidon.com/safezone/wiki/items#guardian_angel
+  snapshot: '2026-11-11'
+  clause: wiki-items-015
+  quote: Immune to zone damage for 10min.
+formal:
+  readings:
+    A: for 10min after use, damage from being outside the safe zone = 0
+    B: same, and unsafe circle damage = 0 as well
+  domain: t in [0, 600) seconds after use
+  parameters:
+    duration: 10min
+depends_on: []
+interacts_with:
+- M-0211
+- M-0205
+label: CONDITIONAL
+open_unknowns:
+- U-0206
+notes: The damage page table lists Guardian angel against both 'Outside the circle' and 'Unsafe circle', while the Items page says only 'zone damage'; the Shield sentence on the same page names zone and unsafe circle separately.

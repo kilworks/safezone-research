@@ -1,0 +1,17 @@
+id: M-0177
+name: 'Reality Shield: no new poison while standing inside it'
+family: poison
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/poison#immunity
+  snapshot: '2026-11-11'
+  clause: wiki-poison-008
+  quote: 'Reality Shield: no new poison while you stand inside it.'
+formal:
+  readings:
+    A: 'position inside Reality Shield: new poison events ignored'
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: DOCUMENTED

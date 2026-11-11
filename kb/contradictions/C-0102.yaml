@@ -1,0 +1,19 @@
+id: C-0102
+summary: Body Armor 'works on every kind of damage' versus the Trapped gift row (no Body armor) and the items page ('A trapped gift ignores it').
+sides:
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  clause: wiki-damage-071
+  quote: Body Armor works on every kind of damage.
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  clause: wiki-damage-021
+  quote: '| Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (reflects)'
+- url: https://iceposeidon.com/safezone/wiki/items#body_armor
+  snapshot: '2026-11-11'
+  clause: wiki-items-027
+  quote: A trapped gift ignores it.
+mechanics:
+- M-0126
+- M-0156
+status: open

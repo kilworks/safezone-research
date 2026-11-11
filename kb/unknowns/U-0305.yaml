@@ -1,0 +1,11 @@
+id: U-0305
+question: 'Drone: after use, is the target fixed at launch and hit 30s later regardless of what happens, or does the drone need the target to stay visible or alive?'
+why_it_matters: Decides whether a drone can be dodged (shield, bubble, sleep, distance, Greed theft of the drone) during the 30s delay.
+readings:
+  A: target fixed at launch, hit applied 30s later whatever happens to visibility
+  B: hit applied only if the target is still visible at t+30s
+  C: hit follows the target and is checked against defenses at t+30s only
+resolution_paths:
+- 'VOD: drone launch, then target hides or gets a Shield during the 30s.'
+priority: high
+status: open

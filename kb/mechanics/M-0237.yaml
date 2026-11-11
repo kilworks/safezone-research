@@ -1,0 +1,30 @@
+id: M-0237
+name: Mirror reflect list
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#mirror_forcefield
+  snapshot: '2026-11-11'
+  clause: wiki-items-055
+  quote: Only reflects Poison Darts, fake gravestones, knives, Zarok's axes, long swords, machetes, bows, staffs, drones, C4, landmines, flashbangs and fake chests.
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  clause: wiki-damage-070
+  quote: It only reflects Poison Darts, fake gravestones, bows, wizard staffs, knives, long swords, Zarok's axes, machetes, drones, C4, landmines, flashbangs and fake chests, and never your own explosives.
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  clause: wiki-damage-021
+  quote: '| Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (reflects)'
+formal:
+  readings:
+    A: reflected = Poison Darts, fake gravestones, knives, Zarok's axes, long swords, machetes, bows, staffs, drones, C4, landmines, flashbangs, fake chests
+    B: A plus trapped gift (damage page table lists Mirror forcefield (reflects) on the Trapped gift row)
+  domain: 13 attack kinds in A; trapped gift status open
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0235
+label: CONTRADICTED
+open_unknowns: []
+notes: 'Items list and damage-page sentence agree on 13 kinds; the damage page table adds trapped gift. See C-0200. Damage page also: never your own explosives.'

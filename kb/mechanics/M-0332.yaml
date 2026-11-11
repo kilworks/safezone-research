@@ -1,0 +1,39 @@
+id: M-0332
+name: Inventory slot upgrade ladder
+family: economy
+sigils:
+- all
+- endurance
+- ingenuity
+sources:
+- url: https://iceposeidon.com/safezone/wiki/merchant#upgrades
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-033
+  quote: 'Inventory slot: starts at 40 blood tokens and costs 10 more for each one you already bought.'
+- url: https://iceposeidon.com/safezone/wiki/merchant#upgrades
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-034
+  quote: Buy up to 10 slots, to at most 13 slots, or 20 for Endurance.
+- url: https://iceposeidon.com/safezone/wiki/merchant#upgrades
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-035
+  quote: Ingenuity tops out at 12.
+formal:
+  readings:
+    A: the k-th purchase (k = 0, 1, ...) costs 40 + 10*k tokens; at most 10 purchases; slots = base + purchases, so at most 13 (base 3), 20 for Endurance (base 10), 12 for Ingenuity (base 2)
+  domain: k integer, 0 <= k <= 9
+  parameters:
+    slot_ladder_start: '40'
+    slot_ladder_step: '10'
+    slot_purchase_max: '10'
+    slot_cap_default: '13'
+    slot_cap_endurance: '20'
+    slot_cap_ingenuity: '12'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0329
+- U-0322
+- U-0006
+notes: 'Cross-check with sigil pages: Ingenuity starts with 2 slots (2+10=12), Endurance 10 (10+10=20), others 3 (3+10=13): consistent, no contradiction.'

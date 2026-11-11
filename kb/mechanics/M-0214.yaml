@@ -1,0 +1,24 @@
+id: M-0214
+name: Safety bubble and vulnerable contestants
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#safety_bubble
+  snapshot: '2026-11-11'
+  clause: wiki-items-021
+  quote: It does not protect a vulnerable contestant, and you cannot use it while vulnerable.
+formal:
+  readings:
+    A: a vulnerable contestant gets no bubble protection and cannot use a bubble; the bubble itself stays for others
+    B: the Vulnerability Dart pops every bubble they own or stand in (merchant page), bubble gone for everyone
+  domain: vulnerable boolean
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0212
+- M-0213
+- M-0216
+label: CONTRADICTED
+open_unknowns: []
+notes: See C-0204. The Items page only says the vulnerable contestant is unprotected; the merchant page says the dart pops the bubble.

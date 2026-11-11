@@ -1,0 +1,13 @@
+id: U-0416
+question: 'Illusion cooldown: ''The next one can start 30min after it ends''. Does ''it ends'' mean the 10min expiry or a destroyed illusion, and what happens to a purchase made while the illusion is running (queued, refused, refunded)?'
+why_it_matters: Bounds how often illusions occur (about one per 40min).
+readings:
+  A: 30min after the 10min expiry; purchases during the wait are refused
+  B: 30min after the previous start
+  C: purchases queue and start at the earliest time
+resolution_paths:
+- 'VOD: observe the event live with an on-screen timer.'
+priority: low
+status: open
+related:
+- U-0014

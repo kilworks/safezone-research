@@ -1,0 +1,31 @@
+id: M-0631
+name: 'Necromancy summon: up to 3 times every 6h'
+family: zombies
+sigils:
+- necromancy
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/necromancy#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-necromancy-009
+  quote: Summon a zombie where you stand, up to 3 times every 6h.
+- url: https://iceposeidon.com/safezone/wiki/zombies#sources
+  snapshot: '2026-11-11'
+  clause: wiki-zombies-007
+  quote: a Necromancy contestant summons a zombie where they stand, up to 3 times every 6h.
+formal:
+  readings:
+    A: at most 3 summons in any rolling 21600 s
+    B: counter resets at fixed 21600 s boundaries
+    C: 3 charges, refill 6 h after the first of the batch
+  domain: seconds
+  parameters:
+    summon_cap: '3'
+    window_s: '21600'
+    zombie_lifetime_s: UNKNOWN, see U-0612
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0611
+- U-0612
+notes: The two pages agree.

@@ -1,0 +1,17 @@
+id: U-0110
+question: 'After the offline grace ends (''you start taking damage after 15min''), what damage applies: the outside-circle rule (5 s grace then 1 HP every 2 s), an immediate tick cadence, or something else?'
+why_it_matters: Sets how fast a contestant with a dead phone loses HP and the time to death after the grace.
+readings:
+  A: 'same as outside the circle: 5 s grace, then 1 HP every 2 s'
+  B: 1 HP every 2 s starting at the grace end, no extra 5 s
+  C: a different rate not given on this page
+parameter: offline_damage_start_delay_s
+sweep_range: '0 to 5 s: 0 if damage starts at the grace end, 5 if the outside-circle grace is re-applied'
+resolution_paths:
+- 'VOD: a contestant with a dead phone after 15 min.'
+- 'REA: shipped GPS watchdog.'
+priority: high
+status: open
+related:
+- M-0104
+- U-0003

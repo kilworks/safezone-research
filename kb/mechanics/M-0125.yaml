@@ -1,0 +1,30 @@
+id: M-0125
+name: 'Pipeline step 7: Body armor absorbs what is left until it breaks'
+family: damage
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage#order
+  snapshot: '2026-11-11'
+  clause: wiki-damage-054
+  quote: Armor
+- url: https://iceposeidon.com/safezone/wiki/damage#order
+  snapshot: '2026-11-11'
+  clause: wiki-damage-055
+  quote: Body armor absorbs what is left, until it breaks.
+formal:
+  readings:
+    A: a := min(d, dur); d := d - a; dur := dur - a; broken when dur = 0
+    B: whole remaining d absorbed, excess lost, breaks when dur reaches 0
+  domain: d, dur integers >= 0
+  parameters:
+    armor_durability: UNKNOWN on this page, see items page
+depends_on:
+- M-0117
+- M-0124
+interacts_with:
+- M-0126
+label: CONDITIONAL
+open_unknowns:
+- U-0101
+- U-0103

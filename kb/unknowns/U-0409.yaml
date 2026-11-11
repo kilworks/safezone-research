@@ -1,0 +1,15 @@
+id: U-0409
+question: 'Gunship bomb count and timing: ''a gunship for 5min'', ''one every 10s'', ''each bomb lands 5s later''. How many bombs can be dropped, does the first drop come at t=0 or t=10s, and do bombs landing after 5min still land?'
+why_it_matters: Bomb count is 30, 29 or 31 (or fewer if the buyer must click), which sets total damage and Flak jacket value.
+readings:
+  A: 'drops at t=10,20,...,300s: 30 bombs, the last lands at 305s'
+  B: 'drops at t=0,10,...,290s: 30 bombs'
+  C: 'drops at t=0,...,300s: 31 bombs'
+  D: 'drops at t=10,...,290s: 29 bombs (last drop before expiry)'
+  E: bomb launch is manual with a 10s cooldown, count is player dependent
+parameter: gunship_bombs_max
+sweep_range: 29 to 31 bombs; derived from the 5min window and the 10s cadence, plus the 'manual' reading as a cap
+resolution_paths:
+- 'VOD: count bombs of one full gunship with a timer.'
+priority: high
+status: open

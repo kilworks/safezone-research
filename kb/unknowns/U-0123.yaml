@@ -1,0 +1,17 @@
+id: U-0123
+question: 'Hazmat suit ''(slows)'' in the damage table: what does slowing do to zone, unsafe-circle and robot damage (tick interval multiplier, damage fraction)?'
+why_it_matters: Without the factor the Hazmat suit cannot be priced against Body armor for zone survival.
+readings:
+  A: multiplies the tick interval (fewer ticks)
+  B: reduces each tick below 1 HP over time (fractional accumulation)
+  C: slows only movement, not damage
+parameter: hazmat_slow_factor
+sweep_range: '1.0 to 4.0 times the tick interval: 1.0 is no effect, 4.0 is an upper guess for ''slows'', sweep choice'
+resolution_paths:
+- Items page Hazmat suit section (cross-family).
+priority: medium
+status: open
+related:
+- M-0140
+- M-0141
+- M-0142

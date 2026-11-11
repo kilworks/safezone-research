@@ -1,0 +1,15 @@
+id: U-0400
+question: 'Missile landing spread: ''a random spot near that point'' with the whole blast within 100m. Is the landing offset at most 75m (blast edge within 100m) or at most 100m, and what is the distribution?'
+why_it_matters: Decides hit probability on a contestant standing at the aim point, and whether a viewer can reliably target one contestant.
+readings:
+  A: landing offset r <= 100 - 25 = 75m, so the 25m blast stays within 100m
+  B: landing offset r <= 100m (blast centre), the sentence meaning 'near'
+  C: uniform over the disc of that radius
+  D: uniform in distance r, random angle (centre-weighted)
+parameter: missile_max_offset_m
+sweep_range: 0 to 100 m; the wiki bounds the blast at 100m of the aim point, so the centre offset lies between 0 and 100
+resolution_paths:
+- 'VOD: record aim point versus crater for several missiles.'
+- Admin or organizer statement.
+priority: high
+status: open

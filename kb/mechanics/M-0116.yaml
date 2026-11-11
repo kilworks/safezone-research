@@ -1,0 +1,19 @@
+id: M-0116
+name: Death sigil robbing or first looting a gravestone ends revivability
+family: revival
+sigils:
+- death
+sources:
+- url: https://iceposeidon.com/safezone/wiki#death
+  snapshot: '2026-11-11'
+  clause: wiki-019
+  quote: If a Sigil of death player robs your gravestone, or is the first to loot it, you can never be revived.
+formal:
+  readings:
+    A: revivable(grave) = false permanently once a Death contestant robs it, or is the first looter of it
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: DOCUMENTED
+notes: 'Compared with the Death sigil page (''Each gravestone can be robbed once, and a robbed gravestone can never be revived'', ''If you are the first to loot an item or blood tokens from a gravestone,
+  you also rob it''): same rule, no mismatch found. Sigil-specific details not duplicated.'

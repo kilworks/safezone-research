@@ -1,0 +1,40 @@
+id: M-0404
+name: Viewer missile damage and counters
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#missile
+  snapshot: '2026-11-11'
+  quote: Everyone within 25m (82ft) of where it lands takes 10 HP.
+  clause: wiki-attacks-007
+- url: https://iceposeidon.com/safezone/wiki/attacks#missile
+  snapshot: '2026-11-11'
+  quote: The Protection sigil is immune.
+  clause: wiki-attacks-008
+- url: https://iceposeidon.com/safezone/wiki/attacks#missile
+  snapshot: '2026-11-11'
+  quote: A Flak jacket blocks it.
+  clause: wiki-attacks-009
+- url: https://iceposeidon.com/safezone/wiki/attacks#missile
+  snapshot: '2026-11-11'
+  quote: An EMP destroys it in the air.
+  clause: wiki-attacks-010
+formal:
+  readings:
+    A: each contestant within 25m of the landing point takes 10 HP unless Protection sigil (immune) or a Flak jacket (blocks) applies; EMP destroys it in flight
+  domain: distance d in metres, d <= 25; damage 10 HP
+  parameters:
+    damage: 10 HP
+    radius: 25 m
+    price_cx_bucks: UNKNOWN, see U-0014
+depends_on:
+- M-0403
+interacts_with:
+- M-0400
+- M-0401
+label: CONDITIONAL
+open_unknowns:
+- U-0002
+- U-0014
+notes: Damage page lists more blockers (Shield, Safety bubble, Sleeping Bag, Body armor absorbs) than this page; see C-0400. Merchant missile (blood tokens) is a different item, not modeled here.

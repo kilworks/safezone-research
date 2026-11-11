@@ -1,0 +1,28 @@
+id: M-0101
+name: Outside-the-safezone damage tick
+family: zone
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki#damage
+  snapshot: '2026-11-11'
+  clause: wiki-005
+  quote: after 5s you will start taking 1 HP damage every 2s (30 HP per minute)
+formal:
+  readings:
+    A: 't_out >= 5: HP loss 1 at t_out = 5, 7, 9, ... (first tick at 5 s)'
+    B: 't_out >= 5: HP loss 1 at t_out = 7, 9, 11, ... (first tick after one more interval)'
+  domain: t_out integer seconds since leaving every safezone, t_out >= 0
+  parameters:
+    grace_s: '5'
+    interval_s: '2'
+    tick_hp: '1'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0003
+- U-0002
+- U-0114
+notes: The 30 HP per minute figure is 60/2 and holds for both readings. Whether the tick is a hit in the 7-step pipeline is U-0002; with Kick live, 1 HP after floor reductions is raised to 1 by the minimum
+  only if U-0002 puts the tick in the pipeline. The unsafe circle (Trolling sigil page) is stated to hurt the same way; compare in a later cross-page pass.

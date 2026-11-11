@@ -1,0 +1,10 @@
+id: U-0412
+question: 'Random items: what is the distribution of ''a random item'' in care packages and airdrops, and what is the distribution of ''within 10m of a random point'' for the airdrop?'
+why_it_matters: Needed for expected supply value; the item pool is stated nowhere in the corpus.
+resolution_paths:
+- 'VOD: log item contents of airdrops.'
+- Chests page was removed (U-0015).
+priority: low
+status: open
+related:
+- U-0015

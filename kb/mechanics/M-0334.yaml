@@ -1,0 +1,27 @@
+id: M-0334
+name: Dual Wield
+family: economy
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/merchant#upgrades
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-038
+  quote: 'Dual Wield: 50 blood tokens.'
+- url: https://iceposeidon.com/safezone/wiki/merchant#upgrades
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-039
+  quote: Unlocks a second weapon slot and a second enchanted weapon.
+- url: https://iceposeidon.com/safezone/wiki/merchant#upgrades
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-040
+  quote: Weapon and worn equipment slots do not use inventory space.
+formal:
+  readings:
+    A: 50 tokens; unlocks a second weapon slot and a second enchanted weapon; weapon and worn equipment slots do not use inventory space
+  parameters:
+    dual_wield_cost_tokens: '50'
+depends_on: []
+interacts_with: []
+label: DOCUMENTED
+notes: The first weapon slot is implied by the text 'a second weapon slot'. Base 50 is a price hit by the binary64 question (U-0006, Ingenuity).

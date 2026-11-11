@@ -1,0 +1,12 @@
+id: U-0211
+question: Is the smoke bomb cloud fixed where it was set off or does it follow the user?
+why_it_matters: The Items page says 'within 50m of you' and 'inside it'.
+readings:
+  A: fixed centre
+  B: centred on the user
+resolution_paths:
+- 'VOD: user walking out of their own cloud.'
+priority: medium
+status: open
+related:
+- M-0226

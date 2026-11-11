@@ -1,0 +1,16 @@
+id: U-0101
+question: 'Body armor ''absorbs what is left, until it breaks'': does a hit larger than the remaining durability pass the excess through (A), or is the whole hit absorbed and the armor simply breaks (B)?
+  Does durability drop 1 per HP absorbed?'
+why_it_matters: Decides whether armor durability is an HP pool (excess passes) or a number of hits; changes effective HP of every armored contestant.
+readings:
+  A: absorbed = min(h, dur); dur -= absorbed; excess h - absorbed reaches HP
+  B: 'if h > 0 and dur > 0: absorbed = h (whole hit), dur -= h, floored at 0, armor breaks when dur reaches 0, excess lost'
+  C: armor loses 1 durability per hit regardless of size
+resolution_paths:
+- 'VOD: armored contestant (durability visible) taking a hit larger than the remaining durability.'
+- 'REA: shipped armor code.'
+priority: high
+status: open
+related:
+- M-0125
+- M-0126

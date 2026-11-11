@@ -1,0 +1,15 @@
+id: U-0202
+question: 'How do effects not named in the cap lists behave: EMP (10min), Thermal goggles (carried), Body armor, Sleeping Bag, health potions? And what happens when a Hazmat suit is picked up at the cap?'
+why_it_matters: The cap lists 'count' and 'do not count' do not cover every item; loadout planning depends on it.
+readings:
+  A: only the named items count, EMP and goggles do not
+  B: EMP counts as a timed item effect, goggles count while carried like the Hazmat suit
+  C: Hazmat pickup refused at the cap
+resolution_paths:
+- 'VOD: a contestant with 3 effects using an EMP or picking up goggles or Hazmat.'
+priority: medium
+status: open
+related:
+- M-0204
+- M-0205
+- M-0231

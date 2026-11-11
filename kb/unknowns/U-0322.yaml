@@ -1,0 +1,12 @@
+id: U-0322
+question: How does Ingenuity's 'pay 10% more, rounded up' apply to the 40 + 10k upgrade ladders?
+why_it_matters: Applying it to each current price, to the start price only, or to the step changes the whole ladder and the total cost to buy N upgrades.
+readings:
+  A: 'each price p becomes ceil(1.1*p): 44, 55, 66, ...'
+  B: 'only the start price is raised: 44, 54, 64, ...'
+resolution_paths:
+- 'VOD: Ingenuity contestant''s merchant screen for the first three slot upgrades.'
+priority: high
+status: open
+related:
+- U-0006

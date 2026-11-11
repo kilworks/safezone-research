@@ -1,0 +1,22 @@
+id: M-0152
+name: Damage source 'Deep Cut bleeding' and what stops it
+family: damage
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  clause: wiki-damage-017
+  quote: '| Deep Cut bleeding | Shield, Safety bubble, Sleeping Bag, Body armor (absorbs)'
+formal:
+  readings:
+    A: 'blockers(Deep Cut bleeding) = {Shield: blocks; Safety bubble: blocks; Sleeping Bag: blocks; Body armor: absorbs}'
+  domain: one hit of source 'Deep Cut bleeding'
+  parameters: {}
+depends_on:
+- M-0118
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0002
+notes: Deep Cut bleeding (periodic).

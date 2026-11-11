@@ -1,0 +1,14 @@
+id: C-0205
+summary: 'Items page: Zombie repellent stops zombies hurting you. Zombies page: zombies ignore you.'
+sides:
+- url: https://iceposeidon.com/safezone/wiki/items#zombie_repellent
+  snapshot: '2026-11-11'
+  clause: wiki-items-031
+  quote: Use it to stop zombies hurting you for 20min.
+- url: https://iceposeidon.com/safezone/wiki/zombies#defence
+  snapshot: '2026-11-11'
+  clause: wiki-zombies-019
+  quote: 'Zombie repellent: use it and zombies ignore you for 20min.'
+mechanics:
+- M-0220
+status: open

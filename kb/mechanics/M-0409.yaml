@@ -1,0 +1,29 @@
+id: M-0409
+name: Tear gas placement
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#tear-gas
+  snapshot: '2026-11-11'
+  quote: The buyer picks where a 25m (82ft) cloud appears in a safe zone.
+  clause: wiki-attacks-020
+- url: https://iceposeidon.com/safezone/wiki/attacks#tear-gas
+  snapshot: '2026-11-11'
+  quote: The edge of the cloud must be at least 20m (66ft) from every contestant.
+  clause: wiki-attacks-022
+formal:
+  readings:
+    A: centre c in a safe zone; for every contestant q, |c-q| - 25 >= 20 (radius reading)
+    B: '|c-q| - 12.5 >= 20 (diameter reading)'
+  domain: c inside a safe zone, metres
+  parameters:
+    cloud_size: 25 m
+    min_edge_gap: 20 m
+    price_cx_bucks: UNKNOWN, see U-0014
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0404
+- U-0014

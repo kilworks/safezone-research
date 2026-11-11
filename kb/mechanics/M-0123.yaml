@@ -1,0 +1,30 @@
+id: M-0123
+name: 'Pipeline step 5: minimum 1 HP for a hit that gets through'
+family: damage
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage#order
+  snapshot: '2026-11-11'
+  clause: wiki-damage-048
+  quote: Minimum
+- url: https://iceposeidon.com/safezone/wiki/damage#order
+  snapshot: '2026-11-11'
+  clause: wiki-damage-049
+  quote: A hit that gets through always does at least 1 HP.
+formal:
+  readings:
+    A: d := max(1, d) if the hit was not blocked in step 1 and was not mirrored
+    B: final HP loss >= 1 after steps 6 and 7
+  domain: d integer >= 0
+  parameters:
+    minimum_hp: '1'
+depends_on:
+- M-0117
+- M-0122
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0103
+- U-0002
+notes: '''Always'' conflicts in spirit with steps 6 and 7 that follow (U-0103).'

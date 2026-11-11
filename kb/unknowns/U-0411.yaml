@@ -1,0 +1,15 @@
+id: U-0411
+question: 'Care package Trolling rule: does the 3% roll apply to each package separately (including the 5 of an emergency airdrop, Endurance packages and merchant packages), is ''within 5m'' the same as ''next to'', and which Trolling contestant is chosen when several exist?'
+why_it_matters: Sets expected Trolling income and defensive value of crates across all supply sources.
+readings:
+  A: independent 3% roll per viewer-sent package or crate, nearest or random Trolling contestant
+  B: 3% roll for every care package, Endurance and merchant packages included
+  C: roll only for single care packages, not for the 5 of the airdrop
+resolution_paths:
+- 'VOD: log where 100+ viewer packages land.'
+- Trolling page text (viewer crates).
+priority: medium
+status: open
+related:
+- U-0014
+- U-0015

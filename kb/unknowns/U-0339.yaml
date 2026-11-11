@@ -1,0 +1,11 @@
+id: U-0339
+question: 'Enchanted armor decay ''loses one durability every twenty minutes, down to 15'': when does the clock start, does decay stop at 15 even if damage left less, and does a re-enchant restart it?'
+why_it_matters: Sets the lifetime of the 45 durability and the floor of the enchanted armor.
+readings:
+  A: clock starts at enchant, first loss after 20 min, no loss when durability <= 15
+  B: clock keeps running from the first enchant and a re-enchant does not restart it
+  C: decay applies to all armor above 15, enchanted or not
+resolution_paths:
+- 'VOD: armor durability over an hour after the enchant.'
+priority: medium
+status: open

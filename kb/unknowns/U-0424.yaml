@@ -1,0 +1,10 @@
+id: U-0424
+question: 'Zombie targeting: ''nearest valid contestant, at any distance''. What makes a contestant valid (alive, not immune, not repellent, not Necromancy), how often is the nearest re-evaluated, and do zombies path through terrain?'
+why_it_matters: Determines whether zombies are a hard pursuer.
+readings:
+  A: valid = alive and not currently immune to zombies, nearest re-evaluated each tick
+  B: valid = alive only; immunity applies at drain time
+resolution_paths:
+- 'VOD: observe the event live with an on-screen timer.'
+priority: medium
+status: open

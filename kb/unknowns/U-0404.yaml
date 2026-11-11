@@ -1,0 +1,13 @@
+id: U-0404
+question: 'Tear gas geometry: ''25m cloud'' is a radius or a diameter, and the cloud edge must be at least 20m from every contestant: at purchase time only, or also at placement? Must the whole cloud be inside the safe zone?'
+why_it_matters: Sets the minimum aim distance to the nearest contestant (45m or 32.5m from the centre) and whether viewers can gas a contestant at all.
+readings:
+  A: radius 25m, so the centre is at least 45m from every contestant
+  B: diameter 25m (radius 12.5m), so the centre is at least 32.5m from every contestant
+  C: the 20m rule is only a placement check; later movement into the cloud is free
+parameter: tear_gas_radius_m
+sweep_range: 12.5 to 25 m; the wiki gives '25m' as the only size
+resolution_paths:
+- 'VOD: place tear gas near contestants and note the refusal threshold.'
+priority: high
+status: open

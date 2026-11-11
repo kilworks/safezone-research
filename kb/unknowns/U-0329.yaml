@@ -1,0 +1,10 @@
+id: U-0329
+question: Are the 'for each one you already bought' counters of Inventory slot and +10 maximum HP separate, or shared?
+why_it_matters: Buying 10 slots and 10 HP upgrades costs very different amounts under a shared count (the second type would start where the first stopped).
+readings:
+  A: 'separate counters: each ladder is 40 + 10k with k its own purchases'
+  B: one shared counter over both upgrades
+resolution_paths:
+- 'VOD: merchant screen after one slot upgrade (HP price 40 or 50?).'
+priority: high
+status: open

@@ -1,0 +1,15 @@
+id: U-0201
+question: Do several mirror forcefields count as one effect or each as one toward the 3-effect cap?
+why_it_matters: Decides how many mirrors fit under the cap of 3 and the room left for Shield and Flak jacket.
+readings:
+  A: each mirror counts separately
+  B: all mirrors count as one effect
+  C: mirrors held but never 'used' do not count until active
+resolution_paths:
+- 'VOD: a contestant holding two mirrors using a third effect item at the cap.'
+priority: medium
+status: open
+related:
+- M-0205
+- M-0236
+- M-0247

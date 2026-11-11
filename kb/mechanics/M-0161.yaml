@@ -1,0 +1,19 @@
+id: M-0161
+name: Damage source 'Airstrike fire' and what stops it
+family: damage
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  clause: wiki-damage-026
+  quote: '| Airstrike fire | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (absorbs)'
+formal:
+  readings:
+    A: 'blockers(Airstrike fire) = {Shield: blocks; Safety bubble: blocks; Sleeping Bag: blocks; Protection: blocks; Body armor: absorbs}'
+  domain: one hit of source 'Airstrike fire'
+  parameters: {}
+depends_on:
+- M-0118
+interacts_with: []
+label: DOCUMENTED

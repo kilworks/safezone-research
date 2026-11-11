@@ -1,0 +1,14 @@
+id: U-0405
+question: 'Tear gas and zombie-kill timing: does the 2 HP every 10s tick start 10s after entry, on entry, or on a cloud-global 10s phase, and are zombies killed instantly on entry or on a tick? Is a tick a ''hit'' (U-0002)?'
+why_it_matters: Changes damage for a short crossing (a 9s pass costs 0 HP under entry-timers, 2 HP under global phase) and gas deaths of zombies.
+readings:
+  A: 'per-contestant timer: first loss 10s after entering, then every 10s'
+  B: first loss on entry, then every 10s
+  C: cloud-global phase, any contestant inside at a tick loses 2 HP
+resolution_paths:
+- 'VOD: observe the event live with an on-screen timer.'
+priority: medium
+status: open
+related:
+- U-0002
+- U-0003

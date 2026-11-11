@@ -1,0 +1,22 @@
+id: M-0448
+name: Horde bonus
+family: zombies
+sigils:
+- necromancy
+sources:
+- url: https://iceposeidon.com/safezone/wiki/zombies#sources
+  snapshot: '2026-11-11'
+  quote: 'Horde bonus: when a horde is released, every living Necromancy contestant also gets 5 zombies where they stand.'
+  clause: wiki-zombies-009
+formal:
+  readings:
+    A: on horde release, each living Necromancy contestant gets 5 zombies where they stand
+  domain: count 5
+  parameters:
+    count: '5'
+depends_on:
+- M-0445
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0403

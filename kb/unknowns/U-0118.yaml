@@ -1,0 +1,14 @@
+id: U-0118
+question: '''Sleeping in your own Sleeping Bag'' appears as a label in the Poison immunity list with no verb: does it prevent new poison, block each step, or both?'
+why_it_matters: The label's meaning changes whether a sleeper can be poisoned at all (a dart still poisons, steps blocked), see the damage table row listing Sleeping Bag against Poison.
+readings:
+  A: no new poison while sleeping in own bag (like Anti poison)
+  B: existing and new poison steps are blocked while sleeping (like Shield)
+  C: both
+resolution_paths:
+- 'VOD: Poison Dart on a sleeping contestant.'
+priority: low
+status: open
+related:
+- M-0178
+- M-0179

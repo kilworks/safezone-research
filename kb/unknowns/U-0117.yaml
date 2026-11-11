@@ -1,0 +1,16 @@
+id: U-0117
+question: 'A Shield or Safety bubble ''blocks each poison step while it lasts'': is a blocked step consumed (counts toward ''all its damage'') or skipped (poison extended)? Does the countdown continue while
+  protected?'
+why_it_matters: Decides whether a temporary shield cancels poison or only pauses it.
+readings:
+  A: 'blocked step is consumed: remaining steps decrement, no HP lost'
+  B: 'blocked step is skipped: remaining steps unchanged, poison extends'
+  C: poison timer is paused while protected
+resolution_paths:
+- 'VOD: poisoned contestant entering and leaving a bubble.'
+priority: high
+status: open
+related:
+- M-0136
+- M-0172
+- M-0179

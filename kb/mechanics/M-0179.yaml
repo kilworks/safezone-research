@@ -1,0 +1,21 @@
+id: M-0179
+name: Shield or Safety bubble does not stop poisoning but blocks its damage
+family: poison
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/poison#immunity
+  snapshot: '2026-11-11'
+  clause: wiki-poison-010
+  quote: A Shield or a Safety bubble does not stop you from being poisoned, but blocks the poison damage
+formal:
+  readings:
+    A: poison events are accepted; ticks blocked while Shield or Safety bubble active
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0136
+label: CONDITIONAL
+open_unknowns:
+- U-0117
+notes: 'Same as the damage page note (M-0136): no mismatch found.'

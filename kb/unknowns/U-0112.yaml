@@ -1,0 +1,17 @@
+id: U-0112
+question: 'Speed rule averaging: is ''20mph on average over 1min'' a sliding window, a fixed window, or a ratio of distance to time; is ''30mph over any 15s'' the same average on a 15 s window or a peak
+  speed; are comparisons strict; are 8.94 and 13.41 m/s the exact thresholds?'
+why_it_matters: Decides who is classified as moving too fast on a vehicle ride or a GPS jump, and the exact trigger edge.
+readings:
+  A: sliding windows, mean speed = displacement path length / window length, strict >, thresholds 8.94 and 13.41 m/s as printed
+  B: same but thresholds exact 8.9408 and 13.4112 m/s
+  C: straight-line displacement endpoint to endpoint in the window, not path length
+  D: the 15 s rule uses peak instantaneous speed
+resolution_paths:
+- VOD/GPS trace of a vehicle trip near the threshold.
+- 'REA: shipped speed check.'
+priority: high
+status: open
+related:
+- M-0105
+- M-0106

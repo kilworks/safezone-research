@@ -1,0 +1,11 @@
+id: U-0421
+question: 'Cyclops steering vote: what is the direction set, does the winner persist when nobody votes, and are votes per viewer per 5s window?'
+why_it_matters: Decides how directable the cyclops is toward a contestant.
+readings:
+  A: continuous bearing, mean of votes
+  B: discrete directions, plurality per 5s window
+  C: no votes keep the previous direction
+resolution_paths:
+- VOD of the cyclops vote UI.
+priority: low
+status: open

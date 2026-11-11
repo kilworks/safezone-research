@@ -1,0 +1,25 @@
+id: M-0446
+name: Zombie Summon
+family: zombies
+sigils:
+- necromancy
+sources:
+- url: https://iceposeidon.com/safezone/wiki/zombies#sources
+  snapshot: '2026-11-11'
+  quote: 'Summon: a Necromancy contestant summons a zombie where they stand, up to 3 times every 6h.'
+  clause: wiki-zombies-007
+formal:
+  readings:
+    A: at most 3 summons in any 6h; a zombie appears where the contestant stands
+    B: fixed blocks
+    C: 6h lockout
+  domain: uses <= 3 per 6h
+  parameters:
+    uses: '3'
+    window: 6 h
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0428
+- U-0403

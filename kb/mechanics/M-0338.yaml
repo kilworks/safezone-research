@@ -1,0 +1,52 @@
+id: M-0338
+name: Weapon enchantment per-weapon bonuses
+family: weapons
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/merchant#enchantments
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-050
+  quote: Zarok's Axe and Poison Dart get +10 damage for two uses, then they are used up.
+- url: https://iceposeidon.com/safezone/wiki/merchant#enchantments
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-051
+  quote: Landmines and C4 get +20 damage and +10m (33ft) radius for one use, then they are used up.
+- url: https://iceposeidon.com/safezone/wiki/merchant#enchantments
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-052
+  quote: Drones get +10 damage for one use, then they are used up.
+- url: https://iceposeidon.com/safezone/wiki/merchant#enchantments
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-053
+  quote: A bow gets +10 damage for five shots or two hours.
+- url: https://iceposeidon.com/safezone/wiki/merchant#enchantments
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-054
+  quote: A Wizard Staff gets +10 damage and +10m (33ft) area radius for five uses, with no time limit.
+formal:
+  readings:
+    A: 'Zarok''s Axe and Poison Dart: +10 damage for two uses then used up; Landmines and C4: +20 damage and +10 m radius for one use then used up; Drones: +10 damage for one use then used up; bow: +10 damage for five shots or two hours; Wizard Staff: +10 damage and +10 m area radius for five uses, no time limit'
+  domain: HP, metres, integer uses
+  parameters:
+    axe_dart_bonus_hp: '10'
+    axe_dart_uses: '2'
+    trap_bonus_hp: '20'
+    trap_bonus_radius_m: '10'
+    drone_bonus_hp: '10'
+    bow_bonus_hp: '10'
+    bow_bonus_shots: '5'
+    staff_bonus_hp: '10'
+    staff_bonus_radius_m: '10'
+    staff_enchant_uses: '5'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0317
+- U-0334
+- U-0335
+- U-0336
+- U-0304
+- U-0312
+notes: 'Enchanted staff: whether ''+10 damage'' adds to the 10 HP total of the area (20 HP total) is part of U-0010 (ticks) and not separately stated.'

@@ -1,0 +1,22 @@
+id: M-0630
+name: Necromancy blood token income
+family: economy
+sigils:
+- necromancy
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/necromancy#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-necromancy-008
+  quote: Earn one blood token for each zombie of yours that appears, guards and horde bonuses included, and one per HP your zombies drain.
+formal:
+  readings:
+    A: tokens += 1 per owned zombie appearing (summon, death, horde bonus, guard); tokens += 1 per HP drained by owned zombies
+    B: A, with HP drained = HP the victim actually lost after armor and caps
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0613
+- U-0614
+notes: A horde bonus gives 5 zombies and so 5 tokens.

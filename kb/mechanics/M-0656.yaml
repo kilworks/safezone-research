@@ -1,0 +1,26 @@
+id: M-0656
+name: Revive cost 5 HP and return with 5 HP
+family: revival
+sigils:
+- healing
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/healing#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-healing-014
+  quote: It costs the reviver 5 HP and brings the contestant back with 5 HP.
+formal:
+  readings:
+    A: reviver HP -= 5 (requires HP > 5); target HP := 5
+    B: reviver may drop to 0 and die
+    C: reviver HP -= min(5, HP-1)
+  domain: integer HP
+  parameters:
+    cost_hp: '5'
+    revived_hp: '5'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0625
+- U-0002
+notes: Revived contestant also gets back items from the gravestone (intro page). Whether the cost goes through the damage pipeline is U-0002.

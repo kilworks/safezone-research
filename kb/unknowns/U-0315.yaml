@@ -1,0 +1,11 @@
+id: U-0315
+question: 'Poison Dart: if a poisoned contestant is darted again (or hit by a Fake gravestone), does the new poison restart a full 20 HP schedule, replace what remains, or add?'
+why_it_matters: The poison page says re-poisoning resets the timer and does not stack, but the amount reset (full 20 HP or the remainder) is not stated.
+readings:
+  A: restarts a fresh 20 HP schedule from the new dart
+  B: keeps the remaining HP of the older poison and only restarts the interval timer
+  C: second dart ignored while poisoned
+resolution_paths:
+- 'VOD: HP and timer of a contestant darted twice.'
+priority: medium
+status: open

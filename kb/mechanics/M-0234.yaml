@@ -1,0 +1,25 @@
+id: M-0234
+name: Bandage stops Deep Cut bleeding
+family: healing
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#bandage
+  snapshot: '2026-11-11'
+  clause: wiki-items-051
+  quote: It also stops Deep Cut bleeding.
+- url: https://iceposeidon.com/safezone/wiki/merchant#upgrades
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-043
+  quote: 'Your next bow, knife, long sword, axe, machete or drone hit, or Poison Dart, causes bleeding: 1 HP every five minutes until a bandage or a Healing contestant cures it.'
+formal:
+  readings:
+    A: using a bandage ends Deep Cut bleeding
+  domain: bleeding boolean
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0233
+label: DOCUMENTED
+open_unknowns: []
+notes: 'Merchant page: bleeding is 1 HP every five minutes until a bandage or a Healing contestant cures it. Not stated whether at use or at the end of the heal.'

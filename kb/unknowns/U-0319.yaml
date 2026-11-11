@@ -1,0 +1,10 @@
+id: U-0319
+question: When does the first random merchant appear after the event starts?
+why_it_matters: The merchant cycle (15min stay, 30min to 1h away) has no stated phase; early purchasing power and token hoarding depend on it.
+parameter: merchant_first_spawn_min
+sweep_range: '0 to 75 min after event start: 75 min is the longest full cycle (15 min stay + 1h away), so any phase within one cycle is covered'
+resolution_paths:
+- 'VOD: event start to first merchant appearance.'
+- Organizer statement.
+priority: medium
+status: open

@@ -1,0 +1,26 @@
+id: M-0304
+name: C4 visibility
+family: weapons
+sigils:
+- all
+- ingenuity
+sources:
+- url: https://iceposeidon.com/safezone/wiki/weapons#c4
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-008
+  quote: Only you can see the trap.
+- url: https://iceposeidon.com/safezone/wiki/weapons#c4
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-014
+  quote: Only you and Sigil of Ingenuity contestants can see it.
+formal:
+  readings:
+    A: a placed C4 is visible only to its owner and Sigil of Ingenuity contestants; the trapped gift is visible only to the owner
+    B: '''Only you can see the trap'' describes the placed C4 (the later sentence repeating it with Ingenuity added)'
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0302
+notes: Unlike the landmine, no proximity visibility for other contestants and no viewer visibility is stated for C4.

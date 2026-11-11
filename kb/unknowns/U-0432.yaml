@@ -1,0 +1,12 @@
+id: U-0432
+question: 'Viewer attack concurrency: no limit is stated for missiles, nukes, hordes, tear gas, airstrikes, gunships, bounties and healing circles (only cyclops and illusion are limited to one). Are they stackable at will?'
+why_it_matters: Unbounded stacking would make total damage price-limited only (U-0014).
+readings:
+  A: stackable without limit, bounded by Cx-Bucks
+  B: undisclosed per-type limits
+resolution_paths:
+- Shop page and VOD.
+priority: medium
+status: open
+related:
+- U-0014

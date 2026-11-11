@@ -1,0 +1,11 @@
+id: U-0621
+question: 'Protection landmine ability: ready at the sigil pick or after 2h, does the 2h start at placement, and is it the item Landmine (stack of 5, Kick live bonus, enchant, visibility)?'
+why_it_matters: Sets how many free landmines Protection can lay and how they interact with item rules.
+readings:
+  A: ready at pick; cooldown starts at placement; ordinary landmine item rules apply otherwise
+  B: first landmine 2h after the pick
+  C: ability landmine has its own rules and gets no Kick live bonus
+resolution_paths:
+- 'VOD: Protection contestant placing landmines.'
+priority: medium
+status: open

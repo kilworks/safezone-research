@@ -1,0 +1,13 @@
+id: U-0420
+question: 'Cyclops attack timing and target: ''Every 5s it hits the nearest contestant within 30m for 10 HP''. First hit at spawn+5s or when a target first enters range; tie breaks; does it pass the damage pipeline (U-0002)?'
+why_it_matters: 'Damage to a contestant standing near the cyclops: 10 HP / 5s = 2 HP/s.'
+readings:
+  A: global 5s timer from spawn, hit if a contestant is in range
+  B: timer starts when a contestant enters range
+  C: hit goes through the 7-step pipeline
+resolution_paths:
+- 'VOD: observe the event live with an on-screen timer.'
+priority: medium
+status: open
+related:
+- U-0002

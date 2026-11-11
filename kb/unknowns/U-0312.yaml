@@ -1,0 +1,10 @@
+id: U-0312
+question: 'Wizard staff: is ''10m damage area'' a radius or a diameter?'
+why_it_matters: Doubles or quarters the covered ground; the enchantment text speaks of '+10m area radius', which only suggests radius.
+readings:
+  A: radius 10m
+  B: diameter 10m (radius 5m)
+resolution_paths:
+- 'VOD: HP loss of contestants at measured distances from the centre.'
+priority: medium
+status: open

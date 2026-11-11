@@ -1,0 +1,38 @@
+id: M-0233
+name: Bandage heal over time
+family: healing
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#bandage
+  snapshot: '2026-11-11'
+  clause: wiki-items-048
+  quote: Usable
+- url: https://iceposeidon.com/safezone/wiki/items#bandage
+  snapshot: '2026-11-11'
+  clause: wiki-items-049
+  quote: Heals 10 HP over 2min.
+- url: https://iceposeidon.com/safezone/wiki/items#bandage
+  snapshot: '2026-11-11'
+  clause: wiki-items-050
+  quote: Taking damage does not stop it.
+formal:
+  readings:
+    A: 10 ticks of 1 HP, first at +12 s, last at +120 s
+    B: 10 ticks of 1 HP, first at +0 s, last at +108 s
+    C: 5 ticks of 2 HP every 24 s
+    D: continuous 1 HP per 12 s accumulated fractionally (120 s total)
+  domain: t in [0,120] seconds; total 10 HP; damage does not interrupt
+  parameters:
+    total: 10 HP
+    duration: 2min
+    tick_schedule: UNKNOWN, see U-0214
+depends_on: []
+interacts_with:
+- M-0234
+- M-0206
+label: CONDITIONAL
+open_unknowns:
+- U-0214
+- U-0203
+notes: 'Protection sigil: bandages last 1.1x as long (132 s), whether total HP also changes is on that page. Each tick may or may not cap at max HP.'

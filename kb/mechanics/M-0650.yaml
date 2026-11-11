@@ -1,0 +1,22 @@
+id: M-0650
+name: 'Healing blood tokens: 1 per heal, 20 per revive'
+family: economy
+sigils:
+- healing
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/healing#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-healing-006
+  quote: Earn one blood token per heal and twenty per revive.
+formal:
+  readings:
+    A: tokens += 1 per use of the heal ability; += 20 per completed revive
+  parameters:
+    tokens_per_heal: '1'
+    tokens_per_revive: '20'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0623
+notes: 'Does a heal on a full HP target pay: U-0623.'

@@ -1,0 +1,29 @@
+id: M-0246
+name: Flashbang immunities and non-blockers
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#flashbang
+  snapshot: '2026-11-11'
+  clause: wiki-items-074
+  quote: Shields and safety bubbles do not stop it.
+- url: https://iceposeidon.com/safezone/wiki/items#flashbang
+  snapshot: '2026-11-11'
+  clause: wiki-items-075
+  quote: Sleeping contestants are immune.
+- url: https://iceposeidon.com/safezone/wiki/merchant#items
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-023
+  quote: After 65 seconds of sleep you are immune to flashbangs and to all damage except zone and unsafe circle damage.
+formal:
+  readings:
+    A: Shields and Safety bubbles do not stop it; sleeping contestants are immune
+    B: immunity only after 65 s of sleep in own Sleeping Bag (merchant page)
+  domain: sleep state, sleep duration
+  parameters: {}
+depends_on:
+- M-0244
+label: CONTRADICTED
+open_unknowns: []
+notes: See C-0203. 'Sleeping contestants are immune' versus 'After 65 seconds of sleep you are immune to flashbangs'.

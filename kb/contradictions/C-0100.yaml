@@ -1,0 +1,15 @@
+id: C-0100
+summary: Intro says a live Kick contestant does 10% more damage (all damage); the hit pipeline restricts the bonus to a closed list of the attacker's own weapon hits.
+sides:
+- url: https://iceposeidon.com/safezone/wiki#damage
+  snapshot: '2026-11-11'
+  clause: wiki-006
+  quote: you take 10% less damage and do 10% more damage
+- url: https://iceposeidon.com/safezone/wiki/damage#order
+  snapshot: '2026-11-11'
+  clause: wiki-damage-038
+  quote: If the attacker is live on Kick, their own bow, staff, knife, long sword, axe, machete, drone, C4, landmine, fake chest and trapped gift hits deal 10% more, rounded down.
+mechanics:
+- M-0102
+- M-0119
+status: open

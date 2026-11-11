@@ -1,0 +1,26 @@
+id: M-0441
+name: Zombie drain
+family: zombies
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/zombies
+  snapshot: '2026-11-11'
+  quote: drain 1 HP from any contestants within 5m (16ft) every 10s
+  clause: wiki-zombies-002
+formal:
+  readings:
+    A: 'per zombie every 10s: each contestant within 5m loses 1 HP'
+    B: per zombie-contestant timer from entry
+  domain: d <= 5 m, period 10 s
+  parameters:
+    damage: 1 HP
+    period: 10 s
+    range: 5 m
+depends_on:
+- M-0440
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0425
+- U-0002

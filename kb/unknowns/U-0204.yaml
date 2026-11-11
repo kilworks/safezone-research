@@ -1,0 +1,19 @@
+id: U-0204
+question: How are Eddie's potion 50% heal and 30% loss rounded when max HP is not a multiple of 10?
+why_it_matters: Off-by-one on a gamble that can kill; also tie to which base max HP exists.
+readings:
+  A: floor for both
+  B: ceil for both
+  C: round half up for both
+  D: heal and loss use different roundings
+parameter: eddie_rounding
+sweep_range: floor, ceil, round half up applied to heal and loss separately (4 to 9 combos); max HP 90..110 in steps of 1 because sigils change max HP by 10 from an unknown base
+resolution_paths:
+- 'VOD: a contestant at max HP 95 or 105 (if any) drinking it.'
+- Seed U-0004 asks whether it can kill; independent of rounding.
+priority: low
+status: open
+related:
+- U-0004
+- M-0208
+- U-0006

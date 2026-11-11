@@ -1,0 +1,11 @@
+id: U-0606
+question: 'Death ''rob'': does first-looting an item or blood tokens give the same 5% heal and 10 tokens as the ''rob a gravestone'' action, and can blood tokens be looted while locked for revival?'
+why_it_matters: The intro page says tokens in a grave stay locked while revival is possible, yet the Death page says the first loot of tokens robs the grave.
+readings:
+  A: first loot of an item or tokens is a full rob (heal, 10 tokens, grave becomes unrevivable); tokens lootable immediately
+  B: first loot is a rob, but tokens cannot be looted until the revive window is over, so only an item loot robs early
+  C: first loot only seals the grave; the heal and 10 tokens need the explicit rob action
+resolution_paths:
+- 'VOD: Death contestant looting a grave less than 10 min after a death.'
+priority: high
+status: open

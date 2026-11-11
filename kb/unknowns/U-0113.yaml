@@ -1,0 +1,17 @@
+id: U-0113
+question: '''Moving too fast counts as being outside'': when the speed rule trips, does the 5 s grace and 1 HP per 2 s apply as outside, starting when, and does it end the instant speed drops back?'
+why_it_matters: 'Sets the cost of a fast trip: immediate ticks versus 5 s lag and hysteresis.'
+readings:
+  A: violation = outside; the normal 5 s grace then ticks, ending when the windows are clean again
+  B: ticks start at once, no grace
+  C: outside status persists until the window is clean again, which lags the speed drop by up to the window length
+parameter: speed_violation_grace_s
+sweep_range: '0 to 5 s: 0 if no grace, 5 matches the outside-circle grace'
+resolution_paths:
+- 'VOD: a contestant on a fast ride, HP timeline against speed.'
+priority: medium
+status: open
+related:
+- M-0105
+- M-0106
+- M-0101

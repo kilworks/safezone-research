@@ -1,0 +1,33 @@
+id: M-0651
+name: 'Healing ability: heal 1 HP, cure poison, stop bleeding, 10min cooldown'
+family: healing
+sigils:
+- healing
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/healing#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-healing-008
+  quote: Heal a nearby contestant for 1 HP and cure their poison.
+- url: https://iceposeidon.com/safezone/wiki/sigils/healing#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-healing-007
+  quote: Healing also stops Deep Cut bleeding.
+- url: https://iceposeidon.com/safezone/wiki/sigils/healing#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-healing-009
+  quote: Cooldown 10min.
+formal:
+  readings:
+    A: 'target within range r: HP += 1 (capped at max HP), poison cured, Deep Cut bleeding stopped; next use after 600 s'
+  domain: seconds, HP
+  parameters:
+    heal_hp: '1'
+    cooldown_s: '600'
+    range_m: UNKNOWN, see U-0622
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0622
+- U-0623
+notes: Matches the poison page ('Healing healing' cures poison) and the merchant Deep Cut text (cured by a bandage or a Healing contestant).

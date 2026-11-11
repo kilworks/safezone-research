@@ -1,0 +1,23 @@
+id: M-0301
+name: Weapon slot membership
+family: weapons
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/weapons
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-003
+  quote: Melee weapons, bows, staffs and Poison Darts fit a weapon slot.
+- url: https://iceposeidon.com/safezone/wiki/merchant#upgrades
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-040
+  quote: Weapon and worn equipment slots do not use inventory space.
+formal:
+  readings:
+    A: melee weapons, bows, staffs and Poison Darts go in a weapon slot; weapon slots and worn equipment do not use inventory space
+  domain: item placement
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: DOCUMENTED
+notes: C4, landmines, drones and arrows are not listed as weapon slot items; they use inventory slots. See M-0334 for the second weapon slot.

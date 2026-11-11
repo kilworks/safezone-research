@@ -1,0 +1,15 @@
+id: U-0119
+question: 'Death Ward: does the 2 min of immunity start at the first blocked hit or when the sigil is selected; does ''Cooldown 2h'' start at activation or at the end of the 2 min, and is the ward available
+  once per cooldown?'
+why_it_matters: Sets how often a Death contestant can ignore the outside-circle damage.
+readings:
+  A: 2 min window starts at the first blocked hit; cooldown 2 h from that moment
+  B: 2 min window starts at activation by the contestant; cooldown 2 h from activation
+  C: cooldown starts when the 2 min window ends
+resolution_paths:
+- 'VOD: Death contestant after the first outside-circle hit.'
+- Sigil page for Death read against this record (cross-family).
+priority: medium
+status: open
+related:
+- M-0137

@@ -1,0 +1,38 @@
+id: M-0321
+name: Merchant spawning and presence cycle
+family: economy
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/merchant#spawning
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-003
+  quote: There is at most one merchant on the map.
+- url: https://iceposeidon.com/safezone/wiki/merchant#spawning
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-004
+  quote: Admins place it, or let it appear at random inside the safe zones or inside an area they pick.
+- url: https://iceposeidon.com/safezone/wiki/merchant#spawning
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-005
+  quote: A random merchant stays for 15min.
+- url: https://iceposeidon.com/safezone/wiki/merchant#spawning
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-006
+  quote: Then it leaves and comes back at a new random spot after 30min to 1h.
+formal:
+  readings:
+    A: at most one merchant on the map; admins place it, or let it appear at random in the safe zones or in an area they pick; a random merchant stays 15 min, then leaves and returns at a new random spot after a delay in [30, 60] min measured from its departure
+    B: the delay is measured from its arrival
+  domain: minutes
+  parameters:
+    merchant_stay_min: '15'
+    merchant_return_delay_min: 30 to 60
+    merchant_first_spawn_min: UNKNOWN, see U-0319
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0319
+- U-0320
+notes: An admin-placed merchant has no stated stay time; only 'a random merchant' stays 15 min.

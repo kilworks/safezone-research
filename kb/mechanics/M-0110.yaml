@@ -1,0 +1,26 @@
+id: M-0110
+name: Final kill pays 25 blood tokens, 50 with the blood crown involved
+family: economy
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki#death
+  snapshot: '2026-11-11'
+  clause: wiki-013
+  quote: A final kill pays 25 blood tokens, or 50 if the killer or victim held the blood crown.
+formal:
+  readings:
+    A: pay(kill) = 50 if crown(killer) or crown(victim) else 25, to the killer at the killing blow
+    B: same amount paid when the revival window ends
+    C: 50 = 25 base + 25 crown bonus split between parties
+  domain: pay in blood tokens
+  parameters:
+    base_tokens: '25'
+    crown_tokens: '50'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0104
+- U-0125
+notes: 'The Death sigil page also earns one token whenever another contestant dies: different mechanic, not merged.'

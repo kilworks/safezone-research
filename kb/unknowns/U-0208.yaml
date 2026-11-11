@@ -1,0 +1,14 @@
+id: U-0208
+question: Is the Safety bubble '10m' a radius or a diameter?
+why_it_matters: Doubles or quarters the covered area.
+readings:
+  A: radius 10 m
+  B: diameter 10 m, radius 5 m
+parameter: bubble_radius_m
+sweep_range: 5..10 m (diameter 10 reading to radius 10 reading)
+resolution_paths:
+- 'VOD: contestants at measured distances from the bubble creator.'
+priority: medium
+status: open
+related:
+- M-0212

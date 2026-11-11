@@ -1,0 +1,31 @@
+id: M-0247
+name: Flashbang against mirror forcefields
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#flashbang
+  snapshot: '2026-11-11'
+  clause: wiki-items-076
+  quote: A mirror forcefield is used up and blinds you instead.
+- url: https://iceposeidon.com/safezone/wiki/items#flashbang
+  snapshot: '2026-11-11'
+  clause: wiki-items-077
+  quote: Several forcefields are all used up, but you are blinded only once.
+formal:
+  readings:
+    A: a mirror is used up and blinds the thrower; several mirrors among victims are all used up; thrower blinded once
+    B: A, and a thrower holding a mirror too is not blinded (attacker-mirror rule M-0239 wins)
+    C: A, and a thrower holding a mirror is blinded (flashbang rule wins)
+  domain: victims with mirrors m >= 0
+  parameters: {}
+depends_on:
+- M-0244
+interacts_with:
+- M-0236
+- M-0239
+label: CONDITIONAL
+open_unknowns:
+- U-0217
+- U-0201
+- U-0215

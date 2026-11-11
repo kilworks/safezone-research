@@ -1,0 +1,11 @@
+id: U-0616
+question: 'Necromancy ''Fully immune from zombies'': does it cover horde and guard zombies of other Necromancy contestants, and also the 10% potion break and 40% craft destruction?'
+why_it_matters: Decides whether a Necromancy contestant can cross a horde safely.
+readings:
+  A: immune to all zombie effects (drain, potion breaking, craft destruction) from every zombie
+  B: immune to drain only; other zombie effects can still hit
+  C: immune to drain from every zombie, but not to a zombie landmine trigger
+resolution_paths:
+- 'VOD: Necromancy contestant inside a horde with a health potion.'
+priority: medium
+status: open

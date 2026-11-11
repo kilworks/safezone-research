@@ -1,0 +1,22 @@
+id: M-0144
+name: Damage source 'Tear gas' and what stops it
+family: damage
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  clause: wiki-damage-009
+  quote: '| Tear gas | Shield, Safety bubble, Sleeping Bag, Gas mask, Body armor (absorbs)'
+formal:
+  readings:
+    A: 'blockers(Tear gas) = {Shield: blocks; Safety bubble: blocks; Sleeping Bag: blocks; Gas mask: blocks; Body armor: absorbs}'
+  domain: one hit of source 'Tear gas'
+  parameters: {}
+depends_on:
+- M-0118
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0002
+notes: 'Tear gas: Gas mask listed, matches M-0131.'

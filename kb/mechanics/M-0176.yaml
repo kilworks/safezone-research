@@ -1,0 +1,18 @@
+id: M-0176
+name: 'Anti poison: no new poison while it lasts'
+family: poison
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/poison#immunity
+  snapshot: '2026-11-11'
+  clause: wiki-poison-007
+  quote: 'Anti poison: no new poison while it lasts.'
+formal:
+  readings:
+    A: 'while Anti poison active: new poison events ignored; existing poison unaffected by this clause'
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: DOCUMENTED
+notes: 'Cure and immunity: the items page says the Anti poison cures poison and gives 10 min immunity; this page lists the cure separately (M-0174). Duration is on the items page.'

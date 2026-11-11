@@ -1,0 +1,15 @@
+id: U-0122
+question: 'Wiki-damage-002 reads ''Reality Shield block every kind of damage. absorbs every kind of damage.'' (scrambled): which sentence belongs to which item (Reality Shield blocks every kind, Body armor
+  absorbs every kind)?'
+why_it_matters: The only statement that Reality Shield blocks all damage; the table never lists it.
+readings:
+  A: Reality Shield blocks every kind of damage; Body armor absorbs every kind of damage (caption of the table)
+  B: Reality Shield blocks every kind of damage except those the Shield note excludes
+resolution_paths:
+- Re-fetch the rendered page for the header text.
+- Items page Reality Shield section.
+priority: medium
+status: open
+related:
+- M-0127
+- M-0126

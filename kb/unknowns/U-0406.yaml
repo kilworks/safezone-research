@@ -1,0 +1,9 @@
+id: U-0406
+question: Airstrike strip width (the wiki gives centre and direction only).
+why_it_matters: Hit probability of the 5 HP strike and of the 5min fire.
+parameter: airstrike_strip_width_m
+sweep_range: 5 to 100 m; narrower than the 25m blasts yet within the 100m scale of other attacks
+resolution_paths:
+- 'VOD: measure the burn strip on the map.'
+priority: high
+status: open

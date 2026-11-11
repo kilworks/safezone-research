@@ -1,0 +1,23 @@
+id: M-0223
+name: EMP destroys viewer items in flight
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#emp
+  snapshot: '2026-11-11'
+  clause: wiki-items-037
+  quote: It destroys every viewer missile and nuke already in the air, and every airstrike and gunship already in play, burning fire included.
+- url: https://iceposeidon.com/safezone/wiki/attacks#emp
+  snapshot: '2026-11-11'
+  clause: wiki-attacks-002
+  quote: It destroys viewer missiles and nukes in the air, and airstrikes and gunships already in play, fire and falling bombs included.
+formal:
+  readings:
+    A: 'at use: every viewer missile and nuke in the air and every airstrike and gunship in play is destroyed, with fire and falling bombs'
+  domain: instant effect
+  parameters: {}
+depends_on: []
+label: DOCUMENTED
+open_unknowns: []
+notes: The attacks page adds that a cyclops, a bounty, tear gas and zombies already on the map are not removed.

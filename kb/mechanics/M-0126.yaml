@@ -1,0 +1,26 @@
+id: M-0126
+name: 'Body armor scope: every kind of damage, only one carried'
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  clause: wiki-damage-071
+  quote: Body Armor works on every kind of damage.
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  clause: wiki-damage-072
+  quote: You can carry only one.
+formal:
+  readings:
+    A: armor applies to all damage sources listed in the table with '(absorbs)'
+    B: armor applies to every source without exception (literal)
+  parameters:
+    max_carried: '1'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0122
+notes: 'The table has no ''Body armor'' entry for the Trapped gift row and the items page says ''A trapped gift ignores it'': C-0102.'

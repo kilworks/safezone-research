@@ -1,0 +1,28 @@
+id: M-0222
+name: EMP blocks viewer sends
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#emp
+  snapshot: '2026-11-11'
+  clause: wiki-items-035
+  quote: Usable
+- url: https://iceposeidon.com/safezone/wiki/items#emp
+  snapshot: '2026-11-11'
+  clause: wiki-items-036
+  quote: Stops viewers sending missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes and bounties for 10min.
+- url: https://iceposeidon.com/safezone/wiki/attacks#emp
+  snapshot: '2026-11-11'
+  clause: wiki-attacks-001
+  quote: While a contestant's EMP is active, viewers cannot send missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes or bounties.
+formal:
+  readings:
+    A: 'for 10min viewers cannot send: missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes, bounties'
+  domain: t in [0, 600) seconds
+  parameters:
+    duration: 10min
+depends_on: []
+label: DOCUMENTED
+open_unknowns: []
+notes: 'Compared with the attacks page: same eight items. Other viewer items are not on the list. Whether the EMP is global or only for the user''s own safe-zone targeting is not stated on either page (viewer attacks are aimed at points inside a safe zone).'

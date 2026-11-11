@@ -1,0 +1,14 @@
+id: U-0200
+question: Which items stack in one slot beyond C4, landmines and arrows (non-Piety health potions, mirror forcefields, others)?
+why_it_matters: Inventory space is 3 slots, so stack rules decide how many defenses and potions fit.
+readings:
+  A: only the named C4, landmines and arrows stack
+  B: 'other kinds stack as well (list open: ''such as'')'
+resolution_paths:
+- 'VOD: a contestant picking up a second mirror forcefield or health potion with a full inventory.'
+- Weapons page stack sizes are 5 and 10 per stack.
+priority: medium
+status: open
+related:
+- M-0201
+- M-0236

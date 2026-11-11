@@ -1,0 +1,16 @@
+id: U-0214
+question: 'What is the tick schedule of the Bandage: 10 HP over 2min?'
+why_it_matters: Interaction with damage, max HP cap and cure timing.
+readings:
+  A: 10 ticks of 1 HP at +12 s..+120 s
+  B: 10 ticks of 1 HP at +0 s..+108 s
+  C: 5 ticks of 2 HP every 24 s
+  D: fractional continuous
+parameter: bandage_tick_count
+sweep_range: 1..120 ticks over 120 s (1 HP per tick up to fractional)
+resolution_paths:
+- 'VOD: HP bar after using a bandage.'
+priority: medium
+status: open
+related:
+- M-0233

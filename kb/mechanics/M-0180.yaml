@@ -1,0 +1,22 @@
+id: M-0180
+name: Mirror forcefield turns Poison Dart or fake gravestone back on the attacker
+family: poison
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/poison#immunity
+  snapshot: '2026-11-11'
+  clause: wiki-poison-011
+  quote: A Mirror forcefield turns a Poison Dart or a fake gravestone back on the attacker.
+formal:
+  readings:
+    A: 'defender mirror active and source in {Poison Dart, fake gravestone}: the attacker is poisoned, defender is not'
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0120
+- M-0135
+label: CONDITIONAL
+open_unknowns:
+- U-0005
+notes: The items page adds that against an attacker with a mirror the dart still poisons the attacker and their mirror stays. Not duplicated.

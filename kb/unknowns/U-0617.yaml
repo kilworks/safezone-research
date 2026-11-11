@@ -1,0 +1,11 @@
+id: U-0617
+question: 'Protection ''Potions heal you 50% less'': which heals are ''potions'' (health potions, Eddie''s potion, God''s Fruit, bandages, healing circle)?'
+why_it_matters: Decides how much healing a Protection contestant can still use.
+readings:
+  A: health potions of every tier only
+  B: health potions and Eddie's potion (a gamble that heals 50% of max HP)
+  C: every item heal
+resolution_paths:
+- 'VOD: Protection contestant using each heal item.'
+priority: high
+status: open

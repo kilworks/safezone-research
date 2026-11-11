@@ -1,0 +1,18 @@
+id: M-0641
+name: Protection still takes zone, circle, robot and weapon damage
+family: sigil
+sigils:
+- protection
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/protection#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-protection-009
+  quote: Still takes zone, unsafe circle, robot, weapon, fake chest, tear gas, zombie, bleeding, cyclops and bounty damage.
+formal:
+  readings:
+    A: no Protection blocker for sources {zone, unsafe circle, robot, weapon, fake chest, tear gas, zombie, bleeding, cyclops, bounty}
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: DOCUMENTED
+notes: Consistent with the damage table, where Protection appears in none of these rows.

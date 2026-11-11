@@ -1,0 +1,11 @@
+id: U-0336
+question: 'Enchanted C4 or landmine: is the ''+10m radius'' applied to the trigger distance too, and does the enchantment carry onto a trapped gift made with an enchanted trap?'
+why_it_matters: The +20 damage on a trapped gift (23 HP and 11 HP base) and the trigger range both change what an enchanted trap does.
+readings:
+  A: radius +10 m for both trigger and blast; trapped gift made from an enchanted trap keeps +20
+  B: radius +10 m for the blast only; trapped gift uses its base 23 or 11 HP
+  C: an enchanted trap cannot be attached
+resolution_paths:
+- 'VOD: enchanted landmine triggered at 15 m.'
+priority: medium
+status: open

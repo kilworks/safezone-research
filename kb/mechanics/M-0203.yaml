@@ -1,0 +1,23 @@
+id: M-0203
+name: Cap of 3 active item effects
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#effects
+  snapshot: '2026-11-11'
+  clause: wiki-items-004
+  quote: You can have at most 3 active item effects at once.
+formal:
+  readings:
+    A: count(active item effects of a contestant) <= 3 at all times
+  domain: integer 0..3
+  parameters:
+    cap: '3'
+depends_on: []
+interacts_with:
+- M-0204
+- M-0205
+- M-0206
+label: DOCUMENTED
+open_unknowns: []

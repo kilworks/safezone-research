@@ -1,0 +1,11 @@
+id: U-0602
+question: 'Death cap ''When 20% or fewer of the contestants are alive'': 20% of which count, with what rounding, and is the alive count taken before or after the death that triggers the heal?'
+why_it_matters: Decides the exact elimination at which the 60% cap switches on; with N total contestants the threshold shifts by one contestant.
+readings:
+  A: alive * 5 <= N exactly (equals alive <= floor(N/5))
+  B: alive <= ceil(N/5)
+  C: 'alive counted after the triggering death; D: alive counted before it (combine with A or B)'
+resolution_paths:
+- Organizer statement of N (U-0009), then VOD of the first Death heal that stops at 60%.
+priority: high
+status: open

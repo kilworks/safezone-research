@@ -1,0 +1,17 @@
+id: U-0116
+question: 'Poison ''Getting poisoned again resets the timer, it doesn''t stack'': does the reset only restart the 90 s countdown, or also restore the total damage still to be dealt? What is the total?'
+why_it_matters: Re-poisoning could be an indefinite extension (total restored) or a mere delay; and the page gives no total.
+readings:
+  A: countdown restarts, remaining damage unchanged
+  B: countdown and remaining damage both restart to the full total
+  C: countdown restarts and remaining damage is max(remaining, new total)
+parameter: poison_total_hp
+sweep_range: '1 to 40 HP: lower bound 1 tick, upper bound twice the largest total seen on any page (20 HP), sweep choice'
+resolution_paths:
+- 'VOD: a contestant poisoned twice, HP lost versus time.'
+- Items/attacks pages give the total of one poison source; compare.
+priority: high
+status: open
+related:
+- M-0171
+- M-0172

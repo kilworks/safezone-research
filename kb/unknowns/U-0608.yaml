@@ -1,0 +1,11 @@
+id: U-0608
+question: 'Endurance ''Earn one more for every five item uses'': when is the extra token paid?'
+why_it_matters: Changes the Endurance token rate (up to one token per five uses versus one token per claimed package).
+readings:
+  A: +1 token immediately on every 5th item use (cumulative counter)
+  B: floor(uses since last claim / 5) added to the next care package claim
+  C: +1 token on each care package claim at most, when five uses occurred since the last claim
+resolution_paths:
+- 'VOD: Endurance token counter on the fifth item use.'
+priority: medium
+status: open

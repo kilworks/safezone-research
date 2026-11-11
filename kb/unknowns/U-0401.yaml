@@ -1,0 +1,13 @@
+id: U-0401
+question: 'Scope of the EMP block: the wiki lists missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes and bounties. Are emergency airdrops, healing circles, illusions and viewer crates blocked? Does the block test the moment of purchase or the moment of landing?'
+why_it_matters: Decides which viewer actions an EMP holder can stop and whether an in-flight healing circle or airdrop survives.
+readings:
+  A: only the eight listed attacks are refused; airdrop, healing circle, illusion and crates always go through
+  B: all viewer actions are refused while an EMP is active, the list being illustrative
+  C: the block tests the purchase moment only, and in-flight destruction applies to missiles, nukes, airstrikes, gunships only
+resolution_paths:
+- Items page EMP text (10 min) plus VOD of a viewer airdrop or healing circle sent during an EMP.
+priority: medium
+status: open
+related:
+- U-0014

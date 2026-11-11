@@ -1,0 +1,22 @@
+id: M-0114
+name: Revived contestant gets back the items still in the gravestone
+family: revival
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki#death
+  snapshot: '2026-11-11'
+  clause: wiki-017
+  quote: The revived contestant gets back the items still in their gravestone.
+formal:
+  readings:
+    A: 'on revive: inventory := items(grave) subject to capacity (M-0115); grave items removed'
+  parameters: {}
+depends_on:
+- M-0107
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0109
+- U-0105
+notes: 'Only items that remain are returned: items taken by looters before the revive are gone.'

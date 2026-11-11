@@ -1,0 +1,13 @@
+id: U-0311
+question: 'Zarok''s axe: how is a non-integer damage value rounded?'
+why_it_matters: Changes the damage by up to 1 HP at most HP levels (and the Kick bonus and the 1 HP minimum then apply on top).
+readings:
+  A: floor
+  B: ceil
+  C: round half up
+resolution_paths:
+- 'VOD: axe hit at an HP where the curve gives a fraction.'
+priority: medium
+status: open
+related:
+- U-0310

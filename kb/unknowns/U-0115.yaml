@@ -1,0 +1,14 @@
+id: U-0115
+question: 'Poison: does the first 1 HP land at once, after 1min 30s, or on a fixed global 90 s phase?'
+why_it_matters: Moves total damage by 1 HP at any cut-off time and changes the value of cures.
+readings:
+  A: first tick at t = 90 s after poisoning, then every 90 s
+  B: first tick at t = 0, then every 90 s
+  C: ticks on a global 90 s grid independent of the poison start
+resolution_paths:
+- 'VOD: HP of a poisoned contestant with a clock after a poison dart hit.'
+priority: medium
+status: open
+related:
+- M-0170
+- M-0171

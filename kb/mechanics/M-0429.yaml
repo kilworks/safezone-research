@@ -1,0 +1,30 @@
+id: M-0429
+name: Cyclops blood tokens
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#cyclops
+  snapshot: '2026-11-11'
+  quote: When it dies, each contestant earns 1 blood token per damage they dealt to it.
+  clause: wiki-attacks-072
+- url: https://iceposeidon.com/safezone/wiki/attacks#cyclops
+  snapshot: '2026-11-11'
+  quote: Damage from viewer items earns nothing.
+  clause: wiki-attacks-073
+- url: https://iceposeidon.com/safezone/wiki/attacks#cyclops
+  snapshot: '2026-11-11'
+  quote: If the zone kills it, nobody earns anything.
+  clause: wiki-attacks-074
+formal:
+  readings:
+    A: on death by contestants each earns 1 token per HP dealt, viewer-item damage earns nothing, a zone kill pays nobody
+  domain: d integer per contestant, sum over contestants
+  parameters:
+    rate: 1 token per damage
+depends_on:
+- M-0428
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0419

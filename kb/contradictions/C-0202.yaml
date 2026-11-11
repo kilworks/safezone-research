@@ -1,0 +1,14 @@
+id: C-0202
+summary: Items page Shield exceptions omit robot damage; damage page adds robot to the unblocked list.
+sides:
+- url: https://iceposeidon.com/safezone/wiki/items#shield
+  snapshot: '2026-11-11'
+  clause: wiki-items-023
+  quote: Immune to damage for 20min, except zone damage and unsafe circle damage.
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  clause: wiki-damage-058
+  quote: A Shield does not block zone, unsafe circle or robot damage.
+mechanics:
+- M-0216
+status: open

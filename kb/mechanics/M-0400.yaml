@@ -1,0 +1,22 @@
+id: M-0400
+name: EMP blocks viewer attack purchases
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#emp
+  snapshot: '2026-11-11'
+  quote: While a contestant's EMP is active, viewers cannot send missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes or bounties.
+  clause: wiki-attacks-001
+formal:
+  readings:
+    A: EMP active at time t => viewer sends of {missile, nuke, horde, tear_gas, airstrike, gunship, cyclops, bounty} are refused
+  domain: t in seconds during an active EMP; set of 8 attack types
+  parameters:
+    emp_duration: 10 min (Items page, not this page)
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0401
+notes: 'Emergency airdrop, healing circle, illusion and crates are not in the list; whether they are blocked is U-0401. The Items page also gives 10min and ''No refunds''. Cross-family: EMP item (items).'

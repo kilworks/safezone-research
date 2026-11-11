@@ -1,0 +1,36 @@
+id: M-0410
+name: Tear gas drain and zombie kill
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#tear-gas
+  snapshot: '2026-11-11'
+  quote: It stays for 10min.
+  clause: wiki-attacks-021
+- url: https://iceposeidon.com/safezone/wiki/attacks#tear-gas
+  snapshot: '2026-11-11'
+  quote: Anyone inside loses 2 HP every 10s.
+  clause: wiki-attacks-023
+- url: https://iceposeidon.com/safezone/wiki/attacks#tear-gas
+  snapshot: '2026-11-11'
+  quote: It kills zombies inside it.
+  clause: wiki-attacks-024
+formal:
+  readings:
+    A: for 600 s, contestants inside lose 2 HP every 10s, first tick per entry timer
+    B: first tick on entry
+    C: cloud-global 10s phase; zombies inside die
+  domain: t in [0, 600] s
+  parameters:
+    duration: 600 s
+    damage: 2 HP
+    period: 10 s
+depends_on:
+- M-0409
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0405
+- U-0002
+notes: The zombie page lists tear gas among blasts that kill zombies. Protection sigil is not immune to tear gas (Protection page).

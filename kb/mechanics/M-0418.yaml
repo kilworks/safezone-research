@@ -1,0 +1,35 @@
+id: M-0418
+name: Emergency airdrop
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#emergency-airdrop
+  snapshot: '2026-11-11'
+  quote: 5 care packages fall within 10m (33ft) of a random point in the safe zones.
+  clause: wiki-attacks-043
+- url: https://iceposeidon.com/safezone/wiki/attacks#emergency-airdrop
+  snapshot: '2026-11-11'
+  quote: They land after 5min.
+  clause: wiki-attacks-044
+- url: https://iceposeidon.com/safezone/wiki/attacks#emergency-airdrop
+  snapshot: '2026-11-11'
+  quote: Each one holds a random item and is claimed like any other care package.
+  clause: wiki-attacks-045
+formal:
+  readings:
+    A: 5 care packages fall at landing time t+300s within 10m of one random point of the safe zones; each holds a random item; claimed like any care package
+  domain: 5 packages, spread 10 m
+  parameters:
+    packages: '5'
+    flight_time: 300 s
+    spread: 10 m
+    price_cx_bucks: UNKNOWN, see U-0014
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0412
+- U-0411
+- U-0401
+- U-0014

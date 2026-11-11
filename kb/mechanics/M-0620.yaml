@@ -1,0 +1,19 @@
+id: M-0620
+name: 'Endurance inventory: 10 slots instead of 3'
+family: items
+sigils:
+- endurance
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/endurance#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-endurance-008
+  quote: You have 10 inventory slots instead of 3.
+formal:
+  readings:
+    A: slots = 10
+  parameters:
+    inventory_slots: '10'
+depends_on: []
+interacts_with: []
+label: DOCUMENTED
+notes: Same value as the Slots label (M-0603). Merchant page allows up to 20 for Endurance with purchases.

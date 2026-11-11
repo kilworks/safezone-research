@@ -1,0 +1,35 @@
+clauses:
+  wiki-sigils-death-001: tagline, no rule
+  wiki-sigils-death-015: stat card label for the gravestone section, no value
+  wiki-sigils-endurance-001: tagline, no rule
+  wiki-sigils-necromancy-001: tagline, no rule
+  wiki-sigils-necromancy-017: stat card label for the zombie section, no value
+  wiki-sigils-protection-001: tagline, no rule
+  wiki-sigils-healing-001: tagline, no rule
+  wiki-sigils-healing-015: stat card label for the revive section, no value
+  wiki-sigils-003: index summary of Piety, rules on its own page (other formalizer)
+  wiki-sigils-004: index summary of Greed, rules on its own page (other formalizer)
+  wiki-sigils-005: index summary of Ingenuity, rules on its own page (other formalizer)
+  wiki-sigils-006: index summary of Trolling, rules on its own page (other formalizer)
+  wiki-sigils-007: index summary of Death, no rule beyond its page
+  wiki-sigils-008: index summary of Endurance, no rule beyond its page
+  wiki-sigils-009: index summary of Necromancy, no rule beyond its page
+  wiki-sigils-010: index summary of Protection, no rule beyond its page
+  wiki-sigils-011: index summary of Healing, no rule beyond its page
+  wiki-strategy-001: advice, no rule
+  wiki-strategy-002: advice, no rule
+  wiki-strategy-003: advice, no rule
+  wiki-strategy-004: advice, no rule
+  wiki-strategy-005: advice, no rule
+  wiki-strategy-007: advice; the moving circle is a rule of the zone page, not stated here
+  wiki-strategy-008: advice; 'closer to the center is safer' gives no number
+  wiki-strategy-009: advice, no rule
+  wiki-strategy-010: advice, no rule
+  wiki-strategy-011: advice; drop, destroy and trade are rules of the items page
+  wiki-strategy-012: advice, no rule
+  wiki-strategy-013: advice; blood tokens and the merchant are rules of the merchant page
+  wiki-strategy-015: advice, no rule
+  wiki-strategy-016: advice, no rule
+  wiki-strategy-017: advice, no rule
+  wiki-strategy-018: advice, no rule
+  wiki-strategy-006: advice; its claim of immunity from most viewer attacks is recorded in C-0602

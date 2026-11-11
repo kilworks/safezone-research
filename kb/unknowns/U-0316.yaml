@@ -1,0 +1,10 @@
+id: U-0316
+question: 'Poison Dart: with ''20 HP over 30min'' and the poison page''s 1 HP every 1min 30s, is the first tick at 1min 30s or immediately?'
+why_it_matters: Shifts every dart tick by 1min 30s and the time of the last HP.
+readings:
+  A: ticks at 90, 180, ..., 1800 s (20 ticks, last at 30min)
+  B: ticks at 0, 90, ..., 1710 s (20 ticks, first immediately)
+resolution_paths:
+- 'VOD: poisoned contestant HP timeline.'
+priority: low
+status: open

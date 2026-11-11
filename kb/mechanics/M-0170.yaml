@@ -1,0 +1,26 @@
+id: M-0170
+name: 'Poison tick: 1 HP every 1min 30s'
+family: poison
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/poison
+  snapshot: '2026-11-11'
+  clause: wiki-poison-001
+  quote: Poison damages you for 1 HP every 1min 30s.
+formal:
+  readings:
+    A: 'while poisoned: HP loss 1 at t_p = 90, 180, ...'
+    B: first loss at t_p = 0
+  domain: t_p seconds since poisoning
+  parameters:
+    tick_hp: '1'
+    interval_s: '90'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0115
+- U-0002
+notes: Equals 20 HP per 30 min, matching the other page that says a Poison Dart poisons for 20 HP over 30min (a derivation for later, not asserted here). Kick reduction is moot at 1 HP (min 1 only if poison
+  is a hit, U-0002).

@@ -1,0 +1,27 @@
+id: M-0435
+name: Reality Shield (admin)
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#reality-shield
+  snapshot: '2026-11-11'
+  quote: Placed by admins.
+  clause: wiki-attacks-086
+- url: https://iceposeidon.com/safezone/wiki/attacks#reality-shield
+  snapshot: '2026-11-11'
+  quote: Everyone within 30m (98ft) is immune to all damage, zombies and new poison.
+  clause: wiki-attacks-087
+formal:
+  readings:
+    A: placed by admins; everyone within 30m is immune to all damage, zombies and new poison
+  domain: d <= 30 m
+  parameters:
+    radius: 30 m
+    duration: UNKNOWN, see U-0423
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0423
+notes: Items page lists Safety bubble as 'immune to damage and zombies, zone damage included'. Attacks list the Reality Shield among nuke blockers.

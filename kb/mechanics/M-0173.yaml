@@ -1,0 +1,18 @@
+id: M-0173
+name: 'Poison sources: Poison dart and Fake gravestone'
+family: poison
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/poison
+  snapshot: '2026-11-11'
+  clause: wiki-poison-004
+  quote: You can be poisoned by a Poison dart or a Fake gravestone.
+formal:
+  readings:
+    A: 'poison events come from exactly two sources: Poison dart, Fake gravestone'
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: DOCUMENTED
+notes: Other pages say a zone of effect or another item may poison; this page lists only these two ('can be poisoned by').

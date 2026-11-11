@@ -1,0 +1,11 @@
+id: U-0302
+question: Does 'Only you can see the trap.' (C4 section) describe the trapped gift (item with attached C4) or the placed C4?
+why_it_matters: The next sentences say a placed C4 is seen only by you and Ingenuity contestants; the referent decides who sees a trapped gift and whether Ingenuity contestants see it.
+readings:
+  A: describes the trapped gift only
+  B: describes the placed C4 only (then the last C4 sentence repeats it with Ingenuity added)
+  C: describes both
+resolution_paths:
+- 'VOD: a non-Ingenuity contestant''s map with a placed C4 nearby and holding a trapped item.'
+priority: low
+status: open

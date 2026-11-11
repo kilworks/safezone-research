@@ -1,0 +1,19 @@
+id: M-0162
+name: Damage source 'Gunship bomb' and what stops it
+family: damage
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  clause: wiki-damage-027
+  quote: '| Gunship bomb | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (absorbs)'
+formal:
+  readings:
+    A: 'blockers(Gunship bomb) = {Shield: blocks; Safety bubble: blocks; Sleeping Bag: blocks; Protection: blocks; Flak jacket: blocks; Body armor: absorbs}'
+  domain: one hit of source 'Gunship bomb'
+  parameters: {}
+depends_on:
+- M-0118
+interacts_with: []
+label: DOCUMENTED

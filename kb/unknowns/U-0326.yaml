@@ -1,0 +1,11 @@
+id: U-0326
+question: '''Local solar time'': local to what (the contestant''s position, the event location, one reference city)?'
+why_it_matters: The wake and sleep window depends on it; it differs by about 4 minutes per degree of longitude, more across time zones if a reference clock is used.
+readings:
+  A: solar time at the contestant's own position
+  B: solar time at one reference location of the event
+  C: local clock time of the contestant's phone
+resolution_paths:
+- Organizer statement.
+priority: low
+status: open

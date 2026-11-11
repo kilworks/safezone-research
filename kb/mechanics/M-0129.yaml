@@ -1,0 +1,18 @@
+id: M-0129
+name: 'Vulnerable contestant: no protection from Shield or Safety bubble'
+family: damage
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  clause: wiki-damage-060
+  quote: A vulnerable contestant gets no protection from a Shield or a Safety Bubble.
+formal:
+  readings:
+    A: 'if vulnerable: Shield and Safety bubble are removed from the blocker set'
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: DOCUMENTED
+notes: The Vulnerability Dart itself is another page.

@@ -1,0 +1,26 @@
+id: M-0427
+name: Cyclops steering vote
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#cyclops
+  snapshot: '2026-11-11'
+  quote: Every viewer can vote its direction while it is on the map, not only the buyer.
+  clause: wiki-attacks-067
+- url: https://iceposeidon.com/safezone/wiki/attacks#cyclops
+  snapshot: '2026-11-11'
+  quote: The most voted direction wins every 5s.
+  clause: wiki-attacks-068
+formal:
+  readings:
+    A: every viewer votes; every 5s the most voted direction is selected
+  domain: t in 5 s windows
+  parameters:
+    window: 5 s
+depends_on:
+- M-0426
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0421

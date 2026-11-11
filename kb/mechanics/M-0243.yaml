@@ -1,0 +1,29 @@
+id: M-0243
+name: Gas mask
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#gas_mask
+  snapshot: '2026-11-11'
+  clause: wiki-items-065
+  quote: Usable
+- url: https://iceposeidon.com/safezone/wiki/items#gas_mask
+  snapshot: '2026-11-11'
+  clause: wiki-items-066
+  quote: Use it to become immune to tear gas for 10min.
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  clause: wiki-damage-066
+  quote: A Gas mask blocks tear gas.
+formal:
+  readings:
+    A: for 10min after use, tear gas does nothing to the user
+  domain: t in [0, 600) seconds
+  parameters:
+    duration: 10min
+depends_on: []
+interacts_with:
+- M-0205
+label: DOCUMENTED
+open_unknowns: []

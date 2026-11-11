@@ -1,0 +1,34 @@
+id: M-0328
+name: Sleeping Bag sleep window and incapacity
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/merchant#items
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-021
+  quote: Place it and sleep from 18:00 to 06:00 local solar time, for eight hours of sleep in total.
+- url: https://iceposeidon.com/safezone/wiki/merchant#items
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-022
+  quote: While you sleep within 15m of your bag, you cannot act.
+- url: https://iceposeidon.com/safezone/wiki/merchant#items
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-024
+  quote: Wake up to act.
+formal:
+  readings:
+    A: place the bag and sleep from 18:00 to 06:00 local solar time, eight hours of sleep in total; while sleeping within 15 m of the bag you cannot act; wake up to act
+  domain: hours, metres
+  parameters:
+    sleep_window: 18:00 to 06:00 local solar time
+    sleep_total_h: '8'
+    sleep_radius_m: '15'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0325
+- U-0326
+- U-0327
+- U-0300

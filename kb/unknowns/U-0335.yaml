@@ -1,0 +1,10 @@
+id: U-0335
+question: 'Enchanted bow ''five shots or two hours'': whichever first, or whichever last?'
+why_it_matters: Decides whether the bonus survives long idle periods or ends after five shots.
+readings:
+  A: ends at the first of 5 shots or 2 h
+  B: ends only when both are reached
+resolution_paths:
+- 'VOD: enchanted bow after 5 shots within 2 h.'
+priority: low
+status: open

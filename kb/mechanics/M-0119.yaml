@@ -1,0 +1,26 @@
+id: M-0119
+name: 'Pipeline step 2: attacker Kick bonus, listed weapons only'
+family: damage
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage#order
+  snapshot: '2026-11-11'
+  clause: wiki-damage-038
+  quote: If the attacker is live on Kick, their own bow, staff, knife, long sword, axe, machete, drone, C4, landmine, fake chest and trapped gift hits deal 10% more, rounded down.
+formal:
+  readings:
+    A: 'if attacker live and source in {bow, staff, knife, long sword, axe, machete, drone, C4, landmine, fake chest, trapped gift}: d := floor(11*d/10) = d + floor(d/10)'
+  domain: d integer >= 0; weapon list closed (Poison Dart, missile, nuke etc. not listed)
+  parameters:
+    bonus: 10 percent
+    list: bow, staff, knife, long sword, axe, machete, drone, C4, landmine, fake chest, trapped gift
+depends_on:
+- M-0117
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0010
+- U-0121
+notes: 'Single rounding reading (floor of 1.1*d is exact in binary64). ''staff'' is the Wizard staff area (ticks, U-0010). General wording on the intro page (''do 10% more damage'') is wider: C-0100. Bonus
+  precedes the mirror, so a reflected hit carries it.'

@@ -1,0 +1,14 @@
+id: C-0403
+summary: 'Care package Trolling diversion: ''within 5m of a Trolling contestant'' for any care package versus ''next to'' and only ''from viewers'' on the Trolling page.'
+sides:
+- url: https://iceposeidon.com/safezone/wiki/attacks#care-package
+  snapshot: '2026-11-11'
+  quote: It has a 3% chance to land within 5m (16ft) of a Trolling contestant instead.
+  clause: wiki-attacks-080
+- url: https://iceposeidon.com/safezone/wiki/sigils/trolling#rules
+  snapshot: '2026-11-11'
+  quote: Each crate or care package from viewers has a 3% chance to land next to a Trolling contestant instead.
+  clause: wiki-sigils-trolling-020
+mechanics:
+- M-0432
+status: open

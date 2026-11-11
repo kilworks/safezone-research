@@ -1,0 +1,10 @@
+id: U-0323
+question: 'Which item does a merchant care package give: the distribution of ''One random item''?'
+why_it_matters: Decides the expected value of 10 blood tokens, including whether weapons, C4 and drones come out and whether the result lands in a weapon slot.
+parameter: merchant_care_package_item_distribution
+sweep_range: uniform over the item catalogue of the items and weapons pages versus weighted toward cheap items; sample at least 30 openings to tell them apart
+resolution_paths:
+- 'VOD: a sample of merchant care package results.'
+- Organizer statement.
+priority: medium
+status: open

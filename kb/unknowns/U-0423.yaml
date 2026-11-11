@@ -1,0 +1,14 @@
+id: U-0423
+question: 'Reality Shield: duration is not given, ''Everyone within 30m'' is radius or diameter, and ''immune to all damage, zombies and new poison'' leaves existing poison running?'
+why_it_matters: Admin tool, but decides nuke counters and poison cure.
+readings:
+  A: permanent until removed
+  B: timed (undisclosed)
+  C: radius 30m
+  D: diameter 30m
+parameter: reality_shield_duration_s
+sweep_range: 60 to 86400 s; no time stated, event scale bound
+resolution_paths:
+- Admin statement.
+priority: low
+status: open

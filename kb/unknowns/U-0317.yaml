@@ -1,0 +1,11 @@
+id: U-0317
+question: What does 'Poison Dart ... +10 damage for two uses' mean for a damage-over-time item?
+why_it_matters: Enchanted dart poison could add 10 HP in total, 10 HP per use, or an instant hit.
+readings:
+  A: each enchanted dart poisons for 30 HP total over the same 30min
+  B: each enchanted dart poisons for 20 HP over 30min plus an immediate 10 HP
+  C: each enchanted dart poisons for 30 HP with the interval kept at 1min 30s (so 45min)
+resolution_paths:
+- 'VOD: enchanted dart on a contestant.'
+priority: medium
+status: open

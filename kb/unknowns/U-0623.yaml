@@ -1,0 +1,11 @@
+id: U-0623
+question: 'Healing ability: can it target the healer, an already full HP target, a non-poisoned target? Is the cooldown and token spent anyway?'
+why_it_matters: Decides whether the blood token per heal can be farmed and how the 10min cooldown behaves.
+readings:
+  A: targets must be others; any target; token and cooldown spent whatever the effect
+  B: target must benefit (HP below max or poisoned or bleeding); cooldown and token spent only then
+  C: A but self allowed
+resolution_paths:
+- 'VOD: healer using the ability on a full HP target.'
+priority: medium
+status: open

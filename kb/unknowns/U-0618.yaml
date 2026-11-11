@@ -1,0 +1,11 @@
+id: U-0618
+question: 'Protection potion heal ''less 50%'': rounding when the tier is odd (Small potion 5 HP)?'
+why_it_matters: Small potion gives 2, 3 or 2.5 HP.
+readings:
+  A: floor(h/2)
+  B: ceil(h/2)
+  C: h/2 exact fraction
+resolution_paths:
+- 'VOD: Protection contestant drinking a Small potion.'
+priority: low
+status: open

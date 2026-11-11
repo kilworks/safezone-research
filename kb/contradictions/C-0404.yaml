@@ -1,0 +1,14 @@
+id: C-0404
+summary: 'Craft destruction: ''crafted items'' on the Zombies page versus only ''unique crafts'' destroyed by ''Zombie hits'' on the Ingenuity page.'
+sides:
+- url: https://iceposeidon.com/safezone/wiki/zombies
+  snapshot: '2026-11-11'
+  quote: a 40% chance to destroy crafted items
+  clause: wiki-zombies-004
+- url: https://iceposeidon.com/safezone/wiki/sigils/ingenuity#rules
+  snapshot: '2026-11-11'
+  quote: Unique crafts cannot be traded, stolen or looted, and have a 40% chance to be destroyed by Zombie hits.
+  clause: wiki-sigils-ingenuity-012
+mechanics:
+- M-0444
+status: open

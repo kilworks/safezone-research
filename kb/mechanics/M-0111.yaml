@@ -1,0 +1,25 @@
+id: M-0111
+name: Viewer who kills the crown holder gets Cx-Bucks bonus
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki#death
+  snapshot: '2026-11-11'
+  clause: wiki-014
+  quote: A viewer who kills the crown holder receives a Cx-Bucks bonus equal to 20% of the attack's purchase price.
+formal:
+  readings:
+    A: bonus = floor(0.2*p)
+    B: bonus = ceil(0.2*p)
+    C: bonus = 0.2*p
+  domain: p = attack price in Cx-Bucks
+  parameters:
+    attack_price: UNKNOWN, see U-0014
+    bonus_rate: '0.2'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0106
+- U-0014

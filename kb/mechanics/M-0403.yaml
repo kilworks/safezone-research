@@ -1,0 +1,33 @@
+id: M-0403
+name: Viewer missile aim and landing
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#missile
+  snapshot: '2026-11-11'
+  quote: Viewers aim it at a point inside a safe zone.
+  clause: wiki-attacks-004
+- url: https://iceposeidon.com/safezone/wiki/attacks#missile
+  snapshot: '2026-11-11'
+  quote: It lands 3min later at a random spot near that point.
+  clause: wiki-attacks-005
+- url: https://iceposeidon.com/safezone/wiki/attacks#missile
+  snapshot: '2026-11-11'
+  quote: The whole blast stays within 100m (328ft) of the aim point.
+  clause: wiki-attacks-006
+formal:
+  readings:
+    A: aim point p inside a safe zone; landing at t+180s at p+o, |o| <= 75 (blast within 100m)
+    B: same with |o| <= 100
+  domain: p inside a safe zone; o random offset; t = fire time in seconds
+  parameters:
+    flight_time: 180 s
+    max_blast_extent: 100 m
+    price_cx_bucks: UNKNOWN, see U-0014
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0400
+- U-0014

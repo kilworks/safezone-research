@@ -1,0 +1,11 @@
+id: U-0321
+question: Which merchant purchases need a free inventory slot ('Items need a free inventory slot')?
+why_it_matters: Only items are named; the missile, Deep Cut, Dual Wield, enchantments and upgrades may not need a slot. A care package with a full inventory is not covered.
+readings:
+  A: care package, anti poison, Vulnerability Dart, Sleeping Bag need a slot; missile and upgrades do not
+  B: the missile also needs a slot
+  C: the care package item may go to a weapon slot for a weapon and needs none then
+resolution_paths:
+- 'VOD: purchase with a full inventory.'
+priority: medium
+status: open

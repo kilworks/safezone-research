@@ -1,0 +1,22 @@
+id: M-0601
+name: Sigil pick happens after the event starts
+family: sigil
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-001
+  quote: Each contestant picks one sigil after the event starts.
+formal:
+  readings:
+    A: pick time t_pick(c) > t_start, bounded by an unknown deadline
+  domain: t_pick in seconds from event start
+  parameters:
+    sigil_pick_deadline_s: UNKNOWN, see U-0627
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0627
+notes: Between the event start and the pick the wiki gives no stats or abilities. Passive timers (Healing regeneration, care packages) may start at the pick or at the event start (see U-0007, U-0607).

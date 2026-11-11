@@ -1,0 +1,22 @@
+id: M-0128
+name: Shield does not block zone, unsafe circle or robot; Safety bubble and Reality Shield do
+family: damage
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  clause: wiki-damage-058
+  quote: A Shield does not block zone, unsafe circle or robot damage.
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  clause: wiki-damage-059
+  quote: A Safety bubble and a Reality Shield do.
+formal:
+  readings:
+    A: blocks(Shield) excludes {outside circle, unsafe circle, robot}; blocks(Safety bubble) and blocks(Reality Shield) include them
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: DOCUMENTED
+notes: 'Consistent with the table: the three rows list Safety bubble and no Shield. Reality Shield on those rows relies on M-0127.'

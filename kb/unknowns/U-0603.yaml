@@ -1,0 +1,12 @@
+id: U-0603
+question: 'Death 60% cap: if HP is already above 60% of max HP, does the heal lower HP to the cap, do nothing, or is the cap rounded?'
+why_it_matters: A literal cap can remove HP from a healthy Death contestant; also the cap value 0.6*M is fractional when M is not a multiple of 5.
+readings:
+  A: HP' = min(HP + h, 0.6*M), can lower HP
+  B: HP' = max(HP, min(HP + h, 0.6*M)), never lowers
+  C: as B with cap = floor(0.6*M)
+  D: as B with cap = ceil(0.6*M)
+resolution_paths:
+- 'VOD: Death contestant above 60% HP near a death while 20% or fewer are alive.'
+priority: high
+status: open

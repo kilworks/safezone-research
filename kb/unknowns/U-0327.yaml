@@ -1,0 +1,11 @@
+id: U-0327
+question: 'Sleeping Bag: is the 65 s of sleep continuous, what happens when the sleeper leaves the 15m radius, wakes up or is hit, and does waking end the immunity at once?'
+why_it_matters: The first 65 s are the exposed window; leaving range or waking decides whether the counter resets, and the flashbang and damage immunity depend on it.
+readings:
+  A: 65 s must be continuous; leaving 15m or waking resets it and ends the immunity
+  B: 65 s are cumulative over the night
+  C: once reached, immunity lasts until the sleeper wakes, even outside 15m
+resolution_paths:
+- 'VOD: sleeper leaving the bag''s range; a hit at second 30 of sleep.'
+priority: high
+status: open

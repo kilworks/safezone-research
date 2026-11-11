@@ -1,0 +1,13 @@
+id: U-0417
+question: 'Bounty claim: ''The first other contestant to stay within 5m of them for 1min claims it''. Is the 60s continuous (reset when leaving range), cumulative, or does it tolerate short exits? Is the marked contestant''s movement relevant, and are multiple hunters tracked separately?'
+why_it_matters: Decides whether a bounty is claimable by chasing and the expected payout rate.
+readings:
+  A: a continuous 60s counter per hunter, reset on leaving range
+  B: a cumulative 60s counter per hunter
+  C: one shared counter reset when no other contestant is in range
+resolution_paths:
+- VOD of a bounty claim with a moving target.
+priority: critical
+status: open
+related:
+- U-0014

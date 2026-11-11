@@ -1,0 +1,14 @@
+id: U-0121
+question: 'Self-inflicted hits (''hit by your own C4 and landmine''): does the full pipeline run with attacker = defender, including Kick bonus (step 2) and Kick reduction (step 4), and do own-held blockers
+  (Protection, Shield) apply?'
+why_it_matters: Decides the real cost of detonating near yourself.
+readings:
+  A: full pipeline, attacker bonus and defender reduction both apply, Mirror skipped (never your own explosives)
+  B: no Kick bonus on self hits
+  C: own-held Protection or Shield makes it harmless
+resolution_paths:
+- 'VOD: self-detonation by a live contestant.'
+priority: low
+status: open
+related:
+- M-0133

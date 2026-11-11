@@ -1,0 +1,39 @@
+id: M-0414
+name: Airstrike counters
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#airstrike
+  snapshot: '2026-11-11'
+  quote: A Shield blocks the fire.
+  clause: wiki-attacks-031
+- url: https://iceposeidon.com/safezone/wiki/attacks#airstrike
+  snapshot: '2026-11-11'
+  quote: A Guardian angel and a Hazmat suit do not help.
+  clause: wiki-attacks-032
+- url: https://iceposeidon.com/safezone/wiki/attacks#airstrike
+  snapshot: '2026-11-11'
+  quote: The Protection sigil is immune to the strike and its fire.
+  clause: wiki-attacks-033
+- url: https://iceposeidon.com/safezone/wiki/attacks#airstrike
+  snapshot: '2026-11-11'
+  quote: A Flak jacket blocks the strike, but not the fire.
+  clause: wiki-attacks-034
+- url: https://iceposeidon.com/safezone/wiki/attacks#airstrike
+  snapshot: '2026-11-11'
+  quote: An EMP removes the strike and its fire.
+  clause: wiki-attacks-035
+formal:
+  readings:
+    A: 'fire: blocked by Shield; Guardian angel and Hazmat suit do not help; Protection immune to strike and fire; Flak jacket blocks the strike but not the fire; EMP removes strike and fire'
+  domain: per contestant, per phase (strike, fire)
+  parameters: {}
+depends_on:
+- M-0412
+- M-0413
+interacts_with:
+- M-0401
+label: DOCUMENTED
+open_unknowns: []
+notes: 'Damage page: airstrike fire blocked by Shield, Safety bubble, Sleeping Bag, Protection, Body armor (absorbs): consistent with the attacks page, which names fewer.'

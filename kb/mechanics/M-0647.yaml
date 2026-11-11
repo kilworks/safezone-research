@@ -1,0 +1,27 @@
+id: M-0647
+name: Protection retribution on death
+family: sigil
+sigils:
+- protection
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/protection#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-protection-018
+  quote: 'Retribution: when you die, everyone within 30m (98ft) of you takes 20 HP.'
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  clause: wiki-damage-031
+  quote: '| Protection retribution | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (absorbs)'
+formal:
+  readings:
+    A: 'on death of a Protection contestant: every other contestant within 30 m takes 20 HP (blockers of the damage table apply)'
+  domain: metres, HP
+  parameters:
+    radius_m: '30'
+    damage_hp: '20'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0002
+notes: Other Protection contestants are immune. Whether a Protection contestant revived later is unaffected is not stated. Whether the killer or the dying contestant is included is not stated.

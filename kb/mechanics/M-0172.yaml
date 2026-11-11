@@ -1,0 +1,22 @@
+id: M-0172
+name: Poison ends when all damage is done or when cured
+family: poison
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/poison
+  snapshot: '2026-11-11'
+  clause: wiki-poison-003
+  quote: Poison ends only when it has done all its damage, or if it is cured.
+formal:
+  readings:
+    A: poisoned := false iff damage_dealt = total or cure event
+  parameters:
+    total_hp: UNKNOWN, see U-0116
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0116
+- U-0117
+notes: Whether a blocked tick counts as damage done is U-0117.

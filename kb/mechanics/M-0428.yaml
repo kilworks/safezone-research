@@ -1,0 +1,39 @@
+id: M-0428
+name: Cyclops damage taken
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#cyclops
+  snapshot: '2026-11-11'
+  quote: Contestants attack it with a bow, knife, long sword, Zarok's axe or machete within the weapon's range, or with a drone from anywhere.
+  clause: wiki-attacks-069
+- url: https://iceposeidon.com/safezone/wiki/attacks#cyclops
+  snapshot: '2026-11-11'
+  quote: 'All damage hurts it: weapons, drones, C4, landmines, staffs, nukes, missiles, airstrikes, tear gas and gunship bombs.'
+  clause: wiki-attacks-070
+- url: https://iceposeidon.com/safezone/wiki/attacks#cyclops
+  snapshot: '2026-11-11'
+  quote: Outside the safe zones it takes zone damage.
+  clause: wiki-attacks-071
+- url: https://iceposeidon.com/safezone/wiki/attacks#cyclops
+  snapshot: '2026-11-11'
+  quote: It cannot attack into or out of a smoke bomb cloud.
+  clause: wiki-attacks-075
+- url: https://iceposeidon.com/safezone/wiki/attacks#cyclops
+  snapshot: '2026-11-11'
+  quote: Weapons and drones cannot hit it inside one unless you hold Thermal goggles, but blasts and damage areas still hurt it.
+  clause: wiki-attacks-076
+formal:
+  readings:
+    A: bow, knife, long sword, Zarok's axe, machete within range, or drone at any range; all damage types hurt it; zone damage outside safe zones; smoke bomb prevents attacks in both directions, weapons and drones hit only with Thermal goggles, blasts and areas still hurt
+  domain: cyclops hp 0..200
+  parameters: {}
+depends_on:
+- M-0426
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0422
+- U-0002
+notes: 'Compare weapon list with the weapons page: only 5 melee/ranged listed here.'

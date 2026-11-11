@@ -1,0 +1,17 @@
+id: U-0111
+question: 'Offline grace timer semantics: is it measured from the last GPS update only, does a later GPS update reset it, and is ''live on Kick'' evaluated at the moment the GPS stops (A), at the expiry
+  (B), or continuously with fractional accrual (C)?'
+why_it_matters: A stream drop or reconnect during an outage changes the grace between 15 and 30 min; ties to U-0012 detection latency.
+readings:
+  A: grace = 30 min if live at the last GPS update, else 15 min, fixed at that moment
+  B: 'live status is read at the end of 15 min: if live then, the deadline moves to 30 min'
+  C: elapsed offline time is accumulated at weight 1/15 or 1/30 per minute depending on live status at each instant
+resolution_paths:
+- 'VOD: phone off while live, stream ends at minute 10, damage start time.'
+- Organizer statement.
+priority: high
+status: open
+related:
+- U-0012
+- M-0103
+- M-0104

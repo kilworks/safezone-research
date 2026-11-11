@@ -1,0 +1,28 @@
+id: M-0646
+name: Protection bandages last 1.1x as long
+family: healing
+sigils:
+- protection
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/protection#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-protection-017
+  quote: Bandages last 1.1x as long.
+- url: https://iceposeidon.com/safezone/wiki/items#bandage
+  snapshot: '2026-11-11'
+  clause: wiki-items-049
+  quote: Heals 10 HP over 2min.
+formal:
+  readings:
+    A: 'bandage: 10 HP total over 132 s'
+    B: 'bandage: 11 HP total over 132 s at the old rate'
+  domain: seconds, HP
+  parameters:
+    duration_factor: '1.1'
+    base_duration_s: '120'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0619
+notes: 'Cross reference: the bandage item page (heals 10 HP over 2 min).'

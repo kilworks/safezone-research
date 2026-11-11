@@ -1,0 +1,22 @@
+id: M-0115
+name: Items that do not fit stay in the gravestone
+family: revival
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki#death
+  snapshot: '2026-11-11'
+  clause: wiki-018
+  quote: Items that do not fit stay in the gravestone.
+formal:
+  readings:
+    A: leftover = items(grave) minus the fitting subset; leftover remains in the grave
+    B: leftover is dropped on the ground
+  parameters:
+    inventory_capacity: UNKNOWN, see U-0109
+depends_on:
+- M-0114
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0109

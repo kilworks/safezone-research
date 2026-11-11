@@ -1,0 +1,26 @@
+id: M-0107
+name: Gravestone creation at death
+family: revival
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki#damage
+  snapshot: '2026-11-11'
+  clause: wiki-007
+  quote: When you die, a gravestone with your items appears where you were last seen.
+- url: https://iceposeidon.com/safezone/wiki#death
+  snapshot: '2026-11-11'
+  clause: wiki-011
+  quote: When you die, you leave behind a gravestone containing any items you had.
+formal:
+  readings:
+    A: 'on death: gravestone(pos = position at death, items = all items carried)'
+    B: gravestone(pos = last GPS fix before death)
+  domain: all contestants
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0124
+notes: The two sentences are the same rule (intro and Death/Revival section). Blood tokens in the grave are covered by M-0109.

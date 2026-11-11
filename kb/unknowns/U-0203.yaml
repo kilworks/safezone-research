@@ -1,0 +1,15 @@
+id: U-0203
+question: Do health potions, bandage ticks and Eddie's heal cap at max HP?
+why_it_matters: The heal-over-max question decides whether potions are wasted at high HP and whether Eddie's heal is partly lost.
+readings:
+  A: hp = min(maxHP, hp + h)
+  B: hp can exceed max HP
+resolution_paths:
+- 'VOD: drinking a potion at full or near full HP.'
+- Healing page says regeneration is 'up to your max HP' (explicit only there).
+priority: medium
+status: open
+related:
+- M-0207
+- M-0208
+- M-0233

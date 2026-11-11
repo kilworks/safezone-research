@@ -1,0 +1,21 @@
+id: M-0135
+name: Mirror forcefield reflectable source list
+family: damage
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  clause: wiki-damage-070
+  quote: It only reflects Poison Darts, fake gravestones, bows, wizard staffs, knives, long swords, Zarok's axes, machetes, drones, C4, landmines, flashbangs and fake chests, and never your own explosives.
+formal:
+  readings:
+    A: reflect iff source in {Poison Dart, fake gravestone, bow, wizard staff, knife, long sword, Zarok's axe, machete, drone, C4, landmine, flashbang, fake chest} and not own explosive
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0120
+label: CONDITIONAL
+open_unknowns:
+- U-0005
+notes: 'The table lists Mirror forcefield (reflects) also on the Trapped gift row, which this list omits: C-0101.'

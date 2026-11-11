@@ -1,0 +1,31 @@
+id: M-0320
+name: Merchant overview and currency
+family: economy
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/merchant
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-001
+  quote: The merchant sells items, upgrades and enchantments for blood tokens.
+- url: https://iceposeidon.com/safezone/wiki/merchant
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-002
+  quote: Every sigil can buy from it.
+- url: https://iceposeidon.com/safezone/wiki/merchant#paying
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-009
+  quote: You pay with blood tokens only.
+- url: https://iceposeidon.com/safezone/wiki/merchant#paying
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-010
+  quote: Each sigil earns them in its own way.
+formal:
+  readings:
+    A: the merchant sells items, upgrades and enchantments; every sigil can buy; payment is in blood tokens only; each sigil earns tokens in its own way
+  domain: blood tokens (integers)
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: DOCUMENTED
+notes: Earning rules are on the sigil pages.

@@ -1,0 +1,31 @@
+id: M-0406
+name: Admin nuke
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#nuke
+  snapshot: '2026-11-11'
+  quote: Admins can also launch it.
+  clause: wiki-attacks-013
+- url: https://iceposeidon.com/safezone/wiki/attacks#nuke
+  snapshot: '2026-11-11'
+  quote: An admin nuke flies for 5min unless the admin sets its flight time, damage and radius.
+  clause: wiki-attacks-014
+- url: https://iceposeidon.com/safezone/wiki/attacks#nuke
+  snapshot: '2026-11-11'
+  quote: Everyone within 100m (328ft) takes 20 HP, unless an admin set other numbers.
+  clause: wiki-attacks-015
+formal:
+  readings:
+    A: 'admin launch: flight 300 s, damage 20 HP, radius 100 m unless the admin sets flight, damage and radius'
+  domain: admin chosen values positive
+  parameters:
+    default_flight_time: 300 s
+    default_damage: 20 HP
+    default_radius: 100 m
+depends_on: []
+interacts_with: []
+label: DOCUMENTED
+open_unknowns: []
+notes: EMP wording names viewer nukes only, so admin nukes are not destroyed by EMP by the text.

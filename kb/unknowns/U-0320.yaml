@@ -1,0 +1,13 @@
+id: U-0320
+question: 'Merchant return delay: is ''after 30min to 1h'' measured from the departure or from the arrival, and what is its distribution within the range?'
+why_it_matters: Sets how long contestants must save blood tokens between visits (away 30 to 60 min versus 15 to 45 min) and the long-run share of time the merchant is present.
+readings:
+  A: uniform over [30, 60] min from the departure
+  B: uniform over [30, 60] min from the arrival (away 15 to 45 min)
+  C: fixed or non-uniform inside [30, 60] min from the departure
+parameter: merchant_return_delay_min
+sweep_range: 30 to 60 min as stated, reading A or B; sweep distribution shape (uniform, endpoints only)
+resolution_paths:
+- 'VOD: timestamps of merchant departure and next arrival over several cycles.'
+priority: high
+status: open

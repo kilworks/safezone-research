@@ -1,0 +1,33 @@
+id: M-0604
+name: 'Necromancy base stats: 100 max HP, 3 inventory slots'
+family: sigil
+sigils:
+- necromancy
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/necromancy
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-necromancy-002
+  quote: Max HP
+- url: https://iceposeidon.com/safezone/wiki/sigils/necromancy
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-necromancy-003
+  quote: 100 HP
+- url: https://iceposeidon.com/safezone/wiki/sigils/necromancy
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-necromancy-004
+  quote: Slots
+- url: https://iceposeidon.com/safezone/wiki/sigils/necromancy
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-necromancy-005
+  quote: '3'
+formal:
+  readings:
+    A: maxHP = 100; inventory_slots = 3
+  domain: start of event
+  parameters:
+    max_hp: '100'
+    inventory_slots: '3'
+depends_on: []
+interacts_with: []
+label: DOCUMENTED
+notes: Merchant upgrades (+10 max HP, inventory slots) change these during play; this record is the base value only. The merchant page caps slots at 13, or 20 for Endurance.

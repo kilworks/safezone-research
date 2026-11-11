@@ -1,0 +1,20 @@
+id: M-0127
+name: Reality Shield and Body armor header sentence (scrambled)
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  clause: wiki-damage-002
+  quote: Reality Shield block every kind of damage. absorbs every kind of damage.
+formal:
+  readings:
+    A: 'Reality Shield: blocks every kind of damage; Body armor: absorbs every kind of damage'
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0122
+notes: The sentence is garbled in the snapshot ('Reality Shield block every kind of damage. absorbs every kind of damage.'); the table has no Reality Shield column.

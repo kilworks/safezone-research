@@ -1,0 +1,60 @@
+id: M-0324
+name: Merchant base price list
+family: economy
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/merchant#items
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-012
+  quote: 'Care package: 10 blood tokens.'
+- url: https://iceposeidon.com/safezone/wiki/merchant#items
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-014
+  quote: 'Anti poison: 12 blood tokens.'
+- url: https://iceposeidon.com/safezone/wiki/merchant#items
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-015
+  quote: 'Vulnerability Dart: 25 blood tokens.'
+- url: https://iceposeidon.com/safezone/wiki/merchant#items
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-020
+  quote: 'Sleeping Bag: 30 blood tokens.'
+- url: https://iceposeidon.com/safezone/wiki/merchant#items
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-030
+  quote: 'Missile: 10 blood tokens.'
+- url: https://iceposeidon.com/safezone/wiki/merchant#upgrades
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-038
+  quote: 'Dual Wield: 50 blood tokens.'
+- url: https://iceposeidon.com/safezone/wiki/merchant#upgrades
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-042
+  quote: 'Deep Cut: 20 blood tokens.'
+- url: https://iceposeidon.com/safezone/wiki/merchant#enchantments
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-046
+  quote: 'Weapon enchantment: 15 blood tokens.'
+- url: https://iceposeidon.com/safezone/wiki/merchant#enchantments
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-057
+  quote: 'Armor enchantment: 30 blood tokens.'
+formal:
+  readings:
+    A: fixed base prices in blood tokens, before any Ingenuity surcharge
+  domain: blood tokens
+  parameters:
+    care_package: '10'
+    anti_poison: '12'
+    vulnerability_dart: '25'
+    sleeping_bag: '30'
+    missile: '10'
+    dual_wield: '50'
+    deep_cut: '20'
+    weapon_enchantment: '15'
+    armor_enchantment: '30'
+depends_on: []
+interacts_with: []
+label: DOCUMENTED
+notes: Ladder prices (slots, max HP) are M-0332 and M-0333. Ingenuity contestants pay more, see M-0323.

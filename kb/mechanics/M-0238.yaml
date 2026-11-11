@@ -1,0 +1,20 @@
+id: M-0238
+name: Mirror reflects a fake chest
+family: items
+sigils:
+- trolling
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#mirror_forcefield
+  snapshot: '2026-11-11'
+  clause: wiki-items-056
+  quote: A reflected fake chest also locks the troll out of chests instead of you.
+formal:
+  readings:
+    A: a reflected fake chest locks the troll out of chests, not the target
+  domain: fake chest event
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0237
+label: DOCUMENTED
+open_unknowns: []

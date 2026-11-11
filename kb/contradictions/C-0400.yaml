@@ -1,0 +1,24 @@
+id: C-0400
+summary: 'Blocker lists differ: the attacks page names Gas mask for tear gas, Flak jacket for gunship bombs, while the damage page also lists Shield, Safety bubble, Sleeping Bag and Body armor for the same sources.'
+sides:
+- url: https://iceposeidon.com/safezone/wiki/attacks#tear-gas
+  snapshot: '2026-11-11'
+  quote: A Gas mask blocks it.
+  clause: wiki-attacks-025
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  quote: '| Tear gas | Shield, Safety bubble, Sleeping Bag, Gas mask, Body armor (absorbs)'
+  clause: wiki-damage-009
+- url: https://iceposeidon.com/safezone/wiki/attacks#gunship
+  snapshot: '2026-11-11'
+  quote: A Flak jacket blocks one bomb.
+  clause: wiki-attacks-041
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  quote: '| Gunship bomb | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (absorbs)'
+  clause: wiki-damage-027
+mechanics:
+- M-0404
+- M-0411
+- M-0417
+status: open

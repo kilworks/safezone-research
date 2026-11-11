@@ -1,0 +1,22 @@
+id: M-0206
+name: Effects that do not count toward the cap
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#effects
+  snapshot: '2026-11-11'
+  clause: wiki-items-007
+  quote: 'These do not count: Safety Bubbles, smoke bombs, bandages, crafts, merchant upgrades, and effects that do not come from using an item, such as a Greed chest shield.'
+formal:
+  readings:
+    A: 'not counted = Safety Bubbles, smoke bombs, bandages, crafts, merchant upgrades, and effects not coming from using an item (example: Greed chest shield)'
+  domain: set of effect kinds
+  parameters: {}
+depends_on:
+- M-0203
+interacts_with:
+- M-0205
+label: DOCUMENTED
+open_unknowns: []
+notes: A Greed chest shield is a separate effect from the Shield item; whether it blocks like a Shield belongs to the Greed page.

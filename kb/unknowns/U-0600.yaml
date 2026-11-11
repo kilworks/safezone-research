@@ -1,0 +1,12 @@
+id: U-0600
+question: 'Death gravestone rob heal: 5% of max HP, how is a fractional result rounded (max HP is 100 at base but the merchant sells +10 max HP steps, so 5% of 110 is 5.5)?'
+why_it_matters: Changes every rob heal by up to 1 HP once max HP is not a multiple of 20; matters for Death sustain.
+readings:
+  A: heal = floor(M*5/100)
+  B: heal = ceil(M*5/100)
+  C: heal = round half up of M*5/100
+  D: fractional HP kept exactly
+resolution_paths:
+- 'VOD: Death contestant with 110 max HP robbing a gravestone shows +5 (A), +6 (B or C) or +5.5 (D).'
+priority: medium
+status: open

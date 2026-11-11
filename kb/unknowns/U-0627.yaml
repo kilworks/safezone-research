@@ -1,0 +1,9 @@
+id: U-0627
+question: 'Sigil pick: is there a deadline after the event start, and what applies to a contestant who has not picked (base stats, no ability)?'
+why_it_matters: Delay costs the sigil's passive timers and abilities; no pick may leave a contestant without sigil effects.
+parameter: sigil_pick_deadline_s
+sweep_range: '0 to the event duration (U-0009): 0 means the pick is already done at the event start, the upper bound is the longest possible delay.'
+resolution_paths:
+- Organizer statement; VOD of the pick screen.
+priority: medium
+status: open

@@ -1,0 +1,12 @@
+id: U-0611
+question: 'Necromancy summon ''up to 3 times every 6h'': rolling window, fixed 6h blocks, or three charges refilled on a timer?'
+why_it_matters: Bounds zombies per hour and blood tokens from summons.
+readings:
+  A: 'rolling: at most 3 summons in any 6h interval'
+  B: 'fixed blocks: counter resets at multiples of 6h from event start'
+  C: counter resets 6h after the first summon of each batch
+  D: one charge refills every 2h
+resolution_paths:
+- 'VOD: summon attempts at a 4th use inside and just outside 6h from the first.'
+priority: medium
+status: open

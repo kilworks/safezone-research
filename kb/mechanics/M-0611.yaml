@@ -1,0 +1,33 @@
+id: M-0611
+name: 'Death gravestone rob: heal 5% of max HP'
+family: sigil
+sigils:
+- death
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/death#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-death-007
+  quote: Rob a gravestone within 10m (33ft) to heal 5% of your max HP.
+- url: https://iceposeidon.com/safezone/wiki/sigils/death#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-death-008
+  quote: Empty gravestones can be robbed too.
+- url: https://iceposeidon.com/safezone/wiki/sigils/death#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-death-009
+  quote: If you are the first to loot an item or blood tokens from a gravestone, you also rob it.
+formal:
+  readings:
+    A: heal = floor(M*5/100)
+    B: heal = ceil(M*5/100)
+    C: heal = round half up of M*5/100
+    D: heal = M*5/100 exact fraction
+  domain: M = max HP, integer, 100 at base; distance to the gravestone <= 10 m
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0600
+- U-0606
+notes: At M = 100 all readings give 5 HP. Cap at max HP is not stated. Empty gravestones can be robbed too; whether an empty rob still pays the heal and tokens is not stated.

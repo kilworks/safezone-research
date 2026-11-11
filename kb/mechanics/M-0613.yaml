@@ -1,0 +1,24 @@
+id: M-0613
+name: Death heal per elimination within 50m
+family: sigil
+sigils:
+- death
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/death#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-death-011
+  quote: When a contestant dies within 50m (164ft) of you, you heal 1 HP for every contestant eliminated so far, them included.
+formal:
+  readings:
+    A: heal = D_events (death events so far including this one)
+    B: heal = D_dead_now (currently dead, victim included)
+    C: heal = D_distinct (distinct contestants who died at least once)
+  domain: integer 1 <= heal <= N; victim within 50 m
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0601
+- U-0009
+notes: Needs the contestant total (U-0009) for the upper bound. Heal repeated for each death near the Death contestant. Cap at max HP not stated here.

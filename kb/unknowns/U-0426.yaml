@@ -1,0 +1,14 @@
+id: U-0426
+question: 'Potion break roll: ''10% chance to break one of your health potions''. Per drain tick, per encounter or per zombie? Which potion is broken, and is a roll made when no potion is held or when drain is blocked?'
+why_it_matters: A per-tick roll would break about one potion per 100s next to a zombie; per encounter far fewer.
+readings:
+  A: one roll per drain tick per zombie
+  B: one roll per zombie per contestant (first contact)
+  C: one roll per drain event only when HP is actually lost
+resolution_paths:
+- 'VOD: observe the event live with an on-screen timer.'
+priority: medium
+status: open
+related:
+- U-0008
+- U-0425

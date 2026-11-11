@@ -1,0 +1,26 @@
+id: M-0411
+name: Tear gas counters
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#tear-gas
+  snapshot: '2026-11-11'
+  quote: A Gas mask blocks it.
+  clause: wiki-attacks-025
+- url: https://iceposeidon.com/safezone/wiki/attacks#tear-gas
+  snapshot: '2026-11-11'
+  quote: Viewers cannot send tear gas while an EMP is active.
+  clause: wiki-attacks-026
+formal:
+  readings:
+    A: Gas mask blocks tear gas; no tear gas can be sent while an EMP is active
+  domain: boolean per contestant
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0400
+label: CONDITIONAL
+open_unknowns:
+- U-0401
+notes: Damage page lists Shield, Safety bubble, Sleeping Bag and Body armor as well; see C-0400.

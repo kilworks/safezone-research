@@ -1,0 +1,31 @@
+id: M-0339
+name: Armor enchantment and decay
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/merchant#enchantments
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-057
+  quote: 'Armor enchantment: 30 blood tokens. +10 durability, up to 45.'
+- url: https://iceposeidon.com/safezone/wiki/merchant#enchantments
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-058
+  quote: It then loses one durability every twenty minutes, down to 15.
+formal:
+  readings:
+    A: 30 tokens; +10 durability, up to 45; it then loses 1 durability every 20 min, down to 15
+  domain: durability integer, minutes
+  parameters:
+    armor_enchant_cost_tokens: '30'
+    armor_enchant_bonus: '10'
+    armor_cap: '45'
+    armor_decay_interval_min: '20'
+    armor_decay_floor: '15'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0338
+- U-0339
+notes: Base armor durability is on the Body Armor page ('Absorbs up to 15 HP of damage' there), not on this page.

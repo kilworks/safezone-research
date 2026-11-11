@@ -1,0 +1,9 @@
+id: U-0612
+question: How long do summoned, death and horde-bonus zombies live ('A zombie disappears when its time runs out')?
+why_it_matters: Lifetime caps zombie drain and Necromancy blood-token income. Only the guard zombie has a stated duration (1h).
+parameter: zombie_lifetime_s
+sweep_range: '60 to 86400 s: 1 min as a floor for a zombie to matter, one full day as a ceiling above any event length; anchor is the 3600 s guard zombie.'
+resolution_paths:
+- 'VOD: time between a summon and the zombie vanishing.'
+priority: high
+status: open

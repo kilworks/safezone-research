@@ -1,0 +1,23 @@
+id: M-0452
+name: Landmine and C4 versus zombies
+family: zombies
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/zombies#deaths
+  snapshot: '2026-11-11'
+  quote: A zombie that walks within range of a Landmine sets it off.
+  clause: wiki-zombies-014
+- url: https://iceposeidon.com/safezone/wiki/zombies#deaths
+  snapshot: '2026-11-11'
+  quote: Zombies do not set off C4.
+  clause: wiki-zombies-015
+formal:
+  readings:
+    A: a zombie walking within a landmine's range triggers it; a zombie never triggers C4
+  domain: boolean
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: DOCUMENTED
+open_unknowns: []

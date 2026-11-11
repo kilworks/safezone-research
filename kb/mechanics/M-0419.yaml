@@ -1,0 +1,31 @@
+id: M-0419
+name: Healing circle
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#healing-circle
+  snapshot: '2026-11-11'
+  quote: A 50m (164ft) circle appears at a random point in the safe zones.
+  clause: wiki-attacks-046
+- url: https://iceposeidon.com/safezone/wiki/attacks#healing-circle
+  snapshot: '2026-11-11'
+  quote: 1min later, every living contestant inside heals 25 HP.
+  clause: wiki-attacks-047
+formal:
+  readings:
+    A: circle radius 50m at a random point; at +60s each living contestant inside gains min(25, maxhp - hp)
+    B: diameter 50m
+  domain: t=60 s
+  parameters:
+    delay: 60 s
+    heal: 25 HP
+    size: 50 m
+    price_cx_bucks: UNKNOWN, see U-0014
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0413
+- U-0014
+notes: Piety tokens count healing circles (Piety page).

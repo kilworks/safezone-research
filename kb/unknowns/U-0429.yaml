@@ -1,0 +1,14 @@
+id: U-0429
+question: 'Guard zombie: does a guard zombie stay at its spawn point or chase, is one appearing per Necromancy contestant or per death, does it also drain its owner and the dead, and does it live 1h (Necromancy page) as stated only there?'
+why_it_matters: 'Guard zombies drain 2 HP/5s (0.4 HP/s) up to 30 HP: 75s for a full cap.'
+readings:
+  A: stationary for 1h, drains non-Necromancy contestants within 10m
+  B: chases like a normal zombie
+  C: one per death regardless of Necromancy count
+resolution_paths:
+- 'VOD: observe the event live with an on-screen timer.'
+priority: medium
+status: open
+related:
+- U-0008
+- U-0403

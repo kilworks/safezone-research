@@ -1,0 +1,32 @@
+id: M-0207
+name: Health potion heal by tier
+family: healing
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#health_potion
+  snapshot: '2026-11-11'
+  clause: wiki-items-008
+  quote: Usable
+- url: https://iceposeidon.com/safezone/wiki/items#health_potion
+  snapshot: '2026-11-11'
+  clause: wiki-items-009
+  quote: 'Heals by tier: Small 5 HP, Medium 10 HP, Large 20 HP, Gigantic 40 HP.'
+formal:
+  readings:
+    A: hp' = min(maxHP, hp + h)
+    B: hp' = hp + h with no cap at max HP (cap enforced elsewhere or not at all)
+  domain: tier in {Small, Medium, Large, Gigantic}; 0 < hp <= maxHP
+  parameters:
+    Small: 5 HP
+    Medium: 10 HP
+    Large: 20 HP
+    Gigantic: 40 HP
+depends_on: []
+interacts_with:
+- M-0202
+- M-0208
+label: CONDITIONAL
+open_unknowns:
+- U-0203
+notes: 'Piety adds 15% rounded down on its own page: 5->5, 10->11, 20->23, 40->46 under exact integer arithmetic (U-0006 for binary64). Bounty reward gives a random health potion (attacks page).'

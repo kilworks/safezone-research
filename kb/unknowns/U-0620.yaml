@@ -1,0 +1,11 @@
+id: U-0620
+question: 'Protection blood tokens from blocked hits: do airstrike fire ticks, a landmine of its own, and the unlisted immunities (trapped gift, poison, retribution) pay tokens?'
+why_it_matters: Sets Protection blood-token income and whether viewers farm tokens for it.
+readings:
+  A: one token per airstrike impact or gunship bomb only; poison, trapped gift, retribution and the sigil's own landmine pay nothing
+  B: A plus one token per fire tick
+  C: every immunity pays one token except where 'already blocked' applies
+resolution_paths:
+- 'VOD: Protection contestant under an airstrike fire.'
+priority: medium
+status: open

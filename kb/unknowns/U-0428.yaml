@@ -1,0 +1,11 @@
+id: U-0428
+question: 'Summon rate: ''up to 3 times every 6h''. Fixed 6h blocks, a rolling 6h window, or a cooldown after the third use?'
+why_it_matters: Bounds Necromancy income from Summon.
+readings:
+  A: 'rolling window: at most 3 uses in any 6h'
+  B: fixed 6h blocks from the event start
+  C: 6h lockout after the third use
+resolution_paths:
+- VOD of a Necromancy contestant summoning four times.
+priority: low
+status: open

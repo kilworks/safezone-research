@@ -1,0 +1,24 @@
+id: M-0241
+name: Mirror ignores viewer, admin, zone and zombie damage
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#mirror_forcefield
+  snapshot: '2026-11-11'
+  clause: wiki-items-060
+  quote: Never reflects viewer or admin attacks, such as missiles, nukes and gas, or the zone and zombies.
+- url: https://iceposeidon.com/safezone/wiki/items#mirror_forcefield
+  snapshot: '2026-11-11'
+  clause: wiki-items-061
+  quote: These do not use it up.
+formal:
+  readings:
+    A: never reflects viewer or admin attacks (missiles, nukes, gas), zone damage or zombies; these do not use it up
+  domain: damage source kinds
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0235
+label: DOCUMENTED
+open_unknowns: []

@@ -1,0 +1,28 @@
+id: M-0422
+name: Illusion exclusivity and cooldown
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#illusion
+  snapshot: '2026-11-11'
+  quote: Only one illusion can run at a time.
+  clause: wiki-attacks-056
+- url: https://iceposeidon.com/safezone/wiki/attacks#illusion
+  snapshot: '2026-11-11'
+  quote: The next one can start 30min after it ends.
+  clause: wiki-attacks-057
+formal:
+  readings:
+    A: one illusion at a time; a new one may start 30 min after the previous ends
+    B: 30 min after its start
+  domain: t in seconds
+  parameters:
+    cooldown: 1800 s
+    duration: 600 s
+depends_on:
+- M-0420
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0416

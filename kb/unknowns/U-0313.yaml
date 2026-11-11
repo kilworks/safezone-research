@@ -1,0 +1,13 @@
+id: U-0313
+question: 'Wizard staff: does a contestant who is inside the area for only part of the 5s take the full 10 HP or only a share, and do contestants who enter after placement take damage?'
+why_it_matters: Decides whether stepping out of the area fast avoids the damage and whether placing it ahead of a path works.
+readings:
+  A: everyone inside at placement time takes the full 10 HP
+  B: damage accrues only while inside (pro rata by time inside)
+  C: everyone inside at any moment of the 5s takes the full 10 HP once
+resolution_paths:
+- 'VOD: contestant leaving or entering an active staff area.'
+priority: medium
+status: open
+related:
+- U-0010

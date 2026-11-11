@@ -1,0 +1,15 @@
+id: U-0403
+question: 'Zombie lifetime: the Horde lasts 20min and guard zombies 1h (Necromancy page), but what is the lifetime of Summon, Death and Horde-bonus zombies, and of horde zombies counted from release?'
+why_it_matters: '''A zombie disappears when its time runs out'' with no stated time makes total zombie pressure and Necromancy income unbounded or bounded.'
+readings:
+  A: each zombie lives 20min from its own spawn, whatever its source
+  B: only horde zombies expire at 20min; Summon, Death and bonus zombies live to the end of the event
+  C: each source has its own undisclosed time
+parameter: zombie_lifetime_s
+sweep_range: 60 to 86400 s; 20min is the only stated zombie timer, the day bound is the event scale
+resolution_paths:
+- 'VOD: follow a Summon zombie until it vanishes.'
+priority: high
+status: open
+related:
+- U-0008

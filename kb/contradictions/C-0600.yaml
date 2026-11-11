@@ -1,0 +1,18 @@
+id: C-0600
+summary: 'Death ward: the sigil page blocks the first hit from outside the circle or from an unsafe circle with immunity to both for 2min; the damage page prose names only outside-the-circle damage (the damage table lists Death Ward for both rows).'
+sides:
+- url: https://iceposeidon.com/safezone/wiki/sigils/death#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-death-013
+  quote: 'Death ward: the first hit from outside the circle or from an unsafe circle is blocked and you are immune to both for 2min.'
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  clause: wiki-damage-073
+  quote: 'Death Ward: a Death contestant''s first hit from outside the circle is blocked, and damage from outside the circle is blocked for 2min.'
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  clause: wiki-damage-006
+  quote: '| Unsafe circle | Safety bubble, Guardian angel, Death Ward, Hazmat suit (slows), Body armor (absorbs)'
+mechanics:
+- M-0615
+status: open

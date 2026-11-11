@@ -1,0 +1,26 @@
+id: M-0106
+name: 'Speed rule: speed above 30 mph over any 15 s counts as outside'
+family: zone
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki#damage
+  snapshot: '2026-11-11'
+  clause: wiki-010
+  quote: or faster than 30mph (13.41m/s) over any 15s
+formal:
+  readings:
+    A: violation if mean_speed over some 15 s window > 13.41 m/s
+    B: violation if peak speed during any 15 s window > 13.41 m/s
+    C: exact threshold 13.4112 m/s
+  domain: speed in m/s, window 15 s
+  parameters:
+    threshold_ms: '13.41'
+    window_s: '15'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0112
+- U-0113
+notes: Two separate windows (1 min mean at 8.94, 15 s at 13.41). The printed m/s values are rounded from 8.9408 and 13.4112.

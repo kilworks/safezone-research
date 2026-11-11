@@ -1,0 +1,23 @@
+id: M-0143
+name: Damage source 'Poison' and what stops it
+family: damage
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  clause: wiki-damage-008
+  quote: '| Poison | Shield, Safety bubble, Sleeping Bag, Protection, Anti poison, Body armor (absorbs)'
+formal:
+  readings:
+    A: 'blockers(Poison) = {Shield: blocks; Safety bubble: blocks; Sleeping Bag: blocks; Protection: blocks; Anti poison: blocks; Body armor: absorbs}'
+  domain: one hit of source 'Poison'
+  parameters: {}
+depends_on:
+- M-0118
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0117
+- U-0118
+notes: 'Poison page: Protection immune, Anti poison no new poison, Reality Shield no new poison; blocks here mean poison ticks. Mirror is absent because the Poison Dart is the reflected attack (M-0180).'

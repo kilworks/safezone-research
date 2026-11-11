@@ -1,0 +1,22 @@
+id: M-0178
+name: Sleeping in your own Sleeping Bag (poison immunity list)
+family: poison
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/poison#immunity
+  snapshot: '2026-11-11'
+  clause: wiki-poison-009
+  quote: Sleeping in your own Sleeping Bag
+formal:
+  readings:
+    A: 'asleep in own bag: no new poison'
+    B: 'asleep in own bag: poison ticks blocked'
+    C: both
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0118
+notes: Label only, no verb in the snapshot.

@@ -1,0 +1,25 @@
+id: M-0624
+name: 'Endurance restrictions: no trade, no gravestone loot, no drop, no pickup'
+family: items
+sigils:
+- endurance
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/endurance#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-endurance-011
+  quote: You cannot trade, loot gravestones, drop items or pick up dropped items.
+- url: https://iceposeidon.com/safezone/wiki/sigils/endurance#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-endurance-012
+  quote: You can still destroy items, claim chests and take crates.
+formal:
+  readings:
+    A: actions {trade, loot_gravestone, drop_item, pickup_dropped_item} disabled; {destroy_item, claim_chest, take_crate, claim_care_package} enabled
+    B: A, and incoming trade offers from others also refused
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0610
+notes: 'Disables looting gravestones: an Endurance contestant cannot rob or collect items from graves. Claiming care packages is allowed by the earn-tokens rule.'

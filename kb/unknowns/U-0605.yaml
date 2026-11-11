@@ -1,0 +1,11 @@
+id: U-0605
+question: 'Death sigil ''1 blood token whenever another contestant dies'': is there a distance limit (heal uses 50m), and does a revive or second death pay again?'
+why_it_matters: Sets Death blood-token income, which funds merchant purchases.
+readings:
+  A: any death anywhere in the arena
+  B: only deaths within 50m of the Death contestant
+  C: A or B, and a contestant who dies again after a revive pays again
+resolution_paths:
+- 'VOD: Death contestant''s blood token counter after a distant death.'
+priority: medium
+status: open

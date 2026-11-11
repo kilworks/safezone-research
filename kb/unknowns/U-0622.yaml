@@ -1,0 +1,9 @@
+id: U-0622
+question: 'Healing ability ''Heal a nearby contestant'': what is the range?'
+why_it_matters: Range sets how close a healer must stand.
+parameter: healing_ability_range_m
+sweep_range: '1 to 50 m: 1 m as the closest meaningful contact, 50 m matching the largest sigil range stated (Death heal, Necromancy guard trigger); 5 m and 10 m are the other stated ranges.'
+resolution_paths:
+- 'VOD: healer and target at measured distances.'
+priority: medium
+status: open

@@ -1,0 +1,22 @@
+id: M-0232
+name: Thermal goggles see illusion copies
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#thermal_goggles
+  snapshot: '2026-11-11'
+  clause: wiki-items-068
+  quote: 'You also see through illusions: copies of contestants show as copies, not as real contestants.'
+- url: https://iceposeidon.com/safezone/wiki/attacks#illusion
+  snapshot: '2026-11-11'
+  clause: wiki-attacks-052
+  quote: Thermal goggles show them as copies.
+formal:
+  readings:
+    A: while carried, illusion copies show as copies, not as real contestants
+  domain: carry boolean
+  parameters: {}
+depends_on: []
+label: DOCUMENTED
+open_unknowns: []

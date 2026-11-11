@@ -1,0 +1,11 @@
+id: U-0300
+question: Are the range bounds of weapons, traps, the merchant and the sleeping bag (10m, 20m, 50m, 15m) inclusive or exclusive, and is distance Euclidean on the ground?
+why_it_matters: Every 'within Xm' and 'comes within Xm' sentence changes at the boundary; a contestant at exactly X metres is hit under one reading and safe under the other.
+readings:
+  A: inside iff d <= R (inclusive)
+  B: inside iff d < R (exclusive)
+resolution_paths:
+- 'VOD: a contestant at a measured distance equal to the stated radius from a C4 or landmine.'
+- 'REA: shipped distance comparison (client code holds no server logic, RE-0001).'
+priority: medium
+status: open

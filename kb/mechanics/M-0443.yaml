@@ -1,0 +1,24 @@
+id: M-0443
+name: Zombie breaks health potions
+family: zombies
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/zombies
+  snapshot: '2026-11-11'
+  quote: Zombies have a 10% chance to break one of your health potions
+  clause: wiki-zombies-004
+formal:
+  readings:
+    A: p = 0.1 per drain tick
+    B: p = 0.1 per encounter
+    C: p = 0.1 per HP lost
+  domain: p in {0.1}
+  parameters:
+    p: '0.1'
+depends_on:
+- M-0441
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0426

@@ -1,0 +1,25 @@
+id: M-0240
+name: Mirror duration and end
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#mirror_forcefield
+  snapshot: '2026-11-11'
+  clause: wiki-items-058
+  quote: No time limit.
+- url: https://iceposeidon.com/safezone/wiki/items#mirror_forcefield
+  snapshot: '2026-11-11'
+  clause: wiki-items-059
+  quote: Ends when it reflects an attack or when you die.
+formal:
+  readings:
+    A: no timer; ends when it reflects an attack or when you die
+  domain: mirror state
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0235
+- M-0241
+label: DOCUMENTED
+open_unknowns: []

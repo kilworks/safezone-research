@@ -1,0 +1,29 @@
+id: M-0221
+name: Anti poison
+family: poison
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#anti_poison
+  snapshot: '2026-11-11'
+  clause: wiki-items-033
+  quote: Usable
+- url: https://iceposeidon.com/safezone/wiki/items#anti_poison
+  snapshot: '2026-11-11'
+  clause: wiki-items-034
+  quote: Cures poison and makes you immune to it for 10min.
+- url: https://iceposeidon.com/safezone/wiki/poison#immunity
+  snapshot: '2026-11-11'
+  clause: wiki-poison-007
+  quote: 'Anti poison: no new poison while it lasts.'
+formal:
+  readings:
+    A: 'on use: current poison is cured; for 10min no new poison can be applied'
+  domain: t in [0, 600) seconds
+  parameters:
+    duration: 10min
+depends_on: []
+interacts_with:
+- M-0205
+label: DOCUMENTED
+open_unknowns: []

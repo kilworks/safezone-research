@@ -1,0 +1,12 @@
+id: U-0604
+question: 'Death ward: when does the 2h cooldown start (at the blocked hit, at the end of the 2min immunity, or from the sigil pick), is the ward ready at the pick, and which damage ticks count as ''the first hit''?'
+why_it_matters: Fixes how many times the ward can protect over the event (a 2 min window per 2h) and whether zone ticks consume it.
+readings:
+  A: cooldown starts at the first blocked hit; ready from the sigil pick
+  B: cooldown starts when the 2min immunity ends
+  C: ready only 2h after the pick
+  D: 'periodic zone ticks count as hits (see U-0002), E: only discrete attacks count'
+resolution_paths:
+- 'VOD: Death contestant leaving the zone twice in under 2h.'
+priority: high
+status: open

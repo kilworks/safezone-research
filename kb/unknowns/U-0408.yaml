@@ -1,0 +1,14 @@
+id: U-0408
+question: 'Airstrike timeline: impact at 20s, then ''the strip then burns for 5min''. Does the fire last 5min from impact, is the first 1 HP tick at impact or 2s later, and does stepping into the strip during the fire cost HP? Is a fire tick a hit (U-0002)?'
+why_it_matters: 'Total fire damage inside the strip: up to 150 or 149 HP over 5min if standing in it, and whether entering late is punished.'
+readings:
+  A: fire from t=20s to t=320s, first tick at 22s, entry anywhere in that window counts
+  B: fire from t=20s to t=320s, first tick at 20s
+  C: fire timer starts at purchase, so it ends at t=300s
+resolution_paths:
+- 'VOD: observe the event live with an on-screen timer.'
+priority: medium
+status: open
+related:
+- U-0002
+- U-0003

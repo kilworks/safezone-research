@@ -1,0 +1,14 @@
+id: U-0209
+question: Is the 15 HP of Body armor a depleting pool or a per-hit cap, and how is a partly absorbed hit handled?
+why_it_matters: Changes survivability against repeated small hits (zone ticks, poison).
+readings:
+  A: depleting pool of 15 HP, partial absorption of the last hit
+  B: per-hit cap 15 HP, never depleted
+resolution_paths:
+- 'VOD: armor durability after repeated hits.'
+- 'Damage page: ''absorbs what is left, until it breaks'' favors A.'
+priority: high
+status: open
+related:
+- M-0217
+- U-0002

@@ -1,0 +1,27 @@
+id: M-0655
+name: 'Revive window: 10min from the death'
+family: revival
+sigils:
+- healing
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/healing#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-healing-013
+  quote: A revive must happen within 10min of the death.
+- url: https://iceposeidon.com/safezone/wiki#damage
+  snapshot: '2026-11-11'
+  clause: wiki-008
+  quote: revive you within 10min of their death.
+formal:
+  readings:
+    A: revive allowed iff t_now - t_death <= 600 s, t_death of the dead contestant
+    B: t_death of the reviver
+  domain: seconds
+  parameters:
+    window_s: '600'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0011
+notes: 'Boundary (<= or <) is not stated. Compare wiki-012: blood tokens in the grave stay locked while revival is possible.'

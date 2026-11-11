@@ -1,0 +1,30 @@
+id: M-0453
+name: Ingenuity Zombie Killer
+family: zombies
+sigils:
+- ingenuity
+sources:
+- url: https://iceposeidon.com/safezone/wiki/zombies#deaths
+  snapshot: '2026-11-11'
+  quote: An Ingenuity Zombie Killer kills the next ten zombies that come within 10m (33ft) of its owner.
+  clause: wiki-zombies-016
+- url: https://iceposeidon.com/safezone/wiki/zombies#deaths
+  snapshot: '2026-11-11'
+  quote: It has no time limit.
+  clause: wiki-zombies-017
+- url: https://iceposeidon.com/safezone/wiki/zombies#defence
+  snapshot: '2026-11-11'
+  quote: An Ingenuity Zombie Killer also stops zombies draining you until it has killed ten.
+  clause: wiki-zombies-020
+formal:
+  readings:
+    A: kills the next 10 zombies that come within 10m of its owner; no time limit; stops zombie drain until ten are killed
+  domain: count 0..10
+  parameters:
+    kills: '10'
+    radius: 10 m
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0430

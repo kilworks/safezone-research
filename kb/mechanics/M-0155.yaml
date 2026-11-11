@@ -1,0 +1,22 @@
+id: M-0155
+name: Damage source 'Landmine' and what stops it
+family: damage
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  clause: wiki-damage-020
+  quote: '| Landmine | Shield, Safety bubble, Sleeping Bag, Protection, Mirror forcefield (reflects), Body armor (absorbs)'
+formal:
+  readings:
+    A: 'blockers(Landmine) = {Shield: blocks; Safety bubble: blocks; Sleeping Bag: blocks; Protection: blocks; Mirror forcefield: reflects; Body armor: absorbs}'
+  domain: one hit of source 'Landmine'
+  parameters: {}
+depends_on:
+- M-0118
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0005
+notes: Attacker Kick bonus applies to this source (step 2 list).

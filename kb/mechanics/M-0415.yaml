@@ -1,0 +1,37 @@
+id: M-0415
+name: Gunship duration and bomb cadence
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#gunship
+  snapshot: '2026-11-11'
+  quote: The buyer gets a gunship for 5min.
+  clause: wiki-attacks-036
+- url: https://iceposeidon.com/safezone/wiki/attacks#gunship
+  snapshot: '2026-11-11'
+  quote: Its target circle sweeps around a random safe zone at 75m/s (167.77mph).
+  clause: wiki-attacks-037
+- url: https://iceposeidon.com/safezone/wiki/attacks#gunship
+  snapshot: '2026-11-11'
+  quote: The buyer drops bombs on the target circle, one every 10s.
+  clause: wiki-attacks-038
+formal:
+  readings:
+    A: gunship exists for 300 s; drops one bomb every 10s (30 bombs)
+    B: 29 bombs
+    C: 31 bombs
+    D: bomb drop is manual with 10s cooldown
+  domain: t in [0, 300] s
+  parameters:
+    duration: 300 s
+    drop_period: 10 s
+    target_circle_speed: 75 m/s
+    price_cx_bucks: UNKNOWN, see U-0014
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0409
+- U-0410
+- U-0014

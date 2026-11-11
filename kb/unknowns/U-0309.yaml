@@ -1,0 +1,10 @@
+id: U-0309
+question: What is the range of 'nearby' for the Poison Dart, Zarok's axe and Huge machete?
+why_it_matters: Other melee weapons state 10m (knife, long sword); these three give no number, so reach and positioning cannot be modelled.
+parameter: nearby_range_m
+sweep_range: '5 to 50 m: the knife and long sword reach 10m, the bow 20m and the staff placement 50m, so a melee ''nearby'' is bounded by 5 and 50'
+resolution_paths:
+- Organizer statement.
+- 'VOD: measured distance of a successful axe or machete hit.'
+priority: high
+status: open

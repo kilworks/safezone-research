@@ -1,0 +1,18 @@
+id: M-0335
+name: Body armor carry limit
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/merchant#upgrades
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-041
+  quote: Carry at most one Body Armor.
+formal:
+  readings:
+    A: at most one Body Armor carried
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: DOCUMENTED
+notes: The Body Armor page says 'Carry at most one, including equipped armor', same rule.

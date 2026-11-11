@@ -1,0 +1,24 @@
+id: M-0239
+name: Mirror against an attacker mirror
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#mirror_forcefield
+  snapshot: '2026-11-11'
+  clause: wiki-items-057
+  quote: 'If the attacker also has one, the attack does nothing and both are used up, except a reflected Poison Dart or fake gravestone: it still poisons the attacker and their own mirror stays.'
+formal:
+  readings:
+    A: 'if the attacker also has a mirror: attack does nothing, both mirrors used up; exception reflected Poison Dart or fake gravestone: poisons the attacker and their mirror stays (defender''s mirror used)'
+    B: 'exception variant: the attacker''s mirror stays and the defender''s mirror is also kept'
+  domain: both parties hold >= 1 mirror
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0235
+- M-0247
+label: CONDITIONAL
+open_unknowns:
+- U-0217
+- U-0215

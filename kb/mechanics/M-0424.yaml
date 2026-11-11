@@ -1,0 +1,37 @@
+id: M-0424
+name: Bounty claim
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#bounty
+  snapshot: '2026-11-11'
+  quote: The first other contestant to stay within 5m (16ft) of them for 1min claims it.
+  clause: wiki-attacks-060
+- url: https://iceposeidon.com/safezone/wiki/attacks#bounty
+  snapshot: '2026-11-11'
+  quote: The hunter heals 10 HP and gets a random health potion.
+  clause: wiki-attacks-061
+- url: https://iceposeidon.com/safezone/wiki/attacks#bounty
+  snapshot: '2026-11-11'
+  quote: If their inventory is full, the potion drops at their feet.
+  clause: wiki-attacks-062
+formal:
+  readings:
+    A: 'continuous: 60s consecutively within 5m of the marked contestant by one hunter'
+    B: cumulative 60s
+    C: shared counter
+  domain: d <= 5 m, 60 s; hunter != marked
+  parameters:
+    range: 5 m
+    hold: 60 s
+    heal: 10 HP
+    reward: one random health potion
+depends_on:
+- M-0423
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0417
+- U-0418
+notes: The potion drops at the hunter's feet if inventory is full.

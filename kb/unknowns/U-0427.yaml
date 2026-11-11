@@ -1,0 +1,14 @@
+id: U-0427
+question: 'Craft destruction roll: ''40% chance to destroy crafted items'' (the Ingenuity page says ''unique crafts'' and ''Zombie hits''). Per drain tick or encounter, one item or all crafts, and are non-unique crafts included?'
+why_it_matters: Decides whether Ingenuity crafts survive zombie contact.
+readings:
+  A: per drain tick, one random craft
+  B: per encounter, one random craft
+  C: per tick, every craft rolls independently
+resolution_paths:
+- 'VOD: observe the event live with an on-screen timer.'
+priority: medium
+status: open
+related:
+- U-0008
+- U-0425

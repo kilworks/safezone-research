@@ -1,0 +1,17 @@
+id: U-0103
+question: '''A hit that gets through always does at least 1 HP'' is step 5 of 7: can fortress (step 6) and armor (step 7) still reduce the final HP loss to 0?'
+why_it_matters: If steps 6 and 7 may absorb everything, 'always at least 1 HP' only holds up to step 5; if the 1 HP floor is final, armor and fortress can never fully protect a contestant from a tiny hit.
+readings:
+  A: 'stated order: h5 = max(1, h4), then fortress and armor subtract, final HP loss can be 0'
+  B: 'final HP loss = max(1, h7): the floor is enforced at the end'
+  C: floor applies only to hits that arrive at step 5 non-zero and unabsorbed
+resolution_paths:
+- 'VOD: armored contestant taking a 1 HP source (zone tick, poison step, bow after reductions).'
+- 'REA: damage formula in shipped code.'
+priority: high
+status: open
+related:
+- M-0123
+- M-0124
+- M-0125
+- U-0002

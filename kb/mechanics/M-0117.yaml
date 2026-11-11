@@ -1,0 +1,30 @@
+id: M-0117
+name: 'Hit pipeline: seven steps in order'
+family: damage
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage#order
+  snapshot: '2026-11-11'
+  clause: wiki-damage-032
+  quote: Every hit goes through these steps in order.
+formal:
+  readings:
+    A: result = armor(fortress(minimum(reductions(mirror(kick_bonus(immunity(h)))))))
+  domain: h integer, h >= 0, one hit
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0118
+- M-0119
+- M-0120
+- M-0121
+- M-0122
+- M-0123
+- M-0124
+- M-0125
+label: CONDITIONAL
+open_unknowns:
+- U-0002
+- U-0103
+notes: 'Which damage sources count as a hit is U-0002. Steps are modeled one record each: 118 immunity, 119 Kick bonus, 120 mirror, 121 and 122 reductions, 123 minimum, 124 fortress, 125 armor.'

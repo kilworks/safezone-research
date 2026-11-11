@@ -1,0 +1,12 @@
+id: U-0340
+question: What damage and radius does the merchant 'standard missile' have, given it lands at an exact location after 30 s?
+why_it_matters: The attacks page describes a viewer missile with a 3min random landing; the merchant text names a 'standard missile' but gives no damage or radius.
+readings:
+  A: same damage and blast radius as the viewer missile (10 HP within 25 m per the attacks page)
+  B: a different, unstated damage
+parameter: merchant_missile_damage_hp
+sweep_range: '10 to 20 HP: the viewer missile does 10 and the nuke does 20 on the attacks page'
+resolution_paths:
+- 'VOD: merchant missile impact HP loss and radius.'
+priority: high
+status: open

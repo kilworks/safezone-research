@@ -1,0 +1,21 @@
+id: M-0325
+name: Merchant care package contents
+family: economy
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/merchant#items
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-013
+  quote: One random item, straight into your inventory.
+formal:
+  readings:
+    A: one random item goes straight into the inventory
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0323
+- U-0321
+notes: 'Piety: ''Merchant care packages are not changed'' (Piety page). Endurance''s own care packages never hold a potion or drone; nothing says that of the merchant''s.'

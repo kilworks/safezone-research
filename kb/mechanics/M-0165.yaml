@@ -1,0 +1,23 @@
+id: M-0165
+name: Damage source 'Eddie's Potion backfire' and what stops it
+family: damage
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  clause: wiki-damage-030
+  quote: '| Eddie''s Potion backfire | Shield, Safety bubble, Sleeping Bag, Body armor (absorbs)'
+formal:
+  readings:
+    A: 'blockers(Eddie''s Potion backfire) = {Shield: blocks; Safety bubble: blocks; Sleeping Bag: blocks; Body armor: absorbs}'
+  domain: one hit of source 'Eddie's Potion backfire'
+  parameters: {}
+depends_on:
+- M-0118
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0004
+- U-0002
+notes: 'Matches seed U-0004 note: Shield, Safety bubble, Sleeping Bag and Body armor stop it, which supports reading B for blocking.'

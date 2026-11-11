@@ -1,0 +1,27 @@
+id: M-0245
+name: Blind restrictions
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#flashbang
+  snapshot: '2026-11-11'
+  clause: wiki-items-071
+  quote: 'Blinded contestants can only move: they cannot see the map, use, place or aim items, attack, steal, loot, claim, craft or start a trade.'
+- url: https://iceposeidon.com/safezone/wiki/items#flashbang
+  snapshot: '2026-11-11'
+  clause: wiki-items-072
+  quote: They can still close a trade.
+- url: https://iceposeidon.com/safezone/wiki/items#flashbang
+  snapshot: '2026-11-11'
+  clause: wiki-items-073
+  quote: Effects already active keep working.
+formal:
+  readings:
+    A: 'blinded: movement only; cannot see map, use/place/aim items, attack, steal, loot, claim, craft, start a trade; can still close a trade; already active effects keep working'
+  domain: blind boolean
+  parameters: {}
+depends_on:
+- M-0244
+label: DOCUMENTED
+open_unknowns: []

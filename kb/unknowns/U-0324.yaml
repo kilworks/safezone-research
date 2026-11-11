@@ -1,0 +1,11 @@
+id: U-0324
+question: 'Vulnerability Dart: does a second dart on an already vulnerable contestant reset, extend or do nothing, and is the 10 minutes counted from the throw or the impact?'
+why_it_matters: Fixes the length of the unprotected window; repeated darts could keep a target vulnerable for good.
+readings:
+  A: a new dart resets the 10 min timer to a fresh 10 min from now
+  B: a new dart adds 10 min
+  C: no effect while already vulnerable
+resolution_paths:
+- 'VOD: a contestant hit by two darts 5 min apart.'
+priority: medium
+status: open

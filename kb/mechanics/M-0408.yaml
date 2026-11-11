@@ -1,0 +1,28 @@
+id: M-0408
+name: Horde
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#horde
+  snapshot: '2026-11-11'
+  quote: 50 zombies appear in the safe zones for 20min.
+  clause: wiki-attacks-019
+formal:
+  readings:
+    A: on purchase, 50 zombies appear in the safe zones; each exists for 20 min
+  domain: count 50, lifetime 20 min
+  parameters:
+    zombies: '50'
+    duration: 20 min
+    price_cx_bucks: UNKNOWN, see U-0014
+depends_on: []
+interacts_with:
+- M-0400
+- M-0445
+label: CONDITIONAL
+open_unknowns:
+- U-0403
+- U-0014
+- U-0432
+notes: Placement is 'in the safe zones' here and 'at random points in the safe zones' on the Zombies page. Bonus zombies for Necromancy are in the zombie family.

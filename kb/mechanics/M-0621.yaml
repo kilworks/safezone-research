@@ -1,0 +1,45 @@
+id: M-0621
+name: Endurance care package schedule
+family: items
+sigils:
+- endurance
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/endurance#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-endurance-009
+  quote: Every 2h 30min, a care package falls within 10m (33ft) of you.
+- url: https://iceposeidon.com/safezone/wiki/sigils/endurance#endurance-drops
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-endurance-013
+  quote: Every 2h 30min, a care package falls within 10m (33ft) of each Endurance contestant.
+- url: https://iceposeidon.com/safezone/wiki/sigils/endurance#endurance-drops
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-endurance-014
+  quote: It lands after 30s.
+- url: https://iceposeidon.com/safezone/wiki/sigils/endurance#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-endurance-010
+  quote: Anyone can claim it.
+- url: https://iceposeidon.com/safezone/wiki/sigils/endurance#endurance-drops
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-endurance-015
+  quote: 'After it lands it is a normal care package: any contestant can claim it.'
+- url: https://iceposeidon.com/safezone/wiki/sigils/endurance#endurance-drops
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-endurance-016
+  quote: It never holds a health potion or drone.
+formal:
+  readings:
+    A: t_k = t0 + k*9000 s fixed clock; landing at t_k + 30 s; position within 10 m of the contestant
+    B: timer restarts when the previous package is claimed
+  domain: seconds
+  parameters:
+    period_s: '9000'
+    landing_delay_s: '30'
+    t0: UNKNOWN, see U-0607
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0607
+notes: Position at time of drop vs landing is not specified (the 10m is from the contestant when it falls). Contents are random items except health potion and drone.

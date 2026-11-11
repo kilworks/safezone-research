@@ -1,0 +1,15 @@
+id: U-0106
+question: 'Viewer crown-kill bonus ''equal to 20% of the attack''s purchase price'': rounding rule, whether ''kills'' means the final kill, and which attack counts when several viewers hit the holder.'
+why_it_matters: Without the rule the value of a crown kill for viewers is not computable even once prices (U-0014) are known.
+readings:
+  A: bonus = floor(0.2*p)
+  B: bonus = ceil(0.2*p)
+  C: bonus = 0.2*p exactly (fractional Cx-Bucks allowed)
+resolution_paths:
+- 'VOD/screen: a viewer''s Cx-Bucks balance after a crown kill with a known attack price.'
+- Organizer statement.
+priority: medium
+status: open
+related:
+- U-0014
+- U-0104

@@ -1,0 +1,27 @@
+id: M-0122
+name: 'Pipeline step 4b: defender Kick reduction'
+family: damage
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage#order
+  snapshot: '2026-11-11'
+  clause: wiki-damage-046
+  quote: Being live on Kick then takes off 10%, rounded down.
+formal:
+  readings:
+    A: 'defender live: d := floor(9*d/10)'
+    B: 'defender live: d := d - floor(d/10)'
+  domain: d integer >= 0
+  parameters:
+    reduction: 10 percent
+depends_on:
+- M-0117
+- M-0121
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0001
+- U-0100
+- U-0002
+notes: Applied after the Protection step (stated order). A and B differ by 1 HP whenever d is not a multiple of 10 and d >= 2.

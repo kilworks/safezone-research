@@ -1,0 +1,18 @@
+id: M-0134
+name: Mirror forcefield is used up by the first attack it reflects
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  clause: wiki-damage-069
+  quote: A Mirror Forcefield is used up by the first attack it reflects.
+formal:
+  readings:
+    A: mirror consumed on its first reflection; blocked or non-reflectable attacks do not consume it
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0120
+label: DOCUMENTED

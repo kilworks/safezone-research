@@ -1,0 +1,11 @@
+id: U-0418
+question: 'Bounty consequences: does the bounty end when claimed (the wiki ends it at 1h or on death) so that repeated claims are possible, and is the marked contestant''s 10 HP taken once at claim? Who counts as eligible when no living contestant lacks a bounty?'
+why_it_matters: A bounty that persists after a claim would pay and hurt repeatedly.
+readings:
+  A: claim ends the bounty and the 10 HP hit happens once
+  B: bounty persists and can be claimed again after each 1min
+  C: bounty persists for the claim by another hunter only
+resolution_paths:
+- 'VOD: bounty marker after a claim.'
+priority: high
+status: open

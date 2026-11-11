@@ -1,0 +1,21 @@
+id: M-0224
+name: EMP refuses viewer items without refund
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#emp
+  snapshot: '2026-11-11'
+  clause: wiki-items-038
+  quote: 'No refunds: a viewer item refused because of an EMP is lost.'
+formal:
+  readings:
+    A: a viewer item refused due to EMP is lost; price is not returned
+  domain: viewer send event
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0222
+label: DOCUMENTED
+open_unknowns: []
+notes: Prices are U-0014.

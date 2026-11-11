@@ -1,0 +1,13 @@
+id: U-0216
+question: Does a Flak jacket get used up by a hit already blocked by another defense (Shield, Safety bubble, Sleeping Bag)?
+why_it_matters: Guardian angel is explicit about blocked hits; Flak jacket is not.
+readings:
+  A: any hit on you uses it
+  B: only a hit that reaches it
+resolution_paths:
+- 'VOD: holder with Shield and Flak jacket hit by a missile.'
+priority: medium
+status: open
+related:
+- M-0242
+- U-0002

@@ -1,0 +1,26 @@
+id: M-0216
+name: Shield damage exclusions
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#shield
+  snapshot: '2026-11-11'
+  clause: wiki-items-023
+  quote: Immune to damage for 20min, except zone damage and unsafe circle damage.
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  clause: wiki-damage-058
+  quote: A Shield does not block zone, unsafe circle or robot damage.
+formal:
+  readings:
+    A: Shield blocks all damage except zone damage and unsafe circle damage
+    B: Shield blocks all damage except zone, unsafe circle and robot damage (damage page)
+  domain: damage source kinds
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0215
+label: CONTRADICTED
+open_unknowns: []
+notes: 'See C-0202. Poison: the Shield does not stop poison from landing but blocks each step (damage page). Flashbang not stopped by a Shield.'

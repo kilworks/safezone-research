@@ -1,0 +1,20 @@
+clauses:
+  wiki-001: event description, no rule
+  wiki-002: prize and eligibility statement, no mechanic (prize conditions are U-0000)
+  wiki-003: objective statement, restates rules modeled elsewhere
+  wiki-damage-001: page subtitle, no rule
+  wiki-damage-003: table column header
+  wiki-damage-004: table column header
+  wiki-damage-033: step number label, rule in M-0118
+  wiki-damage-036: step number label
+  wiki-damage-037: step title label (Kick live bonus), rule in the following sentence
+  wiki-damage-039: step number label
+  wiki-damage-040: step title label (Mirror), rule in the following sentence
+  wiki-damage-042: step number label
+  wiki-damage-043: step title label (Reductions), rules in the following sentences
+  wiki-damage-047: step number label
+  wiki-damage-050: step number label
+  wiki-damage-053: step number label
+  wiki-damage-057: cross-reference to the Poison page
+  wiki-damage-061: cross-reference to the Vulnerability Dart
+  overview-001: navigation link text to the wiki

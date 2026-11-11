@@ -1,0 +1,10 @@
+id: U-0318
+question: What do the labels Equippable and Usable mean for the Poison Dart and Zarok's axe, which carry both?
+why_it_matters: Decides whether the dart/axe sit in the weapon slot, are thrown or consumed from the inventory, and whether both modes exist.
+readings:
+  A: Equippable = held in a weapon slot, Usable = consumed on use; both labels mean the item can be used either way
+  B: 'the two labels are sequential: equip to wield, then use once'
+resolution_paths:
+- 'VOD: inventory and weapon slot of a contestant holding an axe or dart.'
+priority: medium
+status: open

@@ -1,0 +1,14 @@
+id: C-0204
+summary: 'Items page: a vulnerable contestant is unprotected by a Safety bubble. Merchant page: the Vulnerability Dart pops every Safety Bubble they own or stand in.'
+sides:
+- url: https://iceposeidon.com/safezone/wiki/items#safety_bubble
+  snapshot: '2026-11-11'
+  clause: wiki-items-021
+  quote: It does not protect a vulnerable contestant, and you cannot use it while vulnerable.
+- url: https://iceposeidon.com/safezone/wiki/merchant#items
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-017
+  quote: It removes their Shield and pops every Safety Bubble they own or stand in, and stops Shields and Safety Bubbles protecting them for 10 minutes.
+mechanics:
+- M-0214
+status: open

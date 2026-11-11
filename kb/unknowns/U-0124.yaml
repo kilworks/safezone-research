@@ -1,0 +1,12 @@
+id: U-0124
+question: 'Gravestone location ''where you were last seen'': position at the moment of death or the last received GPS fix?'
+why_it_matters: Matters for deaths with no GPS (offline) and for the 10 m style ranges of looters.
+readings:
+  A: position at death
+  B: last GPS fix received before death
+resolution_paths:
+- 'VOD: death of an offline contestant.'
+priority: low
+status: open
+related:
+- M-0107

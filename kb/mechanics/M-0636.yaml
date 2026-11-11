@@ -1,0 +1,33 @@
+id: M-0636
+name: Necromancy immunity to zombies
+family: zombies
+sigils:
+- necromancy
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/necromancy
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-necromancy-006
+  quote: Immune to
+- url: https://iceposeidon.com/safezone/wiki/sigils/necromancy
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-necromancy-007
+  quote: Zombies
+- url: https://iceposeidon.com/safezone/wiki/sigils/necromancy#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-necromancy-016
+  quote: Fully immune from zombies.
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  clause: wiki-damage-010
+  quote: '| Zombie drain | Shield, Safety bubble, Sleeping Bag, Necromancy / Repellent, Body armor (absorbs)'
+formal:
+  readings:
+    A: damage from zombies to a Necromancy contestant = 0 (every zombie, every owner)
+    B: A for drain only
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0616
+notes: The damage table lists Necromancy as a blocker of the zombie drain row, consistent.

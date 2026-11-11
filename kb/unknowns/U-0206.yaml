@@ -1,0 +1,12 @@
+id: U-0206
+question: Does Guardian angel 'zone damage' include unsafe circle damage?
+why_it_matters: The damage page table lists Guardian angel for both; the Items page for Shield names the two separately.
+readings:
+  A: zone damage only
+  B: outside-the-circle and unsafe circle damage
+resolution_paths:
+- 'VOD: a Guardian angel holder inside a Trolling unsafe circle.'
+priority: medium
+status: open
+related:
+- M-0210

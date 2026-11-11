@@ -1,0 +1,21 @@
+id: M-0330
+name: Sleeping Bag lockout
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/merchant#items
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-029
+  quote: After your bag protects you, you cannot sleep in a bag again for 20 minutes, even if you pick it up and place it again.
+formal:
+  readings:
+    A: after the bag protects you, no sleeping in any bag for 20 min, even after picking it up and placing it again
+  domain: minutes
+  parameters:
+    sleep_lockout_min: '20'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0328

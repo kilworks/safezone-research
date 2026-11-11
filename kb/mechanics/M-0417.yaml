@@ -1,0 +1,30 @@
+id: M-0417
+name: Gunship counters
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#gunship
+  snapshot: '2026-11-11'
+  quote: The Protection sigil is immune.
+  clause: wiki-attacks-040
+- url: https://iceposeidon.com/safezone/wiki/attacks#gunship
+  snapshot: '2026-11-11'
+  quote: A Flak jacket blocks one bomb.
+  clause: wiki-attacks-041
+- url: https://iceposeidon.com/safezone/wiki/attacks#gunship
+  snapshot: '2026-11-11'
+  quote: An EMP removes the gunship and its falling bombs.
+  clause: wiki-attacks-042
+formal:
+  readings:
+    A: Protection immune; a Flak jacket blocks one bomb; an EMP removes the gunship and its falling bombs
+  domain: per contestant
+  parameters: {}
+depends_on:
+- M-0416
+interacts_with:
+- M-0401
+label: DOCUMENTED
+open_unknowns: []
+notes: Damage page lists Shield, Safety bubble, Sleeping Bag, Body armor as further blockers of a gunship bomb; see C-0400.

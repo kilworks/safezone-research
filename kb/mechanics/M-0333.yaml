@@ -1,0 +1,36 @@
+id: M-0333
+name: Maximum HP upgrade ladder
+family: economy
+sigils:
+- all
+- piety
+sources:
+- url: https://iceposeidon.com/safezone/wiki/merchant#upgrades
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-036
+  quote: '+10 maximum HP: starts at 40 blood tokens and costs 10 more for each one you already bought.'
+- url: https://iceposeidon.com/safezone/wiki/merchant#upgrades
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-037
+  quote: Maximum HP goes up to 200, or 220 for Piety.
+formal:
+  readings:
+    A: the k-th purchase costs 40 + 10*k tokens and adds 10 to maximum HP; maximum HP is capped at 200, or 220 for Piety
+  domain: k integer >= 0
+  parameters:
+    hp_ladder_start: '40'
+    hp_ladder_step: '10'
+    hp_per_purchase: '10'
+    hp_cap_default: '200'
+    hp_cap_piety: '220'
+    hp_purchase_limit: UNKNOWN, see U-0330
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0329
+- U-0330
+- U-0331
+- U-0322
+- U-0006
+notes: 'Base max HP: Greed 90, Piety 110, others 100 (sigil pages). The cap is the only stated limit.'

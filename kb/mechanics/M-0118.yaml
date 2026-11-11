@@ -1,0 +1,25 @@
+id: M-0118
+name: 'Pipeline step 1: immunity'
+family: damage
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage#order
+  snapshot: '2026-11-11'
+  clause: wiki-damage-034
+  quote: Immunity
+- url: https://iceposeidon.com/safezone/wiki/damage#order
+  snapshot: '2026-11-11'
+  clause: wiki-damage-035
+  quote: If anything blocks the hit, you take nothing.
+formal:
+  readings:
+    A: 'if any blocker of the source (damage table) applies: d := 0 and stop'
+  parameters: {}
+depends_on:
+- M-0117
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0120
+notes: Blocker sets come from the damage table rows (M-0140..M-0166). Which blocker is consumed when several apply is U-0120.

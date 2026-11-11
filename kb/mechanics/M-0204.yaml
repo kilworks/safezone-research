@@ -1,0 +1,22 @@
+id: M-0204
+name: Item refused at the effect cap
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#effects
+  snapshot: '2026-11-11'
+  clause: wiki-items-005
+  quote: At the limit, the item is refused and you keep it.
+formal:
+  readings:
+    A: 'using an item that would add an effect when count == 3: use rejected, the item stays in the inventory, state unchanged'
+  domain: count 0..3; item usage event
+  parameters: {}
+depends_on:
+- M-0203
+- M-0205
+label: CONDITIONAL
+open_unknowns:
+- U-0202
+notes: Hazmat suit counts 'while you carry it' (no use action), so the page does not say what happens when it is picked up at the cap (U-0202).

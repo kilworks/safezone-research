@@ -1,0 +1,40 @@
+id: M-0208
+name: Eddie's potion gamble
+family: healing
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#eddies_potion
+  snapshot: '2026-11-11'
+  clause: wiki-items-010
+  quote: Usable
+- url: https://iceposeidon.com/safezone/wiki/items#eddies_potion
+  snapshot: '2026-11-11'
+  clause: wiki-items-011
+  quote: 'A gamble: 10% chance to heal 50% of your max HP.'
+- url: https://iceposeidon.com/safezone/wiki/items#eddies_potion
+  snapshot: '2026-11-11'
+  clause: wiki-items-012
+  quote: Otherwise you lose 30% of your max HP.
+formal:
+  readings:
+    A: 'p=0.1: hp += floor(M/2); else hp -= floor(3*M/10)'
+    B: 'p=0.1: hp += ceil(M/2); else hp -= ceil(3*M/10)'
+    C: 'p=0.1: hp += round(M/2); else hp -= round(3*M/10) (round half up)'
+    D: 'mixed: heal rounded one way, loss the other way'
+  domain: M = max HP integer; hp 1..M; outcomes disjoint, P(heal)=1/10, P(loss)=9/10
+  parameters:
+    heal_chance: 10%
+    heal_fraction: 50% of max HP
+    loss_fraction: 30% of max HP
+    rounding: UNKNOWN, see U-0204
+depends_on: []
+interacts_with:
+- M-0207
+label: CONDITIONAL
+open_unknowns:
+- U-0004
+- U-0204
+- U-0002
+- U-0203
+notes: All readings agree when M is a multiple of 10 (heal M/2, loss 3M/10). Sigils shift max HP by 10 (Piety +10, Greed -10), so only a base HP that is not a multiple of 10 makes rounding matter. The damage page lists Eddie's Potion backfire as stopped by Shield, Safety bubble, Sleeping Bag and Body armor (absorbs), see U-0004. The heal amount is 'of your max HP', not of missing HP.

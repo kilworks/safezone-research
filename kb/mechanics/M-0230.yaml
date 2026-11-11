@@ -1,0 +1,19 @@
+id: M-0230
+name: Smoke bomb and viewer maps
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#smoke_bomb
+  snapshot: '2026-11-11'
+  clause: wiki-items-047
+  quote: Viewers still see everyone on their map.
+formal:
+  readings:
+    A: viewers see every contestant on their map regardless of smoke
+  domain: viewer view
+  parameters: {}
+depends_on:
+- M-0226
+label: DOCUMENTED
+open_unknowns: []

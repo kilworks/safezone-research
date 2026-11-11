@@ -1,0 +1,21 @@
+id: M-0100
+name: Safe zone is moved by the organizer (size, speed, split)
+family: zone
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki
+  snapshot: '2026-11-11'
+  clause: wiki-004
+  quote: it can change in size or speed, or even split apart
+formal:
+  readings:
+    A: zone geometry is an exogenous organizer-controlled process Z(t); no rule given
+  parameters:
+    zone_process: UNKNOWN, see U-0114
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0114
+notes: Only the existence of resizing, speeding and splitting is stated. Geometry stays abstract.

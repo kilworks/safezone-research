@@ -1,0 +1,13 @@
+id: U-0410
+question: 'Gunship bomb position and target circle: the circle ''sweeps around a random safe zone at 75m/s'' (circle radius and path unstated). Does a bomb land where the circle was at the drop or where it is 5s later (75m/s x 5s = 375m away)?'
+why_it_matters: Decides whether bombs are aimable and where contestants should stand.
+readings:
+  A: bomb lands at the circle position at the drop instant
+  B: bomb lands at the circle position 5s later
+  C: circle radius equals bomb blast radius 25m
+parameter: gunship_circle_radius_m
+sweep_range: 10 to 50 m; the wiki gives only the 25m bomb radius, the circle is not sized
+resolution_paths:
+- VOD of a gunship with the circle visible.
+priority: medium
+status: open

@@ -1,0 +1,11 @@
+id: U-0301
+question: Is the 'once every 16h' Ingenuity trap attachment limit one shared timer for C4 and landmine, or one timer per kind, and does it start at attachment or at detonation?
+why_it_matters: Decides how many trapped gifts an Ingenuity contestant can have in any 48h and whether a stale trap blocks the next one.
+readings:
+  A: one shared timer, starts at attachment
+  B: one timer per kind (C4, landmine), starts at attachment
+  C: shared timer, starts when the trapped gift fires or is removed
+resolution_paths:
+- 'VOD: an Ingenuity contestant attaching a C4 then a landmine within 16h.'
+priority: medium
+status: open

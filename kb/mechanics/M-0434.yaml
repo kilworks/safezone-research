@@ -1,0 +1,31 @@
+id: M-0434
+name: God's fruit (admin)
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#gods-fruit
+  snapshot: '2026-11-11'
+  quote: Only admins launch it.
+  clause: wiki-attacks-083
+- url: https://iceposeidon.com/safezone/wiki/attacks#gods-fruit
+  snapshot: '2026-11-11'
+  quote: It lands after 5min, exactly where it is aimed.
+  clause: wiki-attacks-084
+- url: https://iceposeidon.com/safezone/wiki/attacks#gods-fruit
+  snapshot: '2026-11-11'
+  quote: Everyone within 100m (328ft) heals 20 HP and is cured of poison, even at full HP.
+  clause: wiki-attacks-085
+formal:
+  readings:
+    A: admin launch; lands at the aim point after 300 s; everyone within 100m heals 20 HP and is cured of poison even at full HP
+  domain: d <= 100 m, hp += 20 (cap at max HP unspecified)
+  parameters:
+    flight_time: 300 s
+    heal: 20 HP
+    radius: 100 m
+depends_on: []
+interacts_with: []
+label: DOCUMENTED
+open_unknowns: []
+notes: Overheal beyond max HP is unspecified; the effect on revive-state contestants is not stated.

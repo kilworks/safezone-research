@@ -1,0 +1,10 @@
+id: U-0430
+question: 'Ingenuity Zombie Killer: ''kills the next ten zombies that come within 10m of its owner'' and ''stops zombies draining you until it has killed ten''. Do ten zombies arriving together count, is the drain stop limited to the ten, and is the order by approach?'
+why_it_matters: Defensive value against hordes of 50.
+readings:
+  A: ten kills then ends, simultaneous arrivals killed in distance order
+  B: ten distinct zombies within 10m at any moment
+resolution_paths:
+- VOD.
+priority: low
+status: open

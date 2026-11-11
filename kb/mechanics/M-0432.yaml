@@ -1,0 +1,24 @@
+id: M-0432
+name: Care package Trolling diversion
+family: viewer
+sigils:
+- trolling
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#care-package
+  snapshot: '2026-11-11'
+  quote: It has a 3% chance to land within 5m (16ft) of a Trolling contestant instead.
+  clause: wiki-attacks-080
+formal:
+  readings:
+    A: 'each care package: with probability 0.03 it lands within 5m of a Trolling contestant instead'
+  domain: p = 3%, distance <= 5 m
+  parameters:
+    p: '0.03'
+    radius: 5 m
+depends_on:
+- M-0431
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0411
+notes: 'Trolling page wording: ''Each crate or care package from viewers has a 3% chance to land next to a Trolling contestant instead'' (C-0403).'

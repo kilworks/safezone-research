@@ -1,0 +1,13 @@
+id: U-0413
+question: 'Healing circle: is the 50m circle a radius or a diameter, is membership tested at +60s only or continuously, and does 25 HP heal above max HP? Does the heal count for Healing and Piety tokens?'
+why_it_matters: Decides who benefits (a mover can leave before 60s) and the heal amount at full HP.
+readings:
+  A: radius 50m, members tested at t+60s, heal min(25, max-hp)
+  B: diameter 50m (radius 25m), tested at t+60s
+  C: membership tested continuously, heal on entry after 60s
+parameter: healing_circle_radius_m
+sweep_range: 25 to 50 m; the wiki gives '50m' as the only size
+resolution_paths:
+- 'VOD: observe the event live with an on-screen timer.'
+priority: medium
+status: open

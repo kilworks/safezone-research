@@ -1,0 +1,16 @@
+id: U-0107
+question: 'Revival caps ''2 times'' (on a Healing contestant) and ''10 times'' (by a Healing contestant): what is the counter attached to?'
+why_it_matters: Determines how many lives a Healing contestant has and how many revives a Healing reviver can perform over the whole event.
+readings:
+  A: 2 = total revives a given Healing contestant can ever receive (any reviver); 10 = total revives a given Healing contestant can ever perform
+  B: 2 and 10 are per (reviver, target) pair
+  C: 2 = per life of the target; 10 = per reviver per day or per hour
+  D: when a Healing contestant revives another Healing contestant both limits apply and the lower (2) binds; or only 10 applies
+resolution_paths:
+- 'VOD: a Healing contestant revived a third time; a Healing reviver performing an eleventh revive.'
+- Organizer statement.
+priority: high
+status: open
+related:
+- M-0112
+- M-0113

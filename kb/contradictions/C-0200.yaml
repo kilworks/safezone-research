@@ -1,0 +1,14 @@
+id: C-0200
+summary: Items page lists 13 reflectable attacks without trapped gift, but the damage page table lists Mirror forcefield (reflects) on the Trapped gift row.
+sides:
+- url: https://iceposeidon.com/safezone/wiki/items#mirror_forcefield
+  snapshot: '2026-11-11'
+  clause: wiki-items-055
+  quote: Only reflects Poison Darts, fake gravestones, knives, Zarok's axes, long swords, machetes, bows, staffs, drones, C4, landmines, flashbangs and fake chests.
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  clause: wiki-damage-021
+  quote: '| Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (reflects)'
+mechanics:
+- M-0237
+status: open

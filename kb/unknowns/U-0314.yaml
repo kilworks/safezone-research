@@ -1,0 +1,13 @@
+id: U-0314
+question: 'Wizard staff ''Each use costs 2 blood tokens'': does Ingenuity''s 10% surcharge apply to it, and what happens with fewer than 2 tokens?'
+why_it_matters: ceil(2*1.1) = 3 would make the staff a third dearer for Ingenuity contestants; it is not a merchant price.
+readings:
+  A: 2 tokens for every sigil (not a merchant price)
+  B: Ingenuity pays ceil(2*1.1) = 3
+  C: cannot be used with fewer than the cost
+resolution_paths:
+- 'VOD: Ingenuity contestant''s token count before and after a staff use.'
+priority: low
+status: open
+related:
+- U-0006

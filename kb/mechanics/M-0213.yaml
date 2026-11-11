@@ -1,0 +1,27 @@
+id: M-0213
+name: Safety bubble immunity
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#safety_bubble
+  snapshot: '2026-11-11'
+  clause: wiki-items-019
+  quote: Everyone inside is immune to damage and zombies, zone damage included.
+- url: https://iceposeidon.com/safezone/wiki/items#safety_bubble
+  snapshot: '2026-11-11'
+  clause: wiki-items-020
+  quote: A trapped gift still hurts the holder.
+formal:
+  readings:
+    A: 'for every contestant inside: damage = 0 and zombies cannot hurt, including zone damage; exception: a trapped gift still hurts the holder'
+  domain: inside(position, bubble) boolean
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0212
+- M-0214
+- M-0247
+label: DOCUMENTED
+open_unknowns: []
+notes: 'Damage page: a Safety bubble does not stop poison from landing but blocks each poison step. Flashbang is not stopped by it (flashbang section). Boundary inclusion not stated.'

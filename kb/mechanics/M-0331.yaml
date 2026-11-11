@@ -1,0 +1,33 @@
+id: M-0331
+name: Merchant missile
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/merchant#items
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-030
+  quote: 'Missile: 10 blood tokens.'
+- url: https://iceposeidon.com/safezone/wiki/merchant#items
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-031
+  quote: Launch a standard missile at an exact map location.
+- url: https://iceposeidon.com/safezone/wiki/merchant#items
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-032
+  quote: It lands 30 seconds after launch.
+formal:
+  readings:
+    A: 10 tokens; launch a standard missile at an exact map location; it lands 30 s after launch
+  domain: tokens, seconds
+  parameters:
+    missile_cost_tokens: '10'
+    missile_delay_s: '30'
+    missile_damage_hp: UNKNOWN, see U-0340
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0340
+- U-0321
+notes: A Smoke bomb blocks firing it from inside the bomb (Smoke bomb page).

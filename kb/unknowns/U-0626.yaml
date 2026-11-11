@@ -1,0 +1,9 @@
+id: U-0626
+question: 'Range for a Healing contestant to revive a non-Healing contestant: the Healing page gives 10m of the gravestone only when a Healing contestant is the one revived.'
+why_it_matters: Needed for any revive-race model.
+parameter: revive_range_other_m
+sweep_range: '1 to 30 m: 1 m minimum contact, 30 m above the longest comparable range stated (10m).'
+resolution_paths:
+- 'VOD: revive at measured distances.'
+priority: medium
+status: open

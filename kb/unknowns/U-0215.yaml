@@ -1,0 +1,13 @@
+id: U-0215
+question: When several mirror forcefields are held, does one reflection consume one, all, or reflect several times?
+why_it_matters: Pages say 'Several stack' and 'Ends when it reflects an attack' without count.
+readings:
+  A: one per reflection
+  B: all are consumed
+  C: several reflections in sequence
+resolution_paths:
+- 'VOD: contestant with two mirrors hit twice.'
+priority: medium
+status: open
+related:
+- M-0236

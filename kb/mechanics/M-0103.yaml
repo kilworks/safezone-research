@@ -1,0 +1,24 @@
+id: M-0103
+name: Kick-live status doubles the offline grace period (15 to 30 min)
+family: zone
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki#damage
+  snapshot: '2026-11-11'
+  clause: wiki-006
+  quote: you have a longer offline grace period, so if your phone dies, you have 30min instead of 15min before you start taking damage
+formal:
+  readings:
+    A: grace_s = 1800 if live on Kick else 900
+  domain: live in {true, false}
+  parameters:
+    grace_live_s: '1800'
+    grace_base_s: '900'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0111
+- U-0012
+notes: The moment at which live status is read is the open point (U-0111).

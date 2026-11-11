@@ -1,0 +1,24 @@
+id: M-0623
+name: Endurance bonus token per five item uses
+family: economy
+sigils:
+- endurance
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/endurance#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-endurance-007
+  quote: Earn one more for every five item uses.
+formal:
+  readings:
+    A: tokens += 1 each time the cumulative item-use counter reaches a multiple of 5
+    B: claim payout = 6 + floor(uses since last claim / 5)
+    C: claim payout = 6 + 1 once five uses happened
+  domain: integer counters
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0608
+- U-0609
+notes: 'Compare the items page: some effects (Safety Bubbles, smoke bombs, bandages, crafts, merchant upgrades) are excluded from ''active item effects''; it is not stated that this applies here.'

@@ -1,0 +1,16 @@
+id: U-0105
+question: '''Blood tokens in the grave stay locked while revival is possible'': whose tokens, for how long, and what happens at the end of the lock?'
+why_it_matters: Decides when looters (including Death sigil) can take tokens from a gravestone and what a revived contestant gets back.
+readings:
+  A: the dead contestant's tokens are locked for the 10 min window, then lootable; a revive returns them
+  B: locked until a revive happens or revival is impossible for another reason (revive cap, robbery)
+  C: tokens paid to the killer are also locked in the grave until the window ends
+resolution_paths:
+- 'VOD: gravestone looted before and after 10 min.'
+- Cross-check Death sigil page 'first to loot items or blood tokens' rule.
+priority: medium
+status: open
+related:
+- U-0011
+- U-0104
+- M-0109

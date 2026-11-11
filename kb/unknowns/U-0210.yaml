@@ -1,0 +1,12 @@
+id: U-0210
+question: What happens when you get a second Body armor while one is equipped or carried?
+why_it_matters: Decides whether the new armor is refused, replaced, or dropped.
+readings:
+  A: refused
+  B: replaces the equipped one
+resolution_paths:
+- 'VOD: pickup of a second armor.'
+priority: low
+status: open
+related:
+- M-0219

@@ -1,0 +1,13 @@
+id: U-0213
+question: Does Thermal goggles' exemption cover only smoke attack blocks and blackout, or also the inside-cloud restrictions on healing, stealing and trading?
+why_it_matters: Items 067 says 'block your attacks'; the heal/steal/trade restrictions (043) are not attacks.
+readings:
+  A: attack block and blackout only
+  B: all smoke restrictions
+resolution_paths:
+- 'VOD: goggles holder inside a cloud attempting to steal or trade.'
+priority: medium
+status: open
+related:
+- M-0231
+- M-0227

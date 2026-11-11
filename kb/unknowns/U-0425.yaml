@@ -1,0 +1,14 @@
+id: U-0425
+question: 'Zombie drain timing: ''drain 1 HP from any contestants within 5m every 10s''. Is the 10s timer per zombie (global phase) or per contestant from entry, when does the first drain occur, is each drain a ''hit'' (U-0002), and does it reach the 1 HP floor/Kick-live reduction?'
+why_it_matters: Drain per second by many zombies; a crowd of 50 zombies is 5 HP/s if all are in range.
+readings:
+  A: 'per zombie: all contestants within 5m at the tick lose 1 HP'
+  B: per zombie-contestant pair, timer starts at entry
+  C: per zombie, first tick 10s after spawn
+resolution_paths:
+- 'VOD: a contestant approached by one zombie, timed.'
+priority: high
+status: open
+related:
+- U-0002
+- U-0008

@@ -1,0 +1,29 @@
+id: M-0212
+name: Safety bubble creation, size, duration
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#safety_bubble
+  snapshot: '2026-11-11'
+  clause: wiki-items-017
+  quote: Usable
+- url: https://iceposeidon.com/safezone/wiki/items#safety_bubble
+  snapshot: '2026-11-11'
+  clause: wiki-items-018
+  quote: Creates a 10m (33ft) bubble where you stand for 10min.
+formal:
+  readings:
+    A: bubble = disc of radius 10 m centred on the user at the use point, lasting 600 s
+    B: bubble = disc of diameter 10 m, radius 5 m
+  domain: positions abstract; t in [0, 600)
+  parameters:
+    size: 10 m (33 ft)
+    duration: 10min
+depends_on: []
+interacts_with:
+- M-0213
+- M-0214
+label: CONDITIONAL
+open_unknowns:
+- U-0208

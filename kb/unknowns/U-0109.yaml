@@ -1,0 +1,15 @@
+id: U-0109
+question: '''Items that do not fit stay in the gravestone'': what is the capacity rule at revival, and what happens later to items left in the grave?'
+why_it_matters: Decides how much of an inventory survives death and whether leftover items remain lootable.
+readings:
+  A: capacity is the normal carry limits per category; leftovers stay lootable by anyone
+  B: leftovers stay in the grave but are locked like blood tokens for the window only
+parameter: inventory_capacity
+sweep_range: 0 to 12 slots across all categories; the upper bound is a sweep choice above any carry set seen on the items page, not a wiki value
+resolution_paths:
+- 'VOD: a revival of a contestant who picked up new items between death and revival.'
+- Items page carry limits read against this rule (cross-family).
+priority: low
+status: open
+related:
+- M-0115

@@ -1,0 +1,11 @@
+id: U-0307
+question: 'Cooldown semantics (bow 5s, knife 5s, machete 5s, long sword 10s, staff 20min): does it start at the attempt or at the hit, and is it per weapon item or per contestant (Dual Wield)?'
+why_it_matters: With Dual Wield and a second weapon, per-contestant cooldown halves throughput relative to per-weapon cooldown; it also matters for blocked or missed attacks.
+readings:
+  A: per weapon item, starts at the attack
+  B: per contestant (shared by all weapons), starts at the attack
+  C: per weapon item, starts when the hit resolves
+resolution_paths:
+- 'VOD: Dual Wield contestant alternating two weapons within the cooldown.'
+priority: high
+status: open

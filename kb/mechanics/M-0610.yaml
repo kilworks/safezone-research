@@ -1,0 +1,24 @@
+id: M-0610
+name: Death blood token income
+family: economy
+sigils:
+- death
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/death#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-death-006
+  quote: Earn ten blood tokens per gravestone robbed and one whenever another contestant dies.
+formal:
+  readings:
+    A: tokens += 10 per gravestone robbed; tokens += 1 per death of another contestant, anywhere
+    B: same, but the 1 token requires the death within 50m
+  domain: integer token counts
+  parameters:
+    death_token_range_m: UNKNOWN, see U-0605
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0605
+- U-0606
+notes: The 10m rob range and the 50m heal range are stated on other lines; the token line gives no range.

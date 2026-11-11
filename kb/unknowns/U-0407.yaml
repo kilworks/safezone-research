@@ -1,0 +1,9 @@
+id: U-0407
+question: Airstrike strip length and whether the strip is centred on the chosen point and may leave the safe zone.
+why_it_matters: Together with the width fixes the burned area, and whether fire can reach the unsafe zone.
+parameter: airstrike_strip_length_m
+sweep_range: 50 to 1000 m; the wiki gives no size, bounded by the map scale
+resolution_paths:
+- 'VOD: measure the burn strip on the map.'
+priority: high
+status: open

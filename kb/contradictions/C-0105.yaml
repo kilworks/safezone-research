@@ -1,0 +1,14 @@
+id: C-0105
+summary: 'Revival of a Healing contestant: intro lets any contestant do it up to 2 times; Healing page requires a living contestant within 10m of the gravestone.'
+sides:
+- url: https://iceposeidon.com/safezone/wiki#death
+  snapshot: '2026-11-11'
+  clause: wiki-015
+  quote: Any contestant can revive a Healing contestant, up to 2 times.
+- url: https://iceposeidon.com/safezone/wiki/sigils/healing#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-healing-011
+  quote: Any living contestant within 10m (33ft) of your gravestone can revive you, up to 2 times.
+mechanics:
+- M-0112
+status: open

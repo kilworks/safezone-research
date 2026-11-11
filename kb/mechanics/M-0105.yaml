@@ -1,0 +1,25 @@
+id: M-0105
+name: 'Speed rule: mean speed over 1 min above 20 mph counts as outside'
+family: zone
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki#damage
+  snapshot: '2026-11-11'
+  clause: wiki-010
+  quote: 'Moving too fast counts as being outside: faster than 20mph (8.94m/s) on average over 1min'
+formal:
+  readings:
+    A: violation if mean_speed over a 60 s window > 8.94 m/s, windows sliding
+    B: violation if mean_speed over a 60 s window > 8.9408 m/s (exact 20 mph)
+    C: window displacement endpoint to endpoint rather than path length
+  domain: speed in m/s, window 60 s
+  parameters:
+    threshold_ms: '8.94'
+    window_s: '60'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0112
+- U-0113

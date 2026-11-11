@@ -1,0 +1,13 @@
+id: U-0212
+question: Can the contestant who set off the smoke bomb be targeted from outside the cloud?
+why_it_matters: Sentence 'Nobody outside can target anyone inside' and the setter exemption disagree on the setter.
+readings:
+  A: no, the setter is inside and protected
+  B: yes, the setter is unaffected so can be targeted
+resolution_paths:
+- 'VOD: attack on a smoke setter from outside.'
+priority: medium
+status: open
+related:
+- M-0228
+- M-0229

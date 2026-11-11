@@ -1,0 +1,16 @@
+id: U-0120
+question: When several blockers apply to one hit (Shield, Safety bubble, Flak jacket, Sleeping Bag, Reality Shield, Protection), which one is the 'blocker' and which items are consumed? The only stated
+  rule is 'a hit already blocked by something else does not use [the Flak jacket] up'.
+why_it_matters: Decides whether stacking consumables wastes them and which defence to equip first.
+readings:
+  A: a fixed priority order exists; only the first applicable blocker is consumed
+  B: all applicable blockers are consumed
+  C: non-consumable blockers (immunities) take priority over consumables, consumables are consumed only if nothing else blocks
+resolution_paths:
+- 'VOD: a hit on a contestant holding a Flak jacket and a Shield.'
+- 'REA: shipped hit resolver.'
+priority: high
+status: open
+related:
+- M-0118
+- M-0130

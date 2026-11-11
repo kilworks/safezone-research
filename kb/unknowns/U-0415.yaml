@@ -1,0 +1,11 @@
+id: U-0415
+question: 'What does ''attacking a copy uses up your attack'' consume: the weapon durability, the attack slot, the item, a cooldown? Does it apply to staffs, drones, C4 and landmines and to Thermal goggle holders who identify copies?'
+why_it_matters: Cost of a misidentified target for an attacker.
+readings:
+  A: the charge or use of the item as for a normal hit
+  B: only a cooldown
+  C: one durability point and a cooldown
+resolution_paths:
+- VOD of a weapon hit on an illusion copy.
+priority: low
+status: open

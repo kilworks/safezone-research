@@ -1,0 +1,18 @@
+id: M-0175
+name: Protection sigil fully immune to poison
+family: poison
+sigils:
+- protection
+sources:
+- url: https://iceposeidon.com/safezone/wiki/poison#immunity
+  snapshot: '2026-11-11'
+  clause: wiki-poison-006
+  quote: 'Protection sigil: fully immune'
+formal:
+  readings:
+    A: 'sigil = Protection: poisoned never becomes true'
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: DOCUMENTED
+notes: 'The damage table Poison row lists Protection: consistent.'

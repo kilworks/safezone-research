@@ -1,0 +1,23 @@
+id: M-0323
+name: Ingenuity merchant surcharge
+family: economy
+sigils:
+- ingenuity
+sources:
+- url: https://iceposeidon.com/safezone/wiki/merchant#paying
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-011
+  quote: Ingenuity contestants pay 10% more, rounded up.
+formal:
+  readings:
+    A: price p becomes ceil(11*p/10) (exact arithmetic)
+    B: price p becomes ceil(p*1.1) in binary64
+  domain: integer p >= 1
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0006
+- U-0322
+notes: The same sentence is on the Ingenuity page ('Merchant prices are 10% higher, rounded up'), no contradiction. Readings A and B differ by 1 token at base 50, 90, 100, 110 (U-0006). How the surcharge applies to the ladders is U-0322.

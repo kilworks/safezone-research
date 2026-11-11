@@ -1,0 +1,10 @@
+id: U-0431
+question: 'Zombie repellent: ''zombies ignore you for 20min'' (Zombies page) versus ''stop zombies hurting you'' (Items). Does ignoring remove you from targeting (zombies chase other contestants) or only block drain?'
+why_it_matters: Affects how zombies redistribute among unprotected contestants.
+readings:
+  A: immune to drain only, still chased
+  B: removed from the target set
+resolution_paths:
+- VOD.
+priority: low
+status: open

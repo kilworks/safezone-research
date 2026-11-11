@@ -1,0 +1,32 @@
+id: M-0121
+name: 'Pipeline step 4a: Protection sigil halves nuke damage'
+family: damage
+sigils:
+- protection
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage#order
+  snapshot: '2026-11-11'
+  clause: wiki-damage-044
+  quote: A Protection contestant takes 50% less from a nuke.
+- url: https://iceposeidon.com/safezone/wiki/damage#order
+  snapshot: '2026-11-11'
+  clause: wiki-damage-045
+  quote: The damage left is rounded down.
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  clause: wiki-damage-062
+  quote: The Protection sigil is not immune to nukes, but takes 50% less from them.
+formal:
+  readings:
+    A: 'if defender sigil is Protection and source is nuke: d := floor(d/2); other sources unchanged'
+  domain: d integer >= 0
+  parameters:
+    nuke_reduction: 50 percent
+depends_on:
+- M-0117
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0100
+notes: '''Not immune to nukes, but takes 50% less''. The Protection page treats the same rule (50% less); no mismatch found. Where the floor applies is U-0100. The Flak jacket (M-0130) blocks the nuke before
+  this step.'

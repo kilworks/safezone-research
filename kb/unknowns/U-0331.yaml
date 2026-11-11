@@ -1,0 +1,10 @@
+id: U-0331
+question: Does '+10 maximum HP' also raise current HP by 10?
+why_it_matters: Decides whether the upgrade is a heal as well as a cap raise.
+readings:
+  A: max HP +10, current HP unchanged
+  B: max HP +10 and current HP +10
+resolution_paths:
+- 'VOD: HP readout before and after an upgrade at less than full health.'
+priority: medium
+status: open

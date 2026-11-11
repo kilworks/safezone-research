@@ -1,0 +1,26 @@
+id: M-0310
+name: Landmine stacking and slot
+family: weapons
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/weapons#landmine
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-029
+  quote: 'Landmines and C4 stack: up to 5 of each share one inventory slot, and you can carry at most 5 of each.'
+- url: https://iceposeidon.com/safezone/wiki/weapons#landmine
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-030
+  quote: An enchanted one uses its own slot.
+formal:
+  readings:
+    A: up to 5 landmines in one inventory slot; carry at most 5; an enchanted landmine takes its own slot
+  domain: integer counts
+  parameters:
+    landmine_stack: '5'
+    landmine_carry_max: '5'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0303

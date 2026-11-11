@@ -1,0 +1,23 @@
+id: M-0141
+name: Damage source 'Unsafe circle' and what stops it
+family: damage
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  clause: wiki-damage-006
+  quote: '| Unsafe circle | Safety bubble, Guardian angel, Death Ward, Hazmat suit (slows), Body armor (absorbs)'
+formal:
+  readings:
+    A: 'blockers(Unsafe circle) = {Safety bubble: blocks; Guardian angel: blocks; Death Ward: blocks; Hazmat suit: slows; Body armor: absorbs}'
+  domain: one hit of source 'Unsafe circle'
+  parameters: {}
+depends_on:
+- M-0118
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0002
+- U-0123
+notes: 'Unsafe circle (Trolling). The Trolling page lists Guardian angel, Safety bubble, Reality Shield, Death Ward as blockers: same set, C-0103 concerns Death Ward scope.'

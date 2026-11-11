@@ -1,0 +1,18 @@
+id: C-0601
+summary: 'Protection immunity: the stat card lists poison, drones, missiles, C4, landmines, airstrikes, gunships; the rules sentence and the damage table add trapped gifts, airstrike fire and Protection retribution.'
+sides:
+- url: https://iceposeidon.com/safezone/wiki/sigils/protection
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-protection-007
+  quote: Poison, drones, missiles, C4, landmines, airstrikes, gunships
+- url: https://iceposeidon.com/safezone/wiki/sigils/protection#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-protection-008
+  quote: Immune to poison, drones, missiles, C4, landmines, trapped gifts, airstrikes and their fire, gunship bombs and Protection retribution.
+- url: https://iceposeidon.com/safezone/wiki/damage
+  snapshot: '2026-11-11'
+  clause: wiki-damage-021
+  quote: '| Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (reflects)'
+mechanics:
+- M-0640
+status: open

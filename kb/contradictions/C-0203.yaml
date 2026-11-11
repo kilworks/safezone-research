@@ -1,0 +1,14 @@
+id: C-0203
+summary: 'Items page: sleeping contestants are immune to flashbangs. Merchant page: immune only after 65 seconds of sleep.'
+sides:
+- url: https://iceposeidon.com/safezone/wiki/items#flashbang
+  snapshot: '2026-11-11'
+  clause: wiki-items-075
+  quote: Sleeping contestants are immune.
+- url: https://iceposeidon.com/safezone/wiki/merchant#items
+  snapshot: '2026-11-11'
+  clause: wiki-merchant-023
+  quote: After 65 seconds of sleep you are immune to flashbangs and to all damage except zone and unsafe circle damage.
+mechanics:
+- M-0246
+status: open

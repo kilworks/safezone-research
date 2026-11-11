@@ -1,0 +1,28 @@
+id: M-0445
+name: Horde zombies
+family: zombies
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/zombies#sources
+  snapshot: '2026-11-11'
+  quote: 'Horde: viewers release 50 zombies at random points in the safe zones.'
+  clause: wiki-zombies-005
+- url: https://iceposeidon.com/safezone/wiki/zombies#sources
+  snapshot: '2026-11-11'
+  quote: Horde zombies have no owner.
+  clause: wiki-zombies-006
+formal:
+  readings:
+    A: viewers release 50 ownerless zombies at random points in the safe zones
+  domain: count 50
+  parameters:
+    count: '50'
+    lifetime: 20 min (attacks page)
+depends_on: []
+interacts_with:
+- M-0408
+label: CONDITIONAL
+open_unknowns:
+- U-0403
+notes: 'Ownerless: no Necromancy owner earns tokens for them.'

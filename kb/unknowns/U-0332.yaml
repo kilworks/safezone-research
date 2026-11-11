@@ -1,0 +1,13 @@
+id: U-0332
+question: 'Deep Cut: when is the first bleeding tick, does a new hit while bleeding reset the timer, how long does the charge last unused, and does a bleeding tick count as a hit?'
+why_it_matters: Bleeding is the only unbounded damage over time on this page; it ends only on a bandage or a Healing contestant.
+readings:
+  A: first tick 5 min after the hit; a new bleeding hit is ignored; the charge never expires; ticks are plain damage events
+  B: first tick at once, then every 5 min; a new hit restarts the 5 min timer; charge never expires
+  C: charge expires after an unstated period
+resolution_paths:
+- 'VOD: bleeding timeline of a contestant hit with a Deep Cut weapon.'
+priority: medium
+status: open
+related:
+- U-0002

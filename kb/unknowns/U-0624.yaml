@@ -1,0 +1,11 @@
+id: U-0624
+question: 'Healing revive counters: ''2 times'' (a Healing contestant being revived) and ''10 times'' (a Healing contestant reviving): per event, per pair, and do cancelled or failed revives count?'
+why_it_matters: Bounds the Healing contestant's number of lives and total revives.
+readings:
+  A: total per event for each Healing contestant, successful revives only
+  B: per reviver for the 2-times rule
+  C: attempts count, even when the revive is cancelled
+resolution_paths:
+- 'VOD: third revive of a Healing contestant.'
+priority: high
+status: open

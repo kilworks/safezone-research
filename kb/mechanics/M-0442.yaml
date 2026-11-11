@@ -1,0 +1,24 @@
+id: M-0442
+name: Zombie drain cap
+family: zombies
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/zombies
+  snapshot: '2026-11-11'
+  quote: Each zombie can drain at most 30 HP from each contestant.
+  clause: wiki-zombies-003
+formal:
+  readings:
+    A: total drain per (zombie, contestant) <= 30 HP over the zombie's lifetime
+    B: per encounter
+    C: per time window
+  domain: integer 0..30 per pair
+  parameters:
+    cap: 30 HP
+depends_on:
+- M-0441
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0008

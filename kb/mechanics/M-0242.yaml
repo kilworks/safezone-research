@@ -1,0 +1,44 @@
+id: M-0242
+name: Flak jacket blocks one explosive hit
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#flak_jacket
+  snapshot: '2026-11-11'
+  clause: wiki-items-062
+  quote: Usable
+- url: https://iceposeidon.com/safezone/wiki/items#flak_jacket
+  snapshot: '2026-11-11'
+  clause: wiki-items-063
+  quote: Use it to block the next missile, nuke, airstrike or gunship hit on you.
+- url: https://iceposeidon.com/safezone/wiki/items#flak_jacket
+  snapshot: '2026-11-11'
+  clause: wiki-items-064
+  quote: It stays active until a hit uses it up.
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  clause: wiki-damage-063
+  quote: A Flak jacket blocks the next missile, nuke, airstrike impact or gunship bomb, then is used up.
+- url: https://iceposeidon.com/safezone/wiki/attacks#airstrike
+  snapshot: '2026-11-11'
+  clause: wiki-attacks-034
+  quote: A Flak jacket blocks the strike, but not the fire.
+- url: https://iceposeidon.com/safezone/wiki/attacks#gunship
+  snapshot: '2026-11-11'
+  clause: wiki-attacks-041
+  quote: A Flak jacket blocks one bomb.
+formal:
+  readings:
+    A: blocks the next missile, nuke, airstrike impact or gunship bomb that reaches the holder; used up by that hit; airstrike fire not blocked
+    B: A, but a hit already blocked by Shield/Safety bubble/Sleeping Bag also consumes it
+    C: A, but a hit already blocked earlier does not consume it
+  domain: hit event of listed kinds
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0205
+label: CONDITIONAL
+open_unknowns:
+- U-0216
+notes: Items page names 'airstrike or gunship hit'; attacks page narrows to the strike and one bomb (not the fire).

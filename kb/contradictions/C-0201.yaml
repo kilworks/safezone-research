@@ -1,0 +1,14 @@
+id: C-0201
+summary: 'Items page: a trapped gift ignores Body armor. Damage page: Body Armor works on every kind of damage.'
+sides:
+- url: https://iceposeidon.com/safezone/wiki/items#body_armor
+  snapshot: '2026-11-11'
+  clause: wiki-items-027
+  quote: A trapped gift ignores it.
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  clause: wiki-damage-071
+  quote: Body Armor works on every kind of damage.
+mechanics:
+- M-0218
+status: open

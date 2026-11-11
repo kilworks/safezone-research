@@ -1,0 +1,11 @@
+id: U-0609
+question: 'Endurance item use bonus: which actions are an ''item use'' (weapon shots, bandages, Safety bubbles, crafts, merchant upgrades, effects that stay active)?'
+why_it_matters: Determines how fast the counter of U-0608 advances.
+readings:
+  A: every consumed or activated inventory item, as in the active-item-effects rule
+  B: A minus the exclusions listed in the items page (Safety Bubbles, smoke bombs, bandages, crafts, merchant upgrades)
+  C: also weapon attacks such as bow shots
+resolution_paths:
+- 'VOD: counter movement after each action type.'
+priority: medium
+status: open

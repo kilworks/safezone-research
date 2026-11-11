@@ -1,0 +1,14 @@
+id: U-0108
+question: 'Who can revive a non-Healing contestant: only Healing contestants (implied by the two rules), or anyone with some other rule?'
+why_it_matters: Decides whether a dead non-Healing contestant is revivable at all without a Healing contestant alive nearby.
+readings:
+  A: only a Healing contestant can revive a non-Healing contestant; others can revive only Healing contestants
+  B: any contestant can revive any contestant; the 2-times rule is only a cap specific to Healing targets
+resolution_paths:
+- 'VOD: a non-Healing contestant reviving a non-Healing one.'
+- Organizer statement.
+priority: medium
+status: open
+related:
+- M-0112
+- M-0113

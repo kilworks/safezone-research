@@ -1,0 +1,11 @@
+id: U-0619
+question: 'Protection ''Bandages last 1.1x as long'': same total heal over a longer time, or same rate over a longer time?'
+why_it_matters: Either 10 HP over 132 s, or 11 HP over 132 s.
+readings:
+  A: duration = 132 s, total stays 10 HP (rate drops)
+  B: duration = 132 s at the same HP per second, total 11 HP
+  C: duration rounds to a tick grid of the bandage
+resolution_paths:
+- 'VOD: Protection contestant bandage HP gain total.'
+priority: medium
+status: open

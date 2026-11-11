@@ -1,0 +1,11 @@
+id: U-0306
+question: Which items count for the Ingenuity landmine attachment 'an item you use on yourself'?
+why_it_matters: The C4 text says 'another item you hold'; the landmine text restricts to items used on oneself. The set of valid items decides what a landmine trap can hide in.
+readings:
+  A: consumables with a self effect (potions, bandage, shields)
+  B: any usable item
+  C: only items that heal
+resolution_paths:
+- 'VOD: Ingenuity contestant attaching a landmine to several item types.'
+priority: medium
+status: open

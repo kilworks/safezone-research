@@ -1,0 +1,11 @@
+id: U-0303
+question: How do the 'up to 5 of each share one slot / carry at most 5 of each' caps interact with 'An enchanted one uses its own slot'?
+why_it_matters: Fixes the maximum number of C4 and landmines a contestant can hold and the slots they take.
+readings:
+  A: enchanted ones count toward the 5 cap and take a separate slot
+  B: enchanted ones are outside the 5 cap (5 plain + own slot)
+  C: one enchanted one at a time, outside the cap
+resolution_paths:
+- 'VOD: inventory screen with 5 plain C4 and an enchanted one.'
+priority: medium
+status: open

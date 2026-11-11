@@ -1,0 +1,12 @@
+id: U-0422
+question: 'Cyclops zone damage: ''Outside the safe zones it takes zone damage''. Same rate as contestants (U-0003), same escalation, or flat?'
+why_it_matters: Whether an unsafe cyclops dies to the zone alone, paying nothing.
+readings:
+  A: same 2s tick and rule as for contestants
+  B: different rule
+resolution_paths:
+- VOD of a cyclops outside the zone.
+priority: low
+status: open
+related:
+- U-0003

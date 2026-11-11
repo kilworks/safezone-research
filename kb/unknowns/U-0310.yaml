@@ -1,0 +1,13 @@
+id: U-0310
+question: 'Zarok''s axe: how does damage go from 5 HP at full health to 25 HP as the wielder''s health drops (linear, stepwise, relative to max HP, where is 25 reached)?'
+why_it_matters: 'The axe''s whole value depends on the curve: it fixes the damage at every HP level and whether 25 HP is reachable at all.'
+readings:
+  A: 'linear in the wielder''s missing fraction of max HP: 5 + 20*(1 - h/H), H = current max HP, 25 reached at h = 0'
+  B: linear in missing fraction with 25 reached at h = 1 (lowest living HP)
+  C: 'linear in absolute HP against a fixed 100 HP scale: 5 + 20*(100 - h)/100, clamped to [5, 25]'
+  D: stepwise in tiers of the wielder's HP (tier boundaries not stated)
+resolution_paths:
+- 'VOD: axe hits at several wielder HP values (full, half, low).'
+- 'REA: weapon damage formula if shipped.'
+priority: high
+status: open

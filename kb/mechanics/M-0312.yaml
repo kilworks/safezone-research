@@ -1,0 +1,33 @@
+id: M-0312
+name: Arrows and stacks
+family: weapons
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/weapons#arrow
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-036
+  quote: Ammo for the bow.
+- url: https://iceposeidon.com/safezone/wiki/weapons#arrow
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-037
+  quote: A chest drop holds 10.
+- url: https://iceposeidon.com/safezone/wiki/weapons#arrow
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-038
+  quote: 'Arrows stack: new arrows join the stack you already carry, up to 10 per stack, so they need no extra slot.'
+- url: https://iceposeidon.com/safezone/wiki/weapons#arrow
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-039
+  quote: Arrows above that start a new stack, which uses a slot.
+formal:
+  readings:
+    A: a chest drop holds 10 arrows; arrows join the stack carried up to 10 per stack; arrows above that start a new stack that takes a slot
+  domain: integer counts
+  parameters:
+    chest_drop_arrows: '10'
+    arrow_stack: '10'
+depends_on: []
+interacts_with: []
+label: DOCUMENTED
+notes: A new stack uses an inventory slot (3 base, items page). Chest rules are U-0015.

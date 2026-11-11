@@ -1,0 +1,14 @@
+id: U-0414
+question: 'Illusion copies count: ''a copy of every living contestant'' and, under 10 alive, ''several copies, up to 30 in total''. How many copies each, how are 30 shared, and at 10 or more is the total capped at 30?'
+why_it_matters: Sets copy density and the odds that an attack hits a real contestant.
+readings:
+  A: copies each = floor(30/n) for n < 10, total 30 at most
+  B: copies each = ceil(30/n), total capped to 30
+  C: random split of exactly 30
+  D: 'n >= 10: n copies uncapped; n >= 30 gives more than 30'
+parameter: illusion_total_cap
+sweep_range: 10 to 40 copies; 30 is stated for fewer than 10 contestants, the n>=10 case is not capped by the wiki
+resolution_paths:
+- 'VOD: observe the event live with an on-screen timer.'
+priority: medium
+status: open

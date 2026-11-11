@@ -1,0 +1,26 @@
+id: M-0634
+name: 'Necromancy horde bonus: 5 zombies'
+family: zombies
+sigils:
+- necromancy
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/necromancy#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-necromancy-013
+  quote: When viewers send a horde, you also get 5 zombies of your own.
+- url: https://iceposeidon.com/safezone/wiki/zombies#sources
+  snapshot: '2026-11-11'
+  clause: wiki-zombies-009
+  quote: when a horde is released, every living Necromancy contestant also gets 5 zombies where they stand.
+formal:
+  readings:
+    A: on horde release, each living Necromancy contestant gains 5 owned zombies at their position
+  parameters:
+    bonus_zombies: '5'
+    zombie_lifetime_s: UNKNOWN, see U-0612
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0612
+notes: 'The zombies page adds ''living'' and ''where they stand''. Horde zombies (50 of them, at random points) have no owner: they are not part of this mechanic.'

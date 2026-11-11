@@ -1,0 +1,22 @@
+id: M-0132
+name: 'Sleeping Bag immunity: within 15 m of own bag, all damage except zone, unsafe circle, robot'
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  clause: wiki-damage-067
+  quote: A sleeping contestant within 15m (49ft) of their own Sleeping Bag is immune to all damage except zone, unsafe circle and robot damage.
+formal:
+  readings:
+    A: 'if asleep and dist(self, own_bag) <= 15 m: immune to every source except {outside circle, unsafe circle, robot}'
+  domain: dist in metres
+  parameters:
+    radius_m: '15'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0120
+notes: 'Merchant page adds a 65 s delay, flashbangs and excludes only zone and unsafe circle (no robot): C-0105. Immunity is absent from the damage table rows of those three sources, as stated.'

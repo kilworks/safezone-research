@@ -1,0 +1,25 @@
+id: M-0120
+name: 'Pipeline step 3: Mirror forcefield sends the whole hit back'
+family: damage
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/damage#order
+  snapshot: '2026-11-11'
+  clause: wiki-damage-041
+  quote: A Mirror forcefield sends the whole hit back to the attacker instead, before any reduction.
+formal:
+  readings:
+    A: 'if defender mirror active and source reflectable: attacker receives d (after step 2) through the attacker''s full pipeline, defender takes 0'
+    B: attacker receives d raw, no pipeline
+  parameters: {}
+depends_on:
+- M-0117
+- M-0119
+interacts_with:
+- M-0134
+- M-0135
+label: CONDITIONAL
+open_unknowns:
+- U-0005
+notes: '''Before any reduction'' fixes the mirror before steps 4 to 7 of the defender. The reflected amount includes the Kick bonus (step 2 earlier). Attacker''s pipeline is U-0005.'

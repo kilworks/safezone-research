@@ -1,0 +1,40 @@
+id: M-0635
+name: Necromancy owned zombie drain and HP transfer
+family: zombies
+sigils:
+- necromancy
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/necromancy#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-necromancy-014
+  quote: Your zombies drain 1 HP every 10s from contestants within 5m (16ft), up to 30 HP per contestant for each zombie.
+- url: https://iceposeidon.com/safezone/wiki/sigils/necromancy#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-necromancy-015
+  quote: The HP goes to you.
+- url: https://iceposeidon.com/safezone/wiki/zombies
+  snapshot: '2026-11-11'
+  clause: wiki-zombies-002
+  quote: drain 1 HP from any contestants within 5m (16ft) every 10s.
+- url: https://iceposeidon.com/safezone/wiki/zombies
+  snapshot: '2026-11-11'
+  clause: wiki-zombies-003
+  quote: Each zombie can drain at most 30 HP from each contestant.
+formal:
+  readings:
+    A: 'each owned zombie: every 10 s, for each contestant within 5 m: victim -1 HP (until 30 total per zombie per victim), owner += actual HP removed, capped at maxHP'
+    B: owner += nominal 1 HP per tick regardless of armor, capped at maxHP
+  domain: integer HP
+  parameters:
+    drain_hp: '1'
+    interval_s: '10'
+    radius_m: '5'
+    cap_hp: '30'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0613
+- U-0008
+- U-0002
+notes: Cap semantics (lifetime or per encounter) is U-0008. Nearest-contestant chase at 1.4 m/s is in the zombies page (other family).

@@ -1,0 +1,15 @@
+id: U-0114
+question: 'The zone can ''split apart'': with several safe zones, is ''leave a safezone'' damage triggered when outside every zone (A) or when leaving the zone you were last in (B)?'
+why_it_matters: Decides whether crossing between two zones is a loss, which is central when the zone splits.
+readings:
+  A: damage clock runs only when the position is inside no safe zone
+  B: damage clock runs when leaving a zone, restarts if re-entering any zone
+  C: damage clock is tied to one assigned zone per contestant
+resolution_paths:
+- 'VOD: a split event and a contestant crossing between the two.'
+- Organizer statement.
+priority: high
+status: open
+related:
+- M-0100
+- M-0101

@@ -1,0 +1,13 @@
+id: U-0419
+question: 'Cyclops blood tokens: ''1 blood token per damage dealt'' when it dies. Is damage counted with overkill capped at its 200 HP, are merchant missiles ''viewer items'', and does a zone kill still pay nothing if contestants dealt damage earlier?'
+why_it_matters: Cyclops is a major token source; the total is bounded by 200 or unbounded by overkill.
+readings:
+  A: payout = actual HP removed (<= 200 total); merchant missiles count
+  B: payout counts raw damage including overkill
+  C: merchant missiles count as viewer items and earn nothing
+resolution_paths:
+- VOD of a cyclops kill with the token log.
+priority: medium
+status: open
+related:
+- U-0014

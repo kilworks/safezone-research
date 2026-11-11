@@ -1,0 +1,26 @@
+id: M-0218
+name: Trapped gift ignores Body armor
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#body_armor
+  snapshot: '2026-11-11'
+  clause: wiki-items-027
+  quote: A trapped gift ignores it.
+- url: https://iceposeidon.com/safezone/wiki/damage#notes
+  snapshot: '2026-11-11'
+  clause: wiki-damage-071
+  quote: Body Armor works on every kind of damage.
+formal:
+  readings:
+    A: trapped gift damage bypasses Body armor
+    B: Body armor works on every kind of damage, including trapped gift
+  domain: damage source kinds
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0217
+label: CONTRADICTED
+open_unknowns: []
+notes: See C-0201. The damage page table row for Trapped gift also omits Safety bubble and Body armor, which matches A.

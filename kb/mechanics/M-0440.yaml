@@ -1,0 +1,26 @@
+id: M-0440
+name: Zombie pursuit
+family: zombies
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/zombies
+  snapshot: '2026-11-11'
+  quote: Zombies roam the map, chase contestants and drain their HP.
+  clause: wiki-zombies-001
+- url: https://iceposeidon.com/safezone/wiki/zombies
+  snapshot: '2026-11-11'
+  quote: They chase the nearest valid contestant, at any distance, at 1.4m/s (3.13mph)
+  clause: wiki-zombies-002
+formal:
+  readings:
+    A: each zombie moves toward the nearest valid contestant at 1.4 m/s at any distance
+  domain: valid set undefined
+  parameters:
+    speed: 1.4 m/s
+    valid: UNKNOWN, see U-0424
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0424

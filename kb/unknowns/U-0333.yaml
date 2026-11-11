@@ -1,0 +1,11 @@
+id: U-0333
+question: 'Weapon enchantment ''Twice the uses ... keeps the uses it had before or the uses it has left, whichever is lower'': twice what, and what is ''the uses it had before''?'
+why_it_matters: Fixes the use count after the enchant and what a weapon with few uses left keeps after two hours.
+readings:
+  A: uses become 2 * (uses left when enchanted); 'before' = uses left when enchanted
+  B: uses become 2 * (maximum uses of the weapon); 'before' = uses left when enchanted
+  C: uses become uses left + maximum uses; 'before' = maximum uses
+resolution_paths:
+- 'VOD: enchanting a half-used knife and checking uses.'
+priority: high
+status: open

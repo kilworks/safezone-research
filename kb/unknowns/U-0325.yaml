@@ -1,0 +1,14 @@
+id: U-0325
+question: 'Sleeping Bag: what are the ''sleep from 18:00 to 06:00 ... for eight hours of sleep in total'' rules?'
+why_it_matters: 'Twelve hours of window against eight hours of sleep: the wiki does not say whether the 8h is a continuous block, a total budget or a cap on one night.'
+readings:
+  A: sleeping is allowed only between 18:00 and 06:00; total sleep time is capped at 8h and may be split
+  B: one continuous 8h block that must lie inside the window
+  C: the bag holds a total of 8h of sleep across the whole event
+parameter: sleep_total_h
+sweep_range: 8 as stated; test splits of the budget
+resolution_paths:
+- 'VOD: a contestant sleeping through the window.'
+- Organizer statement.
+priority: high
+status: open

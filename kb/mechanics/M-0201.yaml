@@ -1,0 +1,25 @@
+id: M-0201
+name: Which items stack in one slot
+family: items
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#inventory
+  snapshot: '2026-11-11'
+  clause: wiki-items-002
+  quote: You can carry up to 3 items, some items can stack (such as C4/Landmines/Arrows).
+formal:
+  readings:
+    A: stackable = {C4, Landmines, Arrows} only; every other item takes one slot per unit
+    B: 'the list is open (''such as''): other items (mirror forcefields, non-Piety potions, ...) may also stack'
+  domain: 'item kinds; stack sizes: C4/landmines 5 and arrows 10 per the weapons page'
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0200
+- M-0202
+- M-0236
+label: CONDITIONAL
+open_unknowns:
+- U-0200
+notes: Stack sizes are not on the Items page; the weapons page gives 5 for C4 and landmines and 10 per arrow stack.

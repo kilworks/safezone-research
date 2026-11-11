@@ -1,0 +1,21 @@
+id: M-0202
+name: Piety health potion stack of 6
+family: items
+sigils:
+- piety
+sources:
+- url: https://iceposeidon.com/safezone/wiki/items#inventory
+  snapshot: '2026-11-11'
+  clause: wiki-items-003
+  quote: Piety contestants stack up to 6 health potions in one slot.
+formal:
+  readings:
+    A: all health potions of a Piety contestant share one slot, count <= 6
+  domain: potion count 0..6
+  parameters: {}
+depends_on: []
+interacts_with:
+- M-0207
+label: DOCUMENTED
+open_unknowns: []
+notes: Equal to the Piety page (all your health potions share one inventory slot, up to 6). For other contestants the Items page says nothing about potion stacking (see U-0200).

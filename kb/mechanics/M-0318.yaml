@@ -1,0 +1,39 @@
+id: M-0318
+name: Huge machete
+family: weapons
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/weapons#huge_machete
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-054
+  quote: Equippable
+- url: https://iceposeidon.com/safezone/wiki/weapons#huge_machete
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-055
+  quote: Only admins can give it out.
+- url: https://iceposeidon.com/safezone/wiki/weapons#huge_machete
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-056
+  quote: Hits a nearby contestant for 10 HP.
+- url: https://iceposeidon.com/safezone/wiki/weapons#huge_machete
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-057
+  quote: 10 uses, cooldown 5s.
+formal:
+  readings:
+    A: only admins can give it out; hits a nearby contestant for 10 HP; 10 uses; cooldown 5 s
+  domain: HP, seconds
+  parameters:
+    machete_damage_hp: '10'
+    machete_range_m: UNKNOWN, see U-0309
+    machete_uses: '10'
+    machete_cooldown_s: '5'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0309
+- U-0307
+- U-0308
+notes: The merchant page's enchantment text and Deep Cut list name 'machete'; this is read as the Huge machete.

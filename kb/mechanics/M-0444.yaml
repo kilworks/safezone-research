@@ -1,0 +1,25 @@
+id: M-0444
+name: Zombies destroy crafted items
+family: zombies
+sigils:
+- ingenuity
+sources:
+- url: https://iceposeidon.com/safezone/wiki/zombies
+  snapshot: '2026-11-11'
+  quote: a 40% chance to destroy crafted items
+  clause: wiki-zombies-004
+formal:
+  readings:
+    A: p = 0.4 per drain tick, one random craft
+    B: per encounter
+    C: each craft independently
+  domain: p in {0.4}
+  parameters:
+    p: '0.4'
+depends_on:
+- M-0441
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0427
+notes: Ingenuity page says 'unique crafts' and 'Zombie hits' (C-0404).

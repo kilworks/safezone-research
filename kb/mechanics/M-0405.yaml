@@ -1,0 +1,43 @@
+id: M-0405
+name: Viewer nuke
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#nuke
+  snapshot: '2026-11-11'
+  quote: Viewers aim it at a point inside a safe zone.
+  clause: wiki-attacks-011
+- url: https://iceposeidon.com/safezone/wiki/attacks#nuke
+  snapshot: '2026-11-11'
+  quote: It lands exactly there after 1min.
+  clause: wiki-attacks-012
+- url: https://iceposeidon.com/safezone/wiki/attacks#nuke
+  snapshot: '2026-11-11'
+  quote: Everyone within 100m (328ft) takes 20 HP, unless an admin set other numbers.
+  clause: wiki-attacks-015
+- url: https://iceposeidon.com/safezone/wiki/attacks#nuke
+  snapshot: '2026-11-11'
+  quote: A Flak jacket, a Shield, a Safety bubble, a Reality Shield or sleeping in your own Sleeping Bag blocks it.
+  clause: wiki-attacks-017
+- url: https://iceposeidon.com/safezone/wiki/attacks#nuke
+  snapshot: '2026-11-11'
+  quote: An EMP destroys a viewer nuke in the air.
+  clause: wiki-attacks-018
+formal:
+  readings:
+    A: aim p inside a safe zone; lands exactly at p after 60s; everyone within 100m takes 20 HP; blocked by Flak jacket, Shield, Safety bubble, Reality Shield or own Sleeping Bag; EMP destroys it in the air
+  domain: d <= 100 m, damage 20 HP, flight 60 s
+  parameters:
+    flight_time: 60 s
+    damage: 20 HP
+    radius: 100 m
+    price_cx_bucks: UNKNOWN, see U-0014
+depends_on: []
+interacts_with:
+- M-0400
+- M-0401
+label: DOCUMENTED
+open_unknowns:
+- U-0014
+notes: Damage page also lists Body armor (absorbs); the attacks page does not (not a conflict, armor is partial).

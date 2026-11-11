@@ -1,0 +1,13 @@
+id: U-0125
+question: 'Blood crown: who ''held'' it at the time of a kill (before the kill, or after transfer by that same kill), and how is it obtained/lost?'
+why_it_matters: The 25 versus 50 token payout depends on it, and the crown rules are not on the pages in this clause set.
+readings:
+  A: holder status read before the kill resolves
+  B: holder status read after crown transfer resolves
+resolution_paths:
+- Organizer statement; page that documents the crown (cross-family).
+priority: high
+status: open
+related:
+- U-0104
+- M-0110

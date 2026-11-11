@@ -1,0 +1,25 @@
+id: M-0430
+name: Cyclops concurrency and respawn
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#cyclops
+  snapshot: '2026-11-11'
+  quote: Only one cyclops can be on the map at a time.
+  clause: wiki-attacks-077
+- url: https://iceposeidon.com/safezone/wiki/attacks#cyclops
+  snapshot: '2026-11-11'
+  quote: The next one can come 3h after it dies.
+  clause: wiki-attacks-078
+formal:
+  readings:
+    A: at most one on the map; next can come 10800 s after the previous dies
+  domain: t seconds
+  parameters:
+    cooldown: 10800 s
+depends_on:
+- M-0426
+interacts_with: []
+label: DOCUMENTED
+open_unknowns: []

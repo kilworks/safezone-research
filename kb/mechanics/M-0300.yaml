@@ -1,0 +1,21 @@
+id: M-0300
+name: Weapon sources
+family: weapons
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/weapons
+  snapshot: '2026-11-11'
+  clause: wiki-weapons-002
+  quote: Contestants find them in chests, care packages and crates.
+formal:
+  readings:
+    A: weapon items enter play only through chests, care packages and crates (plus trades and merchant care packages stated elsewhere)
+  domain: item acquisition
+  parameters: {}
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0015
+notes: Chest, care package and crate rules are not on this page (U-0015). Trading and the merchant care package are stated on other pages.

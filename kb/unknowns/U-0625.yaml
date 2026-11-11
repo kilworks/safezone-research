@@ -1,0 +1,12 @@
+id: U-0625
+question: 'Revive cost ''costs the reviver 5 HP'': can it kill a reviver with 5 HP or fewer, and does it run through the hit pipeline (armor, fortress, Kick live)?'
+why_it_matters: A reviver at 5 HP or less could die for the revive, and the revived contestant gets 5 HP.
+readings:
+  A: revive needs HP > 5; refused otherwise
+  B: revive needs HP >= 5 and may leave 0 (reviver dies)
+  C: cost is min(5, HP - 1)
+  D: cost goes through the hit pipeline (see U-0002)
+resolution_paths:
+- 'VOD: reviver with 5 HP attempting a revive.'
+priority: high
+status: open

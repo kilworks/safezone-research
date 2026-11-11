@@ -1,0 +1,11 @@
+id: U-0615
+question: 'Guard zombie ''up to 30 HP per contestant'': per guard zombie, or shared across all guard zombies on the same contestant? Does it stand still all hour?'
+why_it_matters: Several deaths near one gravestone could stack guards; the cap decides whether guards multiply the total.
+readings:
+  A: 30 HP cap per guard zombie per contestant (like the ordinary zombie rule)
+  B: 30 HP cap per contestant over all guard zombies
+  C: A, and a guard that has hit its cap on a contestant stops draining them only
+resolution_paths:
+- 'VOD: contestant standing between two guard zombies.'
+priority: medium
+status: open

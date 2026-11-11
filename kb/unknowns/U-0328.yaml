@@ -1,0 +1,11 @@
+id: U-0328
+question: 'Sleeping Bag: when does the 20-minute ''cannot sleep again'' lockout start (the moment the bag first protects, when you wake, or at the last blocked damage)?'
+why_it_matters: 'Changes how long a contestant can sleep: if the lockout starts when protection begins at the 65 s mark, an 8h sleeper is locked out long before they wake.'
+readings:
+  A: starts when the bag starts protecting (after 65 s of sleep)
+  B: starts when the sleeper wakes
+  C: starts at the last damage the bag blocked
+resolution_paths:
+- 'VOD: a sleeper waking and trying to sleep again.'
+priority: high
+status: open

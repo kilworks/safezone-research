@@ -1,0 +1,24 @@
+id: M-0652
+name: 'Healing passive regeneration: 1 HP every 30min'
+family: healing
+sigils:
+- healing
+sources:
+- url: https://iceposeidon.com/safezone/wiki/sigils/healing#rules
+  snapshot: '2026-11-11'
+  clause: wiki-sigils-healing-010
+  quote: You regenerate 1 HP every 30min, up to your max HP.
+formal:
+  readings:
+    A: every 1800 s on a fixed clock, damage does not reset it
+    B: damage resets the 1800 s timer
+  domain: seconds
+  parameters:
+    regen_hp: '1'
+    period_s: '1800'
+depends_on: []
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0007
+notes: 'Belongs to Healing, not Necromancy. Start of the clock: event start or sigil pick is also open.'

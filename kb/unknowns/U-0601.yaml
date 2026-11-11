@@ -1,0 +1,11 @@
+id: U-0601
+question: 'Death heal ''for every contestant eliminated so far, them included'': what is counted, and does a revived contestant still count?'
+why_it_matters: Sets the heal size N per nearby death; N grows during the event so the choice shifts total Death healing.
+readings:
+  A: N = number of death events since the event start, the new victim included (a revive never lowers it)
+  B: N = number of contestants currently dead, the new victim included (a revive lowers it)
+  C: N = number of distinct contestants who have died at least once
+resolution_paths:
+- 'VOD: heal amount shown on a Death contestant after a death that follows a revive.'
+priority: high
+status: open

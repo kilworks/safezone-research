@@ -1,0 +1,16 @@
+id: U-0104
+question: '''A final kill pays 25 blood tokens, or 50 if the killer or victim held the blood crown'': who is paid, what makes a kill ''final'', and when is the payment made?'
+why_it_matters: Blood-token income from kills is the main resource flow in combat; the recipient and timing decide whether revival undoes the payment.
+readings:
+  A: the killer is paid 25 (50 with crown) at the killing blow
+  B: the killer is paid after the revival window ends without a revive (final = not revived)
+  C: the killer is paid 25, and an additional 25 goes elsewhere if the crown is involved, so 50 is the total paid out
+resolution_paths:
+- 'VOD: blood token counter of a killer at the killing blow and 10 min later.'
+- Organizer statement.
+priority: high
+status: open
+related:
+- U-0105
+- U-0125
+- U-0011

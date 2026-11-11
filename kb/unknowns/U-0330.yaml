@@ -1,0 +1,12 @@
+id: U-0330
+question: 'Max HP upgrade: is there a purchase limit in addition to the HP cap (200, or 220 for Piety), and how many purchases reach each cap per sigil?'
+why_it_matters: With 100 base HP the cap 200 is 10 purchases; Piety (110 base) reaches 220 only with 11, and Greed (90 base) needs 11 for 200; the wiki states a purchase limit only for slots.
+readings:
+  A: no purchase limit, only the HP cap (Greed 11, Piety 11, others 10 purchases)
+  B: 10 purchases for everyone (Piety stops at 210, which contradicts the 220 cap)
+parameter: hp_upgrade_purchase_limit
+sweep_range: '10 to 12 purchases: the caps imply 10 for base 100, 11 for base 90 or 110'
+resolution_paths:
+- 'VOD: Piety contestant after 10 and 11 HP upgrades.'
+priority: medium
+status: open

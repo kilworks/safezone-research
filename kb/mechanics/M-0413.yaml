@@ -1,0 +1,31 @@
+id: M-0413
+name: Airstrike fire
+family: viewer
+sigils:
+- all
+sources:
+- url: https://iceposeidon.com/safezone/wiki/attacks#airstrike
+  snapshot: '2026-11-11'
+  quote: The strip then burns for 5min.
+  clause: wiki-attacks-029
+- url: https://iceposeidon.com/safezone/wiki/attacks#airstrike
+  snapshot: '2026-11-11'
+  quote: Anyone inside loses 1 HP every 2s.
+  clause: wiki-attacks-030
+formal:
+  readings:
+    A: from impact for 300 s, a contestant inside the strip loses 1 HP every 2s, first tick at +2s
+    B: first tick at impact
+    C: fire from purchase, ends at 300 s
+  domain: t in seconds from purchase; impact at t=20
+  parameters:
+    duration: 300 s
+    damage: 1 HP
+    period: 2 s
+depends_on:
+- M-0412
+interacts_with: []
+label: CONDITIONAL
+open_unknowns:
+- U-0408
+- U-0002
