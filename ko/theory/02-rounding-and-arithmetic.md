@@ -61,7 +61,7 @@ $$
 
 *증명.* 최소 단계는 $d \ge 1$인데 줄어든 값이 0일 때, 그리고 그때에만 결과를 바꿉니다. $R_A(d) = 0 \iff 9d < 10 \iff d = 1$; $d \ge 1$에 대해 $R_B(d) = d - \lfloor d/10 \rfloor \ge 1$; $H(d) = 0 \iff d = 1$; $R_A(H(d)) = 0 \iff H(d) \le 1 \iff d \le 3$; 최종 한 번 내림이면 $\lfloor 9d/20 \rfloor = 0 \iff 9d < 20 \iff d \le 2$; $R_B(H(d)) = 0 \iff H(d) = 0 \iff d = 1$. 공격자의 Kick 보너스(2단계)는 모든 행을 그대로 둡니다. $d \le 9$에 대해 $\lfloor 11d/10 \rfloor = d$이고, 모든 행은 $d \le 3$만 다루기 때문입니다. $\square$
 *따름 결과.* 최소 단계는 3 HP 이하의 타격에서만 중요합니다. 문서화된 공격 중 그렇게 적게 주는 것은 1 HP 틱(존, 언세이프 서클, robot, 독, 출혈, 공습 화재, 좀비 흡수)과 2 HP 틱(가드 좀비, 최루 가스), 그리고 Wizard staff 범위가 틱을 준다면 Wizard staff 틱(U-0010)뿐입니다. 이 틱들이 파이프라인을 통과하는 "타격"인지는 U-0002입니다. fortress와 armor가 그 마지막 1 HP를 여전히 흡수할 수 있는지는 U-0103입니다.
-*라벨:* 명시된 각 행에 대해서는 `DERIVED`; 어느 행이 적용되는지는 U-0100에 따라 `CONDITIONAL`, 게임 내 관련성은 U-0002에 따라 `CONDITIONAL`. *테스트:* `test_t0004_minimum_step_changes_outcome_only_for_tiny_hits`.
+*라벨:* 명시된 각 행에 대해서는 `DERIVED`; 어느 행이 적용되는지는 U-0100에 따라, 어느 열이 적용되는지는 U-0001에 따라, 최소 단계가 5단계에서 작용한다는 점은 M-0123 해석 A에 따라(해석 B는 최소 단계를 6단계와 7단계 뒤에 둡니다) `CONDITIONAL`이며, 게임 내 관련성은 U-0002에 따라 `CONDITIONAL`. *테스트:* `test_t0004_minimum_step_changes_outcome_only_for_tiny_hits`.
 
 ## T-0005: Piety의 포션 보너스는 해석이 하나뿐입니다
 

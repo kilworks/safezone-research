@@ -38,16 +38,38 @@ def test_t0003_protection_nuke_and_kick_order():
         assert kick_defense(halve(20), reading) == halve(kick_defense(20, reading)) == 9  # viewer nuke
 
 
-def test_t0004_minimum_step_changes_outcome_only_for_tiny_hits():
-    def raised(reduce):
-        return [d for d in range(1, D_MAX + 1) if reduce(d) == 0]
+def step4_output(d, attacker_live, defender_live, protection_nuke, reading, floors):
+    """Steps 2 to 4 of the documented order (M-0117): Kick bonus, Protection 50% on a nuke, Kick 10% less.
 
-    assert raised(lambda d: kick_defense(d, "A")) == [1]
-    assert raised(lambda d: kick_defense(d, "B")) == []
-    assert raised(halve) == [1]
-    assert raised(lambda d: kick_defense(halve(d), "A")) == [1, 2, 3]
-    assert raised(lambda d: kick_defense(halve(d), "B")) == [1]
-    assert raised(lambda d: pct_floor(d, 9, 20)) == [1, 2]  # U-0100 reading B: one final floor
+    floors="two": floor after halving, then the Kick reduction (U-0100 reading A);
+    floors="one": one final floor of 9d/20 (U-0100 reading B, defined for Kick reading A only).
+    """
+    x = kick_attack(d) if attacker_live else d
+    if protection_nuke and defender_live and floors == "one":
+        return pct_floor(x, 9, 20)
+    if protection_nuke:
+        x = halve(x)
+    if defender_live:
+        x = kick_defense(x, reading)
+    return x
+
+
+def test_t0004_minimum_step_changes_outcome_only_for_tiny_hits():
+    # Row of the T-0004 table -> set of raw hits d >= 1 whose step-4 output is 0 (M-0123 reading A then raises it to 1).
+    table = {
+        # (defender_live, protection_nuke, floors): {reading: set of d}
+        (True, False, "two"): {"A": {1}, "B": set()},
+        (False, True, "two"): {"A": {1}, "B": {1}},
+        (True, True, "two"): {"A": {1, 2, 3}, "B": {1}},
+        (True, True, "one"): {"A": {1, 2}},
+        (False, False, "two"): {"A": set(), "B": set()},  # any other defender state: never
+    }
+    for (live, nuke, floors), rows in table.items():
+        for reading, expected in rows.items():
+            for attacker_live in (False, True):  # the attacker's Kick bonus leaves every row unchanged
+                raised = {d for d in range(1, D_MAX + 1)
+                          if step4_output(d, attacker_live, live, nuke, reading, floors) == 0}
+                assert raised == expected, (live, nuke, floors, reading, attacker_live)
 
 
 def test_t0005_piety_bonus_readings_coincide():
