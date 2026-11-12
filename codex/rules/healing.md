@@ -77,6 +77,8 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0208](../rules/healing.md#m-0208) parameter `loss_fraction`: 30% of max HP
 - [M-0208](../rules/healing.md#m-0208) parameter `rounding`: UNKNOWN, see [U-0204](../unknowns.md#u-0204)
 
+**Consequences:** [T-0406](../theorems/T-0406.md)
+
 **Interactions:** [M-0207](../rules/healing.md#m-0207)
 
 **Open questions:**
@@ -135,6 +137,8 @@ Label: `DOCUMENTED`. Sigils: all.
 
 - [M-0234](../rules/healing.md#m-0234) reading A: `using a bandage ends Deep Cut bleeding`
 - [M-0234](../rules/healing.md#m-0234) domain: bleeding boolean
+
+**Consequences:** [T-0303](../theorems/T-0303.md), [T-0305](../theorems/T-0305.md)
 
 **Interactions:** [M-0233](../rules/healing.md#m-0233)
 
@@ -243,6 +247,8 @@ Label: `CONDITIONAL`. Sigils: protection.
 - [M-0645](../rules/healing.md#m-0645) reading C: `heal -> h/2 exact`
 - [M-0645](../rules/healing.md#m-0645) domain: h integer: health potion tiers 5, 10, 20, 40; Eddie's potion 50% of max HP
 
+**Consequences:** [T-0402](../theorems/T-0402.md)
+
 **Open questions:**
 
 - [U-0617](../unknowns.md#u-0617) (high): Protection 'Potions heal you 50% less': which heals are 'potions' (health potions, Eddie's potion, God's Fruit, bandages, healing circle)?
@@ -295,6 +301,8 @@ Label: `CONDITIONAL`. Sigils: healing.
 - [M-0651](../rules/healing.md#m-0651) parameter `cooldown_s`: 600
 - [M-0651](../rules/healing.md#m-0651) parameter `range_m`: UNKNOWN, see [U-0622](../unknowns.md#u-0622)
 
+**Consequences:** [T-0305](../theorems/T-0305.md)
+
 **Open questions:**
 
 - [U-0622](../unknowns.md#u-0622) (medium): Healing ability 'Heal a nearby contestant': what is the range?
@@ -320,7 +328,7 @@ Label: `CONDITIONAL`. Sigils: healing.
 - [M-0652](../rules/healing.md#m-0652) parameter `regen_hp`: 1
 - [M-0652](../rules/healing.md#m-0652) parameter `period_s`: 1800
 
-**Consequences:** [T-0011](../theorems/T-0011.md)
+**Consequences:** [T-0011](../theorems/T-0011.md), [T-0305](../theorems/T-0305.md)
 
 **Open questions:**
 
@@ -330,7 +338,7 @@ Notes ([M-0652](../rules/healing.md#m-0652)): Belongs to Healing, not Necromancy
 
 ## Simulation check
 
-Theorems with tests in `sim/tests/`: [T-0011](../theorems/T-0011.md)
+Theorems with tests in `sim/tests/`: [T-0011](../theorems/T-0011.md), [T-0303](../theorems/T-0303.md), [T-0305](../theorems/T-0305.md), [T-0402](../theorems/T-0402.md), [T-0406](../theorems/T-0406.md)
 
 ## Open questions
 

@@ -8,7 +8,7 @@ Protection(보호) 시길을 언급하는 규칙입니다. 2026-11-11 위키에 
 
 Protection은 "탱커" 계열입니다. 수치는 평범한 편으로 최대 HP 100과 인벤토리 슬롯 3개이지만 ([M-0605](../rules/sigil.md#m-0605)), 게임에서 가장 긴 면역 목록을 갖습니다. 독, drone, 미사일, C4, landmine, 함정이 든 선물, 공습과 그 불길, 건십 폭탄, 그리고 Protection 보복입니다 ([M-0640](../rules/sigil.md#m-0640)). 핵은 막지 못하지만 당신에게는 50% 적게 피해를 줍니다 ([M-0643](../rules/damage.md#m-0643)). 소수점은 내림 처리됩니다 ([M-0121](../rules/damage.md#m-0121)). 특히 독은 당신에게 닿지 못합니다 ([M-0175](../rules/poison.md#m-0175)).
 
-무적이 되는 것은 아닙니다. 존, 언세이프 서클, robot, 무기, 가짜 상자, 최루 가스, 좀비, 출혈, cyclops, 현상금 피해는 여전히 받습니다 ([M-0641](../rules/sigil.md#m-0641)). 따라서 이 시길은 시청자가 주도하는 폭발 공격과 독에는 강하지만, 무기를 든 사람이나 줄어드는 존에는 강하지 않습니다.
+무적이 되는 것은 아닙니다. 존, 언세이프 서클, robot, 무기, 가짜 상자, 최루 가스, 좀비, 출혈, 사이클롭스, 현상금 피해는 여전히 받습니다 ([M-0641](../rules/sigil.md#m-0641)). 따라서 이 시길은 시청자가 주도하는 폭발 공격과 독에는 강하지만, 무기를 든 사람이나 줄어드는 존에는 강하지 않습니다.
 
 대가는 회복에 있습니다. 포션은 50% 적게 회복시키고 ([M-0645](../rules/healing.md#m-0645)), 붕대는 1.1x 더 오래 지속됩니다 ([M-0646](../rules/healing.md#m-0646)). 그 대신 면역이 보상을 줍니다. drone, 미사일, C4, landmine 타격에는 블러드 토큰 1개, 공습이나 건십 타격에는 1개, 핵 타격에는 20개를 얻지만, 막아 내는 것이 당신 자신의 보호일 때만 그렇습니다 ([M-0642](../rules/economy.md#m-0642)).
 
@@ -24,22 +24,22 @@ Protection은 "탱커" 계열입니다. 수치는 평범한 편으로 최대 HP 
 
 <a id="m-0121"></a>
 
-### M-0121: 파이프라인 4a단계: Protection 시길이 nuke 피해를 절반으로 줄임
+### M-0121: 파이프라인 4a단계: Protection 시길이 핵 피해를 절반으로 줄임
 
 라벨: `CONDITIONAL`. 시길: protection.
 
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0121](../rules/damage.md#m-0121) `wiki-damage-044`: "A Protection contestant takes 50% less from a nuke." ([출처](https://iceposeidon.com/safezone/wiki/damage#order))
-  - 번역: Protection 참가자는 nuke로부터 받는 피해가 50% 줄어듭니다.
+  - 번역: Protection 참가자는 핵으로부터 받는 피해가 50% 줄어듭니다.
 - [M-0121](../rules/damage.md#m-0121) `wiki-damage-045`: "The damage left is rounded down." ([출처](https://iceposeidon.com/safezone/wiki/damage#order))
   - 번역: 남는 피해는 내림합니다.
 - [M-0121](../rules/damage.md#m-0121) `wiki-damage-062`: "The Protection sigil is not immune to nukes, but takes 50% less from them." ([출처](https://iceposeidon.com/safezone/wiki/damage#notes))
-  - 번역: Protection 시길은 nuke에 면역이 아니지만, 받는 피해가 50% 줄어듭니다.
+  - 번역: Protection 시길은 핵에 면역이 아니지만, 받는 피해가 50% 줄어듭니다.
 
 **형식 모델:**
 
-- [M-0121](../rules/damage.md#m-0121) 해석 A: `방어자 시길이 Protection이고 source가 nuke이면: d := floor(d/2); 다른 원천은 그대로`
+- [M-0121](../rules/damage.md#m-0121) 해석 A: `방어자 시길이 Protection이고 source가 핵이면: d := floor(d/2); 다른 원천은 그대로`
 - [M-0121](../rules/damage.md#m-0121) 정의역: d는 정수 >= 0
 - [M-0121](../rules/damage.md#m-0121) 매개변수 `nuke_reduction`: 50 퍼센트
 
@@ -49,7 +49,7 @@ Protection은 "탱커" 계열입니다. 수치는 평범한 편으로 최대 HP 
 
 - [U-0100](../unknowns.md#u-0100) (낮음): 4단계의 'The damage left is rounded down'은 어디에 적용됩니까? Protection 50% 결과에만 적용됩니까, 아니면 모든 감소 이후의 최종 내림 한 번으로 적용되며 Kick 10%는 내림하지 않은 값에서 계산됩니까?
 
-메모 ([M-0121](../rules/damage.md#m-0121)): 'nuke에 면역은 아니지만 50% 줄어듦'. Protection 페이지도 같은 규칙(50% 감소)을 다루며 불일치는 발견되지 않았습니다. floor가 어디에 적용되는지는 [U-0100](../unknowns.md#u-0100)입니다. Flak jacket([M-0130](../rules/items.md#m-0130))은 이 단계 이전에 nuke를 막습니다.
+메모 ([M-0121](../rules/damage.md#m-0121)): 'nuke에 면역은 아니지만 50% 줄어듦'. Protection 페이지도 같은 규칙(50% 감소)을 다루며 불일치는 발견되지 않았습니다. floor가 어디에 적용되는지는 [U-0100](../unknowns.md#u-0100)입니다. Flak jacket([M-0130](../rules/items.md#m-0130))은 이 단계 이전에 핵을 막습니다.
 
 <a id="m-0175"></a>
 
@@ -90,7 +90,7 @@ Protection은 "탱커" 계열입니다. 수치는 평범한 편으로 최대 HP 
 
 **미해결 질문:**
 
-- [U-0402](../unknowns.md#u-0402) (낮음): Protection 시길의 nuke 피해 감소: 20 HP의 '50% less'는 10 HP이지만, 관리자가 정한 홀수 피해는 어떻게 반올림되며, 감소는 다른 경감 전에 적용됩니까 후에 적용됩니까?
+- [U-0402](../unknowns.md#u-0402) (낮음): Protection 시길의 핵 피해 감소: 20 HP의 '50% less'는 10 HP이지만, 관리자가 정한 홀수 피해는 어떻게 반올림되며, 감소는 다른 경감 전에 적용됩니까 후에 적용됩니까?
 
 메모 ([M-0407](../rules/viewer.md#m-0407)): Protection은 핵에 면역이 아닙니다(미사일과 다릅니다). 다른 분류와의 연결: Protection 시길 페이지, 피해 파이프라인 순서.
 
@@ -141,13 +141,15 @@ Protection은 "탱커" 계열입니다. 수치는 평범한 편으로 최대 HP 
 - [M-0640](../rules/sigil.md#m-0640) `wiki-damage-021`: "| Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (reflects)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
   - 번역: | Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (반사)
 - [M-0640](../rules/sigil.md#m-0640) `wiki-damage-026`: "| Airstrike fire | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (absorbs)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
-  - 번역: | Airstrike fire | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (흡수)
+  - 번역: | 공습 화재 | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (흡수)
 - [M-0640](../rules/sigil.md#m-0640) `wiki-damage-031`: "| Protection retribution | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (absorbs)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
   - 번역: | Protection retribution | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (흡수)
 
 **형식 모델:**
 
 - [M-0640](../rules/sigil.md#m-0640) 해석 A: `sigil(c) = protection일 때, source in {poison, drone, missile, C4, landmine, trapped gift, airstrike impact, airstrike fire, gunship bomb, Protection retribution}이면 blocked(source, c) = true`
+
+**따름 결과:** [T-0707](../theorems/T-0707.md)
 
 **모순:** [C-0601](../unknowns.md#c-0601), [C-0602](../unknowns.md#c-0602)
 
@@ -189,8 +191,8 @@ Protection은 "탱커" 계열입니다. 수치는 평범한 편으로 최대 HP 
 
 **형식 모델:**
 
-- [M-0642](../rules/economy.md#m-0642) 해석 A: `막아 낸 {drone, missile, C4, landmine, airstrike, gunship} 타격 1회당 tokens += 1, 50% 감소에 도달한 nuke 타격 1회당 += 20, 다른 차단 수단이 이미 타격을 막았다면 += 0`
-- [M-0642](../rules/economy.md#m-0642) 해석 B: `A에 더해 airstrike fire 틱도 지급함`
+- [M-0642](../rules/economy.md#m-0642) 해석 A: `막아 낸 {drone, missile, C4, landmine, airstrike, gunship} 타격 1회당 tokens += 1, 50% 감소에 도달한 핵 타격 1회당 += 20, 다른 차단 수단이 이미 타격을 막았다면 += 0`
+- [M-0642](../rules/economy.md#m-0642) 해석 B: `A에 더해 공습 화재 틱도 지급함`
 - [M-0642](../rules/economy.md#m-0642) 매개변수 `tokens_per_block`: 1
 - [M-0642](../rules/economy.md#m-0642) 매개변수 `tokens_per_nuke`: 20
 
@@ -277,6 +279,8 @@ Protection은 "탱커" 계열입니다. 수치는 평범한 편으로 최대 HP 
 - [M-0645](../rules/healing.md#m-0645) 해석 C: `heal -> h/2 (정확히)`
 - [M-0645](../rules/healing.md#m-0645) 정의역: h는 정수: 체력 포션 등급 5, 10, 20, 40, Eddie의 포션은 최대 HP의 50%
 
+**따름 결과:** [T-0402](../theorems/T-0402.md)
+
 **미해결 질문:**
 
 - [U-0617](../unknowns.md#u-0617) (높음): Protection의 "Potions heal you 50% less": 어떤 회복이 "포션"입니까(회복 포션, Eddie의 포션, God's Fruit, 붕대, 회복 서클)?
@@ -339,7 +343,7 @@ Protection은 "탱커" 계열입니다. 수치는 평범한 편으로 최대 HP 
 
 ## 시뮬레이션 검증
 
-아직 이 페이지를 다루는 정리나 시뮬레이션이 없습니다.
+`sim/tests/`에 테스트가 있는 정리: [T-0402](../theorems/T-0402.md), [T-0707](../theorems/T-0707.md)
 
 ## 미해결 질문
 

@@ -84,6 +84,8 @@ Label: `DOCUMENTED`. Sigils: death.
 - [M-0602](../rules/sigil.md#m-0602) parameter `max_hp`: 100
 - [M-0602](../rules/sigil.md#m-0602) parameter `inventory_slots`: 3
 
+**Consequences:** [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
+
 Notes ([M-0602](../rules/sigil.md#m-0602)): Merchant upgrades (+10 max HP, inventory slots) change these during play; this record is the base value only. The merchant page caps slots at 13, or 20 for Endurance.
 
 <a id="m-0610"></a>
@@ -240,7 +242,7 @@ Notes ([M-0615](../rules/sigil.md#m-0615)): The damage table lists Death Ward as
 
 ## Simulation check
 
-No theorem or simulation covers this page yet.
+Theorems with tests in `sim/tests/`: [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
 
 ## Open questions
 

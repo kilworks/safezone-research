@@ -68,7 +68,7 @@
     피해 원천 'Fake chest': 이를 막는 수단
   "quotes":
   - >-
-    | Fake chest | Shield, Safety bubble, Sleeping Bag, Mirror forcefield (반사), Body armor (흡수)
+    | 가짜 상자 | Shield, Safety bubble, Sleeping Bag, Mirror forcefield (반사), Body armor (흡수)
   "readings":
     "A": >-
       blockers(Fake chest) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Mirror forcefield: 반사; Body armor: 흡수}
@@ -81,7 +81,7 @@
     피해 원천 'Missile': 이를 막는 수단
   "quotes":
   - >-
-    | Missile | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (흡수)
+    | 미사일 | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (흡수)
   "readings":
     "A": >-
       blockers(Missile) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Protection: 차단; Flak jacket: 차단; Body armor: 흡수}
@@ -92,7 +92,7 @@
     피해 원천 'Nuke': 이를 막는 수단
   "quotes":
   - >-
-    | Nuke | Shield, Safety bubble, Sleeping Bag, Flak jacket, Body armor (흡수)
+    | 핵 | Shield, Safety bubble, Sleeping Bag, Flak jacket, Body armor (흡수)
   "readings":
     "A": >-
       blockers(Nuke) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Flak jacket: 차단; Body armor: 흡수}
@@ -103,7 +103,7 @@
     피해 원천 'Airstrike impact': 이를 막는 수단
   "quotes":
   - >-
-    | Airstrike impact | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (흡수)
+    | 공습 충격 | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (흡수)
   "readings":
     "A": >-
       blockers(Airstrike impact) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Protection: 차단; Flak jacket: 차단; Body armor: 흡수}
@@ -114,7 +114,7 @@
     피해 원천 'Airstrike fire': 이를 막는 수단
   "quotes":
   - >-
-    | Airstrike fire | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (흡수)
+    | 공습 화재 | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (흡수)
   "readings":
     "A": >-
       blockers(Airstrike fire) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Protection: 차단; Body armor: 흡수}
@@ -125,7 +125,7 @@
     피해 원천 'Gunship bomb': 이를 막는 수단
   "quotes":
   - >-
-    | Gunship bomb | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (흡수)
+    | 건십 폭탄 | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (흡수)
   "readings":
     "A": >-
       blockers(Gunship bomb) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Protection: 차단; Flak jacket: 차단; Body armor: 흡수}
@@ -136,7 +136,7 @@
     피해 원천 'Giant cyclops attack': 이를 막는 수단
   "quotes":
   - >-
-    | Giant cyclops attack | Shield, Safety bubble, Sleeping Bag, Body armor (흡수)
+    | Giant 사이클롭스 공격 | Shield, Safety bubble, Sleeping Bag, Body armor (흡수)
   "readings":
     "A": >-
       blockers(Giant cyclops attack) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Body armor: 흡수}
@@ -147,7 +147,7 @@
     피해 원천 'Bounty mark': 이를 막는 수단
   "quotes":
   - >-
-    | Bounty mark | Shield, Safety bubble, Sleeping Bag, Body armor (흡수)
+    | 현상금 표시 | Shield, Safety bubble, Sleeping Bag, Body armor (흡수)
   "readings":
     "A": >-
       blockers(Bounty mark) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Body armor: 흡수}

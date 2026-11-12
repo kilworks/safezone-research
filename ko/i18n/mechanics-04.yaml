@@ -419,12 +419,12 @@ M-0222:
   - >-
     사용 가능
   - >-
-    10min 동안 시청자가 missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes, bounties를 보내지 못하게 합니다.
+    10min 동안 시청자가 미사일, 핵, hordes, 최루 가스, 공습, 건십, 사이클롭스, 현상금을 보내지 못하게 합니다.
   - >-
-    참가자의 EMP가 활성인 동안 시청자는 missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes, bounties를 보낼 수 없습니다.
+    참가자의 EMP가 활성인 동안 시청자는 미사일, 핵, hordes, 최루 가스, 공습, 건십, 사이클롭스, 현상금을 보낼 수 없습니다.
   readings:
     A: >-
-      10min 동안 시청자가 보낼 수 없는 것: missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes, bounties
+      10min 동안 시청자가 보낼 수 없는 것: 미사일, 핵, hordes, 최루 가스, 공습, 건십, 사이클롭스, 현상금
   domain: >-
     t in [0, 600)초
   parameters:
@@ -437,13 +437,13 @@ M-0223:
     EMP가 공중의 시청자 아이템을 파괴함
   quotes:
   - >-
-    공중에 이미 떠 있는 모든 시청자 missile과 nuke, 그리고 이미 진행 중인 모든 airstrike와 gunship을 타오르는 불까지 포함해 파괴합니다.
+    공중에 이미 떠 있는 모든 시청자 미사일과 핵, 그리고 이미 진행 중인 모든 공습과 건십을 타오르는 불까지 포함해 파괴합니다.
   - >-
-    공중의 시청자 missiles와 nukes, 그리고 이미 진행 중인 airstrikes와 gunships를 불과 떨어지는 폭탄까지 포함해 파괴합니다.
+    공중의 시청자 미사일과 핵, 그리고 이미 진행 중인 공습과 건십을 불과 떨어지는 폭탄까지 포함해 파괴합니다.
   readings:
     A: >-
-      사용 시: 공중의 모든 시청자 missile과 nuke, 진행 중인 모든 airstrike와 gunship이 불과 떨어지는 폭탄까지 포함해 파괴됨
+      사용 시: 공중의 모든 시청자 미사일과 핵, 진행 중인 모든 공습과 건십이 불과 떨어지는 폭탄까지 포함해 파괴됨
   domain: >-
     즉시 효과
   notes: >-
-    공격 페이지는 이미 맵에 있는 cyclops, bounty, tear gas, 좀비는 제거되지 않는다고 덧붙입니다.
+    공격 페이지는 이미 맵에 있는 사이클롭스, 현상금, 최루 가스, 좀비는 제거되지 않는다고 덧붙입니다.

@@ -65,6 +65,8 @@ Label: `CONDITIONAL`. Sigils: all, piety.
 - [M-0333](../rules/economy.md#m-0333) parameter `hp_cap_piety`: 220
 - [M-0333](../rules/economy.md#m-0333) parameter `hp_purchase_limit`: UNKNOWN, see [U-0330](../unknowns.md#u-0330)
 
+**Consequences:** [T-0300](../theorems/T-0300.md), [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
+
 **Open questions:**
 
 - [U-0329](../unknowns.md#u-0329) (high): Are the 'for each one you already bought' counters of Inventory slot and +10 maximum HP separate, or shared?
@@ -97,6 +99,8 @@ Label: `DOCUMENTED`. Sigils: piety.
 - [M-0500](../rules/sigil.md#m-0500) parameter `slots`: 3
 - [M-0500](../rules/sigil.md#m-0500) parameter `max_hp_delta_vs_base`: +10
 
+**Consequences:** [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
+
 **Interactions:** [M-0506](../rules/items.md#m-0506)
 
 Notes ([M-0500](../rules/sigil.md#m-0500)): Stat labels are read as pairs (label 'Max HP' then '110 HP'; label 'Slots' then '3'). The sentence 'Your max HP is 10 HP higher' agrees with 110 against a base of 100. The merchant page raises the maximum HP cap to 220 for Piety; that is the merchant formalizer's record. Starting HP equal to max HP is not stated on this page.
@@ -120,6 +124,8 @@ Label: `CONDITIONAL`. Sigils: piety.
 - [M-0501](../rules/economy.md#m-0501) parameter `hp_per_token`: 5
 - [M-0501](../rules/economy.md#m-0501) parameter `tokens_per_step`: 1
 - [M-0501](../rules/economy.md#m-0501) parameter `hp_basis`: UNKNOWN, see [U-0501](../unknowns.md#u-0501)
+
+**Consequences:** [T-0302](../theorems/T-0302.md)
 
 **Interactions:** [M-0502](../rules/economy.md#m-0502), [M-0505](../rules/healing.md#m-0505)
 
@@ -250,6 +256,8 @@ Label: `DOCUMENTED`. Sigils: piety.
 - [M-0506](../rules/items.md#m-0506) parameter `stack_cap`: 6
 - [M-0506](../rules/items.md#m-0506) parameter `slots_for_potions`: 1
 
+**Consequences:** [T-0302](../theorems/T-0302.md), [T-0407](../theorems/T-0407.md)
+
 **Interactions:** [M-0500](../rules/sigil.md#m-0500), [M-0503](../rules/items.md#m-0503)
 
 Notes ([M-0506](../rules/items.md#m-0506)): Both pages agree: one slot, up to 6. Whether mixed tiers share the slot is read from 'All your health potions'. Zombies have a 10% chance to break one of your health potions (zombies page), which matters most for Piety.
@@ -276,7 +284,7 @@ Notes ([M-0507](../rules/sigil.md#m-0507)): The two pages say the same thing fro
 
 ## Simulation check
 
-No theorem or simulation covers this page yet.
+Theorems with tests in `sim/tests/`: [T-0300](../theorems/T-0300.md), [T-0302](../theorems/T-0302.md), [T-0400](../theorems/T-0400.md), [T-0407](../theorems/T-0407.md), [T-0703](../theorems/T-0703.md)
 
 ## Open questions
 

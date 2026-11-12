@@ -63,7 +63,7 @@
 - [M-0117](../rules/damage.md#m-0117) 해석 A: `result = armor(fortress(minimum(reductions(mirror(kick_bonus(immunity(h)))))))`
 - [M-0117](../rules/damage.md#m-0117) 정의역: h는 정수, h >= 0, 타격 1회
 
-**따름 결과:** [T-0003](../theorems/T-0003.md)
+**따름 결과:** [T-0003](../theorems/T-0003.md), [T-0402](../theorems/T-0402.md)
 
 **상호작용:** [M-0118](../rules/damage.md#m-0118), [M-0119](../rules/damage.md#m-0119), [M-0120](../rules/damage.md#m-0120), [M-0121](../rules/damage.md#m-0121), [M-0122](../rules/damage.md#m-0122), [M-0123](../rules/damage.md#m-0123), [M-0124](../rules/damage.md#m-0124), [M-0125](../rules/damage.md#m-0125)
 
@@ -91,6 +91,8 @@
 
 - [M-0118](../rules/damage.md#m-0118) 해석 A: `원천에 대한 차단 수단(피해 표)이 하나라도 적용되면: d := 0 후 중단`
 
+**따름 결과:** [T-0402](../theorems/T-0402.md)
+
 **상호작용:** [M-0117](../rules/damage.md#m-0117)
 
 **미해결 질문:**
@@ -108,14 +110,14 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0119](../rules/damage.md#m-0119) `wiki-damage-038`: "If the attacker is live on Kick, their own bow, staff, knife, long sword, axe, machete, drone, C4, landmine, fake chest and trapped gift hits deal 10% more, rounded down." ([출처](https://iceposeidon.com/safezone/wiki/damage#order))
-  - 번역: 공격자가 Kick에서 라이브 중이면, 본인의 bow, staff, knife, long sword, axe, machete, drone, C4, landmine, fake chest, trapped gift 타격이 10% 더 큰 피해를 주며, 내림합니다.
+  - 번역: 공격자가 Kick에서 라이브 중이면, 본인의 bow, staff, knife, long sword, axe, machete, drone, C4, landmine, 가짜 상자, trapped gift 타격이 10% 더 큰 피해를 주며, 내림합니다.
 
 **형식 모델:**
 
 - [M-0119](../rules/damage.md#m-0119) 해석 A: `공격자가 라이브이고 source in {bow, staff, knife, long sword, axe, machete, drone, C4, landmine, fake chest, trapped gift}이면: d := floor(11*d/10) = d + floor(d/10)`
-- [M-0119](../rules/damage.md#m-0119) 정의역: d는 정수 >= 0; 무기 목록은 닫혀 있음 (Poison Dart, missile, nuke 등은 목록에 없음)
+- [M-0119](../rules/damage.md#m-0119) 정의역: d는 정수 >= 0; 무기 목록은 닫혀 있음 (Poison Dart, 미사일, 핵 등은 목록에 없음)
 - [M-0119](../rules/damage.md#m-0119) 매개변수 `bonus`: 10 퍼센트
-- [M-0119](../rules/damage.md#m-0119) 매개변수 `list`: bow, staff, knife, long sword, axe, machete, drone, C4, landmine, fake chest, trapped gift
+- [M-0119](../rules/damage.md#m-0119) 매개변수 `list`: bow, staff, knife, long sword, axe, machete, drone, C4, landmine, 가짜 상자, trapped gift
 
 **따름 결과:** [T-0001](../theorems/T-0001.md)
 
@@ -156,22 +158,22 @@
 
 <a id="m-0121"></a>
 
-### M-0121: 파이프라인 4a단계: Protection 시길이 nuke 피해를 절반으로 줄임
+### M-0121: 파이프라인 4a단계: Protection 시길이 핵 피해를 절반으로 줄임
 
 라벨: `CONDITIONAL`. 시길: protection.
 
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0121](../rules/damage.md#m-0121) `wiki-damage-044`: "A Protection contestant takes 50% less from a nuke." ([출처](https://iceposeidon.com/safezone/wiki/damage#order))
-  - 번역: Protection 참가자는 nuke로부터 받는 피해가 50% 줄어듭니다.
+  - 번역: Protection 참가자는 핵으로부터 받는 피해가 50% 줄어듭니다.
 - [M-0121](../rules/damage.md#m-0121) `wiki-damage-045`: "The damage left is rounded down." ([출처](https://iceposeidon.com/safezone/wiki/damage#order))
   - 번역: 남는 피해는 내림합니다.
 - [M-0121](../rules/damage.md#m-0121) `wiki-damage-062`: "The Protection sigil is not immune to nukes, but takes 50% less from them." ([출처](https://iceposeidon.com/safezone/wiki/damage#notes))
-  - 번역: Protection 시길은 nuke에 면역이 아니지만, 받는 피해가 50% 줄어듭니다.
+  - 번역: Protection 시길은 핵에 면역이 아니지만, 받는 피해가 50% 줄어듭니다.
 
 **형식 모델:**
 
-- [M-0121](../rules/damage.md#m-0121) 해석 A: `방어자 시길이 Protection이고 source가 nuke이면: d := floor(d/2); 다른 원천은 그대로`
+- [M-0121](../rules/damage.md#m-0121) 해석 A: `방어자 시길이 Protection이고 source가 핵이면: d := floor(d/2); 다른 원천은 그대로`
 - [M-0121](../rules/damage.md#m-0121) 정의역: d는 정수 >= 0
 - [M-0121](../rules/damage.md#m-0121) 매개변수 `nuke_reduction`: 50 퍼센트
 
@@ -181,7 +183,7 @@
 
 - [U-0100](../unknowns.md#u-0100) (낮음): 4단계의 'The damage left is rounded down'은 어디에 적용됩니까? Protection 50% 결과에만 적용됩니까, 아니면 모든 감소 이후의 최종 내림 한 번으로 적용되며 Kick 10%는 내림하지 않은 값에서 계산됩니까?
 
-메모 ([M-0121](../rules/damage.md#m-0121)): 'nuke에 면역은 아니지만 50% 줄어듦'. Protection 페이지도 같은 규칙(50% 감소)을 다루며 불일치는 발견되지 않았습니다. floor가 어디에 적용되는지는 [U-0100](../unknowns.md#u-0100)입니다. Flak jacket([M-0130](../rules/items.md#m-0130))은 이 단계 이전에 nuke를 막습니다.
+메모 ([M-0121](../rules/damage.md#m-0121)): 'nuke에 면역은 아니지만 50% 줄어듦'. Protection 페이지도 같은 규칙(50% 감소)을 다루며 불일치는 발견되지 않았습니다. floor가 어디에 적용되는지는 [U-0100](../unknowns.md#u-0100)입니다. Flak jacket([M-0130](../rules/items.md#m-0130))은 이 단계 이전에 핵을 막습니다.
 
 <a id="m-0122"></a>
 
@@ -233,7 +235,7 @@
 - [M-0123](../rules/damage.md#m-0123) 정의역: d는 정수 >= 0
 - [M-0123](../rules/damage.md#m-0123) 매개변수 `minimum_hp`: 1
 
-**따름 결과:** [T-0004](../theorems/T-0004.md)
+**따름 결과:** [T-0004](../theorems/T-0004.md), [T-0402](../theorems/T-0402.md), [T-0703](../theorems/T-0703.md)
 
 **상호작용:** [M-0117](../rules/damage.md#m-0117), [M-0122](../rules/damage.md#m-0122)
 
@@ -336,6 +338,8 @@
 
 - [M-0129](../rules/damage.md#m-0129) 해석 A: `vulnerable이면: Shield와 Safety bubble은 차단 집합에서 제거됨`
 
+**따름 결과:** [T-0402](../theorems/T-0402.md)
+
 메모 ([M-0129](../rules/damage.md#m-0129)): Vulnerability Dart 자체는 다른 페이지에 있습니다.
 
 <a id="m-0133"></a>
@@ -368,7 +372,7 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0135](../rules/damage.md#m-0135) `wiki-damage-070`: "It only reflects Poison Darts, fake gravestones, bows, wizard staffs, knives, long swords, Zarok's axes, machetes, drones, C4, landmines, flashbangs and fake chests, and never your own explosives." ([출처](https://iceposeidon.com/safezone/wiki/damage#notes))
-  - 번역: Poison Dart, fake gravestone, bow, wizard staff, knife, long sword, Zarok's axe, machete, drone, C4, landmine, flashbang, fake chest만 반사하며, 자신의 폭발물은 절대 반사하지 않습니다.
+  - 번역: Poison Dart, fake gravestone, bow, wizard staff, knife, long sword, Zarok's axe, machete, drone, C4, landmine, flashbang, 가짜 상자만 반사하며, 자신의 폭발물은 절대 반사하지 않습니다.
 
 **형식 모델:**
 
@@ -523,7 +527,7 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0144](../rules/damage.md#m-0144) `wiki-damage-009`: "| Tear gas | Shield, Safety bubble, Sleeping Bag, Gas mask, Body armor (absorbs)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
-  - 번역: | Tear gas | Shield, Safety bubble, Sleeping Bag, Gas mask, Body armor (흡수)
+  - 번역: | 최루 가스 | Shield, Safety bubble, Sleeping Bag, Gas mask, Body armor (흡수)
 
 **형식 모델:**
 
@@ -536,7 +540,7 @@
 
 - [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
-메모 ([M-0144](../rules/damage.md#m-0144)): Tear gas: Gas mask가 열거되어 있으며 [M-0131](../rules/items.md#m-0131)과 일치합니다.
+메모 ([M-0144](../rules/damage.md#m-0144)): 최루 가스: Gas mask가 열거되어 있으며 [M-0131](../rules/items.md#m-0131)과 일치합니다.
 
 <a id="m-0145"></a>
 
@@ -553,6 +557,8 @@
 
 - [M-0145](../rules/damage.md#m-0145) 해석 A: `blockers(Zombie drain) = {Shield: 막음; Safety bubble: 막음; Sleeping Bag: 막음; Necromancy / Repellent: 막음; Body armor: 흡수함}`
 - [M-0145](../rules/damage.md#m-0145) 정의역: 원천 'Zombie drain'의 타격 1회
+
+**따름 결과:** [T-0702](../theorems/T-0702.md)
 
 **상호작용:** [M-0118](../rules/damage.md#m-0118)
 
@@ -838,7 +844,7 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0157](../rules/damage.md#m-0157) `wiki-damage-022`: "| Fake chest | Shield, Safety bubble, Sleeping Bag, Mirror forcefield (reflects), Body armor (absorbs)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
-  - 번역: | Fake chest | Shield, Safety bubble, Sleeping Bag, Mirror forcefield (반사), Body armor (흡수)
+  - 번역: | 가짜 상자 | Shield, Safety bubble, Sleeping Bag, Mirror forcefield (반사), Body armor (흡수)
 
 **형식 모델:**
 
@@ -862,7 +868,7 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0158](../rules/damage.md#m-0158) `wiki-damage-023`: "| Missile | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (absorbs)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
-  - 번역: | Missile | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (흡수)
+  - 번역: | 미사일 | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (흡수)
 
 **형식 모델:**
 
@@ -880,7 +886,7 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0159](../rules/damage.md#m-0159) `wiki-damage-024`: "| Nuke | Shield, Safety bubble, Sleeping Bag, Flak jacket, Body armor (absorbs)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
-  - 번역: | Nuke | Shield, Safety bubble, Sleeping Bag, Flak jacket, Body armor (흡수)
+  - 번역: | 핵 | Shield, Safety bubble, Sleeping Bag, Flak jacket, Body armor (흡수)
 
 **형식 모델:**
 
@@ -898,7 +904,7 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0160](../rules/damage.md#m-0160) `wiki-damage-025`: "| Airstrike impact | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (absorbs)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
-  - 번역: | Airstrike impact | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (흡수)
+  - 번역: | 공습 충격 | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (흡수)
 
 **형식 모델:**
 
@@ -916,7 +922,7 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0161](../rules/damage.md#m-0161) `wiki-damage-026`: "| Airstrike fire | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (absorbs)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
-  - 번역: | Airstrike fire | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (흡수)
+  - 번역: | 공습 화재 | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (흡수)
 
 **형식 모델:**
 
@@ -934,7 +940,7 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0162](../rules/damage.md#m-0162) `wiki-damage-027`: "| Gunship bomb | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (absorbs)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
-  - 번역: | Gunship bomb | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (흡수)
+  - 번역: | 건십 폭탄 | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (흡수)
 
 **형식 모델:**
 
@@ -952,7 +958,7 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0163](../rules/damage.md#m-0163) `wiki-damage-028`: "| Giant cyclops attack | Shield, Safety bubble, Sleeping Bag, Body armor (absorbs)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
-  - 번역: | Giant cyclops attack | Shield, Safety bubble, Sleeping Bag, Body armor (흡수)
+  - 번역: | Giant 사이클롭스 공격 | Shield, Safety bubble, Sleeping Bag, Body armor (흡수)
 
 **형식 모델:**
 
@@ -970,7 +976,7 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0164](../rules/damage.md#m-0164) `wiki-damage-029`: "| Bounty mark | Shield, Safety bubble, Sleeping Bag, Body armor (absorbs)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
-  - 번역: | Bounty mark | Shield, Safety bubble, Sleeping Bag, Body armor (흡수)
+  - 번역: | 현상금 표시 | Shield, Safety bubble, Sleeping Bag, Body armor (흡수)
 
 **형식 모델:**
 
@@ -994,6 +1000,8 @@
 
 - [M-0165](../rules/damage.md#m-0165) 해석 A: `blockers(Eddie's Potion backfire) = {Shield: 차단; Safety bubble: 차단; Sleeping Bag: 차단; Body armor: 흡수}`
 - [M-0165](../rules/damage.md#m-0165) 정의역: 원천 'Eddie's Potion backfire'의 타격 1회
+
+**따름 결과:** [T-0402](../theorems/T-0402.md)
 
 **상호작용:** [M-0118](../rules/damage.md#m-0118)
 
@@ -1074,7 +1082,7 @@
 - [M-0529](../rules/damage.md#m-0529) 매개변수 `durability_hp`: 30
 - [M-0529](../rules/damage.md#m-0529) 매개변수 `duration_s`: UNKNOWN, see [U-0526](../unknowns.md#u-0526)
 
-**따름 결과:** [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md)
+**따름 결과:** [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md), [T-0305](../theorems/T-0305.md)
 
 **상호작용:** [M-0511](../rules/sigil.md#m-0511), [M-0522](../rules/items.md#m-0522)
 
@@ -1152,6 +1160,8 @@
 - [M-0536](../rules/damage.md#m-0536) 매개변수 `grace_s`: 0
 - [M-0536](../rules/damage.md#m-0536) 매개변수 `first_hit`: 진입 후 한 간격 뒤
 
+**따름 결과:** [T-0305](../theorems/T-0305.md)
+
 **상호작용:** [M-0537](../rules/items.md#m-0537), [M-0538](../rules/damage.md#m-0538)
 
 **미해결 질문:**
@@ -1219,7 +1229,7 @@
 
 ## 시뮬레이션 검증
 
-`sim/tests/`에 테스트가 있는 정리: [T-0001](../theorems/T-0001.md), [T-0002](../theorems/T-0002.md), [T-0003](../theorems/T-0003.md), [T-0004](../theorems/T-0004.md), [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md)
+`sim/tests/`에 테스트가 있는 정리: [T-0001](../theorems/T-0001.md), [T-0002](../theorems/T-0002.md), [T-0003](../theorems/T-0003.md), [T-0004](../theorems/T-0004.md), [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md), [T-0305](../theorems/T-0305.md), [T-0402](../theorems/T-0402.md), [T-0702](../theorems/T-0702.md), [T-0703](../theorems/T-0703.md)
 
 ## 미해결 질문
 

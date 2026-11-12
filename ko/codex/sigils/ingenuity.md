@@ -245,6 +245,8 @@ Ingenuity는 "발명가" 계열입니다. 시작은 조금 빠듯해서 최대 H
 - [M-0453](../rules/zombies.md#m-0453) 매개변수 `kills`: 10
 - [M-0453](../rules/zombies.md#m-0453) 매개변수 `radius`: 10 m
 
+**따름 결과:** [T-0707](../theorems/T-0707.md)
+
 **미해결 질문:**
 
 - [U-0430](../unknowns.md#u-0430) (낮음): Ingenuity Zombie Killer: 'kills the next ten zombies that come within 10m of its owner'와 'stops zombies draining you until it has killed ten'. 함께 도착한 열 마리도 집계됩니까, 흡수 차단은 열 마리까지로 제한됩니까, 그리고 순서는 접근 순입니까?
@@ -308,6 +310,8 @@ Ingenuity는 "발명가" 계열입니다. 시작은 조금 빠듯해서 최대 H
 - [M-0515](../rules/sigil.md#m-0515) 매개변수 `craft_slots`: 5
 - [M-0515](../rules/sigil.md#m-0515) 매개변수 `slot_cap_with_upgrades`: 12
 
+**따름 결과:** [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
+
 **상호작용:** [M-0520](../rules/items.md#m-0520), [M-0522](../rules/items.md#m-0522)
 
 **미해결 질문:**
@@ -341,7 +345,7 @@ Ingenuity는 "발명가" 계열입니다. 시작은 조금 빠듯해서 최대 H
 
 - [U-0006](../unknowns.md#u-0006) (높음): 서버 연산은 정확합니까, 아니면 IEEE 754 binary64입니까(H-0001: Ingenuity 가격이 기본 50, 90, 100, 110일 때)?
 
-메모 ([M-0516](../rules/economy.md#m-0516)): 이 기록은 Ingenuity 쪽 진술이며, 상인 페이지가 같은 문장을 반복합니다 (같은 의미, 불일치 없음). 기본 가격: Care package 10, Anti poison 12, Vulnerability Dart 25, Sleeping Bag 30, Missile 10, Dual Wield 50, Deep Cut 20, 무기 인챈트 15, 방어구 인챈트 30, 슬롯과 HP 업그레이드는 40부터 (상인 페이지). 인상이 업그레이드에도 적용되는지는 'Merchant prices'라는 표현으로 정해집니다.
+메모 ([M-0516](../rules/economy.md#m-0516)): 이 기록은 Ingenuity 쪽 진술이며, 상인 페이지가 같은 문장을 반복합니다 (같은 의미, 불일치 없음). 기본 가격: Care package 10, Anti poison 12, Vulnerability Dart 25, Sleeping Bag 30, 미사일 10, Dual Wield 50, Deep Cut 20, 무기 인챈트 15, 방어구 인챈트 30, 슬롯과 HP 업그레이드는 40부터 (상인 페이지). 인상이 업그레이드에도 적용되는지는 'Merchant prices'라는 표현으로 정해집니다.
 
 <a id="m-0517"></a>
 
@@ -480,6 +484,8 @@ Ingenuity는 "발명가" 계열입니다. 시작은 조금 빠듯해서 최대 H
 - [M-0521](../rules/economy.md#m-0521) 매개변수 `per_campfire_hp`: 1
 - [M-0521](../rules/economy.md#m-0521) 매개변수 `per_zombie_killed`: 1
 
+**따름 결과:** [T-0304](../theorems/T-0304.md), [T-0706](../theorems/T-0706.md)
+
 **상호작용:** [M-0517](../rules/sigil.md#m-0517), [M-0522](../rules/items.md#m-0522), [M-0525](../rules/healing.md#m-0525), [M-0527](../rules/zombies.md#m-0527), [M-0528](../rules/items.md#m-0528)
 
 **미해결 질문:**
@@ -554,6 +560,8 @@ Ingenuity는 "발명가" 계열입니다. 시작은 조금 빠듯해서 최대 H
 - [M-0523](../rules/weapons.md#m-0523) 매개변수 `radius_m`: 10
 - [M-0523](../rules/weapons.md#m-0523) 매개변수 `speed_mps`: 1.4
 - [M-0523](../rules/weapons.md#m-0523) 매개변수 `clock`: UNKNOWN, see [U-0527](../unknowns.md#u-0527)
+
+**따름 결과:** [T-0305](../theorems/T-0305.md)
 
 **상호작용:** [M-0522](../rules/items.md#m-0522), [M-0524](../rules/damage.md#m-0524)
 
@@ -683,6 +691,8 @@ Ingenuity는 "발명가" 계열입니다. 시작은 조금 빠듯해서 최대 H
 - [M-0527](../rules/zombies.md#m-0527) 매개변수 `radius_m`: 10
 - [M-0527](../rules/zombies.md#m-0527) 매개변수 `expiry`: 없음
 
+**따름 결과:** [T-0707](../theorems/T-0707.md)
+
 **상호작용:** [M-0520](../rules/items.md#m-0520), [M-0521](../rules/economy.md#m-0521)
 
 **미해결 질문:**
@@ -742,7 +752,7 @@ Ingenuity는 "발명가" 계열입니다. 시작은 조금 빠듯해서 최대 H
 - [M-0529](../rules/damage.md#m-0529) 매개변수 `durability_hp`: 30
 - [M-0529](../rules/damage.md#m-0529) 매개변수 `duration_s`: UNKNOWN, see [U-0526](../unknowns.md#u-0526)
 
-**따름 결과:** [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md)
+**따름 결과:** [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md), [T-0305](../theorems/T-0305.md)
 
 **상호작용:** [M-0511](../rules/sigil.md#m-0511), [M-0522](../rules/items.md#m-0522)
 
@@ -756,7 +766,7 @@ Ingenuity는 "발명가" 계열입니다. 시작은 조금 빠듯해서 최대 H
 
 ## 시뮬레이션 검증
 
-`sim/tests/`에 테스트가 있는 정리: [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md)
+`sim/tests/`에 테스트가 있는 정리: [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md), [T-0304](../theorems/T-0304.md), [T-0305](../theorems/T-0305.md), [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md), [T-0706](../theorems/T-0706.md), [T-0707](../theorems/T-0707.md)
 
 ## 미해결 질문
 

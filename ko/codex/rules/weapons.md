@@ -622,6 +622,8 @@
 - [M-0336](../rules/weapons.md#m-0336) 매개변수 `bleed_hp`: 1
 - [M-0336](../rules/weapons.md#m-0336) 매개변수 `bleed_interval_min`: 5
 
+**따름 결과:** [T-0305](../theorems/T-0305.md)
+
 **미해결 질문:**
 
 - [U-0332](../unknowns.md#u-0332) (보통): Deep Cut: 첫 출혈 틱은 언제이며, 출혈 중에 새 타격을 받으면 타이머가 초기화되고, 사용하지 않은 충전은 얼마나 오래 유지되며, 출혈 틱은 타격으로 계산됩니까?
@@ -742,6 +744,8 @@
 - [M-0523](../rules/weapons.md#m-0523) 매개변수 `speed_mps`: 1.4
 - [M-0523](../rules/weapons.md#m-0523) 매개변수 `clock`: UNKNOWN, see [U-0527](../unknowns.md#u-0527)
 
+**따름 결과:** [T-0305](../theorems/T-0305.md)
+
 **상호작용:** [M-0522](../rules/items.md#m-0522), [M-0524](../rules/damage.md#m-0524)
 
 **미해결 질문:**
@@ -755,7 +759,7 @@
 
 ## 시뮬레이션 검증
 
-`sim/tests/`에 테스트가 있는 정리: [T-0001](../theorems/T-0001.md)
+`sim/tests/`에 테스트가 있는 정리: [T-0001](../theorems/T-0001.md), [T-0305](../theorems/T-0305.md)
 
 ## 미해결 질문
 

@@ -105,7 +105,7 @@ M-0331:
     상인 미사일
   quotes:
   - >-
-    Missile: 블러드 토큰 10개.
+    미사일: 블러드 토큰 10개.
   - >-
     지도상의 정확한 위치에 표준 미사일을 발사합니다.
   - >-
@@ -363,7 +363,7 @@ M-0401:
   domain: >-
     활성화 시점에 비행 중인 오브젝트
   notes: >-
-    Admin nuke는 'viewer nukes'에 포함되지 않습니다 (attacks-018). 건십에 대한 'Already in play'에는 남은 시간이 포함됩니다.
+    Admin 핵은 'viewer nukes'에 포함되지 않습니다 (attacks-018). 건십에 대한 'Already in play'에는 남은 시간이 포함됩니다.
 M-0402:
   name: >-
     EMP는 지속 효과를 제거하지 않음

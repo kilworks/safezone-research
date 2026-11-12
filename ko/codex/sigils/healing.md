@@ -115,6 +115,8 @@ Healing은 "의무병" 계열입니다. 수치는 평범한 편으로 최대 HP 
 - [M-0606](../rules/sigil.md#m-0606) 매개변수 `max_hp`: 100
 - [M-0606](../rules/sigil.md#m-0606) 매개변수 `inventory_slots`: 3
 
+**따름 결과:** [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
+
 메모 ([M-0606](../rules/sigil.md#m-0606)): 상인의 업그레이드(최대 HP +10, 인벤토리 슬롯)는 플레이 중에 이 값을 바꿉니다. 이 기록은 기본값만 다룹니다. 상인 페이지는 슬롯을 13개까지로 제한하며, Endurance는 20개까지입니다.
 
 <a id="m-0650"></a>
@@ -163,6 +165,8 @@ Healing은 "의무병" 계열입니다. 수치는 평범한 편으로 최대 HP 
 - [M-0651](../rules/healing.md#m-0651) 매개변수 `cooldown_s`: 600
 - [M-0651](../rules/healing.md#m-0651) 매개변수 `range_m`: UNKNOWN, [U-0622](../unknowns.md#u-0622) 참조
 
+**따름 결과:** [T-0305](../theorems/T-0305.md)
+
 **미해결 질문:**
 
 - [U-0622](../unknowns.md#u-0622) (보통): Healing 능력 "Heal a nearby contestant": 범위는 얼마입니까?
@@ -189,7 +193,7 @@ Healing은 "의무병" 계열입니다. 수치는 평범한 편으로 최대 HP 
 - [M-0652](../rules/healing.md#m-0652) 매개변수 `regen_hp`: 1
 - [M-0652](../rules/healing.md#m-0652) 매개변수 `period_s`: 1800
 
-**따름 결과:** [T-0011](../theorems/T-0011.md)
+**따름 결과:** [T-0011](../theorems/T-0011.md), [T-0305](../theorems/T-0305.md)
 
 **미해결 질문:**
 
@@ -305,7 +309,7 @@ Healing은 "의무병" 계열입니다. 수치는 평범한 편으로 최대 HP 
 
 ## 시뮬레이션 검증
 
-`sim/tests/`에 테스트가 있는 정리: [T-0011](../theorems/T-0011.md)
+`sim/tests/`에 테스트가 있는 정리: [T-0011](../theorems/T-0011.md), [T-0305](../theorems/T-0305.md), [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
 
 ## 미해결 질문
 

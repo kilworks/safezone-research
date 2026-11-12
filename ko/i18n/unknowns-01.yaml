@@ -211,7 +211,7 @@ U-0100:
   question: >-
     4단계의 'The damage left is rounded down'은 어디에 적용됩니까? Protection 50% 결과에만 적용됩니까, 아니면 모든 감소 이후의 최종 내림 한 번으로 적용되며 Kick 10%는 내림하지 않은 값에서 계산됩니까?
   why_it_matters: >-
-    Kick 라이브 중인 Protection 참가자가 nuke를 맞을 때 홀수 피해가 달라집니다. 중간 내림 후 Kick을 적용하는 경우와, 정확한 절반에 Kick을 적용하는 경우의 차이입니다.
+    Kick 라이브 중인 Protection 참가자가 핵을 맞을 때 홀수 피해가 달라집니다. 중간 내림 후 Kick을 적용하는 경우와, 정확한 절반에 Kick을 적용하는 경우의 차이입니다.
   readings:
     A: >-
       x -> floor(x/2) 후, 그 정수에 Kick 감소(U-0001 해석)를 적용
@@ -219,7 +219,7 @@ U-0100:
       x -> floor(0.9*(x/2)), 최종 내림 한 번만 적용(Kick 비율을 정확한 절반에 적용)
   resolution_paths:
   - >-
-    VOD: 라이브 Protection 참가자가 기본 피해가 홀수인 nuke를 맞고, HP 감소량을 읽습니다.
+    VOD: 라이브 Protection 참가자가 기본 피해가 홀수인 핵을 맞고, HP 감소량을 읽습니다.
   - >-
     REA: 배포된 코드의 피해 공식.
 U-0101:

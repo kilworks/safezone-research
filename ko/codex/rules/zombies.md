@@ -40,6 +40,8 @@
 - [M-0440](../rules/zombies.md#m-0440) 매개변수 `speed`: 1.4 m/s
 - [M-0440](../rules/zombies.md#m-0440) 매개변수 `valid`: UNKNOWN, [U-0424](../unknowns.md#u-0424) 참조
 
+**따름 결과:** [T-0700](../theorems/T-0700.md), [T-0701](../theorems/T-0701.md), [T-0703](../theorems/T-0703.md)
+
 **미해결 질문:**
 
 - [U-0424](../unknowns.md#u-0424) (보통): 좀비 대상 지정: 'nearest valid contestant, at any distance'. 무엇이 참가자를 유효하게 만듭니까(생존, 면역 아님, repellent 아님, Necromancy 아님)? 가장 가까운 대상은 얼마나 자주 다시 평가됩니까, 그리고 좀비는 지형을 따라 경로를 찾습니까?
@@ -64,7 +66,7 @@
 - [M-0441](../rules/zombies.md#m-0441) 매개변수 `period`: 10 s
 - [M-0441](../rules/zombies.md#m-0441) 매개변수 `range`: 5 m
 
-**따름 결과:** [T-0010](../theorems/T-0010.md)
+**따름 결과:** [T-0010](../theorems/T-0010.md), [T-0304](../theorems/T-0304.md), [T-0305](../theorems/T-0305.md)
 
 **상호작용:** [M-0440](../rules/zombies.md#m-0440)
 
@@ -118,6 +120,8 @@
 - [M-0443](../rules/zombies.md#m-0443) 해석 C: `p = 0.1, 잃은 HP마다`
 - [M-0443](../rules/zombies.md#m-0443) 정의역: p in {0.1}
 - [M-0443](../rules/zombies.md#m-0443) 매개변수 `p`: 0.1
+
+**따름 결과:** [T-0302](../theorems/T-0302.md)
 
 **상호작용:** [M-0441](../rules/zombies.md#m-0441)
 
@@ -174,6 +178,8 @@
 - [M-0445](../rules/zombies.md#m-0445) 매개변수 `count`: 50
 - [M-0445](../rules/zombies.md#m-0445) 매개변수 `lifetime`: 20 min (공격 페이지)
 
+**따름 결과:** [T-0707](../theorems/T-0707.md)
+
 **상호작용:** [M-0408](../rules/viewer.md#m-0408)
 
 **미해결 질문:**
@@ -223,6 +229,8 @@
 - [M-0447](../rules/zombies.md#m-0447) 해석 A: `어떤 참가자가 죽을 때마다, 살아 있는 각 Necromancy 참가자는 10m 이내에 좀비를 얻음`
 - [M-0447](../rules/zombies.md#m-0447) 정의역: 반경 10 m
 - [M-0447](../rules/zombies.md#m-0447) 매개변수 `radius`: 10 m
+
+**따름 결과:** [T-0707](../theorems/T-0707.md)
 
 **미해결 질문:**
 
@@ -276,7 +284,7 @@
 - [M-0449](../rules/zombies.md#m-0449) 매개변수 `cap`: 30 HP
 - [M-0449](../rules/zombies.md#m-0449) 매개변수 `lifetime`: 1 h (Necromancy 페이지)
 
-**따름 결과:** [T-0010](../theorems/T-0010.md)
+**따름 결과:** [T-0010](../theorems/T-0010.md), [T-0304](../theorems/T-0304.md), [T-0305](../theorems/T-0305.md), [T-0703](../theorems/T-0703.md)
 
 **미해결 질문:**
 
@@ -300,7 +308,7 @@
 - [M-0450](../rules/zombies.md#m-0450) 정의역: 좀비마다
 - [M-0450](../rules/zombies.md#m-0450) 매개변수 `lifetime`: UNKNOWN, [U-0403](../unknowns.md#u-0403) 참조
 
-**따름 결과:** [T-0013](../theorems/T-0013.md)
+**따름 결과:** [T-0013](../theorems/T-0013.md), [T-0701](../theorems/T-0701.md), [T-0706](../theorems/T-0706.md)
 
 **미해결 질문:**
 
@@ -366,6 +374,8 @@
 - [M-0453](../rules/zombies.md#m-0453) 매개변수 `kills`: 10
 - [M-0453](../rules/zombies.md#m-0453) 매개변수 `radius`: 10 m
 
+**따름 결과:** [T-0707](../theorems/T-0707.md)
+
 **미해결 질문:**
 
 - [U-0430](../unknowns.md#u-0430) (낮음): Ingenuity Zombie Killer: 'kills the next ten zombies that come within 10m of its owner'와 'stops zombies draining you until it has killed ten'. 함께 도착한 열 마리도 집계됩니까, 흡수 차단은 열 마리까지로 제한됩니까, 그리고 순서는 접근 순입니까?
@@ -385,6 +395,8 @@
 
 - [M-0454](../rules/zombies.md#m-0454) 해석 A: `Shield, Safety bubble, Reality Shield 또는 자신의 Sleeping Bag에서 자는 것 => 좀비에 면역`
 - [M-0454](../rules/zombies.md#m-0454) 정의역: 참가자마다 불리언
+
+**따름 결과:** [T-0702](../theorems/T-0702.md), [T-0706](../theorems/T-0706.md)
 
 **미해결 질문:**
 
@@ -411,6 +423,8 @@
 - [M-0455](../rules/zombies.md#m-0455) 해석 B: `대상 집합에서 제외됨`
 - [M-0455](../rules/zombies.md#m-0455) 정의역: t in [0, 1200] s
 - [M-0455](../rules/zombies.md#m-0455) 매개변수 `duration`: 1200 s
+
+**따름 결과:** [T-0706](../theorems/T-0706.md)
 
 **미해결 질문:**
 
@@ -444,6 +458,8 @@
 - [M-0527](../rules/zombies.md#m-0527) 매개변수 `kills`: 10
 - [M-0527](../rules/zombies.md#m-0527) 매개변수 `radius_m`: 10
 - [M-0527](../rules/zombies.md#m-0527) 매개변수 `expiry`: 없음
+
+**따름 결과:** [T-0707](../theorems/T-0707.md)
 
 **상호작용:** [M-0520](../rules/items.md#m-0520), [M-0521](../rules/economy.md#m-0521)
 
@@ -535,6 +551,8 @@
 - [M-0633](../rules/zombies.md#m-0633) 매개변수 `radius_m`: 10
 - [M-0633](../rules/zombies.md#m-0633) 매개변수 `cap_hp`: 30
 
+**따름 결과:** [T-0703](../theorems/T-0703.md)
+
 **미해결 질문:**
 
 - [U-0615](../unknowns.md#u-0615) (보통): 가드 좀비의 "up to 30 HP per contestant": 가드 좀비 한 마리당입니까, 같은 참가자에 대해 모든 가드 좀비가 공유합니까? 한 시간 내내 제자리에 서 있습니까?
@@ -595,6 +613,8 @@
 - [M-0635](../rules/zombies.md#m-0635) 매개변수 `radius_m`: 5
 - [M-0635](../rules/zombies.md#m-0635) 매개변수 `cap_hp`: 30
 
+**따름 결과:** [T-0304](../theorems/T-0304.md), [T-0305](../theorems/T-0305.md), [T-0706](../theorems/T-0706.md)
+
 **미해결 질문:**
 
 - [U-0613](../unknowns.md#u-0613) (높음): Necromancy의 "The HP goes to you": 얻는 HP는 피해자가 실제로 잃은 HP입니까, 소유자의 최대 HP로 제한됩니까, 그리고 막히거나 방어구가 받아낸 흡수(drain)도 HP와 토큰을 줍니까?
@@ -625,6 +645,8 @@
 - [M-0636](../rules/zombies.md#m-0636) 해석 A: `좀비가 Necromancy 참가자에게 주는 피해 = 0 (모든 좀비, 모든 소유자)`
 - [M-0636](../rules/zombies.md#m-0636) 해석 B: `흡수에 대해서만 A`
 
+**따름 결과:** [T-0702](../theorems/T-0702.md), [T-0706](../theorems/T-0706.md)
+
 **미해결 질문:**
 
 - [U-0616](../unknowns.md#u-0616) (보통): Necromancy의 "Fully immune from zombies": 다른 Necromancy 참가자의 호드 좀비와 가드 좀비에도 적용되고, 10% 포션 파괴와 40% 조합 파괴에도 적용됩니까?
@@ -633,7 +655,7 @@
 
 ## 시뮬레이션 검증
 
-`sim/tests/`에 테스트가 있는 정리: [T-0010](../theorems/T-0010.md), [T-0013](../theorems/T-0013.md)
+`sim/tests/`에 테스트가 있는 정리: [T-0010](../theorems/T-0010.md), [T-0013](../theorems/T-0013.md), [T-0302](../theorems/T-0302.md), [T-0304](../theorems/T-0304.md), [T-0305](../theorems/T-0305.md), [T-0700](../theorems/T-0700.md), [T-0701](../theorems/T-0701.md), [T-0702](../theorems/T-0702.md), [T-0703](../theorems/T-0703.md), [T-0706](../theorems/T-0706.md), [T-0707](../theorems/T-0707.md)
 
 ## 미해결 질문
 

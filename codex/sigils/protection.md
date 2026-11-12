@@ -132,6 +132,8 @@ Label: `DOCUMENTED`. Sigils: protection.
 
 - [M-0640](../rules/sigil.md#m-0640) reading A: `blocked(source, c) = true for source in {poison, drone, missile, C4, landmine, trapped gift, airstrike impact, airstrike fire, gunship bomb, Protection retribution} when sigil(c) = protection`
 
+**Consequences:** [T-0707](../theorems/T-0707.md)
+
 **Contradictions:** [C-0601](../unknowns.md#c-0601), [C-0602](../unknowns.md#c-0602)
 
 Notes ([M-0640](../rules/sigil.md#m-0640)): The full sentence and the damage table agree. The label line is shorter, see [C-0601](../unknowns.md#c-0601). Mentions of immunity on the attacks page (missile, airstrike, gunship) agree. Nuke is not immune: [M-0643](../rules/damage.md#m-0643).
@@ -248,6 +250,8 @@ Label: `CONDITIONAL`. Sigils: protection.
 - [M-0645](../rules/healing.md#m-0645) reading C: `heal -> h/2 exact`
 - [M-0645](../rules/healing.md#m-0645) domain: h integer: health potion tiers 5, 10, 20, 40; Eddie's potion 50% of max HP
 
+**Consequences:** [T-0402](../theorems/T-0402.md)
+
 **Open questions:**
 
 - [U-0617](../unknowns.md#u-0617) (high): Protection 'Potions heal you 50% less': which heals are 'potions' (health potions, Eddie's potion, God's Fruit, bandages, healing circle)?
@@ -306,7 +310,7 @@ Notes ([M-0647](../rules/sigil.md#m-0647)): Other Protection contestants are imm
 
 ## Simulation check
 
-No theorem or simulation covers this page yet.
+Theorems with tests in `sim/tests/`: [T-0402](../theorems/T-0402.md), [T-0707](../theorems/T-0707.md)
 
 ## Open questions
 

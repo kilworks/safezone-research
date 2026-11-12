@@ -156,7 +156,7 @@ M-0640:
   - >-
     | Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (반사)
   - >-
-    | Airstrike fire | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (흡수)
+    | 공습 화재 | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (흡수)
   - >-
     | Protection retribution | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (흡수)
   readings:
@@ -187,9 +187,9 @@ M-0642:
     이미 다른 수단으로 막힌 타격은 아무것도 얻지 못합니다.
   readings:
     A: >-
-      막아 낸 {drone, missile, C4, landmine, airstrike, gunship} 타격 1회당 tokens += 1, 50% 감소에 도달한 nuke 타격 1회당 += 20, 다른 차단 수단이 이미 타격을 막았다면 += 0
+      막아 낸 {drone, missile, C4, landmine, airstrike, gunship} 타격 1회당 tokens += 1, 50% 감소에 도달한 핵 타격 1회당 += 20, 다른 차단 수단이 이미 타격을 막았다면 += 0
     B: >-
-      A에 더해 airstrike fire 틱도 지급함
+      A에 더해 공습 화재 틱도 지급함
   parameters:
     tokens_per_block: >-
       1

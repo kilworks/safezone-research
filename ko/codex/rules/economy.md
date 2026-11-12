@@ -169,7 +169,7 @@
 - [M-0324](../rules/economy.md#m-0324) `wiki-merchant-020`: "Sleeping Bag: 30 blood tokens." ([출처](https://iceposeidon.com/safezone/wiki/merchant#items))
   - 번역: Sleeping Bag: 블러드 토큰 30개.
 - [M-0324](../rules/economy.md#m-0324) `wiki-merchant-030`: "Missile: 10 blood tokens." ([출처](https://iceposeidon.com/safezone/wiki/merchant#items))
-  - 번역: Missile: 블러드 토큰 10개.
+  - 번역: 미사일: 블러드 토큰 10개.
 - [M-0324](../rules/economy.md#m-0324) `wiki-merchant-038`: "Dual Wield: 50 blood tokens." ([출처](https://iceposeidon.com/safezone/wiki/merchant#upgrades))
   - 번역: Dual Wield: 블러드 토큰 50개.
 - [M-0324](../rules/economy.md#m-0324) `wiki-merchant-042`: "Deep Cut: 20 blood tokens." ([출처](https://iceposeidon.com/safezone/wiki/merchant#upgrades))
@@ -275,6 +275,8 @@
 - [M-0333](../rules/economy.md#m-0333) 매개변수 `hp_cap_piety`: 220
 - [M-0333](../rules/economy.md#m-0333) 매개변수 `hp_purchase_limit`: UNKNOWN, [U-0330](../unknowns.md#u-0330) 참조
 
+**따름 결과:** [T-0300](../theorems/T-0300.md), [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
+
 **미해결 질문:**
 
 - [U-0329](../unknowns.md#u-0329) (높음): Inventory slot과 +10 maximum HP의 'for each one you already bought' 카운터는 별개입니까, 공유됩니까?
@@ -327,6 +329,8 @@
 - [M-0501](../rules/economy.md#m-0501) 매개변수 `hp_per_token`: 5
 - [M-0501](../rules/economy.md#m-0501) 매개변수 `tokens_per_step`: 1
 - [M-0501](../rules/economy.md#m-0501) 매개변수 `hp_basis`: UNKNOWN, [U-0501](../unknowns.md#u-0501) 참조
+
+**따름 결과:** [T-0302](../theorems/T-0302.md)
 
 **상호작용:** [M-0502](../rules/economy.md#m-0502), [M-0505](../rules/healing.md#m-0505)
 
@@ -449,7 +453,7 @@
 
 - [U-0006](../unknowns.md#u-0006) (높음): 서버 연산은 정확합니까, 아니면 IEEE 754 binary64입니까(H-0001: Ingenuity 가격이 기본 50, 90, 100, 110일 때)?
 
-메모 ([M-0516](../rules/economy.md#m-0516)): 이 기록은 Ingenuity 쪽 진술이며, 상인 페이지가 같은 문장을 반복합니다 (같은 의미, 불일치 없음). 기본 가격: Care package 10, Anti poison 12, Vulnerability Dart 25, Sleeping Bag 30, Missile 10, Dual Wield 50, Deep Cut 20, 무기 인챈트 15, 방어구 인챈트 30, 슬롯과 HP 업그레이드는 40부터 (상인 페이지). 인상이 업그레이드에도 적용되는지는 'Merchant prices'라는 표현으로 정해집니다.
+메모 ([M-0516](../rules/economy.md#m-0516)): 이 기록은 Ingenuity 쪽 진술이며, 상인 페이지가 같은 문장을 반복합니다 (같은 의미, 불일치 없음). 기본 가격: Care package 10, Anti poison 12, Vulnerability Dart 25, Sleeping Bag 30, 미사일 10, Dual Wield 50, Deep Cut 20, 무기 인챈트 15, 방어구 인챈트 30, 슬롯과 HP 업그레이드는 40부터 (상인 페이지). 인상이 업그레이드에도 적용되는지는 'Merchant prices'라는 표현으로 정해집니다.
 
 <a id="m-0521"></a>
 
@@ -472,6 +476,8 @@
 - [M-0521](../rules/economy.md#m-0521) 매개변수 `per_chest_black_hole`: 1
 - [M-0521](../rules/economy.md#m-0521) 매개변수 `per_campfire_hp`: 1
 - [M-0521](../rules/economy.md#m-0521) 매개변수 `per_zombie_killed`: 1
+
+**따름 결과:** [T-0304](../theorems/T-0304.md), [T-0706](../theorems/T-0706.md)
 
 **상호작용:** [M-0517](../rules/sigil.md#m-0517), [M-0522](../rules/items.md#m-0522), [M-0525](../rules/healing.md#m-0525), [M-0527](../rules/zombies.md#m-0527), [M-0528](../rules/items.md#m-0528)
 
@@ -606,6 +612,8 @@
 - [M-0630](../rules/economy.md#m-0630) 해석 A: `소유한 좀비가 등장할 때마다 tokens += 1(소환, 죽음, 호드 보너스, 가드). 소유한 좀비가 빼앗은 HP 1마다 tokens += 1`
 - [M-0630](../rules/economy.md#m-0630) 해석 B: `A와 같으나, 빼앗은 HP는 피해자가 방어구와 상한을 거친 뒤 실제로 잃은 HP`
 
+**따름 결과:** [T-0706](../theorems/T-0706.md)
+
 **미해결 질문:**
 
 - [U-0613](../unknowns.md#u-0613) (높음): Necromancy의 "The HP goes to you": 얻는 HP는 피해자가 실제로 잃은 HP입니까, 소유자의 최대 HP로 제한됩니까, 그리고 막히거나 방어구가 받아낸 흡수(drain)도 HP와 토큰을 줍니까?
@@ -630,8 +638,8 @@
 
 **형식 모델:**
 
-- [M-0642](../rules/economy.md#m-0642) 해석 A: `막아 낸 {drone, missile, C4, landmine, airstrike, gunship} 타격 1회당 tokens += 1, 50% 감소에 도달한 nuke 타격 1회당 += 20, 다른 차단 수단이 이미 타격을 막았다면 += 0`
-- [M-0642](../rules/economy.md#m-0642) 해석 B: `A에 더해 airstrike fire 틱도 지급함`
+- [M-0642](../rules/economy.md#m-0642) 해석 A: `막아 낸 {drone, missile, C4, landmine, airstrike, gunship} 타격 1회당 tokens += 1, 50% 감소에 도달한 핵 타격 1회당 += 20, 다른 차단 수단이 이미 타격을 막았다면 += 0`
+- [M-0642](../rules/economy.md#m-0642) 해석 B: `A에 더해 공습 화재 틱도 지급함`
 - [M-0642](../rules/economy.md#m-0642) 매개변수 `tokens_per_block`: 1
 - [M-0642](../rules/economy.md#m-0642) 매개변수 `tokens_per_nuke`: 20
 
@@ -669,7 +677,7 @@
 
 ## 시뮬레이션 검증
 
-아직 이 페이지를 다루는 정리나 시뮬레이션이 없습니다.
+`sim/tests/`에 테스트가 있는 정리: [T-0300](../theorems/T-0300.md), [T-0302](../theorems/T-0302.md), [T-0304](../theorems/T-0304.md), [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md), [T-0706](../theorems/T-0706.md)
 
 ## 미해결 질문
 

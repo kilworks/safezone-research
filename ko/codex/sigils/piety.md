@@ -68,6 +68,8 @@ Piety에게는 돈 버는 면도 있습니다. 부활을 제외한 모든 출처
 - [M-0333](../rules/economy.md#m-0333) 매개변수 `hp_cap_piety`: 220
 - [M-0333](../rules/economy.md#m-0333) 매개변수 `hp_purchase_limit`: UNKNOWN, [U-0330](../unknowns.md#u-0330) 참조
 
+**따름 결과:** [T-0300](../theorems/T-0300.md), [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
+
 **미해결 질문:**
 
 - [U-0329](../unknowns.md#u-0329) (높음): Inventory slot과 +10 maximum HP의 'for each one you already bought' 카운터는 별개입니까, 공유됩니까?
@@ -105,6 +107,8 @@ Piety에게는 돈 버는 면도 있습니다. 부활을 제외한 모든 출처
 - [M-0500](../rules/sigil.md#m-0500) 매개변수 `slots`: 3
 - [M-0500](../rules/sigil.md#m-0500) 매개변수 `max_hp_delta_vs_base`: +10
 
+**따름 결과:** [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
+
 **상호작용:** [M-0506](../rules/items.md#m-0506)
 
 메모 ([M-0500](../rules/sigil.md#m-0500)): 능력치 라벨은 쌍으로 읽습니다 (라벨 'Max HP' 다음에 '110 HP'; 라벨 'Slots' 다음에 '3'). 'Your max HP is 10 HP higher'라는 문장은 기준값 100에 대해 110과 일치합니다. 상인 페이지는 Piety의 최대 HP 상한을 220으로 올립니다. 그것은 상인 형식화 담당의 기록입니다. 시작 HP가 최대 HP와 같다는 것은 이 페이지에 명시되어 있지 않습니다.
@@ -129,6 +133,8 @@ Piety에게는 돈 버는 면도 있습니다. 부활을 제외한 모든 출처
 - [M-0501](../rules/economy.md#m-0501) 매개변수 `hp_per_token`: 5
 - [M-0501](../rules/economy.md#m-0501) 매개변수 `tokens_per_step`: 1
 - [M-0501](../rules/economy.md#m-0501) 매개변수 `hp_basis`: UNKNOWN, [U-0501](../unknowns.md#u-0501) 참조
+
+**따름 결과:** [T-0302](../theorems/T-0302.md)
 
 **상호작용:** [M-0502](../rules/economy.md#m-0502), [M-0505](../rules/healing.md#m-0505)
 
@@ -267,6 +273,8 @@ Piety에게는 돈 버는 면도 있습니다. 부활을 제외한 모든 출처
 - [M-0506](../rules/items.md#m-0506) 매개변수 `stack_cap`: 6
 - [M-0506](../rules/items.md#m-0506) 매개변수 `slots_for_potions`: 1
 
+**따름 결과:** [T-0302](../theorems/T-0302.md), [T-0407](../theorems/T-0407.md)
+
 **상호작용:** [M-0500](../rules/sigil.md#m-0500), [M-0503](../rules/items.md#m-0503)
 
 메모 ([M-0506](../rules/items.md#m-0506)): 두 페이지가 일치합니다: 슬롯 하나, 최대 6개. 등급이 섞인 포션이 슬롯을 공유하는지는 'All your health potions'에서 읽어낸 것입니다. 좀비는 10%의 확률로 체력 포션 하나를 부수는데 (좀비 페이지), 이는 Piety에게 가장 중요합니다.
@@ -295,7 +303,7 @@ Piety에게는 돈 버는 면도 있습니다. 부활을 제외한 모든 출처
 
 ## 시뮬레이션 검증
 
-아직 이 페이지를 다루는 정리나 시뮬레이션이 없습니다.
+`sim/tests/`에 테스트가 있는 정리: [T-0300](../theorems/T-0300.md), [T-0302](../theorems/T-0302.md), [T-0400](../theorems/T-0400.md), [T-0407](../theorems/T-0407.md), [T-0703](../theorems/T-0703.md)
 
 ## 미해결 질문
 

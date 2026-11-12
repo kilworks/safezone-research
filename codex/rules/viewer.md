@@ -345,6 +345,8 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0408](../rules/viewer.md#m-0408) parameter `duration`: 20 min
 - [M-0408](../rules/viewer.md#m-0408) parameter `price_cx_bucks`: UNKNOWN, see [U-0014](../unknowns.md#u-0014)
 
+**Consequences:** [T-0701](../theorems/T-0701.md), [T-0703](../theorems/T-0703.md)
+
 **Interactions:** [M-0400](../rules/viewer.md#m-0400), [M-0445](../rules/zombies.md#m-0445)
 
 **Open questions:**
@@ -401,6 +403,8 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0410](../rules/viewer.md#m-0410) parameter `duration`: 600 s
 - [M-0410](../rules/viewer.md#m-0410) parameter `damage`: 2 HP
 - [M-0410](../rules/viewer.md#m-0410) parameter `period`: 10 s
+
+**Consequences:** [T-0305](../theorems/T-0305.md)
 
 **Interactions:** [M-0409](../rules/viewer.md#m-0409)
 
@@ -484,6 +488,8 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0413](../rules/viewer.md#m-0413) parameter `duration`: 300 s
 - [M-0413](../rules/viewer.md#m-0413) parameter `damage`: 1 HP
 - [M-0413](../rules/viewer.md#m-0413) parameter `period`: 2 s
+
+**Consequences:** [T-0305](../theorems/T-0305.md)
 
 **Interactions:** [M-0412](../rules/viewer.md#m-0412)
 
@@ -612,6 +618,8 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0418](../rules/viewer.md#m-0418) parameter `flight_time`: 300 s
 - [M-0418](../rules/viewer.md#m-0418) parameter `spread`: 10 m
 - [M-0418](../rules/viewer.md#m-0418) parameter `price_cx_bucks`: UNKNOWN, see [U-0014](../unknowns.md#u-0014)
+
+**Consequences:** [T-0408](../theorems/T-0408.md)
 
 **Open questions:**
 
@@ -833,6 +841,8 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0426](../rules/viewer.md#m-0426) parameter `damage`: 10 HP
 - [M-0426](../rules/viewer.md#m-0426) parameter `price_cx_bucks`: UNKNOWN, see [U-0014](../unknowns.md#u-0014)
 
+**Consequences:** [T-0305](../theorems/T-0305.md)
+
 **Open questions:**
 
 - [U-0420](../unknowns.md#u-0420) (medium): Cyclops attack timing and target: 'Every 5s it hits the nearest contestant within 30m for 10 HP'. First hit at spawn+5s or when a target first enters range; tie breaks; does it pass the damage pipeline ([U-0002](../unknowns.md#u-0002))?
@@ -1036,6 +1046,8 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0435](../rules/viewer.md#m-0435) parameter `radius`: 30 m
 - [M-0435](../rules/viewer.md#m-0435) parameter `duration`: UNKNOWN, see [U-0423](../unknowns.md#u-0423)
 
+**Consequences:** [T-0702](../theorems/T-0702.md)
+
 **Open questions:**
 
 - [U-0423](../unknowns.md#u-0423) (low): Reality Shield: duration is not given, 'Everyone within 30m' is radius or diameter, and 'immune to all damage, zombies and new poison' leaves existing poison running?
@@ -1075,7 +1087,7 @@ Notes ([M-0539](../rules/viewer.md#m-0539)): The attacks page gives the 5 m dist
 
 ## Simulation check
 
-No theorem or simulation covers this page yet.
+Theorems with tests in `sim/tests/`: [T-0305](../theorems/T-0305.md), [T-0408](../theorems/T-0408.md), [T-0701](../theorems/T-0701.md), [T-0702](../theorems/T-0702.md), [T-0703](../theorems/T-0703.md)
 
 ## Open questions
 

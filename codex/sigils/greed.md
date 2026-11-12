@@ -64,6 +64,8 @@ Label: `DOCUMENTED`. Sigils: greed.
 - [M-0508](../rules/sigil.md#m-0508) parameter `slots`: 3
 - [M-0508](../rules/sigil.md#m-0508) parameter `max_hp_delta_vs_base`: -10
 
+**Consequences:** [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
+
 Notes ([M-0508](../rules/sigil.md#m-0508)): Merchant HP upgrades are +10 each with a cap of 200 (220 for Piety); how many Greed purchases reach the cap is a merchant-page question (90 + 10k = 200 needs k = 11).
 
 <a id="m-0509"></a>
@@ -231,7 +233,7 @@ Notes ([M-0514](../rules/economy.md#m-0514)): Other Greed income is the steal re
 
 ## Simulation check
 
-No theorem or simulation covers this page yet.
+Theorems with tests in `sim/tests/`: [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
 
 ## Open questions
 

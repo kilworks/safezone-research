@@ -64,6 +64,8 @@ Necromancy는 "좀비 주인" 계열입니다. 수치는 평범한 편으로 최
 - [M-0447](../rules/zombies.md#m-0447) 정의역: 반경 10 m
 - [M-0447](../rules/zombies.md#m-0447) 매개변수 `radius`: 10 m
 
+**따름 결과:** [T-0707](../theorems/T-0707.md)
+
 **미해결 질문:**
 
 - [U-0403](../unknowns.md#u-0403) (높음): 좀비 수명: Horde는 20min, 가드 좀비는 1h(Necromancy 페이지)로 유지되지만, Summon, Death, Horde 보너스 좀비의 수명과 방출 시점부터 센 horde 좀비의 수명은 얼마입니까?
@@ -116,7 +118,7 @@ Necromancy는 "좀비 주인" 계열입니다. 수치는 평범한 편으로 최
 - [M-0449](../rules/zombies.md#m-0449) 매개변수 `cap`: 30 HP
 - [M-0449](../rules/zombies.md#m-0449) 매개변수 `lifetime`: 1 h (Necromancy 페이지)
 
-**따름 결과:** [T-0010](../theorems/T-0010.md)
+**따름 결과:** [T-0010](../theorems/T-0010.md), [T-0304](../theorems/T-0304.md), [T-0305](../theorems/T-0305.md), [T-0703](../theorems/T-0703.md)
 
 **미해결 질문:**
 
@@ -164,6 +166,8 @@ Necromancy는 "좀비 주인" 계열입니다. 수치는 평범한 편으로 최
 
 - [M-0630](../rules/economy.md#m-0630) 해석 A: `소유한 좀비가 등장할 때마다 tokens += 1(소환, 죽음, 호드 보너스, 가드). 소유한 좀비가 빼앗은 HP 1마다 tokens += 1`
 - [M-0630](../rules/economy.md#m-0630) 해석 B: `A와 같으나, 빼앗은 HP는 피해자가 방어구와 상한을 거친 뒤 실제로 잃은 HP`
+
+**따름 결과:** [T-0706](../theorems/T-0706.md)
 
 **미해결 질문:**
 
@@ -254,6 +258,8 @@ Necromancy는 "좀비 주인" 계열입니다. 수치는 평범한 편으로 최
 - [M-0633](../rules/zombies.md#m-0633) 매개변수 `radius_m`: 10
 - [M-0633](../rules/zombies.md#m-0633) 매개변수 `cap_hp`: 30
 
+**따름 결과:** [T-0703](../theorems/T-0703.md)
+
 **미해결 질문:**
 
 - [U-0615](../unknowns.md#u-0615) (보통): 가드 좀비의 "up to 30 HP per contestant": 가드 좀비 한 마리당입니까, 같은 참가자에 대해 모든 가드 좀비가 공유합니까? 한 시간 내내 제자리에 서 있습니까?
@@ -314,6 +320,8 @@ Necromancy는 "좀비 주인" 계열입니다. 수치는 평범한 편으로 최
 - [M-0635](../rules/zombies.md#m-0635) 매개변수 `radius_m`: 5
 - [M-0635](../rules/zombies.md#m-0635) 매개변수 `cap_hp`: 30
 
+**따름 결과:** [T-0304](../theorems/T-0304.md), [T-0305](../theorems/T-0305.md), [T-0706](../theorems/T-0706.md)
+
 **미해결 질문:**
 
 - [U-0613](../unknowns.md#u-0613) (높음): Necromancy의 "The HP goes to you": 얻는 HP는 피해자가 실제로 잃은 HP입니까, 소유자의 최대 HP로 제한됩니까, 그리고 막히거나 방어구가 받아낸 흡수(drain)도 HP와 토큰을 줍니까?
@@ -344,6 +352,8 @@ Necromancy는 "좀비 주인" 계열입니다. 수치는 평범한 편으로 최
 - [M-0636](../rules/zombies.md#m-0636) 해석 A: `좀비가 Necromancy 참가자에게 주는 피해 = 0 (모든 좀비, 모든 소유자)`
 - [M-0636](../rules/zombies.md#m-0636) 해석 B: `흡수에 대해서만 A`
 
+**따름 결과:** [T-0702](../theorems/T-0702.md), [T-0706](../theorems/T-0706.md)
+
 **미해결 질문:**
 
 - [U-0616](../unknowns.md#u-0616) (보통): Necromancy의 "Fully immune from zombies": 다른 Necromancy 참가자의 호드 좀비와 가드 좀비에도 적용되고, 10% 포션 파괴와 40% 조합 파괴에도 적용됩니까?
@@ -352,7 +362,7 @@ Necromancy는 "좀비 주인" 계열입니다. 수치는 평범한 편으로 최
 
 ## 시뮬레이션 검증
 
-`sim/tests/`에 테스트가 있는 정리: [T-0010](../theorems/T-0010.md)
+`sim/tests/`에 테스트가 있는 정리: [T-0010](../theorems/T-0010.md), [T-0304](../theorems/T-0304.md), [T-0305](../theorems/T-0305.md), [T-0702](../theorems/T-0702.md), [T-0703](../theorems/T-0703.md), [T-0706](../theorems/T-0706.md), [T-0707](../theorems/T-0707.md)
 
 ## 미해결 질문
 

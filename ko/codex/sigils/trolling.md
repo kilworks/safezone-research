@@ -92,6 +92,8 @@ Trolling은 "장난꾼" 계열입니다. 최대 HP 100과 인벤토리 슬롯 3�
 - [M-0530](../rules/sigil.md#m-0530) 매개변수 `max_hp`: 100
 - [M-0530](../rules/sigil.md#m-0530) 매개변수 `slots`: 3
 
+**따름 결과:** [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
+
 메모 ([M-0530](../rules/sigil.md#m-0530)): 라벨은 쌍으로 읽습니다 (Max HP 다음 100 HP, Slots 다음 3).
 
 <a id="m-0531"></a>
@@ -300,6 +302,8 @@ Trolling은 "장난꾼" 계열입니다. 최대 HP 100과 인벤토리 슬롯 3�
 - [M-0536](../rules/damage.md#m-0536) 매개변수 `grace_s`: 0
 - [M-0536](../rules/damage.md#m-0536) 매개변수 `first_hit`: 진입 후 한 간격 뒤
 
+**따름 결과:** [T-0305](../theorems/T-0305.md)
+
 **상호작용:** [M-0537](../rules/items.md#m-0537), [M-0538](../rules/damage.md#m-0538)
 
 **미해결 질문:**
@@ -414,7 +418,7 @@ Trolling은 "장난꾼" 계열입니다. 최대 HP 100과 인벤토리 슬롯 3�
 
 ## 시뮬레이션 검증
 
-아직 이 페이지를 다루는 정리나 시뮬레이션이 없습니다.
+`sim/tests/`에 테스트가 있는 정리: [T-0305](../theorems/T-0305.md), [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
 
 ## 미해결 질문
 

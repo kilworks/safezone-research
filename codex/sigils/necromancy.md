@@ -62,6 +62,8 @@ Label: `CONDITIONAL`. Sigils: necromancy.
 - [M-0447](../rules/zombies.md#m-0447) domain: radius 10 m
 - [M-0447](../rules/zombies.md#m-0447) parameter `radius`: 10 m
 
+**Consequences:** [T-0707](../theorems/T-0707.md)
+
 **Open questions:**
 
 - [U-0403](../unknowns.md#u-0403) (high): Zombie lifetime: the Horde lasts 20min and guard zombies 1h (Necromancy page), but what is the lifetime of Summon, Death and Horde-bonus zombies, and of horde zombies counted from release?
@@ -111,7 +113,7 @@ Label: `CONDITIONAL`. Sigils: necromancy.
 - [M-0449](../rules/zombies.md#m-0449) parameter `cap`: 30 HP
 - [M-0449](../rules/zombies.md#m-0449) parameter `lifetime`: 1 h (Necromancy page)
 
-**Consequences:** [T-0010](../theorems/T-0010.md)
+**Consequences:** [T-0010](../theorems/T-0010.md), [T-0304](../theorems/T-0304.md), [T-0305](../theorems/T-0305.md), [T-0703](../theorems/T-0703.md)
 
 **Open questions:**
 
@@ -154,6 +156,8 @@ Label: `CONDITIONAL`. Sigils: necromancy.
 
 - [M-0630](../rules/economy.md#m-0630) reading A: `tokens += 1 per owned zombie appearing (summon, death, horde bonus, guard); tokens += 1 per HP drained by owned zombies`
 - [M-0630](../rules/economy.md#m-0630) reading B: `A, with HP drained = HP the victim actually lost after armor and caps`
+
+**Consequences:** [T-0706](../theorems/T-0706.md)
 
 **Open questions:**
 
@@ -236,6 +240,8 @@ Label: `CONDITIONAL`. Sigils: necromancy.
 - [M-0633](../rules/zombies.md#m-0633) parameter `radius_m`: 10
 - [M-0633](../rules/zombies.md#m-0633) parameter `cap_hp`: 30
 
+**Consequences:** [T-0703](../theorems/T-0703.md)
+
 **Open questions:**
 
 - [U-0615](../unknowns.md#u-0615) (medium): Guard zombie 'up to 30 HP per contestant': per guard zombie, or shared across all guard zombies on the same contestant? Does it stand still all hour?
@@ -290,6 +296,8 @@ Label: `CONDITIONAL`. Sigils: necromancy.
 - [M-0635](../rules/zombies.md#m-0635) parameter `radius_m`: 5
 - [M-0635](../rules/zombies.md#m-0635) parameter `cap_hp`: 30
 
+**Consequences:** [T-0304](../theorems/T-0304.md), [T-0305](../theorems/T-0305.md), [T-0706](../theorems/T-0706.md)
+
 **Open questions:**
 
 - [U-0613](../unknowns.md#u-0613) (high): Necromancy 'The HP goes to you': is the gain the HP the victim actually lost, is it capped at the owner's max HP, and does a blocked or armor-absorbed drain give HP and tokens?
@@ -316,6 +324,8 @@ Label: `CONDITIONAL`. Sigils: necromancy.
 - [M-0636](../rules/zombies.md#m-0636) reading A: `damage from zombies to a Necromancy contestant = 0 (every zombie, every owner)`
 - [M-0636](../rules/zombies.md#m-0636) reading B: `A for drain only`
 
+**Consequences:** [T-0702](../theorems/T-0702.md), [T-0706](../theorems/T-0706.md)
+
 **Open questions:**
 
 - [U-0616](../unknowns.md#u-0616) (medium): Necromancy 'Fully immune from zombies': does it cover horde and guard zombies of other Necromancy contestants, and also the 10% potion break and 40% craft destruction?
@@ -324,7 +334,7 @@ Notes ([M-0636](../rules/zombies.md#m-0636)): The damage table lists Necromancy 
 
 ## Simulation check
 
-Theorems with tests in `sim/tests/`: [T-0010](../theorems/T-0010.md)
+Theorems with tests in `sim/tests/`: [T-0010](../theorems/T-0010.md), [T-0304](../theorems/T-0304.md), [T-0305](../theorems/T-0305.md), [T-0702](../theorems/T-0702.md), [T-0703](../theorems/T-0703.md), [T-0706](../theorems/T-0706.md), [T-0707](../theorems/T-0707.md)
 
 ## Open questions
 

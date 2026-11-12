@@ -44,6 +44,30 @@
 - [T-0012](theorems/T-0012.md): 출처: theory/05-survival-processes.md
 - [T-0013](theorems/T-0013.md): 출처: theory/05-survival-processes.md
 - [T-0014](theorems/T-0014.md): 출처: theory/05-survival-processes.md
+- [T-0300](theorems/T-0300.md): 출처: theory/03-healing-and-sustain.md
+- [T-0301](theorems/T-0301.md): 출처: theory/03-healing-and-sustain.md
+- [T-0302](theorems/T-0302.md): 출처: theory/03-healing-and-sustain.md
+- [T-0303](theorems/T-0303.md): 출처: theory/03-healing-and-sustain.md
+- [T-0304](theorems/T-0304.md): 출처: theory/03-healing-and-sustain.md
+- [T-0305](theorems/T-0305.md): 출처: theory/03-healing-and-sustain.md
+- [T-0306](theorems/T-0306.md): 출처: theory/03-healing-and-sustain.md
+- [T-0400](theorems/T-0400.md): 출처: theory/04-probabilistic-items.md
+- [T-0401](theorems/T-0401.md): 출처: theory/04-probabilistic-items.md
+- [T-0402](theorems/T-0402.md): 출처: theory/04-probabilistic-items.md
+- [T-0403](theorems/T-0403.md): 출처: theory/04-probabilistic-items.md
+- [T-0404](theorems/T-0404.md): 출처: theory/04-probabilistic-items.md
+- [T-0405](theorems/T-0405.md): 출처: theory/04-probabilistic-items.md
+- [T-0406](theorems/T-0406.md): 출처: theory/04-probabilistic-items.md
+- [T-0407](theorems/T-0407.md): 출처: theory/04-probabilistic-items.md
+- [T-0408](theorems/T-0408.md): 출처: theory/04-probabilistic-items.md
+- [T-0700](theorems/T-0700.md): 출처: theory/07-zombies-and-pursuit.md
+- [T-0701](theorems/T-0701.md): 출처: theory/07-zombies-and-pursuit.md
+- [T-0702](theorems/T-0702.md): 출처: theory/07-zombies-and-pursuit.md
+- [T-0703](theorems/T-0703.md): 출처: theory/07-zombies-and-pursuit.md
+- [T-0704](theorems/T-0704.md): 출처: theory/07-zombies-and-pursuit.md
+- [T-0705](theorems/T-0705.md): 출처: theory/07-zombies-and-pursuit.md
+- [T-0706](theorems/T-0706.md): 출처: theory/07-zombies-and-pursuit.md
+- [T-0707](theorems/T-0707.md): 출처: theory/07-zombies-and-pursuit.md
 
 ## 미해결 질문
 
@@ -72,7 +96,7 @@
 - [M-0118](rules/damage.md#m-0118): 파이프라인 1단계: 면역 (`CONDITIONAL`)
 - [M-0119](rules/damage.md#m-0119): 파이프라인 2단계: 공격자 Kick 보너스, 나열된 무기에 한정 (`CONDITIONAL`)
 - [M-0120](rules/damage.md#m-0120): 파이프라인 3단계: Mirror forcefield가 타격 전체를 되돌려 보냄 (`CONDITIONAL`)
-- [M-0121](rules/damage.md#m-0121): 파이프라인 4a단계: Protection 시길이 nuke 피해를 절반으로 줄임 (`CONDITIONAL`)
+- [M-0121](rules/damage.md#m-0121): 파이프라인 4a단계: Protection 시길이 핵 피해를 절반으로 줄임 (`CONDITIONAL`)
 - [M-0122](rules/damage.md#m-0122): 파이프라인 4b단계: 방어자 Kick 감소 (`CONDITIONAL`)
 - [M-0123](rules/damage.md#m-0123): 파이프라인 5단계: 통과한 타격은 최소 1 HP (`CONDITIONAL`)
 - [M-0124](rules/damage.md#m-0124): 파이프라인 6단계: fortress는 남은 내구도까지 흡수 (`CONDITIONAL`)
@@ -81,8 +105,8 @@
 - [M-0127](rules/items.md#m-0127): Reality Shield와 Body armor 페이지 첫머리 문장 (뒤섞임) (`CONDITIONAL`)
 - [M-0128](rules/damage.md#m-0128): Shield는 존, 언세이프 서클(unsafe circle), robot 피해를 막지 못하며, Safety bubble과 Reality Shield는 막음 (`DOCUMENTED`)
 - [M-0129](rules/damage.md#m-0129): 취약한 참가자: Shield나 Safety bubble의 보호를 받지 못함 (`DOCUMENTED`)
-- [M-0130](rules/items.md#m-0130): Flak jacket은 다음 missile, nuke, airstrike impact, gunship bomb을 막고 소모됨 (`CONDITIONAL`)
-- [M-0131](rules/items.md#m-0131): Gas mask는 tear gas를 막음 (`DOCUMENTED`)
+- [M-0130](rules/items.md#m-0130): Flak jacket은 다음 미사일, 핵, 공습 충격, 건십 폭탄을 막고 소모됨 (`CONDITIONAL`)
+- [M-0131](rules/items.md#m-0131): Gas mask는 최루 가스를 막음 (`DOCUMENTED`)
 - [M-0132](rules/items.md#m-0132): Sleeping Bag 면역: 자신의 Sleeping Bag에서 15 m 이내이면 존, 언세이프 서클(unsafe circle), robot을 제외한 모든 피해에 면역 (`CONDITIONAL`)
 - [M-0133](rules/damage.md#m-0133): 폭발 범위에 서 있으면 자신의 C4와 landmine에 피해를 입음 (`CONDITIONAL`)
 - [M-0134](rules/items.md#m-0134): Mirror forcefield는 처음 반사한 공격에서 소모됨 (`DOCUMENTED`)
@@ -227,12 +251,12 @@
 - [M-0409](rules/viewer.md#m-0409): 최루 가스 배치 (`CONDITIONAL`)
 - [M-0410](rules/viewer.md#m-0410): 최루 가스 피해와 좀비 처치 (`CONDITIONAL`)
 - [M-0411](rules/viewer.md#m-0411): 최루 가스 대응 수단 (`CONDITIONAL`)
-- [M-0412](rules/viewer.md#m-0412): Airstrike 폭격 (`CONDITIONAL`)
-- [M-0413](rules/viewer.md#m-0413): Airstrike 화염 (`CONDITIONAL`)
-- [M-0414](rules/viewer.md#m-0414): Airstrike 대응 수단 (`DOCUMENTED`)
-- [M-0415](rules/viewer.md#m-0415): Gunship 지속 시간과 폭탄 투하 주기 (`CONDITIONAL`)
-- [M-0416](rules/viewer.md#m-0416): Gunship 폭탄 효과 (`CONDITIONAL`)
-- [M-0417](rules/viewer.md#m-0417): Gunship 대응 수단 (`DOCUMENTED`)
+- [M-0412](rules/viewer.md#m-0412): 공습 폭격 (`CONDITIONAL`)
+- [M-0413](rules/viewer.md#m-0413): 공습 화염 (`CONDITIONAL`)
+- [M-0414](rules/viewer.md#m-0414): 공습 대응 수단 (`DOCUMENTED`)
+- [M-0415](rules/viewer.md#m-0415): 건십 지속 시간과 폭탄 투하 주기 (`CONDITIONAL`)
+- [M-0416](rules/viewer.md#m-0416): 건십 폭탄 효과 (`CONDITIONAL`)
+- [M-0417](rules/viewer.md#m-0417): 건십 대응 수단 (`DOCUMENTED`)
 - [M-0418](rules/viewer.md#m-0418): Emergency airdrop (긴급 에어드롭) (`CONDITIONAL`)
 - [M-0419](rules/viewer.md#m-0419): Healing circle (회복 서클) (`CONDITIONAL`)
 - [M-0420](rules/viewer.md#m-0420): Illusion 복제체 (`CONDITIONAL`)
@@ -241,11 +265,11 @@
 - [M-0423](rules/viewer.md#m-0423): 현상금 표시 (`CONDITIONAL`)
 - [M-0424](rules/viewer.md#m-0424): 현상금 획득 (`CONDITIONAL`)
 - [M-0425](rules/viewer.md#m-0425): 현상금 피해와 만료 (`CONDITIONAL`)
-- [M-0426](rules/viewer.md#m-0426): Cyclops 능력치와 공격 (`CONDITIONAL`)
-- [M-0427](rules/viewer.md#m-0427): Cyclops 조종 투표 (`CONDITIONAL`)
-- [M-0428](rules/viewer.md#m-0428): Cyclops가 받는 피해 (`CONDITIONAL`)
-- [M-0429](rules/viewer.md#m-0429): Cyclops 블러드 토큰 (`CONDITIONAL`)
-- [M-0430](rules/viewer.md#m-0430): Cyclops 동시 존재와 재등장 (`DOCUMENTED`)
+- [M-0426](rules/viewer.md#m-0426): 사이클롭스 능력치와 공격 (`CONDITIONAL`)
+- [M-0427](rules/viewer.md#m-0427): 사이클롭스 조종 투표 (`CONDITIONAL`)
+- [M-0428](rules/viewer.md#m-0428): 사이클롭스가 받는 피해 (`CONDITIONAL`)
+- [M-0429](rules/viewer.md#m-0429): 사이클롭스 블러드 토큰 (`CONDITIONAL`)
+- [M-0430](rules/viewer.md#m-0430): 사이클롭스 동시 존재와 재등장 (`DOCUMENTED`)
 - [M-0431](rules/viewer.md#m-0431): 보급 상자 투하 (`CONDITIONAL`)
 - [M-0432](rules/viewer.md#m-0432): 보급 상자가 Trolling 참가자 쪽으로 빗나감 (`CONDITIONAL`)
 - [M-0433](rules/viewer.md#m-0433): 시청자 상자 (`DOCUMENTED`)

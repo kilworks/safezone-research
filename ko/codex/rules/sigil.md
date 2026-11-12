@@ -51,6 +51,8 @@
 - [M-0500](../rules/sigil.md#m-0500) 매개변수 `slots`: 3
 - [M-0500](../rules/sigil.md#m-0500) 매개변수 `max_hp_delta_vs_base`: +10
 
+**따름 결과:** [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
+
 **상호작용:** [M-0506](../rules/items.md#m-0506)
 
 메모 ([M-0500](../rules/sigil.md#m-0500)): 능력치 라벨은 쌍으로 읽습니다 (라벨 'Max HP' 다음에 '110 HP'; 라벨 'Slots' 다음에 '3'). 'Your max HP is 10 HP higher'라는 문장은 기준값 100에 대해 110과 일치합니다. 상인 페이지는 Piety의 최대 HP 상한을 220으로 올립니다. 그것은 상인 형식화 담당의 기록입니다. 시작 HP가 최대 HP와 같다는 것은 이 페이지에 명시되어 있지 않습니다.
@@ -103,6 +105,8 @@
 - [M-0508](../rules/sigil.md#m-0508) 매개변수 `max_hp`: 90
 - [M-0508](../rules/sigil.md#m-0508) 매개변수 `slots`: 3
 - [M-0508](../rules/sigil.md#m-0508) 매개변수 `max_hp_delta_vs_base`: -10
+
+**따름 결과:** [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
 
 메모 ([M-0508](../rules/sigil.md#m-0508)): 상인의 HP 업그레이드는 한 번에 +10이며 상한은 200입니다 (Piety는 220). Greed가 몇 번 구매해야 상한에 도달하는지는 상인 페이지의 문제입니다 (90 + 10k = 200이면 k = 11이 필요함).
 
@@ -222,6 +226,8 @@
 - [M-0515](../rules/sigil.md#m-0515) 매개변수 `craft_slots`: 5
 - [M-0515](../rules/sigil.md#m-0515) 매개변수 `slot_cap_with_upgrades`: 12
 
+**따름 결과:** [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
+
 **상호작용:** [M-0520](../rules/items.md#m-0520), [M-0522](../rules/items.md#m-0522)
 
 **미해결 질문:**
@@ -283,6 +289,8 @@
 - [M-0530](../rules/sigil.md#m-0530) 매개변수 `max_hp`: 100
 - [M-0530](../rules/sigil.md#m-0530) 매개변수 `slots`: 3
 
+**따름 결과:** [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
+
 메모 ([M-0530](../rules/sigil.md#m-0530)): 라벨은 쌍으로 읽습니다 (Max HP 다음 100 HP, Slots 다음 3).
 
 <a id="m-0600"></a>
@@ -320,6 +328,8 @@
 - [M-0601](../rules/sigil.md#m-0601) 정의역: 이벤트 시작부터의 초 단위 t_pick
 - [M-0601](../rules/sigil.md#m-0601) 매개변수 `sigil_pick_deadline_s`: UNKNOWN, [U-0627](../unknowns.md#u-0627) 참조
 
+**따름 결과:** [T-0306](../theorems/T-0306.md)
+
 **미해결 질문:**
 
 - [U-0627](../unknowns.md#u-0627) (보통): 시길 선택: 이벤트 시작 이후 마감 시한이 있습니까, 그리고 선택하지 않은 참가자에게는 무엇이 적용됩니까(기본 능력치, 능력 없음)?
@@ -349,6 +359,8 @@
 - [M-0602](../rules/sigil.md#m-0602) 정의역: 이벤트 시작 시점
 - [M-0602](../rules/sigil.md#m-0602) 매개변수 `max_hp`: 100
 - [M-0602](../rules/sigil.md#m-0602) 매개변수 `inventory_slots`: 3
+
+**따름 결과:** [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
 
 메모 ([M-0602](../rules/sigil.md#m-0602)): 상인의 업그레이드(최대 HP +10, 인벤토리 슬롯)는 플레이 중에 이 값을 바꿉니다. 이 기록은 기본값만 다룹니다. 상인 페이지는 슬롯을 13개까지로 제한하며, Endurance는 20개까지입니다.
 
@@ -453,6 +465,8 @@
 - [M-0606](../rules/sigil.md#m-0606) 정의역: 이벤트 시작 시점
 - [M-0606](../rules/sigil.md#m-0606) 매개변수 `max_hp`: 100
 - [M-0606](../rules/sigil.md#m-0606) 매개변수 `inventory_slots`: 3
+
+**따름 결과:** [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
 
 메모 ([M-0606](../rules/sigil.md#m-0606)): 상인의 업그레이드(최대 HP +10, 인벤토리 슬롯)는 플레이 중에 이 값을 바꿉니다. 이 기록은 기본값만 다룹니다. 상인 페이지는 슬롯을 13개까지로 제한하며, Endurance는 20개까지입니다.
 
@@ -593,13 +607,15 @@
 - [M-0640](../rules/sigil.md#m-0640) `wiki-damage-021`: "| Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (reflects)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
   - 번역: | Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (반사)
 - [M-0640](../rules/sigil.md#m-0640) `wiki-damage-026`: "| Airstrike fire | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (absorbs)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
-  - 번역: | Airstrike fire | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (흡수)
+  - 번역: | 공습 화재 | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (흡수)
 - [M-0640](../rules/sigil.md#m-0640) `wiki-damage-031`: "| Protection retribution | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (absorbs)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
   - 번역: | Protection retribution | Shield, Safety bubble, Sleeping Bag, Protection, Body armor (흡수)
 
 **형식 모델:**
 
 - [M-0640](../rules/sigil.md#m-0640) 해석 A: `sigil(c) = protection일 때, source in {poison, drone, missile, C4, landmine, trapped gift, airstrike impact, airstrike fire, gunship bomb, Protection retribution}이면 blocked(source, c) = true`
+
+**따름 결과:** [T-0707](../theorems/T-0707.md)
 
 **모순:** [C-0601](../unknowns.md#c-0601), [C-0602](../unknowns.md#c-0602)
 
@@ -682,7 +698,7 @@
 
 ## 시뮬레이션 검증
 
-아직 이 페이지를 다루는 정리나 시뮬레이션이 없습니다.
+`sim/tests/`에 테스트가 있는 정리: [T-0306](../theorems/T-0306.md), [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md), [T-0707](../theorems/T-0707.md)
 
 ## 미해결 질문
 

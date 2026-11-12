@@ -317,7 +317,7 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0209](../rules/items.md#m-0209) parameter `added_interval`: 2s
 - [M-0209](../rules/items.md#m-0209) parameter `base_interval`: 2s (zone page: 1 HP every 2s)
 
-**Consequences:** [T-0008](../theorems/T-0008.md)
+**Consequences:** [T-0008](../theorems/T-0008.md), [T-0305](../theorems/T-0305.md)
 
 **Interactions:** [M-0205](../rules/items.md#m-0205)
 
@@ -420,6 +420,8 @@ Label: `DOCUMENTED`. Sigils: all.
 - [M-0213](../rules/items.md#m-0213) reading A: `for every contestant inside: damage = 0 and zombies cannot hurt, including zone damage; exception: a trapped gift still hurts the holder`
 - [M-0213](../rules/items.md#m-0213) domain: inside(position, bubble) boolean
 
+**Consequences:** [T-0402](../theorems/T-0402.md), [T-0702](../theorems/T-0702.md), [T-0706](../theorems/T-0706.md)
+
 **Interactions:** [M-0212](../rules/items.md#m-0212), [M-0214](../rules/items.md#m-0214), [M-0247](../rules/items.md#m-0247)
 
 Notes ([M-0213](../rules/items.md#m-0213)): Damage page: a Safety bubble does not stop poison from landing but blocks each poison step. Flashbang is not stopped by it (flashbang section). Boundary inclusion not stated.
@@ -462,6 +464,8 @@ Label: `DOCUMENTED`. Sigils: all.
 - [M-0215](../rules/items.md#m-0215) reading A: `Shield lasts 20min; cannot be used while vulnerable; a Vulnerability Dart removes it`
 - [M-0215](../rules/items.md#m-0215) domain: t in [0, 1200) seconds
 - [M-0215](../rules/items.md#m-0215) parameter `duration`: 20min
+
+**Consequences:** [T-0408](../theorems/T-0408.md)
 
 **Interactions:** [M-0205](../rules/items.md#m-0205), [M-0216](../rules/items.md#m-0216)
 
@@ -507,7 +511,7 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0217](../rules/items.md#m-0217) domain: pool integer 0..15
 - [M-0217](../rules/items.md#m-0217) parameter `capacity`: 15 HP
 
-**Consequences:** [T-0007](../theorems/T-0007.md)
+**Consequences:** [T-0007](../theorems/T-0007.md), [T-0305](../theorems/T-0305.md), [T-0402](../theorems/T-0402.md)
 
 **Interactions:** [M-0218](../rules/items.md#m-0218), [M-0219](../rules/items.md#m-0219)
 
@@ -632,6 +636,8 @@ Label: `DOCUMENTED`. Sigils: all.
 
 - [M-0227](../rules/items.md#m-0227) reading A: `an other contestant inside the cloud also cannot: heal or steal from other contestants, send a trade request, throw a Vulnerability Dart, fire a merchant missile, give a robot a target`
 - [M-0227](../rules/items.md#m-0227) domain: action set
+
+**Consequences:** [T-0305](../theorems/T-0305.md)
 
 **Interactions:** [M-0226](../rules/items.md#m-0226)
 
@@ -1034,6 +1040,8 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0326](../rules/items.md#m-0326) parameter `dart_range_m`: 10
 - [M-0326](../rules/items.md#m-0326) parameter `vulnerable_duration_min`: 10
 
+**Consequences:** [T-0402](../theorems/T-0402.md)
+
 **Open questions:**
 
 - [U-0300](../unknowns.md#u-0300) (medium): Are the range bounds of weapons, traps, the merchant and the sleeping bag (10m, 20m, 50m, 15m) inclusive or exclusive, and is distance Euclidean on the ground?
@@ -1199,7 +1207,7 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0339](../rules/items.md#m-0339) parameter `armor_decay_interval_min`: 20
 - [M-0339](../rules/items.md#m-0339) parameter `armor_decay_floor`: 15
 
-**Consequences:** [T-0012](../theorems/T-0012.md)
+**Consequences:** [T-0012](../theorems/T-0012.md), [T-0402](../theorems/T-0402.md)
 
 **Open questions:**
 
@@ -1275,6 +1283,8 @@ Label: `DOCUMENTED`. Sigils: piety.
 - [M-0506](../rules/items.md#m-0506) domain: potion count 0..6
 - [M-0506](../rules/items.md#m-0506) parameter `stack_cap`: 6
 - [M-0506](../rules/items.md#m-0506) parameter `slots_for_potions`: 1
+
+**Consequences:** [T-0302](../theorems/T-0302.md), [T-0407](../theorems/T-0407.md)
 
 **Interactions:** [M-0500](../rules/sigil.md#m-0500), [M-0503](../rules/items.md#m-0503)
 
@@ -1621,7 +1631,7 @@ Notes ([M-0624](../rules/items.md#m-0624)): Disables looting gravestones: an End
 
 ## Simulation check
 
-Theorems with tests in `sim/tests/`: [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md), [T-0012](../theorems/T-0012.md)
+Theorems with tests in `sim/tests/`: [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md), [T-0012](../theorems/T-0012.md), [T-0302](../theorems/T-0302.md), [T-0305](../theorems/T-0305.md), [T-0402](../theorems/T-0402.md), [T-0407](../theorems/T-0407.md), [T-0408](../theorems/T-0408.md), [T-0702](../theorems/T-0702.md), [T-0706](../theorems/T-0706.md)
 
 ## Open questions
 

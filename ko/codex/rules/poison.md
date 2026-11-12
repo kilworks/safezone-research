@@ -64,6 +64,8 @@
 - [M-0170](../rules/poison.md#m-0170) 매개변수 `tick_hp`: 1
 - [M-0170](../rules/poison.md#m-0170) 매개변수 `interval_s`: 90
 
+**따름 결과:** [T-0304](../theorems/T-0304.md), [T-0305](../theorems/T-0305.md)
+
 **미해결 질문:**
 
 - [U-0115](../unknowns.md#u-0115) (보통): 독: 첫 1 HP가 즉시 들어갑니까, 1min 30s 뒤입니까, 아니면 고정된 전역 90 s 위상입니까?
@@ -294,7 +296,7 @@
 
 ## 시뮬레이션 검증
 
-`sim/tests/`에 테스트가 있는 정리: [T-0009](../theorems/T-0009.md)
+`sim/tests/`에 테스트가 있는 정리: [T-0009](../theorems/T-0009.md), [T-0304](../theorems/T-0304.md), [T-0305](../theorems/T-0305.md)
 
 ## 미해결 질문
 

@@ -86,6 +86,8 @@ Label: `DOCUMENTED`. Sigils: trolling.
 - [M-0530](../rules/sigil.md#m-0530) parameter `max_hp`: 100
 - [M-0530](../rules/sigil.md#m-0530) parameter `slots`: 3
 
+**Consequences:** [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
+
 Notes ([M-0530](../rules/sigil.md#m-0530)): Labels read in pairs (Max HP then 100 HP, Slots then 3).
 
 <a id="m-0531"></a>
@@ -276,6 +278,8 @@ Label: `CONDITIONAL`. Sigils: trolling.
 - [M-0536](../rules/damage.md#m-0536) parameter `grace_s`: 0
 - [M-0536](../rules/damage.md#m-0536) parameter `first_hit`: one interval after entry
 
+**Consequences:** [T-0305](../theorems/T-0305.md)
+
 **Interactions:** [M-0537](../rules/items.md#m-0537), [M-0538](../rules/damage.md#m-0538)
 
 **Open questions:**
@@ -380,7 +384,7 @@ Notes ([M-0539](../rules/viewer.md#m-0539)): The attacks page gives the 5 m dist
 
 ## Simulation check
 
-No theorem or simulation covers this page yet.
+Theorems with tests in `sim/tests/`: [T-0305](../theorems/T-0305.md), [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
 
 ## Open questions
 

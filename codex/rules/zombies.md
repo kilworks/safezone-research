@@ -38,6 +38,8 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0440](../rules/zombies.md#m-0440) parameter `speed`: 1.4 m/s
 - [M-0440](../rules/zombies.md#m-0440) parameter `valid`: UNKNOWN, see [U-0424](../unknowns.md#u-0424)
 
+**Consequences:** [T-0700](../theorems/T-0700.md), [T-0701](../theorems/T-0701.md), [T-0703](../theorems/T-0703.md)
+
 **Open questions:**
 
 - [U-0424](../unknowns.md#u-0424) (medium): Zombie targeting: 'nearest valid contestant, at any distance'. What makes a contestant valid (alive, not immune, not repellent, not Necromancy), how often is the nearest re-evaluated, and do zombies path through terrain?
@@ -61,7 +63,7 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0441](../rules/zombies.md#m-0441) parameter `period`: 10 s
 - [M-0441](../rules/zombies.md#m-0441) parameter `range`: 5 m
 
-**Consequences:** [T-0010](../theorems/T-0010.md)
+**Consequences:** [T-0010](../theorems/T-0010.md), [T-0304](../theorems/T-0304.md), [T-0305](../theorems/T-0305.md)
 
 **Interactions:** [M-0440](../rules/zombies.md#m-0440)
 
@@ -113,6 +115,8 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0443](../rules/zombies.md#m-0443) reading C: `p = 0.1 per HP lost`
 - [M-0443](../rules/zombies.md#m-0443) domain: p in {0.1}
 - [M-0443](../rules/zombies.md#m-0443) parameter `p`: 0.1
+
+**Consequences:** [T-0302](../theorems/T-0302.md)
 
 **Interactions:** [M-0441](../rules/zombies.md#m-0441)
 
@@ -166,6 +170,8 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0445](../rules/zombies.md#m-0445) parameter `count`: 50
 - [M-0445](../rules/zombies.md#m-0445) parameter `lifetime`: 20 min (attacks page)
 
+**Consequences:** [T-0707](../theorems/T-0707.md)
+
 **Interactions:** [M-0408](../rules/viewer.md#m-0408)
 
 **Open questions:**
@@ -213,6 +219,8 @@ Label: `CONDITIONAL`. Sigils: necromancy.
 - [M-0447](../rules/zombies.md#m-0447) reading A: `on any contestant death, each living Necromancy contestant gets a zombie within 10m`
 - [M-0447](../rules/zombies.md#m-0447) domain: radius 10 m
 - [M-0447](../rules/zombies.md#m-0447) parameter `radius`: 10 m
+
+**Consequences:** [T-0707](../theorems/T-0707.md)
 
 **Open questions:**
 
@@ -263,7 +271,7 @@ Label: `CONDITIONAL`. Sigils: necromancy.
 - [M-0449](../rules/zombies.md#m-0449) parameter `cap`: 30 HP
 - [M-0449](../rules/zombies.md#m-0449) parameter `lifetime`: 1 h (Necromancy page)
 
-**Consequences:** [T-0010](../theorems/T-0010.md)
+**Consequences:** [T-0010](../theorems/T-0010.md), [T-0304](../theorems/T-0304.md), [T-0305](../theorems/T-0305.md), [T-0703](../theorems/T-0703.md)
 
 **Open questions:**
 
@@ -286,7 +294,7 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0450](../rules/zombies.md#m-0450) domain: per zombie
 - [M-0450](../rules/zombies.md#m-0450) parameter `lifetime`: UNKNOWN, see [U-0403](../unknowns.md#u-0403)
 
-**Consequences:** [T-0013](../theorems/T-0013.md)
+**Consequences:** [T-0013](../theorems/T-0013.md), [T-0701](../theorems/T-0701.md), [T-0706](../theorems/T-0706.md)
 
 **Open questions:**
 
@@ -346,6 +354,8 @@ Label: `CONDITIONAL`. Sigils: ingenuity.
 - [M-0453](../rules/zombies.md#m-0453) parameter `kills`: 10
 - [M-0453](../rules/zombies.md#m-0453) parameter `radius`: 10 m
 
+**Consequences:** [T-0707](../theorems/T-0707.md)
+
 **Open questions:**
 
 - [U-0430](../unknowns.md#u-0430) (low): Ingenuity Zombie Killer: 'kills the next ten zombies that come within 10m of its owner' and 'stops zombies draining you until it has killed ten'. Do ten zombies arriving together count, is the drain stop limited to the ten, and is the order by approach?
@@ -364,6 +374,8 @@ Label: `CONDITIONAL`. Sigils: all.
 
 - [M-0454](../rules/zombies.md#m-0454) reading A: `Shield, Safety bubble, Reality Shield or sleeping in your own Sleeping Bag => immune to zombies`
 - [M-0454](../rules/zombies.md#m-0454) domain: boolean per contestant
+
+**Consequences:** [T-0702](../theorems/T-0702.md), [T-0706](../theorems/T-0706.md)
 
 **Open questions:**
 
@@ -389,6 +401,8 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0455](../rules/zombies.md#m-0455) reading B: `removed from the target set`
 - [M-0455](../rules/zombies.md#m-0455) domain: t in [0, 1200] s
 - [M-0455](../rules/zombies.md#m-0455) parameter `duration`: 1200 s
+
+**Consequences:** [T-0706](../theorems/T-0706.md)
 
 **Open questions:**
 
@@ -419,6 +433,8 @@ Label: `CONDITIONAL`. Sigils: ingenuity.
 - [M-0527](../rules/zombies.md#m-0527) parameter `kills`: 10
 - [M-0527](../rules/zombies.md#m-0527) parameter `radius_m`: 10
 - [M-0527](../rules/zombies.md#m-0527) parameter `expiry`: none
+
+**Consequences:** [T-0707](../theorems/T-0707.md)
 
 **Interactions:** [M-0520](../rules/items.md#m-0520), [M-0521](../rules/economy.md#m-0521)
 
@@ -502,6 +518,8 @@ Label: `CONDITIONAL`. Sigils: necromancy.
 - [M-0633](../rules/zombies.md#m-0633) parameter `radius_m`: 10
 - [M-0633](../rules/zombies.md#m-0633) parameter `cap_hp`: 30
 
+**Consequences:** [T-0703](../theorems/T-0703.md)
+
 **Open questions:**
 
 - [U-0615](../unknowns.md#u-0615) (medium): Guard zombie 'up to 30 HP per contestant': per guard zombie, or shared across all guard zombies on the same contestant? Does it stand still all hour?
@@ -556,6 +574,8 @@ Label: `CONDITIONAL`. Sigils: necromancy.
 - [M-0635](../rules/zombies.md#m-0635) parameter `radius_m`: 5
 - [M-0635](../rules/zombies.md#m-0635) parameter `cap_hp`: 30
 
+**Consequences:** [T-0304](../theorems/T-0304.md), [T-0305](../theorems/T-0305.md), [T-0706](../theorems/T-0706.md)
+
 **Open questions:**
 
 - [U-0613](../unknowns.md#u-0613) (high): Necromancy 'The HP goes to you': is the gain the HP the victim actually lost, is it capped at the owner's max HP, and does a blocked or armor-absorbed drain give HP and tokens?
@@ -582,6 +602,8 @@ Label: `CONDITIONAL`. Sigils: necromancy.
 - [M-0636](../rules/zombies.md#m-0636) reading A: `damage from zombies to a Necromancy contestant = 0 (every zombie, every owner)`
 - [M-0636](../rules/zombies.md#m-0636) reading B: `A for drain only`
 
+**Consequences:** [T-0702](../theorems/T-0702.md), [T-0706](../theorems/T-0706.md)
+
 **Open questions:**
 
 - [U-0616](../unknowns.md#u-0616) (medium): Necromancy 'Fully immune from zombies': does it cover horde and guard zombies of other Necromancy contestants, and also the 10% potion break and 40% craft destruction?
@@ -590,7 +612,7 @@ Notes ([M-0636](../rules/zombies.md#m-0636)): The damage table lists Necromancy 
 
 ## Simulation check
 
-Theorems with tests in `sim/tests/`: [T-0010](../theorems/T-0010.md), [T-0013](../theorems/T-0013.md)
+Theorems with tests in `sim/tests/`: [T-0010](../theorems/T-0010.md), [T-0013](../theorems/T-0013.md), [T-0302](../theorems/T-0302.md), [T-0304](../theorems/T-0304.md), [T-0305](../theorems/T-0305.md), [T-0700](../theorems/T-0700.md), [T-0701](../theorems/T-0701.md), [T-0702](../theorems/T-0702.md), [T-0703](../theorems/T-0703.md), [T-0706](../theorems/T-0706.md), [T-0707](../theorems/T-0707.md)
 
 ## Open questions
 

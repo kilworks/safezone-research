@@ -442,16 +442,16 @@
 
 [U-0340](unknowns.md#u-0340): 정확한 위치에 30 s 후 떨어진다고 할 때, 상인의 'standard missile'은 피해와 반경이 얼마입니까? 상태: `open`.
 
-중요한 이유 ([U-0340](unknowns.md#u-0340)): 공격 페이지는 3min 무작위 낙하의 시청자 missile을 설명하지만, 상인 텍스트는 'standard missile'을 언급할 뿐 피해나 반경을 주지 않습니다.
+중요한 이유 ([U-0340](unknowns.md#u-0340)): 공격 페이지는 3min 무작위 낙하의 시청자 미사일을 설명하지만, 상인 텍스트는 'standard missile'을 언급할 뿐 피해나 반경을 주지 않습니다.
 
-- [U-0340](unknowns.md#u-0340) 해석 A: 시청자 missile과 같은 피해와 폭발 반경(공격 페이지에 따르면 25 m 이내 10 HP)
+- [U-0340](unknowns.md#u-0340) 해석 A: 시청자 미사일과 같은 피해와 폭발 반경(공격 페이지에 따르면 25 m 이내 10 HP)
 - [U-0340](unknowns.md#u-0340) 해석 B: 명시되지 않은 다른 피해
-- [U-0340](unknowns.md#u-0340) 자유 매개변수 `merchant_missile_damage_hp`, 탐색 범위: 10 ~ 20 HP: 공격 페이지에서 시청자 missile은 10, nuke는 20을 줍니다
-- [U-0340](unknowns.md#u-0340) 해결 방법: VOD: 상인 missile 착탄 시 HP 손실과 반경.
+- [U-0340](unknowns.md#u-0340) 자유 매개변수 `merchant_missile_damage_hp`, 탐색 범위: 10 ~ 20 HP: 공격 페이지에서 시청자 미사일은 10, 핵은 20을 줍니다
+- [U-0340](unknowns.md#u-0340) 해결 방법: VOD: 상인 미사일 착탄 시 HP 손실과 반경.
 
 ### U-0400
 
-[U-0400](unknowns.md#u-0400): Missile 낙하 편차: 'a random spot near that point'이며 폭발 전체가 100m 이내입니다. 낙하 오프셋은 최대 75m(폭발 가장자리가 100m 이내)입니까, 최대 100m입니까, 그리고 분포는 무엇입니까? 상태: `open`.
+[U-0400](unknowns.md#u-0400): 미사일 낙하 편차: 'a random spot near that point'이며 폭발 전체가 100m 이내입니다. 낙하 오프셋은 최대 75m(폭발 가장자리가 100m 이내)입니까, 최대 100m입니까, 그리고 분포는 무엇입니까? 상태: `open`.
 
 중요한 이유 ([U-0400](unknowns.md#u-0400)): 조준점에 서 있는 참가자에 대한 명중 확률과, 시청자가 한 참가자를 안정적으로 겨냥할 수 있는지를 결정합니다.
 
@@ -460,7 +460,7 @@
 - [U-0400](unknowns.md#u-0400) 해석 C: 그 반경의 원판 위에서 균등
 - [U-0400](unknowns.md#u-0400) 해석 D: 거리 r에서 균등, 각도는 무작위(중심 쪽으로 치우침)
 - [U-0400](unknowns.md#u-0400) 자유 매개변수 `missile_max_offset_m`, 탐색 범위: 0 ~ 100 m; 위키는 폭발을 조준점에서 100m 이내로 제한하므로 중심 오프셋은 0과 100 사이에 있습니다
-- [U-0400](unknowns.md#u-0400) 해결 방법: VOD: 여러 missile의 조준점과 크레이터를 비교 기록.
+- [U-0400](unknowns.md#u-0400) 해결 방법: VOD: 여러 미사일의 조준점과 크레이터를 비교 기록.
 - [U-0400](unknowns.md#u-0400) 해결 방법: 관리자 또는 주최자의 진술.
 
 ### U-0403
@@ -477,7 +477,7 @@
 
 ### U-0404
 
-[U-0404](unknowns.md#u-0404): Tear gas 기하: '25m cloud'는 반경입니까 지름입니까? 그리고 구름 가장자리는 모든 참가자로부터 최소 20m 떨어져야 합니다. 구매 시점에만 그렇습니까, 설치 시점에도 그렇습니까? 구름 전체가 세이프 존 안에 있어야 합니까? 상태: `open`.
+[U-0404](unknowns.md#u-0404): 최루 가스 기하: '25m cloud'는 반경입니까 지름입니까? 그리고 구름 가장자리는 모든 참가자로부터 최소 20m 떨어져야 합니다. 구매 시점에만 그렇습니까, 설치 시점에도 그렇습니까? 구름 전체가 세이프 존 안에 있어야 합니까? 상태: `open`.
 
 중요한 이유 ([U-0404](unknowns.md#u-0404)): 가장 가까운 참가자까지의 최소 조준 거리(중심에서 45m 또는 32.5m)와, 시청자가 참가자에게 가스를 쓸 수 있는지 자체를 정합니다.
 
@@ -485,11 +485,11 @@
 - [U-0404](unknowns.md#u-0404) 해석 B: 지름 25m(반경 12.5m), 따라서 중심은 모든 참가자로부터 최소 32.5m
 - [U-0404](unknowns.md#u-0404) 해석 C: 20m 규칙은 설치 시점 검사일 뿐이며, 이후 구름으로 이동하는 것은 자유
 - [U-0404](unknowns.md#u-0404) 자유 매개변수 `tear_gas_radius_m`, 탐색 범위: 12.5 ~ 25 m; 위키는 '25m'만 크기로 제시합니다
-- [U-0404](unknowns.md#u-0404) 해결 방법: VOD: 참가자 근처에 tear gas를 설치하고 거부 임계값을 기록.
+- [U-0404](unknowns.md#u-0404) 해결 방법: VOD: 참가자 근처에 최루 가스를 설치하고 거부 임계값을 기록.
 
 ### U-0406
 
-[U-0406](unknowns.md#u-0406): Airstrike 띠의 너비(위키는 중심과 방향만 제시합니다). 상태: `open`.
+[U-0406](unknowns.md#u-0406): 공습 띠의 너비(위키는 중심과 방향만 제시합니다). 상태: `open`.
 
 중요한 이유 ([U-0406](unknowns.md#u-0406)): 5 HP 공습과 5min 화재의 명중 확률.
 
@@ -498,7 +498,7 @@
 
 ### U-0407
 
-[U-0407](unknowns.md#u-0407): Airstrike 띠의 길이, 그리고 띠가 선택한 지점을 중심으로 하는지와 세이프 존을 벗어날 수 있는지. 상태: `open`.
+[U-0407](unknowns.md#u-0407): 공습 띠의 길이, 그리고 띠가 선택한 지점을 중심으로 하는지와 세이프 존을 벗어날 수 있는지. 상태: `open`.
 
 중요한 이유 ([U-0407](unknowns.md#u-0407)): 너비와 함께 불타는 면적을 정하고, 불이 언세이프 존에 닿을 수 있는지를 정합니다.
 
@@ -507,7 +507,7 @@
 
 ### U-0409
 
-[U-0409](unknowns.md#u-0409): Gunship 폭탄 수와 타이밍: 'a gunship for 5min', 'one every 10s', 'each bomb lands 5s later'. 폭탄은 몇 개까지 투하할 수 있고, 첫 투하는 t=0입니까 t=10s입니까, 5min 이후에 착탄하는 폭탄도 떨어집니까? 상태: `open`.
+[U-0409](unknowns.md#u-0409): 건십 폭탄 수와 타이밍: 'a gunship for 5min', 'one every 10s', 'each bomb lands 5s later'. 폭탄은 몇 개까지 투하할 수 있고, 첫 투하는 t=0입니까 t=10s입니까, 5min 이후에 착탄하는 폭탄도 떨어집니까? 상태: `open`.
 
 중요한 이유 ([U-0409](unknowns.md#u-0409)): 폭탄 수는 30, 29, 31(구매자가 클릭해야 한다면 그보다 적음)이며, 총 피해와 Flak jacket의 가치를 정합니다.
 
@@ -517,7 +517,7 @@
 - [U-0409](unknowns.md#u-0409) 해석 D: t=10,...,290s에 투하: 폭탄 29개(만료 전 마지막 투하)
 - [U-0409](unknowns.md#u-0409) 해석 E: 폭탄 발사는 10s 쿨다운의 수동 조작이며, 개수는 플레이어에 따라 다름
 - [U-0409](unknowns.md#u-0409) 자유 매개변수 `gunship_bombs_max`, 탐색 범위: 폭탄 29 ~ 31개; 5min 구간과 10s 간격에서 도출했고, 'manual' 해석은 상한으로 추가했습니다
-- [U-0409](unknowns.md#u-0409) 해결 방법: VOD: 타이머로 gunship 한 번 전체의 폭탄 수를 셈.
+- [U-0409](unknowns.md#u-0409) 해결 방법: VOD: 타이머로 건십 한 번 전체의 폭탄 수를 셈.
 
 ### U-0418
 
@@ -1300,10 +1300,10 @@
 
 [U-0321](unknowns.md#u-0321): 어떤 상인 구매에 빈 인벤토리 슬롯이 필요합니까('Items need a free inventory slot')? 상태: `open`.
 
-중요한 이유 ([U-0321](unknowns.md#u-0321)): 아이템만 명시되어 있습니다. missile, Deep Cut, Dual Wield, 인챈트, 업그레이드는 슬롯이 필요하지 않을 수 있습니다. 인벤토리가 가득 찬 상태의 보급 상자는 다루어지지 않습니다.
+중요한 이유 ([U-0321](unknowns.md#u-0321)): 아이템만 명시되어 있습니다. 미사일, Deep Cut, Dual Wield, 인챈트, 업그레이드는 슬롯이 필요하지 않을 수 있습니다. 인벤토리가 가득 찬 상태의 보급 상자는 다루어지지 않습니다.
 
-- [U-0321](unknowns.md#u-0321) 해석 A: 보급 상자, anti poison, Vulnerability Dart, Sleeping Bag은 슬롯이 필요하고 missile과 업그레이드는 필요 없음
-- [U-0321](unknowns.md#u-0321) 해석 B: missile도 슬롯이 필요함
+- [U-0321](unknowns.md#u-0321) 해석 A: 보급 상자, anti poison, Vulnerability Dart, Sleeping Bag은 슬롯이 필요하고 미사일과 업그레이드는 필요 없음
+- [U-0321](unknowns.md#u-0321) 해석 B: 미사일도 슬롯이 필요함
 - [U-0321](unknowns.md#u-0321) 해석 C: 보급 상자 아이템이 무기라면 무기 슬롯으로 갈 수 있으며 그 경우 슬롯이 필요 없음
 - [U-0321](unknowns.md#u-0321) 해결 방법: VOD: 인벤토리가 가득 찬 상태에서의 구매.
 
@@ -1416,18 +1416,18 @@
 
 ### U-0401
 
-[U-0401](unknowns.md#u-0401): EMP 차단의 범위: 위키는 missile, nuke, horde, tear gas, airstrike, gunship, cyclops, bounty를 나열합니다. 긴급 에어드롭, 회복 서클, 환영, 시청자 상자도 차단됩니까? 차단은 구매 시점을 검사합니까, 착탄 시점을 검사합니까? 상태: `open`.
+[U-0401](unknowns.md#u-0401): EMP 차단의 범위: 위키는 미사일, 핵, horde, 최루 가스, 공습, 건십, 사이클롭스, 현상금을 나열합니다. 긴급 에어드롭, 회복 서클, 환영, 시청자 상자도 차단됩니까? 차단은 구매 시점을 검사합니까, 착탄 시점을 검사합니까? 상태: `open`.
 
 중요한 이유 ([U-0401](unknowns.md#u-0401)): EMP 보유자가 막을 수 있는 시청자 행동과, 비행 중인 회복 서클이나 에어드롭이 살아남는지를 결정합니다.
 
 - [U-0401](unknowns.md#u-0401) 해석 A: 나열된 8개 공격만 거부되며 에어드롭, 회복 서클, 환영, 상자는 항상 통과
 - [U-0401](unknowns.md#u-0401) 해석 B: EMP가 활성인 동안 모든 시청자 행동이 거부되며 목록은 예시일 뿐
-- [U-0401](unknowns.md#u-0401) 해석 C: 차단은 구매 시점만 검사하고, 비행 중 파괴는 missile, nuke, airstrike, gunship에만 적용
+- [U-0401](unknowns.md#u-0401) 해석 C: 차단은 구매 시점만 검사하고, 비행 중 파괴는 미사일, 핵, 공습, 건십에만 적용
 - [U-0401](unknowns.md#u-0401) 해결 방법: 아이템 페이지의 EMP 텍스트(10 min)와 EMP 중에 보낸 시청자 에어드롭 또는 회복 서클의 VOD.
 
 ### U-0405
 
-[U-0405](unknowns.md#u-0405): Tear gas와 좀비 처치 타이밍: 10s마다 2 HP 틱은 진입 10s 후에 시작합니까, 진입 시에 시작합니까, 구름 전체 공통의 10s 위상입니까? 좀비는 진입 즉시 죽습니까, 틱에 죽습니까? 틱은 '타격'([U-0002](unknowns.md#u-0002))입니까? 상태: `open`.
+[U-0405](unknowns.md#u-0405): 최루 가스와 좀비 처치 타이밍: 10s마다 2 HP 틱은 진입 10s 후에 시작합니까, 진입 시에 시작합니까, 구름 전체 공통의 10s 위상입니까? 좀비는 진입 즉시 죽습니까, 틱에 죽습니까? 틱은 '타격'([U-0002](unknowns.md#u-0002))입니까? 상태: `open`.
 
 중요한 이유 ([U-0405](unknowns.md#u-0405)): 짧게 지나갈 때의 피해가 달라지고(9s 통과는 진입 타이머면 0 HP, 전역 위상이면 2 HP), 좀비의 가스 사망도 달라집니다.
 
@@ -1438,7 +1438,7 @@
 
 ### U-0408
 
-[U-0408](unknowns.md#u-0408): Airstrike 타임라인: 20s에 착탄하고 'the strip then burns for 5min'. 화재는 착탄부터 5min 지속됩니까, 첫 1 HP 틱은 착탄 시입니까 2s 후입니까, 화재 중에 띠로 들어가면 HP를 잃습니까? 화재 틱은 타격([U-0002](unknowns.md#u-0002))입니까? 상태: `open`.
+[U-0408](unknowns.md#u-0408): 공습 타임라인: 20s에 착탄하고 'the strip then burns for 5min'. 화재는 착탄부터 5min 지속됩니까, 첫 1 HP 틱은 착탄 시입니까 2s 후입니까, 화재 중에 띠로 들어가면 HP를 잃습니까? 화재 틱은 타격([U-0002](unknowns.md#u-0002))입니까? 상태: `open`.
 
 중요한 이유 ([U-0408](unknowns.md#u-0408)): 띠 안에 서 있을 때 5min 동안의 총 화재 피해(최대 150 또는 149 HP)와, 늦게 들어가는 것이 불이익을 받는지.
 
@@ -1449,7 +1449,7 @@
 
 ### U-0410
 
-[U-0410](unknowns.md#u-0410): Gunship 폭탄 위치와 표적 서클: 서클은 'sweeps around a random safe zone at 75m/s'입니다(서클 반경과 경로는 명시되지 않음). 폭탄은 투하 시점에 서클이 있던 곳에 떨어집니까, 5s 후 서클이 있는 곳(75m/s x 5s = 375m 떨어진 곳)에 떨어집니까? 상태: `open`.
+[U-0410](unknowns.md#u-0410): 건십 폭탄 위치와 표적 서클: 서클은 'sweeps around a random safe zone at 75m/s'입니다(서클 반경과 경로는 명시되지 않음). 폭탄은 투하 시점에 서클이 있던 곳에 떨어집니까, 5s 후 서클이 있는 곳(75m/s x 5s = 375m 떨어진 곳)에 떨어집니까? 상태: `open`.
 
 중요한 이유 ([U-0410](unknowns.md#u-0410)): 폭탄을 조준할 수 있는지, 참가자가 어디에 서야 하는지를 결정합니다.
 
@@ -1457,7 +1457,7 @@
 - [U-0410](unknowns.md#u-0410) 해석 B: 폭탄은 5s 후의 서클 위치에 떨어짐
 - [U-0410](unknowns.md#u-0410) 해석 C: 서클 반경이 폭탄 폭발 반경 25m와 같음
 - [U-0410](unknowns.md#u-0410) 자유 매개변수 `gunship_circle_radius_m`, 탐색 범위: 10 ~ 50 m; 위키는 25m 폭탄 반경만 제시하며 서클 크기는 없습니다
-- [U-0410](unknowns.md#u-0410) 해결 방법: VOD: 서클이 보이는 gunship.
+- [U-0410](unknowns.md#u-0410) 해결 방법: VOD: 서클이 보이는 건십.
 
 ### U-0411
 
@@ -1498,20 +1498,20 @@
 
 ### U-0419
 
-[U-0419](unknowns.md#u-0419): Cyclops 블러드 토큰: 죽을 때 '1 blood token per damage dealt'입니다. 피해는 초과 피해를 빼고 200 HP를 상한으로 집계됩니까, 상인 미사일은 '시청자 아이템'입니까, 그리고 참가자들이 먼저 피해를 입혔더라도 존 피해로 죽으면 여전히 아무것도 지급되지 않습니까? 상태: `open`.
+[U-0419](unknowns.md#u-0419): 사이클롭스 블러드 토큰: 죽을 때 '1 blood token per damage dealt'입니다. 피해는 초과 피해를 빼고 200 HP를 상한으로 집계됩니까, 상인 미사일은 '시청자 아이템'입니까, 그리고 참가자들이 먼저 피해를 입혔더라도 존 피해로 죽으면 여전히 아무것도 지급되지 않습니까? 상태: `open`.
 
-중요한 이유 ([U-0419](unknowns.md#u-0419)): Cyclops는 주요 토큰 공급원이며, 총합은 200으로 제한되거나 초과 피해로 인해 제한이 없습니다.
+중요한 이유 ([U-0419](unknowns.md#u-0419)): 사이클롭스는 주요 토큰 공급원이며, 총합은 200으로 제한되거나 초과 피해로 인해 제한이 없습니다.
 
 - [U-0419](unknowns.md#u-0419) 해석 A: 지급량 = 실제로 제거된 HP(총 <= 200). 상인 미사일 포함
 - [U-0419](unknowns.md#u-0419) 해석 B: 초과 피해를 포함한 원래 피해로 지급량 계산
 - [U-0419](unknowns.md#u-0419) 해석 C: 상인 미사일은 시청자 아이템으로 취급되어 아무것도 지급하지 않음
-- [U-0419](unknowns.md#u-0419) 해결 방법: 토큰 기록이 있는 cyclops 처치 VOD.
+- [U-0419](unknowns.md#u-0419) 해결 방법: 토큰 기록이 있는 사이클롭스 처치 VOD.
 
 ### U-0420
 
-[U-0420](unknowns.md#u-0420): Cyclops 공격 타이밍과 대상: 'Every 5s it hits the nearest contestant within 30m for 10 HP'. 첫 타격은 스폰+5s입니까, 아니면 대상이 처음 범위에 들어올 때입니까? 동률은 어떻게 처리합니까? 이 피해는 피해 파이프라인([U-0002](unknowns.md#u-0002))을 거칩니까? 상태: `open`.
+[U-0420](unknowns.md#u-0420): 사이클롭스 공격 타이밍과 대상: 'Every 5s it hits the nearest contestant within 30m for 10 HP'. 첫 타격은 스폰+5s입니까, 아니면 대상이 처음 범위에 들어올 때입니까? 동률은 어떻게 처리합니까? 이 피해는 피해 파이프라인([U-0002](unknowns.md#u-0002))을 거칩니까? 상태: `open`.
 
-중요한 이유 ([U-0420](unknowns.md#u-0420)): cyclops 근처에 서 있는 참가자가 받는 피해: 10 HP / 5s = 2 HP/s.
+중요한 이유 ([U-0420](unknowns.md#u-0420)): 사이클롭스 근처에 서 있는 참가자가 받는 피해: 10 HP / 5s = 2 HP/s.
 
 - [U-0420](unknowns.md#u-0420) 해석 A: 스폰부터 전역 5s 타이머, 범위 안에 참가자가 있으면 타격
 - [U-0420](unknowns.md#u-0420) 해석 B: 참가자가 범위에 들어올 때 타이머 시작
@@ -1943,11 +1943,11 @@
 
 [U-0100](unknowns.md#u-0100): 4단계의 'The damage left is rounded down'은 어디에 적용됩니까? Protection 50% 결과에만 적용됩니까, 아니면 모든 감소 이후의 최종 내림 한 번으로 적용되며 Kick 10%는 내림하지 않은 값에서 계산됩니까? 상태: `open`.
 
-중요한 이유 ([U-0100](unknowns.md#u-0100)): Kick 라이브 중인 Protection 참가자가 nuke를 맞을 때 홀수 피해가 달라집니다. 중간 내림 후 Kick을 적용하는 경우와, 정확한 절반에 Kick을 적용하는 경우의 차이입니다.
+중요한 이유 ([U-0100](unknowns.md#u-0100)): Kick 라이브 중인 Protection 참가자가 핵을 맞을 때 홀수 피해가 달라집니다. 중간 내림 후 Kick을 적용하는 경우와, 정확한 절반에 Kick을 적용하는 경우의 차이입니다.
 
 - [U-0100](unknowns.md#u-0100) 해석 A: x -> floor(x/2) 후, 그 정수에 Kick 감소([U-0001](unknowns.md#u-0001) 해석)를 적용
 - [U-0100](unknowns.md#u-0100) 해석 B: x -> floor(0.9*(x/2)), 최종 내림 한 번만 적용(Kick 비율을 정확한 절반에 적용)
-- [U-0100](unknowns.md#u-0100) 해결 방법: VOD: 라이브 Protection 참가자가 기본 피해가 홀수인 nuke를 맞고, HP 감소량을 읽습니다.
+- [U-0100](unknowns.md#u-0100) 해결 방법: VOD: 라이브 Protection 참가자가 기본 피해가 홀수인 핵을 맞고, HP 감소량을 읽습니다.
 - [U-0100](unknowns.md#u-0100) 해결 방법: REA: 배포된 코드의 피해 공식.
 
 ### U-0109
@@ -2095,15 +2095,15 @@
 
 ### U-0402
 
-[U-0402](unknowns.md#u-0402): Protection 시길의 nuke 피해 감소: 20 HP의 '50% less'는 10 HP이지만, 관리자가 정한 홀수 피해는 어떻게 반올림되며, 감소는 다른 경감 전에 적용됩니까 후에 적용됩니까? 상태: `open`.
+[U-0402](unknowns.md#u-0402): Protection 시길의 핵 피해 감소: 20 HP의 '50% less'는 10 HP이지만, 관리자가 정한 홀수 피해는 어떻게 반올림되며, 감소는 다른 경감 전에 적용됩니까 후에 적용됩니까? 상태: `open`.
 
-중요한 이유 ([U-0402](unknowns.md#u-0402)): 관리자 nuke는 임의의 피해를 설정할 수 있고, 홀수 값이면 floor, ceil, 정확한 분수가 서로 달라지며, 순서에 따라 Kick 라이브 중과 방어구가 있을 때의 합계가 바뀝니다.
+중요한 이유 ([U-0402](unknowns.md#u-0402)): 관리자 핵은 임의의 피해를 설정할 수 있고, 홀수 값이면 floor, ceil, 정확한 분수가 서로 달라지며, 순서에 따라 Kick 라이브 중과 방어구가 있을 때의 합계가 바뀝니다.
 
 - [U-0402](unknowns.md#u-0402) 해석 A: d -> floor(d/2)
 - [U-0402](unknowns.md#u-0402) 해석 B: d -> ceil(d/2)
 - [U-0402](unknowns.md#u-0402) 해석 C: d -> d/2 정확값(반올림 없음)
 - [U-0402](unknowns.md#u-0402) 자유 매개변수 `admin_nuke_damage`, 탐색 범위: 1 ~ 100 HP; 위키는 기본값 20 HP만 제시하며 관리자 범위는 없습니다
-- [U-0402](unknowns.md#u-0402) 해결 방법: Protection 참가자에게 홀수 피해의 관리자 nuke를 쓴 VOD.
+- [U-0402](unknowns.md#u-0402) 해결 방법: Protection 참가자에게 홀수 피해의 관리자 핵을 쓴 VOD.
 - [U-0402](unknowns.md#u-0402) 해결 방법: 피해 페이지의 연산 순서([U-0001](unknowns.md#u-0001), [U-0006](unknowns.md#u-0006)).
 
 ### U-0412
@@ -2139,24 +2139,24 @@
 
 ### U-0421
 
-[U-0421](unknowns.md#u-0421): Cyclops 조종 투표: 방향의 집합은 무엇이며, 아무도 투표하지 않으면 승자가 유지됩니까, 그리고 투표는 시청자마다 5s 구간마다 집계됩니까? 상태: `open`.
+[U-0421](unknowns.md#u-0421): 사이클롭스 조종 투표: 방향의 집합은 무엇이며, 아무도 투표하지 않으면 승자가 유지됩니까, 그리고 투표는 시청자마다 5s 구간마다 집계됩니까? 상태: `open`.
 
-중요한 이유 ([U-0421](unknowns.md#u-0421)): cyclops를 참가자 쪽으로 얼마나 유도할 수 있는지를 결정합니다.
+중요한 이유 ([U-0421](unknowns.md#u-0421)): 사이클롭스를 참가자 쪽으로 얼마나 유도할 수 있는지를 결정합니다.
 
 - [U-0421](unknowns.md#u-0421) 해석 A: 연속적인 방위, 투표의 평균
 - [U-0421](unknowns.md#u-0421) 해석 B: 이산적인 방향, 5s 구간마다 최다 득표
 - [U-0421](unknowns.md#u-0421) 해석 C: 투표가 없으면 이전 방향 유지
-- [U-0421](unknowns.md#u-0421) 해결 방법: cyclops 투표 UI의 VOD.
+- [U-0421](unknowns.md#u-0421) 해결 방법: 사이클롭스 투표 UI의 VOD.
 
 ### U-0422
 
-[U-0422](unknowns.md#u-0422): Cyclops 존 피해: 'Outside the safe zones it takes zone damage'. 참가자와 같은 속도([U-0003](unknowns.md#u-0003))입니까, 같은 단계적 증가입니까, 아니면 고정입니까? 상태: `open`.
+[U-0422](unknowns.md#u-0422): 사이클롭스 존 피해: 'Outside the safe zones it takes zone damage'. 참가자와 같은 속도([U-0003](unknowns.md#u-0003))입니까, 같은 단계적 증가입니까, 아니면 고정입니까? 상태: `open`.
 
-중요한 이유 ([U-0422](unknowns.md#u-0422)): 세이프 존 밖의 cyclops가 존 피해만으로 죽어 아무것도 지급하지 않는지 여부입니다.
+중요한 이유 ([U-0422](unknowns.md#u-0422)): 세이프 존 밖의 사이클롭스가 존 피해만으로 죽어 아무것도 지급하지 않는지 여부입니다.
 
 - [U-0422](unknowns.md#u-0422) 해석 A: 참가자와 같은 2s 틱과 같은 규칙
 - [U-0422](unknowns.md#u-0422) 해석 B: 다른 규칙
-- [U-0422](unknowns.md#u-0422) 해결 방법: 존 밖에 있는 cyclops의 VOD.
+- [U-0422](unknowns.md#u-0422) 해결 방법: 존 밖에 있는 사이클롭스의 VOD.
 
 ### U-0423
 
@@ -2286,7 +2286,7 @@
 - [C-0100](unknowns.md#c-0100) `wiki-006`: "you take 10% less damage and do 10% more damage" ([출처](https://iceposeidon.com/safezone/wiki#damage))
   - 번역: 받는 피해는 10% 줄고 주는 피해는 10% 늘어납니다
 - [C-0100](unknowns.md#c-0100) `wiki-damage-038`: "If the attacker is live on Kick, their own bow, staff, knife, long sword, axe, machete, drone, C4, landmine, fake chest and trapped gift hits deal 10% more, rounded down." ([출처](https://iceposeidon.com/safezone/wiki/damage#order))
-  - 번역: 공격자가 Kick 라이브 중이면 본인의 bow, staff, knife, long sword, axe, machete, drone, C4, landmine, fake chest, trapped gift 타격이 10% 더 큰 피해를 주며, 내림 처리됩니다.
+  - 번역: 공격자가 Kick 라이브 중이면 본인의 bow, staff, knife, long sword, axe, machete, drone, C4, landmine, 가짜 상자, trapped gift 타격이 10% 더 큰 피해를 주며, 내림 처리됩니다.
 
 ### C-0101
 
@@ -2295,7 +2295,7 @@
 - [C-0101](unknowns.md#c-0101) `wiki-damage-021`: "| Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (reflects)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
   - 번역: | Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (반사)
 - [C-0101](unknowns.md#c-0101) `wiki-damage-070`: "It only reflects Poison Darts, fake gravestones, bows, wizard staffs, knives, long swords, Zarok's axes, machetes, drones, C4, landmines, flashbangs and fake chests, and never your own explosives." ([출처](https://iceposeidon.com/safezone/wiki/damage#notes))
-  - 번역: Poison Dart, fake gravestone, bow, wizard staff, knife, long sword, Zarok's axe, machete, drone, C4, landmine, flashbang, fake chest만 반사하며, 자신의 폭발물은 절대 반사하지 않습니다.
+  - 번역: Poison Dart, fake gravestone, bow, wizard staff, knife, long sword, Zarok's axe, machete, drone, C4, landmine, flashbang, 가짜 상자만 반사하며, 자신의 폭발물은 절대 반사하지 않습니다.
 
 ### C-0102
 
@@ -2342,7 +2342,7 @@
 [C-0200](unknowns.md#c-0200): 아이템 페이지는 trapped gift를 제외한 13가지 반사 가능 공격을 나열하지만, 피해 페이지 표는 Trapped gift 행에 Mirror forcefield(반사)를 나열합니다. 상태: `open`.
 
 - [C-0200](unknowns.md#c-0200) `wiki-items-055`: "Only reflects Poison Darts, fake gravestones, knives, Zarok's axes, long swords, machetes, bows, staffs, drones, C4, landmines, flashbangs and fake chests." ([출처](https://iceposeidon.com/safezone/wiki/items#mirror_forcefield))
-  - 번역: Poison Dart, fake gravestone, knife, Zarok's axe, long sword, machete, bow, staff, drone, C4, landmine, flashbang, fake chest만 반사합니다.
+  - 번역: Poison Dart, fake gravestone, knife, Zarok's axe, long sword, machete, bow, staff, drone, C4, landmine, flashbang, 가짜 상자만 반사합니다.
 - [C-0200](unknowns.md#c-0200) `wiki-damage-021`: "| Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (reflects)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
   - 번역: | Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (반사)
 
@@ -2413,16 +2413,16 @@
 
 ### C-0400
 
-[C-0400](unknowns.md#c-0400): 차단 목록이 다릅니다. 공격 페이지는 tear gas에 Gas mask, gunship 폭탄에 Flak jacket을 들지만, 피해 페이지는 같은 피해원에 대해 Shield, Safety bubble, Sleeping Bag, Body armor도 나열합니다. 상태: `open`.
+[C-0400](unknowns.md#c-0400): 차단 목록이 다릅니다. 공격 페이지는 최루 가스에 Gas mask, 건십 폭탄에 Flak jacket을 들지만, 피해 페이지는 같은 피해원에 대해 Shield, Safety bubble, Sleeping Bag, Body armor도 나열합니다. 상태: `open`.
 
 - [C-0400](unknowns.md#c-0400) `wiki-attacks-025`: "A Gas mask blocks it." ([출처](https://iceposeidon.com/safezone/wiki/attacks#tear-gas))
   - 번역: Gas mask가 이를 막습니다.
 - [C-0400](unknowns.md#c-0400) `wiki-damage-009`: "| Tear gas | Shield, Safety bubble, Sleeping Bag, Gas mask, Body armor (absorbs)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
-  - 번역: | Tear gas | Shield, Safety bubble, Sleeping Bag, Gas mask, Body armor (흡수)
+  - 번역: | 최루 가스 | Shield, Safety bubble, Sleeping Bag, Gas mask, Body armor (흡수)
 - [C-0400](unknowns.md#c-0400) `wiki-attacks-041`: "A Flak jacket blocks one bomb." ([출처](https://iceposeidon.com/safezone/wiki/attacks#gunship))
   - 번역: Flak jacket은 폭탄 1개를 막습니다.
 - [C-0400](unknowns.md#c-0400) `wiki-damage-027`: "| Gunship bomb | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (absorbs)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
-  - 번역: | Gunship bomb | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (흡수)
+  - 번역: | 건십 폭탄 | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (흡수)
 
 ### C-0401
 
@@ -2517,22 +2517,22 @@
 
 ### C-0601
 
-[C-0601](unknowns.md#c-0601): Protection 면역: 능력치 카드는 독, drone, 미사일, C4, landmine, 공습, gunship을 나열하지만, 규칙 문장과 피해 표는 trapped gift, 공습의 불, Protection 보복을 추가합니다. 상태: `open`.
+[C-0601](unknowns.md#c-0601): Protection 면역: 능력치 카드는 독, drone, 미사일, C4, landmine, 공습, 건십을 나열하지만, 규칙 문장과 피해 표는 trapped gift, 공습의 불, Protection 보복을 추가합니다. 상태: `open`.
 
 - [C-0601](unknowns.md#c-0601) `wiki-sigils-protection-007`: "Poison, drones, missiles, C4, landmines, airstrikes, gunships" ([출처](https://iceposeidon.com/safezone/wiki/sigils/protection))
-  - 번역: 독, drone, 미사일, C4, landmine, 공습, gunship
+  - 번역: 독, drone, 미사일, C4, landmine, 공습, 건십
 - [C-0601](unknowns.md#c-0601) `wiki-sigils-protection-008`: "Immune to poison, drones, missiles, C4, landmines, trapped gifts, airstrikes and their fire, gunship bombs and Protection retribution." ([출처](https://iceposeidon.com/safezone/wiki/sigils/protection#rules))
-  - 번역: 독, drone, 미사일, C4, landmine, trapped gift, 공습과 그 불, gunship 폭탄, Protection 보복에 면역입니다.
+  - 번역: 독, drone, 미사일, C4, landmine, trapped gift, 공습과 그 불, 건십 폭탄, Protection 보복에 면역입니다.
 - [C-0601](unknowns.md#c-0601) `wiki-damage-021`: "| Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (reflects)" ([출처](https://iceposeidon.com/safezone/wiki/damage))
   - 번역: | Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (반사)
 
 ### C-0602
 
-[C-0602](unknowns.md#c-0602): Protection 전략 조언은 '대부분의 시청자 공격'에 면역이라고 하지만, 시길 페이지와 공격 페이지는 시청자 공격 8종 중 미사일, 공습, gunship에만 Protection이 면역이라고 합니다(nuke는 절반). 상태: `open`.
+[C-0602](unknowns.md#c-0602): Protection 전략 조언은 '대부분의 시청자 공격'에 면역이라고 하지만, 시길 페이지와 공격 페이지는 시청자 공격 8종 중 미사일, 공습, 건십에만 Protection이 면역이라고 합니다(nuke는 절반). 상태: `open`.
 
 - [C-0602](unknowns.md#c-0602) `wiki-strategy-006`: "If you are unpopular with viewers, consider picking the Protection sigil, so you are immune from most viewer attacks." ([출처](https://iceposeidon.com/safezone/wiki/strategy#sigils))
   - 번역: 시청자에게 인기가 없다면 Protection 시길을 고르는 것을 고려해 보십시오. 그러면 대부분의 시청자 공격에 면역이 됩니다.
 - [C-0602](unknowns.md#c-0602) `wiki-sigils-protection-008`: "Immune to poison, drones, missiles, C4, landmines, trapped gifts, airstrikes and their fire, gunship bombs and Protection retribution." ([출처](https://iceposeidon.com/safezone/wiki/sigils/protection#rules))
-  - 번역: 독, drone, 미사일, C4, landmine, trapped gift, 공습과 그 불, gunship 폭탄, Protection 보복에 면역입니다.
+  - 번역: 독, drone, 미사일, C4, landmine, trapped gift, 공습과 그 불, 건십 폭탄, Protection 보복에 면역입니다.
 - [C-0602](unknowns.md#c-0602) `wiki-attacks-001`: "While a contestant's EMP is active, viewers cannot send missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes or bounties." ([출처](https://iceposeidon.com/safezone/wiki/attacks#emp))
-  - 번역: 참가자의 EMP가 활성화된 동안 시청자는 미사일, nuke, 호드, tear gas, 공습, gunship, 사이클롭스, 현상금을 보낼 수 없습니다.
+  - 번역: 참가자의 EMP가 활성화된 동안 시청자는 미사일, 핵, 호드, 최루 가스, 공습, 건십, 사이클롭스, 현상금을 보낼 수 없습니다.

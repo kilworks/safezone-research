@@ -71,30 +71,30 @@ M-0129:
     Vulnerability Dart 자체는 다른 페이지에 있습니다.
 M-0130:
   name: >-
-    Flak jacket은 다음 missile, nuke, airstrike impact, gunship bomb을 막고 소모됨
+    Flak jacket은 다음 미사일, 핵, 공습 충격, 건십 폭탄을 막고 소모됨
   quotes:
   - >-
-    Flak jacket은 다음 missile, nuke, airstrike impact 또는 gunship bomb을 막고 소모됩니다.
+    Flak jacket은 다음 미사일, 핵, 공습 충격 또는 건십 폭탄을 막고 소모됩니다.
   - >-
-    airstrike fire는 막지 못합니다.
+    공습 화재는 막지 못합니다.
   - >-
     이미 다른 것에 의해 막힌 타격은 이를 소모시키지 않습니다.
   readings:
     A: >-
-      source in {missile, nuke, airstrike impact, gunship bomb}이고 jacket 보유 중이며 다른 차단 수단이 적용되지 않았으면: d := 0 이고 jacket 소모됨; airstrike fire는 막지 못함
+      source in {missile, nuke, airstrike impact, gunship bomb}이고 jacket 보유 중이며 다른 차단 수단이 적용되지 않았으면: d := 0 이고 jacket 소모됨; 공습 화재는 막지 못함
   notes: >-
-    표의 행과 일치합니다 (Missile, Nuke, Airstrike impact, Gunship bomb에는 Flak jacket이 있고, Airstrike fire에는 없음).
+    표의 행과 일치합니다 (미사일, 핵, 공습 충격, 건십 폭탄에는 Flak jacket이 있고, 공습 화재에는 없음).
 M-0131:
   name: >-
-    Gas mask는 tear gas를 막음
+    Gas mask는 최루 가스를 막음
   quotes:
   - >-
-    Gas mask는 tear gas를 막습니다.
+    Gas mask는 최루 가스를 막습니다.
   readings:
     A: >-
-      blocks(Gas mask)는 tear gas를 포함함
+      blocks(Gas mask)는 최루 가스를 포함함
   notes: >-
-    Tear gas 행과 일치합니다.
+    최루 가스 행과 일치합니다.
 M-0132:
   name: >-
     Sleeping Bag 면역: 자신의 Sleeping Bag에서 15 m 이내이면 존, 언세이프 서클(unsafe circle), robot을 제외한 모든 피해에 면역
@@ -136,7 +136,7 @@ M-0135:
     Mirror forcefield가 반사할 수 있는 원천 목록
   quotes:
   - >-
-    Poison Dart, fake gravestone, bow, wizard staff, knife, long sword, Zarok's axe, machete, drone, C4, landmine, flashbang, fake chest만 반사하며, 자신의 폭발물은 절대 반사하지 않습니다.
+    Poison Dart, fake gravestone, bow, wizard staff, knife, long sword, Zarok's axe, machete, drone, C4, landmine, flashbang, 가짜 상자만 반사하며, 자신의 폭발물은 절대 반사하지 않습니다.
   readings:
     A: >-
       source in {Poison Dart, fake gravestone, bow, wizard staff, knife, long sword, Zarok's axe, machete, drone, C4, landmine, flashbang, fake chest}이고 자신의 폭발물이 아닐 때, 그리고 그때에만 반사
@@ -230,14 +230,14 @@ M-0144:
     피해 원천 'Tear gas'와 이를 막는 수단
   quotes:
   - >-
-    | Tear gas | Shield, Safety bubble, Sleeping Bag, Gas mask, Body armor (흡수)
+    | 최루 가스 | Shield, Safety bubble, Sleeping Bag, Gas mask, Body armor (흡수)
   readings:
     A: >-
       blockers(Tear gas) = {Shield: 막음; Safety bubble: 막음; Sleeping Bag: 막음; Gas mask: 막음; Body armor: 흡수함}
   domain: >-
     원천 'Tear gas'의 타격 1회
   notes: >-
-    Tear gas: Gas mask가 열거되어 있으며 M-0131과 일치합니다.
+    최루 가스: Gas mask가 열거되어 있으며 M-0131과 일치합니다.
 M-0145:
   name: >-
     피해 원천 'Zombie drain'과 이를 막는 수단

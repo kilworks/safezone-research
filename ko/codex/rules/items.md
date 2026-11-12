@@ -74,22 +74,22 @@
 
 <a id="m-0130"></a>
 
-### M-0130: Flak jacket은 다음 missile, nuke, airstrike impact, gunship bomb을 막고 소모됨
+### M-0130: Flak jacket은 다음 미사일, 핵, 공습 충격, 건십 폭탄을 막고 소모됨
 
 라벨: `CONDITIONAL`. 시길: all.
 
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0130](../rules/items.md#m-0130) `wiki-damage-063`: "A Flak jacket blocks the next missile, nuke, airstrike impact or gunship bomb, then is used up." ([출처](https://iceposeidon.com/safezone/wiki/damage#notes))
-  - 번역: Flak jacket은 다음 missile, nuke, airstrike impact 또는 gunship bomb을 막고 소모됩니다.
+  - 번역: Flak jacket은 다음 미사일, 핵, 공습 충격 또는 건십 폭탄을 막고 소모됩니다.
 - [M-0130](../rules/items.md#m-0130) `wiki-damage-064`: "It does not block airstrike fire." ([출처](https://iceposeidon.com/safezone/wiki/damage#notes))
-  - 번역: airstrike fire는 막지 못합니다.
+  - 번역: 공습 화재는 막지 못합니다.
 - [M-0130](../rules/items.md#m-0130) `wiki-damage-065`: "A hit already blocked by something else does not use it up." ([출처](https://iceposeidon.com/safezone/wiki/damage#notes))
   - 번역: 이미 다른 것에 의해 막힌 타격은 이를 소모시키지 않습니다.
 
 **형식 모델:**
 
-- [M-0130](../rules/items.md#m-0130) 해석 A: `source in {missile, nuke, airstrike impact, gunship bomb}이고 jacket 보유 중이며 다른 차단 수단이 적용되지 않았으면: d := 0 이고 jacket 소모됨; airstrike fire는 막지 못함`
+- [M-0130](../rules/items.md#m-0130) 해석 A: `source in {missile, nuke, airstrike impact, gunship bomb}이고 jacket 보유 중이며 다른 차단 수단이 적용되지 않았으면: d := 0 이고 jacket 소모됨; 공습 화재는 막지 못함`
 
 **상호작용:** [M-0118](../rules/damage.md#m-0118)
 
@@ -97,24 +97,24 @@
 
 - [U-0120](../unknowns.md#u-0120) (높음): 한 번의 타격에 여러 방어 수단(Shield, Safety bubble, Flak jacket, Sleeping Bag, Reality Shield, Protection)이 적용될 때, 어느 것이 'blocker'이고 어떤 아이템이 소모됩니까? 명시된 유일한 규칙은 'a hit already blocked by something else does not use [the Flak jacket] up'입니다.
 
-메모 ([M-0130](../rules/items.md#m-0130)): 표의 행과 일치합니다 (Missile, Nuke, Airstrike impact, Gunship bomb에는 Flak jacket이 있고, Airstrike fire에는 없음).
+메모 ([M-0130](../rules/items.md#m-0130)): 표의 행과 일치합니다 (미사일, 핵, 공습 충격, 건십 폭탄에는 Flak jacket이 있고, 공습 화재에는 없음).
 
 <a id="m-0131"></a>
 
-### M-0131: Gas mask는 tear gas를 막음
+### M-0131: Gas mask는 최루 가스를 막음
 
 라벨: `DOCUMENTED`. 시길: all.
 
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0131](../rules/items.md#m-0131) `wiki-damage-066`: "A Gas mask blocks tear gas." ([출처](https://iceposeidon.com/safezone/wiki/damage#notes))
-  - 번역: Gas mask는 tear gas를 막습니다.
+  - 번역: Gas mask는 최루 가스를 막습니다.
 
 **형식 모델:**
 
-- [M-0131](../rules/items.md#m-0131) 해석 A: `blocks(Gas mask)는 tear gas를 포함함`
+- [M-0131](../rules/items.md#m-0131) 해석 A: `blocks(Gas mask)는 최루 가스를 포함함`
 
-메모 ([M-0131](../rules/items.md#m-0131)): Tear gas 행과 일치합니다.
+메모 ([M-0131](../rules/items.md#m-0131)): 최루 가스 행과 일치합니다.
 
 <a id="m-0132"></a>
 
@@ -334,7 +334,7 @@
 - [M-0209](../rules/items.md#m-0209) 매개변수 `added_interval`: 2s
 - [M-0209](../rules/items.md#m-0209) 매개변수 `base_interval`: 2s (존 페이지: 2s마다 1 HP)
 
-**따름 결과:** [T-0008](../theorems/T-0008.md)
+**따름 결과:** [T-0008](../theorems/T-0008.md), [T-0305](../theorems/T-0305.md)
 
 **상호작용:** [M-0205](../rules/items.md#m-0205)
 
@@ -444,6 +444,8 @@
 - [M-0213](../rules/items.md#m-0213) 해석 A: `안에 있는 모든 참가자: 피해 = 0이며 좀비가 해칠 수 없음(존 피해 포함). 예외: 함정이 설치된 선물은 여전히 소지자에게 피해를 줌`
 - [M-0213](../rules/items.md#m-0213) 정의역: inside(position, bubble) 불리언
 
+**따름 결과:** [T-0402](../theorems/T-0402.md), [T-0702](../theorems/T-0702.md), [T-0706](../theorems/T-0706.md)
+
 **상호작용:** [M-0212](../rules/items.md#m-0212), [M-0214](../rules/items.md#m-0214), [M-0247](../rules/items.md#m-0247)
 
 메모 ([M-0213](../rules/items.md#m-0213)): 피해 페이지: Safety bubble은 독이 걸리는 것을 막지는 않지만 독의 각 단계를 막습니다. Flashbang은 Safety bubble로 막지 못합니다(flashbang 절). 경계 포함 여부는 명시되어 있지 않습니다.
@@ -489,6 +491,8 @@
 - [M-0215](../rules/items.md#m-0215) 해석 A: `Shield는 20min 지속. 취약한 동안 사용 불가. Vulnerability Dart가 제거함`
 - [M-0215](../rules/items.md#m-0215) 정의역: t in [0, 1200)초
 - [M-0215](../rules/items.md#m-0215) 매개변수 `duration`: 20min
+
+**따름 결과:** [T-0408](../theorems/T-0408.md)
 
 **상호작용:** [M-0205](../rules/items.md#m-0205), [M-0216](../rules/items.md#m-0216)
 
@@ -539,7 +543,7 @@
 - [M-0217](../rules/items.md#m-0217) 정의역: 풀 정수 0..15
 - [M-0217](../rules/items.md#m-0217) 매개변수 `capacity`: 15 HP
 
-**따름 결과:** [T-0007](../theorems/T-0007.md)
+**따름 결과:** [T-0007](../theorems/T-0007.md), [T-0305](../theorems/T-0305.md), [T-0402](../theorems/T-0402.md)
 
 **상호작용:** [M-0218](../rules/items.md#m-0218), [M-0219](../rules/items.md#m-0219)
 
@@ -679,6 +683,8 @@
 - [M-0227](../rules/items.md#m-0227) 해석 A: `구름 안의 다른 참가자는 다음도 할 수 없음: 다른 참가자 회복 또는 훔치기, 거래 요청 보내기, Vulnerability Dart 던지기, 상인 미사일 발사, robot에게 목표 부여`
 - [M-0227](../rules/items.md#m-0227) 정의역: 행동 집합
 
+**따름 결과:** [T-0305](../theorems/T-0305.md)
+
 **상호작용:** [M-0226](../rules/items.md#m-0226)
 
 <a id="m-0228"></a>
@@ -748,7 +754,7 @@
 - [U-0213](../unknowns.md#u-0213) (보통): Thermal goggles의 예외는 smoke의 공격 차단과 블랙아웃에만 적용됩니까, 아니면 구름 안에서의 회복, 도둑질, 거래 제한에도 적용됩니까?
 - [U-0202](../unknowns.md#u-0202) (보통): 상한 목록에 명시되지 않은 효과는 어떻게 동작합니까: EMP(10min), Thermal goggles(소지), Body armor, Sleeping Bag, 체력 포션? 그리고 상한 상태에서 Hazmat suit을 주우면 어떻게 됩니까?
 
-메모 ([M-0231](../rules/items.md#m-0231)): 공격 페이지 (cyclops): 구름 안에서는 Thermal goggles를 갖고 있지 않으면 무기와 drone이 그것을 맞힐 수 없습니다.
+메모 ([M-0231](../rules/items.md#m-0231)): 공격 페이지 (사이클롭스): 구름 안에서는 Thermal goggles를 갖고 있지 않으면 무기와 drone이 그것을 맞힐 수 없습니다.
 
 <a id="m-0232"></a>
 
@@ -1123,6 +1129,8 @@
 - [M-0326](../rules/items.md#m-0326) 매개변수 `dart_range_m`: 10
 - [M-0326](../rules/items.md#m-0326) 매개변수 `vulnerable_duration_min`: 10
 
+**따름 결과:** [T-0402](../theorems/T-0402.md)
+
 **미해결 질문:**
 
 - [U-0300](../unknowns.md#u-0300) (보통): 무기, 함정, 상인, sleeping bag의 범위 경계(10m, 20m, 50m, 15m)는 포함입니까 미포함입니까? 거리는 지면상의 유클리드 거리입니까?
@@ -1244,7 +1252,7 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0331](../rules/items.md#m-0331) `wiki-merchant-030`: "Missile: 10 blood tokens." ([출처](https://iceposeidon.com/safezone/wiki/merchant#items))
-  - 번역: Missile: 블러드 토큰 10개.
+  - 번역: 미사일: 블러드 토큰 10개.
 - [M-0331](../rules/items.md#m-0331) `wiki-merchant-031`: "Launch a standard missile at an exact map location." ([출처](https://iceposeidon.com/safezone/wiki/merchant#items))
   - 번역: 지도상의 정확한 위치에 표준 미사일을 발사합니다.
 - [M-0331](../rules/items.md#m-0331) `wiki-merchant-032`: "It lands 30 seconds after launch." ([출처](https://iceposeidon.com/safezone/wiki/merchant#items))
@@ -1305,7 +1313,7 @@
 - [M-0339](../rules/items.md#m-0339) 매개변수 `armor_decay_interval_min`: 20
 - [M-0339](../rules/items.md#m-0339) 매개변수 `armor_decay_floor`: 15
 
-**따름 결과:** [T-0012](../theorems/T-0012.md)
+**따름 결과:** [T-0012](../theorems/T-0012.md), [T-0402](../theorems/T-0402.md)
 
 **미해결 질문:**
 
@@ -1386,6 +1394,8 @@
 - [M-0506](../rules/items.md#m-0506) 정의역: 포션 수량 0..6
 - [M-0506](../rules/items.md#m-0506) 매개변수 `stack_cap`: 6
 - [M-0506](../rules/items.md#m-0506) 매개변수 `slots_for_potions`: 1
+
+**따름 결과:** [T-0302](../theorems/T-0302.md), [T-0407](../theorems/T-0407.md)
 
 **상호작용:** [M-0500](../rules/sigil.md#m-0500), [M-0503](../rules/items.md#m-0503)
 
@@ -1766,7 +1776,7 @@
 
 ## 시뮬레이션 검증
 
-`sim/tests/`에 테스트가 있는 정리: [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md), [T-0012](../theorems/T-0012.md)
+`sim/tests/`에 테스트가 있는 정리: [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md), [T-0012](../theorems/T-0012.md), [T-0302](../theorems/T-0302.md), [T-0305](../theorems/T-0305.md), [T-0402](../theorems/T-0402.md), [T-0407](../theorems/T-0407.md), [T-0408](../theorems/T-0408.md), [T-0702](../theorems/T-0702.md), [T-0706](../theorems/T-0706.md)
 
 ## 미해결 질문
 

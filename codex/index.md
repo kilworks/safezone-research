@@ -44,6 +44,30 @@ Everything in this encyclopedia, one click away. Rules are quoted word for word 
 - [T-0012](theorems/T-0012.md): from theory/05-survival-processes.md
 - [T-0013](theorems/T-0013.md): from theory/05-survival-processes.md
 - [T-0014](theorems/T-0014.md): from theory/05-survival-processes.md
+- [T-0300](theorems/T-0300.md): from theory/03-healing-and-sustain.md
+- [T-0301](theorems/T-0301.md): from theory/03-healing-and-sustain.md
+- [T-0302](theorems/T-0302.md): from theory/03-healing-and-sustain.md
+- [T-0303](theorems/T-0303.md): from theory/03-healing-and-sustain.md
+- [T-0304](theorems/T-0304.md): from theory/03-healing-and-sustain.md
+- [T-0305](theorems/T-0305.md): from theory/03-healing-and-sustain.md
+- [T-0306](theorems/T-0306.md): from theory/03-healing-and-sustain.md
+- [T-0400](theorems/T-0400.md): from theory/04-probabilistic-items.md
+- [T-0401](theorems/T-0401.md): from theory/04-probabilistic-items.md
+- [T-0402](theorems/T-0402.md): from theory/04-probabilistic-items.md
+- [T-0403](theorems/T-0403.md): from theory/04-probabilistic-items.md
+- [T-0404](theorems/T-0404.md): from theory/04-probabilistic-items.md
+- [T-0405](theorems/T-0405.md): from theory/04-probabilistic-items.md
+- [T-0406](theorems/T-0406.md): from theory/04-probabilistic-items.md
+- [T-0407](theorems/T-0407.md): from theory/04-probabilistic-items.md
+- [T-0408](theorems/T-0408.md): from theory/04-probabilistic-items.md
+- [T-0700](theorems/T-0700.md): from theory/07-zombies-and-pursuit.md
+- [T-0701](theorems/T-0701.md): from theory/07-zombies-and-pursuit.md
+- [T-0702](theorems/T-0702.md): from theory/07-zombies-and-pursuit.md
+- [T-0703](theorems/T-0703.md): from theory/07-zombies-and-pursuit.md
+- [T-0704](theorems/T-0704.md): from theory/07-zombies-and-pursuit.md
+- [T-0705](theorems/T-0705.md): from theory/07-zombies-and-pursuit.md
+- [T-0706](theorems/T-0706.md): from theory/07-zombies-and-pursuit.md
+- [T-0707](theorems/T-0707.md): from theory/07-zombies-and-pursuit.md
 
 ## Open questions
 

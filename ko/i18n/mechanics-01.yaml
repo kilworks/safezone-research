@@ -326,17 +326,17 @@ M-0119:
     파이프라인 2단계: 공격자 Kick 보너스, 나열된 무기에 한정
   quotes:
   - >-
-    공격자가 Kick에서 라이브 중이면, 본인의 bow, staff, knife, long sword, axe, machete, drone, C4, landmine, fake chest, trapped gift 타격이 10% 더 큰 피해를 주며, 내림합니다.
+    공격자가 Kick에서 라이브 중이면, 본인의 bow, staff, knife, long sword, axe, machete, drone, C4, landmine, 가짜 상자, trapped gift 타격이 10% 더 큰 피해를 주며, 내림합니다.
   readings:
     A: >-
       공격자가 라이브이고 source in {bow, staff, knife, long sword, axe, machete, drone, C4, landmine, fake chest, trapped gift}이면: d := floor(11*d/10) = d + floor(d/10)
   domain: >-
-    d는 정수 >= 0; 무기 목록은 닫혀 있음 (Poison Dart, missile, nuke 등은 목록에 없음)
+    d는 정수 >= 0; 무기 목록은 닫혀 있음 (Poison Dart, 미사일, 핵 등은 목록에 없음)
   parameters:
     bonus: >-
       10 퍼센트
     list: >-
-      bow, staff, knife, long sword, axe, machete, drone, C4, landmine, fake chest, trapped gift
+      bow, staff, knife, long sword, axe, machete, drone, C4, landmine, 가짜 상자, trapped gift
   notes: >-
     내림 해석은 하나뿐입니다 (1.1*d의 floor는 binary64에서 정확함). 'staff'는 Wizard staff 범위 피해(틱, U-0010)입니다. 소개 페이지의 일반 서술('주는 피해가 10% 늘어난다')은 더 넓으며, C-0100을 참조하십시오. 보너스는 mirror보다 앞서므로 반사된 타격에도 포함됩니다.
 M-0120:
@@ -354,24 +354,24 @@ M-0120:
     '어떤 감소도 거치기 전에'는 mirror가 방어자의 4~7단계보다 앞선다는 뜻입니다. 반사되는 양에는 앞선 Kick 보너스(2단계)가 포함됩니다. 공격자의 파이프라인은 U-0005입니다.
 M-0121:
   name: >-
-    파이프라인 4a단계: Protection 시길이 nuke 피해를 절반으로 줄임
+    파이프라인 4a단계: Protection 시길이 핵 피해를 절반으로 줄임
   quotes:
   - >-
-    Protection 참가자는 nuke로부터 받는 피해가 50% 줄어듭니다.
+    Protection 참가자는 핵으로부터 받는 피해가 50% 줄어듭니다.
   - >-
     남는 피해는 내림합니다.
   - >-
-    Protection 시길은 nuke에 면역이 아니지만, 받는 피해가 50% 줄어듭니다.
+    Protection 시길은 핵에 면역이 아니지만, 받는 피해가 50% 줄어듭니다.
   readings:
     A: >-
-      방어자 시길이 Protection이고 source가 nuke이면: d := floor(d/2); 다른 원천은 그대로
+      방어자 시길이 Protection이고 source가 핵이면: d := floor(d/2); 다른 원천은 그대로
   domain: >-
     d는 정수 >= 0
   parameters:
     nuke_reduction: >-
       50 퍼센트
   notes: >-
-    'nuke에 면역은 아니지만 50% 줄어듦'. Protection 페이지도 같은 규칙(50% 감소)을 다루며 불일치는 발견되지 않았습니다. floor가 어디에 적용되는지는 U-0100입니다. Flak jacket(M-0130)은 이 단계 이전에 nuke를 막습니다.
+    'nuke에 면역은 아니지만 50% 줄어듦'. Protection 페이지도 같은 규칙(50% 감소)을 다루며 불일치는 발견되지 않았습니다. floor가 어디에 적용되는지는 U-0100입니다. Flak jacket(M-0130)은 이 단계 이전에 핵을 막습니다.
 M-0122:
   name: >-
     파이프라인 4b단계: 방어자 Kick 감소

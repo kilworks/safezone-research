@@ -62,6 +62,8 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0170](../rules/poison.md#m-0170) parameter `tick_hp`: 1
 - [M-0170](../rules/poison.md#m-0170) parameter `interval_s`: 90
 
+**Consequences:** [T-0304](../theorems/T-0304.md), [T-0305](../theorems/T-0305.md)
+
 **Open questions:**
 
 - [U-0115](../unknowns.md#u-0115) (medium): Poison: does the first 1 HP land at once, after 1min 30s, or on a fixed global 90 s phase?
@@ -279,7 +281,7 @@ Label: `DOCUMENTED`. Sigils: all.
 
 ## Simulation check
 
-Theorems with tests in `sim/tests/`: [T-0009](../theorems/T-0009.md)
+Theorems with tests in `sim/tests/`: [T-0009](../theorems/T-0009.md), [T-0304](../theorems/T-0304.md), [T-0305](../theorems/T-0305.md)
 
 ## Open questions
 

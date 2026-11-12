@@ -96,9 +96,9 @@ U-0418:
     VOD: 획득 후의 현상금 표시.
 U-0419:
   question: >-
-    Cyclops 블러드 토큰: 죽을 때 '1 blood token per damage dealt'입니다. 피해는 초과 피해를 빼고 200 HP를 상한으로 집계됩니까, 상인 미사일은 '시청자 아이템'입니까, 그리고 참가자들이 먼저 피해를 입혔더라도 존 피해로 죽으면 여전히 아무것도 지급되지 않습니까?
+    사이클롭스 블러드 토큰: 죽을 때 '1 blood token per damage dealt'입니다. 피해는 초과 피해를 빼고 200 HP를 상한으로 집계됩니까, 상인 미사일은 '시청자 아이템'입니까, 그리고 참가자들이 먼저 피해를 입혔더라도 존 피해로 죽으면 여전히 아무것도 지급되지 않습니까?
   why_it_matters: >-
-    Cyclops는 주요 토큰 공급원이며, 총합은 200으로 제한되거나 초과 피해로 인해 제한이 없습니다.
+    사이클롭스는 주요 토큰 공급원이며, 총합은 200으로 제한되거나 초과 피해로 인해 제한이 없습니다.
   readings:
     A: >-
       지급량 = 실제로 제거된 HP(총 <= 200). 상인 미사일 포함
@@ -108,12 +108,12 @@ U-0419:
       상인 미사일은 시청자 아이템으로 취급되어 아무것도 지급하지 않음
   resolution_paths:
   - >-
-    토큰 기록이 있는 cyclops 처치 VOD.
+    토큰 기록이 있는 사이클롭스 처치 VOD.
 U-0420:
   question: >-
-    Cyclops 공격 타이밍과 대상: 'Every 5s it hits the nearest contestant within 30m for 10 HP'. 첫 타격은 스폰+5s입니까, 아니면 대상이 처음 범위에 들어올 때입니까? 동률은 어떻게 처리합니까? 이 피해는 피해 파이프라인(U-0002)을 거칩니까?
+    사이클롭스 공격 타이밍과 대상: 'Every 5s it hits the nearest contestant within 30m for 10 HP'. 첫 타격은 스폰+5s입니까, 아니면 대상이 처음 범위에 들어올 때입니까? 동률은 어떻게 처리합니까? 이 피해는 피해 파이프라인(U-0002)을 거칩니까?
   why_it_matters: >-
-    cyclops 근처에 서 있는 참가자가 받는 피해: 10 HP / 5s = 2 HP/s.
+    사이클롭스 근처에 서 있는 참가자가 받는 피해: 10 HP / 5s = 2 HP/s.
   readings:
     A: >-
       스폰부터 전역 5s 타이머, 범위 안에 참가자가 있으면 타격
@@ -126,9 +126,9 @@ U-0420:
     VOD: 화면 타이머와 함께 이벤트를 실시간으로 관찰합니다.
 U-0421:
   question: >-
-    Cyclops 조종 투표: 방향의 집합은 무엇이며, 아무도 투표하지 않으면 승자가 유지됩니까, 그리고 투표는 시청자마다 5s 구간마다 집계됩니까?
+    사이클롭스 조종 투표: 방향의 집합은 무엇이며, 아무도 투표하지 않으면 승자가 유지됩니까, 그리고 투표는 시청자마다 5s 구간마다 집계됩니까?
   why_it_matters: >-
-    cyclops를 참가자 쪽으로 얼마나 유도할 수 있는지를 결정합니다.
+    사이클롭스를 참가자 쪽으로 얼마나 유도할 수 있는지를 결정합니다.
   readings:
     A: >-
       연속적인 방위, 투표의 평균
@@ -138,12 +138,12 @@ U-0421:
       투표가 없으면 이전 방향 유지
   resolution_paths:
   - >-
-    cyclops 투표 UI의 VOD.
+    사이클롭스 투표 UI의 VOD.
 U-0422:
   question: >-
-    Cyclops 존 피해: 'Outside the safe zones it takes zone damage'. 참가자와 같은 속도(U-0003)입니까, 같은 단계적 증가입니까, 아니면 고정입니까?
+    사이클롭스 존 피해: 'Outside the safe zones it takes zone damage'. 참가자와 같은 속도(U-0003)입니까, 같은 단계적 증가입니까, 아니면 고정입니까?
   why_it_matters: >-
-    세이프 존 밖의 cyclops가 존 피해만으로 죽어 아무것도 지급하지 않는지 여부입니다.
+    세이프 존 밖의 사이클롭스가 존 피해만으로 죽어 아무것도 지급하지 않는지 여부입니다.
   readings:
     A: >-
       참가자와 같은 2s 틱과 같은 규칙
@@ -151,7 +151,7 @@ U-0422:
       다른 규칙
   resolution_paths:
   - >-
-    존 밖에 있는 cyclops의 VOD.
+    존 밖에 있는 사이클롭스의 VOD.
 U-0423:
   question: >-
     Reality Shield: 지속 시간이 주어지지 않았고, 'Everyone within 30m'는 반지름입니까 지름입니까, 그리고 'immune to all damage, zombies and new poison'은 이미 걸린 독이 계속 진행되는 것을 뜻합니까?

@@ -248,6 +248,8 @@ Label: `CONDITIONAL`. Sigils: all, piety.
 - [M-0333](../rules/economy.md#m-0333) parameter `hp_cap_piety`: 220
 - [M-0333](../rules/economy.md#m-0333) parameter `hp_purchase_limit`: UNKNOWN, see [U-0330](../unknowns.md#u-0330)
 
+**Consequences:** [T-0300](../theorems/T-0300.md), [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
+
 **Open questions:**
 
 - [U-0329](../unknowns.md#u-0329) (high): Are the 'for each one you already bought' counters of Inventory slot and +10 maximum HP separate, or shared?
@@ -296,6 +298,8 @@ Label: `CONDITIONAL`. Sigils: piety.
 - [M-0501](../rules/economy.md#m-0501) parameter `hp_per_token`: 5
 - [M-0501](../rules/economy.md#m-0501) parameter `tokens_per_step`: 1
 - [M-0501](../rules/economy.md#m-0501) parameter `hp_basis`: UNKNOWN, see [U-0501](../unknowns.md#u-0501)
+
+**Consequences:** [T-0302](../theorems/T-0302.md)
 
 **Interactions:** [M-0502](../rules/economy.md#m-0502), [M-0505](../rules/healing.md#m-0505)
 
@@ -434,6 +438,8 @@ Label: `CONDITIONAL`. Sigils: ingenuity.
 - [M-0521](../rules/economy.md#m-0521) parameter `per_campfire_hp`: 1
 - [M-0521](../rules/economy.md#m-0521) parameter `per_zombie_killed`: 1
 
+**Consequences:** [T-0304](../theorems/T-0304.md), [T-0706](../theorems/T-0706.md)
+
 **Interactions:** [M-0517](../rules/sigil.md#m-0517), [M-0522](../rules/items.md#m-0522), [M-0525](../rules/healing.md#m-0525), [M-0527](../rules/zombies.md#m-0527), [M-0528](../rules/items.md#m-0528)
 
 **Open questions:**
@@ -562,6 +568,8 @@ Label: `CONDITIONAL`. Sigils: necromancy.
 - [M-0630](../rules/economy.md#m-0630) reading A: `tokens += 1 per owned zombie appearing (summon, death, horde bonus, guard); tokens += 1 per HP drained by owned zombies`
 - [M-0630](../rules/economy.md#m-0630) reading B: `A, with HP drained = HP the victim actually lost after armor and caps`
 
+**Consequences:** [T-0706](../theorems/T-0706.md)
+
 **Open questions:**
 
 - [U-0613](../unknowns.md#u-0613) (high): Necromancy 'The HP goes to you': is the gain the HP the victim actually lost, is it capped at the owner's max HP, and does a blocked or armor-absorbed drain give HP and tokens?
@@ -621,7 +629,7 @@ Notes ([M-0650](../rules/economy.md#m-0650)): Does a heal on a full HP target pa
 
 ## Simulation check
 
-No theorem or simulation covers this page yet.
+Theorems with tests in `sim/tests/`: [T-0300](../theorems/T-0300.md), [T-0302](../theorems/T-0302.md), [T-0304](../theorems/T-0304.md), [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md), [T-0706](../theorems/T-0706.md)
 
 ## Open questions
 

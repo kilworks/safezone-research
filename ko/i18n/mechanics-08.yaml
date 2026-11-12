@@ -15,7 +15,7 @@ M-0411:
     피해 페이지에는 Shield, Safety bubble, Sleeping Bag, Body armor도 함께 나열되어 있습니다. C-0400을 참조하십시오.
 M-0412:
   name: >-
-    Airstrike 폭격
+    공습 폭격
   quotes:
   - >-
     시청자는 세이프 존 안에서 중심점과 방향을 고릅니다.
@@ -39,7 +39,7 @@ M-0412:
       UNKNOWN, U-0014 참조
 M-0413:
   name: >-
-    Airstrike 화염
+    공습 화염
   quotes:
   - >-
     이후 띠는 5min 동안 불탑니다.
@@ -63,7 +63,7 @@ M-0413:
       2 s
 M-0414:
   name: >-
-    Airstrike 대응 수단
+    공습 대응 수단
   quotes:
   - >-
     Shield가 화염을 막습니다.
@@ -81,20 +81,20 @@ M-0414:
   domain: >-
     참가자별, 단계별(폭격, 화염)
   notes: >-
-    피해 페이지: airstrike 화염은 Shield, Safety bubble, Sleeping Bag, Protection, Body armor(흡수)가 막습니다. 더 적은 수단을 나열한 공격 페이지와 일치합니다.
+    피해 페이지: 공습 화염은 Shield, Safety bubble, Sleeping Bag, Protection, Body armor(흡수)가 막습니다. 더 적은 수단을 나열한 공격 페이지와 일치합니다.
 M-0415:
   name: >-
-    Gunship 지속 시간과 폭탄 투하 주기
+    건십 지속 시간과 폭탄 투하 주기
   quotes:
   - >-
-    구매자는 5min 동안 gunship을 얻습니다.
+    구매자는 5min 동안 건십을 얻습니다.
   - >-
     목표 서클은 무작위 세이프 존 둘레를 75m/s (167.77mph)로 훑습니다.
   - >-
     구매자는 10s에 한 번씩 목표 서클에 폭탄을 투하합니다.
   readings:
     A: >-
-      gunship은 300 s 동안 존재하며 10s마다 폭탄 1개를 투하함(폭탄 30개)
+      건십은 300 s 동안 존재하며 10s마다 폭탄 1개를 투하함(폭탄 30개)
     B: >-
       폭탄 29개
     C: >-
@@ -114,7 +114,7 @@ M-0415:
       UNKNOWN, U-0014 참조
 M-0416:
   name: >-
-    Gunship 폭탄 효과
+    건십 폭탄 효과
   quotes:
   - >-
     각 폭탄은 5s 후에 떨어져 25m (82ft) 이내의 모든 사람에게 10 HP의 피해를 줍니다.
@@ -132,21 +132,21 @@ M-0416:
       25 m
 M-0417:
   name: >-
-    Gunship 대응 수단
+    건십 대응 수단
   quotes:
   - >-
     Protection 시길은 면역입니다.
   - >-
     Flak jacket은 폭탄 하나를 막습니다.
   - >-
-    EMP는 gunship과 떨어지는 폭탄을 제거합니다.
+    EMP는 건십과 떨어지는 폭탄을 제거합니다.
   readings:
     A: >-
-      Protection은 면역이고, Flak jacket은 폭탄 하나를 막으며, EMP는 gunship과 떨어지는 폭탄을 제거함
+      Protection은 면역이고, Flak jacket은 폭탄 하나를 막으며, EMP는 건십과 떨어지는 폭탄을 제거함
   domain: >-
     참가자별
   notes: >-
-    피해 페이지에는 gunship 폭탄의 추가 방어 수단으로 Shield, Safety bubble, Sleeping Bag, Body armor가 나열되어 있습니다. C-0400을 참조하십시오.
+    피해 페이지에는 건십 폭탄의 추가 방어 수단으로 Shield, Safety bubble, Sleeping Bag, Body armor가 나열되어 있습니다. C-0400을 참조하십시오.
 M-0418:
   name: >-
     Emergency airdrop (긴급 에어드롭)
@@ -336,7 +336,7 @@ M-0425:
     피해 페이지에는 현상금 표시에 대해 Shield, Safety bubble, Sleeping Bag, Body armor가 나열되어 있습니다. Protection은 여전히 현상금 피해를 입습니다(Protection 페이지).
 M-0426:
   name: >-
-    Cyclops 능력치와 공격
+    사이클롭스 능력치와 공격
   quotes:
   - >-
     HP는 200이고 0.8m/s (1.79mph)로 걷습니다.
@@ -360,10 +360,10 @@ M-0426:
       UNKNOWN, U-0014 참조
 M-0427:
   name: >-
-    Cyclops 조종 투표
+    사이클롭스 조종 투표
   quotes:
   - >-
-    cyclops가 지도에 있는 동안 구매자만이 아니라 모든 시청자가 그 방향에 투표할 수 있습니다.
+    사이클롭스가 지도에 있는 동안 구매자만이 아니라 모든 시청자가 그 방향에 투표할 수 있습니다.
   - >-
     가장 많이 득표한 방향이 5s마다 채택됩니다.
   readings:
@@ -376,12 +376,12 @@ M-0427:
       5 s
 M-0428:
   name: >-
-    Cyclops가 받는 피해
+    사이클롭스가 받는 피해
   quotes:
   - >-
     참가자는 bow, knife, long sword, Zarok's axe 또는 machete로 무기 사거리 안에서, 또는 drone으로 어디서든 이를 공격합니다.
   - >-
-    모든 피해가 통합니다: 무기, drone, C4, landmine, staff, 핵, 미사일, airstrike, 최루 가스, gunship 폭탄.
+    모든 피해가 통합니다: 무기, drone, C4, landmine, staff, 핵, 미사일, 공습, 최루 가스, 건십 폭탄.
   - >-
     세이프 존 밖에서는 존 피해를 입습니다.
   - >-
@@ -392,12 +392,12 @@ M-0428:
     A: >-
       bow, knife, long sword, Zarok's axe, machete는 사거리 안에서, drone은 어떤 거리에서든 통하고, 모든 종류의 피해가 통하며, 세이프 존 밖에서는 존 피해를 입고, smoke bomb은 양방향 공격을 막으며, 무기와 drone은 Thermal goggles가 있어야만 맞고, 폭발과 범위 피해는 여전히 피해를 줌
   domain: >-
-    cyclops hp 0..200
+    사이클롭스 hp 0..200
   notes: >-
     무기 페이지의 무기 목록과 비교하십시오. 여기에는 근접/원거리 무기 5개만 나열되어 있습니다.
 M-0429:
   name: >-
-    Cyclops 블러드 토큰
+    사이클롭스 블러드 토큰
   quotes:
   - >-
     죽으면 각 참가자는 자신이 입힌 피해 1당 블러드 토큰 1개를 얻습니다.
@@ -415,15 +415,15 @@ M-0429:
       피해 1당 토큰 1개
 M-0430:
   name: >-
-    Cyclops 동시 존재와 재등장
+    사이클롭스 동시 존재와 재등장
   quotes:
   - >-
-    지도에는 한 번에 cyclops 하나만 있을 수 있습니다.
+    지도에는 한 번에 사이클롭스 하나만 있을 수 있습니다.
   - >-
-    다음 cyclops는 죽은 뒤 3h 후에 나올 수 있습니다.
+    다음 사이클롭스는 죽은 뒤 3h 후에 나올 수 있습니다.
   readings:
     A: >-
-      지도에는 최대 하나이며, 다음 cyclops는 이전 것이 죽은 뒤 10800 s 후에 나올 수 있음
+      지도에는 최대 하나이며, 다음 사이클롭스는 이전 것이 죽은 뒤 10800 s 후에 나올 수 있음
   domain: >-
     t는 초 단위
   parameters:

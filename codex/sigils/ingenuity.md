@@ -224,6 +224,8 @@ Label: `CONDITIONAL`. Sigils: ingenuity.
 - [M-0453](../rules/zombies.md#m-0453) parameter `kills`: 10
 - [M-0453](../rules/zombies.md#m-0453) parameter `radius`: 10 m
 
+**Consequences:** [T-0707](../theorems/T-0707.md)
+
 **Open questions:**
 
 - [U-0430](../unknowns.md#u-0430) (low): Ingenuity Zombie Killer: 'kills the next ten zombies that come within 10m of its owner' and 'stops zombies draining you until it has killed ten'. Do ten zombies arriving together count, is the drain stop limited to the ten, and is the order by approach?
@@ -278,6 +280,8 @@ Label: `CONDITIONAL`. Sigils: ingenuity.
 - [M-0515](../rules/sigil.md#m-0515) parameter `inventory_slots`: 2
 - [M-0515](../rules/sigil.md#m-0515) parameter `craft_slots`: 5
 - [M-0515](../rules/sigil.md#m-0515) parameter `slot_cap_with_upgrades`: 12
+
+**Consequences:** [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
 
 **Interactions:** [M-0520](../rules/items.md#m-0520), [M-0522](../rules/items.md#m-0522)
 
@@ -442,6 +446,8 @@ Label: `CONDITIONAL`. Sigils: ingenuity.
 - [M-0521](../rules/economy.md#m-0521) parameter `per_campfire_hp`: 1
 - [M-0521](../rules/economy.md#m-0521) parameter `per_zombie_killed`: 1
 
+**Consequences:** [T-0304](../theorems/T-0304.md), [T-0706](../theorems/T-0706.md)
+
 **Interactions:** [M-0517](../rules/sigil.md#m-0517), [M-0522](../rules/items.md#m-0522), [M-0525](../rules/healing.md#m-0525), [M-0527](../rules/zombies.md#m-0527), [M-0528](../rules/items.md#m-0528)
 
 **Open questions:**
@@ -508,6 +514,8 @@ Label: `CONDITIONAL`. Sigils: ingenuity.
 - [M-0523](../rules/weapons.md#m-0523) parameter `radius_m`: 10
 - [M-0523](../rules/weapons.md#m-0523) parameter `speed_mps`: 1.4
 - [M-0523](../rules/weapons.md#m-0523) parameter `clock`: UNKNOWN, see [U-0527](../unknowns.md#u-0527)
+
+**Consequences:** [T-0305](../theorems/T-0305.md)
 
 **Interactions:** [M-0522](../rules/items.md#m-0522), [M-0524](../rules/damage.md#m-0524)
 
@@ -627,6 +635,8 @@ Label: `CONDITIONAL`. Sigils: ingenuity.
 - [M-0527](../rules/zombies.md#m-0527) parameter `radius_m`: 10
 - [M-0527](../rules/zombies.md#m-0527) parameter `expiry`: none
 
+**Consequences:** [T-0707](../theorems/T-0707.md)
+
 **Interactions:** [M-0520](../rules/items.md#m-0520), [M-0521](../rules/economy.md#m-0521)
 
 **Open questions:**
@@ -683,7 +693,7 @@ Label: `CONDITIONAL`. Sigils: ingenuity.
 - [M-0529](../rules/damage.md#m-0529) parameter `durability_hp`: 30
 - [M-0529](../rules/damage.md#m-0529) parameter `duration_s`: UNKNOWN, see [U-0526](../unknowns.md#u-0526)
 
-**Consequences:** [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md)
+**Consequences:** [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md), [T-0305](../theorems/T-0305.md)
 
 **Interactions:** [M-0511](../rules/sigil.md#m-0511), [M-0522](../rules/items.md#m-0522)
 
@@ -697,7 +707,7 @@ Notes ([M-0529](../rules/damage.md#m-0529)): Damage page: 'A fortress you stand 
 
 ## Simulation check
 
-Theorems with tests in `sim/tests/`: [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md)
+Theorems with tests in `sim/tests/`: [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md), [T-0304](../theorems/T-0304.md), [T-0305](../theorems/T-0305.md), [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md), [T-0706](../theorems/T-0706.md), [T-0707](../theorems/T-0707.md)
 
 ## Open questions
 

@@ -558,6 +558,8 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0336](../rules/weapons.md#m-0336) parameter `bleed_hp`: 1
 - [M-0336](../rules/weapons.md#m-0336) parameter `bleed_interval_min`: 5
 
+**Consequences:** [T-0305](../theorems/T-0305.md)
+
 **Open questions:**
 
 - [U-0332](../unknowns.md#u-0332) (medium): Deep Cut: when is the first bleeding tick, does a new hit while bleeding reset the timer, how long does the charge last unused, and does a bleeding tick count as a hit?
@@ -665,6 +667,8 @@ Label: `CONDITIONAL`. Sigils: ingenuity.
 - [M-0523](../rules/weapons.md#m-0523) parameter `speed_mps`: 1.4
 - [M-0523](../rules/weapons.md#m-0523) parameter `clock`: UNKNOWN, see [U-0527](../unknowns.md#u-0527)
 
+**Consequences:** [T-0305](../theorems/T-0305.md)
+
 **Interactions:** [M-0522](../rules/items.md#m-0522), [M-0524](../rules/damage.md#m-0524)
 
 **Open questions:**
@@ -678,7 +682,7 @@ Notes ([M-0523](../rules/weapons.md#m-0523)): 'other players' excludes the owner
 
 ## Simulation check
 
-Theorems with tests in `sim/tests/`: [T-0001](../theorems/T-0001.md)
+Theorems with tests in `sim/tests/`: [T-0001](../theorems/T-0001.md), [T-0305](../theorems/T-0305.md)
 
 ## Open questions
 

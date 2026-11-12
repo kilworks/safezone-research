@@ -108,6 +108,8 @@ Label: `DOCUMENTED`. Sigils: healing.
 - [M-0606](../rules/sigil.md#m-0606) parameter `max_hp`: 100
 - [M-0606](../rules/sigil.md#m-0606) parameter `inventory_slots`: 3
 
+**Consequences:** [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
+
 Notes ([M-0606](../rules/sigil.md#m-0606)): Merchant upgrades (+10 max HP, inventory slots) change these during play; this record is the base value only. The merchant page caps slots at 13, or 20 for Endurance.
 
 <a id="m-0650"></a>
@@ -152,6 +154,8 @@ Label: `CONDITIONAL`. Sigils: healing.
 - [M-0651](../rules/healing.md#m-0651) parameter `cooldown_s`: 600
 - [M-0651](../rules/healing.md#m-0651) parameter `range_m`: UNKNOWN, see [U-0622](../unknowns.md#u-0622)
 
+**Consequences:** [T-0305](../theorems/T-0305.md)
+
 **Open questions:**
 
 - [U-0622](../unknowns.md#u-0622) (medium): Healing ability 'Heal a nearby contestant': what is the range?
@@ -177,7 +181,7 @@ Label: `CONDITIONAL`. Sigils: healing.
 - [M-0652](../rules/healing.md#m-0652) parameter `regen_hp`: 1
 - [M-0652](../rules/healing.md#m-0652) parameter `period_s`: 1800
 
-**Consequences:** [T-0011](../theorems/T-0011.md)
+**Consequences:** [T-0011](../theorems/T-0011.md), [T-0305](../theorems/T-0305.md)
 
 **Open questions:**
 
@@ -285,7 +289,7 @@ Notes ([M-0656](../rules/revival.md#m-0656)): Revived contestant also gets back 
 
 ## Simulation check
 
-Theorems with tests in `sim/tests/`: [T-0011](../theorems/T-0011.md)
+Theorems with tests in `sim/tests/`: [T-0011](../theorems/T-0011.md), [T-0305](../theorems/T-0305.md), [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
 
 ## Open questions
 

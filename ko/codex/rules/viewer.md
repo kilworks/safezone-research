@@ -56,13 +56,13 @@
 - [M-0222](../rules/viewer.md#m-0222) `wiki-items-035`: "Usable" ([출처](https://iceposeidon.com/safezone/wiki/items#emp))
   - 번역: 사용 가능
 - [M-0222](../rules/viewer.md#m-0222) `wiki-items-036`: "Stops viewers sending missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes and bounties for 10min." ([출처](https://iceposeidon.com/safezone/wiki/items#emp))
-  - 번역: 10min 동안 시청자가 missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes, bounties를 보내지 못하게 합니다.
+  - 번역: 10min 동안 시청자가 미사일, 핵, hordes, 최루 가스, 공습, 건십, 사이클롭스, 현상금을 보내지 못하게 합니다.
 - [M-0222](../rules/viewer.md#m-0222) `wiki-attacks-001`: "While a contestant's EMP is active, viewers cannot send missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes or bounties." ([출처](https://iceposeidon.com/safezone/wiki/attacks#emp))
-  - 번역: 참가자의 EMP가 활성인 동안 시청자는 missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes, bounties를 보낼 수 없습니다.
+  - 번역: 참가자의 EMP가 활성인 동안 시청자는 미사일, 핵, hordes, 최루 가스, 공습, 건십, 사이클롭스, 현상금을 보낼 수 없습니다.
 
 **형식 모델:**
 
-- [M-0222](../rules/viewer.md#m-0222) 해석 A: `10min 동안 시청자가 보낼 수 없는 것: missiles, nukes, hordes, tear gas, airstrikes, gunships, cyclopes, bounties`
+- [M-0222](../rules/viewer.md#m-0222) 해석 A: `10min 동안 시청자가 보낼 수 없는 것: 미사일, 핵, hordes, 최루 가스, 공습, 건십, 사이클롭스, 현상금`
 - [M-0222](../rules/viewer.md#m-0222) 정의역: t in [0, 600)초
 - [M-0222](../rules/viewer.md#m-0222) 매개변수 `duration`: 10min
 
@@ -77,16 +77,16 @@
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0223](../rules/viewer.md#m-0223) `wiki-items-037`: "It destroys every viewer missile and nuke already in the air, and every airstrike and gunship already in play, burning fire included." ([출처](https://iceposeidon.com/safezone/wiki/items#emp))
-  - 번역: 공중에 이미 떠 있는 모든 시청자 missile과 nuke, 그리고 이미 진행 중인 모든 airstrike와 gunship을 타오르는 불까지 포함해 파괴합니다.
+  - 번역: 공중에 이미 떠 있는 모든 시청자 미사일과 핵, 그리고 이미 진행 중인 모든 공습과 건십을 타오르는 불까지 포함해 파괴합니다.
 - [M-0223](../rules/viewer.md#m-0223) `wiki-attacks-002`: "It destroys viewer missiles and nukes in the air, and airstrikes and gunships already in play, fire and falling bombs included." ([출처](https://iceposeidon.com/safezone/wiki/attacks#emp))
-  - 번역: 공중의 시청자 missiles와 nukes, 그리고 이미 진행 중인 airstrikes와 gunships를 불과 떨어지는 폭탄까지 포함해 파괴합니다.
+  - 번역: 공중의 시청자 미사일과 핵, 그리고 이미 진행 중인 공습과 건십을 불과 떨어지는 폭탄까지 포함해 파괴합니다.
 
 **형식 모델:**
 
-- [M-0223](../rules/viewer.md#m-0223) 해석 A: `사용 시: 공중의 모든 시청자 missile과 nuke, 진행 중인 모든 airstrike와 gunship이 불과 떨어지는 폭탄까지 포함해 파괴됨`
+- [M-0223](../rules/viewer.md#m-0223) 해석 A: `사용 시: 공중의 모든 시청자 미사일과 핵, 진행 중인 모든 공습과 건십이 불과 떨어지는 폭탄까지 포함해 파괴됨`
 - [M-0223](../rules/viewer.md#m-0223) 정의역: 즉시 효과
 
-메모 ([M-0223](../rules/viewer.md#m-0223)): 공격 페이지는 이미 맵에 있는 cyclops, bounty, tear gas, 좀비는 제거되지 않는다고 덧붙입니다.
+메모 ([M-0223](../rules/viewer.md#m-0223)): 공격 페이지는 이미 맵에 있는 사이클롭스, 현상금, 최루 가스, 좀비는 제거되지 않는다고 덧붙입니다.
 
 <a id="m-0224"></a>
 
@@ -161,7 +161,7 @@
 
 **미해결 질문:**
 
-- [U-0401](../unknowns.md#u-0401) (보통): EMP 차단의 범위: 위키는 missile, nuke, horde, tear gas, airstrike, gunship, cyclops, bounty를 나열합니다. 긴급 에어드롭, 회복 서클, 환영, 시청자 상자도 차단됩니까? 차단은 구매 시점을 검사합니까, 착탄 시점을 검사합니까?
+- [U-0401](../unknowns.md#u-0401) (보통): EMP 차단의 범위: 위키는 미사일, 핵, horde, 최루 가스, 공습, 건십, 사이클롭스, 현상금을 나열합니다. 긴급 에어드롭, 회복 서클, 환영, 시청자 상자도 차단됩니까? 차단은 구매 시점을 검사합니까, 착탄 시점을 검사합니까?
 
 메모 ([M-0400](../rules/viewer.md#m-0400)): Emergency airdrop, healing circle, illusion, crates는 목록에 없으며, 이것들이 막히는지 여부는 [U-0401](../unknowns.md#u-0401)입니다. Items 페이지에도 10min과 'No refunds'가 있습니다. 다른 분류와의 연결: EMP 아이템(items).
 
@@ -183,7 +183,7 @@
 
 **상호작용:** [M-0400](../rules/viewer.md#m-0400)
 
-메모 ([M-0401](../rules/viewer.md#m-0401)): Admin nuke는 'viewer nukes'에 포함되지 않습니다 (attacks-018). 건십에 대한 'Already in play'에는 남은 시간이 포함됩니다.
+메모 ([M-0401](../rules/viewer.md#m-0401)): Admin 핵은 'viewer nukes'에 포함되지 않습니다 (attacks-018). 건십에 대한 'Already in play'에는 남은 시간이 포함됩니다.
 
 <a id="m-0402"></a>
 
@@ -229,7 +229,7 @@
 
 **미해결 질문:**
 
-- [U-0400](../unknowns.md#u-0400) (높음): Missile 낙하 편차: 'a random spot near that point'이며 폭발 전체가 100m 이내입니다. 낙하 오프셋은 최대 75m(폭발 가장자리가 100m 이내)입니까, 최대 100m입니까, 그리고 분포는 무엇입니까?
+- [U-0400](../unknowns.md#u-0400) (높음): 미사일 낙하 편차: 'a random spot near that point'이며 폭발 전체가 100m 이내입니다. 낙하 오프셋은 최대 75m(폭발 가장자리가 100m 이내)입니까, 최대 100m입니까, 그리고 분포는 무엇입니까?
 - [U-0014](../unknowns.md#u-0014) (높음): 시청자 공격의 Cx-Bucks 가격은 얼마입니까?
 
 <a id="m-0404"></a>
@@ -351,7 +351,7 @@
 
 **미해결 질문:**
 
-- [U-0402](../unknowns.md#u-0402) (낮음): Protection 시길의 nuke 피해 감소: 20 HP의 '50% less'는 10 HP이지만, 관리자가 정한 홀수 피해는 어떻게 반올림되며, 감소는 다른 경감 전에 적용됩니까 후에 적용됩니까?
+- [U-0402](../unknowns.md#u-0402) (낮음): Protection 시길의 핵 피해 감소: 20 HP의 '50% less'는 10 HP이지만, 관리자가 정한 홀수 피해는 어떻게 반올림되며, 감소는 다른 경감 전에 적용됩니까 후에 적용됩니까?
 
 메모 ([M-0407](../rules/viewer.md#m-0407)): Protection은 핵에 면역이 아닙니다(미사일과 다릅니다). 다른 분류와의 연결: Protection 시길 페이지, 피해 파이프라인 순서.
 
@@ -373,6 +373,8 @@
 - [M-0408](../rules/viewer.md#m-0408) 매개변수 `zombies`: 50
 - [M-0408](../rules/viewer.md#m-0408) 매개변수 `duration`: 20 min
 - [M-0408](../rules/viewer.md#m-0408) 매개변수 `price_cx_bucks`: UNKNOWN, [U-0014](../unknowns.md#u-0014) 참조
+
+**따름 결과:** [T-0701](../theorems/T-0701.md), [T-0703](../theorems/T-0703.md)
 
 **상호작용:** [M-0400](../rules/viewer.md#m-0400), [M-0445](../rules/zombies.md#m-0445)
 
@@ -408,7 +410,7 @@
 
 **미해결 질문:**
 
-- [U-0404](../unknowns.md#u-0404) (높음): Tear gas 기하: '25m cloud'는 반경입니까 지름입니까? 그리고 구름 가장자리는 모든 참가자로부터 최소 20m 떨어져야 합니다. 구매 시점에만 그렇습니까, 설치 시점에도 그렇습니까? 구름 전체가 세이프 존 안에 있어야 합니까?
+- [U-0404](../unknowns.md#u-0404) (높음): 최루 가스 기하: '25m cloud'는 반경입니까 지름입니까? 그리고 구름 가장자리는 모든 참가자로부터 최소 20m 떨어져야 합니다. 구매 시점에만 그렇습니까, 설치 시점에도 그렇습니까? 구름 전체가 세이프 존 안에 있어야 합니까?
 - [U-0014](../unknowns.md#u-0014) (높음): 시청자 공격의 Cx-Bucks 가격은 얼마입니까?
 
 <a id="m-0410"></a>
@@ -436,11 +438,13 @@
 - [M-0410](../rules/viewer.md#m-0410) 매개변수 `damage`: 2 HP
 - [M-0410](../rules/viewer.md#m-0410) 매개변수 `period`: 10 s
 
+**따름 결과:** [T-0305](../theorems/T-0305.md)
+
 **상호작용:** [M-0409](../rules/viewer.md#m-0409)
 
 **미해결 질문:**
 
-- [U-0405](../unknowns.md#u-0405) (보통): Tear gas와 좀비 처치 타이밍: 10s마다 2 HP 틱은 진입 10s 후에 시작합니까, 진입 시에 시작합니까, 구름 전체 공통의 10s 위상입니까? 좀비는 진입 즉시 죽습니까, 틱에 죽습니까? 틱은 '타격'([U-0002](../unknowns.md#u-0002))입니까?
+- [U-0405](../unknowns.md#u-0405) (보통): 최루 가스와 좀비 처치 타이밍: 10s마다 2 HP 틱은 진입 10s 후에 시작합니까, 진입 시에 시작합니까, 구름 전체 공통의 10s 위상입니까? 좀비는 진입 즉시 죽습니까, 틱에 죽습니까? 틱은 '타격'([U-0002](../unknowns.md#u-0002))입니까?
 - [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 메모 ([M-0410](../rules/viewer.md#m-0410)): 좀비 페이지는 최루 가스를 좀비를 죽이는 폭발에 포함시켜 나열합니다. Protection 시길은 최루 가스에 면역이 아닙니다 (Protection 페이지).
@@ -467,7 +471,7 @@
 
 **미해결 질문:**
 
-- [U-0401](../unknowns.md#u-0401) (보통): EMP 차단의 범위: 위키는 missile, nuke, horde, tear gas, airstrike, gunship, cyclops, bounty를 나열합니다. 긴급 에어드롭, 회복 서클, 환영, 시청자 상자도 차단됩니까? 차단은 구매 시점을 검사합니까, 착탄 시점을 검사합니까?
+- [U-0401](../unknowns.md#u-0401) (보통): EMP 차단의 범위: 위키는 미사일, 핵, horde, 최루 가스, 공습, 건십, 사이클롭스, 현상금을 나열합니다. 긴급 에어드롭, 회복 서클, 환영, 시청자 상자도 차단됩니까? 차단은 구매 시점을 검사합니까, 착탄 시점을 검사합니까?
 
 **모순:** [C-0400](../unknowns.md#c-0400)
 
@@ -475,7 +479,7 @@
 
 <a id="m-0412"></a>
 
-### M-0412: Airstrike 폭격
+### M-0412: 공습 폭격
 
 라벨: `CONDITIONAL`. 시길: all.
 
@@ -498,13 +502,13 @@
 
 **미해결 질문:**
 
-- [U-0406](../unknowns.md#u-0406) (높음): Airstrike 띠의 너비(위키는 중심과 방향만 제시합니다).
-- [U-0407](../unknowns.md#u-0407) (높음): Airstrike 띠의 길이, 그리고 띠가 선택한 지점을 중심으로 하는지와 세이프 존을 벗어날 수 있는지.
+- [U-0406](../unknowns.md#u-0406) (높음): 공습 띠의 너비(위키는 중심과 방향만 제시합니다).
+- [U-0407](../unknowns.md#u-0407) (높음): 공습 띠의 길이, 그리고 띠가 선택한 지점을 중심으로 하는지와 세이프 존을 벗어날 수 있는지.
 - [U-0014](../unknowns.md#u-0014) (높음): 시청자 공격의 Cx-Bucks 가격은 얼마입니까?
 
 <a id="m-0413"></a>
 
-### M-0413: Airstrike 화염
+### M-0413: 공습 화염
 
 라벨: `CONDITIONAL`. 시길: all.
 
@@ -525,16 +529,18 @@
 - [M-0413](../rules/viewer.md#m-0413) 매개변수 `damage`: 1 HP
 - [M-0413](../rules/viewer.md#m-0413) 매개변수 `period`: 2 s
 
+**따름 결과:** [T-0305](../theorems/T-0305.md)
+
 **상호작용:** [M-0412](../rules/viewer.md#m-0412)
 
 **미해결 질문:**
 
-- [U-0408](../unknowns.md#u-0408) (보통): Airstrike 타임라인: 20s에 착탄하고 'the strip then burns for 5min'. 화재는 착탄부터 5min 지속됩니까, 첫 1 HP 틱은 착탄 시입니까 2s 후입니까, 화재 중에 띠로 들어가면 HP를 잃습니까? 화재 틱은 타격([U-0002](../unknowns.md#u-0002))입니까?
+- [U-0408](../unknowns.md#u-0408) (보통): 공습 타임라인: 20s에 착탄하고 'the strip then burns for 5min'. 화재는 착탄부터 5min 지속됩니까, 첫 1 HP 틱은 착탄 시입니까 2s 후입니까, 화재 중에 띠로 들어가면 HP를 잃습니까? 화재 틱은 타격([U-0002](../unknowns.md#u-0002))입니까?
 - [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 <a id="m-0414"></a>
 
-### M-0414: Airstrike 대응 수단
+### M-0414: 공습 대응 수단
 
 라벨: `DOCUMENTED`. 시길: all.
 
@@ -558,18 +564,18 @@
 
 **상호작용:** [M-0401](../rules/viewer.md#m-0401), [M-0412](../rules/viewer.md#m-0412), [M-0413](../rules/viewer.md#m-0413)
 
-메모 ([M-0414](../rules/viewer.md#m-0414)): 피해 페이지: airstrike 화염은 Shield, Safety bubble, Sleeping Bag, Protection, Body armor(흡수)가 막습니다. 더 적은 수단을 나열한 공격 페이지와 일치합니다.
+메모 ([M-0414](../rules/viewer.md#m-0414)): 피해 페이지: 공습 화염은 Shield, Safety bubble, Sleeping Bag, Protection, Body armor(흡수)가 막습니다. 더 적은 수단을 나열한 공격 페이지와 일치합니다.
 
 <a id="m-0415"></a>
 
-### M-0415: Gunship 지속 시간과 폭탄 투하 주기
+### M-0415: 건십 지속 시간과 폭탄 투하 주기
 
 라벨: `CONDITIONAL`. 시길: all.
 
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0415](../rules/viewer.md#m-0415) `wiki-attacks-036`: "The buyer gets a gunship for 5min." ([출처](https://iceposeidon.com/safezone/wiki/attacks#gunship))
-  - 번역: 구매자는 5min 동안 gunship을 얻습니다.
+  - 번역: 구매자는 5min 동안 건십을 얻습니다.
 - [M-0415](../rules/viewer.md#m-0415) `wiki-attacks-037`: "Its target circle sweeps around a random safe zone at 75m/s (167.77mph)." ([출처](https://iceposeidon.com/safezone/wiki/attacks#gunship))
   - 번역: 목표 서클은 무작위 세이프 존 둘레를 75m/s (167.77mph)로 훑습니다.
 - [M-0415](../rules/viewer.md#m-0415) `wiki-attacks-038`: "The buyer drops bombs on the target circle, one every 10s." ([출처](https://iceposeidon.com/safezone/wiki/attacks#gunship))
@@ -577,7 +583,7 @@
 
 **형식 모델:**
 
-- [M-0415](../rules/viewer.md#m-0415) 해석 A: `gunship은 300 s 동안 존재하며 10s마다 폭탄 1개를 투하함(폭탄 30개)`
+- [M-0415](../rules/viewer.md#m-0415) 해석 A: `건십은 300 s 동안 존재하며 10s마다 폭탄 1개를 투하함(폭탄 30개)`
 - [M-0415](../rules/viewer.md#m-0415) 해석 B: `폭탄 29개`
 - [M-0415](../rules/viewer.md#m-0415) 해석 C: `폭탄 31개`
 - [M-0415](../rules/viewer.md#m-0415) 해석 D: `폭탄 투하는 수동이며 쿨다운은 10s`
@@ -589,13 +595,13 @@
 
 **미해결 질문:**
 
-- [U-0409](../unknowns.md#u-0409) (높음): Gunship 폭탄 수와 타이밍: 'a gunship for 5min', 'one every 10s', 'each bomb lands 5s later'. 폭탄은 몇 개까지 투하할 수 있고, 첫 투하는 t=0입니까 t=10s입니까, 5min 이후에 착탄하는 폭탄도 떨어집니까?
-- [U-0410](../unknowns.md#u-0410) (보통): Gunship 폭탄 위치와 표적 서클: 서클은 'sweeps around a random safe zone at 75m/s'입니다(서클 반경과 경로는 명시되지 않음). 폭탄은 투하 시점에 서클이 있던 곳에 떨어집니까, 5s 후 서클이 있는 곳(75m/s x 5s = 375m 떨어진 곳)에 떨어집니까?
+- [U-0409](../unknowns.md#u-0409) (높음): 건십 폭탄 수와 타이밍: 'a gunship for 5min', 'one every 10s', 'each bomb lands 5s later'. 폭탄은 몇 개까지 투하할 수 있고, 첫 투하는 t=0입니까 t=10s입니까, 5min 이후에 착탄하는 폭탄도 떨어집니까?
+- [U-0410](../unknowns.md#u-0410) (보통): 건십 폭탄 위치와 표적 서클: 서클은 'sweeps around a random safe zone at 75m/s'입니다(서클 반경과 경로는 명시되지 않음). 폭탄은 투하 시점에 서클이 있던 곳에 떨어집니까, 5s 후 서클이 있는 곳(75m/s x 5s = 375m 떨어진 곳)에 떨어집니까?
 - [U-0014](../unknowns.md#u-0014) (높음): 시청자 공격의 Cx-Bucks 가격은 얼마입니까?
 
 <a id="m-0416"></a>
 
-### M-0416: Gunship 폭탄 효과
+### M-0416: 건십 폭탄 효과
 
 라벨: `CONDITIONAL`. 시길: all.
 
@@ -616,11 +622,11 @@
 
 **미해결 질문:**
 
-- [U-0410](../unknowns.md#u-0410) (보통): Gunship 폭탄 위치와 표적 서클: 서클은 'sweeps around a random safe zone at 75m/s'입니다(서클 반경과 경로는 명시되지 않음). 폭탄은 투하 시점에 서클이 있던 곳에 떨어집니까, 5s 후 서클이 있는 곳(75m/s x 5s = 375m 떨어진 곳)에 떨어집니까?
+- [U-0410](../unknowns.md#u-0410) (보통): 건십 폭탄 위치와 표적 서클: 서클은 'sweeps around a random safe zone at 75m/s'입니다(서클 반경과 경로는 명시되지 않음). 폭탄은 투하 시점에 서클이 있던 곳에 떨어집니까, 5s 후 서클이 있는 곳(75m/s x 5s = 375m 떨어진 곳)에 떨어집니까?
 
 <a id="m-0417"></a>
 
-### M-0417: Gunship 대응 수단
+### M-0417: 건십 대응 수단
 
 라벨: `DOCUMENTED`. 시길: all.
 
@@ -631,18 +637,18 @@
 - [M-0417](../rules/viewer.md#m-0417) `wiki-attacks-041`: "A Flak jacket blocks one bomb." ([출처](https://iceposeidon.com/safezone/wiki/attacks#gunship))
   - 번역: Flak jacket은 폭탄 하나를 막습니다.
 - [M-0417](../rules/viewer.md#m-0417) `wiki-attacks-042`: "An EMP removes the gunship and its falling bombs." ([출처](https://iceposeidon.com/safezone/wiki/attacks#gunship))
-  - 번역: EMP는 gunship과 떨어지는 폭탄을 제거합니다.
+  - 번역: EMP는 건십과 떨어지는 폭탄을 제거합니다.
 
 **형식 모델:**
 
-- [M-0417](../rules/viewer.md#m-0417) 해석 A: `Protection은 면역이고, Flak jacket은 폭탄 하나를 막으며, EMP는 gunship과 떨어지는 폭탄을 제거함`
+- [M-0417](../rules/viewer.md#m-0417) 해석 A: `Protection은 면역이고, Flak jacket은 폭탄 하나를 막으며, EMP는 건십과 떨어지는 폭탄을 제거함`
 - [M-0417](../rules/viewer.md#m-0417) 정의역: 참가자별
 
 **상호작용:** [M-0401](../rules/viewer.md#m-0401), [M-0416](../rules/viewer.md#m-0416)
 
 **모순:** [C-0400](../unknowns.md#c-0400)
 
-메모 ([M-0417](../rules/viewer.md#m-0417)): 피해 페이지에는 gunship 폭탄의 추가 방어 수단으로 Shield, Safety bubble, Sleeping Bag, Body armor가 나열되어 있습니다. [C-0400](../unknowns.md#c-0400)을 참조하십시오.
+메모 ([M-0417](../rules/viewer.md#m-0417)): 피해 페이지에는 건십 폭탄의 추가 방어 수단으로 Shield, Safety bubble, Sleeping Bag, Body armor가 나열되어 있습니다. [C-0400](../unknowns.md#c-0400)을 참조하십시오.
 
 <a id="m-0418"></a>
 
@@ -668,11 +674,13 @@
 - [M-0418](../rules/viewer.md#m-0418) 매개변수 `spread`: 10 m
 - [M-0418](../rules/viewer.md#m-0418) 매개변수 `price_cx_bucks`: UNKNOWN, [U-0014](../unknowns.md#u-0014) 참조
 
+**따름 결과:** [T-0408](../theorems/T-0408.md)
+
 **미해결 질문:**
 
 - [U-0412](../unknowns.md#u-0412) (낮음): 무작위 아이템: 보급 상자와 에어드롭에서 'a random item'의 분포는 무엇이며, 에어드롭에서 'within 10m of a random point'의 분포는 무엇입니까?
 - [U-0411](../unknowns.md#u-0411) (보통): 보급 상자 Trolling 규칙: 3% 판정은 각 상자에 개별로 적용됩니까(긴급 에어드롭의 5개, Endurance 상자, 상인 상자 포함)? 'within 5m'는 'next to'와 같습니까? 그리고 Trolling 참가자가 여럿이면 누가 선택됩니까?
-- [U-0401](../unknowns.md#u-0401) (보통): EMP 차단의 범위: 위키는 missile, nuke, horde, tear gas, airstrike, gunship, cyclops, bounty를 나열합니다. 긴급 에어드롭, 회복 서클, 환영, 시청자 상자도 차단됩니까? 차단은 구매 시점을 검사합니까, 착탄 시점을 검사합니까?
+- [U-0401](../unknowns.md#u-0401) (보통): EMP 차단의 범위: 위키는 미사일, 핵, horde, 최루 가스, 공습, 건십, 사이클롭스, 현상금을 나열합니다. 긴급 에어드롭, 회복 서클, 환영, 시청자 상자도 차단됩니까? 차단은 구매 시점을 검사합니까, 착탄 시점을 검사합니까?
 - [U-0014](../unknowns.md#u-0014) (높음): 시청자 공격의 Cx-Bucks 가격은 얼마입니까?
 
 <a id="m-0419"></a>
@@ -887,7 +895,7 @@
 
 <a id="m-0426"></a>
 
-### M-0426: Cyclops 능력치와 공격
+### M-0426: 사이클롭스 능력치와 공격
 
 라벨: `CONDITIONAL`. 시길: all.
 
@@ -908,21 +916,23 @@
 - [M-0426](../rules/viewer.md#m-0426) 매개변수 `damage`: 10 HP
 - [M-0426](../rules/viewer.md#m-0426) 매개변수 `price_cx_bucks`: UNKNOWN, [U-0014](../unknowns.md#u-0014) 참조
 
+**따름 결과:** [T-0305](../theorems/T-0305.md)
+
 **미해결 질문:**
 
-- [U-0420](../unknowns.md#u-0420) (보통): Cyclops 공격 타이밍과 대상: 'Every 5s it hits the nearest contestant within 30m for 10 HP'. 첫 타격은 스폰+5s입니까, 아니면 대상이 처음 범위에 들어올 때입니까? 동률은 어떻게 처리합니까? 이 피해는 피해 파이프라인([U-0002](../unknowns.md#u-0002))을 거칩니까?
+- [U-0420](../unknowns.md#u-0420) (보통): 사이클롭스 공격 타이밍과 대상: 'Every 5s it hits the nearest contestant within 30m for 10 HP'. 첫 타격은 스폰+5s입니까, 아니면 대상이 처음 범위에 들어올 때입니까? 동률은 어떻게 처리합니까? 이 피해는 피해 파이프라인([U-0002](../unknowns.md#u-0002))을 거칩니까?
 - [U-0014](../unknowns.md#u-0014) (높음): 시청자 공격의 Cx-Bucks 가격은 얼마입니까?
 
 <a id="m-0427"></a>
 
-### M-0427: Cyclops 조종 투표
+### M-0427: 사이클롭스 조종 투표
 
 라벨: `CONDITIONAL`. 시길: all.
 
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0427](../rules/viewer.md#m-0427) `wiki-attacks-067`: "Every viewer can vote its direction while it is on the map, not only the buyer." ([출처](https://iceposeidon.com/safezone/wiki/attacks#cyclops))
-  - 번역: cyclops가 지도에 있는 동안 구매자만이 아니라 모든 시청자가 그 방향에 투표할 수 있습니다.
+  - 번역: 사이클롭스가 지도에 있는 동안 구매자만이 아니라 모든 시청자가 그 방향에 투표할 수 있습니다.
 - [M-0427](../rules/viewer.md#m-0427) `wiki-attacks-068`: "The most voted direction wins every 5s." ([출처](https://iceposeidon.com/safezone/wiki/attacks#cyclops))
   - 번역: 가장 많이 득표한 방향이 5s마다 채택됩니다.
 
@@ -936,11 +946,11 @@
 
 **미해결 질문:**
 
-- [U-0421](../unknowns.md#u-0421) (낮음): Cyclops 조종 투표: 방향의 집합은 무엇이며, 아무도 투표하지 않으면 승자가 유지됩니까, 그리고 투표는 시청자마다 5s 구간마다 집계됩니까?
+- [U-0421](../unknowns.md#u-0421) (낮음): 사이클롭스 조종 투표: 방향의 집합은 무엇이며, 아무도 투표하지 않으면 승자가 유지됩니까, 그리고 투표는 시청자마다 5s 구간마다 집계됩니까?
 
 <a id="m-0428"></a>
 
-### M-0428: Cyclops가 받는 피해
+### M-0428: 사이클롭스가 받는 피해
 
 라벨: `CONDITIONAL`. 시길: all.
 
@@ -949,7 +959,7 @@
 - [M-0428](../rules/viewer.md#m-0428) `wiki-attacks-069`: "Contestants attack it with a bow, knife, long sword, Zarok's axe or machete within the weapon's range, or with a drone from anywhere." ([출처](https://iceposeidon.com/safezone/wiki/attacks#cyclops))
   - 번역: 참가자는 bow, knife, long sword, Zarok's axe 또는 machete로 무기 사거리 안에서, 또는 drone으로 어디서든 이를 공격합니다.
 - [M-0428](../rules/viewer.md#m-0428) `wiki-attacks-070`: "All damage hurts it: weapons, drones, C4, landmines, staffs, nukes, missiles, airstrikes, tear gas and gunship bombs." ([출처](https://iceposeidon.com/safezone/wiki/attacks#cyclops))
-  - 번역: 모든 피해가 통합니다: 무기, drone, C4, landmine, staff, 핵, 미사일, airstrike, 최루 가스, gunship 폭탄.
+  - 번역: 모든 피해가 통합니다: 무기, drone, C4, landmine, staff, 핵, 미사일, 공습, 최루 가스, 건십 폭탄.
 - [M-0428](../rules/viewer.md#m-0428) `wiki-attacks-071`: "Outside the safe zones it takes zone damage." ([출처](https://iceposeidon.com/safezone/wiki/attacks#cyclops))
   - 번역: 세이프 존 밖에서는 존 피해를 입습니다.
 - [M-0428](../rules/viewer.md#m-0428) `wiki-attacks-075`: "It cannot attack into or out of a smoke bomb cloud." ([출처](https://iceposeidon.com/safezone/wiki/attacks#cyclops))
@@ -960,20 +970,20 @@
 **형식 모델:**
 
 - [M-0428](../rules/viewer.md#m-0428) 해석 A: `bow, knife, long sword, Zarok's axe, machete는 사거리 안에서, drone은 어떤 거리에서든 통하고, 모든 종류의 피해가 통하며, 세이프 존 밖에서는 존 피해를 입고, smoke bomb은 양방향 공격을 막으며, 무기와 drone은 Thermal goggles가 있어야만 맞고, 폭발과 범위 피해는 여전히 피해를 줌`
-- [M-0428](../rules/viewer.md#m-0428) 정의역: cyclops hp 0..200
+- [M-0428](../rules/viewer.md#m-0428) 정의역: 사이클롭스 hp 0..200
 
 **상호작용:** [M-0426](../rules/viewer.md#m-0426)
 
 **미해결 질문:**
 
-- [U-0422](../unknowns.md#u-0422) (낮음): Cyclops 존 피해: 'Outside the safe zones it takes zone damage'. 참가자와 같은 속도([U-0003](../unknowns.md#u-0003))입니까, 같은 단계적 증가입니까, 아니면 고정입니까?
+- [U-0422](../unknowns.md#u-0422) (낮음): 사이클롭스 존 피해: 'Outside the safe zones it takes zone damage'. 참가자와 같은 속도([U-0003](../unknowns.md#u-0003))입니까, 같은 단계적 증가입니까, 아니면 고정입니까?
 - [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 메모 ([M-0428](../rules/viewer.md#m-0428)): 무기 페이지의 무기 목록과 비교하십시오. 여기에는 근접/원거리 무기 5개만 나열되어 있습니다.
 
 <a id="m-0429"></a>
 
-### M-0429: Cyclops 블러드 토큰
+### M-0429: 사이클롭스 블러드 토큰
 
 라벨: `CONDITIONAL`. 시길: all.
 
@@ -996,24 +1006,24 @@
 
 **미해결 질문:**
 
-- [U-0419](../unknowns.md#u-0419) (보통): Cyclops 블러드 토큰: 죽을 때 '1 blood token per damage dealt'입니다. 피해는 초과 피해를 빼고 200 HP를 상한으로 집계됩니까, 상인 미사일은 '시청자 아이템'입니까, 그리고 참가자들이 먼저 피해를 입혔더라도 존 피해로 죽으면 여전히 아무것도 지급되지 않습니까?
+- [U-0419](../unknowns.md#u-0419) (보통): 사이클롭스 블러드 토큰: 죽을 때 '1 blood token per damage dealt'입니다. 피해는 초과 피해를 빼고 200 HP를 상한으로 집계됩니까, 상인 미사일은 '시청자 아이템'입니까, 그리고 참가자들이 먼저 피해를 입혔더라도 존 피해로 죽으면 여전히 아무것도 지급되지 않습니까?
 
 <a id="m-0430"></a>
 
-### M-0430: Cyclops 동시 존재와 재등장
+### M-0430: 사이클롭스 동시 존재와 재등장
 
 라벨: `DOCUMENTED`. 시길: all.
 
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
 - [M-0430](../rules/viewer.md#m-0430) `wiki-attacks-077`: "Only one cyclops can be on the map at a time." ([출처](https://iceposeidon.com/safezone/wiki/attacks#cyclops))
-  - 번역: 지도에는 한 번에 cyclops 하나만 있을 수 있습니다.
+  - 번역: 지도에는 한 번에 사이클롭스 하나만 있을 수 있습니다.
 - [M-0430](../rules/viewer.md#m-0430) `wiki-attacks-078`: "The next one can come 3h after it dies." ([출처](https://iceposeidon.com/safezone/wiki/attacks#cyclops))
-  - 번역: 다음 cyclops는 죽은 뒤 3h 후에 나올 수 있습니다.
+  - 번역: 다음 사이클롭스는 죽은 뒤 3h 후에 나올 수 있습니다.
 
 **형식 모델:**
 
-- [M-0430](../rules/viewer.md#m-0430) 해석 A: `지도에는 최대 하나이며, 다음 cyclops는 이전 것이 죽은 뒤 10800 s 후에 나올 수 있음`
+- [M-0430](../rules/viewer.md#m-0430) 해석 A: `지도에는 최대 하나이며, 다음 사이클롭스는 이전 것이 죽은 뒤 10800 s 후에 나올 수 있음`
 - [M-0430](../rules/viewer.md#m-0430) 정의역: t는 초 단위
 - [M-0430](../rules/viewer.md#m-0430) 매개변수 `cooldown`: 10800 s
 
@@ -1132,6 +1142,8 @@
 - [M-0435](../rules/viewer.md#m-0435) 매개변수 `radius`: 30 m
 - [M-0435](../rules/viewer.md#m-0435) 매개변수 `duration`: UNKNOWN, [U-0423](../unknowns.md#u-0423) 참조
 
+**따름 결과:** [T-0702](../theorems/T-0702.md)
+
 **미해결 질문:**
 
 - [U-0423](../unknowns.md#u-0423) (낮음): Reality Shield: 지속 시간이 주어지지 않았고, 'Everyone within 30m'는 반지름입니까 지름입니까, 그리고 'immune to all damage, zombies and new poison'은 이미 걸린 독이 계속 진행되는 것을 뜻합니까?
@@ -1174,7 +1186,7 @@
 
 ## 시뮬레이션 검증
 
-아직 이 페이지를 다루는 정리나 시뮬레이션이 없습니다.
+`sim/tests/`에 테스트가 있는 정리: [T-0305](../theorems/T-0305.md), [T-0408](../theorems/T-0408.md), [T-0701](../theorems/T-0701.md), [T-0702](../theorems/T-0702.md), [T-0703](../theorems/T-0703.md)
 
 ## 미해결 질문
 

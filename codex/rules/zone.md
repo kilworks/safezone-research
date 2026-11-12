@@ -64,6 +64,8 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0101](../rules/zone.md#m-0101) parameter `interval_s`: 2
 - [M-0101](../rules/zone.md#m-0101) parameter `tick_hp`: 1
 
+**Consequences:** [T-0304](../theorems/T-0304.md)
+
 **Open questions:**
 
 - [U-0003](../unknowns.md#u-0003) (medium): Zone damage: is the first tick at 5 s or at 7 s after leaving the safe zone?
@@ -143,6 +145,8 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0105](../rules/zone.md#m-0105) parameter `threshold_ms`: 8.94
 - [M-0105](../rules/zone.md#m-0105) parameter `window_s`: 60
 
+**Consequences:** [T-0704](../theorems/T-0704.md)
+
 **Open questions:**
 
 - [U-0112](../unknowns.md#u-0112) (high): Speed rule averaging: is '20mph on average over 1min' a sliding window, a fixed window, or a ratio of distance to time; is '30mph over any 15s' the same average on a 15 s window or a peak speed; are comparisons strict; are 8.94 and 13.41 m/s the exact thresholds?
@@ -209,7 +213,7 @@ Notes ([M-0535](../rules/zone.md#m-0535)): 'inside a safe zone' is checked at pl
 
 ## Simulation check
 
-No theorem or simulation covers this page yet.
+Theorems with tests in `sim/tests/`: [T-0304](../theorems/T-0304.md), [T-0704](../theorems/T-0704.md)
 
 ## Open questions
 

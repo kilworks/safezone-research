@@ -5,7 +5,7 @@ C-0100:
   - >-
     받는 피해는 10% 줄고 주는 피해는 10% 늘어납니다
   - >-
-    공격자가 Kick 라이브 중이면 본인의 bow, staff, knife, long sword, axe, machete, drone, C4, landmine, fake chest, trapped gift 타격이 10% 더 큰 피해를 주며, 내림 처리됩니다.
+    공격자가 Kick 라이브 중이면 본인의 bow, staff, knife, long sword, axe, machete, drone, C4, landmine, 가짜 상자, trapped gift 타격이 10% 더 큰 피해를 주며, 내림 처리됩니다.
 C-0101:
   summary: >-
     Mirror 반사 목록에는 trapped gift가 없지만, 피해 표는 Trapped gift 행에 Mirror forcefield(반사)를 나열합니다.
@@ -13,7 +13,7 @@ C-0101:
   - >-
     | Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (반사)
   - >-
-    Poison Dart, fake gravestone, bow, wizard staff, knife, long sword, Zarok's axe, machete, drone, C4, landmine, flashbang, fake chest만 반사하며, 자신의 폭발물은 절대 반사하지 않습니다.
+    Poison Dart, fake gravestone, bow, wizard staff, knife, long sword, Zarok's axe, machete, drone, C4, landmine, flashbang, 가짜 상자만 반사하며, 자신의 폭발물은 절대 반사하지 않습니다.
 C-0102:
   summary: >-
     Body Armor는 '모든 종류의 피해에 작동한다'는 설명과, Trapped gift 행(Body armor 없음) 및 아이템 페이지('trapped gift는 이를 무시한다')가 충돌합니다.
@@ -55,7 +55,7 @@ C-0200:
     아이템 페이지는 trapped gift를 제외한 13가지 반사 가능 공격을 나열하지만, 피해 페이지 표는 Trapped gift 행에 Mirror forcefield(반사)를 나열합니다.
   quotes:
   - >-
-    Poison Dart, fake gravestone, knife, Zarok's axe, long sword, machete, bow, staff, drone, C4, landmine, flashbang, fake chest만 반사합니다.
+    Poison Dart, fake gravestone, knife, Zarok's axe, long sword, machete, bow, staff, drone, C4, landmine, flashbang, 가짜 상자만 반사합니다.
   - >-
     | Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (반사)
 C-0201:
@@ -118,16 +118,16 @@ C-0301:
     자고 있는 참가자는 면역입니다.
 C-0400:
   summary: >-
-    차단 목록이 다릅니다. 공격 페이지는 tear gas에 Gas mask, gunship 폭탄에 Flak jacket을 들지만, 피해 페이지는 같은 피해원에 대해 Shield, Safety bubble, Sleeping Bag, Body armor도 나열합니다.
+    차단 목록이 다릅니다. 공격 페이지는 최루 가스에 Gas mask, 건십 폭탄에 Flak jacket을 들지만, 피해 페이지는 같은 피해원에 대해 Shield, Safety bubble, Sleeping Bag, Body armor도 나열합니다.
   quotes:
   - >-
     Gas mask가 이를 막습니다.
   - >-
-    | Tear gas | Shield, Safety bubble, Sleeping Bag, Gas mask, Body armor (흡수)
+    | 최루 가스 | Shield, Safety bubble, Sleeping Bag, Gas mask, Body armor (흡수)
   - >-
     Flak jacket은 폭탄 1개를 막습니다.
   - >-
-    | Gunship bomb | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (흡수)
+    | 건십 폭탄 | Shield, Safety bubble, Sleeping Bag, Protection, Flak jacket, Body armor (흡수)
 C-0401:
   summary: >-
     좀비 면역 목록에는 Necromancy가 없지만, Necromancy 페이지는 좀비에 완전히 면역이라고 합니다(피해 페이지에는 나열되어 있습니다).
@@ -212,21 +212,21 @@ C-0600:
     | Unsafe circle | Safety bubble, Guardian angel, Death Ward, Hazmat suit (둔화), Body armor (흡수)
 C-0601:
   summary: >-
-    Protection 면역: 능력치 카드는 독, drone, 미사일, C4, landmine, 공습, gunship을 나열하지만, 규칙 문장과 피해 표는 trapped gift, 공습의 불, Protection 보복을 추가합니다.
+    Protection 면역: 능력치 카드는 독, drone, 미사일, C4, landmine, 공습, 건십을 나열하지만, 규칙 문장과 피해 표는 trapped gift, 공습의 불, Protection 보복을 추가합니다.
   quotes:
   - >-
-    독, drone, 미사일, C4, landmine, 공습, gunship
+    독, drone, 미사일, C4, landmine, 공습, 건십
   - >-
-    독, drone, 미사일, C4, landmine, trapped gift, 공습과 그 불, gunship 폭탄, Protection 보복에 면역입니다.
+    독, drone, 미사일, C4, landmine, trapped gift, 공습과 그 불, 건십 폭탄, Protection 보복에 면역입니다.
   - >-
     | Trapped gift | Shield, Sleeping Bag, Protection, Mirror forcefield (반사)
 C-0602:
   summary: >-
-    Protection 전략 조언은 '대부분의 시청자 공격'에 면역이라고 하지만, 시길 페이지와 공격 페이지는 시청자 공격 8종 중 미사일, 공습, gunship에만 Protection이 면역이라고 합니다(nuke는 절반).
+    Protection 전략 조언은 '대부분의 시청자 공격'에 면역이라고 하지만, 시길 페이지와 공격 페이지는 시청자 공격 8종 중 미사일, 공습, 건십에만 Protection이 면역이라고 합니다(nuke는 절반).
   quotes:
   - >-
     시청자에게 인기가 없다면 Protection 시길을 고르는 것을 고려해 보십시오. 그러면 대부분의 시청자 공격에 면역이 됩니다.
   - >-
-    독, drone, 미사일, C4, landmine, trapped gift, 공습과 그 불, gunship 폭탄, Protection 보복에 면역입니다.
+    독, drone, 미사일, C4, landmine, trapped gift, 공습과 그 불, 건십 폭탄, Protection 보복에 면역입니다.
   - >-
-    참가자의 EMP가 활성화된 동안 시청자는 미사일, nuke, 호드, tear gas, 공습, gunship, 사이클롭스, 현상금을 보낼 수 없습니다.
+    참가자의 EMP가 활성화된 동안 시청자는 미사일, 핵, 호드, 최루 가스, 공습, 건십, 사이클롭스, 현상금을 보낼 수 없습니다.

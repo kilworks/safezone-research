@@ -61,7 +61,7 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0117](../rules/damage.md#m-0117) reading A: `result = armor(fortress(minimum(reductions(mirror(kick_bonus(immunity(h)))))))`
 - [M-0117](../rules/damage.md#m-0117) domain: h integer, h >= 0, one hit
 
-**Consequences:** [T-0003](../theorems/T-0003.md)
+**Consequences:** [T-0003](../theorems/T-0003.md), [T-0402](../theorems/T-0402.md)
 
 **Interactions:** [M-0118](../rules/damage.md#m-0118), [M-0119](../rules/damage.md#m-0119), [M-0120](../rules/damage.md#m-0120), [M-0121](../rules/damage.md#m-0121), [M-0122](../rules/damage.md#m-0122), [M-0123](../rules/damage.md#m-0123), [M-0124](../rules/damage.md#m-0124), [M-0125](../rules/damage.md#m-0125)
 
@@ -86,6 +86,8 @@ Label: `CONDITIONAL`. Sigils: all.
 **Formal model:**
 
 - [M-0118](../rules/damage.md#m-0118) reading A: `if any blocker of the source (damage table) applies: d := 0 and stop`
+
+**Consequences:** [T-0402](../theorems/T-0402.md)
 
 **Interactions:** [M-0117](../rules/damage.md#m-0117)
 
@@ -221,7 +223,7 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0123](../rules/damage.md#m-0123) domain: d integer >= 0
 - [M-0123](../rules/damage.md#m-0123) parameter `minimum_hp`: 1
 
-**Consequences:** [T-0004](../theorems/T-0004.md)
+**Consequences:** [T-0004](../theorems/T-0004.md), [T-0402](../theorems/T-0402.md), [T-0703](../theorems/T-0703.md)
 
 **Interactions:** [M-0117](../rules/damage.md#m-0117), [M-0122](../rules/damage.md#m-0122)
 
@@ -316,6 +318,8 @@ Label: `DOCUMENTED`. Sigils: all.
 **Formal model:**
 
 - [M-0129](../rules/damage.md#m-0129) reading A: `if vulnerable: Shield and Safety bubble are removed from the blocker set`
+
+**Consequences:** [T-0402](../theorems/T-0402.md)
 
 Notes ([M-0129](../rules/damage.md#m-0129)): The Vulnerability Dart itself is another page.
 
@@ -524,6 +528,8 @@ Label: `CONDITIONAL`. Sigils: all.
 
 - [M-0145](../rules/damage.md#m-0145) reading A: `blockers(Zombie drain) = {Shield: blocks; Safety bubble: blocks; Sleeping Bag: blocks; Necromancy / Repellent: blocks; Body armor: absorbs}`
 - [M-0145](../rules/damage.md#m-0145) domain: one hit of source 'Zombie drain'
+
+**Consequences:** [T-0702](../theorems/T-0702.md)
 
 **Interactions:** [M-0118](../rules/damage.md#m-0118)
 
@@ -946,6 +952,8 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0165](../rules/damage.md#m-0165) reading A: `blockers(Eddie's Potion backfire) = {Shield: blocks; Safety bubble: blocks; Sleeping Bag: blocks; Body armor: absorbs}`
 - [M-0165](../rules/damage.md#m-0165) domain: one hit of source 'Eddie's Potion backfire'
 
+**Consequences:** [T-0402](../theorems/T-0402.md)
+
 **Interactions:** [M-0118](../rules/damage.md#m-0118)
 
 **Open questions:**
@@ -1019,7 +1027,7 @@ Label: `CONDITIONAL`. Sigils: ingenuity.
 - [M-0529](../rules/damage.md#m-0529) parameter `durability_hp`: 30
 - [M-0529](../rules/damage.md#m-0529) parameter `duration_s`: UNKNOWN, see [U-0526](../unknowns.md#u-0526)
 
-**Consequences:** [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md)
+**Consequences:** [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md), [T-0305](../theorems/T-0305.md)
 
 **Interactions:** [M-0511](../rules/sigil.md#m-0511), [M-0522](../rules/items.md#m-0522)
 
@@ -1090,6 +1098,8 @@ Label: `CONDITIONAL`. Sigils: trolling.
 - [M-0536](../rules/damage.md#m-0536) parameter `grace_s`: 0
 - [M-0536](../rules/damage.md#m-0536) parameter `first_hit`: one interval after entry
 
+**Consequences:** [T-0305](../theorems/T-0305.md)
+
 **Interactions:** [M-0537](../rules/items.md#m-0537), [M-0538](../rules/damage.md#m-0538)
 
 **Open questions:**
@@ -1150,7 +1160,7 @@ Notes ([M-0643](../rules/damage.md#m-0643)): Order against the Kick live reducti
 
 ## Simulation check
 
-Theorems with tests in `sim/tests/`: [T-0001](../theorems/T-0001.md), [T-0002](../theorems/T-0002.md), [T-0003](../theorems/T-0003.md), [T-0004](../theorems/T-0004.md), [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md)
+Theorems with tests in `sim/tests/`: [T-0001](../theorems/T-0001.md), [T-0002](../theorems/T-0002.md), [T-0003](../theorems/T-0003.md), [T-0004](../theorems/T-0004.md), [T-0007](../theorems/T-0007.md), [T-0008](../theorems/T-0008.md), [T-0305](../theorems/T-0305.md), [T-0402](../theorems/T-0402.md), [T-0702](../theorems/T-0702.md), [T-0703](../theorems/T-0703.md)
 
 ## Open questions
 

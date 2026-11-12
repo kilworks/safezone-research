@@ -82,6 +82,8 @@
 - [M-0208](../rules/healing.md#m-0208) 매개변수 `loss_fraction`: 최대 HP의 30%
 - [M-0208](../rules/healing.md#m-0208) 매개변수 `rounding`: UNKNOWN, [U-0204](../unknowns.md#u-0204) 참조
 
+**따름 결과:** [T-0406](../theorems/T-0406.md)
+
 **상호작용:** [M-0207](../rules/healing.md#m-0207)
 
 **미해결 질문:**
@@ -145,6 +147,8 @@
 
 - [M-0234](../rules/healing.md#m-0234) 해석 A: `bandage를 사용하면 Deep Cut 출혈이 끝남`
 - [M-0234](../rules/healing.md#m-0234) 정의역: 출혈 불리언
+
+**따름 결과:** [T-0303](../theorems/T-0303.md), [T-0305](../theorems/T-0305.md)
 
 **상호작용:** [M-0233](../rules/healing.md#m-0233)
 
@@ -259,6 +263,8 @@
 - [M-0645](../rules/healing.md#m-0645) 해석 C: `heal -> h/2 (정확히)`
 - [M-0645](../rules/healing.md#m-0645) 정의역: h는 정수: 체력 포션 등급 5, 10, 20, 40, Eddie의 포션은 최대 HP의 50%
 
+**따름 결과:** [T-0402](../theorems/T-0402.md)
+
 **미해결 질문:**
 
 - [U-0617](../unknowns.md#u-0617) (높음): Protection의 "Potions heal you 50% less": 어떤 회복이 "포션"입니까(회복 포션, Eddie의 포션, God's Fruit, 붕대, 회복 서클)?
@@ -316,6 +322,8 @@
 - [M-0651](../rules/healing.md#m-0651) 매개변수 `cooldown_s`: 600
 - [M-0651](../rules/healing.md#m-0651) 매개변수 `range_m`: UNKNOWN, [U-0622](../unknowns.md#u-0622) 참조
 
+**따름 결과:** [T-0305](../theorems/T-0305.md)
+
 **미해결 질문:**
 
 - [U-0622](../unknowns.md#u-0622) (보통): Healing 능력 "Heal a nearby contestant": 범위는 얼마입니까?
@@ -342,7 +350,7 @@
 - [M-0652](../rules/healing.md#m-0652) 매개변수 `regen_hp`: 1
 - [M-0652](../rules/healing.md#m-0652) 매개변수 `period_s`: 1800
 
-**따름 결과:** [T-0011](../theorems/T-0011.md)
+**따름 결과:** [T-0011](../theorems/T-0011.md), [T-0305](../theorems/T-0305.md)
 
 **미해결 질문:**
 
@@ -352,7 +360,7 @@
 
 ## 시뮬레이션 검증
 
-`sim/tests/`에 테스트가 있는 정리: [T-0011](../theorems/T-0011.md)
+`sim/tests/`에 테스트가 있는 정리: [T-0011](../theorems/T-0011.md), [T-0303](../theorems/T-0303.md), [T-0305](../theorems/T-0305.md), [T-0402](../theorems/T-0402.md), [T-0406](../theorems/T-0406.md)
 
 ## 미해결 질문
 

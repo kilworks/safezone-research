@@ -46,6 +46,8 @@ Label: `DOCUMENTED`. Sigils: piety.
 - [M-0500](../rules/sigil.md#m-0500) parameter `slots`: 3
 - [M-0500](../rules/sigil.md#m-0500) parameter `max_hp_delta_vs_base`: +10
 
+**Consequences:** [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
+
 **Interactions:** [M-0506](../rules/items.md#m-0506)
 
 Notes ([M-0500](../rules/sigil.md#m-0500)): Stat labels are read as pairs (label 'Max HP' then '110 HP'; label 'Slots' then '3'). The sentence 'Your max HP is 10 HP higher' agrees with 110 against a base of 100. The merchant page raises the maximum HP cap to 220 for Piety; that is the merchant formalizer's record. Starting HP equal to max HP is not stated on this page.
@@ -91,6 +93,8 @@ Label: `DOCUMENTED`. Sigils: greed.
 - [M-0508](../rules/sigil.md#m-0508) parameter `max_hp`: 90
 - [M-0508](../rules/sigil.md#m-0508) parameter `slots`: 3
 - [M-0508](../rules/sigil.md#m-0508) parameter `max_hp_delta_vs_base`: -10
+
+**Consequences:** [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
 
 Notes ([M-0508](../rules/sigil.md#m-0508)): Merchant HP upgrades are +10 each with a cap of 200 (220 for Piety); how many Greed purchases reach the cap is a merchant-page question (90 + 10k = 200 needs k = 11).
 
@@ -197,6 +201,8 @@ Label: `CONDITIONAL`. Sigils: ingenuity.
 - [M-0515](../rules/sigil.md#m-0515) parameter `craft_slots`: 5
 - [M-0515](../rules/sigil.md#m-0515) parameter `slot_cap_with_upgrades`: 12
 
+**Consequences:** [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
+
 **Interactions:** [M-0520](../rules/items.md#m-0520), [M-0522](../rules/items.md#m-0522)
 
 **Open questions:**
@@ -253,6 +259,8 @@ Label: `DOCUMENTED`. Sigils: trolling.
 - [M-0530](../rules/sigil.md#m-0530) parameter `max_hp`: 100
 - [M-0530](../rules/sigil.md#m-0530) parameter `slots`: 3
 
+**Consequences:** [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
+
 Notes ([M-0530](../rules/sigil.md#m-0530)): Labels read in pairs (Max HP then 100 HP, Slots then 3).
 
 <a id="m-0600"></a>
@@ -288,6 +296,8 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0601](../rules/sigil.md#m-0601) domain: t_pick in seconds from event start
 - [M-0601](../rules/sigil.md#m-0601) parameter `sigil_pick_deadline_s`: UNKNOWN, see [U-0627](../unknowns.md#u-0627)
 
+**Consequences:** [T-0306](../theorems/T-0306.md)
+
 **Open questions:**
 
 - [U-0627](../unknowns.md#u-0627) (medium): Sigil pick: is there a deadline after the event start, and what applies to a contestant who has not picked (base stats, no ability)?
@@ -313,6 +323,8 @@ Label: `DOCUMENTED`. Sigils: death.
 - [M-0602](../rules/sigil.md#m-0602) domain: start of event
 - [M-0602](../rules/sigil.md#m-0602) parameter `max_hp`: 100
 - [M-0602](../rules/sigil.md#m-0602) parameter `inventory_slots`: 3
+
+**Consequences:** [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
 
 Notes ([M-0602](../rules/sigil.md#m-0602)): Merchant upgrades (+10 max HP, inventory slots) change these during play; this record is the base value only. The merchant page caps slots at 13, or 20 for Endurance.
 
@@ -401,6 +413,8 @@ Label: `DOCUMENTED`. Sigils: healing.
 - [M-0606](../rules/sigil.md#m-0606) domain: start of event
 - [M-0606](../rules/sigil.md#m-0606) parameter `max_hp`: 100
 - [M-0606](../rules/sigil.md#m-0606) parameter `inventory_slots`: 3
+
+**Consequences:** [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md)
 
 Notes ([M-0606](../rules/sigil.md#m-0606)): Merchant upgrades (+10 max HP, inventory slots) change these during play; this record is the base value only. The merchant page caps slots at 13, or 20 for Endurance.
 
@@ -533,6 +547,8 @@ Label: `DOCUMENTED`. Sigils: protection.
 
 - [M-0640](../rules/sigil.md#m-0640) reading A: `blocked(source, c) = true for source in {poison, drone, missile, C4, landmine, trapped gift, airstrike impact, airstrike fire, gunship bomb, Protection retribution} when sigil(c) = protection`
 
+**Consequences:** [T-0707](../theorems/T-0707.md)
+
 **Contradictions:** [C-0601](../unknowns.md#c-0601), [C-0602](../unknowns.md#c-0602)
 
 Notes ([M-0640](../rules/sigil.md#m-0640)): The full sentence and the damage table agree. The label line is shorter, see [C-0601](../unknowns.md#c-0601). Mentions of immunity on the attacks page (missile, airstrike, gunship) agree. Nuke is not immune: [M-0643](../rules/damage.md#m-0643).
@@ -608,7 +624,7 @@ Notes ([M-0647](../rules/sigil.md#m-0647)): Other Protection contestants are imm
 
 ## Simulation check
 
-No theorem or simulation covers this page yet.
+Theorems with tests in `sim/tests/`: [T-0306](../theorems/T-0306.md), [T-0400](../theorems/T-0400.md), [T-0703](../theorems/T-0703.md), [T-0707](../theorems/T-0707.md)
 
 ## Open questions
 
