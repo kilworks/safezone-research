@@ -16,7 +16,7 @@
 
 규칙이 불안정한 부분은 다음과 같습니다. 위키는 Robot 피해를 무엇이 막는지에 대해 ([M-0524](../rules/damage.md#m-0524), [C-0500](../unknowns.md#c-0500)), 그리고 Reality Shield가 언세이프 서클을 막는지에 대해 ([M-0538](../rules/damage.md#m-0538), [C-0502](../unknowns.md#c-0502)) 스스로 모순됩니다. 어떤 출처가 파이프라인을 거치는지는 미해결 질문입니다 ([U-0002](../unknowns.md#u-0002)). 끝수 처리 관련 질문도 미해결입니다. Kick 감소 ([U-0001](../unknowns.md#u-0001))와 "내림"이 적용되는 위치 ([U-0100](../unknowns.md#u-0100))가 그렇습니다. 방어구가 초과 피해를 통과시키는지 ([U-0101](../unknowns.md#u-0101)), 여러 Fortress가 차례로 흡수하는지 ([U-0102](../unknowns.md#u-0102)), 반사된 타격이 공격자의 파이프라인을 사용하는지 ([U-0005](../unknowns.md#u-0005)), 여러 차단 수단이 적용될 때 어느 것이 사용되는지 ([U-0120](../unknowns.md#u-0120))도 미해결입니다.
 
-이 페이지는 규칙 48개(11 `DOCUMENTED`, 35 `CONDITIONAL`, 2 `UNKNOWN`)를 모았습니다. 아래의 모든 규칙은 공식 위키를 한 글자도 바꾸지 않고 인용하고 형식적 해석을 붙입니다. 문구가 여러 해석을 허용하면 모든 해석을 나열하고 질문은 열린 채로 둡니다.
+이 페이지는 규칙 48개(14 `DOCUMENTED`, 32 `CONDITIONAL`, 2 `UNKNOWN`)를 모았습니다. 아래의 모든 규칙은 공식 위키를 한 글자도 바꾸지 않고 인용하고 형식적 해석을 붙입니다. 문구가 여러 해석을 허용하면 모든 해석을 나열하고 질문은 열린 채로 둡니다.
 
 ## 규칙
 
@@ -41,7 +41,7 @@
 **미해결 질문:**
 
 - [U-0001](../unknowns.md#u-0001) (치명적): 방어자의 Kick 라이브 10% 감소는 결과를 내림하는 것입니까(A), 아니면 제거되는 10%를 내림하는 것입니까(B)?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 개별 공격이 아닌 피해(존 틱, 언세이프 서클(unsafe circle), robot, 독, 최루 가스, 출혈, 좀비 드레인(drain), Eddie의 손실, Retribution)에 파이프라인의 4b단계(방어자의 Kick 라이브 감소), 5단계(최소 1 HP), 6단계(fortress)가 적용됩니까? 그리고 가드 좀비 드레인과 부활 비용은 애초에 피해의 한 종류입니까(둘 다 피해 표에 행이 없습니다)?
 
 **모순:** [C-0100](../unknowns.md#c-0100)
 
@@ -69,7 +69,7 @@
 
 **미해결 질문:**
 
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 개별 공격이 아닌 피해(존 틱, 언세이프 서클(unsafe circle), robot, 독, 최루 가스, 출혈, 좀비 드레인(drain), Eddie의 손실, Retribution)에 파이프라인의 4b단계(방어자의 Kick 라이브 감소), 5단계(최소 1 HP), 6단계(fortress)가 적용됩니까? 그리고 가드 좀비 드레인과 부활 비용은 애초에 피해의 한 종류입니까(둘 다 피해 표에 행이 없습니다)?
 - [U-0103](../unknowns.md#u-0103) (높음): 'A hit that gets through always does at least 1 HP'는 7단계 중 5단계입니다. fortress(6단계)와 armor(7단계)가 최종 HP 손실을 여전히 0으로 줄일 수 있습니까?
 
 메모 ([M-0117](../rules/damage.md#m-0117)): 어떤 피해 원천이 타격에 해당하는지는 [U-0002](../unknowns.md#u-0002)입니다. 단계는 레코드 하나씩 모델링했습니다. 118 면역, 119 Kick 보너스, 120 mirror, 121과 122 감소, 123 최소, 124 fortress, 125 armor입니다.
@@ -211,7 +211,7 @@
 
 - [U-0001](../unknowns.md#u-0001) (치명적): 방어자의 Kick 라이브 10% 감소는 결과를 내림하는 것입니까(A), 아니면 제거되는 10%를 내림하는 것입니까(B)?
 - [U-0100](../unknowns.md#u-0100) (낮음): 4단계의 'The damage left is rounded down'은 어디에 적용됩니까? Protection 50% 결과에만 적용됩니까, 아니면 모든 감소 이후의 최종 내림 한 번으로 적용되며 Kick 10%는 내림하지 않은 값에서 계산됩니까?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 개별 공격이 아닌 피해(존 틱, 언세이프 서클(unsafe circle), robot, 독, 최루 가스, 출혈, 좀비 드레인(drain), Eddie의 손실, Retribution)에 파이프라인의 4b단계(방어자의 Kick 라이브 감소), 5단계(최소 1 HP), 6단계(fortress)가 적용됩니까? 그리고 가드 좀비 드레인과 부활 비용은 애초에 피해의 한 종류입니까(둘 다 피해 표에 행이 없습니다)?
 
 메모 ([M-0122](../rules/damage.md#m-0122)): Protection 단계 이후에 적용됩니다 (명시된 순서). d가 10의 배수가 아니고 d >= 2이면 언제나 A와 B는 1 HP 차이가 납니다.
 
@@ -242,7 +242,7 @@
 **미해결 질문:**
 
 - [U-0103](../unknowns.md#u-0103) (높음): 'A hit that gets through always does at least 1 HP'는 7단계 중 5단계입니다. fortress(6단계)와 armor(7단계)가 최종 HP 손실을 여전히 0으로 줄일 수 있습니까?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 개별 공격이 아닌 피해(존 틱, 언세이프 서클(unsafe circle), robot, 독, 최루 가스, 출혈, 좀비 드레인(drain), Eddie의 손실, Retribution)에 파이프라인의 4b단계(방어자의 Kick 라이브 감소), 5단계(최소 1 HP), 6단계(fortress)가 적용됩니까? 그리고 가드 좀비 드레인과 부활 비용은 애초에 피해의 한 종류입니까(둘 다 피해 표에 행이 없습니다)?
 
 메모 ([M-0123](../rules/damage.md#m-0123)): '언제나'는 뒤따르는 6단계와 7단계와 취지상 충돌합니다 ([U-0103](../unknowns.md#u-0103)).
 
@@ -436,10 +436,9 @@
 
 **미해결 질문:**
 
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 - [U-0003](../unknowns.md#u-0003) (보통): 존 피해: 세이프 존을 벗어난 뒤 첫 틱은 5 s입니까, 7 s입니까?
 
-메모 ([M-0140](../rules/damage.md#m-0140)): 주기적 존 피해: Body armor와 Kick이 적용되는지는 [U-0002](../unknowns.md#u-0002)에서 다룹니다.
+메모 ([M-0140](../rules/damage.md#m-0140)): 주기적 존 피해: Body armor가 흡수합니다(이 행과 피해 페이지의 'Body Armor works on every kind of damage'). 존 틱에 Kick 감소, 최소 1 HP, fortress가 적용되는지는 [U-0002](../unknowns.md#u-0002)에서 다루며 [M-0101](../rules/zone.md#m-0101)이 이를 담고 있습니다.
 
 <a id="m-0141"></a>
 
@@ -461,7 +460,6 @@
 
 **미해결 질문:**
 
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 - [U-0123](../unknowns.md#u-0123) (보통): 피해 표의 Hazmat suit '(slows)': 느려짐은 존 피해, 언세이프 서클(unsafe circle) 피해, Robot 피해에 어떤 영향을 줍니까(틱 간격 배수, 피해 비율)?
 
 **모순:** [C-0103](../unknowns.md#c-0103)
@@ -488,7 +486,6 @@
 
 **미해결 질문:**
 
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 - [U-0123](../unknowns.md#u-0123) (보통): 피해 표의 Hazmat suit '(slows)': 느려짐은 존 피해, 언세이프 서클(unsafe circle) 피해, Robot 피해에 어떤 영향을 줍니까(틱 간격 배수, 피해 비율)?
 
 메모 ([M-0142](../rules/damage.md#m-0142)): Robot 피해는 Shield ([M-0128](../rules/damage.md#m-0128))로도 Sleeping Bag ([M-0132](../rules/items.md#m-0132))으로도 막히지 않습니다.
@@ -522,7 +519,7 @@
 
 ### M-0144: 피해 원천 'Tear gas'와 이를 막는 수단
 
-라벨: `CONDITIONAL`. 시길: all.
+라벨: `DOCUMENTED`. 시길: all.
 
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
@@ -536,17 +533,13 @@
 
 **상호작용:** [M-0118](../rules/damage.md#m-0118)
 
-**미해결 질문:**
-
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
-
 메모 ([M-0144](../rules/damage.md#m-0144)): 최루 가스: Gas mask가 열거되어 있으며 [M-0131](../rules/items.md#m-0131)과 일치합니다.
 
 <a id="m-0145"></a>
 
 ### M-0145: 피해 원천 'Zombie drain'과 이를 막는 수단
 
-라벨: `CONDITIONAL`. 시길: all.
+라벨: `DOCUMENTED`. 시길: all.
 
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
@@ -561,10 +554,6 @@
 **따름 결과:** [T-0702](../theorems/T-0702.md)
 
 **상호작용:** [M-0118](../rules/damage.md#m-0118)
-
-**미해결 질문:**
-
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 메모 ([M-0145](../rules/damage.md#m-0145)): Zombie drain (주기적). 'Necromancy / Repellent'는 Necromancy 시길 또는 Zombie repellent로 해석합니다.
 
@@ -717,7 +706,7 @@
 
 ### M-0152: 피해 원천 'Deep Cut bleeding': 이를 막는 수단
 
-라벨: `CONDITIONAL`. 시길: all.
+라벨: `DOCUMENTED`. 시길: all.
 
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
@@ -730,10 +719,6 @@
 - [M-0152](../rules/damage.md#m-0152) 정의역: 원천 'Deep Cut bleeding'의 타격 1회
 
 **상호작용:** [M-0118](../rules/damage.md#m-0118)
-
-**미해결 질문:**
-
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 메모 ([M-0152](../rules/damage.md#m-0152)): Deep Cut bleeding(주기적).
 
@@ -1008,7 +993,6 @@
 **미해결 질문:**
 
 - [U-0004](../unknowns.md#u-0004) (높음): Eddie의 포션 30% 손실이 사망을 일으킬 수 있으며, armor, fortress 또는 Kick 상태가 여기에 적용됩니까?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
 
 메모 ([M-0165](../rules/damage.md#m-0165)): 시드 [U-0004](../unknowns.md#u-0004) 메모와 일치합니다: Shield, Safety bubble, Sleeping Bag, Body armor가 이를 막으며, 이는 차단에 대한 해석 B를 뒷받침합니다.
 
@@ -1130,7 +1114,7 @@
 - [U-0531](../unknowns.md#u-0531) (보통): 가짜 상자 잠금 "1h 동안 상자를 열 수 없음": 보급 상자와 크레이트도 막습니까, 두 번째로 열면 연장됩니까, 그리고 Shield 외의 방어 수단(Safety bubble, Sleeping Bag, Body armor)도 잠금은 그대로 남겨 둡니까?
 - [U-0532](../unknowns.md#u-0532) (보통): Trolling 가짜 상자 "5 HP를 회복합니다": 열 때 고정된 5 HP입니까, 실제로 들어간 피해입니까, 그리고 피해자가 보호받거나 상자가 반사된 경우에도 발생합니까?
 - [U-0001](../unknowns.md#u-0001) (치명적): 방어자의 Kick 라이브 10% 감소는 결과를 내림하는 것입니까(A), 아니면 제거되는 10%를 내림하는 것입니까(B)?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 개별 공격이 아닌 피해(존 틱, 언세이프 서클(unsafe circle), robot, 독, 최루 가스, 출혈, 좀비 드레인(drain), Eddie의 손실, Retribution)에 파이프라인의 4b단계(방어자의 Kick 라이브 감소), 5단계(최소 1 HP), 6단계(fortress)가 적용됩니까? 그리고 가드 좀비 드레인과 부활 비용은 애초에 피해의 한 종류입니까(둘 다 피해 표에 행이 없습니다)?
 
 메모 ([M-0533](../rules/damage.md#m-0533)): 피해 페이지 행: 가짜 상자는 Shield, Safety bubble, Sleeping Bag, Mirror forcefield(반사), Body armor(흡수)가 막으며, Kick 보너스 목록에 가짜 상자가 포함됩니다. Protection 참가자도 가짜 상자 피해를 입습니다. Mirror forcefield가 있으면 잠금을 포함한 전체 효과가 troll에게 되돌아갑니다 (아이템 페이지).
 
@@ -1168,7 +1152,7 @@
 
 - [U-0537](../unknowns.md#u-0537) (높음): 언세이프 서클(unsafe circle) 피해 시계: 첫 타격은 진입마다 2 s 뒤입니까(나갈 때 타이머 초기화), 아니면 전역 2 s 위상이 계속됩니까? 서클 중 세이프 존 안쪽 부분과 바깥 부분 사이를 이동하면 초기화됩니까?
 - [U-0003](../unknowns.md#u-0003) (보통): 존 피해: 세이프 존을 벗어난 뒤 첫 틱은 5 s입니까, 7 s입니까?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 개별 공격이 아닌 피해(존 틱, 언세이프 서클(unsafe circle), robot, 독, 최루 가스, 출혈, 좀비 드레인(drain), Eddie의 손실, Retribution)에 파이프라인의 4b단계(방어자의 Kick 라이브 감소), 5단계(최소 1 HP), 6단계(fortress)가 적용됩니까? 그리고 가드 좀비 드레인과 부활 비용은 애초에 피해의 한 종류입니까(둘 다 피해 표에 행이 없습니다)?
 
 메모 ([M-0536](../rules/damage.md#m-0536)): Hazmat suit는 존 피해 간격마다 2 s를 늘리며(아이템 페이지), 피해 페이지에도 언세이프 서클 피해를 늦추는 것으로 나열되어 있습니다. Body armor는 이를 흡수합니다. 일반 존 피해의 첫 틱은 [U-0003](../unknowns.md#u-0003)입니다.
 

@@ -246,7 +246,7 @@ Label: `CONDITIONAL`. Sigils: necromancy.
 
 - [U-0615](../unknowns.md#u-0615) (medium): Guard zombie 'up to 30 HP per contestant': per guard zombie, or shared across all guard zombies on the same contestant? Does it stand still all hour?
 - [U-0008](../unknowns.md#u-0008) (high): Zombie 30 HP cap: per zombie lifetime, per encounter, or per day? What happens when a zombie dies?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 Notes ([M-0633](../rules/zombies.md#m-0633)): The zombies page gives no duration for the guard zombie; the sigil page gives 1h. First drain tick timing is not stated. Owner immunity: see [M-0636](../rules/zombies.md#m-0636).
 
@@ -302,7 +302,7 @@ Label: `CONDITIONAL`. Sigils: necromancy.
 
 - [U-0613](../unknowns.md#u-0613) (high): Necromancy 'The HP goes to you': is the gain the HP the victim actually lost, is it capped at the owner's max HP, and does a blocked or armor-absorbed drain give HP and tokens?
 - [U-0008](../unknowns.md#u-0008) (high): Zombie 30 HP cap: per zombie lifetime, per encounter, or per day? What happens when a zombie dies?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 Notes ([M-0635](../rules/zombies.md#m-0635)): Cap semantics (lifetime or per encounter) is [U-0008](../unknowns.md#u-0008). Nearest-contestant chase at 1.4 m/s is in the zombies page (other family).
 

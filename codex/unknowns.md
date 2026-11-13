@@ -31,15 +31,19 @@ Why it matters ([U-0001](unknowns.md#u-0001)): Changes every small hit by up to 
 
 ### U-0002
 
-[U-0002](unknowns.md#u-0002): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)? Status: `open`.
+[U-0002](unknowns.md#u-0002): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)? Status: `open`.
 
-Why it matters ([U-0002](unknowns.md#u-0002)): Decides whether Kick-live reduction, the 1 HP minimum, fortress and armor apply to periodic and self-inflicted damage.
+Why it matters ([U-0002](unknowns.md#u-0002)): Blockers and Body armor no longer depend on this question (see the narrowing below). What is left changes the loss of a Kick-live contestant from Retribution (18 or 20 HP), from Eddie's potion (27 or 30 HP at 100 max HP) and from the 2 HP ticks of tear gas and guard zombies (1 or 2 HP, under [U-0001](unknowns.md#u-0001) reading A only), whether a fortress absorbs zone ticks, and whether the revive cost can be reduced or absorbed. A 1 HP tick stays 1 HP under readings A and B ([T-0002](theorems/T-0002.md), [T-0004](theorems/T-0004.md)).
 
-- [U-0002](unknowns.md#u-0002) reading A: Every HP loss is a hit and goes through all 7 steps.
-- [U-0002](unknowns.md#u-0002) reading B: Only discrete attacks are hits; periodic drains and costs bypass the pipeline.
-- [U-0002](unknowns.md#u-0002) reading C: Mixed, source by source.
-- [U-0002](unknowns.md#u-0002) resolution: VOD: live contestant outside the zone, HP loss per 2 s tick (1 under both readings of [U-0001](unknowns.md#u-0001), so watch armor durability instead).
-- [U-0002](unknowns.md#u-0002) resolution: VOD: armor durability after zombie drain or poison.
+- [U-0002](unknowns.md#u-0002) reading A: Every row of the damage table is a hit, so steps 4b, 5 and 6 apply to all of them.
+- [U-0002](unknowns.md#u-0002) reading B: Steps 4b, 5 and 6 apply to discrete attacks only; periodic and self-inflicted damage gets steps 1 and 7 and nothing else.
+- [U-0002](unknowns.md#u-0002) reading C: Mixed, source by source or step by step.
+- [U-0002](unknowns.md#u-0002) resolution: VOD: a Protection contestant dies within 30m of a Kick-live contestant who has no armor and stands in no fortress: the victim loses 18 HP (step 4b applies) or 20 HP (it does not), under both readings of [U-0001](unknowns.md#u-0001).
+- [U-0002](unknowns.md#u-0002) resolution: VOD: a Kick-live contestant with 100 max HP loses the gamble of Eddie's potion: 27 HP or 30 HP.
+- [U-0002](unknowns.md#u-0002) resolution: VOD: a contestant stands in a fortress outside every safe zone: the durability of the fortress falls (step 6 applies) or the HP of the contestant does.
+- [U-0002](unknowns.md#u-0002) resolution: VOD: a reviver who wears Body armor: the armor durability falls by 5 (the cost is damage) or the HP does.
+- [U-0002](unknowns.md#u-0002) resolution: Not a test: a 1 HP tick (zone, poison, zombie drain) on a contestant without armor reads 1 HP under readings A and B ([T-0002](theorems/T-0002.md), [T-0004](theorems/T-0004.md)).
+- [U-0002](unknowns.md#u-0002) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. Settled: (1) step 1 applies source by source: zone, unsafe circle, robot, poison, tear gas, zombie drain, bleeding, Eddie's backfire and Retribution each have a row of blockers in the damage table (wiki-damage-005 to wiki-damage-010, wiki-damage-017, wiki-damage-030, wiki-damage-031); (2) step 7 applies to all of them: each of those rows ends with "Body armor (absorbs)" and wiki-damage-071 says "Body Armor works on every kind of damage", which refutes the former reading B (periodic drains bypass the whole pipeline) for armor; (3) step 2 does not apply: the Kick bonus of the attacker is a closed list of weapons (wiki-damage-038) that holds none of these sources; (4) step 3 does not apply: a Mirror forcefield "only reflects" a closed list (wiki-damage-070) that holds none of them (a Poison Dart is reflected when it lands, its ticks are not); (5) step 4a does not apply: the Protection cut is for a nuke only (wiki-damage-044). Still open: steps 4b, 5 and 6 for these sources, whether the guard zombie drain is a "Zombie drain", and the revive cost, which the text calls a cost.
 
 ### U-0009
 

@@ -564,7 +564,7 @@ Label: `CONDITIONAL`. Sigils: all.
 
 - [U-0332](../unknowns.md#u-0332) (medium): Deep Cut: when is the first bleeding tick, does a new hit while bleeding reset the timer, how long does the charge last unused, and does a bleeding tick count as a hit?
 - [U-0308](../unknowns.md#u-0308) (high): Is a use (weapon use, arrow, Deep Cut charge, enchanted use) consumed by an attack that is blocked, reflected, out of range or missing?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 Notes ([M-0336](../rules/weapons.md#m-0336)): Staff, C4 and landmine are not in the list. Bandage and Healing cures are stated on the Bandage and Healing pages.
 
@@ -674,7 +674,7 @@ Label: `CONDITIONAL`. Sigils: ingenuity.
 **Open questions:**
 
 - [U-0527](../unknowns.md#u-0527) (medium): Robot 'deals 1 HP every 2s to other players within 10m': is the 2 s clock global or per target, and does the first hit come immediately or after one interval?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 **Contradictions:** [C-0500](../unknowns.md#c-0500)
 

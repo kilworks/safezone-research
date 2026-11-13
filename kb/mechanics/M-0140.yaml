@@ -18,6 +18,5 @@ depends_on:
 interacts_with: []
 label: CONDITIONAL
 open_unknowns:
-- U-0002
 - U-0003
-notes: 'Periodic zone damage: whether Body armor and Kick apply is U-0002.'
+notes: 'Periodic zone damage. Body armor absorbs it: this row and ''Body Armor works on every kind of damage'' on the damage page. The Kick reduction, the 1 HP minimum and the fortress for zone ticks are U-0002, carried by M-0101.'

@@ -18,6 +18,5 @@ depends_on:
 interacts_with: []
 label: CONDITIONAL
 open_unknowns:
-- U-0002
 - U-0123
 notes: Robot damage is not blocked by Shield (M-0128) nor by Sleeping Bag (M-0132).

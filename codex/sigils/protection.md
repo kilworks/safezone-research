@@ -180,7 +180,7 @@ Label: `CONDITIONAL`. Sigils: protection.
 **Open questions:**
 
 - [U-0620](../unknowns.md#u-0620) (medium): Protection blood tokens from blocked hits: do airstrike fire ticks, a landmine of its own, and the unlisted immunities (trapped gift, poison, retribution) pay tokens?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 Notes ([M-0642](../rules/economy.md#m-0642)): Poison, trapped gift and Protection retribution are in the immunity list but not in the token list. The nuke bonus is 20 tokens. Whether a sigil landmine of its own pays is not stated.
 
@@ -229,7 +229,7 @@ Label: `CONDITIONAL`. Sigils: protection.
 **Open questions:**
 
 - [U-0621](../unknowns.md#u-0621) (medium): Protection landmine ability: ready at the sigil pick or after 2h, does the 2h start at placement, and is it the item Landmine (stack of 5, Kick live bonus, enchant, visibility)?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 Notes ([M-0644](../rules/sigil.md#m-0644)): The 15 HP and 10 m match the item landmine. Protection is itself immune to landmines, so its own mine does not hurt it.
 
@@ -304,7 +304,7 @@ Label: `CONDITIONAL`. Sigils: protection.
 
 **Open questions:**
 
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 Notes ([M-0647](../rules/sigil.md#m-0647)): Other Protection contestants are immune. Whether a Protection contestant revived later is unaffected is not stated. Whether the killer or the dying contestant is included is not stated.
 

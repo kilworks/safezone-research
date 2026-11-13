@@ -16,7 +16,5 @@ formal:
 depends_on:
 - M-0118
 interacts_with: []
-label: CONDITIONAL
-open_unknowns:
-- U-0002
+label: DOCUMENTED
 notes: Zombie drain (periodic). 'Necromancy / Repellent' read as Necromancy sigil or Zombie repellent.

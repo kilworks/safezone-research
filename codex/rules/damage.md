@@ -16,7 +16,7 @@ What each defense is good against, as the table says: Flak jacket blocks missile
 
 Where the rules are shaky: the wiki disagrees with itself on what stops robot damage ([M-0524](../rules/damage.md#m-0524), [C-0500](../unknowns.md#c-0500)) and on whether a Reality Shield stops the unsafe circle ([M-0538](../rules/damage.md#m-0538), [C-0502](../unknowns.md#c-0502)). Which sources even go through the pipeline is open ([U-0002](../unknowns.md#u-0002)). Rounding questions are open, for the Kick reduction ([U-0001](../unknowns.md#u-0001)) and where "rounded down" sits ([U-0100](../unknowns.md#u-0100)). It is open whether armor passes excess damage through ([U-0101](../unknowns.md#u-0101)), whether several fortresses absorb in turn ([U-0102](../unknowns.md#u-0102)), whether a mirrored hit uses the attacker's pipeline ([U-0005](../unknowns.md#u-0005)), and which blocker is used when several apply ([U-0120](../unknowns.md#u-0120)).
 
-This page gathers 48 rules (11 `DOCUMENTED`, 35 `CONDITIONAL`, 2 `UNKNOWN`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
+This page gathers 48 rules (14 `DOCUMENTED`, 32 `CONDITIONAL`, 2 `UNKNOWN`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
 
 ## Rules
 
@@ -40,7 +40,7 @@ Label: `CONDITIONAL`. Sigils: all.
 **Open questions:**
 
 - [U-0001](../unknowns.md#u-0001) (critical): Does the defender's Kick-live 10% reduction floor the result (A) or the removed 10% (B)?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 **Contradictions:** [C-0100](../unknowns.md#c-0100)
 
@@ -67,7 +67,7 @@ Label: `CONDITIONAL`. Sigils: all.
 
 **Open questions:**
 
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 - [U-0103](../unknowns.md#u-0103) (high): 'A hit that gets through always does at least 1 HP' is step 5 of 7: can fortress (step 6) and armor (step 7) still reduce the final HP loss to 0?
 
 Notes ([M-0117](../rules/damage.md#m-0117)): Which damage sources count as a hit is [U-0002](../unknowns.md#u-0002). Steps are modeled one record each: 118 immunity, 119 Kick bonus, 120 mirror, 121 and 122 reductions, 123 minimum, 124 fortress, 125 armor.
@@ -201,7 +201,7 @@ Label: `CONDITIONAL`. Sigils: all.
 
 - [U-0001](../unknowns.md#u-0001) (critical): Does the defender's Kick-live 10% reduction floor the result (A) or the removed 10% (B)?
 - [U-0100](../unknowns.md#u-0100) (low): Where does 'The damage left is rounded down' apply in step 4: to the Protection 50% result only, or as one final floor after all reductions, with the Kick 10% computed on the unrounded value?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 Notes ([M-0122](../rules/damage.md#m-0122)): Applied after the Protection step (stated order). A and B differ by 1 HP whenever d is not a multiple of 10 and d >= 2.
 
@@ -230,7 +230,7 @@ Label: `CONDITIONAL`. Sigils: all.
 **Open questions:**
 
 - [U-0103](../unknowns.md#u-0103) (high): 'A hit that gets through always does at least 1 HP' is step 5 of 7: can fortress (step 6) and armor (step 7) still reduce the final HP loss to 0?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 Notes ([M-0123](../rules/damage.md#m-0123)): 'Always' conflicts in spirit with steps 6 and 7 that follow ([U-0103](../unknowns.md#u-0103)).
 
@@ -412,10 +412,9 @@ Label: `CONDITIONAL`. Sigils: all.
 
 **Open questions:**
 
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
 - [U-0003](../unknowns.md#u-0003) (medium): Zone damage: is the first tick at 5 s or at 7 s after leaving the safe zone?
 
-Notes ([M-0140](../rules/damage.md#m-0140)): Periodic zone damage: whether Body armor and Kick apply is [U-0002](../unknowns.md#u-0002).
+Notes ([M-0140](../rules/damage.md#m-0140)): Periodic zone damage. Body armor absorbs it: this row and 'Body Armor works on every kind of damage' on the damage page. The Kick reduction, the 1 HP minimum and the fortress for zone ticks are [U-0002](../unknowns.md#u-0002), carried by [M-0101](../rules/zone.md#m-0101).
 
 <a id="m-0141"></a>
 
@@ -436,7 +435,6 @@ Label: `CONDITIONAL`. Sigils: all.
 
 **Open questions:**
 
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
 - [U-0123](../unknowns.md#u-0123) (medium): Hazmat suit '(slows)' in the damage table: what does slowing do to zone, unsafe-circle and robot damage (tick interval multiplier, damage fraction)?
 
 **Contradictions:** [C-0103](../unknowns.md#c-0103)
@@ -462,7 +460,6 @@ Label: `CONDITIONAL`. Sigils: all.
 
 **Open questions:**
 
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
 - [U-0123](../unknowns.md#u-0123) (medium): Hazmat suit '(slows)' in the damage table: what does slowing do to zone, unsafe-circle and robot damage (tick interval multiplier, damage fraction)?
 
 Notes ([M-0142](../rules/damage.md#m-0142)): Robot damage is not blocked by Shield ([M-0128](../rules/damage.md#m-0128)) nor by Sleeping Bag ([M-0132](../rules/items.md#m-0132)).
@@ -495,7 +492,7 @@ Notes ([M-0143](../rules/damage.md#m-0143)): Poison page: Protection immune, Ant
 
 ### M-0144: Damage source 'Tear gas' and what stops it
 
-Label: `CONDITIONAL`. Sigils: all.
+Label: `DOCUMENTED`. Sigils: all.
 
 **Official text** (snapshot 2026-11-11):
 
@@ -508,17 +505,13 @@ Label: `CONDITIONAL`. Sigils: all.
 
 **Interactions:** [M-0118](../rules/damage.md#m-0118)
 
-**Open questions:**
-
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
-
 Notes ([M-0144](../rules/damage.md#m-0144)): Tear gas: Gas mask listed, matches [M-0131](../rules/items.md#m-0131).
 
 <a id="m-0145"></a>
 
 ### M-0145: Damage source 'Zombie drain' and what stops it
 
-Label: `CONDITIONAL`. Sigils: all.
+Label: `DOCUMENTED`. Sigils: all.
 
 **Official text** (snapshot 2026-11-11):
 
@@ -532,10 +525,6 @@ Label: `CONDITIONAL`. Sigils: all.
 **Consequences:** [T-0702](../theorems/T-0702.md)
 
 **Interactions:** [M-0118](../rules/damage.md#m-0118)
-
-**Open questions:**
-
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
 
 Notes ([M-0145](../rules/damage.md#m-0145)): Zombie drain (periodic). 'Necromancy / Repellent' read as Necromancy sigil or Zombie repellent.
 
@@ -682,7 +671,7 @@ Notes ([M-0151](../rules/damage.md#m-0151)): Attacker Kick bonus applies to this
 
 ### M-0152: Damage source 'Deep Cut bleeding' and what stops it
 
-Label: `CONDITIONAL`. Sigils: all.
+Label: `DOCUMENTED`. Sigils: all.
 
 **Official text** (snapshot 2026-11-11):
 
@@ -694,10 +683,6 @@ Label: `CONDITIONAL`. Sigils: all.
 - [M-0152](../rules/damage.md#m-0152) domain: one hit of source 'Deep Cut bleeding'
 
 **Interactions:** [M-0118](../rules/damage.md#m-0118)
-
-**Open questions:**
-
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
 
 Notes ([M-0152](../rules/damage.md#m-0152)): Deep Cut bleeding (periodic).
 
@@ -959,7 +944,6 @@ Label: `CONDITIONAL`. Sigils: all.
 **Open questions:**
 
 - [U-0004](../unknowns.md#u-0004) (high): Can Eddie's potion 30% loss kill, and do armor, fortress or Kick status apply to it?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
 
 Notes ([M-0165](../rules/damage.md#m-0165)): Matches seed [U-0004](../unknowns.md#u-0004) note: Shield, Safety bubble, Sleeping Bag and Body armor stop it, which supports reading B for blocking.
 
@@ -1071,7 +1055,7 @@ Label: `CONDITIONAL`. Sigils: trolling.
 - [U-0531](../unknowns.md#u-0531) (medium): Fake chest lockout 'cannot claim chests for 1h': does it block care packages and crates too, does a second claim extend it, and do blockers other than a Shield (Safety bubble, Sleeping Bag, Body armor) also leave it standing?
 - [U-0532](../unknowns.md#u-0532) (medium): Trolling fake chest 'You heal 5 HP': fixed 5 HP at claim time, or the damage that actually landed, and does it happen when the victim is protected or the chest is reflected?
 - [U-0001](../unknowns.md#u-0001) (critical): Does the defender's Kick-live 10% reduction floor the result (A) or the removed 10% (B)?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 Notes ([M-0533](../rules/damage.md#m-0533)): Damage page row: fake chest is stopped by Shield, Safety bubble, Sleeping Bag, Mirror forcefield (reflects) and Body armor (absorbs); the Kick bonus list includes the fake chest. Protection contestants still take fake chest damage. With a Mirror forcefield the whole effect returns to the troll including the lockout (items page).
 
@@ -1106,7 +1090,7 @@ Label: `CONDITIONAL`. Sigils: trolling.
 
 - [U-0537](../unknowns.md#u-0537) (high): Unsafe circle damage clock: is the first hit 2 s after each entry (timer resets on exit) or does a global 2 s phase continue? Does moving between the part of the circle inside a safe zone and the outside part reset it?
 - [U-0003](../unknowns.md#u-0003) (medium): Zone damage: is the first tick at 5 s or at 7 s after leaving the safe zone?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 Notes ([M-0536](../rules/damage.md#m-0536)): Hazmat suit lengthens each zone damage interval by 2 s (items page) and the damage page lists it as slowing unsafe circle damage; Body armor absorbs. The ordinary zone damage first tick is [U-0003](../unknowns.md#u-0003).
 

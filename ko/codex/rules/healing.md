@@ -90,7 +90,7 @@
 
 - [U-0004](../unknowns.md#u-0004) (높음): Eddie의 포션 30% 손실이 사망을 일으킬 수 있으며, armor, fortress 또는 Kick 상태가 여기에 적용됩니까?
 - [U-0204](../unknowns.md#u-0204) (낮음): 최대 HP가 10의 배수가 아닐 때 Eddie의 포션의 50% 회복과 30% 손실은 어떤 방식으로 어림됩니까?
-- [U-0002](../unknowns.md#u-0002) (치명적): 어떤 피해 원천이 7단계 타격 파이프라인을 거칩니까(존 틱, 독, 출혈, 좀비 드레인(drain), 가드 좀비, robot, 언세이프 서클(unsafe circle), Eddie의 손실, 부활 비용, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (치명적): 개별 공격이 아닌 피해(존 틱, 언세이프 서클(unsafe circle), robot, 독, 최루 가스, 출혈, 좀비 드레인(drain), Eddie의 손실, Retribution)에 파이프라인의 4b단계(방어자의 Kick 라이브 감소), 5단계(최소 1 HP), 6단계(fortress)가 적용됩니까? 그리고 가드 좀비 드레인과 부활 비용은 애초에 피해의 한 종류입니까(둘 다 피해 표에 행이 없습니다)?
 - [U-0203](../unknowns.md#u-0203) (보통): 체력 포션, bandage 틱, Eddie의 회복은 최대 HP로 제한됩니까?
 
 메모 ([M-0208](../rules/healing.md#m-0208)): M이 10의 배수이면 모든 해석이 일치합니다(회복 M/2, 손실 3M/10). 시길은 최대 HP를 10만큼 바꾸므로(Piety +10, Greed -10), 기본 HP가 10의 배수가 아닐 때만 반올림이 문제가 됩니다. 피해 페이지는 Eddie's Potion 역효과를 Shield, Safety bubble, Sleeping Bag, Body armor(흡수)가 막는 것으로 나열합니다([U-0004](../unknowns.md#u-0004) 참조). 회복량은 '잃은 HP'가 아니라 '최대 HP'의 비율입니다.

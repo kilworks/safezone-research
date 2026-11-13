@@ -119,7 +119,7 @@ Label: `CONDITIONAL`. Sigils: trolling.
 - [U-0528](../unknowns.md#u-0528) (high): Trolling 'one blood token per 5 HP dealt to other players': is the remainder carried, and is 'dealt' the nominal hit or the HP that actually got through (after armor, fortress, Kick reduction)?
 - [U-0529](../unknowns.md#u-0529) (high): Trolling income scope: which damage counts as 'HP dealt to other players' (weapons, fake chest, unsafe circle ticks, poison from the fake gravestone, reflected hits), and which crates count as 'crate destroyed, whoever spawned it'?
 - [U-0001](../unknowns.md#u-0001) (critical): Does the defender's Kick-live 10% reduction floor the result (A) or the removed 10% (B)?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 Notes ([M-0531](../rules/economy.md#m-0531)): 'other players' excludes the Trolling contestant and zombies. A fake chest claim deals 5 HP, a Kick-live defender takes 4 or 5 depending on [U-0001](../unknowns.md#u-0001), so one claim may pay 0 or 1 token depending on readings.
 
@@ -186,7 +186,7 @@ Label: `CONDITIONAL`. Sigils: trolling.
 - [U-0531](../unknowns.md#u-0531) (medium): Fake chest lockout 'cannot claim chests for 1h': does it block care packages and crates too, does a second claim extend it, and do blockers other than a Shield (Safety bubble, Sleeping Bag, Body armor) also leave it standing?
 - [U-0532](../unknowns.md#u-0532) (medium): Trolling fake chest 'You heal 5 HP': fixed 5 HP at claim time, or the damage that actually landed, and does it happen when the victim is protected or the chest is reflected?
 - [U-0001](../unknowns.md#u-0001) (critical): Does the defender's Kick-live 10% reduction floor the result (A) or the removed 10% (B)?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 Notes ([M-0533](../rules/damage.md#m-0533)): Damage page row: fake chest is stopped by Shield, Safety bubble, Sleeping Bag, Mirror forcefield (reflects) and Body armor (absorbs); the Kick bonus list includes the fake chest. Protection contestants still take fake chest damage. With a Mirror forcefield the whole effect returns to the troll including the lockout (items page).
 
@@ -286,7 +286,7 @@ Label: `CONDITIONAL`. Sigils: trolling.
 
 - [U-0537](../unknowns.md#u-0537) (high): Unsafe circle damage clock: is the first hit 2 s after each entry (timer resets on exit) or does a global 2 s phase continue? Does moving between the part of the circle inside a safe zone and the outside part reset it?
 - [U-0003](../unknowns.md#u-0003) (medium): Zone damage: is the first tick at 5 s or at 7 s after leaving the safe zone?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 Notes ([M-0536](../rules/damage.md#m-0536)): Hazmat suit lengthens each zone damage interval by 2 s (items page) and the damage page lists it as slowing unsafe circle damage; Body armor absorbs. The ordinary zone damage first tick is [U-0003](../unknowns.md#u-0003).
 

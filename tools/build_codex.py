@@ -45,7 +45,7 @@ EN = {
     "what would settle it. No model in this project picks a reading silently: every simulation is run under each reading that matters.",
     "u_counts": "Open questions by priority: {} (source: kb/unknowns/, {} records).", "u_prio": "## Priority: {}",
     "status": "Status: `{}`.", "why": "Why it matters ({})", "free": "- {} free parameter `{}`, swept over {}",
-    "sweep_default": "a range to be set", "resolution": "resolution", "resolved": "resolved",
+    "sweep_default": "a range to be set", "resolution": "resolution", "resolved": "resolved", "narrowed": "narrowed",
     "c_title": "## Contradictions between pages",
     "i_title": "# Safe Zone Codex: index",
     "i_intro": "Everything in this encyclopedia, one click away. Rules are quoted word for word from the official wiki "
@@ -74,7 +74,7 @@ KO = {
     "그것을 결정할 방법이 적혀 있습니다. 이 프로젝트의 어떤 모델도 해석을 몰래 고르지 않습니다. 모든 시뮬레이션은 중요한 해석마다 따로 실행됩니다.",
     "u_counts": "우선순위별 미해결 질문: {} (출처: kb/unknowns/, 기록 {}개).", "u_prio": "## 우선순위: {}",
     "status": "상태: `{}`.", "why": "중요한 이유 ({})", "free": "- {} 자유 매개변수 `{}`, 탐색 범위: {}",
-    "sweep_default": "아직 정하지 않은 범위", "resolution": "해결 방법", "resolved": "해결됨",
+    "sweep_default": "아직 정하지 않은 범위", "resolution": "해결 방법", "resolved": "해결됨", "narrowed": "범위 축소",
     "c_title": "## 페이지 사이의 모순",
     "i_title": "# Safe Zone 코덱스: 목차",
     "i_intro": "이 백과사전의 모든 내용에 한 번의 클릭으로 갈 수 있습니다. 규칙은 공식 위키(2026-11-11 스냅샷)에서 "
@@ -291,7 +291,8 @@ def main(code="en"):
                 out.append(S["free"].format(i, u["parameter"], L.get(i, "sweep_range", u.get("sweep_range")) or S["sweep_default"]))
             out += [f"- {i} {S['resolution']}: {r}" for r in L.get(i, "resolution_paths", u["resolution_paths"])]
             if u.get("resolution"):
-                out.append(f"- {i} {S['resolved']}: {L.get(i, 'resolution', u['resolution'])}")
+                done = "resolved" if u["status"] == "resolved" else "narrowed"  # an open question keeps what the text already settles
+                out.append(f"- {i} {S[done]}: {L.get(i, 'resolution', u['resolution'])}")
             out.append("")
     out += [S["c_title"], ""]
     for c in sorted(contras.values(), key=lambda c: c["id"]):

@@ -283,7 +283,7 @@ Label: `CONDITIONAL`. Sigils: healing.
 **Open questions:**
 
 - [U-0625](../unknowns.md#u-0625) (high): Revive cost 'costs the reviver 5 HP': can it kill a reviver with 5 HP or fewer, and does it run through the hit pipeline (armor, fortress, Kick live)?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 Notes ([M-0656](../rules/revival.md#m-0656)): Revived contestant also gets back items from the gravestone (intro page). Whether the cost goes through the damage pipeline is [U-0002](../unknowns.md#u-0002).
 

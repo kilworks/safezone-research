@@ -234,7 +234,7 @@ Label: `CONDITIONAL`. Sigils: death.
 **Open questions:**
 
 - [U-0604](../unknowns.md#u-0604) (high): Death ward: when does the 2h cooldown start (at the blocked hit, at the end of the 2min immunity, or from the sigil pick), is the ward ready at the pick, and which damage ticks count as 'the first hit'?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 **Contradictions:** [C-0600](../unknowns.md#c-0600)
 

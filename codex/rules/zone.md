@@ -69,7 +69,7 @@ Label: `CONDITIONAL`. Sigils: all.
 **Open questions:**
 
 - [U-0003](../unknowns.md#u-0003) (medium): Zone damage: is the first tick at 5 s or at 7 s after leaving the safe zone?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 - [U-0114](../unknowns.md#u-0114) (high): The zone can 'split apart': with several safe zones, is 'leave a safezone' damage triggered when outside every zone (A) or when leaving the zone you were last in (B)?
 
 Notes ([M-0101](../rules/zone.md#m-0101)): The 30 HP per minute figure is 60/2 and holds for both readings. Whether the tick is a hit in the 7-step pipeline is [U-0002](../unknowns.md#u-0002); with Kick live, 1 HP after floor reductions is raised to 1 by the minimum only if [U-0002](../unknowns.md#u-0002) puts the tick in the pipeline. The unsafe circle (Trolling sigil page) is stated to hurt the same way; compare in a later cross-page pass.

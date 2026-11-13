@@ -18,6 +18,5 @@ depends_on:
 interacts_with: []
 label: CONDITIONAL
 open_unknowns:
-- U-0002
 - U-0123
 notes: 'Unsafe circle (Trolling). The Trolling page lists Guardian angel, Safety bubble, Reality Shield, Death Ward as blockers: same set, C-0103 concerns Death Ward scope.'

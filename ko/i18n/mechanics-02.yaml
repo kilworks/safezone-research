@@ -185,7 +185,7 @@ M-0140:
   domain: >-
     원천 'Outside the circle'의 타격 1회
   notes: >-
-    주기적 존 피해: Body armor와 Kick이 적용되는지는 U-0002에서 다룹니다.
+    주기적 존 피해: Body armor가 흡수합니다(이 행과 피해 페이지의 'Body Armor works on every kind of damage'). 존 틱에 Kick 감소, 최소 1 HP, fortress가 적용되는지는 U-0002에서 다루며 M-0101이 이를 담고 있습니다.
 M-0141:
   name: >-
     피해 원천 'Unsafe circle'과 이를 막는 수단

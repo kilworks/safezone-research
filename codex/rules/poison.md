@@ -67,7 +67,7 @@ Label: `CONDITIONAL`. Sigils: all.
 **Open questions:**
 
 - [U-0115](../unknowns.md#u-0115) (medium): Poison: does the first 1 HP land at once, after 1min 30s, or on a fixed global 90 s phase?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 Notes ([M-0170](../rules/poison.md#m-0170)): Equals 20 HP per 30 min, matching the other page that says a Poison Dart poisons for 20 HP over 30min (a derivation for later, not asserted here). Kick reduction is moot at 1 HP (min 1 only if poison is a hit, [U-0002](../unknowns.md#u-0002)).
 

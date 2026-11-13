@@ -85,7 +85,7 @@ Label: `CONDITIONAL`. Sigils: all.
 
 - [U-0004](../unknowns.md#u-0004) (high): Can Eddie's potion 30% loss kill, and do armor, fortress or Kick status apply to it?
 - [U-0204](../unknowns.md#u-0204) (low): How are Eddie's potion 50% heal and 30% loss rounded when max HP is not a multiple of 10?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 - [U-0203](../unknowns.md#u-0203) (medium): Do health potions, bandage ticks and Eddie's heal cap at max HP?
 
 Notes ([M-0208](../rules/healing.md#m-0208)): All readings agree when M is a multiple of 10 (heal M/2, loss 3M/10). Sigils shift max HP by 10 (Piety +10, Greed -10), so only a base HP that is not a multiple of 10 makes rounding matter. The damage page lists Eddie's Potion backfire as stopped by Shield, Safety bubble, Sleeping Bag and Body armor (absorbs), see [U-0004](../unknowns.md#u-0004). The heal amount is 'of your max HP', not of missing HP.

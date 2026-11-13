@@ -242,7 +242,7 @@ Label: `CONDITIONAL`. Sigils: all.
 
 **Open questions:**
 
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 - [U-0014](../unknowns.md#u-0014) (high): What are the viewer attack prices in Cx-Bucks?
 
 **Contradictions:** [C-0400](../unknowns.md#c-0400)
@@ -411,7 +411,7 @@ Label: `CONDITIONAL`. Sigils: all.
 **Open questions:**
 
 - [U-0405](../unknowns.md#u-0405) (medium): Tear gas and zombie-kill timing: does the 2 HP every 10s tick start 10s after entry, on entry, or on a cloud-global 10s phase, and are zombies killed instantly on entry or on a tick? Is a tick a 'hit' ([U-0002](../unknowns.md#u-0002))?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 Notes ([M-0410](../rules/viewer.md#m-0410)): The zombie page lists tear gas among blasts that kill zombies. Protection sigil is not immune to tear gas (Protection page).
 
@@ -496,7 +496,7 @@ Label: `CONDITIONAL`. Sigils: all.
 **Open questions:**
 
 - [U-0408](../unknowns.md#u-0408) (medium): Airstrike timeline: impact at 20s, then 'the strip then burns for 5min'. Does the fire last 5min from impact, is the first 1 HP tick at impact or 2s later, and does stepping into the strip during the fire cost HP? Is a fire tick a hit ([U-0002](../unknowns.md#u-0002))?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 <a id="m-0414"></a>
 
@@ -816,7 +816,7 @@ Label: `CONDITIONAL`. Sigils: all.
 **Open questions:**
 
 - [U-0418](../unknowns.md#u-0418) (high): Bounty consequences: does the bounty end when claimed (the wiki ends it at 1h or on death) so that repeated claims are possible, and is the marked contestant's 10 HP taken once at claim? Who counts as eligible when no living contestant lacks a bounty?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 Notes ([M-0425](../rules/viewer.md#m-0425)): Damage page lists Shield, Safety bubble, Sleeping Bag, Body armor for the bounty mark. Protection still takes bounty damage (Protection page).
 
@@ -895,7 +895,7 @@ Label: `CONDITIONAL`. Sigils: all.
 **Open questions:**
 
 - [U-0422](../unknowns.md#u-0422) (low): Cyclops zone damage: 'Outside the safe zones it takes zone damage'. Same rate as contestants ([U-0003](../unknowns.md#u-0003)), same escalation, or flat?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 Notes ([M-0428](../rules/viewer.md#m-0428)): Compare weapon list with the weapons page: only 5 melee/ranged listed here.
 

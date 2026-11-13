@@ -477,7 +477,7 @@ Label: `CONDITIONAL`. Sigils: trolling.
 - [U-0528](../unknowns.md#u-0528) (high): Trolling 'one blood token per 5 HP dealt to other players': is the remainder carried, and is 'dealt' the nominal hit or the HP that actually got through (after armor, fortress, Kick reduction)?
 - [U-0529](../unknowns.md#u-0529) (high): Trolling income scope: which damage counts as 'HP dealt to other players' (weapons, fake chest, unsafe circle ticks, poison from the fake gravestone, reflected hits), and which crates count as 'crate destroyed, whoever spawned it'?
 - [U-0001](../unknowns.md#u-0001) (critical): Does the defender's Kick-live 10% reduction floor the result (A) or the removed 10% (B)?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 Notes ([M-0531](../rules/economy.md#m-0531)): 'other players' excludes the Trolling contestant and zombies. A fake chest claim deals 5 HP, a Kick-live defender takes 4 or 5 depending on [U-0001](../unknowns.md#u-0001), so one claim may pay 0 or 1 token depending on readings.
 
@@ -601,7 +601,7 @@ Label: `CONDITIONAL`. Sigils: protection.
 **Open questions:**
 
 - [U-0620](../unknowns.md#u-0620) (medium): Protection blood tokens from blocked hits: do airstrike fire ticks, a landmine of its own, and the unlisted immunities (trapped gift, poison, retribution) pay tokens?
-- [U-0002](../unknowns.md#u-0002) (critical): Which damage sources go through the 7-step hit pipeline (zone ticks, poison, bleeding, zombie drain, guard zombies, robot, unsafe circle, Eddie's loss, the revive cost, Retribution)?
+- [U-0002](../unknowns.md#u-0002) (critical): For damage that is not a discrete attack (zone ticks, unsafe circle, robot, poison, tear gas, bleeding, zombie drain, Eddie's loss, Retribution), do pipeline steps 4b (the defender's Kick-live reduction), 5 (the 1 HP minimum) and 6 (fortress) apply? And are the guard zombie drain and the revive cost kinds of damage at all (neither has a row in the damage table)?
 
 Notes ([M-0642](../rules/economy.md#m-0642)): Poison, trapped gift and Protection retribution are in the immunity list but not in the token list. The nuke bonus is 20 tokens. Whether a sigil landmine of its own pays is not stated.
 
