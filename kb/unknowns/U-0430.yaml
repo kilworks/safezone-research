@@ -8,3 +8,4 @@ resolution_paths:
 - VOD.
 priority: low
 status: open
+resolution: 'Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. The killer "kills the next ten zombies that come within 10m (33ft) of its owner" (wiki-zombies-016) and "also stops zombies draining you until it has killed ten" (wiki-zombies-020), so both effects are tied to a count of kills, and "It has no time limit." (wiki-zombies-017); this is consistent with reading A (ten kills, then it ends) and not with a rule keyed to ten zombies present at one moment (reading B). Still open: whether ten zombies arriving together all count, and in what order simultaneous arrivals are killed, since distance order is not stated.'

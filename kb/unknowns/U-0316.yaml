@@ -8,3 +8,4 @@ resolution_paths:
 - 'VOD: poisoned contestant HP timeline.'
 priority: low
 status: open
+resolution: 'Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. The poison page gives "Poison damages you for 1 HP every 1min 30s." (wiki-poison-001) and the dart "Poison a nearby contestant for 20 HP over 30min." (wiki-weapons-047). Twenty steps of 90 s span 1800 s only if the first step comes after 90 s; a first step at once would end the damage at 1710 s, 90 s short of 30min. This is consistent with reading A, but "over 30min" could also be a rounded span, so the text does not state it. Still open: the time of the first tick, which only a poisoned contestant HP timeline shows.'

@@ -202,6 +202,8 @@ U-0515:
   resolution_paths:
   - >-
     VOD: Ingenuity 참가자가 포션을 합치는 장면.
+  resolution: >-
+    2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 본문은 "Combine two matching potions into the next size, up to gigantic."(wiki-sigils-ingenuity-009)입니다. 크기는 체력 포션에 대해 주어지는 반면("Heals by tier: Small 5 HP, Medium 10 HP, Large 20 HP, Gigantic 40 HP."(wiki-items-009)), Eddie 포션("A gamble: 10% chance to heal 50% of your max HP."(wiki-items-011))과 Anti poison("Cures poison and makes you immune to it for 10min."(wiki-items-034))에 관한 조항에는 크기가 없으므로, 문구는 해석 B보다 해석 A를 가리킵니다. 아직 미해결: matching이 무엇을 뜻하는지, 그리고 비용이나 쿨다운이 있는지(해석 C)이며, 이를 명시한 조항은 없습니다.
 U-0516:
   question: >-
     Trapped gift: 16 h 제한은 landmine과 C4 부착이 공유합니까, 그리고 누가 함정을 볼 수 있습니까(소유자만, 아니면 다른 Ingenuity 참가자도)?

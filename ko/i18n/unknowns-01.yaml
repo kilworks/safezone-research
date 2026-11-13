@@ -232,6 +232,8 @@ U-0100:
     VOD: 라이브 Protection 참가자가 기본 피해가 홀수인 핵을 맞고, HP 감소량을 읽습니다.
   - >-
     REA: 배포된 코드의 피해 공식.
+  resolution: >-
+    2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 4단계의 본문은 해석 A와 일치합니다. "A Protection contestant takes 50% less from a nuke."(wiki-damage-044) 다음에 "The damage left is rounded down."(wiki-damage-045)가 오고, 그 다음에야 "Being live on Kick then takes off 10%, rounded down."(wiki-damage-046)가 오므로, 각 감소는 자체 내림을 가지며 그 순서대로 적용됩니다. 해석 B는 두 감소 이후의 내림 한 번을 요구하는데, 이 세 문장은 그것을 설명하지 않습니다. 아직 미해결: wiki-damage-045가 Protection 문장에 속하는지 단계 전체의 내림인지는 라이브 Protection 참가자가 홀수 피해의 핵을 맞는 장면으로만 확인할 수 있습니다.
 U-0101:
   question: >-
     Body armor가 'absorbs what is left, until it breaks'일 때, 남은 내구도보다 큰 타격은 초과분을 통과시킵니까(A), 아니면 타격 전체가 흡수되고 armor만 부서집니까(B)? 내구도는 흡수한 HP 1당 1씩 줄어듭니까?

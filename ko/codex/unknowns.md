@@ -1958,6 +1958,7 @@
 - [U-0100](unknowns.md#u-0100) 해석 B: x -> floor(0.9*(x/2)), 최종 내림 한 번만 적용(Kick 비율을 정확한 절반에 적용)
 - [U-0100](unknowns.md#u-0100) 해결 방법: VOD: 라이브 Protection 참가자가 기본 피해가 홀수인 핵을 맞고, HP 감소량을 읽습니다.
 - [U-0100](unknowns.md#u-0100) 해결 방법: REA: 배포된 코드의 피해 공식.
+- [U-0100](unknowns.md#u-0100) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 4단계의 본문은 해석 A와 일치합니다. "A Protection contestant takes 50% less from a nuke."(wiki-damage-044) 다음에 "The damage left is rounded down."(wiki-damage-045)가 오고, 그 다음에야 "Being live on Kick then takes off 10%, rounded down."(wiki-damage-046)가 오므로, 각 감소는 자체 내림을 가지며 그 순서대로 적용됩니다. 해석 B는 두 감소 이후의 내림 한 번을 요구하는데, 이 세 문장은 그것을 설명하지 않습니다. 아직 미해결: wiki-damage-045가 Protection 문장에 속하는지 단계 전체의 내림인지는 라이브 Protection 참가자가 홀수 피해의 핵을 맞는 장면으로만 확인할 수 있습니다.
 
 ### U-0109
 
@@ -1981,6 +1982,7 @@
 - [U-0118](unknowns.md#u-0118) 해석 B: 자는 동안 기존 및 새 독 단계가 막힙니다(Shield와 같음)
 - [U-0118](unknowns.md#u-0118) 해석 C: 둘 다
 - [U-0118](unknowns.md#u-0118) 해결 방법: VOD: 자고 있는 참가자에게 쓴 Poison Dart.
+- [U-0118](unknowns.md#u-0118) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 독 단계는 피해이며("Poison damages you for 1 HP every 1min 30s."(wiki-poison-001)), 자신의 bag 옆에서 자면 "all damage except zone, unsafe circle and robot damage"(wiki-damage-067)에 대한 면역이 생깁니다. 같은 내용이 "all damage except zone and unsafe circle damage"(wiki-merchant-023)로도 쓰여 있습니다. 독은 두 예외 목록 어디에도 없으므로 해석 A 단독이 아니라 해석 B 또는 C를 가리킵니다. 표의 행 "Shield, Safety bubble, Sleeping Bag, Protection, Anti poison, Body armor (absorbs)"(wiki-damage-008)는 Poison에 대해 Sleeping Bag을 나열하지만 다트의 명중을 막는지 단계를 막는지는 말하지 않으며, 라벨 "Sleeping in your own Sleeping Bag"(wiki-poison-009)에는 동사가 없습니다. 아직 미해결: 다트가 자는 사람을 여전히 중독시키는지(해석 B 대 해석 C).
 
 ### U-0121
 
@@ -2016,6 +2018,7 @@
 - [U-0204](unknowns.md#u-0204) 자유 매개변수 `eddie_rounding`, 탐색 범위: 내림, 올림, 반올림(half up)을 회복과 손실에 각각 따로 적용 (4에서 9가지 조합). 시길이 알 수 없는 기본값에서 최대 HP를 10씩 바꾸므로 최대 HP는 90..110을 1 단위로 변화
 - [U-0204](unknowns.md#u-0204) 해결 방법: VOD: 최대 HP 95 또는 105인 참가자(있다면)가 이를 마시는 장면.
 - [U-0204](unknowns.md#u-0204) 해결 방법: 시드 [U-0004](unknowns.md#u-0004)는 이것이 죽일 수 있는지를 묻는 것이며, 어림 방식과는 무관합니다.
+- [U-0204](unknowns.md#u-0204) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 문서화된 모든 최대 HP는 10의 배수입니다. 시길 페이지는 Death에 대해 "100 HP"(wiki-sigils-death-003)(Greed도 Piety도 아닌 나머지 여섯 페이지도 같습니다), Greed에 대해 "90 HP"(wiki-sigils-greed-003), Piety에 대해 "110 HP"(wiki-sigils-piety-003)를 제시하고, 상인은 "+10 maximum HP"(wiki-merchant-036)를 "200, or 220 for Piety"(wiki-merchant-037)까지 판매합니다. 포션은 "heal 50% of your max HP"(wiki-items-011) 또는 "you lose 30% of your max HP"(wiki-items-012)이며, 10의 배수의 50%와 30%는 정수이므로 해석 A부터 D까지는 문서화된 모든 값에서 같은 결과를 냅니다. 아직 미해결: 관리자나 문서화되지 않은 효과가 10의 배수가 아닌 최대 HP를 설정할 수 있는지이며, 이 경우에만 어림 방식이 중요합니다.
 
 ### U-0210
 
@@ -2036,6 +2039,7 @@
 - [U-0217](unknowns.md#u-0217) 해석 A: mirror-mirror 규칙이 우선, 실명 없음
 - [U-0217](unknowns.md#u-0217) 해석 B: flashbang 규칙이 우선, 던진 사람이 실명함
 - [U-0217](unknowns.md#u-0217) 해결 방법: VOD: mirror 보유자가 mirror 보유자에게 flashbang을 던지는 장면.
+- [U-0217](unknowns.md#u-0217) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. Flashbang은 Mirror가 반사하는 공격에 포함되며("flashbangs and fake chests"(wiki-items-055)), "If the attacker also has one, the attack does nothing and both are used up"(wiki-items-057)는 예외를 하나만 들고 있으므로("except a reflected Poison Dart or fake gravestone"(wiki-items-057)) 해석 A를 가리킵니다. 해석 B는 "A mirror forcefield is used up and blinds you instead."(wiki-items-076)와 "Several forcefields are all used up, but you are blinded only once."(wiki-items-077)에 의존하는데, 이 문장들은 누구의 forcefield를 뜻하는지 말하지 않습니다. 아직 미해결: 이 두 문장이 던진 사람이 가진 mirror에도 적용되는지.
 
 ### U-0218
 
@@ -2059,6 +2063,7 @@
 - [U-0302](unknowns.md#u-0302) 해석 B: 설치된 C4만 가리킴 (그러면 마지막 C4 문장은 Ingenuity를 더해 이를 반복하는 것)
 - [U-0302](unknowns.md#u-0302) 해석 C: 둘 다 가리킴
 - [U-0302](unknowns.md#u-0302) 해결 방법: VOD: Ingenuity가 아닌 참가자의 지도에서, 근처에 설치된 C4가 있고 함정 아이템을 들고 있는 장면.
+- [U-0302](unknowns.md#u-0302) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. "Only you can see the trap."(wiki-weapons-008)는 "With the Ingenuity sigil you can attach one C4 to another item you hold, once every 16h."(wiki-weapons-007) 바로 뒤, "Detonate it while another contestant holds that item."(wiki-weapons-009) 앞에 있으며, Ingenuity 페이지에는 함정 선물에 대한 대응 문장 "Only you can see it is trapped."(wiki-sigils-ingenuity-011)가 있습니다. 설치된 C4에는 자체 문장 "Only you and Sigil of Ingenuity contestants can see it."(wiki-weapons-014)가 있습니다. 이는 해석 A를 가리키며 해석 B나 C를 택할 이유를 주지 않습니다. 아직 미해결: 같은 페이지가 Ingenuity 참가자에게 "see traps"(wiki-sigils-ingenuity-008)를 허용하므로, Ingenuity 참가자도 함정 선물을 보는지.
 
 ### U-0314
 
@@ -2070,6 +2075,7 @@
 - [U-0314](unknowns.md#u-0314) 해석 B: Ingenuity는 ceil(2*1.1) = 3을 지불
 - [U-0314](unknowns.md#u-0314) 해석 C: 비용보다 적은 토큰으로는 사용할 수 없음
 - [U-0314](unknowns.md#u-0314) 해결 방법: VOD: staff 사용 전후의 Ingenuity 참가자의 토큰 수.
+- [U-0314](unknowns.md#u-0314) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 두 할증 문장은 모두 상인에 관한 것입니다. "Merchant prices are 10% higher, rounded up."(wiki-sigils-ingenuity-007)과 "Ingenuity contestants pay 10% more, rounded up."(wiki-merchant-011)이며, 후자는 상인에게 지불하는 절에 있습니다. staff 문장 "Each use costs 2 blood tokens."(wiki-weapons-043)에는 시길 조건이 없으며, 이는 해석 A를 가리킵니다. 아직 미해결: 토큰이 2개 미만일 때 어떻게 되는지(해석 C)이며, 이를 다루는 조항은 없습니다.
 
 ### U-0316
 
@@ -2080,6 +2086,7 @@
 - [U-0316](unknowns.md#u-0316) 해석 A: 틱이 90, 180, ..., 1800 s에 발생(20틱, 마지막은 30min)
 - [U-0316](unknowns.md#u-0316) 해석 B: 틱이 0, 90, ..., 1710 s에 발생(20틱, 첫 틱은 즉시)
 - [U-0316](unknowns.md#u-0316) 해결 방법: VOD: 중독된 참가자의 HP 타임라인.
+- [U-0316](unknowns.md#u-0316) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 독 페이지는 "Poison damages you for 1 HP every 1min 30s."(wiki-poison-001)라고 하고 다트는 "Poison a nearby contestant for 20 HP over 30min."(wiki-weapons-047)이라고 합니다. 90 s짜리 20 단계가 1800 s에 이르려면 첫 단계가 90 s 뒤에 와야 하며, 첫 단계가 즉시 오면 피해는 1710 s에 끝나 30min보다 90 s 모자랍니다. 이는 해석 A와 일치하지만 "over 30min"이 어림한 기간일 수도 있으므로 본문이 이를 명시하지는 않습니다. 아직 미해결: 첫 틱의 시각이며, 중독된 참가자의 HP 타임라인으로만 확인할 수 있습니다.
 
 ### U-0326
 
@@ -2101,6 +2108,7 @@
 - [U-0335](unknowns.md#u-0335) 해석 A: 5발 또는 2 h 중 먼저 오는 쪽에서 끝남
 - [U-0335](unknowns.md#u-0335) 해석 B: 둘 다 도달해야만 끝남
 - [U-0335](unknowns.md#u-0335) 해결 방법: VOD: 2 h 안에 5발을 쏜 후의 인챈트 bow.
+- [U-0335](unknowns.md#u-0335) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 인챈트 페이지는 "After two hours the weapon loses the bonus damage"(wiki-merchant-048)라고 하고 bow에 대해 "A bow gets +10 damage for five shots or two hours."(wiki-merchant-053)라고 합니다. 두 시간이 지나도 다섯 번째 발사까지 보너스가 남는다면 첫 문장과 모순되므로, 이는 해석 B보다 해석 A를 가리킵니다. staff는 대조 사례로, 다섯 번의 사용을 "with no time limit"(wiki-merchant-054)로 받으며, 이는 다른 무기에는 사용 횟수와 함께 시간 제한이 있음을 시사합니다. 아직 미해결: 두 시간 전에 다섯 번째 발사에서도 보너스가 끝나는지이며, 본문은 이를 같은 문장에서만 언급할 뿐 구체적으로 다루지 않습니다.
 
 ### U-0402
 
@@ -2114,6 +2122,7 @@
 - [U-0402](unknowns.md#u-0402) 자유 매개변수 `admin_nuke_damage`, 탐색 범위: 1 ~ 100 HP; 위키는 기본값 20 HP만 제시하며 관리자 범위는 없습니다
 - [U-0402](unknowns.md#u-0402) 해결 방법: Protection 참가자에게 홀수 피해의 관리자 핵을 쓴 VOD.
 - [U-0402](unknowns.md#u-0402) 해결 방법: 피해 페이지의 연산 순서([U-0001](unknowns.md#u-0001), [U-0006](unknowns.md#u-0006)).
+- [U-0402](unknowns.md#u-0402) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 반올림: "The damage left is rounded down."(wiki-damage-045)는 "A Protection contestant takes 50% less from a nuke."(wiki-damage-044) 바로 뒤에 오며, 이는 해석 B나 C가 아니라 해석 A(floor(d/2))를 가리킵니다. 순서: 4단계에서 Protection 감소는 "Being live on Kick then takes off 10%, rounded down."(wiki-damage-046)보다 앞에 오고, "Body armor absorbs what is left, until it breaks."(wiki-damage-055)는 7단계로 더 뒤에 옵니다. 아직 미해결: wiki-damage-045가 Protection 감소에 묶이는지 단계 전체에 묶이는지, 그리고 핵 페이지가 허용하는("unless an admin set other numbers"(wiki-attacks-015)) 관리자 핵의 홀수 피해에 대한 반올림.
 
 ### U-0412
 
@@ -2179,6 +2188,7 @@
 - [U-0423](unknowns.md#u-0423) 해석 D: 지름 30m
 - [U-0423](unknowns.md#u-0423) 자유 매개변수 `reality_shield_duration_s`, 탐색 범위: 60 ~ 86400 s: 시간이 명시되지 않았으며, 이벤트 규모가 상한입니다
 - [U-0423](unknowns.md#u-0423) 해결 방법: 관리자의 발표.
+- [U-0423](unknowns.md#u-0423) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. Shield는 "Placed by admins."(wiki-attacks-086)이며 "Everyone within 30m (98ft) is immune to all damage, zombies and new poison."(wiki-attacks-087)입니다. 독 단계는 피해이고("Poison damages you for 1 HP every 1min 30s."(wiki-poison-001)) 피해 페이지에는 "Reality Shield block every kind of damage"(wiki-damage-002)가 있으므로, 안에 서 있는 동안 단계는 피해를 주지 않습니다. 치료 목록 "Poison can be cured by: Anti poison, Healing healing"(wiki-poison-005)에는 이것이 없으며, 이는 이미 걸린 독이 억제되지만 치료되지는 않는다는 것과 일치합니다("no new poison while you stand inside it"(wiki-poison-008)). 아직 미해결: 지속 시간과 30m가 반지름인지 지름인지(해석 A부터 D), 그리고 막힌 단계가 건너뛰어지는지 미뤄지는지.
 
 ### U-0428
 
@@ -2200,6 +2210,7 @@
 - [U-0430](unknowns.md#u-0430) 해석 A: 열 마리를 처치한 뒤 종료, 동시에 도착한 좀비는 거리순으로 처치
 - [U-0430](unknowns.md#u-0430) 해석 B: 임의의 순간에 10m 안에 있는 서로 다른 좀비 열 마리
 - [U-0430](unknowns.md#u-0430) 해결 방법: VOD.
+- [U-0430](unknowns.md#u-0430) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. Killer는 "kills the next ten zombies that come within 10m (33ft) of its owner"(wiki-zombies-016)이고 "also stops zombies draining you until it has killed ten"(wiki-zombies-020)이므로 두 효과 모두 처치 횟수에 묶여 있으며, "It has no time limit."(wiki-zombies-017)입니다. 이는 해석 A(열 마리를 처치한 뒤 종료)와 일치하고, 한순간에 존재하는 열 마리를 기준으로 하는 규칙(해석 B)과는 맞지 않습니다. 아직 미해결: 함께 도착한 열 마리가 모두 집계되는지, 그리고 동시에 도착한 좀비가 어떤 순서로 처치되는지이며, 거리순은 명시되어 있지 않습니다.
 
 ### U-0431
 
@@ -2243,6 +2254,7 @@
 - [U-0515](unknowns.md#u-0515) 해석 B: 같은 종류의 포션 두 개(Eddie's potion이나 Anti poison 포함)는 모두 합칠 수 있음
 - [U-0515](unknowns.md#u-0515) 해석 C: A와 같으나 명시되지 않은 쿨다운 또는 비용이 있음
 - [U-0515](unknowns.md#u-0515) 해결 방법: VOD: Ingenuity 참가자가 포션을 합치는 장면.
+- [U-0515](unknowns.md#u-0515) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 본문은 "Combine two matching potions into the next size, up to gigantic."(wiki-sigils-ingenuity-009)입니다. 크기는 체력 포션에 대해 주어지는 반면("Heals by tier: Small 5 HP, Medium 10 HP, Large 20 HP, Gigantic 40 HP."(wiki-items-009)), Eddie 포션("A gamble: 10% chance to heal 50% of your max HP."(wiki-items-011))과 Anti poison("Cures poison and makes you immune to it for 10min."(wiki-items-034))에 관한 조항에는 크기가 없으므로, 문구는 해석 B보다 해석 A를 가리킵니다. 아직 미해결: matching이 무엇을 뜻하는지, 그리고 비용이나 쿨다운이 있는지(해석 C)이며, 이를 명시한 조항은 없습니다.
 
 ### U-0521
 

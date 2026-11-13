@@ -102,6 +102,8 @@ U-0314:
   resolution_paths:
   - >-
     VOD: staff 사용 전후의 Ingenuity 참가자의 토큰 수.
+  resolution: >-
+    2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 두 할증 문장은 모두 상인에 관한 것입니다. "Merchant prices are 10% higher, rounded up."(wiki-sigils-ingenuity-007)과 "Ingenuity contestants pay 10% more, rounded up."(wiki-merchant-011)이며, 후자는 상인에게 지불하는 절에 있습니다. staff 문장 "Each use costs 2 blood tokens."(wiki-weapons-043)에는 시길 조건이 없으며, 이는 해석 A를 가리킵니다. 아직 미해결: 토큰이 2개 미만일 때 어떻게 되는지(해석 C)이며, 이를 다루는 조항은 없습니다.
 U-0315:
   question: >-
     Poison Dart: 이미 중독된 참가자가 다시 다트를 맞으면(또는 Fake gravestone에 맞으면) 새 독이 20 HP 전체 일정을 다시 시작합니까, 남은 분량을 대체합니까, 더해집니까?
@@ -130,6 +132,8 @@ U-0316:
   resolution_paths:
   - >-
     VOD: 중독된 참가자의 HP 타임라인.
+  resolution: >-
+    2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 독 페이지는 "Poison damages you for 1 HP every 1min 30s."(wiki-poison-001)라고 하고 다트는 "Poison a nearby contestant for 20 HP over 30min."(wiki-weapons-047)이라고 합니다. 90 s짜리 20 단계가 1800 s에 이르려면 첫 단계가 90 s 뒤에 와야 하며, 첫 단계가 즉시 오면 피해는 1710 s에 끝나 30min보다 90 s 모자랍니다. 이는 해석 A와 일치하지만 "over 30min"이 어림한 기간일 수도 있으므로 본문이 이를 명시하지는 않습니다. 아직 미해결: 첫 틱의 시각이며, 중독된 참가자의 HP 타임라인으로만 확인할 수 있습니다.
 U-0317:
   question: >-
     지속 피해 아이템에서 'Poison Dart ... +10 damage for two uses'는 무엇을 뜻합니까?

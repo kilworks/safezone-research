@@ -12,3 +12,4 @@ resolution_paths:
 - Admin statement.
 priority: low
 status: open
+resolution: 'Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. The shield is "Placed by admins." (wiki-attacks-086) and "Everyone within 30m (98ft) is immune to all damage, zombies and new poison." (wiki-attacks-087). Poison steps are damage ("Poison damages you for 1 HP every 1min 30s." (wiki-poison-001)) and the damage page has "Reality Shield block every kind of damage" (wiki-damage-002), so steps do not hurt while you stand inside; the cure list "Poison can be cured by: Anti poison, Healing healing" (wiki-poison-005) does not name it, which is consistent with existing poison being held off but not cured ("no new poison while you stand inside it" (wiki-poison-008)). Still open: the duration and whether 30m is a radius or a diameter (readings A to D), and whether a blocked step is skipped or postponed.'

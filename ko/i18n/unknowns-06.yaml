@@ -171,6 +171,8 @@ U-0423:
   resolution_paths:
   - >-
     관리자의 발표.
+  resolution: >-
+    2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. Shield는 "Placed by admins."(wiki-attacks-086)이며 "Everyone within 30m (98ft) is immune to all damage, zombies and new poison."(wiki-attacks-087)입니다. 독 단계는 피해이고("Poison damages you for 1 HP every 1min 30s."(wiki-poison-001)) 피해 페이지에는 "Reality Shield block every kind of damage"(wiki-damage-002)가 있으므로, 안에 서 있는 동안 단계는 피해를 주지 않습니다. 치료 목록 "Poison can be cured by: Anti poison, Healing healing"(wiki-poison-005)에는 이것이 없으며, 이는 이미 걸린 독이 억제되지만 치료되지는 않는다는 것과 일치합니다("no new poison while you stand inside it"(wiki-poison-008)). 아직 미해결: 지속 시간과 30m가 반지름인지 지름인지(해석 A부터 D), 그리고 막힌 단계가 건너뛰어지는지 미뤄지는지.
 U-0424:
   question: >-
     좀비 대상 지정: 'nearest valid contestant, at any distance'. 무엇이 참가자를 유효하게 만듭니까(생존, 면역 아님, repellent 아님, Necromancy 아님)? 가장 가까운 대상은 얼마나 자주 다시 평가됩니까, 그리고 좀비는 지형을 따라 경로를 찾습니까?
@@ -272,6 +274,8 @@ U-0430:
   resolution_paths:
   - >-
     VOD.
+  resolution: >-
+    2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. Killer는 "kills the next ten zombies that come within 10m (33ft) of its owner"(wiki-zombies-016)이고 "also stops zombies draining you until it has killed ten"(wiki-zombies-020)이므로 두 효과 모두 처치 횟수에 묶여 있으며, "It has no time limit."(wiki-zombies-017)입니다. 이는 해석 A(열 마리를 처치한 뒤 종료)와 일치하고, 한순간에 존재하는 열 마리를 기준으로 하는 규칙(해석 B)과는 맞지 않습니다. 아직 미해결: 함께 도착한 열 마리가 모두 집계되는지, 그리고 동시에 도착한 좀비가 어떤 순서로 처치되는지이며, 거리순은 명시되어 있지 않습니다.
 U-0431:
   question: >-
     Zombie repellent: 'zombies ignore you for 20min'(Zombies 페이지)과 'stop zombies hurting you'(Items)가 다릅니다. 무시한다는 것은 대상 지정에서 제외되어 좀비가 다른 참가자를 쫓는다는 뜻입니까, 아니면 흡수만 막는다는 뜻입니까?

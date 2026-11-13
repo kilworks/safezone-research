@@ -8,6 +8,7 @@ resolution_paths:
 - 'VOD: flashbang thrown by a mirror holder into a mirror holder.'
 priority: low
 status: open
+resolution: 'Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. Flashbangs are among the attacks a Mirror reflects ("flashbangs and fake chests" (wiki-items-055)), and the clause "If the attacker also has one, the attack does nothing and both are used up" (wiki-items-057) names only one exception, "except a reflected Poison Dart or fake gravestone" (wiki-items-057), which points to reading A. Reading B rests on "A mirror forcefield is used up and blinds you instead." (wiki-items-076) and "Several forcefields are all used up, but you are blinded only once." (wiki-items-077), which do not say whose forcefield they mean. Still open: whether those two sentences cover a mirror held by the thrower.'
 related:
 - M-0239
 - M-0247

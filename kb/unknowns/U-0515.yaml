@@ -11,3 +11,4 @@ resolution_paths:
 - 'VOD: an Ingenuity contestant combining potions.'
 priority: low
 status: open
+resolution: 'Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. The text is "Combine two matching potions into the next size, up to gigantic." (wiki-sigils-ingenuity-009). Sizes are given for health potions ("Heals by tier: Small 5 HP, Medium 10 HP, Large 20 HP, Gigantic 40 HP." (wiki-items-009)), while the clauses on Eddie potion ("A gamble: 10% chance to heal 50% of your max HP." (wiki-items-011)) and Anti poison ("Cures poison and makes you immune to it for 10min." (wiki-items-034)) show no size, so the wording points to reading A rather than reading B. Still open: what counts as matching, and any cost or cooldown (reading C), which no clause states.'

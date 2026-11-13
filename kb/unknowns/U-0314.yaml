@@ -9,5 +9,6 @@ resolution_paths:
 - 'VOD: Ingenuity contestant''s token count before and after a staff use.'
 priority: low
 status: open
+resolution: 'Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. Both surcharge sentences are about the merchant: "Merchant prices are 10% higher, rounded up." (wiki-sigils-ingenuity-007) and "Ingenuity contestants pay 10% more, rounded up." (wiki-merchant-011), the latter in the section on paying the merchant. The staff line "Each use costs 2 blood tokens." (wiki-weapons-043) carries no sigil condition, which points to reading A. Still open: what happens with fewer than 2 tokens (reading C), which no clause addresses.'
 related:
 - U-0006

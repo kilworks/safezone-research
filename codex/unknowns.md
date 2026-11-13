@@ -1958,6 +1958,7 @@ Why it matters ([U-0100](unknowns.md#u-0100)): Changes odd damages when a Protec
 - [U-0100](unknowns.md#u-0100) reading B: x -> floor(0.9*(x/2)) with one final floor (Kick percentage applied to the exact half)
 - [U-0100](unknowns.md#u-0100) resolution: VOD: a live Protection contestant taking a nuke of odd base damage, read the HP drop.
 - [U-0100](unknowns.md#u-0100) resolution: REA: damage formula in shipped code.
+- [U-0100](unknowns.md#u-0100) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. The step 4 text is consistent with reading A: "A Protection contestant takes 50% less from a nuke." (wiki-damage-044) is followed by "The damage left is rounded down." (wiki-damage-045), and only then by "Being live on Kick then takes off 10%, rounded down." (wiki-damage-046), so each reduction carries its own floor, in that order. Reading B would need one floor after both reductions, which these three sentences do not describe. Still open: whether wiki-damage-045 belongs to the Protection sentence or is a floor of the whole step, which only a live Protection contestant taking a nuke of odd damage can show.
 
 ### U-0109
 
@@ -1981,6 +1982,7 @@ Why it matters ([U-0118](unknowns.md#u-0118)): The label's meaning changes wheth
 - [U-0118](unknowns.md#u-0118) reading B: existing and new poison steps are blocked while sleeping (like Shield)
 - [U-0118](unknowns.md#u-0118) reading C: both
 - [U-0118](unknowns.md#u-0118) resolution: VOD: Poison Dart on a sleeping contestant.
+- [U-0118](unknowns.md#u-0118) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. Poison steps are damage ("Poison damages you for 1 HP every 1min 30s." (wiki-poison-001)), and sleeping next to your own bag gives immunity to "all damage except zone, unsafe circle and robot damage" (wiki-damage-067), also worded "all damage except zone and unsafe circle damage" (wiki-merchant-023); poison is in neither exception list, which points to reading B or C and not to reading A alone. The table row "Shield, Safety bubble, Sleeping Bag, Protection, Anti poison, Body armor (absorbs)" (wiki-damage-008) lists Sleeping Bag against Poison but does not say whether it stops a dart landing or its steps, and the label "Sleeping in your own Sleeping Bag" (wiki-poison-009) has no verb. Still open: whether a dart still poisons a sleeper (reading B versus reading C).
 
 ### U-0121
 
@@ -2016,6 +2018,7 @@ Why it matters ([U-0204](unknowns.md#u-0204)): Off-by-one on a gamble that can k
 - [U-0204](unknowns.md#u-0204) free parameter `eddie_rounding`, swept over floor, ceil, round half up applied to heal and loss separately (4 to 9 combos); max HP 90..110 in steps of 1 because sigils change max HP by 10 from an unknown base
 - [U-0204](unknowns.md#u-0204) resolution: VOD: a contestant at max HP 95 or 105 (if any) drinking it.
 - [U-0204](unknowns.md#u-0204) resolution: Seed [U-0004](unknowns.md#u-0004) asks whether it can kill; independent of rounding.
+- [U-0204](unknowns.md#u-0204) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. Every documented max HP is a multiple of 10: the sigil pages give "100 HP" (wiki-sigils-death-003) for Death (the six other pages that are neither Greed nor Piety say the same), "90 HP" (wiki-sigils-greed-003) for Greed and "110 HP" (wiki-sigils-piety-003) for Piety, and the merchant sells "+10 maximum HP" (wiki-merchant-036) up to "200, or 220 for Piety" (wiki-merchant-037). The potion will "heal 50% of your max HP" (wiki-items-011) or "you lose 30% of your max HP" (wiki-items-012), and 50% and 30% of a multiple of 10 are whole numbers, so readings A to D give the same result on every documented value. Still open: whether an admin or an undocumented effect can set a max HP that is not a multiple of 10, which is the only case where the rounding matters.
 
 ### U-0210
 
@@ -2036,6 +2039,7 @@ Why it matters ([U-0217](unknowns.md#u-0217)): Mirror rule says both are used up
 - [U-0217](unknowns.md#u-0217) reading A: mirror-mirror rule wins, no blind
 - [U-0217](unknowns.md#u-0217) reading B: flashbang rule wins, thrower blinded
 - [U-0217](unknowns.md#u-0217) resolution: VOD: flashbang thrown by a mirror holder into a mirror holder.
+- [U-0217](unknowns.md#u-0217) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. Flashbangs are among the attacks a Mirror reflects ("flashbangs and fake chests" (wiki-items-055)), and the clause "If the attacker also has one, the attack does nothing and both are used up" (wiki-items-057) names only one exception, "except a reflected Poison Dart or fake gravestone" (wiki-items-057), which points to reading A. Reading B rests on "A mirror forcefield is used up and blinds you instead." (wiki-items-076) and "Several forcefields are all used up, but you are blinded only once." (wiki-items-077), which do not say whose forcefield they mean. Still open: whether those two sentences cover a mirror held by the thrower.
 
 ### U-0218
 
@@ -2059,6 +2063,7 @@ Why it matters ([U-0302](unknowns.md#u-0302)): The next sentences say a placed C
 - [U-0302](unknowns.md#u-0302) reading B: describes the placed C4 only (then the last C4 sentence repeats it with Ingenuity added)
 - [U-0302](unknowns.md#u-0302) reading C: describes both
 - [U-0302](unknowns.md#u-0302) resolution: VOD: a non-Ingenuity contestant's map with a placed C4 nearby and holding a trapped item.
+- [U-0302](unknowns.md#u-0302) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. The sentence "Only you can see the trap." (wiki-weapons-008) comes right after "With the Ingenuity sigil you can attach one C4 to another item you hold, once every 16h." (wiki-weapons-007) and before "Detonate it while another contestant holds that item." (wiki-weapons-009), and the Ingenuity page has the matching sentence for the trapped gift, "Only you can see it is trapped." (wiki-sigils-ingenuity-011). The placed C4 has its own sentence, "Only you and Sigil of Ingenuity contestants can see it." (wiki-weapons-014). This points to reading A and gives no reason for reading B or C. Still open: whether an Ingenuity contestant also sees a trapped gift, since the same page lets them "see traps" (wiki-sigils-ingenuity-008).
 
 ### U-0314
 
@@ -2070,6 +2075,7 @@ Why it matters ([U-0314](unknowns.md#u-0314)): ceil(2*1.1) = 3 would make the st
 - [U-0314](unknowns.md#u-0314) reading B: Ingenuity pays ceil(2*1.1) = 3
 - [U-0314](unknowns.md#u-0314) reading C: cannot be used with fewer than the cost
 - [U-0314](unknowns.md#u-0314) resolution: VOD: Ingenuity contestant's token count before and after a staff use.
+- [U-0314](unknowns.md#u-0314) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. Both surcharge sentences are about the merchant: "Merchant prices are 10% higher, rounded up." (wiki-sigils-ingenuity-007) and "Ingenuity contestants pay 10% more, rounded up." (wiki-merchant-011), the latter in the section on paying the merchant. The staff line "Each use costs 2 blood tokens." (wiki-weapons-043) carries no sigil condition, which points to reading A. Still open: what happens with fewer than 2 tokens (reading C), which no clause addresses.
 
 ### U-0316
 
@@ -2080,6 +2086,7 @@ Why it matters ([U-0316](unknowns.md#u-0316)): Shifts every dart tick by 1min 30
 - [U-0316](unknowns.md#u-0316) reading A: ticks at 90, 180, ..., 1800 s (20 ticks, last at 30min)
 - [U-0316](unknowns.md#u-0316) reading B: ticks at 0, 90, ..., 1710 s (20 ticks, first immediately)
 - [U-0316](unknowns.md#u-0316) resolution: VOD: poisoned contestant HP timeline.
+- [U-0316](unknowns.md#u-0316) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. The poison page gives "Poison damages you for 1 HP every 1min 30s." (wiki-poison-001) and the dart "Poison a nearby contestant for 20 HP over 30min." (wiki-weapons-047). Twenty steps of 90 s span 1800 s only if the first step comes after 90 s; a first step at once would end the damage at 1710 s, 90 s short of 30min. This is consistent with reading A, but "over 30min" could also be a rounded span, so the text does not state it. Still open: the time of the first tick, which only a poisoned contestant HP timeline shows.
 
 ### U-0326
 
@@ -2101,6 +2108,7 @@ Why it matters ([U-0335](unknowns.md#u-0335)): Decides whether the bonus survive
 - [U-0335](unknowns.md#u-0335) reading A: ends at the first of 5 shots or 2 h
 - [U-0335](unknowns.md#u-0335) reading B: ends only when both are reached
 - [U-0335](unknowns.md#u-0335) resolution: VOD: enchanted bow after 5 shots within 2 h.
+- [U-0335](unknowns.md#u-0335) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. The enchantment page says "After two hours the weapon loses the bonus damage" (wiki-merchant-048) and gives the bow "A bow gets +10 damage for five shots or two hours." (wiki-merchant-053); a bonus that outlived two hours until the fifth shot would contradict the first line, so this points to reading A over reading B. The staff is the contrast case: it gets five uses "with no time limit" (wiki-merchant-054), which suggests the other weapons do have a time limit next to their use count. Still open: whether the bonus also ends at the fifth shot before two hours, which the text states only in the same line and never works through.
 
 ### U-0402
 
@@ -2114,6 +2122,7 @@ Why it matters ([U-0402](unknowns.md#u-0402)): Admin nukes may set any damage; a
 - [U-0402](unknowns.md#u-0402) free parameter `admin_nuke_damage`, swept over 1 to 100 HP; the wiki gives only the 20 HP default and no admin range
 - [U-0402](unknowns.md#u-0402) resolution: VOD of an admin nuke with odd damage on a Protection contestant.
 - [U-0402](unknowns.md#u-0402) resolution: Damage page order of operations ([U-0001](unknowns.md#u-0001), [U-0006](unknowns.md#u-0006)).
+- [U-0402](unknowns.md#u-0402) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. Rounding: "The damage left is rounded down." (wiki-damage-045) directly follows "A Protection contestant takes 50% less from a nuke." (wiki-damage-044), which points to reading A (floor(d/2)) and not to reading B or C. Order: the Protection cut comes before "Being live on Kick then takes off 10%, rounded down." (wiki-damage-046) in step 4, and "Body armor absorbs what is left, until it breaks." (wiki-damage-055) comes later, in step 7. Still open: whether wiki-damage-045 is tied to the Protection cut or to the whole step, and the rounding of an odd admin nuke damage, which the nuke page allows ("unless an admin set other numbers" (wiki-attacks-015)).
 
 ### U-0412
 
@@ -2179,6 +2188,7 @@ Why it matters ([U-0423](unknowns.md#u-0423)): Admin tool, but decides nuke coun
 - [U-0423](unknowns.md#u-0423) reading D: diameter 30m
 - [U-0423](unknowns.md#u-0423) free parameter `reality_shield_duration_s`, swept over 60 to 86400 s; no time stated, event scale bound
 - [U-0423](unknowns.md#u-0423) resolution: Admin statement.
+- [U-0423](unknowns.md#u-0423) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. The shield is "Placed by admins." (wiki-attacks-086) and "Everyone within 30m (98ft) is immune to all damage, zombies and new poison." (wiki-attacks-087). Poison steps are damage ("Poison damages you for 1 HP every 1min 30s." (wiki-poison-001)) and the damage page has "Reality Shield block every kind of damage" (wiki-damage-002), so steps do not hurt while you stand inside; the cure list "Poison can be cured by: Anti poison, Healing healing" (wiki-poison-005) does not name it, which is consistent with existing poison being held off but not cured ("no new poison while you stand inside it" (wiki-poison-008)). Still open: the duration and whether 30m is a radius or a diameter (readings A to D), and whether a blocked step is skipped or postponed.
 
 ### U-0428
 
@@ -2200,6 +2210,7 @@ Why it matters ([U-0430](unknowns.md#u-0430)): Defensive value against hordes of
 - [U-0430](unknowns.md#u-0430) reading A: ten kills then ends, simultaneous arrivals killed in distance order
 - [U-0430](unknowns.md#u-0430) reading B: ten distinct zombies within 10m at any moment
 - [U-0430](unknowns.md#u-0430) resolution: VOD.
+- [U-0430](unknowns.md#u-0430) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. The killer "kills the next ten zombies that come within 10m (33ft) of its owner" (wiki-zombies-016) and "also stops zombies draining you until it has killed ten" (wiki-zombies-020), so both effects are tied to a count of kills, and "It has no time limit." (wiki-zombies-017); this is consistent with reading A (ten kills, then it ends) and not with a rule keyed to ten zombies present at one moment (reading B). Still open: whether ten zombies arriving together all count, and in what order simultaneous arrivals are killed, since distance order is not stated.
 
 ### U-0431
 
@@ -2243,6 +2254,7 @@ Why it matters ([U-0515](unknowns.md#u-0515)): Heal values add up exactly (5+5=1
 - [U-0515](unknowns.md#u-0515) reading B: any two potions of the same kind (including Eddie's potion or Anti poison) combine
 - [U-0515](unknowns.md#u-0515) reading C: as A with a cooldown or a cost not stated
 - [U-0515](unknowns.md#u-0515) resolution: VOD: an Ingenuity contestant combining potions.
+- [U-0515](unknowns.md#u-0515) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. The text is "Combine two matching potions into the next size, up to gigantic." (wiki-sigils-ingenuity-009). Sizes are given for health potions ("Heals by tier: Small 5 HP, Medium 10 HP, Large 20 HP, Gigantic 40 HP." (wiki-items-009)), while the clauses on Eddie potion ("A gamble: 10% chance to heal 50% of your max HP." (wiki-items-011)) and Anti poison ("Cures poison and makes you immune to it for 10min." (wiki-items-034)) show no size, so the wording points to reading A rather than reading B. Still open: what counts as matching, and any cost or cooldown (reading C), which no clause states.
 
 ### U-0521
 

@@ -12,6 +12,7 @@ resolution_paths:
 - Damage page order of operations (U-0001, U-0006).
 priority: low
 status: open
+resolution: 'Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. Rounding: "The damage left is rounded down." (wiki-damage-045) directly follows "A Protection contestant takes 50% less from a nuke." (wiki-damage-044), which points to reading A (floor(d/2)) and not to reading B or C. Order: the Protection cut comes before "Being live on Kick then takes off 10%, rounded down." (wiki-damage-046) in step 4, and "Body armor absorbs what is left, until it breaks." (wiki-damage-055) comes later, in step 7. Still open: whether wiki-damage-045 is tied to the Protection cut or to the whole step, and the rounding of an odd admin nuke damage, which the nuke page allows ("unless an admin set other numbers" (wiki-attacks-015)).'
 related:
 - U-0001
 - U-0006

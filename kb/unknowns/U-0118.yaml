@@ -9,6 +9,7 @@ resolution_paths:
 - 'VOD: Poison Dart on a sleeping contestant.'
 priority: low
 status: open
+resolution: 'Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. Poison steps are damage ("Poison damages you for 1 HP every 1min 30s." (wiki-poison-001)), and sleeping next to your own bag gives immunity to "all damage except zone, unsafe circle and robot damage" (wiki-damage-067), also worded "all damage except zone and unsafe circle damage" (wiki-merchant-023); poison is in neither exception list, which points to reading B or C and not to reading A alone. The table row "Shield, Safety bubble, Sleeping Bag, Protection, Anti poison, Body armor (absorbs)" (wiki-damage-008) lists Sleeping Bag against Poison but does not say whether it stops a dart landing or its steps, and the label "Sleeping in your own Sleeping Bag" (wiki-poison-009) has no verb. Still open: whether a dart still poisons a sleeper (reading B versus reading C).'
 related:
 - M-0178
 - M-0179

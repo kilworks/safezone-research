@@ -9,3 +9,4 @@ resolution_paths:
 - 'VOD: a non-Ingenuity contestant''s map with a placed C4 nearby and holding a trapped item.'
 priority: low
 status: open
+resolution: 'Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. The sentence "Only you can see the trap." (wiki-weapons-008) comes right after "With the Ingenuity sigil you can attach one C4 to another item you hold, once every 16h." (wiki-weapons-007) and before "Detonate it while another contestant holds that item." (wiki-weapons-009), and the Ingenuity page has the matching sentence for the trapped gift, "Only you can see it is trapped." (wiki-sigils-ingenuity-011). The placed C4 has its own sentence, "Only you and Sigil of Ingenuity contestants can see it." (wiki-weapons-014). This points to reading A and gives no reason for reading B or C. Still open: whether an Ingenuity contestant also sees a trapped gift, since the same page lets them "see traps" (wiki-sigils-ingenuity-008).'

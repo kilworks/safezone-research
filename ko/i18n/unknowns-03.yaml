@@ -19,6 +19,8 @@ U-0204:
     VOD: 최대 HP 95 또는 105인 참가자(있다면)가 이를 마시는 장면.
   - >-
     시드 U-0004는 이것이 죽일 수 있는지를 묻는 것이며, 어림 방식과는 무관합니다.
+  resolution: >-
+    2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 문서화된 모든 최대 HP는 10의 배수입니다. 시길 페이지는 Death에 대해 "100 HP"(wiki-sigils-death-003)(Greed도 Piety도 아닌 나머지 여섯 페이지도 같습니다), Greed에 대해 "90 HP"(wiki-sigils-greed-003), Piety에 대해 "110 HP"(wiki-sigils-piety-003)를 제시하고, 상인은 "+10 maximum HP"(wiki-merchant-036)를 "200, or 220 for Piety"(wiki-merchant-037)까지 판매합니다. 포션은 "heal 50% of your max HP"(wiki-items-011) 또는 "you lose 30% of your max HP"(wiki-items-012)이며, 10의 배수의 50%와 30%는 정수이므로 해석 A부터 D까지는 문서화된 모든 값에서 같은 결과를 냅니다. 아직 미해결: 관리자나 문서화되지 않은 효과가 10의 배수가 아닌 최대 HP를 설정할 수 있는지이며, 이 경우에만 어림 방식이 중요합니다.
 U-0205:
   question: >-
     Hazmat suit의 '간격당 +2s'는 어떤 피해 원인과 어떤 타이밍(첫 틱, 유예)을 늘립니까?
@@ -212,6 +214,8 @@ U-0217:
   resolution_paths:
   - >-
     VOD: mirror 보유자가 mirror 보유자에게 flashbang을 던지는 장면.
+  resolution: >-
+    2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. Flashbang은 Mirror가 반사하는 공격에 포함되며("flashbangs and fake chests"(wiki-items-055)), "If the attacker also has one, the attack does nothing and both are used up"(wiki-items-057)는 예외를 하나만 들고 있으므로("except a reflected Poison Dart or fake gravestone"(wiki-items-057)) 해석 A를 가리킵니다. 해석 B는 "A mirror forcefield is used up and blinds you instead."(wiki-items-076)와 "Several forcefields are all used up, but you are blinded only once."(wiki-items-077)에 의존하는데, 이 문장들은 누구의 forcefield를 뜻하는지 말하지 않습니다. 아직 미해결: 이 두 문장이 던진 사람이 가진 mirror에도 적용되는지.
 U-0218:
   question: >-
     실명한 참가자가 또 다른 flashbang에 맞으면 실명이 연장됩니까, 초기화됩니까, 무시됩니까?
@@ -274,6 +278,8 @@ U-0302:
   resolution_paths:
   - >-
     VOD: Ingenuity가 아닌 참가자의 지도에서, 근처에 설치된 C4가 있고 함정 아이템을 들고 있는 장면.
+  resolution: >-
+    2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. "Only you can see the trap."(wiki-weapons-008)는 "With the Ingenuity sigil you can attach one C4 to another item you hold, once every 16h."(wiki-weapons-007) 바로 뒤, "Detonate it while another contestant holds that item."(wiki-weapons-009) 앞에 있으며, Ingenuity 페이지에는 함정 선물에 대한 대응 문장 "Only you can see it is trapped."(wiki-sigils-ingenuity-011)가 있습니다. 설치된 C4에는 자체 문장 "Only you and Sigil of Ingenuity contestants can see it."(wiki-weapons-014)가 있습니다. 이는 해석 A를 가리키며 해석 B나 C를 택할 이유를 주지 않습니다. 아직 미해결: 같은 페이지가 Ingenuity 참가자에게 "see traps"(wiki-sigils-ingenuity-008)를 허용하므로, Ingenuity 참가자도 함정 선물을 보는지.
 U-0303:
   question: >-
     '각각 최대 5개가 한 슬롯을 공유한다 / 각각 최대 5개를 소지한다'라는 상한은 'An enchanted one uses its own slot'과 어떻게 맞물립니까?

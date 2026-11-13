@@ -13,6 +13,7 @@ resolution_paths:
 - Seed U-0004 asks whether it can kill; independent of rounding.
 priority: low
 status: open
+resolution: 'Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. Every documented max HP is a multiple of 10: the sigil pages give "100 HP" (wiki-sigils-death-003) for Death (the six other pages that are neither Greed nor Piety say the same), "90 HP" (wiki-sigils-greed-003) for Greed and "110 HP" (wiki-sigils-piety-003) for Piety, and the merchant sells "+10 maximum HP" (wiki-merchant-036) up to "200, or 220 for Piety" (wiki-merchant-037). The potion will "heal 50% of your max HP" (wiki-items-011) or "you lose 30% of your max HP" (wiki-items-012), and 50% and 30% of a multiple of 10 are whole numbers, so readings A to D give the same result on every documented value. Still open: whether an admin or an undocumented effect can set a max HP that is not a multiple of 10, which is the only case where the rounding matters.'
 related:
 - U-0004
 - M-0208

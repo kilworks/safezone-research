@@ -204,6 +204,8 @@ U-0118:
   resolution_paths:
   - >-
     VOD: 자고 있는 참가자에게 쓴 Poison Dart.
+  resolution: >-
+    2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 독 단계는 피해이며("Poison damages you for 1 HP every 1min 30s."(wiki-poison-001)), 자신의 bag 옆에서 자면 "all damage except zone, unsafe circle and robot damage"(wiki-damage-067)에 대한 면역이 생깁니다. 같은 내용이 "all damage except zone and unsafe circle damage"(wiki-merchant-023)로도 쓰여 있습니다. 독은 두 예외 목록 어디에도 없으므로 해석 A 단독이 아니라 해석 B 또는 C를 가리킵니다. 표의 행 "Shield, Safety bubble, Sleeping Bag, Protection, Anti poison, Body armor (absorbs)"(wiki-damage-008)는 Poison에 대해 Sleeping Bag을 나열하지만 다트의 명중을 막는지 단계를 막는지는 말하지 않으며, 라벨 "Sleeping in your own Sleeping Bag"(wiki-poison-009)에는 동사가 없습니다. 아직 미해결: 다트가 자는 사람을 여전히 중독시키는지(해석 B 대 해석 C).
 U-0119:
   question: >-
     Death Ward: 2 min의 면역은 첫 번째로 막은 타격에서 시작합니까, 시길을 선택한 때 시작합니까? 'Cooldown 2h'는 활성화 시점에 시작합니까, 2 min이 끝난 때 시작합니까? 그리고 Ward는 쿨다운당 한 번만 사용할 수 있습니까?

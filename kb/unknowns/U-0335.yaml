@@ -8,3 +8,4 @@ resolution_paths:
 - 'VOD: enchanted bow after 5 shots within 2 h.'
 priority: low
 status: open
+resolution: 'Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. The enchantment page says "After two hours the weapon loses the bonus damage" (wiki-merchant-048) and gives the bow "A bow gets +10 damage for five shots or two hours." (wiki-merchant-053); a bonus that outlived two hours until the fifth shot would contradict the first line, so this points to reading A over reading B. The staff is the contrast case: it gets five uses "with no time limit" (wiki-merchant-054), which suggests the other weapons do have a time limit next to their use count. Still open: whether the bonus also ends at the fifth shot before two hours, which the text states only in the same line and never works through.'

@@ -9,6 +9,7 @@ resolution_paths:
 - 'REA: damage formula in shipped code.'
 priority: low
 status: open
+resolution: 'Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. The step 4 text is consistent with reading A: "A Protection contestant takes 50% less from a nuke." (wiki-damage-044) is followed by "The damage left is rounded down." (wiki-damage-045), and only then by "Being live on Kick then takes off 10%, rounded down." (wiki-damage-046), so each reduction carries its own floor, in that order. Reading B would need one floor after both reductions, which these three sentences do not describe. Still open: whether wiki-damage-045 belongs to the Protection sentence or is a floor of the whole step, which only a live Protection contestant taking a nuke of odd damage can show.'
 related:
 - M-0121
 - M-0122
