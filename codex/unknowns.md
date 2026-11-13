@@ -2,7 +2,7 @@
 
 Everything the official wiki leaves undecided, as of the 2026-11-11 snapshot. Each question lists the competing readings and what would settle it. No model in this project picks a reading silently: every simulation is run under each reading that matters.
 
-Open questions by priority: 5 critical, 71 high, 95 medium, 31 low (source: kb/unknowns/, 204 records).
+Open questions by priority: 5 critical, 72 high, 95 medium, 31 low (source: kb/unknowns/, 204 records).
 
 ## Priority: critical
 
@@ -43,7 +43,7 @@ Why it matters ([U-0002](unknowns.md#u-0002)): Blockers and Body armor no longer
 - [U-0002](unknowns.md#u-0002) resolution: VOD: a contestant stands in a fortress outside every safe zone: the durability of the fortress falls (step 6 applies) or the HP of the contestant does.
 - [U-0002](unknowns.md#u-0002) resolution: VOD: a reviver who wears Body armor: the armor durability falls by 5 (the cost is damage) or the HP does.
 - [U-0002](unknowns.md#u-0002) resolution: Not a test: a 1 HP tick (zone, poison, zombie drain) on a contestant without armor reads 1 HP under readings A and B ([T-0002](theorems/T-0002.md), [T-0004](theorems/T-0004.md)).
-- [U-0002](unknowns.md#u-0002) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. Settled: (1) step 1 applies source by source: zone, unsafe circle, robot, poison, tear gas, zombie drain, bleeding, Eddie's backfire and Retribution each have a row of blockers in the damage table (wiki-damage-005 to wiki-damage-010, wiki-damage-017, wiki-damage-030, wiki-damage-031); (2) step 7 applies to all of them: each of those rows ends with "Body armor (absorbs)" and wiki-damage-071 says "Body Armor works on every kind of damage", which refutes the former reading B (periodic drains bypass the whole pipeline) for armor; (3) step 2 does not apply: the Kick bonus of the attacker is a closed list of weapons (wiki-damage-038) that holds none of these sources; (4) step 3 does not apply: a Mirror forcefield "only reflects" a closed list (wiki-damage-070) that holds none of them (a Poison Dart is reflected when it lands, its ticks are not); (5) step 4a does not apply: the Protection cut is for a nuke only (wiki-damage-044). Still open: steps 4b, 5 and 6 for these sources, whether the guard zombie drain is a "Zombie drain", and the revive cost, which the text calls a cost.
+- [U-0002](unknowns.md#u-0002) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. Settled: (1) step 1 applies source by source: zone, unsafe circle, robot, poison, tear gas, zombie drain, bleeding, Eddie's backfire and Retribution each have a row of blockers in the damage table (wiki-damage-005 to wiki-damage-010, wiki-damage-017, wiki-damage-030, wiki-damage-031); (2) step 7 applies to all of them: each of those rows ends with "Body armor (absorbs)", which refutes the former reading B (periodic drains bypass the whole pipeline) for armor (wiki-damage-071 says "Body Armor works on every kind of damage", but that sentence is not general: "A trapped gift ignores it", wiki-items-027); (3) step 2 does not apply: the Kick bonus of the attacker is a closed list of weapons (wiki-damage-038) that holds none of these sources; (4) step 3 does not apply: a Mirror forcefield "only reflects" a closed list (wiki-damage-070) that holds none of them (Poison Darts are on that list, and the Poison row of the table has no Mirror forcefield, wiki-damage-008); (5) step 4a does not apply: the Protection cut is for a nuke only (wiki-damage-044). Still open: steps 4b, 5 and 6 for these sources, whether the guard zombie drain is a "Zombie drain", and the revive cost, which the text calls a cost.
 
 ### U-0009
 
@@ -227,7 +227,7 @@ Why it matters ([U-0114](unknowns.md#u-0114)): Decides whether crossing between 
 - [U-0114](unknowns.md#u-0114) reading C: damage clock is tied to one assigned zone per contestant
 - [U-0114](unknowns.md#u-0114) resolution: VOD: a split event and a contestant crossing between the two.
 - [U-0114](unknowns.md#u-0114) resolution: Organizer statement.
-- [U-0114](unknowns.md#u-0114) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. Three clauses word the condition as being outside all the safe zones, which is reading A: "Only the part inside a safe zone hurts: outside every safe zone you take normal zone damage only" (wiki-sigils-trolling-023), an unsafe circle hurts "Anyone inside it who is also inside a safe zone" (wiki-sigils-trolling-017), and of the giant cyclops, "Outside the safe zones it takes zone damage" (wiki-attacks-071). No clause assigns a contestant to one zone (reading C) and none describes a split. Still open: a VOD of a split or an organizer statement would confirm it.
+- [U-0114](unknowns.md#u-0114) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. Three clauses are consistent with reading A, without describing the clock: "Only the part inside a safe zone hurts: outside every safe zone you take normal zone damage only" (wiki-sigils-trolling-023), an unsafe circle hurts "Anyone inside it who is also inside a safe zone" (wiki-sigils-trolling-017), and of the giant cyclops, "Outside the safe zones it takes zone damage" (wiki-attacks-071). Against it, the base rule is written in the singular with the verb leave, which reads like B or C: "If you leave a safezone, after 5s you will start taking 1 HP damage every 2s" (wiki-005). The zone can "even split apart" (wiki-004), and no clause gives a rule for a split or assigns a contestant to one zone. Still open: a VOD of a split or an organizer statement.
 
 ### U-0116
 
@@ -302,7 +302,7 @@ Why it matters ([U-0207](unknowns.md#u-0207)): Decides whether traps, poison, ar
 
 ### U-0209
 
-[U-0209](unknowns.md#u-0209): Is the 15 HP of Body armor a depleting pool or a per-hit cap, and how is a partly absorbed hit handled? Status: `resolved`.
+[U-0209](unknowns.md#u-0209): Is the 15 HP of Body armor a depleting pool or a per-hit cap, and how is a partly absorbed hit handled? Status: `open`.
 
 Why it matters ([U-0209](unknowns.md#u-0209)): Changes survivability against repeated small hits (zone ticks, poison).
 
@@ -310,7 +310,7 @@ Why it matters ([U-0209](unknowns.md#u-0209)): Changes survivability against rep
 - [U-0209](unknowns.md#u-0209) reading B: per-hit cap 15 HP, never depleted
 - [U-0209](unknowns.md#u-0209) resolution: VOD: armor durability after repeated hits.
 - [U-0209](unknowns.md#u-0209) resolution: Damage page: 'absorbs what is left, until it breaks' favors A.
-- [U-0209](unknowns.md#u-0209) resolved: Resolved on 2026-11-13 from the text of the 2026-11-11 snapshot, for its first half: the armor depletes and reading B is refuted. The armor "absorbs what is left, until it breaks" (wiki-damage-055), and its size is a durability that changes: "+10 durability, up to 45" (wiki-merchant-057), then it "loses one durability every twenty minutes, down to 15" (wiki-merchant-058). An armor that is never used up (reading B) cannot break. "Absorbs up to 15 HP of damage" (wiki-items-026) is then the size of a new pool. The second half (how the hit that breaks the armor is split, and whether durability falls by 1 per HP absorbed) is [U-0101](unknowns.md#u-0101), which stays open.
+- [U-0209](unknowns.md#u-0209) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. Reading B is refuted: the armor "absorbs what is left, until it breaks" (wiki-damage-055), and it has a durability that changes: "+10 durability, up to 45" (wiki-merchant-057), then it "loses one durability every twenty minutes, down to 15" (wiki-merchant-058). An armor that is never used up cannot break. Still open, and the same question as [U-0101](unknowns.md#u-0101): what one hit takes from the durability (the HP absorbed, the whole hit, or 1 per hit), so whether "Absorbs up to 15 HP of damage" (wiki-items-026) is a pool counted in HP.
 
 ### U-0305
 
@@ -865,7 +865,7 @@ Why it matters ([U-0617](unknowns.md#u-0617)): Decides how much healing a Protec
 - [U-0617](unknowns.md#u-0617) reading B: health potions and Eddie's potion (a gamble that heals 50% of max HP)
 - [U-0617](unknowns.md#u-0617) reading C: every item heal
 - [U-0617](unknowns.md#u-0617) resolution: VOD: Protection contestant using each heal item.
-- [U-0617](unknowns.md#u-0617) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. A Campfire is out of the rule: "Piety and Protection potion changes do not apply" (wiki-sigils-ingenuity-021). Bandages have their own line on the Protection page, next to the potion line: "Bandages last 1.1x as long" (wiki-sigils-protection-017); that suggests they are not counted as potions, without saying so. The Campfire clause puts the Protection change next to the Piety one, which is written for "Health potions" (wiki-sigils-piety-013); that favors reading A without settling it. Still open: Eddie's potion, God's Fruit, the healing circle and the craft made from Anti poison and a Health potion.
+- [U-0617](unknowns.md#u-0617) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. A Campfire is out of the rule: "Piety and Protection potion changes do not apply" (wiki-sigils-ingenuity-021). Bandages have their own line on the Protection page, next to the potion line: "Bandages last 1.1x as long" (wiki-sigils-protection-017); that suggests they are not counted as potions, without saying so. The wording does not choose between readings A and B: Protection says "Potions heal you 50% less" (wiki-sigils-protection-016) where Piety says "Health potions heal you 15% more" (wiki-sigils-piety-013), and two other things are named potions, Eddie's potion and the Everything potion, which "heals by potion tier" (wiki-sigils-ingenuity-023). Still open: Eddie's potion, the Everything potion, God's Fruit and the healing circle.
 
 ### U-0624
 

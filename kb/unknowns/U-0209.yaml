@@ -8,8 +8,8 @@ resolution_paths:
 - 'VOD: armor durability after repeated hits.'
 - 'Damage page: ''absorbs what is left, until it breaks'' favors A.'
 priority: high
-status: resolved
-resolution: 'Resolved on 2026-11-13 from the text of the 2026-11-11 snapshot, for its first half: the armor depletes and reading B is refuted. The armor "absorbs what is left, until it breaks" (wiki-damage-055), and its size is a durability that changes: "+10 durability, up to 45" (wiki-merchant-057), then it "loses one durability every twenty minutes, down to 15" (wiki-merchant-058). An armor that is never used up (reading B) cannot break. "Absorbs up to 15 HP of damage" (wiki-items-026) is then the size of a new pool. The second half (how the hit that breaks the armor is split, and whether durability falls by 1 per HP absorbed) is U-0101, which stays open.'
+status: open
+resolution: 'Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. Reading B is refuted: the armor "absorbs what is left, until it breaks" (wiki-damage-055), and it has a durability that changes: "+10 durability, up to 45" (wiki-merchant-057), then it "loses one durability every twenty minutes, down to 15" (wiki-merchant-058). An armor that is never used up cannot break. Still open, and the same question as U-0101: what one hit takes from the durability (the HP absorbed, the whole hit, or 1 per hit), so whether "Absorbs up to 15 HP of damage" (wiki-items-026) is a pool counted in HP.'
 related:
 - M-0217
 - U-0002

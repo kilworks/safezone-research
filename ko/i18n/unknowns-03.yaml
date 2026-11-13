@@ -99,7 +99,7 @@ U-0209:
   - >-
     피해 페이지: 'absorbs what is left, until it breaks'는 A를 뒷받침합니다.
   resolution: >-
-    2026-11-11 스냅샷의 본문으로 2026-11-13에 앞부분이 해결되었습니다. armor는 소모되며 해석 B는 반박됩니다. armor는 "absorbs what is left, until it breaks"이고(wiki-damage-055), 그 크기는 변하는 내구도입니다. "+10 durability, up to 45"(wiki-merchant-057), 그 뒤에는 "loses one durability every twenty minutes, down to 15"입니다(wiki-merchant-058). 결코 소모되지 않는 armor(해석 B)는 부서질 수 없습니다. 따라서 "Absorbs up to 15 HP of damage"(wiki-items-026)는 새 풀의 크기입니다. 뒷부분(armor를 부수는 타격이 어떻게 나뉘는지, 흡수한 HP 1당 내구도가 1씩 줄어드는지)은 U-0101이며 여전히 미해결입니다.
+    2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 해석 B는 반박됩니다. armor는 "absorbs what is left, until it breaks"이고(wiki-damage-055), 변하는 내구도를 가집니다. "+10 durability, up to 45"(wiki-merchant-057), 그 뒤에는 "loses one durability every twenty minutes, down to 15"입니다(wiki-merchant-058). 결코 소모되지 않는 armor는 부서질 수 없습니다. 아직 미해결이며 U-0101과 같은 질문: 한 번의 타격이 내구도에서 무엇을 가져가는지(흡수한 HP, 타격 전체, 또는 타격당 1), 따라서 "Absorbs up to 15 HP of damage"(wiki-items-026)가 HP로 세는 풀인지 여부.
 U-0210:
   question: >-
     Body armor를 착용 중이거나 소지 중일 때 두 번째 Body armor를 얻으면 어떻게 됩니까?

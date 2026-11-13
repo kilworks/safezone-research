@@ -549,9 +549,10 @@
 
 **미해결 질문:**
 
+- [U-0209](../unknowns.md#u-0209) (높음): Body armor의 15 HP는 줄어드는 풀입니까, 타격당 상한입니까? 일부만 흡수된 타격은 어떻게 처리됩니까?
 - [U-0101](../unknowns.md#u-0101) (높음): Body armor가 'absorbs what is left, until it breaks'일 때, 남은 내구도보다 큰 타격은 초과분을 통과시킵니까(A), 아니면 타격 전체가 흡수되고 armor만 부서집니까(B)? 내구도는 흡수한 HP 1당 1씩 줄어듭니까?
 
-메모 ([M-0217](../rules/items.md#m-0217)): 피해 페이지의 '부서질 때까지'와 상인 인챈트의 내구도는 소모되는 풀을 확정합니다. 해석 B는 반박되었습니다([U-0209](../unknowns.md#u-0209), 해결됨). 일부만 흡수된 타격은 명시되어 있지 않습니다: [U-0101](../unknowns.md#u-0101). 파이프라인 순서는 피해 페이지에 속합니다.
+메모 ([M-0217](../rules/items.md#m-0217)): 피해 페이지의 '부서질 때까지'와 상인 인챈트의 내구도는 armor가 소모된다는 것을 보여 줍니다. 해석 B는 반박되었습니다([U-0209](../unknowns.md#u-0209)). 한 번의 타격이 내구도에서 무엇을 가져가는지는 명시되어 있지 않습니다: [U-0101](../unknowns.md#u-0101). 파이프라인 순서는 피해 페이지에 속합니다.
 
 <a id="m-0218"></a>
 
@@ -1780,7 +1781,7 @@
 
 ## 미해결 질문
 
-[U-0003](../unknowns.md#u-0003), [U-0005](../unknowns.md#u-0005), [U-0015](../unknowns.md#u-0015), [U-0101](../unknowns.md#u-0101), [U-0120](../unknowns.md#u-0120), [U-0122](../unknowns.md#u-0122), [U-0200](../unknowns.md#u-0200), [U-0201](../unknowns.md#u-0201), [U-0202](../unknowns.md#u-0202), [U-0205](../unknowns.md#u-0205), [U-0206](../unknowns.md#u-0206), [U-0207](../unknowns.md#u-0207), [U-0208](../unknowns.md#u-0208), [U-0210](../unknowns.md#u-0210), [U-0211](../unknowns.md#u-0211), [U-0212](../unknowns.md#u-0212), [U-0213](../unknowns.md#u-0213), [U-0215](../unknowns.md#u-0215), [U-0216](../unknowns.md#u-0216), [U-0217](../unknowns.md#u-0217), [U-0218](../unknowns.md#u-0218), [U-0300](../unknowns.md#u-0300), [U-0321](../unknowns.md#u-0321), [U-0324](../unknowns.md#u-0324), [U-0325](../unknowns.md#u-0325), [U-0326](../unknowns.md#u-0326), [U-0327](../unknowns.md#u-0327), [U-0328](../unknowns.md#u-0328), [U-0338](../unknowns.md#u-0338), [U-0339](../unknowns.md#u-0339), [U-0340](../unknowns.md#u-0340), [U-0504](../unknowns.md#u-0504), [U-0505](../unknowns.md#u-0505), [U-0506](../unknowns.md#u-0506), [U-0511](../unknowns.md#u-0511), [U-0515](../unknowns.md#u-0515), [U-0516](../unknowns.md#u-0516), [U-0517](../unknowns.md#u-0517), [U-0518](../unknowns.md#u-0518), [U-0523](../unknowns.md#u-0523), [U-0530](../unknowns.md#u-0530), [U-0533](../unknowns.md#u-0533), [U-0534](../unknowns.md#u-0534), [U-0538](../unknowns.md#u-0538), [U-0539](../unknowns.md#u-0539), [U-0607](../unknowns.md#u-0607), [U-0610](../unknowns.md#u-0610)
+[U-0003](../unknowns.md#u-0003), [U-0005](../unknowns.md#u-0005), [U-0015](../unknowns.md#u-0015), [U-0101](../unknowns.md#u-0101), [U-0120](../unknowns.md#u-0120), [U-0122](../unknowns.md#u-0122), [U-0200](../unknowns.md#u-0200), [U-0201](../unknowns.md#u-0201), [U-0202](../unknowns.md#u-0202), [U-0205](../unknowns.md#u-0205), [U-0206](../unknowns.md#u-0206), [U-0207](../unknowns.md#u-0207), [U-0208](../unknowns.md#u-0208), [U-0209](../unknowns.md#u-0209), [U-0210](../unknowns.md#u-0210), [U-0211](../unknowns.md#u-0211), [U-0212](../unknowns.md#u-0212), [U-0213](../unknowns.md#u-0213), [U-0215](../unknowns.md#u-0215), [U-0216](../unknowns.md#u-0216), [U-0217](../unknowns.md#u-0217), [U-0218](../unknowns.md#u-0218), [U-0300](../unknowns.md#u-0300), [U-0321](../unknowns.md#u-0321), [U-0324](../unknowns.md#u-0324), [U-0325](../unknowns.md#u-0325), [U-0326](../unknowns.md#u-0326), [U-0327](../unknowns.md#u-0327), [U-0328](../unknowns.md#u-0328), [U-0338](../unknowns.md#u-0338), [U-0339](../unknowns.md#u-0339), [U-0340](../unknowns.md#u-0340), [U-0504](../unknowns.md#u-0504), [U-0505](../unknowns.md#u-0505), [U-0506](../unknowns.md#u-0506), [U-0511](../unknowns.md#u-0511), [U-0515](../unknowns.md#u-0515), [U-0516](../unknowns.md#u-0516), [U-0517](../unknowns.md#u-0517), [U-0518](../unknowns.md#u-0518), [U-0523](../unknowns.md#u-0523), [U-0530](../unknowns.md#u-0530), [U-0533](../unknowns.md#u-0533), [U-0534](../unknowns.md#u-0534), [U-0538](../unknowns.md#u-0538), [U-0539](../unknowns.md#u-0539), [U-0607](../unknowns.md#u-0607), [U-0610](../unknowns.md#u-0610)
 
 ## 신뢰도
 

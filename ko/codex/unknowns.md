@@ -2,7 +2,7 @@
 
 2026-11-11 스냅샷 기준으로 공식 위키가 정하지 않은 모든 것입니다. 각 질문에는 경쟁하는 해석과 그것을 결정할 방법이 적혀 있습니다. 이 프로젝트의 어떤 모델도 해석을 몰래 고르지 않습니다. 모든 시뮬레이션은 중요한 해석마다 따로 실행됩니다.
 
-우선순위별 미해결 질문: 5 치명적, 71 높음, 95 보통, 31 낮음 (출처: kb/unknowns/, 기록 204개).
+우선순위별 미해결 질문: 5 치명적, 72 높음, 95 보통, 31 낮음 (출처: kb/unknowns/, 기록 204개).
 
 ## 우선순위: 치명적
 
@@ -43,7 +43,7 @@
 - [U-0002](unknowns.md#u-0002) 해결 방법: VOD: 참가자가 모든 세이프 존 밖의 fortress 안에 서 있습니다. fortress의 내구도가 줄어들거나(6단계 적용) 참가자의 HP가 줄어듭니다.
 - [U-0002](unknowns.md#u-0002) 해결 방법: VOD: Body armor를 착용한 부활 시전자: armor 내구도가 5 줄어들거나(비용이 피해임) HP가 줄어듭니다.
 - [U-0002](unknowns.md#u-0002) 해결 방법: 검증 수단이 아님: armor가 없는 참가자가 받는 1 HP 틱(존, 독, 좀비 드레인)은 해석 A와 B 모두에서 1 HP입니다([T-0002](theorems/T-0002.md), [T-0004](theorems/T-0004.md)).
-- [U-0002](unknowns.md#u-0002) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 확정된 내용: (1) 1단계는 원천별로 적용됩니다. 존, 언세이프 서클, robot, 독, 최루 가스, 좀비 드레인, 출혈, Eddie의 역효과, Retribution은 각각 피해 표에 막는 수단의 행이 있습니다(wiki-damage-005부터 wiki-damage-010, wiki-damage-017, wiki-damage-030, wiki-damage-031). (2) 7단계는 이들 모두에 적용됩니다. 각 행은 "Body armor (absorbs)"로 끝나고 wiki-damage-071은 "Body Armor works on every kind of damage"라고 말하므로, 이전의 해석 B(주기적 드레인은 파이프라인 전체를 우회한다)는 armor에 관해서는 반박됩니다. (3) 2단계는 적용되지 않습니다. 공격자의 Kick 보너스는 닫힌 무기 목록(wiki-damage-038)이며 이 원천들은 거기에 없습니다. (4) 3단계는 적용되지 않습니다. Mirror forcefield는 닫힌 목록(wiki-damage-070)만 "only reflects" 하며 이 원천들은 거기에 없습니다(Poison Dart는 맞는 순간에 반사되며 그 틱은 반사되지 않습니다). (5) 4a단계는 적용되지 않습니다. Protection의 감소는 핵에만 해당합니다(wiki-damage-044). 아직 미해결: 이 원천들에 대한 4b, 5, 6단계, 가드 좀비 드레인이 "Zombie drain"인지 여부, 그리고 본문이 비용이라고 부르는 부활 비용.
+- [U-0002](unknowns.md#u-0002) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 확정된 내용: (1) 1단계는 원천별로 적용됩니다. 존, 언세이프 서클, robot, 독, 최루 가스, 좀비 드레인, 출혈, Eddie의 역효과, Retribution은 각각 피해 표에 막는 수단의 행이 있습니다(wiki-damage-005부터 wiki-damage-010, wiki-damage-017, wiki-damage-030, wiki-damage-031). (2) 7단계는 이들 모두에 적용됩니다. 각 행은 "Body armor (absorbs)"로 끝나므로, 이전의 해석 B(주기적 드레인은 파이프라인 전체를 우회한다)는 armor에 관해서는 반박됩니다(wiki-damage-071은 "Body Armor works on every kind of damage"라고 말하지만 이 문장은 일반 규칙이 아닙니다. "A trapped gift ignores it", wiki-items-027). (3) 2단계는 적용되지 않습니다. 공격자의 Kick 보너스는 닫힌 무기 목록(wiki-damage-038)이며 이 원천들은 거기에 없습니다. (4) 3단계는 적용되지 않습니다. Mirror forcefield는 닫힌 목록(wiki-damage-070)만 "only reflects" 하며 이 원천들은 거기에 없습니다(Poison Dart는 그 목록에 있고, 피해 표의 독 행에는 Mirror forcefield가 없습니다, wiki-damage-008). (5) 4a단계는 적용되지 않습니다. Protection의 감소는 핵에만 해당합니다(wiki-damage-044). 아직 미해결: 이 원천들에 대한 4b, 5, 6단계, 가드 좀비 드레인이 "Zombie drain"인지 여부, 그리고 본문이 비용이라고 부르는 부활 비용.
 
 ### U-0009
 
@@ -227,7 +227,7 @@
 - [U-0114](unknowns.md#u-0114) 해석 C: 피해 시계는 참가자마다 지정된 하나의 존에 묶입니다
 - [U-0114](unknowns.md#u-0114) 해결 방법: VOD: 존이 갈라지는 이벤트와 두 존 사이를 건너는 참가자.
 - [U-0114](unknowns.md#u-0114) 해결 방법: 주최 측 설명.
-- [U-0114](unknowns.md#u-0114) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 세 조항이 조건을 모든 세이프 존의 밖에 있는 것으로 적고 있으며, 이는 해석 A입니다. "Only the part inside a safe zone hurts: outside every safe zone you take normal zone damage only"(wiki-sigils-trolling-023), 언세이프 서클은 "Anyone inside it who is also inside a safe zone"에게 피해를 주고(wiki-sigils-trolling-017), 거대 사이클롭스에 대해서는 "Outside the safe zones it takes zone damage"라고 합니다(wiki-attacks-071). 참가자를 하나의 존에 지정하는 조항(해석 C)은 없으며, 존이 갈라지는 경우를 설명하는 조항도 없습니다. 아직 미해결: 갈라짐을 담은 VOD 또는 주최 측 설명이 이를 확인해 줄 것입니다.
+- [U-0114](unknowns.md#u-0114) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 세 조항은 해석 A와 모순되지 않지만 피해 시계를 설명하지는 않습니다. "Only the part inside a safe zone hurts: outside every safe zone you take normal zone damage only"(wiki-sigils-trolling-023), 언세이프 서클은 "Anyone inside it who is also inside a safe zone"에게 피해를 주고(wiki-sigils-trolling-017), 거대 사이클롭스에 대해서는 "Outside the safe zones it takes zone damage"라고 합니다(wiki-attacks-071). 반대로 기본 규칙은 단수형과 leave라는 동사로 적혀 있어 B 또는 C처럼 읽힙니다. "If you leave a safezone, after 5s you will start taking 1 HP damage every 2s"(wiki-005). 존은 "even split apart"할 수 있지만(wiki-004), 갈라짐에 대한 규칙을 주거나 참가자를 하나의 존에 지정하는 조항은 없습니다. 아직 미해결: 갈라짐을 담은 VOD 또는 주최 측 설명.
 
 ### U-0116
 
@@ -302,7 +302,7 @@
 
 ### U-0209
 
-[U-0209](unknowns.md#u-0209): Body armor의 15 HP는 줄어드는 풀입니까, 타격당 상한입니까? 일부만 흡수된 타격은 어떻게 처리됩니까? 상태: `resolved`.
+[U-0209](unknowns.md#u-0209): Body armor의 15 HP는 줄어드는 풀입니까, 타격당 상한입니까? 일부만 흡수된 타격은 어떻게 처리됩니까? 상태: `open`.
 
 중요한 이유 ([U-0209](unknowns.md#u-0209)): 반복되는 작은 타격(존 틱, 독)에 대한 생존력이 달라집니다.
 
@@ -310,7 +310,7 @@
 - [U-0209](unknowns.md#u-0209) 해석 B: 타격당 상한 15 HP, 소모되지 않음
 - [U-0209](unknowns.md#u-0209) 해결 방법: VOD: 반복 타격 후의 armor 내구도.
 - [U-0209](unknowns.md#u-0209) 해결 방법: 피해 페이지: 'absorbs what is left, until it breaks'는 A를 뒷받침합니다.
-- [U-0209](unknowns.md#u-0209) 해결됨: 2026-11-11 스냅샷의 본문으로 2026-11-13에 앞부분이 해결되었습니다. armor는 소모되며 해석 B는 반박됩니다. armor는 "absorbs what is left, until it breaks"이고(wiki-damage-055), 그 크기는 변하는 내구도입니다. "+10 durability, up to 45"(wiki-merchant-057), 그 뒤에는 "loses one durability every twenty minutes, down to 15"입니다(wiki-merchant-058). 결코 소모되지 않는 armor(해석 B)는 부서질 수 없습니다. 따라서 "Absorbs up to 15 HP of damage"(wiki-items-026)는 새 풀의 크기입니다. 뒷부분(armor를 부수는 타격이 어떻게 나뉘는지, 흡수한 HP 1당 내구도가 1씩 줄어드는지)은 [U-0101](unknowns.md#u-0101)이며 여전히 미해결입니다.
+- [U-0209](unknowns.md#u-0209) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 해석 B는 반박됩니다. armor는 "absorbs what is left, until it breaks"이고(wiki-damage-055), 변하는 내구도를 가집니다. "+10 durability, up to 45"(wiki-merchant-057), 그 뒤에는 "loses one durability every twenty minutes, down to 15"입니다(wiki-merchant-058). 결코 소모되지 않는 armor는 부서질 수 없습니다. 아직 미해결이며 [U-0101](unknowns.md#u-0101)과 같은 질문: 한 번의 타격이 내구도에서 무엇을 가져가는지(흡수한 HP, 타격 전체, 또는 타격당 1), 따라서 "Absorbs up to 15 HP of damage"(wiki-items-026)가 HP로 세는 풀인지 여부.
 
 ### U-0305
 
@@ -865,7 +865,7 @@
 - [U-0617](unknowns.md#u-0617) 해석 B: 회복 포션과 Eddie의 포션(최대 HP의 50%를 회복하는 도박)
 - [U-0617](unknowns.md#u-0617) 해석 C: 아이템으로 인한 모든 회복
 - [U-0617](unknowns.md#u-0617) 해결 방법: VOD: Protection 참가자가 각 회복 아이템을 사용하는 장면.
-- [U-0617](unknowns.md#u-0617) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. Campfire는 이 규칙에서 제외됩니다. "Piety and Protection potion changes do not apply"(wiki-sigils-ingenuity-021). 붕대는 Protection 페이지에서 포션 줄 옆에 자체 줄이 있습니다. "Bandages last 1.1x as long"(wiki-sigils-protection-017). 이는 붕대가 포션으로 계산되지 않음을 시사하지만, 그렇다고 명시하지는 않습니다. Campfire 조항은 Protection의 변경을 Piety의 변경과 나란히 두는데, Piety의 변경은 "Health potions"에 대해 적혀 있습니다(wiki-sigils-piety-013). 이는 해석 A에 유리하지만 확정하지는 않습니다. 아직 미해결: Eddie의 포션, God's Fruit, 회복 서클, 그리고 Anti poison과 Health potion으로 만드는 제작품.
+- [U-0617](unknowns.md#u-0617) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. Campfire는 이 규칙에서 제외됩니다. "Piety and Protection potion changes do not apply"(wiki-sigils-ingenuity-021). 붕대는 Protection 페이지에서 포션 줄 옆에 자체 줄이 있습니다. "Bandages last 1.1x as long"(wiki-sigils-protection-017). 이는 붕대가 포션으로 계산되지 않음을 시사하지만, 그렇다고 명시하지는 않습니다. 문구는 해석 A와 B 중 어느 쪽도 택하지 않습니다. Protection은 "Potions heal you 50% less"라고 하고(wiki-sigils-protection-016) Piety는 "Health potions heal you 15% more"라고 하며(wiki-sigils-piety-013), 포션이라고 불리는 것이 둘 더 있습니다. Eddie의 포션과 "heals by potion tier"인 Everything potion입니다(wiki-sigils-ingenuity-023). 아직 미해결: Eddie의 포션, Everything potion, God's Fruit, 회복 서클.
 
 ### U-0624
 

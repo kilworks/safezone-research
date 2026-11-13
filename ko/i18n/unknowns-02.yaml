@@ -139,7 +139,7 @@ U-0114:
   - >-
     주최 측 설명.
   resolution: >-
-    2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 세 조항이 조건을 모든 세이프 존의 밖에 있는 것으로 적고 있으며, 이는 해석 A입니다. "Only the part inside a safe zone hurts: outside every safe zone you take normal zone damage only"(wiki-sigils-trolling-023), 언세이프 서클은 "Anyone inside it who is also inside a safe zone"에게 피해를 주고(wiki-sigils-trolling-017), 거대 사이클롭스에 대해서는 "Outside the safe zones it takes zone damage"라고 합니다(wiki-attacks-071). 참가자를 하나의 존에 지정하는 조항(해석 C)은 없으며, 존이 갈라지는 경우를 설명하는 조항도 없습니다. 아직 미해결: 갈라짐을 담은 VOD 또는 주최 측 설명이 이를 확인해 줄 것입니다.
+    2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 세 조항은 해석 A와 모순되지 않지만 피해 시계를 설명하지는 않습니다. "Only the part inside a safe zone hurts: outside every safe zone you take normal zone damage only"(wiki-sigils-trolling-023), 언세이프 서클은 "Anyone inside it who is also inside a safe zone"에게 피해를 주고(wiki-sigils-trolling-017), 거대 사이클롭스에 대해서는 "Outside the safe zones it takes zone damage"라고 합니다(wiki-attacks-071). 반대로 기본 규칙은 단수형과 leave라는 동사로 적혀 있어 B 또는 C처럼 읽힙니다. "If you leave a safezone, after 5s you will start taking 1 HP damage every 2s"(wiki-005). 존은 "even split apart"할 수 있지만(wiki-004), 갈라짐에 대한 규칙을 주거나 참가자를 하나의 존에 지정하는 조항은 없습니다. 아직 미해결: 갈라짐을 담은 VOD 또는 주최 측 설명.
 U-0115:
   question: >-
     독: 첫 1 HP가 즉시 들어갑니까, 1min 30s 뒤입니까, 아니면 고정된 전역 90 s 위상입니까?
