@@ -145,6 +145,8 @@ U-0617:
   resolution_paths:
   - >-
     VOD: Protection 참가자가 각 회복 아이템을 사용하는 장면.
+  resolution: >-
+    2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. Campfire는 이 규칙에서 제외됩니다. "Piety and Protection potion changes do not apply"(wiki-sigils-ingenuity-021). 붕대는 Protection 페이지에서 포션 줄 옆에 자체 줄이 있습니다. "Bandages last 1.1x as long"(wiki-sigils-protection-017). 이는 붕대가 포션으로 계산되지 않음을 시사하지만, 그렇다고 명시하지는 않습니다. Campfire 조항은 Protection의 변경을 Piety의 변경과 나란히 두는데, Piety의 변경은 "Health potions"에 대해 적혀 있습니다(wiki-sigils-piety-013). 이는 해석 A에 유리하지만 확정하지는 않습니다. 아직 미해결: Eddie의 포션, God's Fruit, 회복 서클, 그리고 Anti poison과 Health potion으로 만드는 제작품.
 U-0618:
   question: >-
     Protection의 포션 회복 "less 50%": 등급 수치가 홀수일 때(Small potion 5 HP) 끝수 처리는 어떻게 됩니까?

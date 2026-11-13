@@ -85,6 +85,8 @@ U-0004:
     VOD: 최대 HP의 30% 이하인 참가자가 이 포션을 마시는 장면.
   - >-
     피해 표는 'Eddie's Potion backfire'를 Shield, Safety bubble, Sleeping Bag, Body armor로 막을 수 있다고 기재하며, 이는 차단에 관해 B를 뒷받침합니다(공식화 예정).
+  resolution: >-
+    2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 해석 A(어떤 보호도 적용되지 않음)는 반박됩니다. 피해 표에는 "Eddie's Potion backfire" 행이 있고, Shield, Safety bubble, Sleeping Bag이 막는 수단이며 "Body armor (absorbs)"가 붙어 있습니다(wiki-damage-030). 또한 "Body Armor works on every kind of damage"입니다(wiki-damage-071). 아직 미해결: 손실로 사망할 수 있는지 아니면 1 HP에서 멈추는지(해석 B와 C), 그리고 Kick 라이브 감소와 fortress가 적용되는지 여부이며, 후자는 U-0002에 남아 있는 부분입니다.
 U-0005:
   question: >-
     반사된 타격은 공격자 자신의 파이프라인(면역, 감소, armor)을 거칩니까?

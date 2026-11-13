@@ -2,7 +2,7 @@
 
 Everything the official wiki leaves undecided, as of the 2026-11-11 snapshot. Each question lists the competing readings and what would settle it. No model in this project picks a reading silently: every simulation is run under each reading that matters.
 
-Open questions by priority: 5 critical, 72 high, 95 medium, 31 low (source: kb/unknowns/, 204 records).
+Open questions by priority: 5 critical, 71 high, 95 medium, 31 low (source: kb/unknowns/, 204 records).
 
 ## Priority: critical
 
@@ -77,6 +77,7 @@ Why it matters ([U-0004](unknowns.md#u-0004)): Decides whether the potion is a l
 - [U-0004](unknowns.md#u-0004) reading C: Loss cannot take HP below 1.
 - [U-0004](unknowns.md#u-0004) resolution: VOD: a contestant at HP <= 30% of max drinking it.
 - [U-0004](unknowns.md#u-0004) resolution: The damage table lists 'Eddie's Potion backfire' as stoppable by Shield, Safety bubble, Sleeping Bag and Body armor, which supports B for blocking (to be formalized).
+- [U-0004](unknowns.md#u-0004) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. Reading A (no protection applies) is refuted: the damage table has a row "Eddie's Potion backfire" with Shield, Safety bubble and Sleeping Bag as blockers and "Body armor (absorbs)" (wiki-damage-030), and "Body Armor works on every kind of damage" (wiki-damage-071). Still open: whether the loss can kill or stops at 1 HP (readings B and C), and whether the Kick-live reduction and a fortress apply, which is the part of [U-0002](unknowns.md#u-0002) that is left.
 
 ### U-0005
 
@@ -226,6 +227,7 @@ Why it matters ([U-0114](unknowns.md#u-0114)): Decides whether crossing between 
 - [U-0114](unknowns.md#u-0114) reading C: damage clock is tied to one assigned zone per contestant
 - [U-0114](unknowns.md#u-0114) resolution: VOD: a split event and a contestant crossing between the two.
 - [U-0114](unknowns.md#u-0114) resolution: Organizer statement.
+- [U-0114](unknowns.md#u-0114) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. Three clauses word the condition as being outside all the safe zones, which is reading A: "Only the part inside a safe zone hurts: outside every safe zone you take normal zone damage only" (wiki-sigils-trolling-023), an unsafe circle hurts "Anyone inside it who is also inside a safe zone" (wiki-sigils-trolling-017), and of the giant cyclops, "Outside the safe zones it takes zone damage" (wiki-attacks-071). No clause assigns a contestant to one zone (reading C) and none describes a split. Still open: a VOD of a split or an organizer statement would confirm it.
 
 ### U-0116
 
@@ -285,6 +287,7 @@ Why it matters ([U-0205](unknowns.md#u-0205)): Changes time to death outside the
 - [U-0205](unknowns.md#u-0205) free parameter `hazmat_added_interval_s`, swept over 0..4 s (page says 2; bound 4 covers a doubling reading)
 - [U-0205](unknowns.md#u-0205) resolution: VOD: a Hazmat carrier leaving the zone with an on-screen timer.
 - [U-0205](unknowns.md#u-0205) resolution: Robot interval is not on the Items page.
+- [U-0205](unknowns.md#u-0205) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. Sources settled: the damage table marks "Hazmat suit (slows)" on exactly three rows, Outside the circle, Unsafe circle and Robot (wiki-damage-005, wiki-damage-006, wiki-damage-007), so reading A (outside-zone damage only) is refuted for the list of sources. The amount is written for zone damage only: "While you carry it, each zone damage interval is 2s longer" (wiki-items-013); an unsafe circle deals zone damage (wiki-sigils-trolling-017), the robot interval is on no page. Still open: the first tick and the 5 s delay (with [U-0003](unknowns.md#u-0003)), and how much a robot is slowed.
 
 ### U-0207
 
@@ -299,7 +302,7 @@ Why it matters ([U-0207](unknowns.md#u-0207)): Decides whether traps, poison, ar
 
 ### U-0209
 
-[U-0209](unknowns.md#u-0209): Is the 15 HP of Body armor a depleting pool or a per-hit cap, and how is a partly absorbed hit handled? Status: `open`.
+[U-0209](unknowns.md#u-0209): Is the 15 HP of Body armor a depleting pool or a per-hit cap, and how is a partly absorbed hit handled? Status: `resolved`.
 
 Why it matters ([U-0209](unknowns.md#u-0209)): Changes survivability against repeated small hits (zone ticks, poison).
 
@@ -307,6 +310,7 @@ Why it matters ([U-0209](unknowns.md#u-0209)): Changes survivability against rep
 - [U-0209](unknowns.md#u-0209) reading B: per-hit cap 15 HP, never depleted
 - [U-0209](unknowns.md#u-0209) resolution: VOD: armor durability after repeated hits.
 - [U-0209](unknowns.md#u-0209) resolution: Damage page: 'absorbs what is left, until it breaks' favors A.
+- [U-0209](unknowns.md#u-0209) resolved: Resolved on 2026-11-13 from the text of the 2026-11-11 snapshot, for its first half: the armor depletes and reading B is refuted. The armor "absorbs what is left, until it breaks" (wiki-damage-055), and its size is a durability that changes: "+10 durability, up to 45" (wiki-merchant-057), then it "loses one durability every twenty minutes, down to 15" (wiki-merchant-058). An armor that is never used up (reading B) cannot break. "Absorbs up to 15 HP of damage" (wiki-items-026) is then the size of a new pool. The second half (how the hit that breaks the armor is split, and whether durability falls by 1 per HP absorbed) is [U-0101](unknowns.md#u-0101), which stays open.
 
 ### U-0305
 
@@ -861,6 +865,7 @@ Why it matters ([U-0617](unknowns.md#u-0617)): Decides how much healing a Protec
 - [U-0617](unknowns.md#u-0617) reading B: health potions and Eddie's potion (a gamble that heals 50% of max HP)
 - [U-0617](unknowns.md#u-0617) reading C: every item heal
 - [U-0617](unknowns.md#u-0617) resolution: VOD: Protection contestant using each heal item.
+- [U-0617](unknowns.md#u-0617) narrowed: Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. A Campfire is out of the rule: "Piety and Protection potion changes do not apply" (wiki-sigils-ingenuity-021). Bandages have their own line on the Protection page, next to the potion line: "Bandages last 1.1x as long" (wiki-sigils-protection-017); that suggests they are not counted as potions, without saying so. The Campfire clause puts the Protection change next to the Piety one, which is written for "Health potions" (wiki-sigils-piety-013); that favors reading A without settling it. Still open: Eddie's potion, God's Fruit, the healing circle and the craft made from Anti poison and a Health potion.
 
 ### U-0624
 

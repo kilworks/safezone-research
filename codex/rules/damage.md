@@ -16,7 +16,7 @@ What each defense is good against, as the table says: Flak jacket blocks missile
 
 Where the rules are shaky: the wiki disagrees with itself on what stops robot damage ([M-0524](../rules/damage.md#m-0524), [C-0500](../unknowns.md#c-0500)) and on whether a Reality Shield stops the unsafe circle ([M-0538](../rules/damage.md#m-0538), [C-0502](../unknowns.md#c-0502)). Which sources even go through the pipeline is open ([U-0002](../unknowns.md#u-0002)). Rounding questions are open, for the Kick reduction ([U-0001](../unknowns.md#u-0001)) and where "rounded down" sits ([U-0100](../unknowns.md#u-0100)). It is open whether armor passes excess damage through ([U-0101](../unknowns.md#u-0101)), whether several fortresses absorb in turn ([U-0102](../unknowns.md#u-0102)), whether a mirrored hit uses the attacker's pipeline ([U-0005](../unknowns.md#u-0005)), and which blocker is used when several apply ([U-0120](../unknowns.md#u-0120)).
 
-This page gathers 48 rules (14 `DOCUMENTED`, 32 `CONDITIONAL`, 2 `UNKNOWN`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
+This page gathers 48 rules (15 `DOCUMENTED`, 31 `CONDITIONAL`, 2 `UNKNOWN`). Every rule below quotes the official wiki word for word and gives its formal reading; where the wording allows several readings, all are listed and the question stays open.
 
 ## Rules
 
@@ -926,7 +926,7 @@ Label: `DOCUMENTED`. Sigils: all.
 
 ### M-0165: Damage source 'Eddie's Potion backfire' and what stops it
 
-Label: `CONDITIONAL`. Sigils: all.
+Label: `DOCUMENTED`. Sigils: all.
 
 **Official text** (snapshot 2026-11-11):
 
@@ -940,10 +940,6 @@ Label: `CONDITIONAL`. Sigils: all.
 **Consequences:** [T-0402](../theorems/T-0402.md)
 
 **Interactions:** [M-0118](../rules/damage.md#m-0118)
-
-**Open questions:**
-
-- [U-0004](../unknowns.md#u-0004) (high): Can Eddie's potion 30% loss kill, and do armor, fortress or Kick status apply to it?
 
 Notes ([M-0165](../rules/damage.md#m-0165)): Matches seed [U-0004](../unknowns.md#u-0004) note: Shield, Safety bubble, Sleeping Bag and Body armor stop it, which supports reading B for blocking.
 
@@ -1148,7 +1144,7 @@ Theorems with tests in `sim/tests/`: [T-0001](../theorems/T-0001.md), [T-0002](.
 
 ## Open questions
 
-[U-0001](../unknowns.md#u-0001), [U-0002](../unknowns.md#u-0002), [U-0003](../unknowns.md#u-0003), [U-0004](../unknowns.md#u-0004), [U-0005](../unknowns.md#u-0005), [U-0010](../unknowns.md#u-0010), [U-0100](../unknowns.md#u-0100), [U-0101](../unknowns.md#u-0101), [U-0102](../unknowns.md#u-0102), [U-0103](../unknowns.md#u-0103), [U-0117](../unknowns.md#u-0117), [U-0118](../unknowns.md#u-0118), [U-0119](../unknowns.md#u-0119), [U-0120](../unknowns.md#u-0120), [U-0121](../unknowns.md#u-0121), [U-0123](../unknowns.md#u-0123), [U-0524](../unknowns.md#u-0524), [U-0525](../unknowns.md#u-0525), [U-0526](../unknowns.md#u-0526), [U-0531](../unknowns.md#u-0531), [U-0532](../unknowns.md#u-0532), [U-0537](../unknowns.md#u-0537)
+[U-0001](../unknowns.md#u-0001), [U-0002](../unknowns.md#u-0002), [U-0003](../unknowns.md#u-0003), [U-0005](../unknowns.md#u-0005), [U-0010](../unknowns.md#u-0010), [U-0100](../unknowns.md#u-0100), [U-0101](../unknowns.md#u-0101), [U-0102](../unknowns.md#u-0102), [U-0103](../unknowns.md#u-0103), [U-0117](../unknowns.md#u-0117), [U-0118](../unknowns.md#u-0118), [U-0119](../unknowns.md#u-0119), [U-0120](../unknowns.md#u-0120), [U-0121](../unknowns.md#u-0121), [U-0123](../unknowns.md#u-0123), [U-0524](../unknowns.md#u-0524), [U-0525](../unknowns.md#u-0525), [U-0526](../unknowns.md#u-0526), [U-0531](../unknowns.md#u-0531), [U-0532](../unknowns.md#u-0532), [U-0537](../unknowns.md#u-0537)
 
 ## Confidence
 

@@ -12,6 +12,7 @@ resolution_paths:
 - Robot interval is not on the Items page.
 priority: high
 status: open
+resolution: 'Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. Sources settled: the damage table marks "Hazmat suit (slows)" on exactly three rows, Outside the circle, Unsafe circle and Robot (wiki-damage-005, wiki-damage-006, wiki-damage-007), so reading A (outside-zone damage only) is refuted for the list of sources. The amount is written for zone damage only: "While you carry it, each zone damage interval is 2s longer" (wiki-items-013); an unsafe circle deals zone damage (wiki-sigils-trolling-017), the robot interval is on no page. Still open: the first tick and the 5 s delay (with U-0003), and how much a robot is slowed.'
 related:
 - M-0209
 - U-0003

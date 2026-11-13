@@ -16,7 +16,5 @@ formal:
 depends_on:
 - M-0118
 interacts_with: []
-label: CONDITIONAL
-open_unknowns:
-- U-0004
+label: DOCUMENTED
 notes: 'Matches seed U-0004 note: Shield, Safety bubble, Sleeping Bag and Body armor stop it, which supports reading B for blocking.'

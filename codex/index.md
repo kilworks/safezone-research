@@ -138,7 +138,7 @@ Everything in this encyclopedia, one click away. Rules are quoted word for word 
 - [M-0162](rules/damage.md#m-0162): Damage source 'Gunship bomb' and what stops it (`DOCUMENTED`)
 - [M-0163](rules/damage.md#m-0163): Damage source 'Giant cyclops attack' and what stops it (`DOCUMENTED`)
 - [M-0164](rules/damage.md#m-0164): Damage source 'Bounty mark' and what stops it (`DOCUMENTED`)
-- [M-0165](rules/damage.md#m-0165): Damage source 'Eddie's Potion backfire' and what stops it (`CONDITIONAL`)
+- [M-0165](rules/damage.md#m-0165): Damage source 'Eddie's Potion backfire' and what stops it (`DOCUMENTED`)
 - [M-0166](rules/damage.md#m-0166): Damage source 'Protection retribution' and what stops it (`DOCUMENTED`)
 - [M-0170](rules/poison.md#m-0170): Poison tick: 1 HP every 1min 30s (`CONDITIONAL`)
 - [M-0171](rules/poison.md#m-0171): Re-poisoning resets the timer and does not stack (`CONDITIONAL`)

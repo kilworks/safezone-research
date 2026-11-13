@@ -16,7 +16,7 @@
 
 규칙이 불안정한 부분은 다음과 같습니다. 위키는 Robot 피해를 무엇이 막는지에 대해 ([M-0524](../rules/damage.md#m-0524), [C-0500](../unknowns.md#c-0500)), 그리고 Reality Shield가 언세이프 서클을 막는지에 대해 ([M-0538](../rules/damage.md#m-0538), [C-0502](../unknowns.md#c-0502)) 스스로 모순됩니다. 어떤 출처가 파이프라인을 거치는지는 미해결 질문입니다 ([U-0002](../unknowns.md#u-0002)). 끝수 처리 관련 질문도 미해결입니다. Kick 감소 ([U-0001](../unknowns.md#u-0001))와 "내림"이 적용되는 위치 ([U-0100](../unknowns.md#u-0100))가 그렇습니다. 방어구가 초과 피해를 통과시키는지 ([U-0101](../unknowns.md#u-0101)), 여러 Fortress가 차례로 흡수하는지 ([U-0102](../unknowns.md#u-0102)), 반사된 타격이 공격자의 파이프라인을 사용하는지 ([U-0005](../unknowns.md#u-0005)), 여러 차단 수단이 적용될 때 어느 것이 사용되는지 ([U-0120](../unknowns.md#u-0120))도 미해결입니다.
 
-이 페이지는 규칙 48개(14 `DOCUMENTED`, 32 `CONDITIONAL`, 2 `UNKNOWN`)를 모았습니다. 아래의 모든 규칙은 공식 위키를 한 글자도 바꾸지 않고 인용하고 형식적 해석을 붙입니다. 문구가 여러 해석을 허용하면 모든 해석을 나열하고 질문은 열린 채로 둡니다.
+이 페이지는 규칙 48개(15 `DOCUMENTED`, 31 `CONDITIONAL`, 2 `UNKNOWN`)를 모았습니다. 아래의 모든 규칙은 공식 위키를 한 글자도 바꾸지 않고 인용하고 형식적 해석을 붙입니다. 문구가 여러 해석을 허용하면 모든 해석을 나열하고 질문은 열린 채로 둡니다.
 
 ## 규칙
 
@@ -974,7 +974,7 @@
 
 ### M-0165: 피해 원천 'Eddie's Potion backfire': 이를 막는 수단
 
-라벨: `CONDITIONAL`. 시길: all.
+라벨: `DOCUMENTED`. 시길: all.
 
 **공식 원문** (2026-11-11 스냅샷, 영어 원문 그대로):
 
@@ -989,10 +989,6 @@
 **따름 결과:** [T-0402](../theorems/T-0402.md)
 
 **상호작용:** [M-0118](../rules/damage.md#m-0118)
-
-**미해결 질문:**
-
-- [U-0004](../unknowns.md#u-0004) (높음): Eddie의 포션 30% 손실이 사망을 일으킬 수 있으며, armor, fortress 또는 Kick 상태가 여기에 적용됩니까?
 
 메모 ([M-0165](../rules/damage.md#m-0165)): 시드 [U-0004](../unknowns.md#u-0004) 메모와 일치합니다: Shield, Safety bubble, Sleeping Bag, Body armor가 이를 막으며, 이는 차단에 대한 해석 B를 뒷받침합니다.
 
@@ -1217,7 +1213,7 @@
 
 ## 미해결 질문
 
-[U-0001](../unknowns.md#u-0001), [U-0002](../unknowns.md#u-0002), [U-0003](../unknowns.md#u-0003), [U-0004](../unknowns.md#u-0004), [U-0005](../unknowns.md#u-0005), [U-0010](../unknowns.md#u-0010), [U-0100](../unknowns.md#u-0100), [U-0101](../unknowns.md#u-0101), [U-0102](../unknowns.md#u-0102), [U-0103](../unknowns.md#u-0103), [U-0117](../unknowns.md#u-0117), [U-0118](../unknowns.md#u-0118), [U-0119](../unknowns.md#u-0119), [U-0120](../unknowns.md#u-0120), [U-0121](../unknowns.md#u-0121), [U-0123](../unknowns.md#u-0123), [U-0524](../unknowns.md#u-0524), [U-0525](../unknowns.md#u-0525), [U-0526](../unknowns.md#u-0526), [U-0531](../unknowns.md#u-0531), [U-0532](../unknowns.md#u-0532), [U-0537](../unknowns.md#u-0537)
+[U-0001](../unknowns.md#u-0001), [U-0002](../unknowns.md#u-0002), [U-0003](../unknowns.md#u-0003), [U-0005](../unknowns.md#u-0005), [U-0010](../unknowns.md#u-0010), [U-0100](../unknowns.md#u-0100), [U-0101](../unknowns.md#u-0101), [U-0102](../unknowns.md#u-0102), [U-0103](../unknowns.md#u-0103), [U-0117](../unknowns.md#u-0117), [U-0118](../unknowns.md#u-0118), [U-0119](../unknowns.md#u-0119), [U-0120](../unknowns.md#u-0120), [U-0121](../unknowns.md#u-0121), [U-0123](../unknowns.md#u-0123), [U-0524](../unknowns.md#u-0524), [U-0525](../unknowns.md#u-0525), [U-0526](../unknowns.md#u-0526), [U-0531](../unknowns.md#u-0531), [U-0532](../unknowns.md#u-0532), [U-0537](../unknowns.md#u-0537)
 
 ## 신뢰도
 

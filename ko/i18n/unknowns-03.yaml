@@ -38,6 +38,8 @@ U-0205:
     VOD: Hazmat 보유자가 화면 타이머가 있는 상태로 존을 벗어나는 장면.
   - >-
     robot 간격은 아이템 페이지에 없습니다.
+  resolution: >-
+    2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 원천은 확정되었습니다. 피해 표는 정확히 세 행, 즉 Outside the circle, Unsafe circle, Robot에 "Hazmat suit (slows)"를 표시하므로(wiki-damage-005, wiki-damage-006, wiki-damage-007), 원천 목록에 관해서는 해석 A(존 밖 피해만)가 반박됩니다. 수치는 존 피해에 대해서만 적혀 있습니다. "While you carry it, each zone damage interval is 2s longer"(wiki-items-013). 언세이프 서클은 존 피해를 주며(wiki-sigils-trolling-017), robot 간격은 어느 페이지에도 없습니다. 아직 미해결: 첫 틱과 5 s 지연(U-0003과 함께), 그리고 robot이 얼마나 느려지는지.
 U-0206:
   question: >-
     Guardian angel의 '존 피해'에 언세이프 서클 피해가 포함됩니까?
@@ -96,6 +98,8 @@ U-0209:
     VOD: 반복 타격 후의 armor 내구도.
   - >-
     피해 페이지: 'absorbs what is left, until it breaks'는 A를 뒷받침합니다.
+  resolution: >-
+    2026-11-11 스냅샷의 본문으로 2026-11-13에 앞부분이 해결되었습니다. armor는 소모되며 해석 B는 반박됩니다. armor는 "absorbs what is left, until it breaks"이고(wiki-damage-055), 그 크기는 변하는 내구도입니다. "+10 durability, up to 45"(wiki-merchant-057), 그 뒤에는 "loses one durability every twenty minutes, down to 15"입니다(wiki-merchant-058). 결코 소모되지 않는 armor(해석 B)는 부서질 수 없습니다. 따라서 "Absorbs up to 15 HP of damage"(wiki-items-026)는 새 풀의 크기입니다. 뒷부분(armor를 부수는 타격이 어떻게 나뉘는지, 흡수한 HP 1당 내구도가 1씩 줄어드는지)은 U-0101이며 여전히 미해결입니다.
 U-0210:
   question: >-
     Body armor를 착용 중이거나 소지 중일 때 두 번째 Body armor를 얻으면 어떻게 됩니까?

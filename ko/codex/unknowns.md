@@ -2,7 +2,7 @@
 
 2026-11-11 스냅샷 기준으로 공식 위키가 정하지 않은 모든 것입니다. 각 질문에는 경쟁하는 해석과 그것을 결정할 방법이 적혀 있습니다. 이 프로젝트의 어떤 모델도 해석을 몰래 고르지 않습니다. 모든 시뮬레이션은 중요한 해석마다 따로 실행됩니다.
 
-우선순위별 미해결 질문: 5 치명적, 72 높음, 95 보통, 31 낮음 (출처: kb/unknowns/, 기록 204개).
+우선순위별 미해결 질문: 5 치명적, 71 높음, 95 보통, 31 낮음 (출처: kb/unknowns/, 기록 204개).
 
 ## 우선순위: 치명적
 
@@ -77,6 +77,7 @@
 - [U-0004](unknowns.md#u-0004) 해석 C: 손실로 HP가 1 아래로 내려갈 수 없습니다.
 - [U-0004](unknowns.md#u-0004) 해결 방법: VOD: 최대 HP의 30% 이하인 참가자가 이 포션을 마시는 장면.
 - [U-0004](unknowns.md#u-0004) 해결 방법: 피해 표는 'Eddie's Potion backfire'를 Shield, Safety bubble, Sleeping Bag, Body armor로 막을 수 있다고 기재하며, 이는 차단에 관해 B를 뒷받침합니다(공식화 예정).
+- [U-0004](unknowns.md#u-0004) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 해석 A(어떤 보호도 적용되지 않음)는 반박됩니다. 피해 표에는 "Eddie's Potion backfire" 행이 있고, Shield, Safety bubble, Sleeping Bag이 막는 수단이며 "Body armor (absorbs)"가 붙어 있습니다(wiki-damage-030). 또한 "Body Armor works on every kind of damage"입니다(wiki-damage-071). 아직 미해결: 손실로 사망할 수 있는지 아니면 1 HP에서 멈추는지(해석 B와 C), 그리고 Kick 라이브 감소와 fortress가 적용되는지 여부이며, 후자는 [U-0002](unknowns.md#u-0002)에 남아 있는 부분입니다.
 
 ### U-0005
 
@@ -226,6 +227,7 @@
 - [U-0114](unknowns.md#u-0114) 해석 C: 피해 시계는 참가자마다 지정된 하나의 존에 묶입니다
 - [U-0114](unknowns.md#u-0114) 해결 방법: VOD: 존이 갈라지는 이벤트와 두 존 사이를 건너는 참가자.
 - [U-0114](unknowns.md#u-0114) 해결 방법: 주최 측 설명.
+- [U-0114](unknowns.md#u-0114) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 세 조항이 조건을 모든 세이프 존의 밖에 있는 것으로 적고 있으며, 이는 해석 A입니다. "Only the part inside a safe zone hurts: outside every safe zone you take normal zone damage only"(wiki-sigils-trolling-023), 언세이프 서클은 "Anyone inside it who is also inside a safe zone"에게 피해를 주고(wiki-sigils-trolling-017), 거대 사이클롭스에 대해서는 "Outside the safe zones it takes zone damage"라고 합니다(wiki-attacks-071). 참가자를 하나의 존에 지정하는 조항(해석 C)은 없으며, 존이 갈라지는 경우를 설명하는 조항도 없습니다. 아직 미해결: 갈라짐을 담은 VOD 또는 주최 측 설명이 이를 확인해 줄 것입니다.
 
 ### U-0116
 
@@ -285,6 +287,7 @@
 - [U-0205](unknowns.md#u-0205) 자유 매개변수 `hazmat_added_interval_s`, 탐색 범위: 0..4 s (페이지에는 2라고 되어 있으며, 상한 4는 두 배가 된다는 해석을 포함)
 - [U-0205](unknowns.md#u-0205) 해결 방법: VOD: Hazmat 보유자가 화면 타이머가 있는 상태로 존을 벗어나는 장면.
 - [U-0205](unknowns.md#u-0205) 해결 방법: robot 간격은 아이템 페이지에 없습니다.
+- [U-0205](unknowns.md#u-0205) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. 원천은 확정되었습니다. 피해 표는 정확히 세 행, 즉 Outside the circle, Unsafe circle, Robot에 "Hazmat suit (slows)"를 표시하므로(wiki-damage-005, wiki-damage-006, wiki-damage-007), 원천 목록에 관해서는 해석 A(존 밖 피해만)가 반박됩니다. 수치는 존 피해에 대해서만 적혀 있습니다. "While you carry it, each zone damage interval is 2s longer"(wiki-items-013). 언세이프 서클은 존 피해를 주며(wiki-sigils-trolling-017), robot 간격은 어느 페이지에도 없습니다. 아직 미해결: 첫 틱과 5 s 지연([U-0003](unknowns.md#u-0003)과 함께), 그리고 robot이 얼마나 느려지는지.
 
 ### U-0207
 
@@ -299,7 +302,7 @@
 
 ### U-0209
 
-[U-0209](unknowns.md#u-0209): Body armor의 15 HP는 줄어드는 풀입니까, 타격당 상한입니까? 일부만 흡수된 타격은 어떻게 처리됩니까? 상태: `open`.
+[U-0209](unknowns.md#u-0209): Body armor의 15 HP는 줄어드는 풀입니까, 타격당 상한입니까? 일부만 흡수된 타격은 어떻게 처리됩니까? 상태: `resolved`.
 
 중요한 이유 ([U-0209](unknowns.md#u-0209)): 반복되는 작은 타격(존 틱, 독)에 대한 생존력이 달라집니다.
 
@@ -307,6 +310,7 @@
 - [U-0209](unknowns.md#u-0209) 해석 B: 타격당 상한 15 HP, 소모되지 않음
 - [U-0209](unknowns.md#u-0209) 해결 방법: VOD: 반복 타격 후의 armor 내구도.
 - [U-0209](unknowns.md#u-0209) 해결 방법: 피해 페이지: 'absorbs what is left, until it breaks'는 A를 뒷받침합니다.
+- [U-0209](unknowns.md#u-0209) 해결됨: 2026-11-11 스냅샷의 본문으로 2026-11-13에 앞부분이 해결되었습니다. armor는 소모되며 해석 B는 반박됩니다. armor는 "absorbs what is left, until it breaks"이고(wiki-damage-055), 그 크기는 변하는 내구도입니다. "+10 durability, up to 45"(wiki-merchant-057), 그 뒤에는 "loses one durability every twenty minutes, down to 15"입니다(wiki-merchant-058). 결코 소모되지 않는 armor(해석 B)는 부서질 수 없습니다. 따라서 "Absorbs up to 15 HP of damage"(wiki-items-026)는 새 풀의 크기입니다. 뒷부분(armor를 부수는 타격이 어떻게 나뉘는지, 흡수한 HP 1당 내구도가 1씩 줄어드는지)은 [U-0101](unknowns.md#u-0101)이며 여전히 미해결입니다.
 
 ### U-0305
 
@@ -861,6 +865,7 @@
 - [U-0617](unknowns.md#u-0617) 해석 B: 회복 포션과 Eddie의 포션(최대 HP의 50%를 회복하는 도박)
 - [U-0617](unknowns.md#u-0617) 해석 C: 아이템으로 인한 모든 회복
 - [U-0617](unknowns.md#u-0617) 해결 방법: VOD: Protection 참가자가 각 회복 아이템을 사용하는 장면.
+- [U-0617](unknowns.md#u-0617) 범위 축소: 2026-11-11 스냅샷의 본문만으로 2026-11-13에 범위를 좁혔으며, 해결된 것은 아닙니다. Campfire는 이 규칙에서 제외됩니다. "Piety and Protection potion changes do not apply"(wiki-sigils-ingenuity-021). 붕대는 Protection 페이지에서 포션 줄 옆에 자체 줄이 있습니다. "Bandages last 1.1x as long"(wiki-sigils-protection-017). 이는 붕대가 포션으로 계산되지 않음을 시사하지만, 그렇다고 명시하지는 않습니다. Campfire 조항은 Protection의 변경을 Piety의 변경과 나란히 두는데, Piety의 변경은 "Health potions"에 대해 적혀 있습니다(wiki-sigils-piety-013). 이는 해석 A에 유리하지만 확정하지는 않습니다. 아직 미해결: Eddie의 포션, God's Fruit, 회복 서클, 그리고 Anti poison과 Health potion으로 만드는 제작품.
 
 ### U-0624
 

@@ -138,7 +138,7 @@
 - [M-0162](rules/damage.md#m-0162): 피해 원천 'Gunship bomb': 이를 막는 수단 (`DOCUMENTED`)
 - [M-0163](rules/damage.md#m-0163): 피해 원천 'Giant cyclops attack': 이를 막는 수단 (`DOCUMENTED`)
 - [M-0164](rules/damage.md#m-0164): 피해 원천 'Bounty mark': 이를 막는 수단 (`DOCUMENTED`)
-- [M-0165](rules/damage.md#m-0165): 피해 원천 'Eddie's Potion backfire': 이를 막는 수단 (`CONDITIONAL`)
+- [M-0165](rules/damage.md#m-0165): 피해 원천 'Eddie's Potion backfire': 이를 막는 수단 (`DOCUMENTED`)
 - [M-0166](rules/damage.md#m-0166): 피해 원천 'Protection retribution': 이를 막는 수단 (`DOCUMENTED`)
 - [M-0170](rules/poison.md#m-0170): 독 틱: 1min 30s마다 1 HP (`CONDITIONAL`)
 - [M-0171](rules/poison.md#m-0171): 다시 중독되면 타이머가 초기화되며 중첩되지 않음 (`CONDITIONAL`)

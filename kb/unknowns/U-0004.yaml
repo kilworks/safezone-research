@@ -10,3 +10,4 @@ resolution_paths:
 - The damage table lists 'Eddie's Potion backfire' as stoppable by Shield, Safety bubble, Sleeping Bag and Body armor, which supports B for blocking (to be formalized).
 priority: high
 status: open
+resolution: 'Narrowed on 2026-11-13 from the text of the 2026-11-11 snapshot, not resolved. Reading A (no protection applies) is refuted: the damage table has a row "Eddie''s Potion backfire" with Shield, Safety bubble and Sleeping Bag as blockers and "Body armor (absorbs)" (wiki-damage-030), and "Body Armor works on every kind of damage" (wiki-damage-071). Still open: whether the loss can kill or stops at 1 HP (readings B and C), and whether the Kick-live reduction and a fortress apply, which is the part of U-0002 that is left.'

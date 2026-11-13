@@ -29,5 +29,5 @@ interacts_with:
 - M-0219
 label: CONDITIONAL
 open_unknowns:
-- U-0209
-notes: '''Until it breaks'' on the damage page supports a depleting pool (A), but a partly absorbed hit is not specified. Pipeline order belongs to the damage page.'
+- U-0101
+notes: '''Until it breaks'' on the damage page and the durability of the merchant enchantment settle a depleting pool: reading B is refuted (U-0209, resolved). A partly absorbed hit is not specified: U-0101. Pipeline order belongs to the damage page.'
